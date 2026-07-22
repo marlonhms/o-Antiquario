@@ -23,6 +23,7 @@ Companion e consultor digital especializado em perfumaria mundial, da perfumaria
 - [Knowledge Core e memória RAG](docs/CONHECIMENTO_RAG.md)
 - [Plataforma de dados](docs/PLATAFORMA_DADOS.md)
 - [Catálogo Web e resolução de entidades](docs/CATALOGO_WEB.md)
+- [Curadoria Editorial](docs/CURADORIA_EDITORIAL.md)
 
 ## Estado
 
@@ -69,6 +70,7 @@ npm run data:demo
 npm run data:sync:wikidata
 npm run data:build
 npm run catalog:compile
+npm run curation:queue
 ```
 
 O compilador publica uma release JSON determinística em `data/releases` e a cópia estável consumida pela PWA em `apps/web/public/catalog`. A interface identifica quando essa base factual está pronta, mas o ranking permanece ligado ao catálogo sintético até que os registros reais tenham notas, acordes e desempenho curados.

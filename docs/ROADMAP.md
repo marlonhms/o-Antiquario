@@ -68,7 +68,7 @@
 
 ### Sprint 3: catálogo inicial
 
-> **Progresso em 22/07/2026:** sincronização real validada com 85 fragrâncias aceitas e 3 quarentenadas. O Catalog Compiler publica JSON determinístico, entidades deduplicadas, índice de busca local e relatório de ambiguidades; a PWA já detecta a release factual. A meta de 150 registros e a cobertura editorial de família, notas, segmentos brasileiro e árabe permanecem pendentes.
+> **Progresso em 22/07/2026:** sincronização real validada com 85 fragrâncias aceitas e 3 quarentenadas. O Catalog Compiler publica JSON determinístico, entidades deduplicadas, índice de busca local e relatório de ambiguidades; a PWA já detecta a release factual. A Curadoria Editorial v1 já gera uma fila interna de 25 rascunhos factuais, isolados do RAG até aprovação humana. A meta de 150 registros e a cobertura editorial de família, notas, segmentos brasileiro e árabe permanecem pendentes.
 
 #### Entregas
 

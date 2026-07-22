@@ -56,9 +56,12 @@ npm run data:sync:wikidata
 npm run data:build
 npm run data:status
 npm run catalog:compile
+npm run curation:queue
 ```
 
 `catalog:compile` gera os arquivos públicos compactos, o índice de busca local e o relatório de resolução de entidades. O contrato completo está em [Catálogo Web e resolução de entidades](CATALOGO_WEB.md).
+
+`curation:queue` cria rascunhos internos a partir do catálogo factual, sem inserir inferências olfativas no core. Veja [Curadoria Editorial](CURADORIA_EDITORIAL.md).
 
 ## Idempotência
 

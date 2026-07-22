@@ -8,6 +8,7 @@ from typing import Sequence
 
 from .io_utils import load_json
 from .catalog_release import compile_catalog_release
+from .curation_queue import build_curation_queue
 from .warehouse import build_catalog
 from .wikidata import sync_wikidata
 
@@ -40,6 +41,11 @@ def create_parser() -> argparse.ArgumentParser:
     release.add_argument("--knowledge-dir", type=Path, default=Path("knowledge/compiled"))
     release.add_argument("--releases-dir", type=Path, default=Path("data/releases"))
     release.add_argument("--public-dir", type=Path, default=Path("apps/web/public/catalog"))
+    curation = commands.add_parser("curation-queue", help="gera rascunhos factuais para curadoria editorial")
+    curation.add_argument("--limit", type=int, default=25)
+    curation.add_argument("--vault-dir", type=Path, default=Path("knowledge/vault"))
+    curation.add_argument("--release-dir", type=Path, default=Path("apps/web/public/catalog"))
+    curation.add_argument("--report", type=Path, default=Path("data/curation/curation-queue.json"))
     return parser
 
 
@@ -76,6 +82,15 @@ def main(argv: Sequence[str] | None = None) -> int:
                 knowledge_directory=args.knowledge_dir.resolve(),
                 releases_directory=args.releases_dir.resolve(),
                 public_directory=args.public_dir.resolve(),
+            )
+            _print(result.as_dict())
+        elif args.command == "curation-queue":
+            result = build_curation_queue(
+                data_directory=data_directory,
+                vault_directory=args.vault_dir.resolve(),
+                release_directory=args.release_dir.resolve(),
+                report_path=args.report.resolve(),
+                limit=args.limit,
             )
             _print(result.as_dict())
         return 0
