@@ -1,262 +1,268 @@
-# Roadmap detalhado — O Antiquário
-
-## 1. Premissas
-
-- Roadmap organizado em sprints de uma semana, ajustável à capacidade disponível.
-- Uma entrega só é considerada concluída quando código, testes e documentação estão presentes.
-- Nenhuma fonte entra no catálogo sem revisão de licença e proveniência.
-- A integração do Gemini ocorre depois do recomendador determinístico.
-- Datas são estimativas; os critérios de aceite têm prioridade.
-
-## 2. Marcos
-
-| Marco | Horizonte estimado | Resultado |
-|---|---:|---|
-| M0 — Fundação | Semana 1 | Repositório, decisões, licenças e contratos de dados |
-| M1 — Catálogo mínimo | Semanas 2–3 | Pipeline e 150 fragrâncias válidas |
-| M2 — Recomendador | Semanas 4–5 | Busca, filtros, ranking e explicação local |
-| M3 — Companion | Semana 6 | Gemini protegido por Worker e fallback |
-| M4 — MVP fechado | Semanas 7–8 | PWA completa, diário e 600 fragrâncias |
-| M5 — Beta público | Semanas 9–11 | Qualidade, acessibilidade e contribuições controladas |
-| M6 — Versão 1.0 | Semanas 12–14 | Personalização validada e lançamento estável |
-
-## 3. Fase 0 — Fundação e governança
-
-### Sprint 1
-
-> **Progresso em 22/07/2026:** manifesto de fontes, classificação jurídica/técnica, schema, auditoria automática e testes concluídos. Permanecem pendentes CI, lint, formatação, ADRs e política de privacidade preliminar.
-
-#### Entregas
-
-- Inicializar monorepo TypeScript.
-- Definir convenções de código e branches.
-- Criar contratos de domínio para perfume, nota, evidência, perfil e recomendação.
-- Criar `data-sources.yml` com licença, URL, responsável e uso permitido.
-- Configurar lint, formatação, testes e verificação de tipos.
-- Criar registro de decisões arquiteturais.
-- Definir política de privacidade preliminar e aviso do Gemini gratuito.
-
-#### Critérios de aceite
-
-- Instalação reproduzível com um comando.
-- CI executando lint, tipos e testes.
-- Nenhum segredo versionado.
-- Toda fonte planejada classificada como permitida, isolada, pendente ou proibida.
-- Esquemas validados automaticamente.
-
-## 4. Fase 1 — Dados e taxonomia
-
-### Sprint 2: taxonomia olfativa
-
-> **Progresso em 22/07/2026:** taxonomia v1, glossário português/inglês, aliases, normalização de acentos, IDs estáveis, validação de referências e 214 notas concluídos. O Knowledge Graph v2 agora valida relações tipadas, representa evidências como nós e publica relatório de conectividade/cobertura. O conector Wikidata, a publicação DuckDB/Parquet e a resolução de entidades também estão implementados com cache e fixture offline. O núcleo factual ainda está bloqueado para recomendação até que existam perfumes comerciais aprovados com notas, acordes, contexto e evidências.
-
-#### Entregas
-
-- Criar famílias e subfamílias olfativas.
-- Criar glossário português/inglês de notas e acordes.
-- Definir sinônimos e normalização de acentos.
-- Definir volatilidade relativa, persistência e descritores das notas quando houver fonte válida.
-- Implementar importador do Wikidata.
-- Criar validação de duplicatas e identificadores estáveis.
-
-#### Critérios de aceite
-
-- Pelo menos 150 notas normalizadas.
-- Todas as notas com identificador estável e nome em português.
-- Importação idempotente: duas execuções produzem o mesmo resultado.
-- Relatório automático de itens sem fonte ou licença.
-
-### Sprint 3: catálogo inicial
-
-> **Progresso em 22/07/2026:** sincronização real validada com 282 fragrâncias aceitas e 55 quarentenadas, após descoberta adicional por país de origem no Wikidata. O Catalog Compiler publica JSON determinístico, entidades deduplicadas, índice de busca local e relatório de ambiguidades; a PWA já detecta a release factual. A Curadoria Editorial v1 já gera uma fila interna de 25 rascunhos factuais, isolados do RAG até aprovação humana. A meta de 150 registros foi superada; cobertura editorial de família, notas, segmento brasileiro e perfumaria árabe permanece pendente.
-
-#### Entregas
-
-- Curar 150 fragrâncias representativas.
-- Incluir pelo menos 50 brasileiras e 25 árabes/acessíveis.
-- Implementar separação lógica de dados ODbL.
-- Gerar artefatos JSON versionados para o frontend.
-- Criar relatório de cobertura por campo, marca e segmento.
-
-#### Critérios de aceite
-
-- Cem por cento dos registros com proveniência.
-- Nenhuma imagem sem licença explícita.
-- Pelo menos 90% dos registros com família e notas.
-- Zero IDs duplicados ou referências quebradas.
-- Build de dados menor que o limite definido para a PWA.
-
-## 5. Fase 2 — Busca e recomendador determinístico
-
-### Sprint 4: busca e filtros
-
-#### Entregas
-
-- Índice local por nome, marca, nota e acorde.
-- Busca tolerante a acentos e pequenas variações.
-- Filtros positivos e negativos.
-- Comparação de até quatro perfumes.
-- Testes de desempenho com catálogo ampliado artificialmente.
-
-#### Critérios de aceite
-
-- p95 da busca abaixo de 200 ms no conjunto de referência.
-- Resultados iguais offline e online.
-- Filtros combinados com testes de regressão.
-- Busca por nomes em português ou inglês quando houver sinônimo.
-
-### Sprint 5: ranking contextual
-
-#### Entregas
-
-- Implementar regras de exclusão.
-- Implementar componentes de pontuação e pesos configuráveis.
-- Gerar rastreamento dos fatores que formaram a nota final.
-- Criar explicação por templates para operação sem IA.
-- Criar conjunto ouro de 30 cenários.
-
-#### Critérios de aceite
-
-- Mesma entrada produz o mesmo ranking.
-- Cada recomendação explica ao menos três fatores.
-- Nenhuma fragrância rejeitada por regra dura aparece no resultado.
-- Fallback cobre todos os cenários do conjunto ouro.
-- Pesos totalizam 100% e são versionados.
-
-## 6. Fase 3 — Experiência e companion
-
-### Sprint 6: Gemini Flash
-
-#### Entregas
-
-- Criar Worker como proxy seguro.
-- Integrar SDK oficial do Google Gen AI.
-- Usar modelo configurável por ambiente, inicialmente `gemini-3.5-flash-lite`.
-- Definir JSON Schema da resposta.
-- Limitar Gemini aos candidatos fornecidos.
-- Implementar timeout, retry curto, circuit breaker e fallback.
-- Aplicar CORS, rate limit, limite de payload e sanitização.
-- Implementar consentimento e aviso de privacidade.
-
-#### Critérios de aceite
-
-- Chave ausente no bundle e nos logs.
-- Resposta inválida do modelo não quebra o fluxo.
-- Erros `429`, timeout e `5xx` ativam fallback.
-- Teste adversarial não consegue introduzir perfume fora dos candidatos.
-- Nenhum dado pessoal identificável é enviado pelo contrato normal.
-
-### Sprint 7: PWA e perfil
-
-#### Entregas
-
-- Onboarding olfativo.
-- Tela inicial contextual.
-- Busca, detalhes, comparação e recomendações.
-- Armazenamento local de perfil e coleção.
-- Instalação PWA e modo offline para catálogo/recomendador.
-- Estados de carregamento, erro e cota esgotada.
-
-#### Critérios de aceite
-
-- Fluxos principais utilizáveis em tela móvel.
-- Aplicação reabre offline após primeira visita.
-- Preferências permanecem no dispositivo.
-- Usuário consegue desativar IA e continuar usando o produto.
-- Auditoria inicial de acessibilidade sem erros críticos.
-
-## 7. Fase 4 — Diário, catálogo completo e MVP fechado
-
-### Sprint 8
-
-#### Entregas
-
-- Diário de uso com evolução por fases.
-- Exportação e exclusão local.
-- Ajuste de perfil a partir do histórico.
-- Ampliar catálogo para 600 fragrâncias.
-- Revisão específica da cobertura brasileira.
-- Painel interno de qualidade dos dados.
-
-#### Critérios de aceite
-
-- Usuário exporta todos os dados em JSON.
-- Exclusão remove perfil, coleção e diário.
-- Ajuste automático pode ser desfeito.
-- Metas 300/200/100 de cobertura atingidas.
-- Todos os registros passam pela auditoria de origem.
-
-## 8. Fase 5 — Beta público
-
-### Sprints 9 a 11
-
-#### Entregas
-
-- Teste com 20 a 50 usuários maiores de 18 anos.
-- Coleta anônima e opcional de qualidade das recomendações.
-- Melhorias de linguagem e acessibilidade.
-- Formulário de sugestão de fragrância com URL da fonte.
-- Fila de moderação, sem publicação automática.
-- Proteção antiabuso e limites visíveis.
-- Documentação de contribuição e licenciamento.
-
-#### Critérios de aceite
-
-- Pelo menos 70% das avaliações classificam o top 3 como coerente.
-- Nenhum incidente de vazamento de chave ou dado pessoal.
-- Sugestões sem fonte são rejeitadas pelo fluxo.
-- Principais jornadas atendem WCAG 2.2 AA.
-- Relatório de beta com problemas priorizados.
-
-## 9. Fase 6 — Versão 1.0
-
-### Sprints 12 a 14
-
-#### Entregas
-
-- Calibração dos pesos com dados agregados do beta.
-- Métrica bayesiana para desempenho comunitário.
-- Mapa de similaridade explicável.
-- Melhorias de cache e tamanho do catálogo.
-- Política pública de dados e privacidade.
-- Runbook de indisponibilidade do Gemini.
-- Release estável e changelog.
-
-#### Critérios de aceite
-
-- Recomendador calibrado sem reduzir a diversidade do catálogo.
-- Perfumes com pouca evidência exibem baixa confiança.
-- Aplicação permanece útil com Gemini desativado por 24 horas.
-- Restore testado a partir dos artefatos versionados.
-- Documentação de operação e manutenção aprovada.
-
-## 10. Backlog pós-1.0
-
-- Entrada opcional de clima por provedor compatível com o requisito de custo/licença.
-- Reconhecimento de frasco e código de barras.
-- Importação de coleção por arquivo.
-- Múltiplos perfis no mesmo dispositivo.
-- Recomendações de layering com regras conservadoras.
-- Grafo de perfumistas, casas e linhagens olfativas.
-- API aberta para o núcleo de dados próprios.
-- Internacionalização.
-- Sincronização criptografada opcional.
-- Aplicativo móvel empacotado a partir da PWA.
-
-## 11. Gates de continuidade
-
-### Gate A — após Sprint 3
-
-Continuar somente se a auditoria confirmar que o catálogo pode ser redistribuído e mantido legalmente.
-
-### Gate B — após Sprint 5
-
-Continuar somente se o recomendador produzir resultados coerentes sem IA.
-
-### Gate C — após Sprint 8
-
-Abrir beta somente se privacidade, fallback, rate limit e remoção de dados estiverem testados.
-
-### Gate D — antes da versão 1.0
-
-Lançar somente com processo claro de atualização das fontes e resposta a mudanças de cota/licença.
+# Roadmap de continuidade — O Antiquário
+
+> **Estado consolidado em 22/07/2026.** Este é o documento de handoff para o próximo agente. Ele descreve a ordem de trabalho, os limites do projeto e os critérios de aceite; não autoriza decidir, em nome do proprietário do projeto, a permissão ou a licença de uma nova fonte.
+
+## 1. Norte do produto
+
+O Antiquário é um companion local-first de perfumaria. Ele deve recomendar e explicar escolhas com dados rastreáveis, sem transformar uma resposta de IA em fonte factual.
+
+Princípios que não podem ser flexibilizados durante a continuidade:
+
+- custo operacional zero no MVP;
+- interface e recomendador continuam úteis sem IA ou rede;
+- o motor determinístico escolhe os candidatos; a IA, futuramente, apenas conversa e explica;
+- cada fato preserva fonte, data, método e localização da evidência;
+- dado factual, interpretação editorial e memória pessoal ficam em camadas distintas;
+- nenhuma automação autenticada, cookie de terceiros, bypass anti-bot ou scraping de fontes proibidas;
+- o proprietário decide se uma fonte e seu uso são adequados. O agente registra opções, riscos técnicos e proveniência, mas não substitui essa decisão;
+- não importar textos publicitários, reviews, imagens ou páginas inteiras como corpus do RAG.
+
+## 2. Fotografia atual do repositório
+
+### Entregue e publicado
+
+| Área | Estado atual | Evidência no repositório |
+|---|---|---|
+| Interface local | PWA React/Vite com direção visual vinho e dourado, consulta em três etapas e layout responsivo | `apps/web/src/App.tsx`, `apps/web/src/styles.css` |
+| Consulta reativa | Toda mudança na consulta recalcula o ranking imediatamente; o botão final apenas leva o usuário à curadoria | commit `10e1ee4` |
+| Recomendador | Motor determinístico, filtros duros, score explicável, confiança, diversidade, histórico local e fallback textual | `src/recommender/` |
+| Dados de demonstração | Perfumes usados no ranking atual são **fixtures sintéticas**, não produtos reais | `src/recommender/fixtures.ts` |
+| Base factual | Release local Wikidata com 282 perfumes, 276 descritores e 251 claims semânticos | `apps/web/public/catalog/` |
+| Biblioteca Olfativa | Busca e ficha factual de perfume, marca, perfumista, país, ano, descritores e claims | commit `775d61d` |
+| Pipeline | Snapshot, staging, DuckDB, Parquet, release JSON, auditorias e fixture offline | `pipeline/antiquario_data/` |
+| Knowledge Core | Vault Obsidian, vínculos tipados, evidência como nó, health gates e fila de curadoria | `knowledge/`, `src/knowledge/` |
+| Curadoria | Gera rascunhos factuais em `00_Inbox`; nada dessa fila entra no core automaticamente | `pipeline/antiquario_data/curation_queue.py` |
+
+### Limites atuais importantes
+
+1. A Biblioteca Olfativa mostra dados reais, mas o ranking ainda usa somente fixtures sintéticas. Isso é intencional: a maior parte dos 282 perfumes ainda não possui notas em pirâmide, acordes, desempenho e contexto aprovados.
+2. `P5872` do Wikidata significa **descritor olfativo factual**. Ele não autoriza classificá-lo como nota de topo, coração, fundo ou acorde.
+3. Os claims `P1552`, `P2360`, `P366` e `P4543` também são dados brutos. Não promover seus significados a regras de ranking sem contrato editorial explícito.
+4. O grafo possui muitos registros em `knowledge/vault/00_Inbox`. Isso é esperado: são identidades aguardando evidência e revisão, não nós quebrados do core.
+5. Gemini ainda não está integrado. Não antecipar essa etapa antes de existir um conjunto real, aprovado e testável de candidatos.
+
+### Situação do Git no handoff
+
+- Branch de trabalho: `main`.
+- Último commit publicado no momento deste roadmap: `10e1ee4 fix: update recommendations as consultation changes`.
+- O arquivo `docs/Bases De Dados De Perfumaria.md` é uma pesquisa do proprietário, não rastreada. Não modificar, adicionar ou commitar esse arquivo sem pedido explícito.
+
+## 3. Arquitetura de dados que deve ser preservada
+
+```text
+Wikidata / catálogo oficial em PDF / futura fonte aprovada
+  → raw local imutável (quando aplicável)
+  → staging com hash e proveniência
+  → quarentena de ambiguidade e conflito
+  → catálogo factual versionado
+  → fila editorial no Obsidian
+  → Knowledge Core aprovado
+  → catálogo elegível para ranking
+  → IA apenas recebe candidatos já selecionados
+```
+
+| Camada | Finalidade | Pode alimentar ranking? |
+|---|---|---:|
+| `data/raw` | Arquivo original local ou snapshot autorizado | Não |
+| `data/staging` | Extração estruturada, fatos ainda não validados | Não |
+| `data/catalog` e release web | Identidade factual e relações rastreáveis | Ainda não, sozinha |
+| `knowledge/vault/00_Inbox` | Rascunho de curadoria | Não |
+| `knowledge/vault/10_Perfumes` aprovado | Conhecimento editorial com evidências | Sim, após contrato de ranking |
+| `src/recommender/fixtures.ts` | Laboratório de UX e lógica | Somente demonstração |
+
+## 4. Próxima prioridade: conector de catálogos oficiais em PDF
+
+### Objetivo
+
+Criar uma fonte local e auditável para catálogos que o proprietário disponibilizar manualmente — por exemplo, O Boticário, Natura e Eudora. O conector deve extrair fatos declarados pelo documento e encaminhá-los para revisão, sem inferir atributos ausentes.
+
+### Escopo da primeira versão
+
+- Receber somente PDFs colocados manualmente no repositório local; não implementar downloader, scraper de site ou login.
+- Calcular SHA-256 do arquivo e registrar marca, edição, caminho local, data de ingestão e páginas processadas.
+- Extrair texto por página quando o PDF contiver camada textual.
+- Produzir uma saída estruturada de candidatos a produto e claims com referência de página.
+- Reconhecer apenas campos declarados: nome, marca, linha, concentração, volume, notas, família, pirâmide e data/edição quando estiverem explícitos.
+- Separar notas de topo/coração/fundo apenas quando o catálogo declarar a camada. Uma lista sem camada vira `declared_notes_unlayered`.
+- Resolver nomes de notas contra a taxonomia local; nomes desconhecidos entram na quarentena de vocabulário.
+- Fazer matching conservador com Wikidata por nome normalizado + marca. Empates, colisões e ausência de match permanecem pendentes.
+- Gerar uma fila editorial para aprovação humana, sem escrita direta no Knowledge Core ou no ranking.
+
+### Não escopo da primeira versão
+
+- OCR obrigatório: será uma capacidade opcional, acionada somente se um catálogo real for imagem e o proprietário aprovar a dependência local necessária.
+- Extração de preço como verdade universal, cálculo de desempenho, família inferida por IA ou acorde deduzido por notas.
+- Armazenar um corpus de texto comercial. A saída deve conter fatos normalizados e localizadores de página; o PDF original continua local.
+- Baixar ou reutilizar imagens, logos ou materiais promocionais.
+- Automatizar qualquer acesso a sites de terceiros.
+
+### Contrato de entrada proposto
+
+```text
+data/raw/official-catalogs/
+  <marca>/
+    <edicao-ou-ano>.pdf
+```
+
+Os PDFs não devem entrar no Git por padrão. Antes de implementar, atualizar `.gitignore` para cobrir `data/raw/official-catalogs/**/*.pdf` e criar um `README.md` pequeno nesse diretório explicando a convenção. Somente fixtures sintéticas ou documentos cujo versionamento tenha sido explicitamente autorizado podem ser usados em testes.
+
+### Contrato de saída proposto
+
+```text
+data/staging/official-pdf/
+  <sha256>/
+    document.json          # metadados, hash, fonte, versão do extrator
+    pages.jsonl            # página, sucesso de extração e hash de texto
+    claims.jsonl           # valor normalizado + página + método
+    candidates.jsonl       # perfume candidato + status de matching
+    quarantine.jsonl       # campos ambíguos ou termos desconhecidos
+    report.json            # cobertura e erros por documento
+```
+
+Todo claim deve conter, no mínimo:
+
+```json
+{
+  "document_hash": "sha256…",
+  "source_id": "official_catalog_<marca>",
+  "page": 12,
+  "field": "top_note",
+  "value": "bergamota",
+  "extraction_method": "text-layer",
+  "confidence": "declared",
+  "review_status": "pending"
+}
+```
+
+`source_id` só pode ser registrado depois da direção explícita do proprietário sobre a fonte e o uso pretendido. O agente pode criar a estrutura técnica e um perfil de parser, mas não deve afirmar que o material é permitido para redistribuição ou para o core.
+
+### Implementação sugerida
+
+1. Adicionar dependência Python mínima para leitura de PDF com texto (preferência: `pypdf`) ao `pyproject.toml` e ao lockfile.
+2. Criar `pipeline/antiquario_data/official_pdf.py` com funções puras para hash, leitura por página, normalização e escrita de staging.
+3. Criar perfis de extração configuráveis por marca em YAML/JSON; o núcleo não deve depender de regexes fixas para uma única diagramação.
+4. Adicionar o subcomando `official-pdf` à CLI, inicialmente com `--input`, `--brand`, `--edition`, `--source-id` e `--dry-run`.
+5. Implementar matching conservador e quarentena; não reutilizar o resolvedor para “adivinhar” identidade.
+6. Criar testes com fixture sintética gerada localmente, incluindo: pirâmide explícita, lista sem camada, nota desconhecida, produto ambíguo e página sem texto.
+7. Adicionar `npm run data:ingest:official-pdf` e documentação de execução local.
+8. Só depois de validar 1–3 catálogos reais, adicionar OCR opcional e perfis por marca.
+
+### Critérios de aceite
+
+- Reexecutar o mesmo PDF produz o mesmo `document_hash` e a mesma saída normalizada.
+- Cada campo extraído aponta para arquivo e página.
+- Nenhuma nota sem camada declarada aparece como topo/coração/fundo.
+- Nenhum match ambíguo cria ou altera registro factual automaticamente.
+- Nenhum PDF bruto ou texto publicitário é enviado para a PWA, Gemini ou Git sem autorização explícita.
+- `npm run data:test`, `npm test`, `npm run typecheck` e `npm run build` continuam verdes.
+
+## 5. Prioridade seguinte: resolver termos e conectar o grafo
+
+O PDF será valioso quando suas notas puderem criar relações confiáveis, e não apenas mais arquivos. Após o conector mínimo:
+
+1. Criar um vocabulário de aliases por fonte, separado da taxonomia canônica.
+2. Resolver cada termo de nota para um ID canônico ou quarentena.
+3. Gerar relações factuais tipadas:
+   - `declares-top-note`;
+   - `declares-heart-note`;
+   - `declares-base-note`;
+   - `declares-unlayered-note`;
+   - `declares-concentration`;
+   - `declares-family`.
+4. Criar rascunho em `00_Inbox` que cite a evidência do catálogo oficial.
+5. Após revisão humana, mover somente o registro aprovado a `knowledge/vault/10_Perfumes` e executar `npm run knowledge:build`.
+6. Acompanhar no relatório do grafo: percentual de perfumes conectados a notas, notas por camada, entidades em quarentena e cobertura por marca/região.
+
+Meta inicial útil: aprovar 20 perfumes reais com ao menos uma evidência de identidade e uma relação olfativa declarada. A meta não é volume; é validar a cadeia completa de confiança.
+
+## 6. Transição do ranking: fixtures → perfumes reais aprovados
+
+Isso só começa quando houver um subconjunto editorialmente completo. Não misturar registros factuais incompletos ao ranking apenas para aumentar a quantidade.
+
+### Etapas
+
+1. Definir contrato `EligibleForRecommendation` com identidade, concentração, notas/acordes aprovados, contexto mínimo, desempenho/confiança e evidências.
+2. Criar compilador que publica um catálogo de recomendação separado do catálogo factual.
+3. Adaptar o recomendador para receber esse catálogo por injeção de dependência, mantendo fixtures nos testes.
+4. Criar cenários ouro usando somente fragrâncias aprovadas.
+5. Exibir na interface a distinção entre “dado declarado”, “curadoria editorial” e “estimativa”.
+6. Remover o aviso de catálogo sintético somente quando a tela principal estiver realmente usando o catálogo aprovado.
+
+### Gate de aceite
+
+Não ligar a PWA ao ranking factual até haver, no mínimo, 20 perfumes aprovados e testes que provem exclusões, explicações, diversidade e fallback nesse conjunto.
+
+## 7. IA Gemini Flash — somente após o gate do ranking factual
+
+Quando o gate anterior passar:
+
+1. Criar Worker/proxy com chave fora do bundle.
+2. Enviar ao modelo somente contexto anônimo e candidatos já selecionados.
+3. Validar a resposta em JSON Schema; a IA não pode introduzir perfume, nota ou afirmação factual fora do contexto fornecido.
+4. Implementar limite de uso, timeout, retry curto, circuit breaker e templates locais de fallback.
+5. Incluir consentimento e controle para desativar IA.
+6. Verificar os limites e preços atuais diretamente na documentação oficial do Gemini antes de escolher o modelo.
+
+## 8. Qualidade, operação e documentação
+
+Essas tarefas podem seguir em paralelo às fases de dados, desde que não alterem os limites acima:
+
+- adicionar CI para `typecheck`, testes TypeScript, testes Python e build;
+- adicionar formatter/lint somente com configuração pequena e sem reformatação massiva do repositório;
+- documentar ADRs já praticados: local-first, Cerberus separado, fontes e camadas de dados;
+- adicionar testes de componente/e2e para a consulta reativa e Biblioteca Olfativa;
+- medir tamanho da release e tempo de busca com catálogo maior;
+- tornar o catálogo factual mais navegável: filtros por marca, ano, país e descritor, sem usá-los como score;
+- implementar PWA offline, perfil, coleção e diário somente depois de estabilizar o modelo de dados elegível.
+
+## 9. Primeira sessão recomendada para o próximo agente
+
+1. Ler este roadmap, `docs/PLATAFORMA_DADOS.md`, `docs/CURADORIA_EDITORIAL.md`, `docs/FONTES_E_LICENCAS.md` e `data/sources.yml` por completo.
+2. Confirmar o estado do Git e preservar `docs/Bases De Dados De Perfumaria.md` como arquivo do proprietário.
+3. Rodar a baseline:
+
+   ```powershell
+   npm run typecheck
+   npm test
+   npm run data:test
+   npm run build
+   ```
+
+4. Se houver PDF(s) de exemplo fornecido(s), iniciar a fase 4 exatamente pela estrutura de entrada, hash, saída de staging e fixture sintética. Se não houver, preparar apenas o conector genérico e seus testes — não baixar documentos por conta própria.
+5. Após cada mudança no pipeline, testar a idempotência e atualizar a documentação operacional.
+6. Antes de conectar qualquer dado novo ao ranking, parar no gate da seção 6 e pedir confirmação/direção ao proprietário.
+
+## 10. Comandos úteis
+
+```powershell
+# Interface local
+npm run dev
+
+# Qualidade
+npm run typecheck
+npm test
+npm run data:test
+npm run build
+
+# Pipeline factual existente
+npm run data:sync:wikidata
+npm run data:build
+npm run knowledge:build
+npm run catalog:compile
+npm run curation:queue
+
+# Auditoria do Wikidata
+npm run data:audit:wikidata
+npm run data:audit:values
+```
+
+## 11. Definição de pronto para a próxima entrega
+
+A próxima entrega deve ser considerada pronta somente se:
+
+- o extrator de PDF (ou sua primeira etapa) tiver testes reproduzíveis;
+- a saída preservar hash, fonte e página;
+- ambiguidades estiverem visíveis em quarentena, não ocultas por heurística;
+- nenhum dado tiver sido promovido a pirâmide, acorde, desempenho ou ranking sem evidência e revisão apropriadas;
+- a PWA continuar carregando localmente e os quatro comandos de qualidade passarem;
+- documentação, changelog/commit e instruções de execução forem atualizados.
