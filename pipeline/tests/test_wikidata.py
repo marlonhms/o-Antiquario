@@ -9,8 +9,10 @@ from antiquario_data.io_utils import load_json, save_raw_snapshot
 from antiquario_data.wikidata import (
     USER_AGENT,
     audit_wikidata_properties,
+    audit_wikidata_property_values,
     build_discovery_queries,
     build_olfactory_descriptor_query,
+    build_property_value_audit_query,
     build_property_audit_query,
     build_perfume_query,
     merge_sparql_payloads,
@@ -19,6 +21,7 @@ from antiquario_data.wikidata import (
     normalize_olfactory_descriptor_payload,
     sync_wikidata,
     summarize_property_audit,
+    summarize_property_value_audit,
 )
 
 
@@ -84,6 +87,54 @@ class WikidataPipelineTest(unittest.TestCase):
         self.assertEqual("Q999999991", records[0].fragrance_wikidata_id)
         self.assertEqual("vetiver", records[0].descriptor.label)
         self.assertFalse(hasattr(records[0], "pyramid_layer"))
+
+    def test_property_value_audit_keeps_each_wikidata_value_explicit(self) -> None:
+        query = build_property_value_audit_query(["Q999999992", "Q999999991"], ["P366", "P1552"])
+        self.assertIn("(wd:P1552 wdt:P1552) (wd:P366 wdt:P366)", query)
+        payload = {"results": {"bindings": [
+            {
+                "property": {"value": "http://www.wikidata.org/entity/P1552"},
+                "propertyLabel": {"value": "has quality"},
+                "value": {"value": "http://www.wikidata.org/entity/Q1"},
+                "valueLabel": {"value": "floral"},
+                "itemsWithValue": {"value": "2"},
+                "links": {"value": "3"},
+            },
+            {
+                "property": {"value": "http://www.wikidata.org/entity/P366"},
+                "propertyLabel": {"value": "use"},
+                "value": {"value": "http://www.wikidata.org/entity/Q2"},
+                "valueLabel": {"value": "office"},
+                "itemsWithValue": {"value": "1"},
+                "links": {"value": "1"},
+            },
+        ]}}
+        summary = summarize_property_value_audit(payload)
+        self.assertEqual(["P1552", "P366"], [item["propertyId"] for item in summary])
+        self.assertEqual("floral", summary[0]["values"][0]["label"])
+
+    def test_audits_property_values_with_injected_fetcher(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            data = Path(directory) / "data"
+            sync_wikidata(data, limit=10, fixture=FIXTURE, retrieved_at="2026-07-22")
+            from antiquario_data.warehouse import build_catalog
+            build_catalog(data)
+            report = audit_wikidata_property_values(
+                data,
+                output_path=Path(directory) / "values-audit.json",
+                property_ids=["P1552"],
+                retrieved_at="2026-07-22",
+                fetcher=lambda _query: {"results": {"bindings": [{
+                    "property": {"value": "http://www.wikidata.org/entity/P1552"},
+                    "propertyLabel": {"value": "has quality"},
+                    "value": {"value": "http://www.wikidata.org/entity/Q1"},
+                    "valueLabel": {"value": "floral"},
+                    "itemsWithValue": {"value": "2"},
+                    "links": {"value": "2"},
+                }]}} ,
+            )
+            self.assertEqual([], report["missingProperties"])
+            self.assertEqual("Q1", report["properties"][0]["values"][0]["wikidataId"])
 
     def test_audits_catalog_properties_with_injected_fetcher(self) -> None:
         with tempfile.TemporaryDirectory() as directory:

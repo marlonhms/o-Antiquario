@@ -23,6 +23,7 @@
     "data:build": "node scripts/run-python.mjs -m antiquario_data.cli build",
     "data:status": "node scripts/run-python.mjs -m antiquario_data.cli status",
     "data:audit:wikidata": "node scripts/run-python.mjs -m antiquario_data.cli wikidata-audit",
+    "data:audit:values": "node scripts/run-python.mjs -m antiquario_data.cli wikidata-values-audit",
     "curation:queue": "node scripts/run-python.mjs -m antiquario_data.cli curation-queue",
     "catalog:compile": "npm run knowledge:build && node scripts/run-python.mjs -m antiquario_data.cli release",
     "demo": "node src/recommender/demo.ts"

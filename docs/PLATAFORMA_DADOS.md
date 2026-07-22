@@ -69,11 +69,16 @@ Antes de adicionar novos campos ao catálogo, a auditoria consulta quais proprie
 
 ```powershell
 npm run data:audit:wikidata
+npm run data:audit:values
 ```
 
 O relatório sai em `data/staging/wikidata/property-audit.json`, com cobertura por propriedade e uma lista explícita de propriedades ainda não mapeadas pelo pipeline. Atualmente `P5872` (`cheira a`) é mapeada como descritor factual; não como pirâmide.
 
 Na importação atual, há 1.110 relações `cheira a` distribuídas por 132 das 282 fragrâncias factuais. Elas tornam a descoberta e a fila de curadoria mais conectadas, mas não são suficientes para afirmar topo, coração, fundo, acorde, desempenho ou contexto de uso.
+
+`data:audit:values` aprofunda os quatro próximos candidatos (`P1552`, `P2360`, `P366` e `P4543`), listando seus valores e cobertura em `data/staging/wikidata/property-values-audit.json`. Use `-- --property P1552` para avaliar somente uma propriedade.
+
+Na auditoria inicial de 282 QIDs, `P1552` revelou concentração e marcação de gênero — não acordes ou famílias. `P2360` descreve público-alvo; `P366` descreve usos genéricos do produto, não ocasião de uso; e `P4543` traz ingredientes em apenas dois perfumes. A promoção desses dados será feita por papel factual explícito, sem inferir contexto, pirâmide ou desempenho.
 
 ## Descoberta regional no Wikidata
 

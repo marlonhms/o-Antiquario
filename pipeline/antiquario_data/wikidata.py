@@ -24,6 +24,8 @@ from .warehouse import _duckdb
 
 WIKIDATA_ENDPOINT = "https://query.wikidata.org/sparql"
 USER_AGENT = "O-Antiquario/0.1 (https://github.com/marlonhms/o-Antiquario; contato via GitHub)"
+PROPERTY_ID_PATTERN = re.compile(r"^P[1-9][0-9]*$")
+WIKIDATA_SEMANTIC_AUDIT_PROPERTIES = ("P1552", "P2360", "P366", "P4543")
 
 
 def build_perfume_query(limit: int, *, origin_countries: Sequence[str] = ()) -> str:
@@ -120,6 +122,39 @@ WHERE {{
 ORDER BY ?item ?descriptor"""
 
 
+def build_property_value_audit_query(
+    wikidata_ids: Sequence[str],
+    property_ids: Sequence[str] = WIKIDATA_SEMANTIC_AUDIT_PROPERTIES,
+) -> str:
+    normalized_ids = tuple(sorted(set(wikidata_ids)))
+    normalized_properties = tuple(sorted(set(property_ids)))
+    if not normalized_ids:
+        raise ValueError("A auditoria semântica exige ao menos um QID de fragrância")
+    if len(normalized_ids) > 100:
+        raise ValueError("A auditoria semântica aceita no máximo 100 QIDs por consulta")
+    invalid_ids = [wikidata_id for wikidata_id in normalized_ids if not QID_PATTERN.fullmatch(wikidata_id)]
+    invalid_properties = [property_id for property_id in normalized_properties if not PROPERTY_ID_PATTERN.fullmatch(property_id)]
+    if invalid_ids:
+        raise ValueError(f"QIDs inválidos na auditoria semântica: {', '.join(invalid_ids)}")
+    if not normalized_properties or invalid_properties:
+        invalid = invalid_properties or ["nenhuma propriedade"]
+        raise ValueError(f"Propriedades inválidas na auditoria semântica: {', '.join(invalid)}")
+    items = " ".join(f"wd:{wikidata_id}" for wikidata_id in normalized_ids)
+    properties = " ".join(f"(wd:{property_id} wdt:{property_id})" for property_id in normalized_properties)
+    return f"""SELECT ?property ?propertyLabel ?value ?valueLabel
+       (COUNT(DISTINCT ?item) AS ?itemsWithValue)
+       (COUNT(*) AS ?links)
+WHERE {{
+  VALUES ?item {{ {items} }}
+  VALUES (?property ?directProperty) {{ {properties} }}
+  ?item ?directProperty ?value .
+  FILTER(isIRI(?value))
+  SERVICE wikibase:label {{ bd:serviceParam wikibase:language "pt,en". }}
+}}
+GROUP BY ?property ?propertyLabel ?value ?valueLabel
+ORDER BY ?property DESC(?itemsWithValue) ?value"""
+
+
 def _property_id(uri: str | None) -> str | None:
     if not uri:
         return None
@@ -153,6 +188,105 @@ def summarize_property_audit(payload: dict[str, Any]) -> list[dict[str, Any]]:
         properties.values(),
         key=lambda item: (-item["itemsWithProperty"], -item["statements"], item["propertyId"]),
     )
+
+
+def summarize_property_value_audit(payload: dict[str, Any]) -> list[dict[str, Any]]:
+    bindings = payload.get("results", {}).get("bindings")
+    if not isinstance(bindings, list):
+        raise ValueError("Resposta SPARQL não contém results.bindings")
+    properties: dict[str, dict[str, Any]] = {}
+    for binding in bindings:
+        if not isinstance(binding, dict):
+            continue
+        property_id = _property_id(_binding_value(binding, "property"))
+        property_label = _binding_value(binding, "propertyLabel")
+        value_id = _entity_id(_binding_value(binding, "value"))
+        value_label = _binding_value(binding, "valueLabel")
+        item_count = _binding_value(binding, "itemsWithValue")
+        link_count = _binding_value(binding, "links")
+        if not all((property_id, property_label, value_id, value_label, item_count, link_count)):
+            continue
+        property_summary = properties.setdefault(property_id, {
+            "propertyId": property_id,
+            "label": property_label,
+            "values": {},
+        })
+        value_summary = property_summary["values"].setdefault(value_id, {
+            "wikidataId": value_id,
+            "label": value_label,
+            "itemsWithValue": 0,
+            "links": 0,
+        })
+        value_summary["itemsWithValue"] += int(item_count)
+        value_summary["links"] += int(link_count)
+    result: list[dict[str, Any]] = []
+    for property_summary in properties.values():
+        values = sorted(
+            property_summary["values"].values(),
+            key=lambda item: (-item["itemsWithValue"], -item["links"], item["wikidataId"]),
+        )
+        result.append({
+            "propertyId": property_summary["propertyId"],
+            "label": property_summary["label"],
+            "distinctValues": len(values),
+            "itemValuePairs": sum(item["itemsWithValue"] for item in values),
+            "links": sum(item["links"] for item in values),
+            "values": values,
+        })
+    return sorted(result, key=lambda item: item["propertyId"])
+
+
+def audit_wikidata_property_values(
+    data_directory: Path,
+    *,
+    output_path: Path,
+    property_ids: Sequence[str] = WIKIDATA_SEMANTIC_AUDIT_PROPERTIES,
+    batch_size: int = 100,
+    retrieved_at: str | None = None,
+    fetcher: Callable[..., dict[str, Any]] | None = None,
+) -> dict[str, Any]:
+    if not 1 <= batch_size <= 100:
+        raise ValueError("batch_size deve estar entre 1 e 100")
+    database_path = data_directory / "catalog" / "catalog.duckdb"
+    if not database_path.exists():
+        raise FileNotFoundError("Catálogo DuckDB ausente. Execute data:build antes da auditoria.")
+    connection = _duckdb().connect(str(database_path), read_only=True)
+    try:
+        wikidata_ids = [row[0] for row in connection.execute("SELECT wikidata_id FROM fragrances ORDER BY wikidata_id").fetchall()]
+    finally:
+        connection.close()
+    queries = [
+        build_property_value_audit_query(wikidata_ids[index:index + batch_size], property_ids)
+        for index in range(0, len(wikidata_ids), batch_size)
+    ]
+    query_fetcher = fetcher or fetch_sparql
+    payload = merge_sparql_payloads([query_fetcher(query) for query in queries])
+    raw_path, envelope = save_raw_snapshot(
+        payload,
+        "\n\n".join(queries),
+        data_directory / "raw" / "wikidata" / "semantic-audits",
+        retrieved_at=retrieved_at,
+        filename_prefix="property-values",
+    )
+    requested_properties = tuple(sorted(set(property_ids)))
+    properties = summarize_property_value_audit(envelope["payload"])
+    report = {
+        "schemaVersion": 1,
+        "sourceId": "wikidata",
+        "retrievedAt": envelope["retrieved_at"],
+        "snapshotId": envelope["snapshot_id"],
+        "rawPath": raw_path.relative_to(data_directory).as_posix(),
+        "scope": {"fragranceQids": len(wikidata_ids), "batchSize": batch_size},
+        "requestedPropertyIds": requested_properties,
+        "properties": properties,
+        "missingProperties": [
+            property_id for property_id in requested_properties
+            if property_id not in {item["propertyId"] for item in properties}
+        ],
+        "interpretation": "Os valores são vínculos estruturados do Wikidata; sua promoção a faceta, contexto, matéria-prima, acorde ou nota exige mapeamento explícito.",
+    }
+    atomic_write_text(output_path, f"{json.dumps(report, ensure_ascii=False, sort_keys=True, indent=2)}\n")
+    return report
 
 
 def normalize_olfactory_descriptor_payload(

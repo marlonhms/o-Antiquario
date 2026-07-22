@@ -1,0 +1,297 @@
+{
+  "interpretation": "Os valores são vínculos estruturados do Wikidata; sua promoção a faceta, contexto, matéria-prima, acorde ou nota exige mapeamento explícito.",
+  "missingProperties": [],
+  "properties": [
+    {
+      "distinctValues": 14,
+      "itemValuePairs": 184,
+      "label": "tem característica",
+      "links": 184,
+      "propertyId": "P1552",
+      "values": [
+        {
+          "itemsWithValue": 53,
+          "label": "eau de parfum",
+          "links": 53,
+          "wikidataId": "Q9376212"
+        },
+        {
+          "itemsWithValue": 40,
+          "label": "feminino",
+          "links": 40,
+          "wikidataId": "Q1775415"
+        },
+        {
+          "itemsWithValue": 24,
+          "label": "unisex",
+          "links": 24,
+          "wikidataId": "Q137183768"
+        },
+        {
+          "itemsWithValue": 23,
+          "label": "eau de toilette",
+          "links": 23,
+          "wikidataId": "Q2605029"
+        },
+        {
+          "itemsWithValue": 14,
+          "label": "reminiscence",
+          "links": 14,
+          "wikidataId": "Q2143005"
+        },
+        {
+          "itemsWithValue": 8,
+          "label": "extrait de parfum",
+          "links": 8,
+          "wikidataId": "Q125849370"
+        },
+        {
+          "itemsWithValue": 8,
+          "label": "masculino",
+          "links": 8,
+          "wikidataId": "Q499327"
+        },
+        {
+          "itemsWithValue": 4,
+          "label": "unissex",
+          "links": 4,
+          "wikidataId": "Q76976"
+        },
+        {
+          "itemsWithValue": 3,
+          "label": "feminine",
+          "links": 3,
+          "wikidataId": "Q137183754"
+        },
+        {
+          "itemsWithValue": 2,
+          "label": "masculine",
+          "links": 2,
+          "wikidataId": "Q137183777"
+        },
+        {
+          "itemsWithValue": 2,
+          "label": "Água-de-colónia",
+          "links": 2,
+          "wikidataId": "Q2863"
+        },
+        {
+          "itemsWithValue": 1,
+          "label": "elixir de parfum",
+          "links": 1,
+          "wikidataId": "Q140371413"
+        },
+        {
+          "itemsWithValue": 1,
+          "label": "eau intimité",
+          "links": 1,
+          "wikidataId": "Q140406868"
+        },
+        {
+          "itemsWithValue": 1,
+          "label": "nojo",
+          "links": 1,
+          "wikidataId": "Q208351"
+        }
+      ]
+    },
+    {
+      "distinctValues": 3,
+      "itemValuePairs": 26,
+      "label": "público-alvo",
+      "links": 26,
+      "propertyId": "P2360",
+      "values": [
+        {
+          "itemsWithValue": 17,
+          "label": "qualquer gênero",
+          "links": 17,
+          "wikidataId": "Q70853302"
+        },
+        {
+          "itemsWithValue": 6,
+          "label": "mulher",
+          "links": 6,
+          "wikidataId": "Q467"
+        },
+        {
+          "itemsWithValue": 3,
+          "label": "homem",
+          "links": 3,
+          "wikidataId": "Q8441"
+        }
+      ]
+    },
+    {
+      "distinctValues": 5,
+      "itemValuePairs": 23,
+      "label": "uso",
+      "links": 23,
+      "propertyId": "P366",
+      "values": [
+        {
+          "itemsWithValue": 13,
+          "label": "women's perfume",
+          "links": 13,
+          "wikidataId": "Q125502144"
+        },
+        {
+          "itemsWithValue": 7,
+          "label": "men's perfume",
+          "links": 7,
+          "wikidataId": "Q130306997"
+        },
+        {
+          "itemsWithValue": 1,
+          "label": "perfume",
+          "links": 1,
+          "wikidataId": "Q131746"
+        },
+        {
+          "itemsWithValue": 1,
+          "label": "perfumery",
+          "links": 1,
+          "wikidataId": "Q1979901"
+        },
+        {
+          "itemsWithValue": 1,
+          "label": "sabor",
+          "links": 1,
+          "wikidataId": "Q4173974"
+        }
+      ]
+    },
+    {
+      "distinctValues": 18,
+      "itemValuePairs": 18,
+      "label": "ingrediente listado",
+      "links": 18,
+      "propertyId": "P4543",
+      "values": [
+        {
+          "itemsWithValue": 1,
+          "label": "litchi",
+          "links": 1,
+          "wikidataId": "Q105428070"
+        },
+        {
+          "itemsWithValue": 1,
+          "label": "jasmine oil",
+          "links": 1,
+          "wikidataId": "Q1102633"
+        },
+        {
+          "itemsWithValue": 1,
+          "label": "English Breakfast tea",
+          "links": 1,
+          "wikidataId": "Q1193772"
+        },
+        {
+          "itemsWithValue": 1,
+          "label": "Q136651853",
+          "links": 1,
+          "wikidataId": "Q136651853"
+        },
+        {
+          "itemsWithValue": 1,
+          "label": "Q136652037",
+          "links": 1,
+          "wikidataId": "Q136652037"
+        },
+        {
+          "itemsWithValue": 1,
+          "label": "Lonicera",
+          "links": 1,
+          "wikidataId": "Q156047"
+        },
+        {
+          "itemsWithValue": 1,
+          "label": "Opopanax",
+          "links": 1,
+          "wikidataId": "Q21024255"
+        },
+        {
+          "itemsWithValue": 1,
+          "label": "Citronelol",
+          "links": 1,
+          "wikidataId": "Q27122080"
+        },
+        {
+          "itemsWithValue": 1,
+          "label": "(+)-limonene",
+          "links": 1,
+          "wikidataId": "Q27888324"
+        },
+        {
+          "itemsWithValue": 1,
+          "label": "almíscar",
+          "links": 1,
+          "wikidataId": "Q323461"
+        },
+        {
+          "itemsWithValue": 1,
+          "label": "Lotus",
+          "links": 1,
+          "wikidataId": "Q3645698"
+        },
+        {
+          "itemsWithValue": 1,
+          "label": "geraniol",
+          "links": 1,
+          "wikidataId": "Q410836"
+        },
+        {
+          "itemsWithValue": 1,
+          "label": "linalol",
+          "links": 1,
+          "wikidataId": "Q410932"
+        },
+        {
+          "itemsWithValue": 1,
+          "label": "Citral",
+          "links": 1,
+          "wikidataId": "Q60176530"
+        },
+        {
+          "itemsWithValue": 1,
+          "label": "farnesil",
+          "links": 1,
+          "wikidataId": "Q60194891"
+        },
+        {
+          "itemsWithValue": 1,
+          "label": "sandalwood oil",
+          "links": 1,
+          "wikidataId": "Q675299"
+        },
+        {
+          "itemsWithValue": 1,
+          "label": "tangerine oil",
+          "links": 1,
+          "wikidataId": "Q72509416"
+        },
+        {
+          "itemsWithValue": 1,
+          "label": "Evernia prunastri",
+          "links": 1,
+          "wikidataId": "Q904074"
+        }
+      ]
+    }
+  ],
+  "rawPath": "raw/wikidata/semantic-audits/property-values-0241f4f835e2.json",
+  "requestedPropertyIds": [
+    "P1552",
+    "P2360",
+    "P366",
+    "P4543"
+  ],
+  "retrievedAt": "2026-07-22",
+  "schemaVersion": 1,
+  "scope": {
+    "batchSize": 100,
+    "fragranceQids": 282
+  },
+  "snapshotId": "0241f4f835e2b76ae250540d82e480bda27885ae10a67e924726dfd2eb53e158",
+  "sourceId": "wikidata"
+}

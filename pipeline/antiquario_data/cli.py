@@ -10,7 +10,7 @@ from .io_utils import load_json
 from .catalog_release import compile_catalog_release
 from .curation_queue import build_curation_queue
 from .warehouse import build_catalog
-from .wikidata import audit_wikidata_properties, sync_wikidata
+from .wikidata import audit_wikidata_properties, audit_wikidata_property_values, sync_wikidata
 
 
 def _print(value: object) -> None:
@@ -57,6 +57,11 @@ def create_parser() -> argparse.ArgumentParser:
     audit.add_argument("--output", type=Path, default=Path("data/staging/wikidata/property-audit.json"))
     audit.add_argument("--batch-size", type=int, default=100)
     audit.add_argument("--retrieved-at", help="data ISO fixa, útil para auditorias reproduzíveis")
+    values_audit = commands.add_parser("wikidata-values-audit", help="audita valores das propriedades semânticas do Wikidata")
+    values_audit.add_argument("--output", type=Path, default=Path("data/staging/wikidata/property-values-audit.json"))
+    values_audit.add_argument("--property", action="append", default=[], metavar="PID")
+    values_audit.add_argument("--batch-size", type=int, default=100)
+    values_audit.add_argument("--retrieved-at", help="data ISO fixa, útil para auditorias reproduzíveis")
     return parser
 
 
@@ -109,6 +114,14 @@ def main(argv: Sequence[str] | None = None) -> int:
             _print(audit_wikidata_properties(
                 data_directory,
                 output_path=args.output.resolve(),
+                batch_size=args.batch_size,
+                retrieved_at=args.retrieved_at,
+            ))
+        elif args.command == "wikidata-values-audit":
+            _print(audit_wikidata_property_values(
+                data_directory,
+                output_path=args.output.resolve(),
+                property_ids=args.property or ("P1552", "P2360", "P366", "P4543"),
                 batch_size=args.batch_size,
                 retrieved_at=args.retrieved_at,
             ))
