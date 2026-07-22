@@ -10,7 +10,7 @@ from .io_utils import load_json
 from .catalog_release import compile_catalog_release
 from .curation_queue import build_curation_queue
 from .warehouse import build_catalog
-from .wikidata import sync_wikidata
+from .wikidata import audit_wikidata_properties, sync_wikidata
 
 
 def _print(value: object) -> None:
@@ -53,6 +53,10 @@ def create_parser() -> argparse.ArgumentParser:
     curation.add_argument("--vault-dir", type=Path, default=Path("knowledge/vault"))
     curation.add_argument("--release-dir", type=Path, default=Path("apps/web/public/catalog"))
     curation.add_argument("--report", type=Path, default=Path("data/curation/curation-queue.json"))
+    audit = commands.add_parser("wikidata-audit", help="audita propriedades Wikidata presentes no catálogo factual")
+    audit.add_argument("--output", type=Path, default=Path("data/staging/wikidata/property-audit.json"))
+    audit.add_argument("--batch-size", type=int, default=100)
+    audit.add_argument("--retrieved-at", help="data ISO fixa, útil para auditorias reproduzíveis")
     return parser
 
 
@@ -101,6 +105,13 @@ def main(argv: Sequence[str] | None = None) -> int:
                 limit=args.limit,
             )
             _print(result.as_dict())
+        elif args.command == "wikidata-audit":
+            _print(audit_wikidata_properties(
+                data_directory,
+                output_path=args.output.resolve(),
+                batch_size=args.batch_size,
+                retrieved_at=args.retrieved_at,
+            ))
         return 0
     except (FileNotFoundError, RuntimeError, ValueError) as error:
         print(f"erro: {error}", file=sys.stderr)

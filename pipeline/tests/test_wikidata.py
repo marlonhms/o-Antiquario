@@ -8,12 +8,17 @@ import unittest
 from antiquario_data.io_utils import load_json, save_raw_snapshot
 from antiquario_data.wikidata import (
     USER_AGENT,
+    audit_wikidata_properties,
     build_discovery_queries,
+    build_olfactory_descriptor_query,
+    build_property_audit_query,
     build_perfume_query,
     merge_sparql_payloads,
     normalize_sparql_payload,
     normalize_sparql_payload_with_quality,
+    normalize_olfactory_descriptor_payload,
     sync_wikidata,
+    summarize_property_audit,
 )
 
 
@@ -27,6 +32,78 @@ class WikidataPipelineTest(unittest.TestCase):
         self.assertIn("wdt:P14539", query)
         self.assertIn("LIMIT 125", query)
         self.assertIn("github.com/marlonhms/o-Antiquario", USER_AGENT)
+
+    def test_property_audit_query_and_summary_are_deterministic(self) -> None:
+        query = build_property_audit_query(["Q999999992", "Q999999991"])
+        self.assertIn("wd:Q999999991 wd:Q999999992", query)
+        payload = {"results": {"bindings": [
+            {
+                "property": {"value": "http://www.wikidata.org/entity/P571"},
+                "propertyLabel": {"value": "inception"},
+                "itemsWithProperty": {"value": "2"},
+                "statements": {"value": "2"},
+            },
+            {
+                "property": {"value": "http://www.wikidata.org/entity/P180"},
+                "propertyLabel": {"value": "depicts"},
+                "itemsWithProperty": {"value": "1"},
+                "statements": {"value": "3"},
+            },
+        ]}}
+        self.assertEqual("P571", summarize_property_audit(payload)[0]["propertyId"])
+        with self.assertRaisesRegex(ValueError, "QIDs inválidos"):
+            build_property_audit_query(["Brasil"])
+
+    def test_normalizes_wikidata_olfactory_descriptors_without_claiming_pyramid_layer(self) -> None:
+        query = build_olfactory_descriptor_query(["Q999999992", "Q999999991"])
+        self.assertIn("wdt:P5872", query)
+        payload = {"results": {"bindings": [
+            {
+                "item": {"value": "http://www.wikidata.org/entity/Q999999991"},
+                "descriptor": {"value": "http://www.wikidata.org/entity/Q123"},
+                "descriptorLabel": {"value": "vetiver", "xml:lang": "pt"},
+            },
+            {
+                "item": {"value": "http://www.wikidata.org/entity/Q999999991"},
+                "descriptor": {"value": "http://www.wikidata.org/entity/Q123"},
+                "descriptorLabel": {"value": "vetiver", "xml:lang": "pt"},
+            },
+            {
+                "item": {"value": "http://www.wikidata.org/entity/Q999999999"},
+                "descriptor": {"value": "http://www.wikidata.org/entity/Q456"},
+                "descriptorLabel": {"value": "baunilha", "xml:lang": "pt"},
+            },
+        ]}}
+        records = normalize_olfactory_descriptor_payload(
+            payload,
+            accepted_fragrance_ids={"Q999999991", "Q999999992"},
+            retrieved_at="2026-07-22",
+            snapshot_id="a" * 64,
+        )
+        self.assertEqual(1, len(records))
+        self.assertEqual("Q999999991", records[0].fragrance_wikidata_id)
+        self.assertEqual("vetiver", records[0].descriptor.label)
+        self.assertFalse(hasattr(records[0], "pyramid_layer"))
+
+    def test_audits_catalog_properties_with_injected_fetcher(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            data = Path(directory) / "data"
+            sync_wikidata(data, limit=10, fixture=FIXTURE, retrieved_at="2026-07-22")
+            from antiquario_data.warehouse import build_catalog
+            build_catalog(data)
+            report = audit_wikidata_properties(
+                data,
+                output_path=Path(directory) / "audit.json",
+                retrieved_at="2026-07-22",
+                fetcher=lambda _query: {"results": {"bindings": [{
+                    "property": {"value": "http://www.wikidata.org/entity/P14539"},
+                    "propertyLabel": {"value": "perfumer"},
+                    "itemsWithProperty": {"value": "2"},
+                    "statements": {"value": "2"},
+                }]}},
+            )
+            self.assertEqual(2, report["scope"]["fragranceQids"])
+            self.assertEqual([], report["unmappedProperties"])
 
     def test_regional_discovery_adds_strict_origin_filter_without_replacing_base_query(self) -> None:
         queries = build_discovery_queries(125, ["Q878", "Q155", "Q878"])

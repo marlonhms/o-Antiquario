@@ -106,3 +106,36 @@ class FragranceRecord:
             countries=tuple(EntityReference(**item) for item in value.get("countries", [])),
             provenance=Provenance(**provenance),
         )
+
+
+@dataclass(frozen=True, order=True)
+class OlfactoryDescriptorRecord:
+    """Uma relação factual Wikidata ``perfume → cheira a → entidade``.
+
+    Não equivale a uma nota declarada pelo fabricante e não contém a camada da
+    pirâmide. Essa separação impede que o catálogo transforme um descritor em
+    uma afirmação editorial mais forte do que a fonte permite.
+    """
+
+    fragrance_wikidata_id: str
+    descriptor: EntityReference
+    provenance: Provenance
+
+    def __post_init__(self) -> None:
+        if not QID_PATTERN.fullmatch(self.fragrance_wikidata_id):
+            raise ValueError(f"Wikidata ID inválido: {self.fragrance_wikidata_id}")
+
+    def as_dict(self) -> dict[str, Any]:
+        return {
+            "fragrance_wikidata_id": self.fragrance_wikidata_id,
+            "descriptor": self.descriptor.as_dict(),
+            "provenance": self.provenance.as_dict(),
+        }
+
+    @classmethod
+    def from_dict(cls, value: dict[str, Any]) -> OlfactoryDescriptorRecord:
+        return cls(
+            fragrance_wikidata_id=value["fragrance_wikidata_id"],
+            descriptor=EntityReference(**value["descriptor"]),
+            provenance=Provenance(**value["provenance"]),
+        )

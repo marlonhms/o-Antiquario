@@ -47,7 +47,7 @@ sources:
     name: Wikidata
     homepage: https://www.wikidata.org/
     classification: allowed_core
-    purpose: Identidade, marca, país, ano, perfumistas e identificadores externos.
+    purpose: Identidade, marca, país, ano, perfumistas, identificadores externos e descritores olfativos declarados.
     license:
       identifier: CC0-1.0
       name: Creative Commons CC0 1.0 Universal
@@ -70,7 +70,7 @@ sources:
       redistribution: allowed
       attribution_label: Dados do Wikidata
     fields:
-      allowed: [identity, brand, country, year, perfumers, official_website, external_ids]
+      allowed: [identity, brand, country, year, perfumers, official_website, external_ids, olfactory_descriptors]
       forbidden: [editorial_text, community_reviews, wikimedia_images_without_file_review]
     review:
       reviewed_at: 2026-07-22

@@ -5,6 +5,7 @@
     "with_country": 54,
     "with_launch_year": 132,
     "with_official_website": 50,
+    "with_olfactory_descriptors": 132,
     "with_perfumer": 141
   },
   "discovery_countries": [
@@ -14,6 +15,6 @@
   "input_rows": 366,
   "quarantined_records": 55,
   "schema_version": 1,
-  "snapshot_id": "c1f419a24309bb35d809ae8f9a35a9c117f2d722b7e9165ed8a1139293faf75a",
+  "snapshot_id": "a8c70e5fb9e9a5d132f837b47fbe9f20bea4bf73cc0e71b37880046fc7a1c567",
   "source_id": "wikidata"
 }

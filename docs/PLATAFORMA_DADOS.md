@@ -29,7 +29,7 @@ O projeto declara a faixa compatível no `pyproject.toml` e registra a versão v
 Wikidata SPARQL
   → snapshot bruto imutável por hash
   → normalização e deduplicação por QID
-  → data/staging/wikidata/fragrances.jsonl
+  → data/staging/wikidata/fragrances.jsonl + olfactory-descriptors.jsonl
   → quarentena + relatório de qualidade
   → validação e tabelas relacionais
   → data/catalog/catalog.duckdb
@@ -38,7 +38,7 @@ Wikidata SPARQL
   → release JSON versionada para a PWA
 ```
 
-O conector utiliza a classe `perfume (Q131746)`, marca/fabricante, país de origem, perfumista, datas e site oficial. Notas olfativas não são inferidas pelo Wikidata nesta etapa.
+O conector utiliza a classe `perfume (Q131746)`, marca/fabricante, país de origem, perfumista, datas e site oficial. Quando declarado, também importa `cheira a` (`P5872`) como **descritor olfativo factual**. Esse campo não é tratado como nota nem como camada de pirâmide: a classificação topo/coração/fundo continua editorial e verificável.
 
 ## Comandos
 
@@ -62,6 +62,18 @@ npm run curation:queue
 `catalog:compile` gera os arquivos públicos compactos, o índice de busca local e o relatório de resolução de entidades. O contrato completo está em [Catálogo Web e resolução de entidades](CATALOGO_WEB.md).
 
 `curation:queue` cria rascunhos internos a partir do catálogo factual, sem inserir inferências olfativas no core. Veja [Curadoria Editorial](CURADORIA_EDITORIAL.md).
+
+## Auditoria de propriedades
+
+Antes de adicionar novos campos ao catálogo, a auditoria consulta quais propriedades estruturadas realmente aparecem nos QIDs de fragrância já importados. Ela não altera o catálogo nem infere pirâmide olfativa.
+
+```powershell
+npm run data:audit:wikidata
+```
+
+O relatório sai em `data/staging/wikidata/property-audit.json`, com cobertura por propriedade e uma lista explícita de propriedades ainda não mapeadas pelo pipeline. Atualmente `P5872` (`cheira a`) é mapeada como descritor factual; não como pirâmide.
+
+Na importação atual, há 1.110 relações `cheira a` distribuídas por 132 das 282 fragrâncias factuais. Elas tornam a descoberta e a fila de curadoria mais conectadas, mas não são suficientes para afirmar topo, coração, fundo, acorde, desempenho ou contexto de uso.
 
 ## Descoberta regional no Wikidata
 

@@ -6,6 +6,8 @@ import tempfile
 import unittest
 
 from antiquario_data.curation_queue import build_curation_queue
+from antiquario_data.io_utils import write_olfactory_descriptors_jsonl
+from antiquario_data.models import EntityReference, OlfactoryDescriptorRecord, Provenance
 from antiquario_data.warehouse import build_catalog
 from antiquario_data.wikidata import sync_wikidata
 
@@ -22,6 +24,20 @@ class CurationQueueTest(unittest.TestCase):
             release = root / "release"
             report = root / "report.json"
             sync_wikidata(data, limit=10, fixture=FIXTURE, retrieved_at="2026-07-22")
+            write_olfactory_descriptors_jsonl(
+                data / "staging" / "wikidata" / "olfactory-descriptors.jsonl",
+                [OlfactoryDescriptorRecord(
+                    fragrance_wikidata_id="Q999999991",
+                    descriptor=EntityReference(wikidata_id="Q999999961", label="Vetiver"),
+                    provenance=Provenance(
+                        source_id="wikidata",
+                        source_url="https://www.wikidata.org/wiki/Q999999991",
+                        license="CC0-1.0",
+                        retrieved_at="2026-07-22",
+                        snapshot_id="c" * 64,
+                    ),
+                )],
+            )
             build_catalog(data)
             (release / "resolution-report.json").parent.mkdir(parents=True)
             (release / "resolution-report.json").write_text(json.dumps({
@@ -41,6 +57,7 @@ class CurationQueueTest(unittest.TestCase):
             draft = first.created[0]
             contents = draft.read_text(encoding="utf-8")
             self.assertIn("wikidata: Q999999991", contents)
+            self.assertIn("Descritores olfativos (`P5872`, sem camada de pirâmide): Vetiver", contents)
             self.assertIn("curadoria-pendente", contents)
             self.assertIn("não deve ser usado pelo motor de ranking", contents)
 

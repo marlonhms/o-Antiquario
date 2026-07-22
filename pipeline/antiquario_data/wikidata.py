@@ -10,8 +10,16 @@ from urllib.error import HTTPError, URLError
 from urllib.parse import urlencode
 from urllib.request import Request, urlopen
 
-from .io_utils import atomic_write_text, load_json, save_raw_snapshot, write_dicts_jsonl, write_records_jsonl
-from .models import EntityReference, FragranceRecord, Provenance, QID_PATTERN
+from .io_utils import (
+    atomic_write_text,
+    load_json,
+    save_raw_snapshot,
+    write_dicts_jsonl,
+    write_olfactory_descriptors_jsonl,
+    write_records_jsonl,
+)
+from .models import EntityReference, FragranceRecord, OlfactoryDescriptorRecord, Provenance, QID_PATTERN
+from .warehouse import _duckdb
 
 
 WIKIDATA_ENDPOINT = "https://query.wikidata.org/sparql"
@@ -68,6 +76,163 @@ def merge_sparql_payloads(payloads: Sequence[dict[str, Any]]) -> dict[str, Any]:
             raise ValueError("Resposta SPARQL não contém results.bindings")
         bindings.extend(binding for binding in source_bindings if isinstance(binding, dict))
     return {"head": {"vars": []}, "results": {"bindings": bindings}}
+
+
+def build_property_audit_query(wikidata_ids: Sequence[str]) -> str:
+    normalized_ids = tuple(sorted(set(wikidata_ids)))
+    if not normalized_ids:
+        raise ValueError("A auditoria exige ao menos um QID de fragrância")
+    if len(normalized_ids) > 100:
+        raise ValueError("A auditoria aceita no máximo 100 QIDs por consulta")
+    invalid_ids = [wikidata_id for wikidata_id in normalized_ids if not QID_PATTERN.fullmatch(wikidata_id)]
+    if invalid_ids:
+        raise ValueError(f"QIDs inválidos na auditoria: {', '.join(invalid_ids)}")
+    values = " ".join(f"wd:{wikidata_id}" for wikidata_id in normalized_ids)
+    return f"""SELECT ?property ?propertyLabel
+       (COUNT(DISTINCT ?item) AS ?itemsWithProperty)
+       (COUNT(*) AS ?statements)
+WHERE {{
+  VALUES ?item {{ {values} }}
+  ?item ?directProperty ?value .
+  ?property wikibase:directClaim ?directProperty .
+  SERVICE wikibase:label {{ bd:serviceParam wikibase:language "pt,en". }}
+}}
+GROUP BY ?property ?propertyLabel
+ORDER BY DESC(?itemsWithProperty) ?property"""
+
+
+def build_olfactory_descriptor_query(wikidata_ids: Sequence[str]) -> str:
+    normalized_ids = tuple(sorted(set(wikidata_ids)))
+    if not normalized_ids:
+        raise ValueError("A sincronização de descritores exige ao menos um QID de fragrância")
+    if len(normalized_ids) > 100:
+        raise ValueError("A sincronização de descritores aceita no máximo 100 QIDs por consulta")
+    invalid_ids = [wikidata_id for wikidata_id in normalized_ids if not QID_PATTERN.fullmatch(wikidata_id)]
+    if invalid_ids:
+        raise ValueError(f"QIDs inválidos na sincronização de descritores: {', '.join(invalid_ids)}")
+    values = " ".join(f"wd:{wikidata_id}" for wikidata_id in normalized_ids)
+    return f"""SELECT ?item ?descriptor ?descriptorLabel
+WHERE {{
+  VALUES ?item {{ {values} }}
+  ?item wdt:P5872 ?descriptor .
+  SERVICE wikibase:label {{ bd:serviceParam wikibase:language \"pt,en\". }}
+}}
+ORDER BY ?item ?descriptor"""
+
+
+def _property_id(uri: str | None) -> str | None:
+    if not uri:
+        return None
+    candidate = uri.rsplit("/", 1)[-1]
+    return candidate if re.fullmatch(r"P[1-9][0-9]*", candidate) else None
+
+
+def summarize_property_audit(payload: dict[str, Any]) -> list[dict[str, Any]]:
+    bindings = payload.get("results", {}).get("bindings")
+    if not isinstance(bindings, list):
+        raise ValueError("Resposta SPARQL não contém results.bindings")
+    properties: dict[str, dict[str, Any]] = {}
+    for binding in bindings:
+        if not isinstance(binding, dict):
+            continue
+        property_id = _property_id(_binding_value(binding, "property"))
+        label = _binding_value(binding, "propertyLabel")
+        items = _binding_value(binding, "itemsWithProperty")
+        statements = _binding_value(binding, "statements")
+        if not property_id or not label or not items or not statements:
+            continue
+        current = properties.setdefault(property_id, {
+            "propertyId": property_id,
+            "label": label,
+            "itemsWithProperty": 0,
+            "statements": 0,
+        })
+        current["itemsWithProperty"] += int(items)
+        current["statements"] += int(statements)
+    return sorted(
+        properties.values(),
+        key=lambda item: (-item["itemsWithProperty"], -item["statements"], item["propertyId"]),
+    )
+
+
+def normalize_olfactory_descriptor_payload(
+    payload: dict[str, Any],
+    *,
+    accepted_fragrance_ids: set[str],
+    retrieved_at: str,
+    snapshot_id: str,
+) -> list[OlfactoryDescriptorRecord]:
+    bindings = payload.get("results", {}).get("bindings")
+    if not isinstance(bindings, list):
+        raise ValueError("Resposta SPARQL não contém results.bindings")
+    records: set[OlfactoryDescriptorRecord] = set()
+    for binding in bindings:
+        if not isinstance(binding, dict):
+            continue
+        fragrance_id = _entity_id(_binding_value(binding, "item"))
+        descriptor = _entity_reference(binding, "descriptor", "descriptorLabel")
+        if not fragrance_id or fragrance_id not in accepted_fragrance_ids or not descriptor:
+            continue
+        records.add(OlfactoryDescriptorRecord(
+            fragrance_wikidata_id=fragrance_id,
+            descriptor=descriptor,
+            provenance=Provenance(
+                source_id="wikidata",
+                source_url=f"https://www.wikidata.org/wiki/{fragrance_id}",
+                license="CC0-1.0",
+                retrieved_at=retrieved_at,
+                snapshot_id=snapshot_id,
+            ),
+        ))
+    return sorted(records)
+
+
+def audit_wikidata_properties(
+    data_directory: Path,
+    *,
+    output_path: Path,
+    batch_size: int = 100,
+    retrieved_at: str | None = None,
+    fetcher: Callable[..., dict[str, Any]] | None = None,
+) -> dict[str, Any]:
+    if not 1 <= batch_size <= 100:
+        raise ValueError("batch_size deve estar entre 1 e 100")
+    database_path = data_directory / "catalog" / "catalog.duckdb"
+    if not database_path.exists():
+        raise FileNotFoundError("Catálogo DuckDB ausente. Execute data:build antes da auditoria.")
+    connection = _duckdb().connect(str(database_path), read_only=True)
+    try:
+        wikidata_ids = [row[0] for row in connection.execute("SELECT wikidata_id FROM fragrances ORDER BY wikidata_id").fetchall()]
+    finally:
+        connection.close()
+    queries = [build_property_audit_query(wikidata_ids[index:index + batch_size]) for index in range(0, len(wikidata_ids), batch_size)]
+    query_fetcher = fetcher or fetch_sparql
+    payload = merge_sparql_payloads([query_fetcher(query) for query in queries])
+    raw_path, envelope = save_raw_snapshot(
+        payload,
+        "\n\n".join(queries),
+        data_directory / "raw" / "wikidata" / "property-audits",
+        retrieved_at=retrieved_at,
+        filename_prefix="properties",
+    )
+    known_identity_properties = {
+        "P31", "P170", "P495", "P571", "P577", "P856", "P14539", "P1716", "P176", "P5872",
+    }
+    properties = summarize_property_audit(envelope["payload"])
+    report = {
+        "schemaVersion": 1,
+        "sourceId": "wikidata",
+        "retrievedAt": envelope["retrieved_at"],
+        "snapshotId": envelope["snapshot_id"],
+        "rawPath": raw_path.relative_to(data_directory).as_posix(),
+        "scope": {"fragranceQids": len(wikidata_ids), "batchSize": batch_size},
+        "knownIdentityProperties": sorted(known_identity_properties),
+        "unmappedProperties": [item for item in properties if item["propertyId"] not in known_identity_properties],
+        "properties": properties,
+        "interpretation": "A auditoria identifica propriedades estruturadas existentes; P5872 entra como descritor factual, sem inferir pirâmide, acorde ou desempenho.",
+    }
+    atomic_write_text(output_path, f"{json.dumps(report, ensure_ascii=False, sort_keys=True, indent=2)}\n")
+    return report
 
 
 def fetch_sparql(
@@ -257,6 +422,8 @@ class WikidataSyncResult:
     quarantined: int
     quarantine_path: Path
     quality_report_path: Path
+    olfactory_descriptors_path: Path
+    olfactory_descriptors: int
     snapshot_id: str
     retrieved_at: str
 
@@ -268,6 +435,8 @@ class WikidataSyncResult:
             "quarantined": self.quarantined,
             "quarantine_path": self.quarantine_path.as_posix(),
             "quality_report_path": self.quality_report_path.as_posix(),
+            "olfactory_descriptors_path": self.olfactory_descriptors_path.as_posix(),
+            "olfactory_descriptors": self.olfactory_descriptors,
             "snapshot_id": self.snapshot_id,
             "retrieved_at": self.retrieved_at,
         }
@@ -305,9 +474,31 @@ def sync_wikidata(
         snapshot_id=envelope["snapshot_id"],
     )
     staging_path = data_directory / "staging" / "wikidata" / "fragrances.jsonl"
+    descriptors_path = data_directory / "staging" / "wikidata" / "olfactory-descriptors.jsonl"
     quarantine_path = data_directory / "staging" / "wikidata" / "quarantined.jsonl"
     quality_report_path = data_directory / "staging" / "wikidata" / "quality-report.json"
     write_records_jsonl(staging_path, records)
+    descriptors: list[OlfactoryDescriptorRecord] = []
+    if fixture_contents is None and records:
+        descriptor_queries = [
+            build_olfactory_descriptor_query([record.wikidata_id for record in records[index:index + 100]])
+            for index in range(0, len(records), 100)
+        ]
+        descriptor_payload = merge_sparql_payloads([fetch_sparql(item) for item in descriptor_queries])
+        _, descriptor_envelope = save_raw_snapshot(
+            descriptor_payload,
+            "\n\n".join(descriptor_queries),
+            data_directory / "raw" / "wikidata" / "olfactory-descriptors",
+            retrieved_at=envelope["retrieved_at"],
+            filename_prefix="descriptors",
+        )
+        descriptors = normalize_olfactory_descriptor_payload(
+            descriptor_envelope["payload"],
+            accepted_fragrance_ids={record.wikidata_id for record in records},
+            retrieved_at=descriptor_envelope["retrieved_at"],
+            snapshot_id=descriptor_envelope["snapshot_id"],
+        )
+    write_olfactory_descriptors_jsonl(descriptors_path, descriptors)
     write_dicts_jsonl(quarantine_path, quarantined)
     quality_report = {
         "schema_version": 1,
@@ -322,6 +513,7 @@ def sync_wikidata(
             "with_country": sum(bool(record.countries) for record in records),
             "with_launch_year": sum(record.launch_year is not None for record in records),
             "with_official_website": sum(record.official_website is not None for record in records),
+            "with_olfactory_descriptors": len({record.fragrance_wikidata_id for record in descriptors}),
         },
         "discovery_countries": sorted(set(discovery_countries)),
     }
@@ -336,6 +528,8 @@ def sync_wikidata(
         quarantined=len(quarantined),
         quarantine_path=quarantine_path,
         quality_report_path=quality_report_path,
+        olfactory_descriptors_path=descriptors_path,
+        olfactory_descriptors=len(descriptors),
         snapshot_id=envelope["snapshot_id"],
         retrieved_at=envelope["retrieved_at"],
     )

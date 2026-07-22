@@ -6,8 +6,8 @@ import os
 from pathlib import Path
 from typing import Any
 
-from .io_utils import atomic_write_text, read_records_jsonl
-from .models import FragranceRecord, canonical_json
+from .io_utils import atomic_write_text, read_olfactory_descriptors_jsonl, read_records_jsonl
+from .models import FragranceRecord, OlfactoryDescriptorRecord, canonical_json
 
 
 def _duckdb() -> Any:
@@ -31,11 +31,34 @@ def _relation_rows(records: list[FragranceRecord], attribute: str) -> list[tuple
     return sorted(rows)
 
 
+def _olfactory_descriptor_rows(
+    records: list[OlfactoryDescriptorRecord],
+    fragrance_ids: dict[str, str],
+) -> list[tuple[str, str, str, str, str, str, str, str]]:
+    rows = {
+        (
+            fragrance_ids[record.fragrance_wikidata_id],
+            record.descriptor.wikidata_id,
+            record.descriptor.label,
+            record.provenance.source_id,
+            record.provenance.source_url,
+            record.provenance.license,
+            record.provenance.retrieved_at,
+            record.provenance.snapshot_id,
+        )
+        for record in records
+        if record.fragrance_wikidata_id in fragrance_ids
+    }
+    return sorted(rows)
+
+
 def build_catalog(data_directory: Path) -> dict[str, Any]:
     staging_path = data_directory / "staging" / "wikidata" / "fragrances.jsonl"
+    descriptors_staging_path = data_directory / "staging" / "wikidata" / "olfactory-descriptors.jsonl"
     if not staging_path.exists():
         raise FileNotFoundError(f"Staging ausente: {staging_path}. Execute sync wikidata primeiro.")
     records = sorted(read_records_jsonl(staging_path), key=lambda record: record.id)
+    descriptors = read_olfactory_descriptors_jsonl(descriptors_staging_path) if descriptors_staging_path.exists() else []
     if not records:
         raise ValueError("O staging não contém fragrâncias válidas")
 
@@ -106,8 +129,31 @@ def build_catalog(data_directory: Path) -> dict[str, Any]:
             if rows:
                 connection.executemany(f"INSERT INTO {table} VALUES (?, ?, ?)", rows)
 
+        connection.execute("""
+            CREATE TABLE fragrance_olfactory_descriptors (
+              fragrance_id VARCHAR NOT NULL,
+              wikidata_id VARCHAR NOT NULL,
+              label VARCHAR NOT NULL,
+              source_id VARCHAR NOT NULL,
+              source_url VARCHAR NOT NULL,
+              license VARCHAR NOT NULL,
+              retrieved_at DATE NOT NULL,
+              snapshot_id VARCHAR NOT NULL,
+              PRIMARY KEY (fragrance_id, wikidata_id)
+            )
+        """)
+        descriptor_rows = _olfactory_descriptor_rows(
+            descriptors,
+            {record.wikidata_id: record.id for record in records},
+        )
+        if descriptor_rows:
+            connection.executemany("INSERT INTO fragrance_olfactory_descriptors VALUES (?, ?, ?, ?, ?, ?, ?, ?)", descriptor_rows)
+
         connection.execute("CREATE INDEX fragrance_name_idx ON fragrances(name)")
-        for table in ("fragrances", "fragrance_brands", "fragrance_perfumers", "fragrance_countries"):
+        for table in (
+            "fragrances", "fragrance_brands", "fragrance_perfumers", "fragrance_countries",
+            "fragrance_olfactory_descriptors",
+        ):
             parquet_path = parquet_directory / f"{table}.parquet"
             if parquet_path.exists():
                 parquet_path.unlink()
@@ -118,20 +164,30 @@ def build_catalog(data_directory: Path) -> dict[str, Any]:
         connection.close()
 
     os.replace(temporary_database, database_path)
-    payload = [record.as_dict() for record in records]
+    payload = {
+        "fragrances": [record.as_dict() for record in records],
+        "olfactory_descriptors": [record.as_dict() for record in sorted(descriptors)],
+    }
     content_hash = sha256(canonical_json(payload).encode("utf-8")).hexdigest()
     counts = {
         "fragrances": len(records),
         "brands": len(_relation_rows(records, "brands")),
         "perfumers": len(_relation_rows(records, "perfumers")),
         "countries": len(_relation_rows(records, "countries")),
+        "olfactory_descriptors": len(descriptor_rows),
     }
     manifest = {
         "schema_version": 1,
         "catalog_version": f"catalog-v1-{content_hash[:12]}",
         "content_hash": content_hash,
-        "sources": sorted({record.provenance.source_id for record in records}),
-        "snapshot_ids": sorted({record.provenance.snapshot_id for record in records}),
+        "sources": sorted({
+            *(record.provenance.source_id for record in records),
+            *(record.provenance.source_id for record in descriptors),
+        }),
+        "snapshot_ids": sorted({
+            *(record.provenance.snapshot_id for record in records),
+            *(record.provenance.snapshot_id for record in descriptors),
+        }),
         "counts": counts,
         "files": {
             "database": "catalog.duckdb",

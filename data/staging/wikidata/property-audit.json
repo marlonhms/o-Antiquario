@@ -1,0 +1,916 @@
+{
+  "interpretation": "A auditoria identifica propriedades estruturadas existentes; P5872 entra como descritor factual, sem inferir pirâmide, acorde ou desempenho.",
+  "knownIdentityProperties": [
+    "P14539",
+    "P170",
+    "P1716",
+    "P176",
+    "P31",
+    "P495",
+    "P571",
+    "P577",
+    "P5872",
+    "P856"
+  ],
+  "properties": [
+    {
+      "itemsWithProperty": 282,
+      "label": "instância de",
+      "propertyId": "P31",
+      "statements": 296
+    },
+    {
+      "itemsWithProperty": 132,
+      "label": "cheira a",
+      "propertyId": "P5872",
+      "statements": 1110
+    },
+    {
+      "itemsWithProperty": 129,
+      "label": "data de criação ou fundação",
+      "propertyId": "P571",
+      "statements": 130
+    },
+    {
+      "itemsWithProperty": 113,
+      "label": "marca",
+      "propertyId": "P1716",
+      "statements": 113
+    },
+    {
+      "itemsWithProperty": 109,
+      "label": "tem característica",
+      "propertyId": "P1552",
+      "statements": 184
+    },
+    {
+      "itemsWithProperty": 109,
+      "label": "Fragrantica perfume ID",
+      "propertyId": "P14076",
+      "statements": 114
+    },
+    {
+      "itemsWithProperty": 103,
+      "label": "Parfumo perfume ID",
+      "propertyId": "P14084",
+      "statements": 108
+    },
+    {
+      "itemsWithProperty": 91,
+      "label": "criador",
+      "propertyId": "P170",
+      "statements": 101
+    },
+    {
+      "itemsWithProperty": 88,
+      "label": "identificador Freebase",
+      "propertyId": "P646",
+      "statements": 88
+    },
+    {
+      "itemsWithProperty": 72,
+      "label": "fabricante",
+      "propertyId": "P176",
+      "statements": 72
+    },
+    {
+      "itemsWithProperty": 65,
+      "label": "identificador do painel de informações do Google",
+      "propertyId": "P2671",
+      "statements": 66
+    },
+    {
+      "itemsWithProperty": 54,
+      "label": "país de origem",
+      "propertyId": "P495",
+      "statements": 54
+    },
+    {
+      "itemsWithProperty": 51,
+      "label": "perfumista",
+      "propertyId": "P14539",
+      "statements": 57
+    },
+    {
+      "itemsWithProperty": 50,
+      "label": "sítio oficial",
+      "propertyId": "P856",
+      "statements": 55
+    },
+    {
+      "itemsWithProperty": 44,
+      "label": "Basenotes perfume ID",
+      "propertyId": "P14090",
+      "statements": 47
+    },
+    {
+      "itemsWithProperty": 41,
+      "label": "Fragplace fragrances ID",
+      "propertyId": "P14198",
+      "statements": 45
+    },
+    {
+      "itemsWithProperty": 25,
+      "label": "público-alvo",
+      "propertyId": "P2360",
+      "statements": 26
+    },
+    {
+      "itemsWithProperty": 21,
+      "label": "uso",
+      "propertyId": "P366",
+      "statements": 23
+    },
+    {
+      "itemsWithProperty": 19,
+      "label": "Wikiparfum fragrance ID",
+      "propertyId": "P14520",
+      "statements": 22
+    },
+    {
+      "itemsWithProperty": 19,
+      "label": "imagem",
+      "propertyId": "P18",
+      "statements": 19
+    },
+    {
+      "itemsWithProperty": 17,
+      "label": "diferente de",
+      "propertyId": "P1889",
+      "statements": 17
+    },
+    {
+      "itemsWithProperty": 13,
+      "label": "nomeado em referência a",
+      "propertyId": "P138",
+      "statements": 14
+    },
+    {
+      "itemsWithProperty": 10,
+      "label": "propriedade de",
+      "propertyId": "P127",
+      "statements": 10
+    },
+    {
+      "itemsWithProperty": 9,
+      "label": "descrito no URL",
+      "propertyId": "P973",
+      "statements": 10
+    },
+    {
+      "itemsWithProperty": 9,
+      "label": "categoria da Commons",
+      "propertyId": "P373",
+      "statements": 9
+    },
+    {
+      "itemsWithProperty": 9,
+      "label": "data de comercialização",
+      "propertyId": "P5204",
+      "statements": 9
+    },
+    {
+      "itemsWithProperty": 6,
+      "label": "descrito pela fonte",
+      "propertyId": "P1343",
+      "statements": 9
+    },
+    {
+      "itemsWithProperty": 5,
+      "label": "inspirado por",
+      "propertyId": "P941",
+      "statements": 6
+    },
+    {
+      "itemsWithProperty": 5,
+      "label": "país",
+      "propertyId": "P17",
+      "statements": 5
+    },
+    {
+      "itemsWithProperty": 5,
+      "label": "data de publicação",
+      "propertyId": "P577",
+      "statements": 5
+    },
+    {
+      "itemsWithProperty": 4,
+      "label": "nome oficial",
+      "propertyId": "P1448",
+      "statements": 4
+    },
+    {
+      "itemsWithProperty": 4,
+      "label": "descobridor ou inventor",
+      "propertyId": "P61",
+      "statements": 4
+    },
+    {
+      "itemsWithProperty": 3,
+      "label": "designer",
+      "propertyId": "P287",
+      "statements": 5
+    },
+    {
+      "itemsWithProperty": 3,
+      "label": "identificador de vídeo do YouTube",
+      "propertyId": "P1651",
+      "statements": 4
+    },
+    {
+      "itemsWithProperty": 2,
+      "label": "ingrediente listado",
+      "propertyId": "P4543",
+      "statements": 18
+    },
+    {
+      "itemsWithProperty": 2,
+      "label": "Reddit topic ID (obsolete)",
+      "propertyId": "P11137",
+      "statements": 2
+    },
+    {
+      "itemsWithProperty": 2,
+      "label": "fundador",
+      "propertyId": "P112",
+      "statements": 2
+    },
+    {
+      "itemsWithProperty": 2,
+      "label": "intérprete",
+      "propertyId": "P175",
+      "statements": 2
+    },
+    {
+      "itemsWithProperty": 2,
+      "label": "identificador no Facebook",
+      "propertyId": "P2013",
+      "statements": 2
+    },
+    {
+      "itemsWithProperty": 2,
+      "label": "preço",
+      "propertyId": "P2284",
+      "statements": 2
+    },
+    {
+      "itemsWithProperty": 2,
+      "label": "nome",
+      "propertyId": "P2561",
+      "statements": 2
+    },
+    {
+      "itemsWithProperty": 1,
+      "label": "official shop URL",
+      "propertyId": "P10225",
+      "statements": 1
+    },
+    {
+      "itemsWithProperty": 1,
+      "label": "produto",
+      "propertyId": "P1056",
+      "statements": 1
+    },
+    {
+      "itemsWithProperty": 1,
+      "label": "empregados",
+      "propertyId": "P1128",
+      "statements": 1
+    },
+    {
+      "itemsWithProperty": 1,
+      "label": "identificador na Encyclopædia Britannica Online",
+      "propertyId": "P1417",
+      "statements": 1
+    },
+    {
+      "itemsWithProperty": 1,
+      "label": "baseado em",
+      "propertyId": "P144",
+      "statements": 1
+    },
+    {
+      "itemsWithProperty": 1,
+      "label": "texto de lema",
+      "propertyId": "P1451",
+      "statements": 1
+    },
+    {
+      "itemsWithProperty": 1,
+      "label": "precedido por",
+      "propertyId": "P155",
+      "statements": 1
+    },
+    {
+      "itemsWithProperty": 1,
+      "label": "produto natural do táxon",
+      "propertyId": "P1582",
+      "statements": 1
+    },
+    {
+      "itemsWithProperty": 1,
+      "label": "sede",
+      "propertyId": "P159",
+      "statements": 1
+    },
+    {
+      "itemsWithProperty": 1,
+      "label": "nome nativo",
+      "propertyId": "P1705",
+      "statements": 1
+    },
+    {
+      "itemsWithProperty": 1,
+      "label": "série",
+      "propertyId": "P179",
+      "statements": 1
+    },
+    {
+      "itemsWithProperty": 1,
+      "label": "material utilizado",
+      "propertyId": "P186",
+      "statements": 1
+    },
+    {
+      "itemsWithProperty": 1,
+      "label": "coleção",
+      "propertyId": "P195",
+      "statements": 1
+    },
+    {
+      "itemsWithProperty": 1,
+      "label": "nome do perfil no X",
+      "propertyId": "P2002",
+      "statements": 1
+    },
+    {
+      "itemsWithProperty": 1,
+      "label": "nome do perfil no Instagram",
+      "propertyId": "P2003",
+      "statements": 1
+    },
+    {
+      "itemsWithProperty": 1,
+      "label": "método de fabricação",
+      "propertyId": "P2079",
+      "statements": 1
+    },
+    {
+      "itemsWithProperty": 1,
+      "label": "período de tempo",
+      "propertyId": "P2348",
+      "statements": 1
+    },
+    {
+      "itemsWithProperty": 1,
+      "label": "número de controlo da Biblioteca do Congresso",
+      "propertyId": "P244",
+      "statements": 1
+    },
+    {
+      "itemsWithProperty": 1,
+      "label": "subclasse de",
+      "propertyId": "P279",
+      "statements": 1
+    },
+    {
+      "itemsWithProperty": 1,
+      "label": "pessoa relevante",
+      "propertyId": "P3342",
+      "statements": 1
+    },
+    {
+      "itemsWithProperty": 1,
+      "label": "identificador de tema em Quora",
+      "propertyId": "P3417",
+      "statements": 1
+    },
+    {
+      "itemsWithProperty": 1,
+      "label": "identificador de tópico no Zhihu",
+      "propertyId": "P3553",
+      "statements": 1
+    },
+    {
+      "itemsWithProperty": 1,
+      "label": "parte de",
+      "propertyId": "P361",
+      "statements": 1
+    },
+    {
+      "itemsWithProperty": 1,
+      "label": "data de descoberta",
+      "propertyId": "P575",
+      "statements": 1
+    },
+    {
+      "itemsWithProperty": 1,
+      "label": "data inicial",
+      "propertyId": "P580",
+      "statements": 1
+    },
+    {
+      "itemsWithProperty": 1,
+      "label": "data de ocorrência",
+      "propertyId": "P585",
+      "statements": 1
+    },
+    {
+      "itemsWithProperty": 1,
+      "label": "localizado no endereço",
+      "propertyId": "P6375",
+      "statements": 1
+    },
+    {
+      "itemsWithProperty": 1,
+      "label": "identificador AUT NKC",
+      "propertyId": "P691",
+      "statements": 1
+    },
+    {
+      "itemsWithProperty": 1,
+      "label": "local de formação",
+      "propertyId": "P740",
+      "statements": 1
+    },
+    {
+      "itemsWithProperty": 1,
+      "label": "organização matriz",
+      "propertyId": "P749",
+      "statements": 1
+    },
+    {
+      "itemsWithProperty": 1,
+      "label": "MTV Germany artist ID",
+      "propertyId": "P7641",
+      "statements": 1
+    },
+    {
+      "itemsWithProperty": 1,
+      "label": "aprovado por",
+      "propertyId": "P790",
+      "statements": 1
+    },
+    {
+      "itemsWithProperty": 1,
+      "label": "identificador J9U da Biblioteca Nacional de Israel",
+      "propertyId": "P8189",
+      "statements": 1
+    },
+    {
+      "itemsWithProperty": 1,
+      "label": "identificador de tema em Yle",
+      "propertyId": "P8309",
+      "statements": 1
+    },
+    {
+      "itemsWithProperty": 1,
+      "label": "identificador KBpedia",
+      "propertyId": "P8408",
+      "statements": 1
+    },
+    {
+      "itemsWithProperty": 1,
+      "label": "seguidores nas redes sociais",
+      "propertyId": "P8687",
+      "statements": 1
+    },
+    {
+      "itemsWithProperty": 1,
+      "label": "encomendador",
+      "propertyId": "P88",
+      "statements": 1
+    },
+    {
+      "itemsWithProperty": 1,
+      "label": "SVKKL authority ID",
+      "propertyId": "P9322",
+      "statements": 1
+    }
+  ],
+  "rawPath": "raw/wikidata/property-audits/properties-64204285a37a.json",
+  "retrievedAt": "2026-07-22",
+  "schemaVersion": 1,
+  "scope": {
+    "batchSize": 100,
+    "fragranceQids": 282
+  },
+  "snapshotId": "64204285a37a4fe7dfd9ac1b4fa89afce1f0cb8b70c0db2b4866e0290ed43a8d",
+  "sourceId": "wikidata",
+  "unmappedProperties": [
+    {
+      "itemsWithProperty": 109,
+      "label": "tem característica",
+      "propertyId": "P1552",
+      "statements": 184
+    },
+    {
+      "itemsWithProperty": 109,
+      "label": "Fragrantica perfume ID",
+      "propertyId": "P14076",
+      "statements": 114
+    },
+    {
+      "itemsWithProperty": 103,
+      "label": "Parfumo perfume ID",
+      "propertyId": "P14084",
+      "statements": 108
+    },
+    {
+      "itemsWithProperty": 88,
+      "label": "identificador Freebase",
+      "propertyId": "P646",
+      "statements": 88
+    },
+    {
+      "itemsWithProperty": 65,
+      "label": "identificador do painel de informações do Google",
+      "propertyId": "P2671",
+      "statements": 66
+    },
+    {
+      "itemsWithProperty": 44,
+      "label": "Basenotes perfume ID",
+      "propertyId": "P14090",
+      "statements": 47
+    },
+    {
+      "itemsWithProperty": 41,
+      "label": "Fragplace fragrances ID",
+      "propertyId": "P14198",
+      "statements": 45
+    },
+    {
+      "itemsWithProperty": 25,
+      "label": "público-alvo",
+      "propertyId": "P2360",
+      "statements": 26
+    },
+    {
+      "itemsWithProperty": 21,
+      "label": "uso",
+      "propertyId": "P366",
+      "statements": 23
+    },
+    {
+      "itemsWithProperty": 19,
+      "label": "Wikiparfum fragrance ID",
+      "propertyId": "P14520",
+      "statements": 22
+    },
+    {
+      "itemsWithProperty": 19,
+      "label": "imagem",
+      "propertyId": "P18",
+      "statements": 19
+    },
+    {
+      "itemsWithProperty": 17,
+      "label": "diferente de",
+      "propertyId": "P1889",
+      "statements": 17
+    },
+    {
+      "itemsWithProperty": 13,
+      "label": "nomeado em referência a",
+      "propertyId": "P138",
+      "statements": 14
+    },
+    {
+      "itemsWithProperty": 10,
+      "label": "propriedade de",
+      "propertyId": "P127",
+      "statements": 10
+    },
+    {
+      "itemsWithProperty": 9,
+      "label": "descrito no URL",
+      "propertyId": "P973",
+      "statements": 10
+    },
+    {
+      "itemsWithProperty": 9,
+      "label": "categoria da Commons",
+      "propertyId": "P373",
+      "statements": 9
+    },
+    {
+      "itemsWithProperty": 9,
+      "label": "data de comercialização",
+      "propertyId": "P5204",
+      "statements": 9
+    },
+    {
+      "itemsWithProperty": 6,
+      "label": "descrito pela fonte",
+      "propertyId": "P1343",
+      "statements": 9
+    },
+    {
+      "itemsWithProperty": 5,
+      "label": "inspirado por",
+      "propertyId": "P941",
+      "statements": 6
+    },
+    {
+      "itemsWithProperty": 5,
+      "label": "país",
+      "propertyId": "P17",
+      "statements": 5
+    },
+    {
+      "itemsWithProperty": 4,
+      "label": "nome oficial",
+      "propertyId": "P1448",
+      "statements": 4
+    },
+    {
+      "itemsWithProperty": 4,
+      "label": "descobridor ou inventor",
+      "propertyId": "P61",
+      "statements": 4
+    },
+    {
+      "itemsWithProperty": 3,
+      "label": "designer",
+      "propertyId": "P287",
+      "statements": 5
+    },
+    {
+      "itemsWithProperty": 3,
+      "label": "identificador de vídeo do YouTube",
+      "propertyId": "P1651",
+      "statements": 4
+    },
+    {
+      "itemsWithProperty": 2,
+      "label": "ingrediente listado",
+      "propertyId": "P4543",
+      "statements": 18
+    },
+    {
+      "itemsWithProperty": 2,
+      "label": "Reddit topic ID (obsolete)",
+      "propertyId": "P11137",
+      "statements": 2
+    },
+    {
+      "itemsWithProperty": 2,
+      "label": "fundador",
+      "propertyId": "P112",
+      "statements": 2
+    },
+    {
+      "itemsWithProperty": 2,
+      "label": "intérprete",
+      "propertyId": "P175",
+      "statements": 2
+    },
+    {
+      "itemsWithProperty": 2,
+      "label": "identificador no Facebook",
+      "propertyId": "P2013",
+      "statements": 2
+    },
+    {
+      "itemsWithProperty": 2,
+      "label": "preço",
+      "propertyId": "P2284",
+      "statements": 2
+    },
+    {
+      "itemsWithProperty": 2,
+      "label": "nome",
+      "propertyId": "P2561",
+      "statements": 2
+    },
+    {
+      "itemsWithProperty": 1,
+      "label": "official shop URL",
+      "propertyId": "P10225",
+      "statements": 1
+    },
+    {
+      "itemsWithProperty": 1,
+      "label": "produto",
+      "propertyId": "P1056",
+      "statements": 1
+    },
+    {
+      "itemsWithProperty": 1,
+      "label": "empregados",
+      "propertyId": "P1128",
+      "statements": 1
+    },
+    {
+      "itemsWithProperty": 1,
+      "label": "identificador na Encyclopædia Britannica Online",
+      "propertyId": "P1417",
+      "statements": 1
+    },
+    {
+      "itemsWithProperty": 1,
+      "label": "baseado em",
+      "propertyId": "P144",
+      "statements": 1
+    },
+    {
+      "itemsWithProperty": 1,
+      "label": "texto de lema",
+      "propertyId": "P1451",
+      "statements": 1
+    },
+    {
+      "itemsWithProperty": 1,
+      "label": "precedido por",
+      "propertyId": "P155",
+      "statements": 1
+    },
+    {
+      "itemsWithProperty": 1,
+      "label": "produto natural do táxon",
+      "propertyId": "P1582",
+      "statements": 1
+    },
+    {
+      "itemsWithProperty": 1,
+      "label": "sede",
+      "propertyId": "P159",
+      "statements": 1
+    },
+    {
+      "itemsWithProperty": 1,
+      "label": "nome nativo",
+      "propertyId": "P1705",
+      "statements": 1
+    },
+    {
+      "itemsWithProperty": 1,
+      "label": "série",
+      "propertyId": "P179",
+      "statements": 1
+    },
+    {
+      "itemsWithProperty": 1,
+      "label": "material utilizado",
+      "propertyId": "P186",
+      "statements": 1
+    },
+    {
+      "itemsWithProperty": 1,
+      "label": "coleção",
+      "propertyId": "P195",
+      "statements": 1
+    },
+    {
+      "itemsWithProperty": 1,
+      "label": "nome do perfil no X",
+      "propertyId": "P2002",
+      "statements": 1
+    },
+    {
+      "itemsWithProperty": 1,
+      "label": "nome do perfil no Instagram",
+      "propertyId": "P2003",
+      "statements": 1
+    },
+    {
+      "itemsWithProperty": 1,
+      "label": "método de fabricação",
+      "propertyId": "P2079",
+      "statements": 1
+    },
+    {
+      "itemsWithProperty": 1,
+      "label": "período de tempo",
+      "propertyId": "P2348",
+      "statements": 1
+    },
+    {
+      "itemsWithProperty": 1,
+      "label": "número de controlo da Biblioteca do Congresso",
+      "propertyId": "P244",
+      "statements": 1
+    },
+    {
+      "itemsWithProperty": 1,
+      "label": "subclasse de",
+      "propertyId": "P279",
+      "statements": 1
+    },
+    {
+      "itemsWithProperty": 1,
+      "label": "pessoa relevante",
+      "propertyId": "P3342",
+      "statements": 1
+    },
+    {
+      "itemsWithProperty": 1,
+      "label": "identificador de tema em Quora",
+      "propertyId": "P3417",
+      "statements": 1
+    },
+    {
+      "itemsWithProperty": 1,
+      "label": "identificador de tópico no Zhihu",
+      "propertyId": "P3553",
+      "statements": 1
+    },
+    {
+      "itemsWithProperty": 1,
+      "label": "parte de",
+      "propertyId": "P361",
+      "statements": 1
+    },
+    {
+      "itemsWithProperty": 1,
+      "label": "data de descoberta",
+      "propertyId": "P575",
+      "statements": 1
+    },
+    {
+      "itemsWithProperty": 1,
+      "label": "data inicial",
+      "propertyId": "P580",
+      "statements": 1
+    },
+    {
+      "itemsWithProperty": 1,
+      "label": "data de ocorrência",
+      "propertyId": "P585",
+      "statements": 1
+    },
+    {
+      "itemsWithProperty": 1,
+      "label": "localizado no endereço",
+      "propertyId": "P6375",
+      "statements": 1
+    },
+    {
+      "itemsWithProperty": 1,
+      "label": "identificador AUT NKC",
+      "propertyId": "P691",
+      "statements": 1
+    },
+    {
+      "itemsWithProperty": 1,
+      "label": "local de formação",
+      "propertyId": "P740",
+      "statements": 1
+    },
+    {
+      "itemsWithProperty": 1,
+      "label": "organização matriz",
+      "propertyId": "P749",
+      "statements": 1
+    },
+    {
+      "itemsWithProperty": 1,
+      "label": "MTV Germany artist ID",
+      "propertyId": "P7641",
+      "statements": 1
+    },
+    {
+      "itemsWithProperty": 1,
+      "label": "aprovado por",
+      "propertyId": "P790",
+      "statements": 1
+    },
+    {
+      "itemsWithProperty": 1,
+      "label": "identificador J9U da Biblioteca Nacional de Israel",
+      "propertyId": "P8189",
+      "statements": 1
+    },
+    {
+      "itemsWithProperty": 1,
+      "label": "identificador de tema em Yle",
+      "propertyId": "P8309",
+      "statements": 1
+    },
+    {
+      "itemsWithProperty": 1,
+      "label": "identificador KBpedia",
+      "propertyId": "P8408",
+      "statements": 1
+    },
+    {
+      "itemsWithProperty": 1,
+      "label": "seguidores nas redes sociais",
+      "propertyId": "P8687",
+      "statements": 1
+    },
+    {
+      "itemsWithProperty": 1,
+      "label": "encomendador",
+      "propertyId": "P88",
+      "statements": 1
+    },
+    {
+      "itemsWithProperty": 1,
+      "label": "SVKKL authority ID",
+      "propertyId": "P9322",
+      "statements": 1
+    }
+  ]
+}

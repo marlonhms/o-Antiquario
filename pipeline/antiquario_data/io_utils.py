@@ -5,10 +5,11 @@ from hashlib import sha256
 import json
 import os
 from pathlib import Path
+import re
 import tempfile
 from typing import Any, Iterable
 
-from .models import FragranceRecord, canonical_json
+from .models import FragranceRecord, OlfactoryDescriptorRecord, canonical_json
 
 
 def atomic_write_text(path: Path, contents: str) -> None:
@@ -37,12 +38,16 @@ def save_raw_snapshot(
     query: str,
     raw_directory: Path,
     retrieved_at: str | None = None,
+    *,
+    filename_prefix: str = "perfumes",
 ) -> tuple[Path, dict[str, Any]]:
+    if not re.fullmatch(r"[a-z0-9-]+", filename_prefix):
+        raise ValueError("filename_prefix deve conter apenas letras minúsculas, números e hífens")
     payload_json = canonical_json(payload)
     query_hash = sha256(query.encode("utf-8")).hexdigest()
     payload_hash = sha256(payload_json.encode("utf-8")).hexdigest()
     snapshot_hash = sha256(f"{query_hash}:{payload_hash}".encode("utf-8")).hexdigest()
-    path = raw_directory / f"perfumes-{snapshot_hash[:12]}.json"
+    path = raw_directory / f"{filename_prefix}-{snapshot_hash[:12]}.json"
 
     if path.exists():
         envelope = load_json(path)
@@ -83,3 +88,21 @@ def read_records_jsonl(path: Path) -> list[FragranceRecord]:
             except (KeyError, TypeError, ValueError, json.JSONDecodeError) as error:
                 raise ValueError(f"{path}:{line_number}: registro inválido: {error}") from error
     return records
+
+
+def read_olfactory_descriptors_jsonl(path: Path) -> list[OlfactoryDescriptorRecord]:
+    records: list[OlfactoryDescriptorRecord] = []
+    with path.open("r", encoding="utf-8") as handle:
+        for line_number, line in enumerate(handle, start=1):
+            if not line.strip():
+                continue
+            try:
+                records.append(OlfactoryDescriptorRecord.from_dict(json.loads(line)))
+            except (KeyError, TypeError, ValueError, json.JSONDecodeError) as error:
+                raise ValueError(f"{path}:{line_number}: descritor olfativo inválido: {error}") from error
+    return records
+
+
+def write_olfactory_descriptors_jsonl(path: Path, records: Iterable[OlfactoryDescriptorRecord]) -> None:
+    lines = [canonical_json(record.as_dict()) for record in records]
+    atomic_write_text(path, "".join(f"{line}\n" for line in lines))

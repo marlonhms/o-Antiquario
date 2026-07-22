@@ -19,6 +19,7 @@ export const CatalogReleaseManifestSchema = z.object({
     brands: z.number().int().nonnegative(),
     perfumers: z.number().int().nonnegative(),
     countries: z.number().int().nonnegative(),
+    olfactoryDescriptors: z.number().int().nonnegative(),
     knowledgeLinks: z.number().int().nonnegative(),
     searchTerms: z.number().int().nonnegative(),
     ambiguousClusters: z.number().int().nonnegative(),

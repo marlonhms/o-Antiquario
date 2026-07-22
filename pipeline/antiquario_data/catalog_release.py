@@ -142,12 +142,16 @@ def compile_catalog_release(
         country_rows = connection.execute(
             "SELECT fragrance_id, wikidata_id, label FROM fragrance_countries ORDER BY ALL"
         ).fetchall()
+        descriptor_rows = connection.execute(
+            "SELECT fragrance_id, wikidata_id, label FROM fragrance_olfactory_descriptors ORDER BY ALL"
+        ).fetchall()
     finally:
         connection.close()
 
     brands, brands_by_fragrance, brand_labels = _dimension(brand_rows)
     perfumers, perfumers_by_fragrance, perfumer_labels = _dimension(perfumer_rows)
     countries, countries_by_fragrance, country_labels = _dimension(country_rows)
+    descriptors, descriptors_by_fragrance, descriptor_labels = _dimension(descriptor_rows)
     fragrance_qids = {row[1] for row in fragrance_rows}
     knowledge_by_qid, orphan_knowledge = _knowledge_links(documents_path, fragrance_qids)
 
@@ -161,6 +165,7 @@ def compile_catalog_release(
         brand_ids = brands_by_fragrance.get(fragrance_id, [])
         perfumer_ids = perfumers_by_fragrance.get(fragrance_id, [])
         country_ids = countries_by_fragrance.get(fragrance_id, [])
+        descriptor_ids = descriptors_by_fragrance.get(fragrance_id, [])
         linked_knowledge = knowledge_by_qid.get(wikidata_id, [])
         product = {
             "id": fragrance_id,
@@ -172,6 +177,7 @@ def compile_catalog_release(
             "brandIds": brand_ids,
             "perfumerIds": perfumer_ids,
             "countryIds": country_ids,
+            "olfactoryDescriptorIds": descriptor_ids,
             "knowledgeIds": linked_knowledge,
             "sourceId": source_id,
             "sourceUrl": source_url,
@@ -197,6 +203,7 @@ def compile_catalog_release(
         "brands": brands,
         "perfumers": perfumers,
         "countries": countries,
+        "olfactoryDescriptors": descriptors,
     }
     fragrance_payload = {"schemaVersion": 1, "items": fragrances}
 
@@ -207,6 +214,7 @@ def compile_catalog_release(
         values.extend(brand_labels[entity_id] for entity_id in product["brandIds"])
         values.extend(perfumer_labels[entity_id] for entity_id in product["perfumerIds"])
         values.extend(country_labels[entity_id] for entity_id in product["countryIds"])
+        values.extend(descriptor_labels[entity_id] for entity_id in product["olfactoryDescriptorIds"])
         for term in search_terms(values):
             inverted[term].add(position)
     search_payload = {
@@ -254,6 +262,7 @@ def compile_catalog_release(
             "brands": len(brands),
             "perfumers": len(perfumers),
             "countries": len(countries),
+            "olfactoryDescriptors": len(descriptors),
             "knowledgeLinks": sum(len(ids) for ids in knowledge_by_qid.values()),
             "searchTerms": len(inverted),
             "ambiguousClusters": len(ambiguous_clusters),

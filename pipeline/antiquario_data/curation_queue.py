@@ -23,6 +23,7 @@ class CurationCandidate:
     brands: tuple[str, ...]
     perfumers: tuple[str, ...]
     countries: tuple[str, ...]
+    olfactory_descriptors: tuple[str, ...]
     retrieved_at: str
 
     @property
@@ -34,6 +35,7 @@ class CurationCandidate:
             + int(bool(self.countries))
             + int(self.launch_year is not None)
             + int(self.official_website is not None)
+            + int(bool(self.olfactory_descriptors))
         )
 
 
@@ -79,6 +81,7 @@ def load_curation_candidates(data_directory: Path) -> list[CurationCandidate]:
         brands = _dimension_values(connection, "fragrance_brands")
         perfumers = _dimension_values(connection, "fragrance_perfumers")
         countries = _dimension_values(connection, "fragrance_countries")
+        descriptors = _dimension_values(connection, "fragrance_olfactory_descriptors")
         rows = connection.execute("""
             SELECT id, wikidata_id, name, launch_year, official_website, CAST(retrieved_at AS VARCHAR)
             FROM fragrances
@@ -96,6 +99,7 @@ def load_curation_candidates(data_directory: Path) -> list[CurationCandidate]:
             brands=brands.get(identifier, ()),
             perfumers=perfumers.get(identifier, ()),
             countries=countries.get(identifier, ()),
+            olfactory_descriptors=descriptors.get(identifier, ()),
             retrieved_at=retrieved_at,
         )
         for identifier, wikidata_id, name, launch_year, official_website, retrieved_at in rows
@@ -158,6 +162,7 @@ def render_curation_draft(candidate: CurationCandidate) -> str:
     countries = ", ".join(candidate.countries) if candidate.countries else "não informado no Wikidata"
     year = str(candidate.launch_year) if candidate.launch_year is not None else "não informado no Wikidata"
     website = candidate.official_website or "não informado no Wikidata"
+    descriptors = ", ".join(candidate.olfactory_descriptors) if candidate.olfactory_descriptors else "não informado no Wikidata"
     return f'''---
 schema_version: 1
 id: antiquario:fragrance:{_slugify(candidate.name)}-{candidate.wikidata_id.lower()}
@@ -180,7 +185,7 @@ evidence:
     kind: open_source
     license: CC0-1.0
     confidence: medium
-    claim_scope: Identidade, marca, país, ano, perfumista e site oficial quando presentes no Wikidata.
+    claim_scope: Identidade, marca, país, ano, perfumista, site oficial e descritores olfativos quando presentes no Wikidata.
     locator: https://www.wikidata.org/wiki/{candidate.wikidata_id}
     retrieved_at: {candidate.retrieved_at}
 relations: []
@@ -196,11 +201,12 @@ relations: []
 - País: {countries}
 - Ano: {year}
 - Site oficial: {website}
+- Descritores olfativos (`P5872`, sem camada de pirâmide): {descriptors}
 
 ## Enriquecimento editorial obrigatório
 
 - [ ] Confirmar a identidade e a concentração da fragrância.
-- [ ] Classificar família, notas e acordes usando a taxonomia do Antiquário.
+- [ ] Validar os descritores Wikidata e classificar família, notas, camadas e acordes usando a taxonomia do Antiquário.
 - [ ] Registrar contexto de uso e desempenho com método, amostra e confiança.
 - [ ] Adicionar evidências permitidas para cada afirmação editorial.
 - [ ] Mover este arquivo para `10_Perfumes` somente após revisão humana.
