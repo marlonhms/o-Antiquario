@@ -597,12 +597,11 @@ function FactualLibrary({ library }: { library: FactualLibraryData }) {
 
 export function App() {
   const [draft, setDraft] = useState<ConsultantForm>(readStoredForm);
-  const [submitted, setSubmitted] = useState<ConsultantForm>(draft);
   const [revision, setRevision] = useState(1);
   const [consultationStep, setConsultationStep] = useState(0);
   const [catalogManifest, setCatalogManifest] = useState<CatalogReleaseManifest | null>(null);
   const [factualLibrary, setFactualLibrary] = useState<FactualLibraryData | null>(null);
-  const result = useMemo(() => runRecommendation(submitted), [submitted]);
+  const result = useMemo(() => runRecommendation(draft), [draft]);
   const leadingFragrance = result.recommendations[0]?.fragrance;
   const primaryAura = auraColor(leadingFragrance?.accords[0]?.id, "#78d7b0");
   const secondaryAura = auraColor(leadingFragrance?.accords[1]?.id, "#d995c5");
@@ -649,7 +648,6 @@ export function App() {
 
   function submit(event: FormEvent<HTMLFormElement>): void {
     event.preventDefault();
-    setSubmitted({ ...draft });
     setRevision((current) => current + 1);
     document.getElementById("recommendations")?.scrollIntoView({ behavior: "smooth", block: "start" });
   }
@@ -657,7 +655,6 @@ export function App() {
   function reset(): void {
     window.localStorage.removeItem(STORAGE_KEY);
     setDraft(DEFAULT_FORM);
-    setSubmitted(DEFAULT_FORM);
     setRevision((current) => current + 1);
     setConsultationStep(0);
   }
