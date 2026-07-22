@@ -49,7 +49,7 @@ O mesmo conjunto é preservado em `data/releases/<releaseId>`. `data/releases/la
 
 ## Release atual
 
-A release factual atual é `catalog-web-v1-a3b72740a39f`, com 282 fragrâncias, 71 marcas, 104 perfumistas, 10 países e 1.045 termos de busca. Existem três colisões ambíguas encaminhadas para revisão humana e nenhuma fusão automática.
+A release factual atual é `catalog-web-v1-1c7f62a412ea`, com 282 fragrâncias, 71 marcas, 104 perfumistas, 10 países e 1.045 termos de busca. Existem três colisões ambíguas encaminhadas para revisão humana e nenhuma fusão automática.
 
 As recomendações da tela continuam usando o catálogo sintético de laboratório até que uma amostra factual tenha cobertura editorial suficiente de notas, acordes e desempenho. A interface mostra essa separação explicitamente.
 

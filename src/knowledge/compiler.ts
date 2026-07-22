@@ -4,6 +4,7 @@ import { join, relative, resolve } from "node:path";
 import { loadSourceManifest, type SourceManifest } from "../data/source-manifest.ts";
 import { chunkKnowledgeDocument, parseKnowledgeMarkdown, sha256 } from "./markdown.ts";
 import { resolveKnowledgeGraph } from "./links.ts";
+import { buildExpandedKnowledgeGraph, inspectKnowledgeGraph, type KnowledgeGraphHealthReport } from "./graph.ts";
 import {
   KnowledgeManifestSchema,
   type KnowledgeChunk,
@@ -17,6 +18,7 @@ export interface CompiledKnowledge {
   readonly documents: readonly KnowledgeDocument[];
   readonly chunks: readonly KnowledgeChunk[];
   readonly edges: readonly KnowledgeEdge[];
+  readonly health: KnowledgeGraphHealthReport;
   readonly manifest: KnowledgeManifest;
   readonly validation: KnowledgeValidationReport;
 }
@@ -68,52 +70,52 @@ export async function compileKnowledgeVault(
     document,
     graph.relatedByDocument.get(document.id) ?? [],
   ));
+  const expandedGraph = buildExpandedKnowledgeGraph(approved, graph.edges);
+  const health = inspectKnowledgeGraph(approved, expandedGraph);
 
   const contentPayload = {
     documents: approved.map(publicDocument),
     chunks,
-    edges: graph.edges,
+    graph: expandedGraph,
+    health,
   };
   const contentHash = sha256(JSON.stringify(contentPayload));
   const latestDocumentDate = approved.map((document) => document.updated_at).sort().at(-1);
   if (!latestDocumentDate) throw new Error("O vault não possui documentos aprovados");
 
   const manifest = KnowledgeManifestSchema.parse({
-    schemaVersion: 1,
-    releaseId: `knowledge-v1-${contentHash.slice(0, 12)}`,
+    schemaVersion: 2,
+    releaseId: `knowledge-v2-${contentHash.slice(0, 12)}`,
     contentHash,
     latestDocumentDate,
     counts: {
       documents: approved.length,
       chunks: chunks.length,
-      nodes: approved.length,
-      edges: graph.edges.length,
+      nodes: expandedGraph.nodes.length,
+      edges: expandedGraph.edges.length,
+      evidenceNodes: health.graph.evidenceNodes,
+      typedRelations: health.graph.typedRelations,
     },
     sources: [...new Set(approved.flatMap((document) => document.source_ids))].sort(),
     files: {
       documents: "documents.json",
       chunks: "chunks.json",
       graph: "graph.json",
+      health: "graph-health.json",
     },
   });
 
-  return { documents: approved, chunks, edges: graph.edges, manifest, validation };
+  return { documents: approved, chunks, edges: graph.edges, health, manifest, validation };
 }
 
 export async function writeCompiledKnowledge(compiled: CompiledKnowledge, outputDirectory: string): Promise<void> {
   await mkdir(outputDirectory, { recursive: true });
-  const nodes = compiled.documents.map((document) => ({
-    id: document.id,
-    title: document.title,
-    type: document.type,
-    path: document.path,
-    tags: document.tags,
-    confidence: document.confidence,
-  }));
+  const graph = buildExpandedKnowledgeGraph(compiled.documents, compiled.edges);
   await Promise.all([
     writeFile(join(outputDirectory, "documents.json"), stableJson(compiled.documents.map(publicDocument)), "utf8"),
     writeFile(join(outputDirectory, "chunks.json"), stableJson(compiled.chunks), "utf8"),
-    writeFile(join(outputDirectory, "graph.json"), stableJson({ nodes, edges: compiled.edges }), "utf8"),
+    writeFile(join(outputDirectory, "graph.json"), stableJson({ schemaVersion: 2, nodes: graph.nodes, edges: graph.edges }), "utf8"),
+    writeFile(join(outputDirectory, "graph-health.json"), stableJson(compiled.health), "utf8"),
     writeFile(join(outputDirectory, "knowledge-manifest.json"), stableJson(compiled.manifest), "utf8"),
   ]);
 }

@@ -1,13 +1,15 @@
 {
-  "schemaVersion": 1,
-  "releaseId": "knowledge-v1-99c8aa8e79fa",
-  "contentHash": "99c8aa8e79faa5793617b91d3b51c76cdd4fdf140f607613c896fcd186b207c7",
+  "schemaVersion": 2,
+  "releaseId": "knowledge-v2-2640204406ed",
+  "contentHash": "2640204406ed08a1481faa5a24836ef40c439a5cc6f405e17dbc431d0f117236",
   "latestDocumentDate": "2026-07-22",
   "counts": {
     "documents": 10,
     "chunks": 38,
-    "nodes": 10,
-    "edges": 62
+    "nodes": 20,
+    "edges": 72,
+    "evidenceNodes": 10,
+    "typedRelations": 26
   },
   "sources": [
     "internal_curated"
@@ -15,6 +17,7 @@
   "files": {
     "documents": "documents.json",
     "chunks": "chunks.json",
-    "graph": "graph.json"
+    "graph": "graph.json",
+    "health": "graph-health.json"
   }
 }

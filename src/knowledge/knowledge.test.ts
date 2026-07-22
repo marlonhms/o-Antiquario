@@ -6,6 +6,7 @@ import { loadSourceManifest } from "../data/source-manifest.ts";
 import { compileKnowledgeVault, loadKnowledgeVault } from "./compiler.ts";
 import { extractWikiLinks, parseKnowledgeMarkdown } from "./markdown.ts";
 import { resolveKnowledgeGraph } from "./links.ts";
+import { buildExpandedKnowledgeGraph, inspectKnowledgeGraph } from "./graph.ts";
 import type { KnowledgeDocument } from "./schema.ts";
 import { validateKnowledgeDocuments } from "./validation.ts";
 
@@ -57,10 +58,15 @@ test("compila o vault real de forma determinística", async () => {
 
   assert.equal(first.manifest.contentHash, second.manifest.contentHash);
   assert.equal(first.manifest.releaseId, second.manifest.releaseId);
+  assert.equal(first.manifest.schemaVersion, 2);
   assert.equal(first.manifest.counts.documents, 10);
+  assert.equal(first.manifest.counts.evidenceNodes, 10);
+  assert.ok(first.manifest.counts.typedRelations > 0);
   assert.ok(first.manifest.counts.chunks >= first.manifest.counts.documents);
   assert.ok(first.manifest.counts.edges > first.manifest.counts.documents);
   assert.deepEqual(first.manifest.sources, ["internal_curated"]);
+  assert.equal(first.health.readiness.status, "blocked");
+  assert.ok(first.health.issues.some((issue) => issue.code === "no-approved-commercial-fragrances"));
   assert.ok(first.chunks.every((chunk) => chunk.content.length > 24));
 });
 
@@ -90,4 +96,27 @@ test("impede fonte pendente em documento aprovado", async () => {
     }],
   };
   assert.throws(() => validateKnowledgeDocuments([invalid], manifest), /documento aprovado não pode usar/);
+});
+
+test("rejeita predicado sem contrato para o tipo de entidade", async () => {
+  const documents = await loadKnowledgeVault(vaultDirectory);
+  const bergamota = documents.find((document) => document.id === "antiquario:olfactory-note:bergamota")!;
+  const invalid: KnowledgeDocument = {
+    ...bergamota,
+    relations: [{ predicate: "has-note", target: "antiquario:olfactory-note:vetiver" }],
+  };
+  assert.throws(
+    () => resolveKnowledgeGraph([invalid, ...documents.filter((document) => document.id !== bergamota.id)]),
+    /não permite olfactory-note/,
+  );
+});
+
+test("grafo expandido conecta cada documento à sua evidência", async () => {
+  const documents = await loadKnowledgeVault(vaultDirectory);
+  const graph = resolveKnowledgeGraph(documents);
+  const expanded = buildExpandedKnowledgeGraph(documents, graph.edges);
+  const health = inspectKnowledgeGraph(documents, expanded);
+  assert.equal(documents.length, expanded.nodes.filter((node) => node.kind === "evidence").length);
+  assert.equal(documents.length, expanded.edges.filter((edge) => edge.predicate === "supported-by").length);
+  assert.deepEqual([], health.connectivity.isolatedDocumentIds);
 });

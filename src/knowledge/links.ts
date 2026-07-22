@@ -1,4 +1,5 @@
 import type { KnowledgeDocument, KnowledgeEdge } from "./schema.ts";
+import { assertRelationContract } from "./graph.ts";
 
 export function normalizeKnowledgeReference(value: string): string {
   return value
@@ -53,6 +54,7 @@ export function resolveKnowledgeGraph(documents: readonly KnowledgeDocument[]): 
       if (!byId.has(relation.target)) {
         throw new Error(`${document.path}: relação aponta para ID inexistente '${relation.target}'`);
       }
+      assertRelationContract(document, byId.get(relation.target)!, relation.predicate);
       addEdge({ source: document.id, target: relation.target, predicate: relation.predicate, origin: "frontmatter" });
     }
 

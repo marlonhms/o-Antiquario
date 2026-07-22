@@ -41,7 +41,7 @@ class CatalogReleaseTest(unittest.TestCase):
                 "external_ids": {"wikidata": "Q999999991"},
             }]), encoding="utf-8")
             (knowledge / "knowledge-manifest.json").write_text(json.dumps({
-                "releaseId": "knowledge-v1-aaaaaaaaaaaa",
+                "releaseId": "knowledge-v2-aaaaaaaaaaaa",
             }), encoding="utf-8")
 
             first = compile_catalog_release(
@@ -73,7 +73,7 @@ class CatalogReleaseTest(unittest.TestCase):
             self.assertIn("aurora", search_index["terms"])
 
             (knowledge / "knowledge-manifest.json").write_text(json.dumps({
-                "releaseId": "knowledge-v1-bbbbbbbbbbbb",
+                "releaseId": "knowledge-v2-bbbbbbbbbbbb",
             }), encoding="utf-8")
             editorial_update = compile_catalog_release(
                 data_directory=data,

@@ -13,7 +13,7 @@ export const CatalogReleaseManifestSchema = z.object({
   releaseId: z.string().regex(/^catalog-web-v1-[a-f0-9]{12}$/),
   contentHash: hash,
   catalogVersion: z.string().regex(/^catalog-v1-[a-f0-9]{12}$/),
-  knowledgeReleaseId: z.string().regex(/^knowledge-v1-[a-f0-9]{12}$/),
+  knowledgeReleaseId: z.string().regex(/^knowledge-v[12]-[a-f0-9]{12}$/),
   counts: z.object({
     fragrances: z.number().int().nonnegative(),
     brands: z.number().int().nonnegative(),

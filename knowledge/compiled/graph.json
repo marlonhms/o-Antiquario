@@ -1,9 +1,11 @@
 {
+  "schemaVersion": 2,
   "nodes": [
     {
       "id": "antiquario:accord:amadeirado",
+      "kind": "document",
+      "documentType": "accord",
       "title": "Amadeirado",
-      "type": "accord",
       "path": "30_Acordes/Amadeirado.md",
       "tags": [
         "acorde",
@@ -13,9 +15,19 @@
       "confidence": "medium"
     },
     {
+      "id": "antiquario:accord:amadeirado:evidence:001-83fad531af5ec767",
+      "kind": "evidence",
+      "documentId": "antiquario:accord:amadeirado",
+      "sourceId": "internal_curated",
+      "license": "CC0-1.0",
+      "confidence": "medium",
+      "claimScope": "Classificação olfativa original para o vocabulário do projeto."
+    },
+    {
       "id": "antiquario:accord:citricos",
+      "kind": "document",
+      "documentType": "accord",
       "title": "Cítricos",
-      "type": "accord",
       "path": "30_Acordes/Citricos.md",
       "tags": [
         "acorde",
@@ -26,9 +38,19 @@
       "confidence": "medium"
     },
     {
+      "id": "antiquario:accord:citricos:evidence:001-c9ac58faddeb1b2c",
+      "kind": "evidence",
+      "documentId": "antiquario:accord:citricos",
+      "sourceId": "internal_curated",
+      "license": "CC0-1.0",
+      "confidence": "medium",
+      "claimScope": "Classificação olfativa original para o vocabulário do projeto."
+    },
+    {
       "id": "antiquario:context:calor-umido",
+      "kind": "document",
+      "documentType": "context",
       "title": "Calor úmido",
-      "type": "context",
       "path": "50_Contextos/Calor-Umido.md",
       "tags": [
         "contexto",
@@ -39,9 +61,19 @@
       "confidence": "medium"
     },
     {
+      "id": "antiquario:context:calor-umido:evidence:001-364b9d59df87577c",
+      "kind": "evidence",
+      "documentId": "antiquario:context:calor-umido",
+      "sourceId": "internal_curated",
+      "license": "CC0-1.0",
+      "confidence": "medium",
+      "claimScope": "Heurística contextual original usada pelo recomendador inicial."
+    },
+    {
       "id": "antiquario:context:escritorio",
+      "kind": "document",
+      "documentType": "context",
       "title": "Escritório",
-      "type": "context",
       "path": "50_Contextos/Escritorio.md",
       "tags": [
         "contexto",
@@ -52,9 +84,19 @@
       "confidence": "medium"
     },
     {
+      "id": "antiquario:context:escritorio:evidence:001-c93ee54464ba9a98",
+      "kind": "evidence",
+      "documentId": "antiquario:context:escritorio",
+      "sourceId": "internal_curated",
+      "license": "CC0-1.0",
+      "confidence": "medium",
+      "claimScope": "Heurística contextual original usada pelo recomendador inicial."
+    },
+    {
       "id": "antiquario:fragrance:brisa-vetiver",
+      "kind": "document",
+      "documentType": "fragrance",
       "title": "Brisa Vetiver",
-      "type": "fragrance",
       "path": "10_Perfumes/Brisa-Vetiver.md",
       "tags": [
         "perfume",
@@ -65,9 +107,19 @@
       "confidence": "high"
     },
     {
+      "id": "antiquario:fragrance:brisa-vetiver:evidence:001-833e27f20550eea9",
+      "kind": "evidence",
+      "documentId": "antiquario:fragrance:brisa-vetiver",
+      "sourceId": "internal_curated",
+      "license": "CC0-1.0",
+      "confidence": "high",
+      "claimScope": "Fixture original criada exclusivamente para testes do projeto."
+    },
+    {
       "id": "antiquario:guide:fontes-de-conhecimento",
+      "kind": "document",
+      "documentType": "guide",
       "title": "Fontes de conhecimento",
-      "type": "guide",
       "path": "70_Guias/Fontes-De-Conhecimento.md",
       "tags": [
         "guia",
@@ -78,9 +130,19 @@
       "confidence": "high"
     },
     {
+      "id": "antiquario:guide:fontes-de-conhecimento:evidence:001-d3070ffc1229e488",
+      "kind": "evidence",
+      "documentId": "antiquario:guide:fontes-de-conhecimento",
+      "sourceId": "internal_curated",
+      "license": "CC0-1.0",
+      "confidence": "high",
+      "claimScope": "Política de governança original do Knowledge Core."
+    },
+    {
       "id": "antiquario:index:principal",
+      "kind": "document",
+      "documentType": "index",
       "title": "O Antiquário — Índice de Conhecimento",
-      "type": "index",
       "path": "Antiquario-Index.md",
       "tags": [
         "indice",
@@ -90,9 +152,19 @@
       "confidence": "high"
     },
     {
+      "id": "antiquario:index:principal:evidence:001-1cfa6405bc51965d",
+      "kind": "evidence",
+      "documentId": "antiquario:index:principal",
+      "sourceId": "internal_curated",
+      "license": "CC0-1.0",
+      "confidence": "high",
+      "claimScope": "Estrutura editorial e relações originais do projeto."
+    },
+    {
       "id": "antiquario:olfactory-note:baunilha",
+      "kind": "document",
+      "documentType": "olfactory-note",
       "title": "Baunilha",
-      "type": "olfactory-note",
       "path": "20_Notas/Baunilha.md",
       "tags": [
         "nota",
@@ -103,9 +175,19 @@
       "confidence": "medium"
     },
     {
+      "id": "antiquario:olfactory-note:baunilha:evidence:001-2905ab8684b74172",
+      "kind": "evidence",
+      "documentId": "antiquario:olfactory-note:baunilha",
+      "sourceId": "internal_curated",
+      "license": "CC0-1.0",
+      "confidence": "medium",
+      "claimScope": "Síntese olfativa original destinada à taxonomia inicial."
+    },
+    {
       "id": "antiquario:olfactory-note:bergamota",
+      "kind": "document",
+      "documentType": "olfactory-note",
       "title": "Bergamota",
-      "type": "olfactory-note",
       "path": "20_Notas/Bergamota.md",
       "tags": [
         "nota",
@@ -116,9 +198,19 @@
       "confidence": "medium"
     },
     {
+      "id": "antiquario:olfactory-note:bergamota:evidence:001-298d75f57cd207e6",
+      "kind": "evidence",
+      "documentId": "antiquario:olfactory-note:bergamota",
+      "sourceId": "internal_curated",
+      "license": "CC0-1.0",
+      "confidence": "medium",
+      "claimScope": "Síntese olfativa original destinada à taxonomia inicial."
+    },
+    {
       "id": "antiquario:olfactory-note:vetiver",
+      "kind": "document",
+      "documentType": "olfactory-note",
       "title": "Vetiver",
-      "type": "olfactory-note",
       "path": "20_Notas/Vetiver.md",
       "tags": [
         "nota",
@@ -127,9 +219,24 @@
         "verde"
       ],
       "confidence": "medium"
+    },
+    {
+      "id": "antiquario:olfactory-note:vetiver:evidence:001-51a93c516dbbe0e8",
+      "kind": "evidence",
+      "documentId": "antiquario:olfactory-note:vetiver",
+      "sourceId": "internal_curated",
+      "license": "CC0-1.0",
+      "confidence": "medium",
+      "claimScope": "Síntese olfativa original destinada à taxonomia inicial."
     }
   ],
   "edges": [
+    {
+      "source": "antiquario:accord:amadeirado",
+      "target": "antiquario:accord:amadeirado:evidence:001-83fad531af5ec767",
+      "predicate": "supported-by",
+      "origin": "evidence"
+    },
     {
       "source": "antiquario:accord:amadeirado",
       "target": "antiquario:fragrance:brisa-vetiver",
@@ -153,6 +260,12 @@
       "target": "antiquario:olfactory-note:vetiver",
       "predicate": "references",
       "origin": "wikilink"
+    },
+    {
+      "source": "antiquario:accord:citricos",
+      "target": "antiquario:accord:citricos:evidence:001-c9ac58faddeb1b2c",
+      "predicate": "supported-by",
+      "origin": "evidence"
     },
     {
       "source": "antiquario:accord:citricos",
@@ -210,6 +323,12 @@
     },
     {
       "source": "antiquario:context:calor-umido",
+      "target": "antiquario:context:calor-umido:evidence:001-364b9d59df87577c",
+      "predicate": "supported-by",
+      "origin": "evidence"
+    },
+    {
+      "source": "antiquario:context:calor-umido",
       "target": "antiquario:fragrance:brisa-vetiver",
       "predicate": "compatible-example",
       "origin": "frontmatter"
@@ -225,6 +344,12 @@
       "target": "antiquario:olfactory-note:bergamota",
       "predicate": "references",
       "origin": "wikilink"
+    },
+    {
+      "source": "antiquario:context:escritorio",
+      "target": "antiquario:context:escritorio:evidence:001-c93ee54464ba9a98",
+      "predicate": "supported-by",
+      "origin": "evidence"
     },
     {
       "source": "antiquario:context:escritorio",
@@ -294,6 +419,12 @@
     },
     {
       "source": "antiquario:fragrance:brisa-vetiver",
+      "target": "antiquario:fragrance:brisa-vetiver:evidence:001-833e27f20550eea9",
+      "predicate": "supported-by",
+      "origin": "evidence"
+    },
+    {
+      "source": "antiquario:fragrance:brisa-vetiver",
       "target": "antiquario:olfactory-note:bergamota",
       "predicate": "has-note",
       "origin": "frontmatter"
@@ -315,6 +446,12 @@
       "target": "antiquario:olfactory-note:vetiver",
       "predicate": "references",
       "origin": "wikilink"
+    },
+    {
+      "source": "antiquario:guide:fontes-de-conhecimento",
+      "target": "antiquario:guide:fontes-de-conhecimento:evidence:001-d3070ffc1229e488",
+      "predicate": "supported-by",
+      "origin": "evidence"
     },
     {
       "source": "antiquario:guide:fontes-de-conhecimento",
@@ -378,6 +515,12 @@
     },
     {
       "source": "antiquario:index:principal",
+      "target": "antiquario:index:principal:evidence:001-1cfa6405bc51965d",
+      "predicate": "supported-by",
+      "origin": "evidence"
+    },
+    {
+      "source": "antiquario:index:principal",
       "target": "antiquario:olfactory-note:baunilha",
       "predicate": "indexes",
       "origin": "frontmatter"
@@ -411,6 +554,12 @@
       "target": "antiquario:olfactory-note:vetiver",
       "predicate": "references",
       "origin": "wikilink"
+    },
+    {
+      "source": "antiquario:olfactory-note:baunilha",
+      "target": "antiquario:olfactory-note:baunilha:evidence:001-2905ab8684b74172",
+      "predicate": "supported-by",
+      "origin": "evidence"
     },
     {
       "source": "antiquario:olfactory-note:baunilha",
@@ -462,6 +611,12 @@
     },
     {
       "source": "antiquario:olfactory-note:bergamota",
+      "target": "antiquario:olfactory-note:bergamota:evidence:001-298d75f57cd207e6",
+      "predicate": "supported-by",
+      "origin": "evidence"
+    },
+    {
+      "source": "antiquario:olfactory-note:bergamota",
       "target": "antiquario:olfactory-note:vetiver",
       "predicate": "references",
       "origin": "wikilink"
@@ -501,6 +656,12 @@
       "target": "antiquario:fragrance:brisa-vetiver",
       "predicate": "references",
       "origin": "wikilink"
+    },
+    {
+      "source": "antiquario:olfactory-note:vetiver",
+      "target": "antiquario:olfactory-note:vetiver:evidence:001-51a93c516dbbe0e8",
+      "predicate": "supported-by",
+      "origin": "evidence"
     }
   ]
 }

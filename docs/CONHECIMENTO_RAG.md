@@ -55,10 +55,17 @@ Artefatos:
 |---|---|
 | `documents.json` | Documentos aprovados com texto e metadados |
 | `chunks.json` | Unidades prontas para busca textual e embeddings |
-| `graph.json` | Nós e sinapses resolvidas |
+| `graph.json` | Nós de documento/evidência e sinapses resolvidas |
+| `graph-health.json` | Conectividade, cobertura editorial, requisitos e bloqueios de maturidade |
 | `knowledge-manifest.json` | Versão, hash, contagens e nomes dos artefatos |
 
 O hash é derivado do conteúdo, não do horário da execução. Duas compilações da mesma entrada produzem a mesma versão.
+
+## Knowledge Graph v2
+
+O grafo v2 separa relações semânticas declaradas no frontmatter, referências de navegação via wikilinks e relações de suporte para cada evidência. Predicados de domínio possuem contrato de origem e destino: por exemplo, `has-note` exige `fragrance → olfactory-note`, e `includes-note` exige `accord → olfactory-note`.
+
+O build também publica `graph-health.json`: conectividade, nós isolados, cobertura editorial e maturidade para recomendação. O estado `pilot` exige ao menos três perfumes comerciais aprovados e completos; `core`, trinta. Enquanto o relatório estiver `blocked`, Gemini não deve aconselhar a partir de dados factuais.
 
 ## Obsidian
 

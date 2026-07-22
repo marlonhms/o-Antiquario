@@ -48,7 +48,7 @@
 
 ### Sprint 2: taxonomia olfativa
 
-> **Progresso em 22/07/2026:** taxonomia v1, glossário português/inglês, aliases, normalização de acentos, IDs estáveis, validação de referências e 214 notas concluídos. O Knowledge Core v1 foi implementado com vault Obsidian, contrato validado, chunking semântico, grafo de sinapses e artefatos determinísticos. O conector Wikidata e a publicação DuckDB/Parquet também estão implementados com cache e fixture offline; resta validar uma sincronização real, evoluir a resolução entre fontes e emitir o relatório de itens externos sem licença.
+> **Progresso em 22/07/2026:** taxonomia v1, glossário português/inglês, aliases, normalização de acentos, IDs estáveis, validação de referências e 214 notas concluídos. O Knowledge Graph v2 agora valida relações tipadas, representa evidências como nós e publica relatório de conectividade/cobertura. O conector Wikidata, a publicação DuckDB/Parquet e a resolução de entidades também estão implementados com cache e fixture offline. O núcleo factual ainda está bloqueado para recomendação até que existam perfumes comerciais aprovados com notas, acordes, contexto e evidências.
 
 #### Entregas
 

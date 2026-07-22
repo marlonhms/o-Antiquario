@@ -118,7 +118,7 @@ export interface KnowledgeEdge {
   readonly source: string;
   readonly target: string;
   readonly predicate: string;
-  readonly origin: "frontmatter" | "wikilink";
+  readonly origin: "frontmatter" | "wikilink" | "evidence";
 }
 
 export interface KnowledgeChunk {
@@ -139,8 +139,8 @@ export interface KnowledgeChunk {
 }
 
 export const KnowledgeManifestSchema = z.object({
-  schemaVersion: z.literal(1),
-  releaseId: z.string().regex(/^knowledge-v1-[a-f0-9]{12}$/),
+  schemaVersion: z.literal(2),
+  releaseId: z.string().regex(/^knowledge-v2-[a-f0-9]{12}$/),
   contentHash: z.string().regex(/^[a-f0-9]{64}$/),
   latestDocumentDate: isoDate,
   counts: z.object({
@@ -148,12 +148,15 @@ export const KnowledgeManifestSchema = z.object({
     chunks: z.number().int().nonnegative(),
     nodes: z.number().int().nonnegative(),
     edges: z.number().int().nonnegative(),
+    evidenceNodes: z.number().int().nonnegative(),
+    typedRelations: z.number().int().nonnegative(),
   }).strict(),
   sources: z.array(z.string()),
   files: z.object({
     documents: z.literal("documents.json"),
     chunks: z.literal("chunks.json"),
     graph: z.literal("graph.json"),
+    health: z.literal("graph-health.json"),
   }).strict(),
 }).strict();
 

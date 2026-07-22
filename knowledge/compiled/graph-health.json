@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 2,
+  "graph": {
+    "documentNodes": 10,
+    "evidenceNodes": 10,
+    "typedRelations": 26,
+    "wikiReferences": 36,
+    "evidenceLinks": 10
+  },
+  "connectivity": {
+    "components": [
+      {
+        "anchor": "antiquario:accord:amadeirado",
+        "documentIds": [
+          "antiquario:accord:amadeirado",
+          "antiquario:accord:citricos",
+          "antiquario:context:calor-umido",
+          "antiquario:context:escritorio",
+          "antiquario:fragrance:brisa-vetiver",
+          "antiquario:guide:fontes-de-conhecimento",
+          "antiquario:index:principal",
+          "antiquario:olfactory-note:baunilha",
+          "antiquario:olfactory-note:bergamota",
+          "antiquario:olfactory-note:vetiver"
+        ]
+      }
+    ],
+    "isolatedDocumentIds": []
+  },
+  "editorialCoverage": {
+    "approvedFragrances": 1,
+    "approvedCommercialFragrances": 0,
+    "withExternalIdentity": 0,
+    "withNotes": 0,
+    "withAccords": 0,
+    "withContexts": 0,
+    "recommendationReady": 0
+  },
+  "readiness": {
+    "status": "blocked",
+    "pilotMinimum": 3,
+    "coreMinimum": 30,
+    "reason": "São necessárias 3 fragrâncias comerciais aprovadas e estruturalmente completas para o piloto."
+  },
+  "issues": [
+    {
+      "code": "no-approved-commercial-fragrances",
+      "severity": "warning",
+      "message": "Não há fragrâncias comerciais aprovadas; o RAG ainda não pode sustentar recomendações factuais."
+    }
+  ]
+}
