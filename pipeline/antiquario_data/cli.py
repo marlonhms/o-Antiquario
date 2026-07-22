@@ -27,6 +27,13 @@ def create_parser() -> argparse.ArgumentParser:
     sync.add_argument("--limit", type=int, default=500)
     sync.add_argument("--fixture", type=Path)
     sync.add_argument("--retrieved-at", help="data ISO fixa, útil para fixtures reproduzíveis")
+    sync.add_argument(
+        "--discovery-country",
+        action="append",
+        default=[],
+        metavar="QID",
+        help="QID de país para uma busca factual adicional; pode ser repetido",
+    )
 
     build = commands.add_parser("build", help="publica o catálogo DuckDB e Parquet")
     build.set_defaults(command="build")
@@ -59,6 +66,7 @@ def main(argv: Sequence[str] | None = None) -> int:
                 limit=args.limit,
                 fixture=args.fixture.resolve() if args.fixture else None,
                 retrieved_at=args.retrieved_at,
+                discovery_countries=args.discovery_country,
             )
             _print(result.as_dict())
         elif args.command == "build":

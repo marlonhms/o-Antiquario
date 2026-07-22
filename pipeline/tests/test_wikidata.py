@@ -8,7 +8,9 @@ import unittest
 from antiquario_data.io_utils import load_json, save_raw_snapshot
 from antiquario_data.wikidata import (
     USER_AGENT,
+    build_discovery_queries,
     build_perfume_query,
+    merge_sparql_payloads,
     normalize_sparql_payload,
     normalize_sparql_payload_with_quality,
     sync_wikidata,
@@ -25,6 +27,26 @@ class WikidataPipelineTest(unittest.TestCase):
         self.assertIn("wdt:P14539", query)
         self.assertIn("LIMIT 125", query)
         self.assertIn("github.com/marlonhms/o-Antiquario", USER_AGENT)
+
+    def test_regional_discovery_adds_strict_origin_filter_without_replacing_base_query(self) -> None:
+        queries = build_discovery_queries(125, ["Q878", "Q155", "Q878"])
+        self.assertEqual(3, len(queries))
+        self.assertNotIn("requestedOriginCountry", queries[0])
+        self.assertIn("wd:Q155", queries[1])
+        self.assertIn("?item wdt:P495 ?requestedOriginCountry", queries[1])
+        self.assertIn("wd:Q878", queries[2])
+        with self.assertRaisesRegex(ValueError, "QIDs de país inválidos"):
+            build_perfume_query(125, origin_countries=["Brasil"])
+
+    def test_merges_additional_discovery_payloads_before_normalization(self) -> None:
+        payload = load_json(FIXTURE)
+        merged = merge_sparql_payloads([payload, payload])
+        records = normalize_sparql_payload(
+            merged,
+            retrieved_at="2026-07-22",
+            snapshot_id="regional",
+        )
+        self.assertEqual(2, len(records))
 
     def test_normalization_merges_repeated_rows(self) -> None:
         records = normalize_sparql_payload(
@@ -63,6 +85,18 @@ class WikidataPipelineTest(unittest.TestCase):
             self.assertTrue(second.quality_report_path.exists())
             for line in first_contents.splitlines():
                 self.assertIn("record_hash", json.loads(line))
+            report = load_json(second.quality_report_path)
+            self.assertEqual([], report["discovery_countries"])
+
+    def test_fixture_rejects_regional_discovery_that_it_cannot_represent(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            with self.assertRaisesRegex(ValueError, "Fixtures não podem"):
+                sync_wikidata(
+                    Path(directory),
+                    limit=10,
+                    fixture=FIXTURE,
+                    discovery_countries=["Q155"],
+                )
 
     def test_quarantines_missing_labels_and_generic_materials(self) -> None:
         payload = load_json(FIXTURE)

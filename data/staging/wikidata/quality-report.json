@@ -1,15 +1,19 @@
 {
-  "accepted_records": 85,
+  "accepted_records": 282,
   "coverage": {
-    "with_brand": 47,
-    "with_country": 29,
-    "with_launch_year": 45,
-    "with_official_website": 24,
-    "with_perfumer": 57
+    "with_brand": 140,
+    "with_country": 54,
+    "with_launch_year": 132,
+    "with_official_website": 50,
+    "with_perfumer": 141
   },
-  "input_rows": 100,
-  "quarantined_records": 3,
+  "discovery_countries": [
+    "Q155",
+    "Q878"
+  ],
+  "input_rows": 366,
+  "quarantined_records": 55,
   "schema_version": 1,
-  "snapshot_id": "ba0c8eeb6fd1ee67e8880887aac532432784cc1b8d5fa7ed1980cf625bda449a",
+  "snapshot_id": "c1f419a24309bb35d809ae8f9a35a9c117f2d722b7e9165ed8a1139293faf75a",
   "source_id": "wikidata"
 }

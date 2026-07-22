@@ -5,7 +5,7 @@ import json
 from pathlib import Path
 import re
 import time
-from typing import Any, Callable
+from typing import Any, Callable, Sequence
 from urllib.error import HTTPError, URLError
 from urllib.parse import urlencode
 from urllib.request import Request, urlopen
@@ -18,13 +18,22 @@ WIKIDATA_ENDPOINT = "https://query.wikidata.org/sparql"
 USER_AGENT = "O-Antiquario/0.1 (https://github.com/marlonhms/o-Antiquario; contato via GitHub)"
 
 
-def build_perfume_query(limit: int) -> str:
+def build_perfume_query(limit: int, *, origin_countries: Sequence[str] = ()) -> str:
     if not 1 <= limit <= 5_000:
         raise ValueError("limit deve estar entre 1 e 5000")
+    normalized_countries = tuple(sorted(set(origin_countries)))
+    invalid_countries = [country for country in normalized_countries if not QID_PATTERN.fullmatch(country)]
+    if invalid_countries:
+        raise ValueError(f"QIDs de país inválidos: {', '.join(invalid_countries)}")
+    country_filter = ""
+    if normalized_countries:
+        values = " ".join(f"wd:{country}" for country in normalized_countries)
+        country_filter = f"  VALUES ?requestedOriginCountry {{ {values} }}\n  ?item wdt:P495 ?requestedOriginCountry .\n"
     return f"""SELECT ?item ?itemLabel ?brand ?brandLabel ?country ?countryLabel
        ?perfumer ?perfumerLabel ?inception ?publicationDate ?officialWebsite
 WHERE {{
   ?item wdt:P31/wdt:P279* wd:Q131746 .
+{country_filter}
   OPTIONAL {{ ?item wdt:P1716 ?declaredBrand . }}
   OPTIONAL {{ ?item wdt:P176 ?manufacturer . }}
   BIND(COALESCE(?declaredBrand, ?manufacturer) AS ?brand)
@@ -39,6 +48,26 @@ WHERE {{
 }}
 ORDER BY ?item
 LIMIT {limit}"""
+
+
+def build_discovery_queries(limit: int, discovery_countries: Sequence[str] = ()) -> tuple[str, ...]:
+    normalized_countries = tuple(sorted(set(discovery_countries)))
+    if len(normalized_countries) > 8:
+        raise ValueError("Use no máximo oito países de descoberta por sincronização")
+    return (
+        build_perfume_query(limit),
+        *(build_perfume_query(limit, origin_countries=(country,)) for country in normalized_countries),
+    )
+
+
+def merge_sparql_payloads(payloads: Sequence[dict[str, Any]]) -> dict[str, Any]:
+    bindings: list[dict[str, Any]] = []
+    for payload in payloads:
+        source_bindings = payload.get("results", {}).get("bindings")
+        if not isinstance(source_bindings, list):
+            raise ValueError("Resposta SPARQL não contém results.bindings")
+        bindings.extend(binding for binding in source_bindings if isinstance(binding, dict))
+    return {"head": {"vars": []}, "results": {"bindings": bindings}}
 
 
 def fetch_sparql(
@@ -250,14 +279,20 @@ def sync_wikidata(
     limit: int = 500,
     fixture: Path | None = None,
     retrieved_at: str | None = None,
+    discovery_countries: Sequence[str] = (),
 ) -> WikidataSyncResult:
-    query = build_perfume_query(limit)
+    queries = build_discovery_queries(limit, discovery_countries)
+    query = "\n\n".join(f"# discovery-query-{index}\n{item}" for index, item in enumerate(queries, start=1))
     fixture_contents = load_json(fixture) if fixture else None
+    if fixture_contents is not None and discovery_countries:
+        raise ValueError("Fixtures não podem ser combinadas com descoberta regional")
     if isinstance(fixture_contents, dict) and fixture_contents.get("source_id") == "wikidata" and "payload" in fixture_contents:
         payload = fixture_contents["payload"]
         retrieved_at = retrieved_at or fixture_contents.get("retrieved_at")
     else:
-        payload = fixture_contents if fixture_contents is not None else fetch_sparql(query)
+        payload = fixture_contents if fixture_contents is not None else merge_sparql_payloads(
+            [fetch_sparql(item) for item in queries]
+        )
     snapshot_path, envelope = save_raw_snapshot(
         payload,
         query,
@@ -288,6 +323,7 @@ def sync_wikidata(
             "with_launch_year": sum(record.launch_year is not None for record in records),
             "with_official_website": sum(record.official_website is not None for record in records),
         },
+        "discovery_countries": sorted(set(discovery_countries)),
     }
     atomic_write_text(
         quality_report_path,

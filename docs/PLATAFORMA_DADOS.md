@@ -63,6 +63,19 @@ npm run curation:queue
 
 `curation:queue` cria rascunhos internos a partir do catálogo factual, sem inserir inferências olfativas no core. Veja [Curadoria Editorial](CURADORIA_EDITORIAL.md).
 
+## Descoberta regional no Wikidata
+
+A consulta principal é ampla. Para aumentar a chance de cobertura específica sem substituir o catálogo existente, a sincronização pode acrescentar buscas por país de origem (`P495`) e mesclar os resultados pelo QID:
+
+```powershell
+npm run data:sync:wikidata -- --discovery-country Q155 --discovery-country Q878
+npm run data:build
+npm run catalog:compile
+npm run curation:queue
+```
+
+`Q155` é Brasil e `Q878` são Emirados Árabes Unidos. O filtro é estrito: ele só seleciona fragrâncias cujo país de origem esteja declarado no Wikidata; país da marca não é inferido como país da fragrância.
+
 ## Idempotência
 
 O snapshot usa o hash da consulta e do payload. Se o mesmo conteúdo reaparecer, a primeira data de recuperação é preservada. Staging, hashes de registro e versão do catálogo permanecem iguais.

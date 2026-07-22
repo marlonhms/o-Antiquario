@@ -75,6 +75,8 @@ npm run curation:queue
 
 O compilador publica uma release JSON determinística em `data/releases` e a cópia estável consumida pela PWA em `apps/web/public/catalog`. A interface identifica quando essa base factual está pronta, mas o ranking permanece ligado ao catálogo sintético até que os registros reais tenham notas, acordes e desempenho curados.
 
+Para ampliar a descoberta factual por país de origem no Wikidata, execute `npm run data:sync:wikidata -- --discovery-country Q155 --discovery-country Q878` antes do build do catálogo. A documentação explica o fluxo e as limitações em [Plataforma de dados](docs/PLATAFORMA_DADOS.md).
+
 ## Restrições externas relevantes
 
 As cotas gratuitas de serviços externos podem mudar. O projeto deverá consultar os limites ativos do Gemini no Google AI Studio e manter alternativas configuráveis. Em 22 de julho de 2026, a documentação oficial informa gratuidade de entrada e saída para modelos Flash selecionados, mas não garante capacidade fixa.

@@ -1,9 +1,9 @@
 {
   "coverage": {
-    "catalogFragrances": 85,
+    "catalogFragrances": 282,
     "regionalCandidates": {
       "brasil": 0,
-      "paises-arabes": 2
+      "paises-arabes": 3
     }
   },
   "items": [
@@ -58,6 +58,13 @@
     },
     {
       "completeness": 6,
+      "draftPath": "knowledge/vault/00_Inbox/Curadoria-Catalogo/gold-juice-q140406909.md",
+      "id": "wd-q140406909",
+      "name": "Gold Juice",
+      "wikidataId": "Q140406909"
+    },
+    {
+      "completeness": 6,
       "draftPath": "knowledge/vault/00_Inbox/Curadoria-Catalogo/tobacco-honey-q138605631.md",
       "id": "wd-q138605631",
       "name": "Tobacco Honey",
@@ -90,6 +97,41 @@
       "id": "wd-q139903229",
       "name": "Bijou Zafran",
       "wikidataId": "Q139903229"
+    },
+    {
+      "completeness": 6,
+      "draftPath": "knowledge/vault/00_Inbox/Curadoria-Catalogo/jardin-d-amalfi-q139989391.md",
+      "id": "wd-q139989391",
+      "name": "Jardin d'Amalfi",
+      "wikidataId": "Q139989391"
+    },
+    {
+      "completeness": 6,
+      "draftPath": "knowledge/vault/00_Inbox/Curadoria-Catalogo/printemps-q140453489.md",
+      "id": "wd-q140453489",
+      "name": "Printemps",
+      "wikidataId": "Q140453489"
+    },
+    {
+      "completeness": 6,
+      "draftPath": "knowledge/vault/00_Inbox/Curadoria-Catalogo/vanilla-embers-q140611048.md",
+      "id": "wd-q140611048",
+      "name": "Vanilla Embers",
+      "wikidataId": "Q140611048"
+    },
+    {
+      "completeness": 6,
+      "draftPath": "knowledge/vault/00_Inbox/Curadoria-Catalogo/acqua-fiorentina-q139992070.md",
+      "id": "wd-q139992070",
+      "name": "Acqua Fiorentina",
+      "wikidataId": "Q139992070"
+    },
+    {
+      "completeness": 6,
+      "draftPath": "knowledge/vault/00_Inbox/Curadoria-Catalogo/aventus-q24886336.md",
+      "id": "wd-q24886336",
+      "name": "Aventus",
+      "wikidataId": "Q24886336"
     },
     {
       "completeness": 5,
@@ -139,56 +181,18 @@
       "id": "wd-q137383096",
       "name": "Blondpurple",
       "wikidataId": "Q137383096"
-    },
-    {
-      "completeness": 5,
-      "draftPath": "knowledge/vault/00_Inbox/Curadoria-Catalogo/god-bless-cola-q137386796.md",
-      "id": "wd-q137386796",
-      "name": "God Bless Cola",
-      "wikidataId": "Q137386796"
-    },
-    {
-      "completeness": 5,
-      "draftPath": "knowledge/vault/00_Inbox/Curadoria-Catalogo/patchouli-sublime-q137454537.md",
-      "id": "wd-q137454537",
-      "name": "Patchouli Sublime",
-      "wikidataId": "Q137454537"
-    },
-    {
-      "completeness": 5,
-      "draftPath": "knowledge/vault/00_Inbox/Curadoria-Catalogo/ganymede-q137825310.md",
-      "id": "wd-q137825310",
-      "name": "Ganymede",
-      "wikidataId": "Q137825310"
-    },
-    {
-      "completeness": 5,
-      "draftPath": "knowledge/vault/00_Inbox/Curadoria-Catalogo/opulent-dubai-q138766540.md",
-      "id": "wd-q138766540",
-      "name": "Opulent Dubai",
-      "wikidataId": "Q138766540"
-    },
-    {
-      "completeness": 5,
-      "draftPath": "knowledge/vault/00_Inbox/Curadoria-Catalogo/cascadia-q138816607.md",
-      "id": "wd-q138816607",
-      "name": "Cascadia",
-      "wikidataId": "Q138816607"
-    },
-    {
-      "completeness": 5,
-      "draftPath": "knowledge/vault/00_Inbox/Curadoria-Catalogo/cuir-infrarouge-q137361933.md",
-      "id": "wd-q137361933",
-      "name": "Cuir InfraRouge",
-      "wikidataId": "Q137361933"
     }
   ],
   "purpose": "internal-editorial-curation-queue",
   "schemaVersion": 1,
   "selection": {
     "excludedAmbiguousRecords": [
+      "wd-q130234707",
+      "wd-q138816607",
       "wd-q139850984",
-      "wd-q139851006"
+      "wd-q139851006",
+      "wd-q140147917",
+      "wd-q3290744"
     ],
     "requested": 25,
     "selected": 25,
