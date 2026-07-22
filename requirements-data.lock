@@ -1,0 +1,2 @@
+# Dependência binária fixada para reproduzir a plataforma de dados v1.
+duckdb==1.5.5

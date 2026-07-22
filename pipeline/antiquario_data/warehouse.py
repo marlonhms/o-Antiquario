@@ -1,0 +1,145 @@
+from __future__ import annotations
+
+from hashlib import sha256
+import json
+import os
+from pathlib import Path
+from typing import Any
+
+from .io_utils import atomic_write_text, read_records_jsonl
+from .models import FragranceRecord, canonical_json
+
+
+def _duckdb() -> Any:
+    try:
+        import duckdb
+    except ModuleNotFoundError as error:
+        raise RuntimeError("DuckDB ausente. Execute a instalação do ambiente Python do projeto.") from error
+    return duckdb
+
+
+def _sql_path(path: Path) -> str:
+    return str(path.resolve()).replace("'", "''").replace("\\", "/")
+
+
+def _relation_rows(records: list[FragranceRecord], attribute: str) -> list[tuple[str, str, str]]:
+    rows = {
+        (record.id, reference.wikidata_id, reference.label)
+        for record in records
+        for reference in getattr(record, attribute)
+    }
+    return sorted(rows)
+
+
+def build_catalog(data_directory: Path) -> dict[str, Any]:
+    staging_path = data_directory / "staging" / "wikidata" / "fragrances.jsonl"
+    if not staging_path.exists():
+        raise FileNotFoundError(f"Staging ausente: {staging_path}. Execute sync wikidata primeiro.")
+    records = sorted(read_records_jsonl(staging_path), key=lambda record: record.id)
+    if not records:
+        raise ValueError("O staging não contém fragrâncias válidas")
+
+    ids = [record.id for record in records]
+    if len(ids) != len(set(ids)):
+        raise ValueError("O staging contém IDs duplicados")
+
+    catalog_directory = data_directory / "catalog"
+    parquet_directory = catalog_directory / "parquet"
+    catalog_directory.mkdir(parents=True, exist_ok=True)
+    parquet_directory.mkdir(parents=True, exist_ok=True)
+    database_path = catalog_directory / "catalog.duckdb"
+    temporary_database = catalog_directory / ".catalog.tmp.duckdb"
+    if temporary_database.exists():
+        temporary_database.unlink()
+
+    duckdb = _duckdb()
+    connection = duckdb.connect(str(temporary_database))
+    try:
+        connection.execute("""
+            CREATE TABLE fragrances (
+              id VARCHAR PRIMARY KEY,
+              wikidata_id VARCHAR UNIQUE NOT NULL,
+              name VARCHAR NOT NULL,
+              name_language VARCHAR NOT NULL,
+              launch_year INTEGER,
+              official_website VARCHAR,
+              source_id VARCHAR NOT NULL,
+              source_url VARCHAR NOT NULL,
+              license VARCHAR NOT NULL,
+              retrieved_at DATE NOT NULL,
+              snapshot_id VARCHAR NOT NULL,
+              record_hash VARCHAR NOT NULL
+            )
+        """)
+        connection.executemany(
+            "INSERT INTO fragrances VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
+            [(
+                record.id,
+                record.wikidata_id,
+                record.name,
+                record.name_language,
+                record.launch_year,
+                record.official_website,
+                record.provenance.source_id,
+                record.provenance.source_url,
+                record.provenance.license,
+                record.provenance.retrieved_at,
+                record.provenance.snapshot_id,
+                record.record_hash,
+            ) for record in records],
+        )
+
+        for table, attribute in (
+            ("fragrance_brands", "brands"),
+            ("fragrance_perfumers", "perfumers"),
+            ("fragrance_countries", "countries"),
+        ):
+            connection.execute(f"""
+                CREATE TABLE {table} (
+                  fragrance_id VARCHAR NOT NULL,
+                  wikidata_id VARCHAR NOT NULL,
+                  label VARCHAR NOT NULL,
+                  PRIMARY KEY (fragrance_id, wikidata_id)
+                )
+            """)
+            rows = _relation_rows(records, attribute)
+            if rows:
+                connection.executemany(f"INSERT INTO {table} VALUES (?, ?, ?)", rows)
+
+        connection.execute("CREATE INDEX fragrance_name_idx ON fragrances(name)")
+        for table in ("fragrances", "fragrance_brands", "fragrance_perfumers", "fragrance_countries"):
+            parquet_path = parquet_directory / f"{table}.parquet"
+            if parquet_path.exists():
+                parquet_path.unlink()
+            connection.execute(
+                f"COPY (SELECT * FROM {table} ORDER BY ALL) TO '{_sql_path(parquet_path)}' (FORMAT PARQUET, COMPRESSION ZSTD)"
+            )
+    finally:
+        connection.close()
+
+    os.replace(temporary_database, database_path)
+    payload = [record.as_dict() for record in records]
+    content_hash = sha256(canonical_json(payload).encode("utf-8")).hexdigest()
+    counts = {
+        "fragrances": len(records),
+        "brands": len(_relation_rows(records, "brands")),
+        "perfumers": len(_relation_rows(records, "perfumers")),
+        "countries": len(_relation_rows(records, "countries")),
+    }
+    manifest = {
+        "schema_version": 1,
+        "catalog_version": f"catalog-v1-{content_hash[:12]}",
+        "content_hash": content_hash,
+        "sources": sorted({record.provenance.source_id for record in records}),
+        "snapshot_ids": sorted({record.provenance.snapshot_id for record in records}),
+        "counts": counts,
+        "files": {
+            "database": "catalog.duckdb",
+            "parquet_directory": "parquet",
+        },
+    }
+    atomic_write_text(
+        catalog_directory / "catalog-manifest.json",
+        f"{json.dumps(manifest, ensure_ascii=False, sort_keys=True, indent=2)}\n",
+    )
+    return manifest

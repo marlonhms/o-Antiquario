@@ -1,0 +1,289 @@
+schema_version: 1
+locale_default: pt-BR
+license: CC0-1.0
+reviewed_at: 2026-07-22
+
+families:
+  - { id: citrica, pt: Cítrica, en: Citrus, source_ids: [internal_curated] }
+  - { id: floral, pt: Floral, en: Floral, source_ids: [internal_curated] }
+  - { id: amadeirada, pt: Amadeirada, en: Woody, source_ids: [internal_curated] }
+  - { id: ambarada, pt: Ambarada, en: Amber, source_ids: [internal_curated] }
+  - { id: aromatica, pt: Aromática, en: Aromatic, source_ids: [internal_curated] }
+  - { id: verde, pt: Verde, en: Green, source_ids: [internal_curated] }
+  - { id: frutada, pt: Frutada, en: Fruity, source_ids: [internal_curated] }
+  - { id: especiada, pt: Especiada, en: Spicy, source_ids: [internal_curated] }
+  - { id: gourmand, pt: Gourmand, en: Gourmand, source_ids: [internal_curated] }
+  - { id: couro, pt: Couro, en: Leather, source_ids: [internal_curated] }
+  - { id: aquatica, pt: Aquática, en: Aquatic, source_ids: [internal_curated] }
+  - { id: almiscarada, pt: Almiscarada, en: Musky, source_ids: [internal_curated] }
+  - { id: terrosa, pt: Terrosa, en: Earthy, source_ids: [internal_curated] }
+  - { id: aldeidica, pt: Aldeídica, en: Aldehydic, source_ids: [internal_curated] }
+  - { id: resinosa, pt: Resinosa, en: Resinous, source_ids: [internal_curated] }
+
+accords:
+  - { id: citrico, pt: cítrico, en: citrus, aliases: [hesperídico, hesperidic], family_ids: [citrica], source_ids: [internal_curated] }
+  - { id: floral, pt: floral, en: floral, aliases: [], family_ids: [floral], source_ids: [internal_curated] }
+  - { id: floral-branco, pt: floral branco, en: white floral, aliases: [flores-brancas], family_ids: [floral], source_ids: [internal_curated] }
+  - { id: floral-amarelo, pt: floral amarelo, en: yellow floral, aliases: [flores-amarelas], family_ids: [floral], source_ids: [internal_curated] }
+  - { id: floral-verde, pt: floral verde, en: green floral, aliases: [], family_ids: [floral, verde], source_ids: [internal_curated] }
+  - { id: amadeirado, pt: amadeirado, en: woody, aliases: [madeiras], family_ids: [amadeirada], source_ids: [internal_curated] }
+  - { id: amadeirado-seco, pt: amadeirado seco, en: dry woody, aliases: [], family_ids: [amadeirada], source_ids: [internal_curated] }
+  - { id: ambarado, pt: ambarado, en: amber, aliases: [oriental], family_ids: [ambarada], source_ids: [internal_curated] }
+  - { id: aromatico, pt: aromático, en: aromatic, aliases: [ervas-aromáticas, herbal], family_ids: [aromatica], source_ids: [internal_curated] }
+  - { id: verde, pt: verde, en: green, aliases: [folhas-verdes], family_ids: [verde], source_ids: [internal_curated] }
+  - { id: frutado, pt: frutado, en: fruity, aliases: [frutas], family_ids: [frutada], source_ids: [internal_curated] }
+  - { id: frutas-vermelhas, pt: frutas vermelhas, en: red berries, aliases: [frutas-vermelhas], family_ids: [frutada], source_ids: [internal_curated] }
+  - { id: frutas-tropicais, pt: frutas tropicais, en: tropical fruits, aliases: [tropical], family_ids: [frutada], source_ids: [internal_curated] }
+  - { id: especiado, pt: especiado, en: spicy, aliases: [especiarias, spices], family_ids: [especiada], source_ids: [internal_curated] }
+  - { id: especiado-fresco, pt: especiado fresco, en: fresh spicy, aliases: [], family_ids: [especiada], source_ids: [internal_curated] }
+  - { id: especiado-quente, pt: especiado quente, en: warm spicy, aliases: [], family_ids: [especiada], source_ids: [internal_curated] }
+  - { id: gourmand, pt: gourmand, en: gourmand, aliases: [comestível, edible], family_ids: [gourmand], source_ids: [internal_curated] }
+  - { id: doce, pt: doce, en: sweet, aliases: [adocicado], family_ids: [gourmand, ambarada], source_ids: [internal_curated] }
+  - { id: baunilhado, pt: baunilhado, en: vanilla, aliases: [], family_ids: [gourmand, ambarada], source_ids: [internal_curated] }
+  - { id: couro, pt: couro, en: leather, aliases: [couro-animalico], family_ids: [couro], source_ids: [internal_curated] }
+  - { id: aquatico, pt: aquático, en: aquatic, aliases: [marinho, marine], family_ids: [aquatica], source_ids: [internal_curated] }
+  - { id: ozonico, pt: ozônico, en: ozonic, aliases: [ar, airy], family_ids: [aquatica, aldeidica], source_ids: [internal_curated] }
+  - { id: salgado, pt: salgado, en: salty, aliases: [salino, saline], family_ids: [aquatica], source_ids: [internal_curated] }
+  - { id: almiscarado, pt: almiscarado, en: musky, aliases: [musk], family_ids: [almiscarada], source_ids: [internal_curated] }
+  - { id: atalcado, pt: atalcado, en: powdery, aliases: [pudrado, talcado], family_ids: [almiscarada, floral], source_ids: [internal_curated] }
+  - { id: terroso, pt: terroso, en: earthy, aliases: [terra], family_ids: [terrosa], source_ids: [internal_curated] }
+  - { id: mineral, pt: mineral, en: mineral, aliases: [pedregoso, stony], family_ids: [terrosa, aquatica], source_ids: [internal_curated] }
+  - { id: aldeidico, pt: aldeídico, en: aldehydic, aliases: [aldeídos, aldehydes], family_ids: [aldeidica], source_ids: [internal_curated] }
+  - { id: resinoso, pt: resinoso, en: resinous, aliases: [balsâmico, balsamic], family_ids: [resinosa, ambarada], source_ids: [internal_curated] }
+  - { id: defumado, pt: defumado, en: smoky, aliases: [enfumaçado, fumê], family_ids: [amadeirada, couro], source_ids: [internal_curated] }
+  - { id: fresco, pt: fresco, en: fresh, aliases: [refrescante], family_ids: [citrica, aromatica, aquatica], source_ids: [internal_curated] }
+  - { id: animalico, pt: animálico, en: animalic, aliases: [animal], family_ids: [almiscarada, couro], source_ids: [internal_curated] }
+  - { id: licoroso, pt: licoroso, en: boozy, aliases: [alcoólico, alcoholic], family_ids: [gourmand, ambarada], source_ids: [internal_curated] }
+
+notes:
+  # Cítricas
+  - { id: bergamota, pt: bergamota, en: bergamot, aliases: [], family_ids: [citrica], source_ids: [internal_curated] }
+  - { id: limao-siciliano, pt: limão-siciliano, en: lemon, aliases: [limão, limao], family_ids: [citrica], source_ids: [internal_curated] }
+  - { id: lima, pt: lima, en: lime, aliases: [lima-verde], family_ids: [citrica], source_ids: [internal_curated] }
+  - { id: laranja, pt: laranja, en: orange, aliases: [laranja-doce], family_ids: [citrica], source_ids: [internal_curated] }
+  - { id: laranja-amarga, pt: laranja-amarga, en: bitter orange, aliases: [bigarade], family_ids: [citrica], source_ids: [internal_curated] }
+  - { id: mandarina, pt: mandarina, en: mandarin orange, aliases: [mandarin], family_ids: [citrica], source_ids: [internal_curated] }
+  - { id: tangerina, pt: tangerina, en: tangerine, aliases: [mexerica], family_ids: [citrica], source_ids: [internal_curated] }
+  - { id: toranja, pt: toranja, en: grapefruit, aliases: [grapefruit], family_ids: [citrica], source_ids: [internal_curated] }
+  - { id: pomelo, pt: pomelo, en: pomelo, aliases: [], family_ids: [citrica], source_ids: [internal_curated] }
+  - { id: yuzu, pt: yuzu, en: yuzu, aliases: [], family_ids: [citrica], source_ids: [internal_curated] }
+  - { id: cidra, pt: cidra, en: citron, aliases: [cedrat], family_ids: [citrica], source_ids: [internal_curated] }
+  - { id: kumquat, pt: kumquat, en: kumquat, aliases: [quincã], family_ids: [citrica], source_ids: [internal_curated] }
+  - { id: calamansi, pt: calamansi, en: calamansi, aliases: [calamondin], family_ids: [citrica], source_ids: [internal_curated] }
+  - { id: caviar-limao, pt: caviar-limão, en: finger lime, aliases: [finger-lime], family_ids: [citrica], source_ids: [internal_curated] }
+  - { id: petitgrain, pt: petitgrain, en: petitgrain, aliases: [petit-grain], family_ids: [citrica, verde], source_ids: [internal_curated] }
+  - { id: verbena-limao, pt: verbena-limão, en: lemon verbena, aliases: [lúcia-lima], family_ids: [citrica, aromatica], source_ids: [internal_curated] }
+  - { id: capim-limao, pt: capim-limão, en: lemongrass, aliases: [erva-cidreira, capim-santo], family_ids: [citrica, aromatica], source_ids: [internal_curated] }
+  - { id: litsea-cubeba, pt: litsea cubeba, en: litsea cubeba, aliases: [may-chang], family_ids: [citrica, aromatica], source_ids: [internal_curated] }
+
+  # Florais
+  - { id: rosa, pt: rosa, en: rose, aliases: [], family_ids: [floral], source_ids: [internal_curated] }
+  - { id: rosa-damascena, pt: rosa-damascena, en: damask rose, aliases: [rosa-de-damasco], family_ids: [floral], source_ids: [internal_curated] }
+  - { id: rosa-centifolia, pt: rosa-centifólia, en: centifolia rose, aliases: [rosa-de-maio], family_ids: [floral], source_ids: [internal_curated] }
+  - { id: jasmim, pt: jasmim, en: jasmine, aliases: [], family_ids: [floral], source_ids: [internal_curated] }
+  - { id: jasmim-sambac, pt: jasmim-sambac, en: jasmine sambac, aliases: [sambac], family_ids: [floral], source_ids: [internal_curated] }
+  - { id: iris, pt: íris, en: iris, aliases: [orris], family_ids: [floral], source_ids: [internal_curated] }
+  - { id: violeta, pt: violeta, en: violet, aliases: [], family_ids: [floral], source_ids: [internal_curated] }
+  - { id: tuberosa, pt: tuberosa, en: tuberose, aliases: [nardo], family_ids: [floral], source_ids: [internal_curated] }
+  - { id: ylang-ylang, pt: ylang-ylang, en: ylang-ylang, aliases: [ilangue-ilangue], family_ids: [floral], source_ids: [internal_curated] }
+  - { id: geranio, pt: gerânio, en: geranium, aliases: [], family_ids: [floral, aromatica], source_ids: [internal_curated] }
+  - { id: lavanda, pt: lavanda, en: lavender, aliases: [alfazema], family_ids: [floral, aromatica], source_ids: [internal_curated] }
+  - { id: flor-laranjeira, pt: flor de laranjeira, en: orange blossom, aliases: [flor-de-laranjeira], family_ids: [floral, citrica], source_ids: [internal_curated] }
+  - { id: neroli, pt: néroli, en: neroli, aliases: [], family_ids: [floral, citrica], source_ids: [internal_curated] }
+  - { id: magnolia, pt: magnólia, en: magnolia, aliases: [], family_ids: [floral], source_ids: [internal_curated] }
+  - { id: gardenia, pt: gardênia, en: gardenia, aliases: [], family_ids: [floral], source_ids: [internal_curated] }
+  - { id: peonia, pt: peônia, en: peony, aliases: [], family_ids: [floral], source_ids: [internal_curated] }
+  - { id: lirio, pt: lírio, en: lily, aliases: [], family_ids: [floral], source_ids: [internal_curated] }
+  - { id: muguet, pt: lírio-do-vale, en: lily of the valley, aliases: [muguet], family_ids: [floral], source_ids: [internal_curated] }
+  - { id: mimosa, pt: mimosa, en: mimosa, aliases: [], family_ids: [floral], source_ids: [internal_curated] }
+  - { id: heliotropio, pt: heliotrópio, en: heliotrope, aliases: [], family_ids: [floral, gourmand], source_ids: [internal_curated] }
+  - { id: osmanthus, pt: osmanthus, en: osmanthus, aliases: [osmanto], family_ids: [floral, frutada], source_ids: [internal_curated] }
+  - { id: frangipani, pt: frangipani, en: frangipani, aliases: [pluméria], family_ids: [floral], source_ids: [internal_curated] }
+  - { id: champaca, pt: champaca, en: champaca, aliases: [], family_ids: [floral], source_ids: [internal_curated] }
+  - { id: narciso, pt: narciso, en: narcissus, aliases: [], family_ids: [floral, verde], source_ids: [internal_curated] }
+  - { id: jacinto, pt: jacinto, en: hyacinth, aliases: [], family_ids: [floral, verde], source_ids: [internal_curated] }
+  - { id: cravo-flor, pt: cravo, en: carnation, aliases: [cravo-flor], family_ids: [floral, especiada], source_ids: [internal_curated] }
+  - { id: fresia, pt: frésia, en: freesia, aliases: [], family_ids: [floral], source_ids: [internal_curated] }
+  - { id: flor-lotus, pt: flor de lótus, en: lotus flower, aliases: [lótus], family_ids: [floral, aquatica], source_ids: [internal_curated] }
+  - { id: flor-cerejeira, pt: flor de cerejeira, en: cherry blossom, aliases: [sakura], family_ids: [floral], source_ids: [internal_curated] }
+  - { id: immortelle, pt: immortelle, en: immortelle, aliases: [sempre-viva], family_ids: [floral, especiada], source_ids: [internal_curated] }
+
+  # Amadeiradas
+  - { id: cedro, pt: cedro, en: cedar, aliases: [], family_ids: [amadeirada], source_ids: [internal_curated] }
+  - { id: cedro-atlas, pt: cedro-do-atlas, en: atlas cedar, aliases: [], family_ids: [amadeirada], source_ids: [internal_curated] }
+  - { id: cedro-virginia, pt: cedro-da-virgínia, en: virginia cedar, aliases: [], family_ids: [amadeirada], source_ids: [internal_curated] }
+  - { id: sandalo, pt: sândalo, en: sandalwood, aliases: [], family_ids: [amadeirada], source_ids: [internal_curated] }
+  - { id: vetiver, pt: vetiver, en: vetiver, aliases: [], family_ids: [amadeirada, terrosa], source_ids: [internal_curated] }
+  - { id: oud, pt: oud, en: oud, aliases: [agarwood, madeira-de-agar], family_ids: [amadeirada, resinosa], source_ids: [internal_curated] }
+  - { id: madeira-guaiaco, pt: madeira de guáiaco, en: guaiac wood, aliases: [guáiaco], family_ids: [amadeirada], source_ids: [internal_curated] }
+  - { id: patchouli, pt: patchouli, en: patchouli, aliases: [pachuli], family_ids: [amadeirada, terrosa], source_ids: [internal_curated] }
+  - { id: cashmeran, pt: cashmeran, en: cashmeran, aliases: [madeira-cashmere], family_ids: [amadeirada, almiscarada], source_ids: [internal_curated] }
+  - { id: iso-e-super, pt: Iso E Super, en: Iso E Super, aliases: [iso-e], family_ids: [amadeirada], source_ids: [internal_curated] }
+  - { id: carvalho, pt: carvalho, en: oak, aliases: [], family_ids: [amadeirada], source_ids: [internal_curated] }
+  - { id: pinho, pt: pinho, en: pine, aliases: [], family_ids: [amadeirada, aromatica], source_ids: [internal_curated] }
+  - { id: cipreste, pt: cipreste, en: cypress, aliases: [], family_ids: [amadeirada, aromatica], source_ids: [internal_curated] }
+  - { id: betula, pt: bétula, en: birch, aliases: [], family_ids: [amadeirada, couro], source_ids: [internal_curated] }
+  - { id: ebano, pt: ébano, en: ebony, aliases: [], family_ids: [amadeirada], source_ids: [internal_curated] }
+  - { id: mogno, pt: mogno, en: mahogany, aliases: [], family_ids: [amadeirada], source_ids: [internal_curated] }
+  - { id: pau-rosa, pt: pau-rosa, en: rosewood, aliases: [jacarandá], family_ids: [amadeirada, floral], source_ids: [internal_curated] }
+  - { id: hinoki, pt: hinoki, en: hinoki, aliases: [cipreste-japonês], family_ids: [amadeirada, aromatica], source_ids: [internal_curated] }
+  - { id: abeto, pt: abeto, en: fir, aliases: [], family_ids: [amadeirada, aromatica], source_ids: [internal_curated] }
+  - { id: espruce, pt: espruce, en: spruce, aliases: [pícea], family_ids: [amadeirada, aromatica], source_ids: [internal_curated] }
+  - { id: bambu, pt: bambu, en: bamboo, aliases: [], family_ids: [amadeirada, verde], source_ids: [internal_curated] }
+  - { id: madeira-flutuante, pt: madeira flutuante, en: driftwood, aliases: [driftwood], family_ids: [amadeirada, aquatica], source_ids: [internal_curated] }
+  - { id: madeira-teca, pt: madeira de teca, en: teak wood, aliases: [teca], family_ids: [amadeirada], source_ids: [internal_curated] }
+  - { id: madeira-oliveira, pt: madeira de oliveira, en: olive wood, aliases: [], family_ids: [amadeirada], source_ids: [internal_curated] }
+  - { id: madeiras-claras, pt: madeiras claras, en: light woods, aliases: [madeira-clara], family_ids: [amadeirada], source_ids: [internal_curated] }
+
+  # Aromáticas e verdes
+  - { id: salvia, pt: sálvia, en: sage, aliases: [], family_ids: [aromatica], source_ids: [internal_curated] }
+  - { id: salvia-esclareia, pt: sálvia-esclareia, en: clary sage, aliases: [clary-sage], family_ids: [aromatica], source_ids: [internal_curated] }
+  - { id: alecrim, pt: alecrim, en: rosemary, aliases: [], family_ids: [aromatica], source_ids: [internal_curated] }
+  - { id: manjericao, pt: manjericão, en: basil, aliases: [], family_ids: [aromatica, verde], source_ids: [internal_curated] }
+  - { id: hortela, pt: hortelã, en: mint, aliases: [menta], family_ids: [aromatica, verde], source_ids: [internal_curated] }
+  - { id: tomilho, pt: tomilho, en: thyme, aliases: [], family_ids: [aromatica], source_ids: [internal_curated] }
+  - { id: oregano, pt: orégano, en: oregano, aliases: [], family_ids: [aromatica], source_ids: [internal_curated] }
+  - { id: estragao, pt: estragão, en: tarragon, aliases: [], family_ids: [aromatica, verde], source_ids: [internal_curated] }
+  - { id: artemisia, pt: artemísia, en: artemisia, aliases: [absinto], family_ids: [aromatica, verde], source_ids: [internal_curated] }
+  - { id: folha-coentro, pt: folha de coentro, en: coriander leaf, aliases: [cilantro], family_ids: [aromatica, verde], source_ids: [internal_curated] }
+  - { id: eucalipto, pt: eucalipto, en: eucalyptus, aliases: [], family_ids: [aromatica], source_ids: [internal_curated] }
+  - { id: cha-verde, pt: chá verde, en: green tea, aliases: [], family_ids: [verde, aromatica], source_ids: [internal_curated] }
+  - { id: cha-preto, pt: chá preto, en: black tea, aliases: [], family_ids: [aromatica], source_ids: [internal_curated] }
+  - { id: cha-branco, pt: chá branco, en: white tea, aliases: [], family_ids: [aromatica], source_ids: [internal_curated] }
+  - { id: mate, pt: mate, en: mate tea, aliases: [erva-mate], family_ids: [verde, aromatica], source_ids: [internal_curated] }
+  - { id: galbano, pt: gálbano, en: galbanum, aliases: [], family_ids: [verde, resinosa], source_ids: [internal_curated] }
+  - { id: folha-violeta, pt: folha de violeta, en: violet leaf, aliases: [], family_ids: [verde, floral], source_ids: [internal_curated] }
+  - { id: folha-figo, pt: folha de figo, en: fig leaf, aliases: [], family_ids: [verde, frutada], source_ids: [internal_curated] }
+  - { id: folha-tomate, pt: folha de tomate, en: tomato leaf, aliases: [], family_ids: [verde], source_ids: [internal_curated] }
+  - { id: grama, pt: grama, en: grass, aliases: [relva], family_ids: [verde], source_ids: [internal_curated] }
+  - { id: musgo-carvalho, pt: musgo de carvalho, en: oakmoss, aliases: [oak-moss], family_ids: [verde, terrosa], source_ids: [internal_curated] }
+  - { id: zimbro, pt: zimbro, en: juniper, aliases: [junípero], family_ids: [aromatica, amadeirada], source_ids: [internal_curated] }
+  - { id: agulhas-pinho, pt: agulhas de pinho, en: pine needles, aliases: [], family_ids: [verde, aromatica], source_ids: [internal_curated] }
+  - { id: samambaia, pt: samambaia, en: fern, aliases: [fougère, fougere], family_ids: [verde, aromatica], source_ids: [internal_curated] }
+  - { id: hera, pt: hera, en: ivy, aliases: [], family_ids: [verde], source_ids: [internal_curated] }
+  - { id: folha-bananeira, pt: folha de bananeira, en: banana leaf, aliases: [], family_ids: [verde], source_ids: [internal_curated] }
+  - { id: shiso, pt: shiso, en: shiso, aliases: [perilla], family_ids: [verde, aromatica], source_ids: [internal_curated] }
+  - { id: ruibarbo, pt: ruibarbo, en: rhubarb, aliases: [], family_ids: [verde, frutada], source_ids: [internal_curated] }
+
+  # Especiarias
+  - { id: canela, pt: canela, en: cinnamon, aliases: [], family_ids: [especiada], source_ids: [internal_curated] }
+  - { id: cravo-especiaria, pt: cravo-da-índia, en: clove, aliases: [cravinho], family_ids: [especiada], source_ids: [internal_curated] }
+  - { id: cardamomo, pt: cardamomo, en: cardamom, aliases: [], family_ids: [especiada], source_ids: [internal_curated] }
+  - { id: pimenta-preta, pt: pimenta-preta, en: black pepper, aliases: [pimenta-do-reino], family_ids: [especiada], source_ids: [internal_curated] }
+  - { id: pimenta-rosa, pt: pimenta-rosa, en: pink pepper, aliases: [], family_ids: [especiada], source_ids: [internal_curated] }
+  - { id: acafrao, pt: açafrão, en: saffron, aliases: [], family_ids: [especiada, couro], source_ids: [internal_curated] }
+  - { id: noz-moscada, pt: noz-moscada, en: nutmeg, aliases: [], family_ids: [especiada], source_ids: [internal_curated] }
+  - { id: cominho, pt: cominho, en: cumin, aliases: [], family_ids: [especiada], source_ids: [internal_curated] }
+  - { id: gengibre, pt: gengibre, en: ginger, aliases: [], family_ids: [especiada, citrica], source_ids: [internal_curated] }
+  - { id: anis-estrelado, pt: anis-estrelado, en: star anise, aliases: [], family_ids: [especiada], source_ids: [internal_curated] }
+  - { id: anis, pt: anis, en: anise, aliases: [erva-doce], family_ids: [especiada], source_ids: [internal_curated] }
+  - { id: funcho, pt: funcho, en: fennel, aliases: [], family_ids: [especiada, aromatica], source_ids: [internal_curated] }
+  - { id: semente-coentro, pt: semente de coentro, en: coriander seed, aliases: [], family_ids: [especiada], source_ids: [internal_curated] }
+  - { id: curcuma, pt: cúrcuma, en: turmeric, aliases: [açafrão-da-terra], family_ids: [especiada, terrosa], source_ids: [internal_curated] }
+  - { id: feno-grego, pt: feno-grego, en: fenugreek, aliases: [], family_ids: [especiada, gourmand], source_ids: [internal_curated] }
+  - { id: pimenta-jamaica, pt: pimenta-da-jamaica, en: allspice, aliases: [], family_ids: [especiada], source_ids: [internal_curated] }
+  - { id: pimenta-sichuan, pt: pimenta-de-sichuan, en: sichuan pepper, aliases: [], family_ids: [especiada, citrica], source_ids: [internal_curated] }
+  - { id: zimbro-baga, pt: baga de zimbro, en: juniper berry, aliases: [], family_ids: [especiada, aromatica], source_ids: [internal_curated] }
+
+  # Frutas
+  - { id: maca, pt: maçã, en: apple, aliases: [], family_ids: [frutada], source_ids: [internal_curated] }
+  - { id: maca-verde, pt: maçã verde, en: green apple, aliases: [], family_ids: [frutada, verde], source_ids: [internal_curated] }
+  - { id: pera, pt: pera, en: pear, aliases: [], family_ids: [frutada], source_ids: [internal_curated] }
+  - { id: pessego, pt: pêssego, en: peach, aliases: [], family_ids: [frutada], source_ids: [internal_curated] }
+  - { id: damasco, pt: damasco, en: apricot, aliases: [], family_ids: [frutada], source_ids: [internal_curated] }
+  - { id: ameixa, pt: ameixa, en: plum, aliases: [], family_ids: [frutada], source_ids: [internal_curated] }
+  - { id: cereja, pt: cereja, en: cherry, aliases: [], family_ids: [frutada], source_ids: [internal_curated] }
+  - { id: morango, pt: morango, en: strawberry, aliases: [], family_ids: [frutada], source_ids: [internal_curated] }
+  - { id: framboesa, pt: framboesa, en: raspberry, aliases: [], family_ids: [frutada], source_ids: [internal_curated] }
+  - { id: amora, pt: amora, en: blackberry, aliases: [], family_ids: [frutada], source_ids: [internal_curated] }
+  - { id: cassis, pt: cassis, en: blackcurrant, aliases: [groselha-preta], family_ids: [frutada], source_ids: [internal_curated] }
+  - { id: groselha-vermelha, pt: groselha-vermelha, en: red currant, aliases: [], family_ids: [frutada], source_ids: [internal_curated] }
+  - { id: uva, pt: uva, en: grape, aliases: [], family_ids: [frutada], source_ids: [internal_curated] }
+  - { id: abacaxi, pt: abacaxi, en: pineapple, aliases: [ananás], family_ids: [frutada], source_ids: [internal_curated] }
+  - { id: manga, pt: manga, en: mango, aliases: [], family_ids: [frutada], source_ids: [internal_curated] }
+  - { id: maracuja, pt: maracujá, en: passion fruit, aliases: [], family_ids: [frutada], source_ids: [internal_curated] }
+  - { id: goiaba, pt: goiaba, en: guava, aliases: [], family_ids: [frutada], source_ids: [internal_curated] }
+  - { id: coco, pt: coco, en: coconut, aliases: [], family_ids: [frutada, gourmand], source_ids: [internal_curated] }
+  - { id: figo, pt: figo, en: fig, aliases: [], family_ids: [frutada], source_ids: [internal_curated] }
+  - { id: roma, pt: romã, en: pomegranate, aliases: [], family_ids: [frutada], source_ids: [internal_curated] }
+  - { id: lichia, pt: lichia, en: lychee, aliases: [], family_ids: [frutada], source_ids: [internal_curated] }
+  - { id: melancia, pt: melancia, en: watermelon, aliases: [], family_ids: [frutada, aquatica], source_ids: [internal_curated] }
+  - { id: melao, pt: melão, en: melon, aliases: [], family_ids: [frutada, aquatica], source_ids: [internal_curated] }
+  - { id: banana, pt: banana, en: banana, aliases: [], family_ids: [frutada], source_ids: [internal_curated] }
+
+  # Gourmand, bebidas e doces
+  - { id: baunilha, pt: baunilha, en: vanilla, aliases: [], family_ids: [gourmand, ambarada], source_ids: [internal_curated] }
+  - { id: fava-tonka, pt: fava-tonka, en: tonka bean, aliases: [cumaru], family_ids: [gourmand, ambarada], source_ids: [internal_curated] }
+  - { id: cacau, pt: cacau, en: cacao, aliases: [cocoa], family_ids: [gourmand], source_ids: [internal_curated] }
+  - { id: chocolate, pt: chocolate, en: chocolate, aliases: [], family_ids: [gourmand], source_ids: [internal_curated] }
+  - { id: cafe, pt: café, en: coffee, aliases: [], family_ids: [gourmand], source_ids: [internal_curated] }
+  - { id: caramelo, pt: caramelo, en: caramel, aliases: [], family_ids: [gourmand], source_ids: [internal_curated] }
+  - { id: mel, pt: mel, en: honey, aliases: [], family_ids: [gourmand], source_ids: [internal_curated] }
+  - { id: amendoa, pt: amêndoa, en: almond, aliases: [], family_ids: [gourmand], source_ids: [internal_curated] }
+  - { id: avela, pt: avelã, en: hazelnut, aliases: [], family_ids: [gourmand], source_ids: [internal_curated] }
+  - { id: pistache, pt: pistache, en: pistachio, aliases: [], family_ids: [gourmand], source_ids: [internal_curated] }
+  - { id: praline, pt: pralinê, en: praline, aliases: [], family_ids: [gourmand], source_ids: [internal_curated] }
+  - { id: biscoito, pt: biscoito, en: biscuit, aliases: [cookie], family_ids: [gourmand], source_ids: [internal_curated] }
+  - { id: rum, pt: rum, en: rum, aliases: [], family_ids: [gourmand, ambarada], source_ids: [internal_curated] }
+  - { id: conhaque, pt: conhaque, en: cognac, aliases: [cognac], family_ids: [gourmand, ambarada], source_ids: [internal_curated] }
+  - { id: whisky, pt: uísque, en: whisky, aliases: [whiskey], family_ids: [gourmand, amadeirada], source_ids: [internal_curated] }
+  - { id: alcacuz, pt: alcaçuz, en: licorice, aliases: [], family_ids: [gourmand, especiada], source_ids: [internal_curated] }
+  - { id: xarope-bordo, pt: xarope de bordo, en: maple syrup, aliases: [maple], family_ids: [gourmand], source_ids: [internal_curated] }
+  - { id: acucar-queimado, pt: açúcar queimado, en: burnt sugar, aliases: [], family_ids: [gourmand], source_ids: [internal_curated] }
+  - { id: algodao-doce, pt: algodão-doce, en: cotton candy, aliases: [], family_ids: [gourmand], source_ids: [internal_curated] }
+  - { id: leite, pt: leite, en: milk, aliases: [lácteo, lactonic], family_ids: [gourmand], source_ids: [internal_curated] }
+  - { id: creme, pt: creme, en: cream, aliases: [cremoso], family_ids: [gourmand], source_ids: [internal_curated] }
+  - { id: pao, pt: pão, en: bread, aliases: [], family_ids: [gourmand], source_ids: [internal_curated] }
+
+  # Resinas, âmbar, couro e almíscares
+  - { id: ambar, pt: âmbar, en: amber accord, aliases: [amber], family_ids: [ambarada, resinosa], source_ids: [internal_curated] }
+  - { id: labdano, pt: lábdano, en: labdanum, aliases: [], family_ids: [resinosa, ambarada], source_ids: [internal_curated] }
+  - { id: benjoim, pt: benjoim, en: benzoin, aliases: [], family_ids: [resinosa, ambarada], source_ids: [internal_curated] }
+  - { id: mirra, pt: mirra, en: myrrh, aliases: [], family_ids: [resinosa, ambarada], source_ids: [internal_curated] }
+  - { id: olibano, pt: olíbano, en: frankincense, aliases: [incenso], family_ids: [resinosa, ambarada], source_ids: [internal_curated] }
+  - { id: opoponax, pt: opoponax, en: opoponax, aliases: [mirra-doce], family_ids: [resinosa, ambarada], source_ids: [internal_curated] }
+  - { id: elemi, pt: elemi, en: elemi, aliases: [], family_ids: [resinosa, citrica], source_ids: [internal_curated] }
+  - { id: copaiba, pt: copaíba, en: copaiba balsam, aliases: [], family_ids: [resinosa, amadeirada], source_ids: [internal_curated] }
+  - { id: balsamo-tolu, pt: bálsamo de tolu, en: tolu balsam, aliases: [], family_ids: [resinosa, ambarada], source_ids: [internal_curated] }
+  - { id: balsamo-peru, pt: bálsamo do peru, en: peru balsam, aliases: [], family_ids: [resinosa, ambarada], source_ids: [internal_curated] }
+  - { id: estoraque, pt: estoraque, en: styrax, aliases: [styrax], family_ids: [resinosa, couro], source_ids: [internal_curated] }
+  - { id: ambroxan, pt: ambroxan, en: ambroxan, aliases: [ambrox], family_ids: [ambarada, almiscarada], source_ids: [internal_curated] }
+  - { id: ambergris, pt: âmbar-gris, en: ambergris, aliases: [ambra-cinza], family_ids: [ambarada, aquatica], source_ids: [internal_curated] }
+  - { id: almiscar, pt: almíscar, en: musk, aliases: [], family_ids: [almiscarada], source_ids: [internal_curated] }
+  - { id: almiscar-branco, pt: almíscar branco, en: white musk, aliases: [], family_ids: [almiscarada], source_ids: [internal_curated] }
+  - { id: civeta, pt: civeta, en: civet, aliases: [], family_ids: [almiscarada], source_ids: [internal_curated] }
+  - { id: castoreo, pt: castóreo, en: castoreum, aliases: [], family_ids: [couro, almiscarada], source_ids: [internal_curated] }
+  - { id: couro-nota, pt: couro, en: leather note, aliases: [], family_ids: [couro], source_ids: [internal_curated] }
+  - { id: camurca, pt: camurça, en: suede, aliases: [], family_ids: [couro, almiscarada], source_ids: [internal_curated] }
+  - { id: tabaco, pt: tabaco, en: tobacco, aliases: [], family_ids: [couro, gourmand], source_ids: [internal_curated] }
+  - { id: cera-abelha, pt: cera de abelha, en: beeswax, aliases: [], family_ids: [gourmand, almiscarada], source_ids: [internal_curated] }
+  - { id: alcatrao-betula, pt: alcatrão de bétula, en: birch tar, aliases: [], family_ids: [couro, amadeirada], source_ids: [internal_curated] }
+  - { id: latex, pt: látex, en: latex, aliases: [borracha], family_ids: [couro, verde], source_ids: [internal_curated] }
+  - { id: pelica, pt: pelica, en: soft leather, aliases: [], family_ids: [couro], source_ids: [internal_curated] }
+  - { id: tinta, pt: tinta, en: ink, aliases: [], family_ids: [couro, amadeirada], source_ids: [internal_curated] }
+
+  # Aquáticas, terrosas e abstratas
+  - { id: notas-marinhas, pt: notas marinhas, en: marine notes, aliases: [acorde-marinho], family_ids: [aquatica], source_ids: [internal_curated] }
+  - { id: ozonio, pt: ozônio, en: ozone, aliases: [ozónico], family_ids: [aquatica, aldeidica], source_ids: [internal_curated] }
+  - { id: chuva, pt: chuva, en: rain, aliases: [água-da-chuva], family_ids: [aquatica, terrosa], source_ids: [internal_curated] }
+  - { id: petricor, pt: petricor, en: petrichor, aliases: [terra-molhada], family_ids: [terrosa, aquatica], source_ids: [internal_curated] }
+  - { id: calone, pt: calone, en: calone, aliases: [], family_ids: [aquatica], source_ids: [internal_curated] }
+  - { id: alga-marinha, pt: alga marinha, en: seaweed, aliases: [], family_ids: [aquatica, verde], source_ids: [internal_curated] }
+  - { id: sal-marinho, pt: sal marinho, en: sea salt, aliases: [sal], family_ids: [aquatica], source_ids: [internal_curated] }
+  - { id: acorde-mineral, pt: acorde mineral, en: mineral accord, aliases: [pedra-molhada], family_ids: [terrosa, aquatica], source_ids: [internal_curated] }
+  - { id: aldeidos, pt: aldeídos, en: aldehydes, aliases: [aldeído], family_ids: [aldeidica], source_ids: [internal_curated] }
+  - { id: metalico, pt: metálico, en: metallic note, aliases: [metal], family_ids: [aldeidica, terrosa], source_ids: [internal_curated] }
+  - { id: talco, pt: talco, en: talc, aliases: [pó-de-arroz], family_ids: [almiscarada, floral], source_ids: [internal_curated] }
+  - { id: solo, pt: solo, en: soil, aliases: [terra], family_ids: [terrosa], source_ids: [internal_curated] }
+  - { id: cogumelo, pt: cogumelo, en: mushroom, aliases: [], family_ids: [terrosa], source_ids: [internal_curated] }
+  - { id: trufa, pt: trufa, en: truffle, aliases: [], family_ids: [terrosa], source_ids: [internal_curated] }
+  - { id: argila, pt: argila, en: clay, aliases: [], family_ids: [terrosa], source_ids: [internal_curated] }
+  - { id: fumaca, pt: fumaça, en: smoke, aliases: [enfumaçado], family_ids: [amadeirada, couro], source_ids: [internal_curated] }
+  - { id: algodao, pt: algodão, en: cotton, aliases: [], family_ids: [almiscarada], source_ids: [internal_curated] }
+  - { id: linho, pt: linho, en: linen, aliases: [], family_ids: [almiscarada, aldeidica], source_ids: [internal_curated] }
+  - { id: arroz, pt: arroz, en: rice, aliases: [], family_ids: [gourmand, almiscarada], source_ids: [internal_curated] }
+  - { id: gergelim, pt: gergelim, en: sesame, aliases: [], family_ids: [gourmand], source_ids: [internal_curated] }
+  - { id: trigo, pt: trigo, en: wheat, aliases: [], family_ids: [gourmand], source_ids: [internal_curated] }
+  - { id: feno, pt: feno, en: hay, aliases: [], family_ids: [verde, terrosa], source_ids: [internal_curated] }
+  - { id: papel, pt: papel, en: paper, aliases: [], family_ids: [amadeirada, almiscarada], source_ids: [internal_curated] }
+  - { id: concreto, pt: concreto, en: concrete, aliases: [cimento], family_ids: [terrosa], source_ids: [internal_curated] }

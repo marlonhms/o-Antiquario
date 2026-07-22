@@ -1,0 +1,496 @@
+[
+  {
+    "schema_version": 1,
+    "id": "antiquario:accord:amadeirado",
+    "project": "o-antiquario",
+    "type": "accord",
+    "title": "Amadeirado",
+    "aliases": [
+      "Woody"
+    ],
+    "tags": [
+      "acorde",
+      "madeira",
+      "estrutura"
+    ],
+    "source_ids": [
+      "internal_curated"
+    ],
+    "license": "CC0-1.0",
+    "confidence": "medium",
+    "review_status": "approved",
+    "updated_at": "2026-07-22",
+    "language": "pt-BR",
+    "summary": "Acorde estrutural que reúne facetas secas, cremosas, terrosas, resinosas ou esfumaçadas.",
+    "evidence": [
+      {
+        "source_id": "internal_curated",
+        "kind": "curated",
+        "license": "CC0-1.0",
+        "confidence": "medium",
+        "claim_scope": "Classificação olfativa original para o vocabulário do projeto."
+      }
+    ],
+    "relations": [
+      {
+        "predicate": "includes-note",
+        "target": "antiquario:olfactory-note:vetiver"
+      },
+      {
+        "predicate": "expressed-by",
+        "target": "antiquario:fragrance:brisa-vetiver"
+      }
+    ],
+    "path": "30_Acordes/Amadeirado.md",
+    "body": "# Amadeirado\n\nO acorde amadeirado reúne materiais e efeitos que evocam madeira, raízes, cascas e estruturas secas ou cremosas.\n\n## Facetas relacionadas\n\n[[Vetiver]] contribui com uma leitura terrosa, seca e por vezes verde. A classificação não substitui a descrição das facetas particulares de cada perfume.\n\n## Exemplo\n\nEm [[Brisa-Vetiver|Brisa Vetiver]], o acorde amadeirado sustenta a abertura cítrica sem dominar o conjunto.",
+    "contentHash": "a67e7b8a8fb352e2e43786cdfe4a5c830c5d2d782d164716d7f3adc6bbd86f44"
+  },
+  {
+    "schema_version": 1,
+    "id": "antiquario:accord:citricos",
+    "project": "o-antiquario",
+    "type": "accord",
+    "title": "Cítricos",
+    "aliases": [
+      "Citricos",
+      "Citrus"
+    ],
+    "tags": [
+      "acorde",
+      "citrico",
+      "luminoso",
+      "fresco"
+    ],
+    "source_ids": [
+      "internal_curated"
+    ],
+    "license": "CC0-1.0",
+    "confidence": "medium",
+    "review_status": "approved",
+    "updated_at": "2026-07-22",
+    "language": "pt-BR",
+    "summary": "Família de efeitos luminosos e frescos associados a cascas e matérias-primas cítricas.",
+    "evidence": [
+      {
+        "source_id": "internal_curated",
+        "kind": "curated",
+        "license": "CC0-1.0",
+        "confidence": "medium",
+        "claim_scope": "Classificação olfativa original para o vocabulário do projeto."
+      }
+    ],
+    "relations": [
+      {
+        "predicate": "includes-note",
+        "target": "antiquario:olfactory-note:bergamota"
+      },
+      {
+        "predicate": "suited-to",
+        "target": "antiquario:context:calor-umido"
+      },
+      {
+        "predicate": "expressed-by",
+        "target": "antiquario:fragrance:brisa-vetiver"
+      }
+    ],
+    "path": "30_Acordes/Citricos.md",
+    "body": "# Cítricos\n\nO acorde cítrico organiza efeitos luminosos, frescos e de abertura. Ele pode ser transparente, amargo, aromático ou suculento conforme as notas e materiais usados.\n\n## Notas relacionadas\n\n[[Bergamota]] é uma das referências deste acorde e pode formar contraste com fundos de [[Vetiver]].\n\n## Contexto\n\nPerfis cítricos são frequentemente úteis em [[Calor-Umido|calor úmido]], mas o motor deve conferir toda a estrutura e não apenas a família declarada.\n\n## Exemplo\n\n[[Brisa-Vetiver|Brisa Vetiver]] utiliza o acorde como abertura de uma base amadeirada.",
+    "contentHash": "48602027a337e0d3bbfc5ba1e9e65c431f534ff6e4e91b4a6630d1df93fbccbd"
+  },
+  {
+    "schema_version": 1,
+    "id": "antiquario:context:calor-umido",
+    "project": "o-antiquario",
+    "type": "context",
+    "title": "Calor úmido",
+    "aliases": [
+      "Calor-Umido"
+    ],
+    "tags": [
+      "contexto",
+      "clima",
+      "calor",
+      "umidade"
+    ],
+    "source_ids": [
+      "internal_curated"
+    ],
+    "license": "CC0-1.0",
+    "confidence": "medium",
+    "review_status": "approved",
+    "updated_at": "2026-07-22",
+    "language": "pt-BR",
+    "summary": "Contexto climático que favorece avaliação conservadora de densidade, doçura e projeção percebida.",
+    "evidence": [
+      {
+        "source_id": "internal_curated",
+        "kind": "curated",
+        "license": "CC0-1.0",
+        "confidence": "medium",
+        "claim_scope": "Heurística contextual original usada pelo recomendador inicial."
+      }
+    ],
+    "relations": [
+      {
+        "predicate": "favors",
+        "target": "antiquario:accord:citricos"
+      },
+      {
+        "predicate": "compatible-example",
+        "target": "antiquario:fragrance:brisa-vetiver"
+      }
+    ],
+    "path": "50_Contextos/Calor-Umido.md",
+    "body": "# Calor úmido\n\nNo calor úmido, o Antiquário reduz a preferência por combinações muito densas quando o usuário deseja discrição. Isso é uma heurística contextual, não uma regra universal.\n\n## Perfis úteis\n\nEstruturas [[Citricos|cítricas]] e amadeiradas transparentes podem oferecer sensação de luminosidade. [[Bergamota]] é um possível indicador, mas não substitui dados de performance.\n\n## Aplicação\n\nQuantidade aplicada, ventilação e proximidade entre pessoas alteram a experiência. [[Brisa-Vetiver|Brisa Vetiver]] é o exemplo sintético inicial deste contexto.",
+    "contentHash": "1edf42a1dabc766b7c4d45af1dacde280ea335905366bbac770e48d81dfc0976"
+  },
+  {
+    "schema_version": 1,
+    "id": "antiquario:context:escritorio",
+    "project": "o-antiquario",
+    "type": "context",
+    "title": "Escritório",
+    "aliases": [
+      "Escritorio",
+      "Trabalho"
+    ],
+    "tags": [
+      "contexto",
+      "ambiente",
+      "trabalho",
+      "discreto"
+    ],
+    "source_ids": [
+      "internal_curated"
+    ],
+    "license": "CC0-1.0",
+    "confidence": "medium",
+    "review_status": "approved",
+    "updated_at": "2026-07-22",
+    "language": "pt-BR",
+    "summary": "Ambiente compartilhado no qual controle de projeção e conforto coletivo recebem peso elevado.",
+    "evidence": [
+      {
+        "source_id": "internal_curated",
+        "kind": "curated",
+        "license": "CC0-1.0",
+        "confidence": "medium",
+        "claim_scope": "Heurística contextual original usada pelo recomendador inicial."
+      }
+    ],
+    "relations": [
+      {
+        "predicate": "compatible-example",
+        "target": "antiquario:fragrance:brisa-vetiver"
+      }
+    ],
+    "path": "50_Contextos/Escritorio.md",
+    "body": "# Escritório\n\nO escritório é tratado como ambiente potencialmente compartilhado e sensível. O recomendador prioriza projeção controlada, aplicação conservadora e compatibilidade com a duração esperada.\n\n## Critérios\n\nA família olfativa não basta para determinar adequação. Mesmo um perfume de [[Vetiver]] pode ser inadequado se sua projeção superar o limite desejado.\n\n## Exemplo\n\n[[Brisa-Vetiver|Brisa Vetiver]] possui perfil sintético de projeção moderada e será usado para testar essa regra.",
+    "contentHash": "845cf999d43d96ba10c7f22a485397a1601fdd6f991a1a803bbeb7aa96c3895a"
+  },
+  {
+    "schema_version": 1,
+    "id": "antiquario:fragrance:brisa-vetiver",
+    "project": "o-antiquario",
+    "type": "fragrance",
+    "title": "Brisa Vetiver",
+    "aliases": [
+      "Brisa-Vetiver"
+    ],
+    "tags": [
+      "perfume",
+      "fixture",
+      "citrico",
+      "amadeirado"
+    ],
+    "source_ids": [
+      "internal_curated"
+    ],
+    "license": "CC0-1.0",
+    "confidence": "high",
+    "review_status": "approved",
+    "updated_at": "2026-07-22",
+    "language": "pt-BR",
+    "summary": "Fragrância fictícia de referência usada para validar recomendação, conhecimento e recuperação local.",
+    "evidence": [
+      {
+        "source_id": "internal_curated",
+        "kind": "curated",
+        "license": "CC0-1.0",
+        "confidence": "high",
+        "claim_scope": "Fixture original criada exclusivamente para testes do projeto."
+      }
+    ],
+    "relations": [
+      {
+        "predicate": "has-note",
+        "target": "antiquario:olfactory-note:bergamota"
+      },
+      {
+        "predicate": "has-note",
+        "target": "antiquario:olfactory-note:vetiver"
+      },
+      {
+        "predicate": "has-accord",
+        "target": "antiquario:accord:citricos"
+      },
+      {
+        "predicate": "has-accord",
+        "target": "antiquario:accord:amadeirado"
+      },
+      {
+        "predicate": "suited-to",
+        "target": "antiquario:context:calor-umido"
+      },
+      {
+        "predicate": "suited-to",
+        "target": "antiquario:context:escritorio"
+      }
+    ],
+    "path": "10_Perfumes/Brisa-Vetiver.md",
+    "body": "# Brisa Vetiver\n\nBrisa Vetiver é uma fragrância fictícia da Casa Aurora. Ela existe para testar o motor sem atribuir características inventadas a um produto comercial real.\n\n## Estrutura\n\nA abertura combina [[Bergamota]] e limão. O coração contém chá verde e lavanda; a base combina [[Vetiver]] e cedro.\n\n## Acordes\n\nO perfil conecta [[Citricos|Cítricos]] e [[Amadeirado]], com uma faceta verde secundária.\n\n## Contextos de teste\n\nSua ficha determinística favorece [[Calor-Umido|calor úmido]] e [[Escritorio|escritório]], sempre respeitando o teto de projeção informado pelo usuário.",
+    "contentHash": "64c18eba883ee856911cc7f2c88a9f448591d3bcb61dd1bc4d68159d48414781"
+  },
+  {
+    "schema_version": 1,
+    "id": "antiquario:guide:fontes-de-conhecimento",
+    "project": "o-antiquario",
+    "type": "guide",
+    "title": "Fontes de conhecimento",
+    "aliases": [
+      "Fontes-De-Conhecimento"
+    ],
+    "tags": [
+      "guia",
+      "fontes",
+      "proveniencia",
+      "licenca"
+    ],
+    "source_ids": [
+      "internal_curated"
+    ],
+    "license": "CC0-1.0",
+    "confidence": "high",
+    "review_status": "approved",
+    "updated_at": "2026-07-22",
+    "language": "pt-BR",
+    "summary": "Regras editoriais para transformar fontes permitidas em conhecimento rastreável e recuperável.",
+    "evidence": [
+      {
+        "source_id": "internal_curated",
+        "kind": "curated",
+        "license": "CC0-1.0",
+        "confidence": "high",
+        "claim_scope": "Política de governança original do Knowledge Core."
+      }
+    ],
+    "relations": [
+      {
+        "predicate": "governed-by",
+        "target": "antiquario:index:principal"
+      }
+    ],
+    "path": "70_Guias/Fontes-De-Conhecimento.md",
+    "body": "# Fontes de conhecimento\n\nCada afirmação recuperável precisa indicar sua origem, licença, confiança e estado de revisão. A presença pública de uma página não constitui autorização automática para incorporá-la ao RAG.\n\n## Promoção ao core\n\nSomente documentos aprovados e sustentados por fontes classificadas como `allowed_core` entram nos artefatos publicados. Fontes pendentes permanecem em staging até revisão específica.\n\n## Conteúdo editorial\n\nSínteses originais podem entrar como `internal_curated`. Elas devem separar interpretação de fatos externos e evitar reproduzir textos promocionais ou avaliações de terceiros.\n\n## Navegação\n\nO [[Antiquario-Index|índice principal]] funciona como mapa editorial, enquanto as relações tipadas formam o grafo consumido pelo sistema.",
+    "contentHash": "69a47ae526a34adb6a5becf38a712f04199a21629587cb62a093f3f970c37029"
+  },
+  {
+    "schema_version": 1,
+    "id": "antiquario:index:principal",
+    "project": "o-antiquario",
+    "type": "index",
+    "title": "O Antiquário — Índice de Conhecimento",
+    "aliases": [
+      "Antiquario-Index"
+    ],
+    "tags": [
+      "indice",
+      "conhecimento",
+      "rag"
+    ],
+    "source_ids": [
+      "internal_curated"
+    ],
+    "license": "CC0-1.0",
+    "confidence": "high",
+    "review_status": "approved",
+    "updated_at": "2026-07-22",
+    "language": "pt-BR",
+    "summary": "Mapa principal da memória olfativa e porta de entrada para os domínios do Antiquário.",
+    "evidence": [
+      {
+        "source_id": "internal_curated",
+        "kind": "curated",
+        "license": "CC0-1.0",
+        "confidence": "high",
+        "claim_scope": "Estrutura editorial e relações originais do projeto."
+      }
+    ],
+    "relations": [
+      {
+        "predicate": "indexes",
+        "target": "antiquario:olfactory-note:vetiver"
+      },
+      {
+        "predicate": "indexes",
+        "target": "antiquario:olfactory-note:bergamota"
+      },
+      {
+        "predicate": "indexes",
+        "target": "antiquario:olfactory-note:baunilha"
+      },
+      {
+        "predicate": "indexes",
+        "target": "antiquario:fragrance:brisa-vetiver"
+      },
+      {
+        "predicate": "indexes",
+        "target": "antiquario:guide:fontes-de-conhecimento"
+      }
+    ],
+    "path": "Antiquario-Index.md",
+    "body": "# O Antiquário — Índice de Conhecimento\n\nEsta é a raiz editorial da memória olfativa do Antiquário.\n\n## Notas olfativas\n\n- [[Vetiver]]\n- [[Bergamota]]\n- [[Baunilha]]\n\n## Acordes\n\n- [[Amadeirado]]\n- [[Citricos|Cítricos]]\n\n## Contextos\n\n- [[Calor-Umido|Calor úmido]]\n- [[Escritorio|Escritório]]\n\n## Fragrâncias de referência\n\n- [[Brisa-Vetiver|Brisa Vetiver]]\n\n## Governança\n\n- [[Fontes-De-Conhecimento|Fontes de conhecimento]]",
+    "contentHash": "bca19ce6f9e0e73891472eee00420e4ef136a902fe0fd967553684cd3783d6d5"
+  },
+  {
+    "schema_version": 1,
+    "id": "antiquario:olfactory-note:baunilha",
+    "project": "o-antiquario",
+    "type": "olfactory-note",
+    "title": "Baunilha",
+    "aliases": [
+      "Vanilla"
+    ],
+    "tags": [
+      "nota",
+      "doce",
+      "balsamico",
+      "quente"
+    ],
+    "source_ids": [
+      "internal_curated"
+    ],
+    "license": "CC0-1.0",
+    "confidence": "medium",
+    "review_status": "approved",
+    "updated_at": "2026-07-22",
+    "language": "pt-BR",
+    "summary": "Nota de caráter doce e envolvente cuja percepção depende da concentração e das matérias que a acompanham.",
+    "evidence": [
+      {
+        "source_id": "internal_curated",
+        "kind": "curated",
+        "license": "CC0-1.0",
+        "confidence": "medium",
+        "claim_scope": "Síntese olfativa original destinada à taxonomia inicial."
+      }
+    ],
+    "relations": [
+      {
+        "predicate": "contrasts-with",
+        "target": "antiquario:olfactory-note:bergamota"
+      }
+    ],
+    "path": "20_Notas/Baunilha.md",
+    "body": "# Baunilha\n\nA baunilha pode comunicar conforto, calor e doçura. Sua presença não significa automaticamente uma fragrância pesada: transparência, concentração e contraste alteram a experiência.\n\n## Contrastes\n\nMateriais luminosos como [[Bergamota]] podem criar contraste e reduzir a leitura exclusivamente doce de uma composição.\n\n## Uso contextual\n\nPara ambientes compartilhados, a intensidade geral e a projeção precisam ser avaliadas antes da preferência pela nota. O motor não deve inferir desempenho apenas pela presença de baunilha.",
+    "contentHash": "45732363b3505646fa4902dcaddce486792f89b824afb3964ce50d7ab0e547de"
+  },
+  {
+    "schema_version": 1,
+    "id": "antiquario:olfactory-note:bergamota",
+    "project": "o-antiquario",
+    "type": "olfactory-note",
+    "title": "Bergamota",
+    "aliases": [
+      "Bergamot"
+    ],
+    "tags": [
+      "nota",
+      "citrico",
+      "fresco",
+      "abertura"
+    ],
+    "source_ids": [
+      "internal_curated"
+    ],
+    "license": "CC0-1.0",
+    "confidence": "medium",
+    "review_status": "approved",
+    "updated_at": "2026-07-22",
+    "language": "pt-BR",
+    "summary": "Nota cítrica luminosa usada para criar abertura fresca e transições transparentes em uma fragrância.",
+    "evidence": [
+      {
+        "source_id": "internal_curated",
+        "kind": "curated",
+        "license": "CC0-1.0",
+        "confidence": "medium",
+        "claim_scope": "Síntese olfativa original destinada à taxonomia inicial."
+      }
+    ],
+    "relations": [
+      {
+        "predicate": "has-facet",
+        "target": "antiquario:accord:citricos"
+      },
+      {
+        "predicate": "suited-to",
+        "target": "antiquario:context:calor-umido"
+      },
+      {
+        "predicate": "found-in",
+        "target": "antiquario:fragrance:brisa-vetiver"
+      }
+    ],
+    "path": "20_Notas/Bergamota.md",
+    "body": "# Bergamota\n\nA bergamota representa uma luminosidade cítrica com nuance aromática. No Antiquário, ela funciona como sinal de frescor, mas não determina sozinha duração ou projeção.\n\n## Papel na composição\n\nÉ uma referência importante do acorde [[Citricos|Cítricos]] e pode abrir caminho para fundos de [[Vetiver]] sem tornar o conjunto excessivamente pesado.\n\n## Contexto\n\nPerfis de bergamota são candidatos naturais para [[Calor-Umido|calor úmido]], desde que o restante da composição e seu desempenho também sejam compatíveis.\n\n## Exemplo no catálogo\n\n[[Brisa-Vetiver|Brisa Vetiver]] combina bergamota e limão na abertura.",
+    "contentHash": "5623110d278174def390783a5ec286483d1dfb56538adce7d0fd6d8267edbdbe"
+  },
+  {
+    "schema_version": 1,
+    "id": "antiquario:olfactory-note:vetiver",
+    "project": "o-antiquario",
+    "type": "olfactory-note",
+    "title": "Vetiver",
+    "aliases": [
+      "Vetiveria"
+    ],
+    "tags": [
+      "nota",
+      "amadeirado",
+      "terroso",
+      "verde"
+    ],
+    "source_ids": [
+      "internal_curated"
+    ],
+    "license": "CC0-1.0",
+    "confidence": "medium",
+    "review_status": "approved",
+    "updated_at": "2026-07-22",
+    "language": "pt-BR",
+    "summary": "Nota de perfil amadeirado e terroso que pode assumir facetas verdes, secas ou esfumaçadas.",
+    "evidence": [
+      {
+        "source_id": "internal_curated",
+        "kind": "curated",
+        "license": "CC0-1.0",
+        "confidence": "medium",
+        "claim_scope": "Síntese olfativa original destinada à taxonomia inicial."
+      }
+    ],
+    "relations": [
+      {
+        "predicate": "has-facet",
+        "target": "antiquario:accord:amadeirado"
+      },
+      {
+        "predicate": "found-in",
+        "target": "antiquario:fragrance:brisa-vetiver"
+      }
+    ],
+    "path": "20_Notas/Vetiver.md",
+    "body": "# Vetiver\n\nO vetiver ocupa uma região seca, terrosa e amadeirada do mapa olfativo. A apresentação varia conforme a composição e pode parecer limpa, verde, mineral ou esfumaçada.\n\n## Facetas\n\nSua faceta principal se conecta ao acorde [[Amadeirado]]. Em construções luminosas, o contraste com materiais cítricos reduz a sensação de peso.\n\n## Comportamento contextual\n\nEm [[Calor-Umido|calor úmido]], versões secas e transparentes tendem a ser mais versáteis que construções densas. Em [[Escritorio|escritórios]], projeção moderada continua sendo um critério separado da nota em si.\n\n## Exemplo no catálogo\n\n[[Brisa-Vetiver|Brisa Vetiver]] utiliza vetiver como base de uma estrutura cítrica e amadeirada.",
+    "contentHash": "4d85ef68eb8602078e96741dd684e1fb5ae3ea79882ec6ab41ffb9df6cdd5843"
+  }
+]

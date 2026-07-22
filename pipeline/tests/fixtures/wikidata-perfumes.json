@@ -1,0 +1,52 @@
+{
+  "head": {
+    "vars": [
+      "item",
+      "itemLabel",
+      "brand",
+      "brandLabel",
+      "country",
+      "countryLabel",
+      "perfumer",
+      "perfumerLabel",
+      "inception",
+      "publicationDate",
+      "officialWebsite"
+    ]
+  },
+  "results": {
+    "bindings": [
+      {
+        "item": {"type": "uri", "value": "http://www.wikidata.org/entity/Q999999991"},
+        "itemLabel": {"type": "literal", "xml:lang": "pt", "value": "Aurora Experimental"},
+        "brand": {"type": "uri", "value": "http://www.wikidata.org/entity/Q999999981"},
+        "brandLabel": {"type": "literal", "xml:lang": "pt", "value": "Casa Teste"},
+        "country": {"type": "uri", "value": "http://www.wikidata.org/entity/Q155"},
+        "countryLabel": {"type": "literal", "xml:lang": "pt", "value": "Brasil"},
+        "perfumer": {"type": "uri", "value": "http://www.wikidata.org/entity/Q999999971"},
+        "perfumerLabel": {"type": "literal", "xml:lang": "pt", "value": "Ana Exemplo"},
+        "inception": {"type": "literal", "datatype": "http://www.w3.org/2001/XMLSchema#dateTime", "value": "2020-01-01T00:00:00Z"},
+        "officialWebsite": {"type": "uri", "value": "https://example.invalid/aurora"}
+      },
+      {
+        "item": {"type": "uri", "value": "http://www.wikidata.org/entity/Q999999991"},
+        "itemLabel": {"type": "literal", "xml:lang": "pt", "value": "Aurora Experimental"},
+        "brand": {"type": "uri", "value": "http://www.wikidata.org/entity/Q999999981"},
+        "brandLabel": {"type": "literal", "xml:lang": "pt", "value": "Casa Teste"},
+        "country": {"type": "uri", "value": "http://www.wikidata.org/entity/Q155"},
+        "countryLabel": {"type": "literal", "xml:lang": "pt", "value": "Brasil"},
+        "perfumer": {"type": "uri", "value": "http://www.wikidata.org/entity/Q999999972"},
+        "perfumerLabel": {"type": "literal", "xml:lang": "pt", "value": "Bruno Exemplo"},
+        "inception": {"type": "literal", "datatype": "http://www.w3.org/2001/XMLSchema#dateTime", "value": "2020-01-01T00:00:00Z"},
+        "officialWebsite": {"type": "uri", "value": "https://example.invalid/aurora"}
+      },
+      {
+        "item": {"type": "uri", "value": "http://www.wikidata.org/entity/Q999999992"},
+        "itemLabel": {"type": "literal", "xml:lang": "en", "value": "Nocturne Fixture"},
+        "country": {"type": "uri", "value": "http://www.wikidata.org/entity/Q142"},
+        "countryLabel": {"type": "literal", "xml:lang": "pt", "value": "França"},
+        "publicationDate": {"type": "literal", "datatype": "http://www.w3.org/2001/XMLSchema#dateTime", "value": "2022-09-01T00:00:00Z"}
+      }
+    ]
+  }
+}

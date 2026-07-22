@@ -1,0 +1,506 @@
+{
+  "nodes": [
+    {
+      "id": "antiquario:accord:amadeirado",
+      "title": "Amadeirado",
+      "type": "accord",
+      "path": "30_Acordes/Amadeirado.md",
+      "tags": [
+        "acorde",
+        "madeira",
+        "estrutura"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "antiquario:accord:citricos",
+      "title": "Cítricos",
+      "type": "accord",
+      "path": "30_Acordes/Citricos.md",
+      "tags": [
+        "acorde",
+        "citrico",
+        "luminoso",
+        "fresco"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "antiquario:context:calor-umido",
+      "title": "Calor úmido",
+      "type": "context",
+      "path": "50_Contextos/Calor-Umido.md",
+      "tags": [
+        "contexto",
+        "clima",
+        "calor",
+        "umidade"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "antiquario:context:escritorio",
+      "title": "Escritório",
+      "type": "context",
+      "path": "50_Contextos/Escritorio.md",
+      "tags": [
+        "contexto",
+        "ambiente",
+        "trabalho",
+        "discreto"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "antiquario:fragrance:brisa-vetiver",
+      "title": "Brisa Vetiver",
+      "type": "fragrance",
+      "path": "10_Perfumes/Brisa-Vetiver.md",
+      "tags": [
+        "perfume",
+        "fixture",
+        "citrico",
+        "amadeirado"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "antiquario:guide:fontes-de-conhecimento",
+      "title": "Fontes de conhecimento",
+      "type": "guide",
+      "path": "70_Guias/Fontes-De-Conhecimento.md",
+      "tags": [
+        "guia",
+        "fontes",
+        "proveniencia",
+        "licenca"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "antiquario:index:principal",
+      "title": "O Antiquário — Índice de Conhecimento",
+      "type": "index",
+      "path": "Antiquario-Index.md",
+      "tags": [
+        "indice",
+        "conhecimento",
+        "rag"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "antiquario:olfactory-note:baunilha",
+      "title": "Baunilha",
+      "type": "olfactory-note",
+      "path": "20_Notas/Baunilha.md",
+      "tags": [
+        "nota",
+        "doce",
+        "balsamico",
+        "quente"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "antiquario:olfactory-note:bergamota",
+      "title": "Bergamota",
+      "type": "olfactory-note",
+      "path": "20_Notas/Bergamota.md",
+      "tags": [
+        "nota",
+        "citrico",
+        "fresco",
+        "abertura"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "antiquario:olfactory-note:vetiver",
+      "title": "Vetiver",
+      "type": "olfactory-note",
+      "path": "20_Notas/Vetiver.md",
+      "tags": [
+        "nota",
+        "amadeirado",
+        "terroso",
+        "verde"
+      ],
+      "confidence": "medium"
+    }
+  ],
+  "edges": [
+    {
+      "source": "antiquario:accord:amadeirado",
+      "target": "antiquario:fragrance:brisa-vetiver",
+      "predicate": "expressed-by",
+      "origin": "frontmatter"
+    },
+    {
+      "source": "antiquario:accord:amadeirado",
+      "target": "antiquario:fragrance:brisa-vetiver",
+      "predicate": "references",
+      "origin": "wikilink"
+    },
+    {
+      "source": "antiquario:accord:amadeirado",
+      "target": "antiquario:olfactory-note:vetiver",
+      "predicate": "includes-note",
+      "origin": "frontmatter"
+    },
+    {
+      "source": "antiquario:accord:amadeirado",
+      "target": "antiquario:olfactory-note:vetiver",
+      "predicate": "references",
+      "origin": "wikilink"
+    },
+    {
+      "source": "antiquario:accord:citricos",
+      "target": "antiquario:context:calor-umido",
+      "predicate": "references",
+      "origin": "wikilink"
+    },
+    {
+      "source": "antiquario:accord:citricos",
+      "target": "antiquario:context:calor-umido",
+      "predicate": "suited-to",
+      "origin": "frontmatter"
+    },
+    {
+      "source": "antiquario:accord:citricos",
+      "target": "antiquario:fragrance:brisa-vetiver",
+      "predicate": "expressed-by",
+      "origin": "frontmatter"
+    },
+    {
+      "source": "antiquario:accord:citricos",
+      "target": "antiquario:fragrance:brisa-vetiver",
+      "predicate": "references",
+      "origin": "wikilink"
+    },
+    {
+      "source": "antiquario:accord:citricos",
+      "target": "antiquario:olfactory-note:bergamota",
+      "predicate": "includes-note",
+      "origin": "frontmatter"
+    },
+    {
+      "source": "antiquario:accord:citricos",
+      "target": "antiquario:olfactory-note:bergamota",
+      "predicate": "references",
+      "origin": "wikilink"
+    },
+    {
+      "source": "antiquario:accord:citricos",
+      "target": "antiquario:olfactory-note:vetiver",
+      "predicate": "references",
+      "origin": "wikilink"
+    },
+    {
+      "source": "antiquario:context:calor-umido",
+      "target": "antiquario:accord:citricos",
+      "predicate": "favors",
+      "origin": "frontmatter"
+    },
+    {
+      "source": "antiquario:context:calor-umido",
+      "target": "antiquario:accord:citricos",
+      "predicate": "references",
+      "origin": "wikilink"
+    },
+    {
+      "source": "antiquario:context:calor-umido",
+      "target": "antiquario:fragrance:brisa-vetiver",
+      "predicate": "compatible-example",
+      "origin": "frontmatter"
+    },
+    {
+      "source": "antiquario:context:calor-umido",
+      "target": "antiquario:fragrance:brisa-vetiver",
+      "predicate": "references",
+      "origin": "wikilink"
+    },
+    {
+      "source": "antiquario:context:calor-umido",
+      "target": "antiquario:olfactory-note:bergamota",
+      "predicate": "references",
+      "origin": "wikilink"
+    },
+    {
+      "source": "antiquario:context:escritorio",
+      "target": "antiquario:fragrance:brisa-vetiver",
+      "predicate": "compatible-example",
+      "origin": "frontmatter"
+    },
+    {
+      "source": "antiquario:context:escritorio",
+      "target": "antiquario:fragrance:brisa-vetiver",
+      "predicate": "references",
+      "origin": "wikilink"
+    },
+    {
+      "source": "antiquario:context:escritorio",
+      "target": "antiquario:olfactory-note:vetiver",
+      "predicate": "references",
+      "origin": "wikilink"
+    },
+    {
+      "source": "antiquario:fragrance:brisa-vetiver",
+      "target": "antiquario:accord:amadeirado",
+      "predicate": "has-accord",
+      "origin": "frontmatter"
+    },
+    {
+      "source": "antiquario:fragrance:brisa-vetiver",
+      "target": "antiquario:accord:amadeirado",
+      "predicate": "references",
+      "origin": "wikilink"
+    },
+    {
+      "source": "antiquario:fragrance:brisa-vetiver",
+      "target": "antiquario:accord:citricos",
+      "predicate": "has-accord",
+      "origin": "frontmatter"
+    },
+    {
+      "source": "antiquario:fragrance:brisa-vetiver",
+      "target": "antiquario:accord:citricos",
+      "predicate": "references",
+      "origin": "wikilink"
+    },
+    {
+      "source": "antiquario:fragrance:brisa-vetiver",
+      "target": "antiquario:context:calor-umido",
+      "predicate": "references",
+      "origin": "wikilink"
+    },
+    {
+      "source": "antiquario:fragrance:brisa-vetiver",
+      "target": "antiquario:context:calor-umido",
+      "predicate": "suited-to",
+      "origin": "frontmatter"
+    },
+    {
+      "source": "antiquario:fragrance:brisa-vetiver",
+      "target": "antiquario:context:escritorio",
+      "predicate": "references",
+      "origin": "wikilink"
+    },
+    {
+      "source": "antiquario:fragrance:brisa-vetiver",
+      "target": "antiquario:context:escritorio",
+      "predicate": "suited-to",
+      "origin": "frontmatter"
+    },
+    {
+      "source": "antiquario:fragrance:brisa-vetiver",
+      "target": "antiquario:olfactory-note:bergamota",
+      "predicate": "has-note",
+      "origin": "frontmatter"
+    },
+    {
+      "source": "antiquario:fragrance:brisa-vetiver",
+      "target": "antiquario:olfactory-note:bergamota",
+      "predicate": "references",
+      "origin": "wikilink"
+    },
+    {
+      "source": "antiquario:fragrance:brisa-vetiver",
+      "target": "antiquario:olfactory-note:vetiver",
+      "predicate": "has-note",
+      "origin": "frontmatter"
+    },
+    {
+      "source": "antiquario:fragrance:brisa-vetiver",
+      "target": "antiquario:olfactory-note:vetiver",
+      "predicate": "references",
+      "origin": "wikilink"
+    },
+    {
+      "source": "antiquario:guide:fontes-de-conhecimento",
+      "target": "antiquario:index:principal",
+      "predicate": "governed-by",
+      "origin": "frontmatter"
+    },
+    {
+      "source": "antiquario:guide:fontes-de-conhecimento",
+      "target": "antiquario:index:principal",
+      "predicate": "references",
+      "origin": "wikilink"
+    },
+    {
+      "source": "antiquario:index:principal",
+      "target": "antiquario:accord:amadeirado",
+      "predicate": "references",
+      "origin": "wikilink"
+    },
+    {
+      "source": "antiquario:index:principal",
+      "target": "antiquario:accord:citricos",
+      "predicate": "references",
+      "origin": "wikilink"
+    },
+    {
+      "source": "antiquario:index:principal",
+      "target": "antiquario:context:calor-umido",
+      "predicate": "references",
+      "origin": "wikilink"
+    },
+    {
+      "source": "antiquario:index:principal",
+      "target": "antiquario:context:escritorio",
+      "predicate": "references",
+      "origin": "wikilink"
+    },
+    {
+      "source": "antiquario:index:principal",
+      "target": "antiquario:fragrance:brisa-vetiver",
+      "predicate": "indexes",
+      "origin": "frontmatter"
+    },
+    {
+      "source": "antiquario:index:principal",
+      "target": "antiquario:fragrance:brisa-vetiver",
+      "predicate": "references",
+      "origin": "wikilink"
+    },
+    {
+      "source": "antiquario:index:principal",
+      "target": "antiquario:guide:fontes-de-conhecimento",
+      "predicate": "indexes",
+      "origin": "frontmatter"
+    },
+    {
+      "source": "antiquario:index:principal",
+      "target": "antiquario:guide:fontes-de-conhecimento",
+      "predicate": "references",
+      "origin": "wikilink"
+    },
+    {
+      "source": "antiquario:index:principal",
+      "target": "antiquario:olfactory-note:baunilha",
+      "predicate": "indexes",
+      "origin": "frontmatter"
+    },
+    {
+      "source": "antiquario:index:principal",
+      "target": "antiquario:olfactory-note:baunilha",
+      "predicate": "references",
+      "origin": "wikilink"
+    },
+    {
+      "source": "antiquario:index:principal",
+      "target": "antiquario:olfactory-note:bergamota",
+      "predicate": "indexes",
+      "origin": "frontmatter"
+    },
+    {
+      "source": "antiquario:index:principal",
+      "target": "antiquario:olfactory-note:bergamota",
+      "predicate": "references",
+      "origin": "wikilink"
+    },
+    {
+      "source": "antiquario:index:principal",
+      "target": "antiquario:olfactory-note:vetiver",
+      "predicate": "indexes",
+      "origin": "frontmatter"
+    },
+    {
+      "source": "antiquario:index:principal",
+      "target": "antiquario:olfactory-note:vetiver",
+      "predicate": "references",
+      "origin": "wikilink"
+    },
+    {
+      "source": "antiquario:olfactory-note:baunilha",
+      "target": "antiquario:olfactory-note:bergamota",
+      "predicate": "contrasts-with",
+      "origin": "frontmatter"
+    },
+    {
+      "source": "antiquario:olfactory-note:baunilha",
+      "target": "antiquario:olfactory-note:bergamota",
+      "predicate": "references",
+      "origin": "wikilink"
+    },
+    {
+      "source": "antiquario:olfactory-note:bergamota",
+      "target": "antiquario:accord:citricos",
+      "predicate": "has-facet",
+      "origin": "frontmatter"
+    },
+    {
+      "source": "antiquario:olfactory-note:bergamota",
+      "target": "antiquario:accord:citricos",
+      "predicate": "references",
+      "origin": "wikilink"
+    },
+    {
+      "source": "antiquario:olfactory-note:bergamota",
+      "target": "antiquario:context:calor-umido",
+      "predicate": "references",
+      "origin": "wikilink"
+    },
+    {
+      "source": "antiquario:olfactory-note:bergamota",
+      "target": "antiquario:context:calor-umido",
+      "predicate": "suited-to",
+      "origin": "frontmatter"
+    },
+    {
+      "source": "antiquario:olfactory-note:bergamota",
+      "target": "antiquario:fragrance:brisa-vetiver",
+      "predicate": "found-in",
+      "origin": "frontmatter"
+    },
+    {
+      "source": "antiquario:olfactory-note:bergamota",
+      "target": "antiquario:fragrance:brisa-vetiver",
+      "predicate": "references",
+      "origin": "wikilink"
+    },
+    {
+      "source": "antiquario:olfactory-note:bergamota",
+      "target": "antiquario:olfactory-note:vetiver",
+      "predicate": "references",
+      "origin": "wikilink"
+    },
+    {
+      "source": "antiquario:olfactory-note:vetiver",
+      "target": "antiquario:accord:amadeirado",
+      "predicate": "has-facet",
+      "origin": "frontmatter"
+    },
+    {
+      "source": "antiquario:olfactory-note:vetiver",
+      "target": "antiquario:accord:amadeirado",
+      "predicate": "references",
+      "origin": "wikilink"
+    },
+    {
+      "source": "antiquario:olfactory-note:vetiver",
+      "target": "antiquario:context:calor-umido",
+      "predicate": "references",
+      "origin": "wikilink"
+    },
+    {
+      "source": "antiquario:olfactory-note:vetiver",
+      "target": "antiquario:context:escritorio",
+      "predicate": "references",
+      "origin": "wikilink"
+    },
+    {
+      "source": "antiquario:olfactory-note:vetiver",
+      "target": "antiquario:fragrance:brisa-vetiver",
+      "predicate": "found-in",
+      "origin": "frontmatter"
+    },
+    {
+      "source": "antiquario:olfactory-note:vetiver",
+      "target": "antiquario:fragrance:brisa-vetiver",
+      "predicate": "references",
+      "origin": "wikilink"
+    }
+  ]
+}

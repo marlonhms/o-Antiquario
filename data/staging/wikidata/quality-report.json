@@ -1,0 +1,15 @@
+{
+  "accepted_records": 85,
+  "coverage": {
+    "with_brand": 47,
+    "with_country": 29,
+    "with_launch_year": 45,
+    "with_official_website": 24,
+    "with_perfumer": 57
+  },
+  "input_rows": 100,
+  "quarantined_records": 3,
+  "schema_version": 1,
+  "snapshot_id": "ba0c8eeb6fd1ee67e8880887aac532432784cc1b8d5fa7ed1980cf625bda449a",
+  "source_id": "wikidata"
+}

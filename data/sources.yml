@@ -1,0 +1,294 @@
+schema_version: 1
+reviewed_at: 2026-07-22
+
+policy:
+  default_classification: prohibited
+  unknown_source_action: reject
+  review_interval_days: 90
+  require_https: true
+  require_record_provenance: true
+
+sources:
+  - id: internal_curated
+    name: Curadoria original de O Antiquário
+    homepage: https://github.com/
+    classification: allowed_core
+    purpose: Taxonomia, traduções, aliases e metadados produzidos originalmente pelo projeto.
+    license:
+      identifier: CC0-1.0
+      name: Creative Commons CC0 1.0 Universal
+      url: https://creativecommons.org/publicdomain/zero/1.0/
+      scope: Dados factuais e estruturados criados pela equipe do projeto.
+      compatibility: core
+      attribution_required: false
+      share_alike: false
+    access:
+      automated: allowed
+      methods: [repository]
+      authentication: none
+      conditions:
+        - Toda alteração passa por revisão e validação automatizada.
+        - Afirmações técnicas externas exigem uma segunda fonte registrada.
+    storage:
+      layer: core
+      redistribution: allowed
+      attribution_label: Curadoria original de O Antiquário — CC0
+    fields:
+      allowed: [taxonomy, translations, aliases, stable_ids, original_classification]
+      forbidden: [copied_editorial_text, unlicensed_images, unattributed_external_claims]
+    review:
+      reviewed_at: 2026-07-22
+      next_review_at: 2026-10-22
+      evidence_urls:
+        - https://creativecommons.org/publicdomain/zero/1.0/
+      notes: A dedicação CC0 cobre somente material original do projeto e não altera direitos de fontes externas.
+
+  - id: wikidata
+    name: Wikidata
+    homepage: https://www.wikidata.org/
+    classification: allowed_core
+    purpose: Identidade, marca, país, ano, perfumistas e identificadores externos.
+    license:
+      identifier: CC0-1.0
+      name: Creative Commons CC0 1.0 Universal
+      url: https://creativecommons.org/publicdomain/zero/1.0/
+      scope: Dados estruturados nos namespaces Main, Property, Lexeme e EntitySchema.
+      compatibility: core
+      attribution_required: false
+      share_alike: false
+    access:
+      automated: allowed
+      methods: [sparql, api, entity_data]
+      endpoint: https://query.wikidata.org/sparql
+      authentication: none
+      conditions:
+        - Enviar User-Agent identificável.
+        - Respeitar Retry-After e reduzir requisições após HTTP 429.
+        - Usar timeout baixo e evitar consultas excessivamente custosas.
+    storage:
+      layer: core
+      redistribution: allowed
+      attribution_label: Dados do Wikidata
+    fields:
+      allowed: [identity, brand, country, year, perfumers, official_website, external_ids]
+      forbidden: [editorial_text, community_reviews, wikimedia_images_without_file_review]
+    review:
+      reviewed_at: 2026-07-22
+      next_review_at: 2026-10-22
+      evidence_urls:
+        - https://www.wikidata.org/wiki/Wikidata:Licensing
+        - https://www.wikidata.org/wiki/Help:Data_access
+      notes: Imagens do Wikimedia Commons exigem avaliação individual da licença do arquivo.
+
+  - id: open_beauty_facts
+    name: Open Beauty Facts
+    homepage: https://world.openbeautyfacts.org/
+    classification: allowed_isolated
+    purpose: Produtos de beleza, códigos de barras, marcas e informações factuais de embalagem.
+    license:
+      identifier: ODbL-1.0
+      name: Open Database License 1.0
+      url: https://opendatacommons.org/licenses/odbl/1-0/
+      scope: Banco de dados; conteúdos individuais usam Database Contents License.
+      compatibility: isolated
+      attribution_required: true
+      share_alike: true
+    access:
+      automated: allowed
+      methods: [api, bulk_export]
+      endpoint: https://world.openbeautyfacts.org/api/v3/
+      authentication: none
+      conditions:
+        - Manter atribuição e avisos exigidos pela ODbL.
+        - Não fundir registros ODbL ao artefato core CC0.
+        - Fixar a versão da API e tolerar campos adicionais.
+    storage:
+      layer: obf
+      redistribution: share_alike
+      attribution_label: Dados de Open Beauty Facts — ODbL
+    fields:
+      allowed: [barcode, product_name, brand, ingredients, categories, packaging_facts]
+      forbidden: [images, ocr_text, community_free_text]
+    review:
+      reviewed_at: 2026-07-22
+      next_review_at: 2026-10-22
+      evidence_urls:
+        - https://openfoodfacts.github.io/documentation/docs/Product-Opener/api/tutorials/license-be-on-the-legal-side/
+        - https://openfoodfacts.github.io/documentation/docs/Product-Opener/api/tutorials/scanning-cosmetics-pet-food-and-other-products/
+      notes: Imagens não entram no MVP; sua licença e elementos presentes na embalagem exigem tratamento separado.
+
+  - id: pyrfume
+    name: Pyrfume Public Data Archive
+    homepage: https://github.com/pyrfume/pyrfume-data
+    classification: pending_review
+    purpose: Dados científicos de moléculas, descritores olfativos e estudos psicofísicos.
+    license:
+      identifier: MIT
+      name: MIT License
+      url: https://github.com/pyrfume/pyrfume-data/blob/main/LICENSE
+      scope: Repositório agregador; a origem e os direitos de cada arquivo científico devem ser revistos separadamente.
+      compatibility: unverified
+      attribution_required: true
+      share_alike: false
+    access:
+      automated: blocked_until_review
+      methods: [none]
+      authentication: none
+      conditions:
+        - Aprovar cada arquivo ou arquivo lógico individualmente antes da importação.
+        - Registrar publicação, fonte primária e licença específica.
+    storage:
+      layer: staging
+      redistribution: blocked
+      attribution_label: Pyrfume e fonte científica original
+    fields:
+      allowed: []
+      forbidden: [all_until_dataset_review]
+    review:
+      reviewed_at: 2026-07-22
+      next_review_at: 2026-09-22
+      evidence_urls:
+        - https://github.com/pyrfume/pyrfume-data
+        - https://github.com/pyrfume/pyrfume-data/blob/main/LICENSE
+      notes: A licença do repositório não deve ser presumida como licença uniforme de todo dado de terceiros nele agregado.
+
+  - id: pubchem
+    name: PubChem
+    homepage: https://pubchem.ncbi.nlm.nih.gov/
+    classification: pending_review
+    purpose: Identificadores químicos e propriedades de matérias-primas aromáticas.
+    license:
+      identifier: MIXED
+      name: Licenças variáveis por provedor do registro
+      url: https://pubchem.ncbi.nlm.nih.gov/docs/downloads
+      scope: Cada linha ou seção pode ter proveniência e licença próprias.
+      compatibility: unverified
+      attribution_required: true
+      share_alike: false
+    access:
+      automated: conditional
+      methods: [pug_rest, pug_view]
+      endpoint: https://pubchem.ncbi.nlm.nih.gov/rest/
+      authentication: none
+      conditions:
+        - Importar somente campos cuja proveniência declare licença compatível.
+        - Preservar o identificador do provedor original por valor.
+        - Não tratar todo conteúdo do PubChem como domínio público.
+    storage:
+      layer: staging
+      redistribution: per_record
+      attribution_label: PubChem e provedor original do dado
+    fields:
+      allowed: [cid, canonical_smiles, molecular_formula, identifiers_with_compatible_source]
+      forbidden: [unverified_annotations, third_party_text, unverified_images]
+    review:
+      reviewed_at: 2026-07-22
+      next_review_at: 2026-09-22
+      evidence_urls:
+        - https://pubchem.ncbi.nlm.nih.gov/docs/downloads
+      notes: A documentação oficial alerta que restrições podem variar entre os vários contribuidores.
+
+  - id: ifra
+    name: International Fragrance Association
+    homepage: https://ifrafragrance.org/
+    classification: reference_only
+    purpose: Referência técnica de padrões, ingredientes e segurança da indústria.
+    license:
+      identifier: PROPRIETARY
+      name: Copyright e termos próprios da IFRA
+      url: https://ifrafragrance.org/glossary
+      scope: Glossários, padrões, manuais e documentos publicados pela IFRA.
+      compatibility: reference
+      attribution_required: true
+      share_alike: false
+    access:
+      automated: prohibited
+      methods: [manual_reference]
+      authentication: none
+      conditions:
+        - Não importar o glossário ou os padrões como dataset do produto.
+        - Usar apenas para conferência humana e links para a fonte oficial.
+        - Qualquer citação deve ser curta e atribuída.
+    storage:
+      layer: references
+      redistribution: blocked
+      attribution_label: International Fragrance Association
+    fields:
+      allowed: [source_links, review_notes]
+      forbidden: [bulk_glossary, standards_database, full_text, document_images]
+    review:
+      reviewed_at: 2026-07-22
+      next_review_at: 2026-10-22
+      evidence_urls:
+        - https://ifrafragrance.org/docs/default-source/glossary/ifra-fragrance-ingredient-glossary---april-2020.pdf
+      notes: O próprio glossário declara que a base é protegida por copyright e exige crédito para qualquer uso.
+
+  - id: granado_phebo_official
+    name: Granado e Phebo — site oficial
+    homepage: https://www.granado.com.br/
+    classification: pending_review
+    purpose: Referência oficial brasileira para nomes, concentração, notas declaradas e ano de lançamento.
+    license:
+      identifier: MIXED
+      name: Termos variáveis por fabricante
+      url: https://www.granado.com.br/granado/termos-de-uso
+      scope: Conteúdo, banco de dados e ativos publicados no domínio oficial Granado e Phebo.
+      compatibility: unverified
+      attribution_required: true
+      share_alike: false
+    access:
+      automated: blocked_until_review
+      methods: [manual_reference]
+      authentication: none
+      conditions:
+        - Manter acesso exclusivamente manual até autorização ou licença adequada.
+        - Não copiar textos editoriais, fotografias, logotipos ou material promocional.
+    storage:
+      layer: staging
+      redistribution: per_record
+      attribution_label: Granado e Phebo — fonte oficial
+    fields:
+      allowed: [factual_metadata_after_review]
+      forbidden: [marketing_copy, product_images, logos, reviews]
+    review:
+      reviewed_at: 2026-07-22
+      next_review_at: 2026-08-22
+      evidence_urls:
+        - https://www.granado.com.br/granado/termos-de-uso
+      notes: A fonte é valiosa para cobertura brasileira, mas não concede licença de redistribuição em massa.
+
+  - id: fragrantica
+    name: Fragrantica
+    homepage: https://www.fragrantica.com/
+    classification: prohibited
+    purpose: Nenhuma ingestão; referência humana externa somente fora do pipeline.
+    license:
+      identifier: PROPRIETARY
+      name: Conteúdo proprietário — uso pessoal por padrão
+      url: https://www.fragrantica.com/terms-of-service.phtml
+      scope: Serviço, banco de dados, páginas, textos, avaliações e demais conteúdos.
+      compatibility: none
+      attribution_required: true
+      share_alike: false
+    access:
+      automated: prohibited
+      methods: [none]
+      authentication: none
+      conditions:
+        - Não raspar, agregar, espelhar, arquivar ou criar dataset a partir do serviço.
+        - Não reutilizar cookies, sessões, cf_clearance ou credenciais.
+        - Não contornar Cloudflare, robots.txt, rate limit ou outra proteção técnica.
+        - Exigir autorização escrita separada antes de reclassificar esta fonte.
+    storage:
+      layer: rejected
+      redistribution: blocked
+      attribution_label: Fragrantica
+    fields:
+      allowed: []
+      forbidden: [all_content]
+    review:
+      reviewed_at: 2026-07-22
+      next_review_at: 2026-10-22
+      evidence_urls:
+        - https://www.fragrantica.com/terms-of-service.phtml
+      notes: Os termos atuais restringem meios automatizados, datasets, agregação e uso comercial sem acordo separado.

@@ -1,0 +1,41 @@
+{
+  "name": "o-antiquario",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "dev": "vite --config apps/web/vite.config.ts",
+    "build": "vite build --config apps/web/vite.config.ts",
+    "preview": "vite preview --config apps/web/vite.config.ts",
+    "test": "node --test src/recommender/recommender.test.ts src/data/source-manifest.test.ts src/taxonomy/taxonomy.test.ts src/knowledge/knowledge.test.ts",
+    "test:watch": "node --test --watch src/recommender/recommender.test.ts src/data/source-manifest.test.ts src/taxonomy/taxonomy.test.ts src/knowledge/knowledge.test.ts",
+    "typecheck": "tsc --noEmit",
+    "sources:validate": "node src/data/validate-sources.ts",
+    "taxonomy:validate": "node src/taxonomy/validate-taxonomy.ts",
+    "knowledge:validate": "node src/knowledge/validate-knowledge.ts",
+    "knowledge:build": "node src/knowledge/build-knowledge.ts",
+    "data:test": "node scripts/run-python.mjs -m unittest discover -s pipeline/tests -p test_*.py",
+    "data:demo": "node scripts/run-python.mjs -m antiquario_data.cli --data-dir data/demo all --limit 10 --fixture pipeline/tests/fixtures/wikidata-perfumes.json --retrieved-at 2026-07-22",
+    "data:sync:wikidata": "node scripts/run-python.mjs -m antiquario_data.cli sync wikidata",
+    "data:build": "node scripts/run-python.mjs -m antiquario_data.cli build",
+    "data:status": "node scripts/run-python.mjs -m antiquario_data.cli status",
+    "demo": "node src/recommender/demo.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^26.1.1",
+    "@types/react": "^19.2.17",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^6.0.4",
+    "typescript": "^7.0.2",
+    "vite": "^8.1.5"
+  },
+  "dependencies": {
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
+    "yaml": "^2.9.0",
+    "zod": "^4.4.3"
+  }
+}
