@@ -20,6 +20,7 @@ O Knowledge Core transforma um vault Markdown compatível com Obsidian em docume
 Toda nota possui:
 
 - ID global `antiquario:tipo:slug`;
+- identificadores externos opcionais, como o QID do Wikidata;
 - tipo de entidade;
 - resumo recuperável;
 - fontes e evidências;

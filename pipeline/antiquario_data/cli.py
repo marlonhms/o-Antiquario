@@ -7,6 +7,7 @@ import sys
 from typing import Sequence
 
 from .io_utils import load_json
+from .catalog_release import compile_catalog_release
 from .warehouse import build_catalog
 from .wikidata import sync_wikidata
 
@@ -35,6 +36,10 @@ def create_parser() -> argparse.ArgumentParser:
     all_command.add_argument("--retrieved-at")
 
     commands.add_parser("status", help="exibe o manifesto do catálogo publicado")
+    release = commands.add_parser("release", help="compila o catálogo compacto para a PWA")
+    release.add_argument("--knowledge-dir", type=Path, default=Path("knowledge/compiled"))
+    release.add_argument("--releases-dir", type=Path, default=Path("data/releases"))
+    release.add_argument("--public-dir", type=Path, default=Path("apps/web/public/catalog"))
     return parser
 
 
@@ -65,6 +70,14 @@ def main(argv: Sequence[str] | None = None) -> int:
             if not manifest_path.exists():
                 raise FileNotFoundError("Catálogo ainda não foi publicado")
             _print(load_json(manifest_path))
+        elif args.command == "release":
+            result = compile_catalog_release(
+                data_directory=data_directory,
+                knowledge_directory=args.knowledge_dir.resolve(),
+                releases_directory=args.releases_dir.resolve(),
+                public_directory=args.public_dir.resolve(),
+            )
+            _print(result.as_dict())
         return 0
     except (FileNotFoundError, RuntimeError, ValueError) as error:
         print(f"erro: {error}", file=sys.stderr)

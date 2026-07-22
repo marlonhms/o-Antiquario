@@ -5,6 +5,8 @@ project: o-antiquario
 type: fragrance
 title: Substituir título
 aliases: []
+external_ids:
+  wikidata: Q123
 tags: [perfume]
 source_ids: [internal_curated]
 license: CC0-1.0

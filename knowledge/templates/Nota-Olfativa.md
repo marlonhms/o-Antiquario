@@ -5,6 +5,7 @@ project: o-antiquario
 type: olfactory-note
 title: Substituir título
 aliases: []
+external_ids: {}
 tags: [nota]
 source_ids: [internal_curated]
 license: CC0-1.0

@@ -22,6 +22,7 @@ Companion e consultor digital especializado em perfumaria mundial, da perfumaria
 - [Taxonomia olfativa](docs/TAXONOMIA.md)
 - [Knowledge Core e memória RAG](docs/CONHECIMENTO_RAG.md)
 - [Plataforma de dados](docs/PLATAFORMA_DADOS.md)
+- [Catálogo Web e resolução de entidades](docs/CATALOGO_WEB.md)
 
 ## Estado
 
@@ -47,6 +48,7 @@ npm test
 npm run demo
 npm run knowledge:validate
 npm run knowledge:build
+npm run catalog:compile
 ```
 
 O catálogo presente em `src/recommender/fixtures.ts` é inteiramente sintético e existe apenas para testes; não será publicado como dado real.
@@ -66,7 +68,10 @@ npm run data:test
 npm run data:demo
 npm run data:sync:wikidata
 npm run data:build
+npm run catalog:compile
 ```
+
+O compilador publica uma release JSON determinística em `data/releases` e a cópia estável consumida pela PWA em `apps/web/public/catalog`. A interface identifica quando essa base factual está pronta, mas o ranking permanece ligado ao catálogo sintético até que os registros reais tenham notas, acordes e desempenho curados.
 
 ## Restrições externas relevantes
 

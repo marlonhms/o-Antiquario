@@ -34,6 +34,8 @@ Wikidata SPARQL
   → validação e tabelas relacionais
   → data/catalog/catalog.duckdb
   → Parquet + catalog-manifest.json
+  → resolução com o Knowledge Core
+  → release JSON versionada para a PWA
 ```
 
 O conector utiliza a classe `perfume (Q131746)`, marca/fabricante, país de origem, perfumista, datas e site oficial. Notas olfativas não são inferidas pelo Wikidata nesta etapa.
@@ -53,7 +55,10 @@ Sincronização real e publicação:
 npm run data:sync:wikidata
 npm run data:build
 npm run data:status
+npm run catalog:compile
 ```
+
+`catalog:compile` gera os arquivos públicos compactos, o índice de busca local e o relatório de resolução de entidades. O contrato completo está em [Catálogo Web e resolução de entidades](CATALOGO_WEB.md).
 
 ## Idempotência
 

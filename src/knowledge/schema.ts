@@ -45,6 +45,9 @@ export const KnowledgeFrontmatterSchema = z.object({
   type: KnowledgeDocumentTypeSchema,
   title: z.string().min(2).max(160),
   aliases: z.array(z.string().min(1)).default([]),
+  external_ids: z.object({
+    wikidata: z.string().regex(/^Q[1-9][0-9]*$/).optional(),
+  }).strict().default({}),
   tags: z.array(stableSegment).min(1),
   source_ids: z.array(z.string().regex(/^[a-z][a-z0-9_]*$/)).min(1),
   license: z.string().min(2),

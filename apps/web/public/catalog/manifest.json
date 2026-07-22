@@ -1,0 +1,45 @@
+{
+  "catalogVersion": "catalog-v1-fb24bcd8034a",
+  "contentHash": "0c2fb85e6ff687e05b8e5e6e7a6a422791400b262e82fdfbdf4da2c1b76f3158",
+  "counts": {
+    "ambiguousClusters": 1,
+    "brands": 38,
+    "countries": 8,
+    "fragrances": 85,
+    "knowledgeLinks": 0,
+    "perfumers": 49,
+    "searchTerms": 464
+  },
+  "files": {
+    "entities": {
+      "bytes": 6741,
+      "path": "entities.json",
+      "sha256": "027151bf7155d49ef7542ce707b518e88b9c5257ad399d194234b0540bcb4375"
+    },
+    "fragrances": {
+      "bytes": 36944,
+      "path": "fragrances.json",
+      "sha256": "5b9aed19a0302283050172871fd6de401bb52be4dc4971669047a8527531e6b5"
+    },
+    "resolution_report": {
+      "bytes": 270,
+      "path": "resolution-report.json",
+      "sha256": "618029be8f5ea8f34641550bcb7f839a2dbecf368b423feca09a07effac8226a"
+    },
+    "search_index": {
+      "bytes": 9358,
+      "path": "search-index.json",
+      "sha256": "a8df54865efd9b38d380a4f3eaf7d513493a0481845dd848b248f588f6e910d7"
+    }
+  },
+  "knowledgeReleaseId": "knowledge-v1-99c8aa8e79fa",
+  "releaseId": "catalog-web-v1-0c2fb85e6ff6",
+  "schemaVersion": 1,
+  "sources": [
+    {
+      "id": "wikidata",
+      "license": "CC0-1.0",
+      "retrievedAt": "2026-07-22"
+    }
+  ]
+}

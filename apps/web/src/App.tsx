@@ -7,6 +7,7 @@ import type {
   RecommendationResult,
   ScoreFactorName,
 } from "@core/domain/types.ts";
+import { loadCatalogReleaseManifest, type CatalogReleaseManifest } from "@core/catalog/release.ts";
 import { FIXTURE_FRAGRANCES } from "@core/recommender/fixtures.ts";
 import { recommend } from "@core/recommender/recommend.ts";
 
@@ -418,6 +419,7 @@ export function App() {
   const [submitted, setSubmitted] = useState<ConsultantForm>(draft);
   const [revision, setRevision] = useState(1);
   const [consultationStep, setConsultationStep] = useState(0);
+  const [catalogManifest, setCatalogManifest] = useState<CatalogReleaseManifest | null>(null);
   const result = useMemo(() => runRecommendation(submitted), [submitted]);
   const leadingFragrance = result.recommendations[0]?.fragrance;
   const primaryAura = auraColor(leadingFragrance?.accords[0]?.id, "#78d7b0");
@@ -426,6 +428,20 @@ export function App() {
     "--active-aura": primaryAura,
     "--active-aura-secondary": secondaryAura,
   } as CSSProperties;
+
+  useEffect(() => {
+    let active = true;
+    loadCatalogReleaseManifest()
+      .then((manifest) => {
+        if (active) setCatalogManifest(manifest);
+      })
+      .catch(() => {
+        if (active) setCatalogManifest(null);
+      });
+    return () => {
+      active = false;
+    };
+  }, []);
 
   function update<K extends keyof ConsultantForm>(key: K, value: ConsultantForm[K]): void {
     setDraft((current) => {
@@ -479,9 +495,14 @@ export function App() {
             <small>curadoria olfativa pessoal</small>
           </span>
         </a>
-        <div className="runtime-status" title="Todo o cálculo desta tela acontece no seu dispositivo">
+        <div
+          className="runtime-status"
+          title={catalogManifest
+            ? `Base factual ${catalogManifest.releaseId} pronta. As recomendações desta tela ainda usam o catálogo sintético de laboratório.`
+            : "Todo o cálculo desta tela acontece no seu dispositivo"}
+        >
           <i aria-hidden="true" />
-          motor local ativo
+          {catalogManifest ? `base factual · ${catalogManifest.counts.fragrances}` : "motor local ativo"}
         </div>
       </header>
 
