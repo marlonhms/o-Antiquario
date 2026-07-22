@@ -107,6 +107,64 @@ const CONSULTATION_STEPS = [
   { number: "03", short: "Memória", title: "Sua memória", description: "Atrações, recusas e espaço para descoberta." },
 ] as const;
 
+interface FactualFragrance {
+  id: string;
+  wikidataId: string;
+  name: string;
+  launchYear: number | null;
+  officialWebsite: string | null;
+  brandIds: string[];
+  perfumerIds: string[];
+  countryIds: string[];
+  olfactoryDescriptorIds: string[];
+}
+
+interface CatalogEntity {
+  id: string;
+  name: string;
+}
+
+interface FactualEntities {
+  brands: CatalogEntity[];
+  perfumers: CatalogEntity[];
+  countries: CatalogEntity[];
+  olfactoryDescriptors: CatalogEntity[];
+}
+
+interface SemanticClaim {
+  fragranceId: string;
+  propertyId: string;
+  propertyLabel: string;
+  valueLabel: string;
+}
+
+interface FactualLibraryData {
+  fragrances: FactualFragrance[];
+  entities: FactualEntities;
+  claims: SemanticClaim[];
+}
+
+async function loadFactualLibrary(): Promise<FactualLibraryData> {
+  const [fragranceResponse, entityResponse, claimResponse] = await Promise.all([
+    fetch("/catalog/fragrances.json"),
+    fetch("/catalog/entities.json"),
+    fetch("/catalog/semantic-claims.json"),
+  ]);
+  if (!fragranceResponse.ok || !entityResponse.ok || !claimResponse.ok) {
+    throw new Error("Acervo factual indisponível");
+  }
+  const [fragrancePayload, entityPayload, claimPayload] = await Promise.all([
+    fragranceResponse.json() as Promise<{ items: FactualFragrance[] }>,
+    entityResponse.json() as Promise<FactualEntities>,
+    claimResponse.json() as Promise<{ items: SemanticClaim[] }>,
+  ]);
+  return { fragrances: fragrancePayload.items, entities: entityPayload, claims: claimPayload.items };
+}
+
+function entityNames(ids: readonly string[], index: ReadonlyMap<string, string>): string[] {
+  return ids.map((id) => index.get(id)).filter((name): name is string => Boolean(name));
+}
+
 function auraColor(accord: string | undefined, fallback: string): string {
   if (!accord) return fallback;
   const exact = ACCORD_AURAS[accord];
@@ -414,12 +472,136 @@ function ChipGroup({
   );
 }
 
+function FactualLibrary({ library }: { library: FactualLibraryData }) {
+  const [query, setQuery] = useState("");
+  const [selectedId, setSelectedId] = useState<string | null>(null);
+  const entityIndex = useMemo(() => new Map(
+    [
+      ...library.entities.brands,
+      ...library.entities.perfumers,
+      ...library.entities.countries,
+      ...library.entities.olfactoryDescriptors,
+    ].map((entity) => [entity.id, entity.name]),
+  ), [library]);
+  const normalizedQuery = query.trim().toLocaleLowerCase("pt-BR");
+  const filtered = useMemo(() => library.fragrances.filter((fragrance) => {
+    const terms = [
+      fragrance.name,
+      ...entityNames(fragrance.brandIds, entityIndex),
+      ...entityNames(fragrance.perfumerIds, entityIndex),
+      ...entityNames(fragrance.olfactoryDescriptorIds, entityIndex),
+    ].join(" ").toLocaleLowerCase("pt-BR");
+    return !normalizedQuery || terms.includes(normalizedQuery);
+  }), [entityIndex, library.fragrances, normalizedQuery]);
+  const selected = filtered.find((fragrance) => fragrance.id === selectedId) ?? filtered[0];
+  const selectedClaims = selected ? library.claims.filter((claim) => claim.fragranceId === selected.id) : [];
+
+  return (
+    <section className="factual-library" id="acervo" aria-label="Acervo factual de perfumaria">
+      <div className="library-heading">
+        <div>
+          <p className="section-kicker">Acervo factual</p>
+          <h2>Perfumes, sem névoa nos dados.</h2>
+        </div>
+        <p>{library.fragrances.length} perfumes · {library.entities.olfactoryDescriptors.length} descritores · dados Wikidata</p>
+      </div>
+
+      <div className="library-toolbar">
+        <label>
+          <span>Buscar no acervo</span>
+          <input
+            type="search"
+            value={query}
+            onChange={(event) => setQuery(event.target.value)}
+            placeholder="nome, marca, perfumista ou descritor"
+          />
+        </label>
+        <small>{filtered.length} resultado{filtered.length === 1 ? "" : "s"}</small>
+      </div>
+
+      <div className="library-layout">
+        <div className="library-list" role="list">
+          {filtered.slice(0, 16).map((fragrance) => {
+            const active = fragrance.id === selected?.id;
+            const brand = entityNames(fragrance.brandIds, entityIndex)[0] ?? "marca não declarada";
+            return (
+              <button
+                className={`library-item ${active ? "is-active" : ""}`}
+                type="button"
+                key={fragrance.id}
+                onClick={() => setSelectedId(fragrance.id)}
+                role="listitem"
+              >
+                <span>{fragrance.name.charAt(0)}</span>
+                <strong>{fragrance.name}</strong>
+                <small>{brand}{fragrance.launchYear ? ` · ${fragrance.launchYear}` : ""}</small>
+              </button>
+            );
+          })}
+          {filtered.length === 0 && <p className="library-empty">Nenhum perfume corresponde a esta busca.</p>}
+        </div>
+
+        {selected && (
+          <article className="library-detail">
+            <div className="library-detail-title">
+              <span className="detail-seal">{selected.name.charAt(0)}</span>
+              <div>
+                <p className="section-kicker">Registro factual · {selected.wikidataId}</p>
+                <h3>{selected.name}</h3>
+                <p>{entityNames(selected.brandIds, entityIndex).join(" · ") || "Marca não declarada"}</p>
+              </div>
+            </div>
+
+            <div className="factual-columns">
+              <div>
+                <small>Perfumista</small>
+                <p>{entityNames(selected.perfumerIds, entityIndex).join(" · ") || "não declarado"}</p>
+              </div>
+              <div>
+                <small>Origem</small>
+                <p>{entityNames(selected.countryIds, entityIndex).join(" · ") || "não declarada"}</p>
+              </div>
+              <div>
+                <small>Lançamento</small>
+                <p>{selected.launchYear ?? "não declarado"}</p>
+              </div>
+            </div>
+
+            <div className="fact-group">
+              <small>Descritores olfativos declarados</small>
+              <div className="fact-chips">
+                {entityNames(selected.olfactoryDescriptorIds, entityIndex).slice(0, 18).map((name) => <span key={name}>{name}</span>)}
+                {selected.olfactoryDescriptorIds.length === 0 && <em>não declarados no Wikidata</em>}
+              </div>
+            </div>
+
+            {selectedClaims.length > 0 && (
+              <div className="fact-group">
+                <small>Outras declarações estruturadas</small>
+                <div className="claim-list">
+                  {selectedClaims.map((claim) => <span key={`${claim.propertyId}:${claim.valueLabel}`}><b>{claim.propertyLabel}</b>{claim.valueLabel}</span>)}
+                </div>
+              </div>
+            )}
+
+            <div className="detail-foot">
+              <span>Dados estruturados · CC0</span>
+              {selected.officialWebsite && <a href={selected.officialWebsite} target="_blank" rel="noreferrer">site declarado ↗</a>}
+            </div>
+          </article>
+        )}
+      </div>
+    </section>
+  );
+}
+
 export function App() {
   const [draft, setDraft] = useState<ConsultantForm>(readStoredForm);
   const [submitted, setSubmitted] = useState<ConsultantForm>(draft);
   const [revision, setRevision] = useState(1);
   const [consultationStep, setConsultationStep] = useState(0);
   const [catalogManifest, setCatalogManifest] = useState<CatalogReleaseManifest | null>(null);
+  const [factualLibrary, setFactualLibrary] = useState<FactualLibraryData | null>(null);
   const result = useMemo(() => runRecommendation(submitted), [submitted]);
   const leadingFragrance = result.recommendations[0]?.fragrance;
   const primaryAura = auraColor(leadingFragrance?.accords[0]?.id, "#78d7b0");
@@ -437,6 +619,20 @@ export function App() {
       })
       .catch(() => {
         if (active) setCatalogManifest(null);
+      });
+    return () => {
+      active = false;
+    };
+  }, []);
+
+  useEffect(() => {
+    let active = true;
+    loadFactualLibrary()
+      .then((library) => {
+        if (active) setFactualLibrary(library);
+      })
+      .catch(() => {
+        if (active) setFactualLibrary(null);
       });
     return () => {
       active = false;
@@ -805,6 +1001,8 @@ export function App() {
             </footer>
           </section>
         </section>
+
+        {factualLibrary && <FactualLibrary library={factualLibrary} />}
       </main>
     </div>
   );
