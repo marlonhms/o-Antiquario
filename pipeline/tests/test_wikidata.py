@@ -12,6 +12,7 @@ from antiquario_data.wikidata import (
     audit_wikidata_property_values,
     build_discovery_queries,
     build_olfactory_descriptor_query,
+    build_semantic_claim_query,
     build_property_value_audit_query,
     build_property_audit_query,
     build_perfume_query,
@@ -19,6 +20,7 @@ from antiquario_data.wikidata import (
     normalize_sparql_payload,
     normalize_sparql_payload_with_quality,
     normalize_olfactory_descriptor_payload,
+    normalize_semantic_claim_payload,
     sync_wikidata,
     summarize_property_audit,
     summarize_property_value_audit,
@@ -112,6 +114,26 @@ class WikidataPipelineTest(unittest.TestCase):
         summary = summarize_property_value_audit(payload)
         self.assertEqual(["P1552", "P366"], [item["propertyId"] for item in summary])
         self.assertEqual("floral", summary[0]["values"][0]["label"])
+
+    def test_normalizes_semantic_claims_without_forcing_editorial_roles(self) -> None:
+        query = build_semantic_claim_query(["Q999999991"], ["P1552"])
+        self.assertIn("wdt:P1552", query)
+        payload = {"results": {"bindings": [{
+            "item": {"value": "http://www.wikidata.org/entity/Q999999991"},
+            "property": {"value": "http://www.wikidata.org/entity/P1552"},
+            "propertyLabel": {"value": "has quality"},
+            "value": {"value": "http://www.wikidata.org/entity/Q9376212"},
+            "valueLabel": {"value": "eau de parfum"},
+        }]}}
+        records = normalize_semantic_claim_payload(
+            payload,
+            accepted_fragrance_ids={"Q999999991"},
+            retrieved_at="2026-07-22",
+            snapshot_id="d" * 64,
+        )
+        self.assertEqual(1, len(records))
+        self.assertEqual("P1552", records[0].property.wikidata_id)
+        self.assertEqual("eau de parfum", records[0].value.label)
 
     def test_audits_property_values_with_injected_fetcher(self) -> None:
         with tempfile.TemporaryDirectory() as directory:

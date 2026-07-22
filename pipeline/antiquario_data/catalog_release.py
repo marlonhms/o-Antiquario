@@ -145,6 +145,11 @@ def compile_catalog_release(
         descriptor_rows = connection.execute(
             "SELECT fragrance_id, wikidata_id, label FROM fragrance_olfactory_descriptors ORDER BY ALL"
         ).fetchall()
+        semantic_claim_rows = connection.execute("""
+            SELECT fragrance_id, property_id, property_label, value_wikidata_id, value_label,
+                   source_id, source_url, license, CAST(retrieved_at AS VARCHAR), snapshot_id
+            FROM fragrance_semantic_claims ORDER BY ALL
+        """).fetchall()
     finally:
         connection.close()
 
@@ -206,6 +211,27 @@ def compile_catalog_release(
         "olfactoryDescriptors": descriptors,
     }
     fragrance_payload = {"schemaVersion": 1, "items": fragrances}
+    semantic_claim_payload = {
+        "schemaVersion": 1,
+        "items": [
+            {
+                "fragranceId": fragrance_id,
+                "propertyId": property_id,
+                "propertyLabel": property_label,
+                "valueWikidataId": value_wikidata_id,
+                "valueLabel": value_label,
+                "sourceId": source_id,
+                "sourceUrl": source_url,
+                "license": license_name,
+                "retrievedAt": retrieved_at,
+                "snapshotId": snapshot_id,
+            }
+            for (
+                fragrance_id, property_id, property_label, value_wikidata_id, value_label,
+                source_id, source_url, license_name, retrieved_at, snapshot_id,
+            ) in semantic_claim_rows
+        ],
+    }
 
     document_ids = [product["id"] for product in fragrances]
     inverted: dict[str, set[int]] = defaultdict(set)
@@ -233,6 +259,7 @@ def compile_catalog_release(
     payloads = {
         "fragrances.json": fragrance_payload,
         "entities.json": entity_payload,
+        "semantic-claims.json": semantic_claim_payload,
         "search-index.json": search_payload,
         "resolution-report.json": resolution_payload,
     }
@@ -263,6 +290,8 @@ def compile_catalog_release(
             "perfumers": len(perfumers),
             "countries": len(countries),
             "olfactoryDescriptors": len(descriptors),
+            "semanticClaims": len(semantic_claim_rows),
+            "semanticPropertyKinds": len({row[1] for row in semantic_claim_rows}),
             "knowledgeLinks": sum(len(ids) for ids in knowledge_by_qid.values()),
             "searchTerms": len(inverted),
             "ambiguousClusters": len(ambiguous_clusters),

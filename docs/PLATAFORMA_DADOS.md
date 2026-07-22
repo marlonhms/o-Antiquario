@@ -29,7 +29,7 @@ O projeto declara a faixa compatível no `pyproject.toml` e registra a versão v
 Wikidata SPARQL
   → snapshot bruto imutável por hash
   → normalização e deduplicação por QID
-  → data/staging/wikidata/fragrances.jsonl + olfactory-descriptors.jsonl
+  → data/staging/wikidata/fragrances.jsonl + olfactory-descriptors.jsonl + semantic-claims.jsonl
   → quarentena + relatório de qualidade
   → validação e tabelas relacionais
   → data/catalog/catalog.duckdb
@@ -79,6 +79,8 @@ Na importação atual, há 1.110 relações `cheira a` distribuídas por 132 das
 `data:audit:values` aprofunda os quatro próximos candidatos (`P1552`, `P2360`, `P366` e `P4543`), listando seus valores e cobertura em `data/staging/wikidata/property-values-audit.json`. Use `-- --property P1552` para avaliar somente uma propriedade.
 
 Na auditoria inicial de 282 QIDs, `P1552` revelou concentração e marcação de gênero — não acordes ou famílias. `P2360` descreve público-alvo; `P366` descreve usos genéricos do produto, não ocasião de uso; e `P4543` traz ingredientes em apenas dois perfumes. A promoção desses dados será feita por papel factual explícito, sem inferir contexto, pirâmide ou desempenho.
+
+Após a auditoria, os quatro grupos são sincronizados para `semantic-claims.jsonl` e para a tabela DuckDB `fragrance_semantic_claims`. A release web expõe `semantic-claims.json`, preservando propriedade, valor, QIDs e proveniência por relação. Essa é uma camada factual bruta: o aplicativo não usa esses claims para ranquear até que uma regra editorial os promova a concentração, público-alvo ou matéria-prima.
 
 ## Descoberta regional no Wikidata
 

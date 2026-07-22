@@ -1,12 +1,13 @@
 {
-  "catalog_version": "catalog-v1-b596fe44c555",
-  "content_hash": "b596fe44c555cfa27948697864723c665250591caeb6f2a886f848083681e51d",
+  "catalog_version": "catalog-v1-e4a6b577f980",
+  "content_hash": "e4a6b577f980139c4d017c4f6e7fb7a6ca7fdfc6778a9c4a310e694f2a03b65e",
   "counts": {
     "brands": 140,
     "countries": 54,
     "fragrances": 282,
     "olfactory_descriptors": 1110,
-    "perfumers": 157
+    "perfumers": 157,
+    "semantic_claims": 251
   },
   "files": {
     "database": "catalog.duckdb",
@@ -15,7 +16,8 @@
   "schema_version": 1,
   "snapshot_ids": [
     "2f461cad4368927f4a7e3ee00ad25a631025678f74afe2e25ac63d20b28d9021",
-    "a8c70e5fb9e9a5d132f837b47fbe9f20bea4bf73cc0e71b37880046fc7a1c567"
+    "a8c70e5fb9e9a5d132f837b47fbe9f20bea4bf73cc0e71b37880046fc7a1c567",
+    "d1c822ff327de39dcc234931c59d81215f24d3c496181ab6ec6e91d4f5b38a42"
   ],
   "sources": [
     "wikidata"

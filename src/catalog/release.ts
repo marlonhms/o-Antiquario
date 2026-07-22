@@ -20,6 +20,8 @@ export const CatalogReleaseManifestSchema = z.object({
     perfumers: z.number().int().nonnegative(),
     countries: z.number().int().nonnegative(),
     olfactoryDescriptors: z.number().int().nonnegative(),
+    semanticClaims: z.number().int().nonnegative(),
+    semanticPropertyKinds: z.number().int().nonnegative(),
     knowledgeLinks: z.number().int().nonnegative(),
     searchTerms: z.number().int().nonnegative(),
     ambiguousClusters: z.number().int().nonnegative(),
@@ -32,6 +34,7 @@ export const CatalogReleaseManifestSchema = z.object({
   files: z.object({
     fragrances: ReleaseFileSchema,
     entities: ReleaseFileSchema,
+    semantic_claims: ReleaseFileSchema,
     search_index: ReleaseFileSchema,
     resolution_report: ReleaseFileSchema,
   }).strict(),

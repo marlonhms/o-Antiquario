@@ -17,8 +17,17 @@ from .io_utils import (
     write_dicts_jsonl,
     write_olfactory_descriptors_jsonl,
     write_records_jsonl,
+    write_semantic_claims_jsonl,
 )
-from .models import EntityReference, FragranceRecord, OlfactoryDescriptorRecord, Provenance, QID_PATTERN
+from .models import (
+    EntityReference,
+    FragranceRecord,
+    OlfactoryDescriptorRecord,
+    PropertyReference,
+    Provenance,
+    QID_PATTERN,
+    WikidataSemanticClaimRecord,
+)
 from .warehouse import _duckdb
 
 
@@ -153,6 +162,36 @@ WHERE {{
 }}
 GROUP BY ?property ?propertyLabel ?value ?valueLabel
 ORDER BY ?property DESC(?itemsWithValue) ?value"""
+
+
+def build_semantic_claim_query(
+    wikidata_ids: Sequence[str],
+    property_ids: Sequence[str] = WIKIDATA_SEMANTIC_AUDIT_PROPERTIES,
+) -> str:
+    normalized_ids = tuple(sorted(set(wikidata_ids)))
+    normalized_properties = tuple(sorted(set(property_ids)))
+    if not normalized_ids:
+        raise ValueError("A sincronização semântica exige ao menos um QID de fragrância")
+    if len(normalized_ids) > 100:
+        raise ValueError("A sincronização semântica aceita no máximo 100 QIDs por consulta")
+    invalid_ids = [wikidata_id for wikidata_id in normalized_ids if not QID_PATTERN.fullmatch(wikidata_id)]
+    invalid_properties = [property_id for property_id in normalized_properties if not PROPERTY_ID_PATTERN.fullmatch(property_id)]
+    if invalid_ids:
+        raise ValueError(f"QIDs inválidos na sincronização semântica: {', '.join(invalid_ids)}")
+    if not normalized_properties or invalid_properties:
+        invalid = invalid_properties or ["nenhuma propriedade"]
+        raise ValueError(f"Propriedades inválidas na sincronização semântica: {', '.join(invalid)}")
+    items = " ".join(f"wd:{wikidata_id}" for wikidata_id in normalized_ids)
+    properties = " ".join(f"(wd:{property_id} wdt:{property_id})" for property_id in normalized_properties)
+    return f"""SELECT ?item ?property ?propertyLabel ?value ?valueLabel
+WHERE {{
+  VALUES ?item {{ {items} }}
+  VALUES (?property ?directProperty) {{ {properties} }}
+  ?item ?directProperty ?value .
+  FILTER(isIRI(?value))
+  SERVICE wikibase:label {{ bd:serviceParam wikibase:language "pt,en". }}
+}}
+ORDER BY ?item ?property ?value"""
 
 
 def _property_id(uri: str | None) -> str | None:
@@ -310,6 +349,41 @@ def normalize_olfactory_descriptor_payload(
         records.add(OlfactoryDescriptorRecord(
             fragrance_wikidata_id=fragrance_id,
             descriptor=descriptor,
+            provenance=Provenance(
+                source_id="wikidata",
+                source_url=f"https://www.wikidata.org/wiki/{fragrance_id}",
+                license="CC0-1.0",
+                retrieved_at=retrieved_at,
+                snapshot_id=snapshot_id,
+            ),
+        ))
+    return sorted(records)
+
+
+def normalize_semantic_claim_payload(
+    payload: dict[str, Any],
+    *,
+    accepted_fragrance_ids: set[str],
+    retrieved_at: str,
+    snapshot_id: str,
+) -> list[WikidataSemanticClaimRecord]:
+    bindings = payload.get("results", {}).get("bindings")
+    if not isinstance(bindings, list):
+        raise ValueError("Resposta SPARQL não contém results.bindings")
+    records: set[WikidataSemanticClaimRecord] = set()
+    for binding in bindings:
+        if not isinstance(binding, dict):
+            continue
+        fragrance_id = _entity_id(_binding_value(binding, "item"))
+        property_id = _property_id(_binding_value(binding, "property"))
+        property_label = _binding_value(binding, "propertyLabel")
+        value = _entity_reference(binding, "value", "valueLabel")
+        if not fragrance_id or fragrance_id not in accepted_fragrance_ids or not property_id or not property_label or not value:
+            continue
+        records.add(WikidataSemanticClaimRecord(
+            fragrance_wikidata_id=fragrance_id,
+            property=PropertyReference(wikidata_id=property_id, label=property_label),
+            value=value,
             provenance=Provenance(
                 source_id="wikidata",
                 source_url=f"https://www.wikidata.org/wiki/{fragrance_id}",
@@ -558,6 +632,8 @@ class WikidataSyncResult:
     quality_report_path: Path
     olfactory_descriptors_path: Path
     olfactory_descriptors: int
+    semantic_claims_path: Path
+    semantic_claims: int
     snapshot_id: str
     retrieved_at: str
 
@@ -571,6 +647,8 @@ class WikidataSyncResult:
             "quality_report_path": self.quality_report_path.as_posix(),
             "olfactory_descriptors_path": self.olfactory_descriptors_path.as_posix(),
             "olfactory_descriptors": self.olfactory_descriptors,
+            "semantic_claims_path": self.semantic_claims_path.as_posix(),
+            "semantic_claims": self.semantic_claims,
             "snapshot_id": self.snapshot_id,
             "retrieved_at": self.retrieved_at,
         }
@@ -609,6 +687,7 @@ def sync_wikidata(
     )
     staging_path = data_directory / "staging" / "wikidata" / "fragrances.jsonl"
     descriptors_path = data_directory / "staging" / "wikidata" / "olfactory-descriptors.jsonl"
+    claims_path = data_directory / "staging" / "wikidata" / "semantic-claims.jsonl"
     quarantine_path = data_directory / "staging" / "wikidata" / "quarantined.jsonl"
     quality_report_path = data_directory / "staging" / "wikidata" / "quality-report.json"
     write_records_jsonl(staging_path, records)
@@ -633,6 +712,27 @@ def sync_wikidata(
             snapshot_id=descriptor_envelope["snapshot_id"],
         )
     write_olfactory_descriptors_jsonl(descriptors_path, descriptors)
+    semantic_claims: list[WikidataSemanticClaimRecord] = []
+    if fixture_contents is None and records:
+        claim_queries = [
+            build_semantic_claim_query([record.wikidata_id for record in records[index:index + 100]])
+            for index in range(0, len(records), 100)
+        ]
+        claim_payload = merge_sparql_payloads([fetch_sparql(item) for item in claim_queries])
+        _, claim_envelope = save_raw_snapshot(
+            claim_payload,
+            "\n\n".join(claim_queries),
+            data_directory / "raw" / "wikidata" / "semantic-claims",
+            retrieved_at=envelope["retrieved_at"],
+            filename_prefix="claims",
+        )
+        semantic_claims = normalize_semantic_claim_payload(
+            claim_envelope["payload"],
+            accepted_fragrance_ids={record.wikidata_id for record in records},
+            retrieved_at=claim_envelope["retrieved_at"],
+            snapshot_id=claim_envelope["snapshot_id"],
+        )
+    write_semantic_claims_jsonl(claims_path, semantic_claims)
     write_dicts_jsonl(quarantine_path, quarantined)
     quality_report = {
         "schema_version": 1,
@@ -648,6 +748,7 @@ def sync_wikidata(
             "with_launch_year": sum(record.launch_year is not None for record in records),
             "with_official_website": sum(record.official_website is not None for record in records),
             "with_olfactory_descriptors": len({record.fragrance_wikidata_id for record in descriptors}),
+            "with_semantic_claims": len({record.fragrance_wikidata_id for record in semantic_claims}),
         },
         "discovery_countries": sorted(set(discovery_countries)),
     }
@@ -664,6 +765,8 @@ def sync_wikidata(
         quality_report_path=quality_report_path,
         olfactory_descriptors_path=descriptors_path,
         olfactory_descriptors=len(descriptors),
+        semantic_claims_path=claims_path,
+        semantic_claims=len(semantic_claims),
         snapshot_id=envelope["snapshot_id"],
         retrieved_at=envelope["retrieved_at"],
     )

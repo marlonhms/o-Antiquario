@@ -9,7 +9,7 @@ import re
 import tempfile
 from typing import Any, Iterable
 
-from .models import FragranceRecord, OlfactoryDescriptorRecord, canonical_json
+from .models import FragranceRecord, OlfactoryDescriptorRecord, WikidataSemanticClaimRecord, canonical_json
 
 
 def atomic_write_text(path: Path, contents: str) -> None:
@@ -104,5 +104,23 @@ def read_olfactory_descriptors_jsonl(path: Path) -> list[OlfactoryDescriptorReco
 
 
 def write_olfactory_descriptors_jsonl(path: Path, records: Iterable[OlfactoryDescriptorRecord]) -> None:
+    lines = [canonical_json(record.as_dict()) for record in records]
+    atomic_write_text(path, "".join(f"{line}\n" for line in lines))
+
+
+def read_semantic_claims_jsonl(path: Path) -> list[WikidataSemanticClaimRecord]:
+    records: list[WikidataSemanticClaimRecord] = []
+    with path.open("r", encoding="utf-8") as handle:
+        for line_number, line in enumerate(handle, start=1):
+            if not line.strip():
+                continue
+            try:
+                records.append(WikidataSemanticClaimRecord.from_dict(json.loads(line)))
+            except (KeyError, TypeError, ValueError, json.JSONDecodeError) as error:
+                raise ValueError(f"{path}:{line_number}: claim semântico inválido: {error}") from error
+    return records
+
+
+def write_semantic_claims_jsonl(path: Path, records: Iterable[WikidataSemanticClaimRecord]) -> None:
     lines = [canonical_json(record.as_dict()) for record in records]
     atomic_write_text(path, "".join(f"{line}\n" for line in lines))

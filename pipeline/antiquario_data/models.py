@@ -8,6 +8,7 @@ from typing import Any
 
 
 QID_PATTERN = re.compile(r"^Q[1-9][0-9]*$")
+PROPERTY_ID_PATTERN = re.compile(r"^P[1-9][0-9]*$")
 
 
 def canonical_json(value: Any) -> str:
@@ -24,6 +25,21 @@ class EntityReference:
             raise ValueError(f"Wikidata ID inválido: {self.wikidata_id}")
         if not self.label.strip():
             raise ValueError("Rótulo de entidade não pode ser vazio")
+
+    def as_dict(self) -> dict[str, str]:
+        return {"wikidata_id": self.wikidata_id, "label": self.label}
+
+
+@dataclass(frozen=True, order=True)
+class PropertyReference:
+    wikidata_id: str
+    label: str
+
+    def __post_init__(self) -> None:
+        if not PROPERTY_ID_PATTERN.fullmatch(self.wikidata_id):
+            raise ValueError(f"Propriedade Wikidata inválida: {self.wikidata_id}")
+        if not self.label.strip():
+            raise ValueError("Rótulo de propriedade não pode ser vazio")
 
     def as_dict(self) -> dict[str, str]:
         return {"wikidata_id": self.wikidata_id, "label": self.label}
@@ -137,5 +153,36 @@ class OlfactoryDescriptorRecord:
         return cls(
             fragrance_wikidata_id=value["fragrance_wikidata_id"],
             descriptor=EntityReference(**value["descriptor"]),
+            provenance=Provenance(**value["provenance"]),
+        )
+
+
+@dataclass(frozen=True, order=True)
+class WikidataSemanticClaimRecord:
+    """Vínculo estruturado ainda não promovido a uma categoria editorial."""
+
+    fragrance_wikidata_id: str
+    property: PropertyReference
+    value: EntityReference
+    provenance: Provenance
+
+    def __post_init__(self) -> None:
+        if not QID_PATTERN.fullmatch(self.fragrance_wikidata_id):
+            raise ValueError(f"Wikidata ID inválido: {self.fragrance_wikidata_id}")
+
+    def as_dict(self) -> dict[str, Any]:
+        return {
+            "fragrance_wikidata_id": self.fragrance_wikidata_id,
+            "property": self.property.as_dict(),
+            "value": self.value.as_dict(),
+            "provenance": self.provenance.as_dict(),
+        }
+
+    @classmethod
+    def from_dict(cls, value: dict[str, Any]) -> WikidataSemanticClaimRecord:
+        return cls(
+            fragrance_wikidata_id=value["fragrance_wikidata_id"],
+            property=PropertyReference(**value["property"]),
+            value=EntityReference(**value["value"]),
             provenance=Provenance(**value["provenance"]),
         )
