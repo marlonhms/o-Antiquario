@@ -32,13 +32,13 @@ relations:
   - predicate: has-heart-note
     target: antiquario:olfactory-note:water-lily
   - predicate: has-heart-note
-    target: antiquario:olfactory-note:cinnamon
+    target: antiquario:olfactory-note:canela
   - predicate: has-base-note
-    target: antiquario:olfactory-note:sandalwood
+    target: antiquario:olfactory-note:sandalo
   - predicate: has-base-note
     target: antiquario:olfactory-note:vetiver
   - predicate: has-base-note
-    target: antiquario:olfactory-note:amber
+    target: antiquario:olfactory-note:ambar
   - predicate: has-base-note
     target: antiquario:olfactory-note:tobacco
 ---
@@ -50,5 +50,5 @@ relations:
 ## Pirâmide Olfativa
 
 - **Saída:** [[note-yuzu]], [[note-mandarin-orange]]
-- **Coração:** [[note-nutmeg]], [[note-water-lily]], [[note-cinnamon]]
-- **Fundo:** [[note-sandalwood]], [[Vetiver]], [[note-amber]], [[note-tobacco]]
+- **Coração:** [[note-nutmeg]], [[note-water-lily]], [[note-canela]]
+- **Fundo:** [[note-sandalo]], [[Vetiver]], [[note-ambar]], [[note-tobacco]]

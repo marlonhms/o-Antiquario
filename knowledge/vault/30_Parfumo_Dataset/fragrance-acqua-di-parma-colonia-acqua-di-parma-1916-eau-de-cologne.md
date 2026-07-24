@@ -24,11 +24,11 @@ relations:
   - predicate: belongs-to-brand
     target: antiquario:brand:acqua-di-parma
   - predicate: has-top-note
-    target: antiquario:olfactory-note:lemon
+    target: antiquario:olfactory-note:limao-siciliano
   - predicate: has-top-note
     target: antiquario:olfactory-note:calabrian-bergamot
   - predicate: has-top-note
-    target: antiquario:olfactory-note:orange
+    target: antiquario:olfactory-note:laranja
   - predicate: has-heart-note
     target: antiquario:olfactory-note:lavender
   - predicate: has-heart-note
@@ -40,7 +40,7 @@ relations:
   - predicate: has-base-note
     target: antiquario:olfactory-note:patchouli
   - predicate: has-base-note
-    target: antiquario:olfactory-note:sandalwood
+    target: antiquario:olfactory-note:sandalo
   - predicate: has-base-note
     target: antiquario:olfactory-note:vetiver
 ---
@@ -51,6 +51,6 @@ relations:
 
 ## Pirâmide Olfativa
 
-- **Saída:** [[note-lemon]], [[note-calabrian-bergamot]], [[note-orange]]
+- **Saída:** [[note-limao-siciliano]], [[note-calabrian-bergamot]], [[note-laranja]]
 - **Coração:** [[note-lavender]], [[note-vervain]], [[note-bulgarian-rose]], [[note-rosemary]]
-- **Fundo:** [[note-patchouli]], [[note-sandalwood]], [[Vetiver]]
+- **Fundo:** [[note-patchouli]], [[note-sandalo]], [[Vetiver]]

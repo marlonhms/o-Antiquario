@@ -44,7 +44,7 @@ relations:
   - predicate: has-base-note
     target: antiquario:olfactory-note:brazilian-tonka-bean-absolute
   - predicate: has-base-note
-    target: antiquario:olfactory-note:sandalwood
+    target: antiquario:olfactory-note:sandalo
 ---
 
 # Gris Charnel bdk Parfums 2022 Extrait
@@ -55,4 +55,4 @@ relations:
 
 - **Saída:** [[note-cardamom]], [[note-fig]], [[note-black-tea]]
 - **Coração:** [[note-cistus]], [[note-iris-tingitana-absolute]], [[note-bourbon-vetiver]]
-- **Fundo:** [[note-bourbon-vanilla-absolute]], [[note-indonesian-patchouli]], [[note-american-cedar]], [[note-brazilian-tonka-bean-absolute]], [[note-sandalwood]]
+- **Fundo:** [[note-bourbon-vanilla-absolute]], [[note-indonesian-patchouli]], [[note-american-cedar]], [[note-brazilian-tonka-bean-absolute]], [[note-sandalo]]

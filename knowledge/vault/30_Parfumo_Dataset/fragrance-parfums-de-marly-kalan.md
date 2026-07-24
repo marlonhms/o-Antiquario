@@ -30,7 +30,7 @@ relations:
   - predicate: has-top-note
     target: antiquario:olfactory-note:black-pepper
   - predicate: has-heart-note
-    target: antiquario:olfactory-note:orange-blossom-absolute
+    target: antiquario:olfactory-note:laranja-blossom-absolute
   - predicate: has-heart-note
     target: antiquario:olfactory-note:lavender
   - predicate: has-heart-note
@@ -38,13 +38,13 @@ relations:
   - predicate: has-base-note
     target: antiquario:olfactory-note:roasted-tonka-bean
   - predicate: has-base-note
-    target: antiquario:olfactory-note:amber
+    target: antiquario:olfactory-note:ambar
   - predicate: has-base-note
     target: antiquario:olfactory-note:precious-woods
   - predicate: has-base-note
     target: antiquario:olfactory-note:moss
   - predicate: has-base-note
-    target: antiquario:olfactory-note:sandalwood
+    target: antiquario:olfactory-note:sandalo
 ---
 
 # Kalan
@@ -55,4 +55,4 @@ relations:
 
 - **Saída:** [[note-blood-orange]], [[note-spices]], [[note-black-pepper]]
 - **Coração:** [[note-orange-blossom-absolute]], [[note-lavender]], [[note-solar-note]]
-- **Fundo:** [[note-roasted-tonka-bean]], [[note-amber]], [[note-precious-woods]], [[note-moss]], [[note-sandalwood]]
+- **Fundo:** [[note-roasted-tonka-bean]], [[note-ambar]], [[note-precious-woods]], [[note-moss]], [[note-sandalo]]

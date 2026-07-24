@@ -36,7 +36,7 @@ relations:
   - predicate: has-heart-note
     target: antiquario:olfactory-note:damp
   - predicate: has-base-note
-    target: antiquario:olfactory-note:sandalwood
+    target: antiquario:olfactory-note:sandalo
 ---
 
 # Be Positive - Thé Blanc
@@ -47,4 +47,4 @@ relations:
 
 - **Saída:** [[note-black-pepper]], [[note-grapefruit]], [[note-noxiousness]]
 - **Coração:** [[note-frankincense]], [[Baunilha]], [[note-damp]]
-- **Fundo:** [[note-sandalwood]]
+- **Fundo:** [[note-sandalo]]

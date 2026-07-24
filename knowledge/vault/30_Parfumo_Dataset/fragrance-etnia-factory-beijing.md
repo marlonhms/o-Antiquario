@@ -34,7 +34,7 @@ relations:
   - predicate: has-top-note
     target: antiquario:olfactory-note:saffron
   - predicate: has-heart-note
-    target: antiquario:olfactory-note:cinnamon-leaf
+    target: antiquario:olfactory-note:canela-leaf
   - predicate: has-heart-note
     target: antiquario:olfactory-note:habanero-chili
   - predicate: has-heart-note

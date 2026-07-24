@@ -24,7 +24,7 @@ relations:
   - predicate: belongs-to-brand
     target: antiquario:brand:acqua-di-parma
   - predicate: has-top-note
-    target: antiquario:olfactory-note:lemon
+    target: antiquario:olfactory-note:limao-siciliano
   - predicate: has-top-note
     target: antiquario:olfactory-note:calabrian-bergamot
   - predicate: has-heart-note
@@ -45,6 +45,6 @@ relations:
 
 ## Pirâmide Olfativa
 
-- **Saída:** [[note-lemon]], [[note-calabrian-bergamot]]
+- **Saída:** [[note-limao-siciliano]], [[note-calabrian-bergamot]]
 - **Coração:** [[note-cedarwood]], [[note-red-ginger]]
 - **Fundo:** [[note-musk]], [[note-benzoin]], [[Vetiver]]

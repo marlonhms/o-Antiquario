@@ -28,7 +28,7 @@ relations:
   - predicate: has-top-note
     target: antiquario:olfactory-note:peppermint
   - predicate: has-heart-note
-    target: antiquario:olfactory-note:cinnamon
+    target: antiquario:olfactory-note:canela
   - predicate: has-heart-note
     target: antiquario:olfactory-note:rose-absolute
   - predicate: has-base-note
@@ -44,5 +44,5 @@ relations:
 ## Pirâmide Olfativa
 
 - **Saída:** [[note-red-mandarin-orange]], [[note-peppermint]]
-- **Coração:** [[note-cinnamon]], [[note-rose-absolute]]
+- **Coração:** [[note-canela]], [[note-rose-absolute]]
 - **Fundo:** [[note-amberketal]], [[note-leather]]

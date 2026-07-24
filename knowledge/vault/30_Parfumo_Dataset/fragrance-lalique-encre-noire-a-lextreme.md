@@ -42,7 +42,7 @@ relations:
   - predicate: has-base-note
     target: antiquario:olfactory-note:patchouli
   - predicate: has-base-note
-    target: antiquario:olfactory-note:sandalwood
+    target: antiquario:olfactory-note:sandalo
 ---
 
 # Encre Noire à L'Extrême
@@ -53,4 +53,4 @@ relations:
 
 - **Saída:** [[note-cypress]], [[note-elemi-resin]], [[Bergamota]]
 - **Coração:** [[note-haitian-vetiver]], [[note-java-vetiver]], [[note-frankincense]], [[note-iris]]
-- **Fundo:** [[note-benzoin]], [[note-patchouli]], [[note-sandalwood]]
+- **Fundo:** [[note-benzoin]], [[note-patchouli]], [[note-sandalo]]

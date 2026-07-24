@@ -40,7 +40,7 @@ relations:
   - predicate: has-base-note
     target: antiquario:olfactory-note:musk
   - predicate: has-base-note
-    target: antiquario:olfactory-note:sandalwood
+    target: antiquario:olfactory-note:sandalo
 ---
 
 # Oud Acqua di Parma 2019 Eau de Parfum
@@ -51,4 +51,4 @@ relations:
 
 - **Saída:** [[note-calabrian-bergamot]], [[note-italian-orange]]
 - **Coração:** [[note-oud]], [[note-russian-coriander]], [[note-haitian-amyris]]
-- **Fundo:** [[note-atlas-cedar]], [[note-indonesian-patchouli]], [[note-musk]], [[note-sandalwood]]
+- **Fundo:** [[note-atlas-cedar]], [[note-indonesian-patchouli]], [[note-musk]], [[note-sandalo]]

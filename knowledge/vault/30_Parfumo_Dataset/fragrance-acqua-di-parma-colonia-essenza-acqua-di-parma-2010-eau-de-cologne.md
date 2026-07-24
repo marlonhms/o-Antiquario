@@ -24,7 +24,7 @@ relations:
   - predicate: belongs-to-brand
     target: antiquario:brand:acqua-di-parma
   - predicate: has-top-note
-    target: antiquario:olfactory-note:lemon
+    target: antiquario:olfactory-note:limao-siciliano
   - predicate: has-top-note
     target: antiquario:olfactory-note:neroli
   - predicate: has-top-note
@@ -36,7 +36,7 @@ relations:
   - predicate: has-top-note
     target: antiquario:olfactory-note:mandarin-orange
   - predicate: has-top-note
-    target: antiquario:olfactory-note:orange
+    target: antiquario:olfactory-note:laranja
   - predicate: has-heart-note
     target: antiquario:olfactory-note:rosemary
   - predicate: has-heart-note
@@ -52,7 +52,7 @@ relations:
   - predicate: has-base-note
     target: antiquario:olfactory-note:vetiver
   - predicate: has-base-note
-    target: antiquario:olfactory-note:amber
+    target: antiquario:olfactory-note:ambar
   - predicate: has-base-note
     target: antiquario:olfactory-note:patchouli
 ---
@@ -63,6 +63,6 @@ relations:
 
 ## Pirâmide Olfativa
 
-- **Saída:** [[note-lemon]], [[note-neroli]], [[note-petitgrain]], [[Bergamota]], [[note-grapefruit]], [[note-mandarin-orange]], [[note-orange]]
+- **Saída:** [[note-limao-siciliano]], [[note-neroli]], [[note-petitgrain]], [[Bergamota]], [[note-grapefruit]], [[note-mandarin-orange]], [[note-laranja]]
 - **Coração:** [[note-rosemary]], [[note-clove]], [[note-jasmine]], [[note-lily-of-the-valley]], [[note-rose]]
-- **Fundo:** [[note-white-musk]], [[Vetiver]], [[note-amber]], [[note-patchouli]]
+- **Fundo:** [[note-white-musk]], [[Vetiver]], [[note-ambar]], [[note-patchouli]]

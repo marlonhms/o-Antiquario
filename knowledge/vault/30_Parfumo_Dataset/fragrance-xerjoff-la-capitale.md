@@ -32,7 +32,7 @@ relations:
   - predicate: has-top-note
     target: antiquario:olfactory-note:peach
   - predicate: has-heart-note
-    target: antiquario:olfactory-note:amber
+    target: antiquario:olfactory-note:ambar
   - predicate: has-heart-note
     target: antiquario:olfactory-note:leather
   - predicate: has-heart-note
@@ -56,5 +56,5 @@ relations:
 ## Pirâmide Olfativa
 
 - **Saída:** [[note-strawberry]], [[note-caramel]], [[note-labdanum]], [[note-peach]]
-- **Coração:** [[note-amber]], [[note-leather]], [[note-persian-saffron]], [[note-rose]], [[note-ginger]]
+- **Coração:** [[note-ambar]], [[note-leather]], [[note-persian-saffron]], [[note-rose]], [[note-ginger]]
 - **Fundo:** [[note-benzoin]], [[note-bourbon-vanilla]], [[note-oud]]

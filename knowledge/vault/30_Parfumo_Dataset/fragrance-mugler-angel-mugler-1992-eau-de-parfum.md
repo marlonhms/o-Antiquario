@@ -54,7 +54,7 @@ relations:
   - predicate: has-heart-note
     target: antiquario:olfactory-note:lily-of-the-valley
   - predicate: has-heart-note
-    target: antiquario:olfactory-note:plum
+    target: antiquario:olfactory-note:ameixa
   - predicate: has-heart-note
     target: antiquario:olfactory-note:rose
   - predicate: has-base-note
@@ -64,7 +64,7 @@ relations:
   - predicate: has-base-note
     target: antiquario:olfactory-note:caramel
   - predicate: has-base-note
-    target: antiquario:olfactory-note:amber
+    target: antiquario:olfactory-note:ambar
   - predicate: has-base-note
     target: antiquario:olfactory-note:musk
   - predicate: has-base-note
@@ -80,5 +80,5 @@ relations:
 ## Pirâmide Olfativa
 
 - **Saída:** [[note-cotton-candy]], [[note-cassia]], [[note-coconut]], [[note-jasmine]], [[Bergamota]], [[note-mandarin-orange]], [[note-melon]]
-- **Coração:** [[note-honey]], [[note-jasmine]], [[note-orchid]], [[note-peach]], [[note-red-berries]], [[note-apricot]], [[note-blackberry]], [[note-lily-of-the-valley]], [[note-plum]], [[note-rose]]
-- **Fundo:** [[note-patchouli]], [[note-chocolate]], [[note-caramel]], [[note-amber]], [[note-musk]], [[note-tonka-bean]], [[Baunilha]]
+- **Coração:** [[note-honey]], [[note-jasmine]], [[note-orchid]], [[note-peach]], [[note-red-berries]], [[note-apricot]], [[note-blackberry]], [[note-lily-of-the-valley]], [[note-ameixa]], [[note-rose]]
+- **Fundo:** [[note-patchouli]], [[note-chocolate]], [[note-caramel]], [[note-ambar]], [[note-musk]], [[note-tonka-bean]], [[Baunilha]]

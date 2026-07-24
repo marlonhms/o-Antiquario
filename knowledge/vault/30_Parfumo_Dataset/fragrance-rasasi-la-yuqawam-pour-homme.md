@@ -40,7 +40,7 @@ relations:
   - predicate: has-base-note
     target: antiquario:olfactory-note:italian-leather
   - predicate: has-base-note
-    target: antiquario:olfactory-note:amber
+    target: antiquario:olfactory-note:ambar
 ---
 
 # La Yuqawam pour Homme
@@ -51,4 +51,4 @@ relations:
 
 - **Saída:** [[note-blue-blossoms]], [[note-rose]], [[note-saffron]], [[note-geranium]]
 - **Coração:** [[note-yemenite-frankincense]], [[note-french-jasmine]]
-- **Fundo:** [[note-indian-oud]], [[note-italian-leather]], [[note-amber]]
+- **Fundo:** [[note-indian-oud]], [[note-italian-leather]], [[note-ambar]]

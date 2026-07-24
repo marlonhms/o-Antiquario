@@ -1,35 +1,295 @@
-schema_version: 1
+abacaxi: abacaxi
+abies-balsamea: abies-balsamea
+absoluto-de-cera-de-abelha: absoluto-de-cera-de-abelha
+absoluto-de-fava-tonka: absoluto-de-fava-tonka
+absoluto-de-labdano: absoluto-de-labdano
+absoluto-de-rosa: absoluto-de-rosa
+absoluto-de-trigo: absoluto-de-trigo
+acacia-dealbata: acacia-dealbata
+acucar: acucar
+afranco: afranco
+akigalawood: akigalawood
+alga: alga
+almiscar: almiscar
+almiscar-branco: almiscar-branco
+almscar: almscar
+amadeirado: amadeirado
+ambar: ambar
+ambargris: ambargris
+amber: ambar
+ambergris: ambergris
+amberwood: amberwood
+ameixa: ameixa
+amendoa: amendoa
+angelica: angelica
+arroz: arroz
+balsamo-de-tolu: balsamo-de-tolu
+baunilha: baunilha
+baunilha-bourbon: baunilha-bourbon
+benjoim: benjoim
+benzoin: benzoin
+benzoina: benzoina
+bergamota: bergamota
+bergamota-da-calabria: bergamota-da-calabria
+bétula: bétula
+cacao: cacau
+cacau: cacau
+cachimbo: cachimbo
+canela: canela
+caramel-smell: caramel-smell
+caramelo: caramelo
+cardamomo: cardamomo
+cashmeran: cashmeran
+cedarwood: cedarwood
+cedro: cedro
+cedro-da-virginia: cedro-da-virginia
+cera-de-abelha: cera-de-abelha
+cha-branco: cha-branco
+cinnamon: canela
+cinzento-ambarino: cinzento-ambarino
+cola-smell: cola-smell
+couro: couro
+cravo: cravo
+cumarina: cumarina
+davana: davana
+essencia-de-mirtilo: essencia-de-mirtilo
+eucalipto: eucalipto
+eugenio: eugenio
+fava-tonka: fava-tonka
+flor-de-laranja: flor-de-laranja
+flor-de-laranjeira: flor-de-laranjeira
+flor-de-macieira: flor-de-macieira
+flor-de-toranja: flor-de-toranja
+folha-de-groselha-negra: folha-de-groselha-negra
+folha-de-limao: folha-de-limao
+folha-de-violeta: folha-de-violeta
+framboesa: framboesa
+fumaca-de-vetiver: fumaca-de-vetiver
+gardenia: gardenia
+geleia-de-mirtilo: geleia-de-mirtilo
+gengibre: gengibre
+geranio: geranio
+gloriosa: gloriosa
+goiaba: goiaba
+gourmand-accord: gourmand-accord
+grapefruit: grapefruit
+heliotropio: heliotropio
+horchata: horchata
+hortela-pimenta: hortela-pimenta
+incenso: incenso
+iris: iris
+jasmim: jasmim
+jasmim-sambac: jasmim-sambac
+juniper-berry: zimbro
+kumquat: kumquat
+labdano: labdano
+laranja: laranja
+laranja-amarga: laranja-amarga
+laranjeira: laranjeira
+lavanda: lavanda
+leite: leite
+leite-de-figo: leite-de-figo
+lemon: limao-siciliano
+lichia: lichia
+lima: lima
+limao: limao
+limao-siciliano: limao-siciliano
+liquen: liquen
+lirio: lirio
+lirio-de-casablanca: lirio-de-casablanca
+lirio-do-vale: lirio-do-vale
+maca: maca
+madeira-de-guaiaco: madeira-de-guaiaco
+madeira-deriva: madeira-deriva
+madeiras-transparentes: madeiras-transparentes
+madressilva: madressilva
+mahonial: mahonial
+mandarina: mandarina
+manga: manga
+manjericao: manjericao
+manjerona: manjerona
+manteiga: manteiga
+mel: mel
+melao: melao
+mirra: mirra
+morango: morango
+musgo-de-carvalho: musgo-de-carvalho
+nagarmota: nagarmota
+nagarmotha: nagarmotha
+nenufar: nenufar
+noz-moscada: noz-moscada
+oakmoss: oakmoss
+orange: laranja
+orcanox: orcanox
+oud: oud
+papaia: papaia
+papiros: papiros
+patchouli: patchouli
+peanut-smell: peanut-smell
+peonia: peonia
+pessego: pessego
+peônia: peônia
+pimenta: pimenta
+pimenta-preta: pimenta-preta
+pimenta-rosa: pimenta-rosa
+pimenta-sichuan: pimenta-sichuan
+pipe-tobacco: pipe-tobacco
+pipe-tobacco-smoke: pipe-tobacco-smoke
+plum: ameixa
+pomelo: pomelo
+pralina: pralina
+praline: praline
 reviewed_at: 2026-07-22
-
-# Mapeamento isolado de vocabulário específico por fonte/marca para IDs de notas e famílias da taxonomia canônica.
+rosa: rosa
+rosa-canditada: rosa-canditada
+safran: safran
+salvia-clara: salvia-clara
+sandalo: sandalo
+sandalo-de-mysore: sandalo-de-mysore
+sandalwood: sandalo
+scent-of-vanilla: scent-of-vanilla
+schema_version: 1
+smell-of-butter: smell-of-butter
+smell-of-popcorn: smell-of-popcorn
 sources:
   natura:
     notes:
-      "copaiba": copaiba
-      "copaiba da amazonia": copaiba
-      "castanha": castanha
-      "maracuja": maracuja
-      "priprioca": priprioca
-      "breu branco": breu-branco
-      "frescor de maracuja": maracuja
-      "pitanga": pitanga
-      "cacao": cacau
-      "cacau": cacau
-      "açaí": acai
-      "acai": acai
-      "cumaru": tonka
+      acai: acai
+      açaí: acai
+      breu branco: breu-branco
+      cacao: cacau
+      cacau: cacau
+      castanha: castanha
+      copaiba: copaiba
+      copaiba da amazonia: copaiba
+      cumaru: tonka
+      frescor de maracuja: maracuja
+      maracuja: maracuja
+      pitanga: pitanga
+      priprioca: priprioca
   o_boticario:
     notes:
-      "pimenta preta": pimenta-preta
-      "pimenta negra": pimenta-preta
-      "madeira de guaiaco": madeira-guaiaco
-      "extrato de malbec": vinhedo
+      extrato de malbec: vinhedo
+      madeira de guaiaco: madeira-guaiaco
+      pimenta negra: pimenta-preta
+      pimenta preta: pimenta-preta
+  parfumo_dataset:
+    notes:
+      acafrao: saffron
+      alcacuz: licorice
+      alecrim: rosemary
+      almiscar: musk
+      almiscar-branco: white-musk
+      ambar: amber
+      amber: amber
+      ambrette seed: ambrette
+      ameixa: plum
+      amendoa: almond
+      apple: apple
+      aquatic: aquatico
+      bay: louro
+      benjoim: benzoin
+      bergamot: bergamot
+      black pepper: black-pepper
+      cacau: cocoa
+      cafe: coffee
+      canela: cinnamon
+      caramelo: caramel
+      cardamom: cardamom
+      cashmere: amadeirado
+      cassis: cassis
+      cedar: cedar
+      cedarwood: virginia-cedar
+      cedro: cedar
+      cidra: citron
+      cinnamon: cinnamon
+      clove: clove
+      fava-tonka: tonka-bean
+      figo: fig
+      folha-violeta: violet-leaf
+      framboesa: raspberry
+      fruity: frutado
+      gengibre: ginger
+      geranio: geranium
+      geranium: geranium
+      ginger: ginger
+      grapefruit: grapefruit
+      green: verde
+      heliotropio: heliotrope
+      hortela: mint
+      iris: iris
+      jasmim-sambac: jasmine-sambac
+      jasmine: jasmine
+      juniper: juniper
+      labdano: labdanum
+      laranja: orange
+      laranja-amarga: bitter-orange
+      lavanda: lavender
+      lavender: lavender
+      leather: leather
+      leathery: couro
+      lemon: lemon
+      limao-siciliano: sicilian-lemon
+      lime: lime
+      mandarin: mandarin-orange
+      mandarin orange: mandarin-orange
+      mandarina: mandarin-orange
+      mastic: mastique
+      mel: honey
+      mineral: mineral
+      mint: mint
+      musk: musk
+      neroli: neroli
+      noz-moscada: nutmeg
+      nutmeg: nutmeg
+      oak moss: oakmoss
+      oakmoss: oakmoss
+      ozonic: ozonico
+      patchouli: patchouli
+      pepper: pepper
+      pineapple: pineapple
+      pink pepper: pink-pepper
+      rosa: rose
+      rose: rose
+      sage: sage
+      sandalo: sandalwood
+      sandalwood: sandalwood
+      sycamore: amadeirado
+      tobacco: tobacco
+      tonka: tonka-bean
+      tonka bean: tonka-bean
+      tuberosa: tuberose
+      vanilla: vanilla
+      vetiver: vetiver
+      violet: violet
+      violet leaf: violet-leaf
+      violet leaves: violet-leaf
+      violeta: violet
+      woody: amadeirado
+      zimbro: juniper-berry
   wikidata:
     notes:
-      "bergamot": bergamota
-      "sandalwood": sandalo
-      "cedar": cedro
-      "rose": rosa
-      "jasmine": jasmim
-      "vanilla": baunilha
-      "lavender": lavanda
+      bergamot: bergamota
+      cedar: cedro
+      jasmine: jasmim
+      lavender: lavanda
+      rose: rosa
+      sandalwood: sandalo
+      vanilla: baunilha
+sweet-smell: sweet-smell
+tabaco: tabaco
+tamara: tamara
+tamaras: tamaras
+tangerina: tangerina
+toranja: toranja
+tuberosa: tuberosa
+vetiver: vetiver
+vetiver-do-haiti: vetiver-do-haiti
+violeta: violeta
+violetas: violetas
+white-musk: white-musk
+woody: woody
+woody-smell: woody-smell
+ylang-ylang: ylang-ylang
+yuzu: yuzu
+zimbro-da-virginia: zimbro-da-virginia

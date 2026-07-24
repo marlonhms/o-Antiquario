@@ -40,11 +40,11 @@ relations:
   - predicate: has-base-note
     target: antiquario:olfactory-note:baunilha
   - predicate: has-base-note
-    target: antiquario:olfactory-note:amber
+    target: antiquario:olfactory-note:ambar
   - predicate: has-base-note
     target: antiquario:olfactory-note:patchouli
   - predicate: has-base-note
-    target: antiquario:olfactory-note:sandalwood
+    target: antiquario:olfactory-note:sandalo
 ---
 
 # Daarej pour Homme
@@ -55,4 +55,4 @@ relations:
 
 - **Saída:** [[note-cardamom]], [[note-cumin]], [[note-mugwort]]
 - **Coração:** [[note-iris]], [[note-rose]]
-- **Fundo:** [[note-musk]], [[note-tonka-bean]], [[Baunilha]], [[note-amber]], [[note-patchouli]], [[note-sandalwood]]
+- **Fundo:** [[note-musk]], [[note-tonka-bean]], [[Baunilha]], [[note-ambar]], [[note-patchouli]], [[note-sandalo]]

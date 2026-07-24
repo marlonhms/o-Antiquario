@@ -38,7 +38,7 @@ relations:
   - predicate: has-heart-note
     target: antiquario:olfactory-note:rose
   - predicate: has-base-note
-    target: antiquario:olfactory-note:amber
+    target: antiquario:olfactory-note:ambar
   - predicate: has-base-note
     target: antiquario:olfactory-note:gaiac-wood
   - predicate: has-base-note
@@ -48,7 +48,7 @@ relations:
   - predicate: has-base-note
     target: antiquario:olfactory-note:oakmoss
   - predicate: has-base-note
-    target: antiquario:olfactory-note:sandalwood
+    target: antiquario:olfactory-note:sandalo
   - predicate: has-base-note
     target: antiquario:olfactory-note:tobacco
   - predicate: has-base-note
@@ -65,4 +65,4 @@ relations:
 
 - **Saída:** [[note-absinth]], [[note-mint]], [[note-basil]], [[note-tarragon]]
 - **Coração:** [[note-frankincense]], [[note-lavender-absolute]], [[note-rose]]
-- **Fundo:** [[note-amber]], [[note-gaiac-wood]], [[note-leather]], [[note-musk]], [[note-oakmoss]], [[note-sandalwood]], [[note-tobacco]], [[Baunilha]], [[Vetiver]]
+- **Fundo:** [[note-ambar]], [[note-gaiac-wood]], [[note-leather]], [[note-musk]], [[note-oakmoss]], [[note-sandalo]], [[note-tobacco]], [[Baunilha]], [[Vetiver]]

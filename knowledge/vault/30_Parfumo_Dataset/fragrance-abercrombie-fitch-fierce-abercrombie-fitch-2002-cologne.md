@@ -26,11 +26,11 @@ relations:
   - predicate: has-top-note
     target: antiquario:olfactory-note:fir-resin
   - predicate: has-top-note
-    target: antiquario:olfactory-note:lemon
+    target: antiquario:olfactory-note:limao-siciliano
   - predicate: has-top-note
     target: antiquario:olfactory-note:cardamom
   - predicate: has-top-note
-    target: antiquario:olfactory-note:orange
+    target: antiquario:olfactory-note:laranja
   - predicate: has-top-note
     target: antiquario:olfactory-note:petitgrain
   - predicate: has-heart-note
@@ -57,6 +57,6 @@ relations:
 
 ## Pirâmide Olfativa
 
-- **Saída:** [[note-fir-resin]], [[note-lemon]], [[note-cardamom]], [[note-orange]], [[note-petitgrain]]
+- **Saída:** [[note-fir-resin]], [[note-limao-siciliano]], [[note-cardamom]], [[note-laranja]], [[note-petitgrain]]
 - **Coração:** [[note-rosemary]], [[note-lily-of-the-valley]], [[note-rose]], [[note-jasmine]]
 - **Fundo:** [[note-oakmoss]], [[note-brazilian-rosewood]], [[note-musk]], [[Vetiver]]

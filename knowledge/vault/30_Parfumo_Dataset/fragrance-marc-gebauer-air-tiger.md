@@ -24,11 +24,11 @@ relations:
   - predicate: belongs-to-brand
     target: antiquario:brand:marc-gebauer
   - predicate: has-top-note
-    target: antiquario:olfactory-note:juniper
+    target: antiquario:olfactory-note:zimbro
   - predicate: has-top-note
     target: antiquario:olfactory-note:cardamom
   - predicate: has-top-note
-    target: antiquario:olfactory-note:sicilian-lemon
+    target: antiquario:olfactory-note:limao-siciliano
   - predicate: has-heart-note
     target: antiquario:olfactory-note:leather
   - predicate: has-heart-note
@@ -42,7 +42,7 @@ relations:
   - predicate: has-base-note
     target: antiquario:olfactory-note:woods
   - predicate: has-base-note
-    target: antiquario:olfactory-note:amber
+    target: antiquario:olfactory-note:ambar
   - predicate: has-base-note
     target: antiquario:olfactory-note:benzoin
 ---
@@ -53,6 +53,6 @@ relations:
 
 ## Pirâmide Olfativa
 
-- **Saída:** [[note-juniper]], [[note-cardamom]], [[note-sicilian-lemon]]
+- **Saída:** [[note-zimbro]], [[note-cardamom]], [[note-limao-siciliano]]
 - **Coração:** [[note-leather]], [[note-patchouli]], [[note-cedar]], [[note-iris]]
-- **Fundo:** [[note-labdanum]], [[note-woods]], [[note-amber]], [[note-benzoin]]
+- **Fundo:** [[note-labdanum]], [[note-woods]], [[note-ambar]], [[note-benzoin]]

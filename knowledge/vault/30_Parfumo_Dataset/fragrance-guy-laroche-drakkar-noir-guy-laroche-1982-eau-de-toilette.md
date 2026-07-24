@@ -28,9 +28,9 @@ relations:
   - predicate: has-top-note
     target: antiquario:olfactory-note:bergamota
   - predicate: has-top-note
-    target: antiquario:olfactory-note:lemon
+    target: antiquario:olfactory-note:limao-siciliano
   - predicate: has-top-note
-    target: antiquario:olfactory-note:lemon-vervain
+    target: antiquario:olfactory-note:limao-siciliano-vervain
   - predicate: has-top-note
     target: antiquario:olfactory-note:artemisia
   - predicate: has-top-note
@@ -40,13 +40,13 @@ relations:
   - predicate: has-heart-note
     target: antiquario:olfactory-note:coriander
   - predicate: has-heart-note
-    target: antiquario:olfactory-note:juniper
+    target: antiquario:olfactory-note:zimbro
   - predicate: has-heart-note
     target: antiquario:olfactory-note:carnation
   - predicate: has-heart-note
     target: antiquario:olfactory-note:jasmine
   - predicate: has-heart-note
-    target: antiquario:olfactory-note:cinnamon
+    target: antiquario:olfactory-note:canela
   - predicate: has-base-note
     target: antiquario:olfactory-note:oakmoss
   - predicate: has-base-note
@@ -58,11 +58,11 @@ relations:
   - predicate: has-base-note
     target: antiquario:olfactory-note:leather
   - predicate: has-base-note
-    target: antiquario:olfactory-note:sandalwood
+    target: antiquario:olfactory-note:sandalo
   - predicate: has-base-note
     target: antiquario:olfactory-note:vetiver
   - predicate: has-base-note
-    target: antiquario:olfactory-note:amber
+    target: antiquario:olfactory-note:ambar
 ---
 
 # Drakkar Noir Guy Laroche 1982 Eau de Toilette
@@ -71,6 +71,6 @@ relations:
 
 ## Pirâmide Olfativa
 
-- **Saída:** [[note-lavender]], [[Bergamota]], [[note-lemon]], [[note-lemon-vervain]], [[note-artemisia]], [[note-basil]], [[note-rosemary]]
-- **Coração:** [[note-coriander]], [[note-juniper]], [[note-carnation]], [[note-jasmine]], [[note-cinnamon]]
-- **Fundo:** [[note-oakmoss]], [[note-fir]], [[note-patchouli]], [[note-cedarwood]], [[note-leather]], [[note-sandalwood]], [[Vetiver]], [[note-amber]]
+- **Saída:** [[note-lavender]], [[Bergamota]], [[note-limao-siciliano]], [[note-lemon-vervain]], [[note-artemisia]], [[note-basil]], [[note-rosemary]]
+- **Coração:** [[note-coriander]], [[note-zimbro]], [[note-carnation]], [[note-jasmine]], [[note-canela]]
+- **Fundo:** [[note-oakmoss]], [[note-fir]], [[note-patchouli]], [[note-cedarwood]], [[note-leather]], [[note-sandalo]], [[Vetiver]], [[note-ambar]]

@@ -24,13 +24,13 @@ relations:
   - predicate: belongs-to-brand
     target: antiquario:brand:ann-fragrance
   - predicate: has-top-note
-    target: antiquario:olfactory-note:orange-blossom
+    target: antiquario:olfactory-note:laranja-blossom
   - predicate: has-top-note
     target: antiquario:olfactory-note:bergamota
   - predicate: has-top-note
     target: antiquario:olfactory-note:coriander
   - predicate: has-top-note
-    target: antiquario:olfactory-note:lemon
+    target: antiquario:olfactory-note:limao-siciliano
   - predicate: has-top-note
     target: antiquario:olfactory-note:mandarin-orange
   - predicate: has-heart-note
@@ -46,7 +46,7 @@ relations:
   - predicate: has-base-note
     target: antiquario:olfactory-note:benzoin
   - predicate: has-base-note
-    target: antiquario:olfactory-note:amber
+    target: antiquario:olfactory-note:ambar
   - predicate: has-base-note
     target: antiquario:olfactory-note:cedar
 ---
@@ -57,6 +57,6 @@ relations:
 
 ## Pirâmide Olfativa
 
-- **Saída:** [[note-orange-blossom]], [[Bergamota]], [[note-coriander]], [[note-lemon]], [[note-mandarin-orange]]
+- **Saída:** [[note-orange-blossom]], [[Bergamota]], [[note-coriander]], [[note-limao-siciliano]], [[note-mandarin-orange]]
 - **Coração:** [[note-geranium]], [[note-lily-of-the-valley]], [[note-jasmine]], [[note-rose]]
-- **Fundo:** [[note-tonka-bean]], [[note-benzoin]], [[note-amber]], [[note-cedar]]
+- **Fundo:** [[note-tonka-bean]], [[note-benzoin]], [[note-ambar]], [[note-cedar]]

@@ -28,11 +28,11 @@ relations:
   - predicate: has-top-note
     target: antiquario:olfactory-note:everlasting-flower
   - predicate: has-top-note
-    target: antiquario:olfactory-note:orange-brandy
+    target: antiquario:olfactory-note:laranja-brandy
   - predicate: has-heart-note
     target: antiquario:olfactory-note:clary-sage
   - predicate: has-heart-note
-    target: antiquario:olfactory-note:juniper-berry
+    target: antiquario:olfactory-note:zimbro
   - predicate: has-heart-note
     target: antiquario:olfactory-note:bergamota
   - predicate: has-base-note
@@ -50,5 +50,5 @@ relations:
 ## Pirâmide Olfativa
 
 - **Saída:** [[note-lavender]], [[note-everlasting-flower]], [[note-orange-brandy]]
-- **Coração:** [[note-clary-sage]], [[note-juniper-berry]], [[Bergamota]]
+- **Coração:** [[note-clary-sage]], [[note-zimbro]], [[Bergamota]]
 - **Fundo:** [[Baunilha]], [[note-tonka-bean]], [[note-cedarwood]]

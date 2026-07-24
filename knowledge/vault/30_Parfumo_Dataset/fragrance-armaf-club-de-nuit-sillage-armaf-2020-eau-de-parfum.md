@@ -26,7 +26,7 @@ relations:
   - predicate: has-top-note
     target: antiquario:olfactory-note:bergamota
   - predicate: has-top-note
-    target: antiquario:olfactory-note:lemon
+    target: antiquario:olfactory-note:limao-siciliano
   - predicate: has-top-note
     target: antiquario:olfactory-note:ginger
   - predicate: has-top-note
@@ -48,7 +48,7 @@ relations:
   - predicate: has-base-note
     target: antiquario:olfactory-note:cedar
   - predicate: has-base-note
-    target: antiquario:olfactory-note:sandalwood
+    target: antiquario:olfactory-note:sandalo
 ---
 
 # Club de Nuit Sillage Armaf 2020 Eau de Parfum
@@ -57,6 +57,6 @@ relations:
 
 ## Pirâmide Olfativa
 
-- **Saída:** [[Bergamota]], [[note-lemon]], [[note-ginger]], [[note-blackcurrant]], [[note-lime]], [[note-violet-leaf]]
+- **Saída:** [[Bergamota]], [[note-limao-siciliano]], [[note-ginger]], [[note-blackcurrant]], [[note-lime]], [[note-violet-leaf]]
 - **Coração:** [[note-jasmine]], [[note-rose]], [[note-iris]]
-- **Fundo:** [[note-musk]], [[note-ambroxan]], [[note-cedar]], [[note-sandalwood]]
+- **Fundo:** [[note-musk]], [[note-ambroxan]], [[note-cedar]], [[note-sandalo]]

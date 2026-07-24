@@ -36,19 +36,19 @@ relations:
   - predicate: has-top-note
     target: antiquario:olfactory-note:caraway
   - predicate: has-top-note
-    target: antiquario:olfactory-note:lemon
+    target: antiquario:olfactory-note:limao-siciliano
   - predicate: has-top-note
     target: antiquario:olfactory-note:iris
   - predicate: has-heart-note
     target: antiquario:olfactory-note:cedarwood
   - predicate: has-heart-note
-    target: antiquario:olfactory-note:sandalwood
+    target: antiquario:olfactory-note:sandalo
   - predicate: has-heart-note
     target: antiquario:olfactory-note:vetiver
   - predicate: has-heart-note
     target: antiquario:olfactory-note:cardamom
   - predicate: has-heart-note
-    target: antiquario:olfactory-note:juniper-berry
+    target: antiquario:olfactory-note:zimbro
   - predicate: has-heart-note
     target: antiquario:olfactory-note:patchouli
   - predicate: has-base-note
@@ -56,7 +56,7 @@ relations:
   - predicate: has-base-note
     target: antiquario:olfactory-note:musk
   - predicate: has-base-note
-    target: antiquario:olfactory-note:amber
+    target: antiquario:olfactory-note:ambar
   - predicate: has-base-note
     target: antiquario:olfactory-note:leather
   - predicate: has-base-note
@@ -69,6 +69,6 @@ relations:
 
 ## Pirâmide Olfativa
 
-- **Saída:** [[note-lavender]], [[note-aniseed]], [[note-basil]], [[note-clary-sage]], [[Bergamota]], [[note-caraway]], [[note-lemon]], [[note-iris]]
-- **Coração:** [[note-cedarwood]], [[note-sandalwood]], [[Vetiver]], [[note-cardamom]], [[note-juniper-berry]], [[note-patchouli]]
-- **Fundo:** [[note-oakmoss]], [[note-musk]], [[note-amber]], [[note-leather]], [[note-tonka-bean]]
+- **Saída:** [[note-lavender]], [[note-aniseed]], [[note-basil]], [[note-clary-sage]], [[Bergamota]], [[note-caraway]], [[note-limao-siciliano]], [[note-iris]]
+- **Coração:** [[note-cedarwood]], [[note-sandalo]], [[Vetiver]], [[note-cardamom]], [[note-zimbro]], [[note-patchouli]]
+- **Fundo:** [[note-oakmoss]], [[note-musk]], [[note-ambar]], [[note-leather]], [[note-tonka-bean]]

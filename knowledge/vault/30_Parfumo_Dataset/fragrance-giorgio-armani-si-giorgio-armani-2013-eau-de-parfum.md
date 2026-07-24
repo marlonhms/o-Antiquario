@@ -42,7 +42,7 @@ relations:
   - predicate: has-base-note
     target: antiquario:olfactory-note:orcanox
   - predicate: has-base-note
-    target: antiquario:olfactory-note:amber
+    target: antiquario:olfactory-note:ambar
   - predicate: has-base-note
     target: antiquario:olfactory-note:patchouli
 ---
@@ -55,4 +55,4 @@ relations:
 
 - **Saída:** [[note-blackcurrant-liqueur]], [[note-mandarin-orange]], [[note-sicilian-bergamot]]
 - **Coração:** [[note-egyptian-jasmine-absolute]], [[note-may-rose-absolute]], [[note-neroli-absolute]]
-- **Fundo:** [[note-vanilla-absolute]], [[note-blond-woods]], [[note-orcanox]], [[note-amber]], [[note-patchouli]]
+- **Fundo:** [[note-vanilla-absolute]], [[note-blond-woods]], [[note-orcanox]], [[note-ambar]], [[note-patchouli]]

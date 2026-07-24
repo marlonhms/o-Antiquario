@@ -32,7 +32,7 @@ relations:
   - predicate: has-heart-note
     target: antiquario:olfactory-note:jasmine
   - predicate: has-heart-note
-    target: antiquario:olfactory-note:orange-blossom
+    target: antiquario:olfactory-note:laranja-blossom
   - predicate: has-base-note
     target: antiquario:olfactory-note:praline
   - predicate: has-base-note

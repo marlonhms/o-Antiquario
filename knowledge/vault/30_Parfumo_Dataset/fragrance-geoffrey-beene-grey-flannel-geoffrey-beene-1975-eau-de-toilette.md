@@ -26,7 +26,7 @@ relations:
   - predicate: has-top-note
     target: antiquario:olfactory-note:galbanum
   - predicate: has-top-note
-    target: antiquario:olfactory-note:lemon
+    target: antiquario:olfactory-note:limao-siciliano
   - predicate: has-top-note
     target: antiquario:olfactory-note:neroli
   - predicate: has-top-note
@@ -65,6 +65,6 @@ relations:
 
 ## Pirâmide Olfativa
 
-- **Saída:** [[note-galbanum]], [[note-lemon]], [[note-neroli]], [[note-petitgrain]], [[Bergamota]]
+- **Saída:** [[note-galbanum]], [[note-limao-siciliano]], [[note-neroli]], [[note-petitgrain]], [[Bergamota]]
 - **Coração:** [[note-violet]], [[note-narcissus]], [[note-geranium]], [[note-mimosa]], [[note-rose]], [[note-sage]], [[note-iris]]
 - **Fundo:** [[note-oakmoss]], [[note-cedar]], [[Vetiver]], [[note-almond]], [[note-tonka-bean]]

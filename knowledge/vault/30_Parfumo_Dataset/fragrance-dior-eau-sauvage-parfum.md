@@ -26,7 +26,7 @@ relations:
   - predicate: has-top-note
     target: antiquario:olfactory-note:calabrian-bergamot
   - predicate: has-top-note
-    target: antiquario:olfactory-note:orange
+    target: antiquario:olfactory-note:laranja
   - predicate: has-heart-note
     target: antiquario:olfactory-note:lavender-absolute
   - predicate: has-heart-note
@@ -40,7 +40,7 @@ relations:
   - predicate: has-base-note
     target: antiquario:olfactory-note:labdanum
   - predicate: has-base-note
-    target: antiquario:olfactory-note:cinnamon
+    target: antiquario:olfactory-note:canela
   - predicate: has-base-note
     target: antiquario:olfactory-note:star-anise
 ---
@@ -51,6 +51,6 @@ relations:
 
 ## Pirâmide Olfativa
 
-- **Saída:** [[note-calabrian-bergamot]], [[note-orange]]
+- **Saída:** [[note-calabrian-bergamot]], [[note-laranja]]
 - **Coração:** [[note-lavender-absolute]], [[note-hedione]], [[note-wild-flowers]]
-- **Fundo:** [[note-philippine-elemi]], [[Vetiver]], [[note-labdanum]], [[note-cinnamon]], [[note-star-anise]]
+- **Fundo:** [[note-philippine-elemi]], [[Vetiver]], [[note-labdanum]], [[note-canela]], [[note-star-anise]]

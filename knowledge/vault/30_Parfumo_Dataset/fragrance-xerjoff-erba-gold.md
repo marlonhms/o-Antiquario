@@ -46,7 +46,7 @@ relations:
   - predicate: has-base-note
     target: antiquario:olfactory-note:white-musk
   - predicate: has-base-note
-    target: antiquario:olfactory-note:amber
+    target: antiquario:olfactory-note:ambar
   - predicate: has-base-note
     target: antiquario:olfactory-note:bourbon-vanilla
   - predicate: has-base-note
@@ -61,4 +61,4 @@ relations:
 
 - **Saída:** [[note-calabrian-bergamot]], [[note-ginger]], [[note-amalfi-lemon]], [[note-brazilian-orange]]
 - **Coração:** [[note-melon]], [[note-green-apple]], [[note-pear]], [[note-clove]], [[note-guatemala-cardamom]], [[note-madagascan-cinnamon]]
-- **Fundo:** [[note-white-musk]], [[note-amber]], [[note-bourbon-vanilla]], [[note-woods]]
+- **Fundo:** [[note-white-musk]], [[note-ambar]], [[note-bourbon-vanilla]], [[note-woods]]

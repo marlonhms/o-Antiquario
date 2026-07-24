@@ -32,7 +32,7 @@ relations:
   - predicate: has-heart-note
     target: antiquario:olfactory-note:baunilha
   - predicate: has-base-note
-    target: antiquario:olfactory-note:sandalwood
+    target: antiquario:olfactory-note:sandalo
 ---
 
 # This Is Him!
@@ -43,4 +43,4 @@ relations:
 
 - **Saída:** [[note-black-pepper]], [[note-grapefruit]]
 - **Coração:** [[note-frankincense]], [[Baunilha]]
-- **Fundo:** [[note-sandalwood]]
+- **Fundo:** [[note-sandalo]]

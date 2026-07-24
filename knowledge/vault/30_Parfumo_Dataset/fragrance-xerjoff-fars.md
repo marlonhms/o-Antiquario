@@ -36,11 +36,11 @@ relations:
   - predicate: has-heart-note
     target: antiquario:olfactory-note:jasmine-absolute
   - predicate: has-base-note
-    target: antiquario:olfactory-note:amber
+    target: antiquario:olfactory-note:ambar
   - predicate: has-base-note
     target: antiquario:olfactory-note:haitian-vetiver
   - predicate: has-base-note
-    target: antiquario:olfactory-note:sandalwood
+    target: antiquario:olfactory-note:sandalo
   - predicate: has-base-note
     target: antiquario:olfactory-note:white-oud
   - predicate: has-base-note
@@ -55,4 +55,4 @@ relations:
 
 - **Saída:** [[note-cade-juniper]], [[note-french-lavender]], [[note-italian-bergamot]]
 - **Coração:** [[note-egyptian-geranium]], [[note-atlas-cedar]], [[note-jasmine-absolute]]
-- **Fundo:** [[note-amber]], [[note-haitian-vetiver]], [[note-sandalwood]], [[note-white-oud]], [[note-patchouli]]
+- **Fundo:** [[note-ambar]], [[note-haitian-vetiver]], [[note-sandalo]], [[note-white-oud]], [[note-patchouli]]

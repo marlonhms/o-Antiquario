@@ -24,9 +24,9 @@ relations:
   - predicate: belongs-to-brand
     target: antiquario:brand:byredo
   - predicate: has-top-note
-    target: antiquario:olfactory-note:juniper-berry
+    target: antiquario:olfactory-note:zimbro
   - predicate: has-top-note
-    target: antiquario:olfactory-note:lemon
+    target: antiquario:olfactory-note:limao-siciliano
   - predicate: has-top-note
     target: antiquario:olfactory-note:bergamota
   - predicate: has-top-note
@@ -40,9 +40,9 @@ relations:
   - predicate: has-base-note
     target: antiquario:olfactory-note:baunilha
   - predicate: has-base-note
-    target: antiquario:olfactory-note:sandalwood
+    target: antiquario:olfactory-note:sandalo
   - predicate: has-base-note
-    target: antiquario:olfactory-note:amber
+    target: antiquario:olfactory-note:ambar
 ---
 
 # Gypsy Water Byredo 2008 Eau de Parfum
@@ -51,6 +51,6 @@ relations:
 
 ## Pirâmide Olfativa
 
-- **Saída:** [[note-juniper-berry]], [[note-lemon]], [[Bergamota]], [[note-pepper]]
+- **Saída:** [[note-zimbro]], [[note-limao-siciliano]], [[Bergamota]], [[note-pepper]]
 - **Coração:** [[note-pine-needle]], [[note-iris]], [[note-frankincense]]
-- **Fundo:** [[Baunilha]], [[note-sandalwood]], [[note-amber]]
+- **Fundo:** [[Baunilha]], [[note-sandalo]], [[note-ambar]]

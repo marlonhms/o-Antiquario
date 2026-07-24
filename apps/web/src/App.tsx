@@ -52,22 +52,6 @@ const DEFAULT_FORM: ConsultantForm = {
   hardAvoidNotes: [],
 };
 
-const ACCORD_OPTIONS = [
-  "cítrico",
-  "amadeirado",
-  "verde",
-  "aromático",
-  "aquático",
-  "floral",
-  "atalcado",
-  "almiscarado",
-  "frutado",
-  "ambarado",
-  "doce",
-  "especiado",
-] as const;
-
-const NOTE_OPTIONS = ["baunilha", "oud", "incenso", "patchouli", "rosa", "almíscar"] as const;
 
 const FORMALITY_BY_OCCASION: Record<string, number> = {
   casual: 0.25,
@@ -723,6 +707,26 @@ export function App() {
     () => (rawFactualLibrary ? mergeRecommendationIntoFactual(rawFactualLibrary, recommendationCatalog) : null),
     [rawFactualLibrary, recommendationCatalog],
   );
+  const dynamicAccordOptions = useMemo(() => {
+    const accords = new Set<string>();
+    for (const f of recommendationCatalog) {
+      for (const a of f.accords) {
+        accords.add(a.id);
+      }
+    }
+    return Array.from(accords).sort();
+  }, [recommendationCatalog]);
+
+  const dynamicNoteOptions = useMemo(() => {
+    const notes = new Set<string>();
+    for (const f of recommendationCatalog) {
+      for (const n of f.topNotes) notes.add(n);
+      for (const n of f.heartNotes) notes.add(n);
+      for (const n of f.baseNotes) notes.add(n);
+    }
+    return Array.from(notes).sort();
+  }, [recommendationCatalog]);
+
   const result = useMemo(() => runRecommendation(draft, recommendationCatalog), [draft, recommendationCatalog]);
   const leadingFragrance = result.recommendations[0]?.fragrance;
   const primaryAura = auraColor(leadingFragrance?.accords[0]?.id, "#78d7b0");
@@ -1039,20 +1043,20 @@ export function App() {
                 <>
                   <ChipGroup
                     legend="Acordes que atraem você"
-                    options={ACCORD_OPTIONS}
+                    options={dynamicAccordOptions}
                     selected={draft.likedAccords}
                     onToggle={(value) => update("likedAccords", toggleValue(draft.likedAccords, value))}
                   />
                   <ChipGroup
                     legend="Acordes que você prefere evitar"
-                    options={ACCORD_OPTIONS}
+                    options={dynamicAccordOptions}
                     selected={draft.avoidedAccords}
                     onToggle={(value) => update("avoidedAccords", toggleValue(draft.avoidedAccords, value))}
                     tone="negative"
                   />
                   <ChipGroup
                     legend="Notas proibidas nesta consulta"
-                    options={NOTE_OPTIONS}
+                    options={dynamicNoteOptions}
                     selected={draft.hardAvoidNotes}
                     onToggle={(value) => update("hardAvoidNotes", toggleValue(draft.hardAvoidNotes, value))}
                     tone="negative"

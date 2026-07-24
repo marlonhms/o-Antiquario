@@ -26,7 +26,7 @@ relations:
   - predicate: has-top-note
     target: antiquario:olfactory-note:bergamota
   - predicate: has-top-note
-    target: antiquario:olfactory-note:lemon
+    target: antiquario:olfactory-note:limao-siciliano
   - predicate: has-top-note
     target: antiquario:olfactory-note:mandarin-orange
   - predicate: has-top-note
@@ -46,7 +46,7 @@ relations:
   - predicate: has-base-note
     target: antiquario:olfactory-note:musk
   - predicate: has-base-note
-    target: antiquario:olfactory-note:amber
+    target: antiquario:olfactory-note:ambar
 ---
 
 # CK One Calvin Klein 1994 Eau de Toilette
@@ -55,6 +55,6 @@ relations:
 
 ## Pirâmide Olfativa
 
-- **Saída:** [[Bergamota]], [[note-lemon]], [[note-mandarin-orange]], [[note-papaya]]
+- **Saída:** [[Bergamota]], [[note-limao-siciliano]], [[note-mandarin-orange]], [[note-papaya]]
 - **Coração:** [[note-green-tea]], [[note-jasmine]], [[note-lily-of-the-valley]], [[note-nutmeg]], [[note-violet]], [[note-rose]]
-- **Fundo:** [[note-musk]], [[note-amber]]
+- **Fundo:** [[note-musk]], [[note-ambar]]

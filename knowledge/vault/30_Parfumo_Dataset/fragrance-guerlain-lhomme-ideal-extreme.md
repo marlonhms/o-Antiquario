@@ -30,11 +30,11 @@ relations:
   - predicate: has-top-note
     target: antiquario:olfactory-note:pink-pepper
   - predicate: has-heart-note
-    target: antiquario:olfactory-note:cinnamon
+    target: antiquario:olfactory-note:canela
   - predicate: has-heart-note
     target: antiquario:olfactory-note:heliotrope
   - predicate: has-heart-note
-    target: antiquario:olfactory-note:plum
+    target: antiquario:olfactory-note:ameixa
   - predicate: has-base-note
     target: antiquario:olfactory-note:tobacco
   - predicate: has-base-note
@@ -52,5 +52,5 @@ relations:
 ## Pirâmide Olfativa
 
 - **Saída:** [[note-almond]], [[Bergamota]], [[note-pink-pepper]]
-- **Coração:** [[note-cinnamon]], [[note-heliotrope]], [[note-plum]]
+- **Coração:** [[note-canela]], [[note-heliotrope]], [[note-ameixa]]
 - **Fundo:** [[note-tobacco]], [[note-leather]], [[note-patchouli]], [[note-cedar]]

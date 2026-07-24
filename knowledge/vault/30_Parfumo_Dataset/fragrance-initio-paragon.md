@@ -30,13 +30,13 @@ relations:
   - predicate: has-top-note
     target: antiquario:olfactory-note:bergamota
   - predicate: has-heart-note
-    target: antiquario:olfactory-note:plum
+    target: antiquario:olfactory-note:ameixa
   - predicate: has-heart-note
     target: antiquario:olfactory-note:palo-santo
   - predicate: has-heart-note
     target: antiquario:olfactory-note:black-pepper
   - predicate: has-base-note
-    target: antiquario:olfactory-note:sandalwood
+    target: antiquario:olfactory-note:sandalo
   - predicate: has-base-note
     target: antiquario:olfactory-note:oud
 ---
@@ -48,5 +48,5 @@ relations:
 ## Pirâmide Olfativa
 
 - **Saída:** [[note-white-sage]], [[note-lavender]], [[Bergamota]]
-- **Coração:** [[note-plum]], [[note-palo-santo]], [[note-black-pepper]]
-- **Fundo:** [[note-sandalwood]], [[note-oud]]
+- **Coração:** [[note-ameixa]], [[note-palo-santo]], [[note-black-pepper]]
+- **Fundo:** [[note-sandalo]], [[note-oud]]

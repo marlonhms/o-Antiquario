@@ -1,6 +1,6 @@
 ---
 schema_version: 1
-id: antiquario:olfactory-note:lemon-vervain
+id: antiquario:olfactory-note:limao-siciliano-vervain
 project: o-antiquario
 type: olfactory-note
 title: "Lemon vervain"

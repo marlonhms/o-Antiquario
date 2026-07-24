@@ -38,7 +38,7 @@ relations:
   - predicate: has-base-note
     target: antiquario:olfactory-note:musk
   - predicate: has-base-note
-    target: antiquario:olfactory-note:woody-notes
+    target: antiquario:olfactory-note:cedro-notes
   - predicate: has-base-note
     target: antiquario:olfactory-note:patchouli
 ---

@@ -24,7 +24,7 @@ relations:
   - predicate: belongs-to-brand
     target: antiquario:brand:acqua-di-parma
   - predicate: has-top-note
-    target: antiquario:olfactory-note:orange
+    target: antiquario:olfactory-note:laranja
   - predicate: has-top-note
     target: antiquario:olfactory-note:star-anise
   - predicate: has-top-note
@@ -51,6 +51,6 @@ relations:
 
 ## Pirâmide Olfativa
 
-- **Saída:** [[note-orange]], [[note-star-anise]], [[note-calabrian-bergamot]], [[note-italian-citrus-fruits]]
+- **Saída:** [[note-laranja]], [[note-star-anise]], [[note-calabrian-bergamot]], [[note-italian-citrus-fruits]]
 - **Coração:** [[note-green-almond]], [[note-ylang-ylang]]
 - **Fundo:** [[note-bourbon-vanilla]], [[note-musk]], [[note-lebanon-cedar]], [[note-tolu-balm]]

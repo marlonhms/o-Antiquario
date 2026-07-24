@@ -40,7 +40,7 @@ relations:
   - predicate: has-base-note
     target: antiquario:olfactory-note:white-musk
   - predicate: has-base-note
-    target: antiquario:olfactory-note:amber
+    target: antiquario:olfactory-note:ambar
   - predicate: has-base-note
     target: antiquario:olfactory-note:frankincense
   - predicate: has-base-note
@@ -57,4 +57,4 @@ relations:
 
 - **Saída:** [[note-violet]], [[note-lychee]], [[note-ginger]], [[note-mandarin-orange]]
 - **Coração:** [[note-rose]], [[note-camellia]], [[note-mimosa]]
-- **Fundo:** [[note-white-musk]], [[note-amber]], [[note-frankincense]], [[Baunilha]], [[note-patchouli]]
+- **Fundo:** [[note-white-musk]], [[note-ambar]], [[note-frankincense]], [[Baunilha]], [[note-patchouli]]

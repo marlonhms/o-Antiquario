@@ -24,7 +24,7 @@ relations:
   - predicate: belongs-to-brand
     target: antiquario:brand:giorgio-armani
   - predicate: has-top-note
-    target: antiquario:olfactory-note:lemon
+    target: antiquario:olfactory-note:limao-siciliano
   - predicate: has-top-note
     target: antiquario:olfactory-note:aquatic-notes
   - predicate: has-top-note
@@ -49,6 +49,6 @@ relations:
 
 ## Pirâmide Olfativa
 
-- **Saída:** [[note-lemon]], [[note-aquatic-notes]], [[note-mint]]
+- **Saída:** [[note-limao-siciliano]], [[note-aquatic-notes]], [[note-mint]]
 - **Coração:** [[note-jasmine]], [[note-peony]], [[note-pink-pepper]]
 - **Fundo:** [[note-brown-sugar]], [[note-cedar]], [[note-labdanum]]

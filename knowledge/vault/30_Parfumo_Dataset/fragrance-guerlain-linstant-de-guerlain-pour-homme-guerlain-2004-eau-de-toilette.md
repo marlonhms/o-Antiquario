@@ -24,7 +24,7 @@ relations:
   - predicate: belongs-to-brand
     target: antiquario:brand:guerlain
   - predicate: has-top-note
-    target: antiquario:olfactory-note:lemon
+    target: antiquario:olfactory-note:limao-siciliano
   - predicate: has-top-note
     target: antiquario:olfactory-note:star-anise
   - predicate: has-top-note
@@ -36,7 +36,7 @@ relations:
   - predicate: has-heart-note
     target: antiquario:olfactory-note:cedar
   - predicate: has-heart-note
-    target: antiquario:olfactory-note:sandalwood
+    target: antiquario:olfactory-note:sandalo
   - predicate: has-heart-note
     target: antiquario:olfactory-note:tea
   - predicate: has-heart-note
@@ -57,6 +57,6 @@ relations:
 
 ## Pirâmide Olfativa
 
-- **Saída:** [[note-lemon]], [[note-star-anise]], [[Bergamota]], [[note-grapefruit]], [[note-jasmine]]
-- **Coração:** [[note-cedar]], [[note-sandalwood]], [[note-tea]], [[note-lavender]]
+- **Saída:** [[note-limao-siciliano]], [[note-star-anise]], [[Bergamota]], [[note-grapefruit]], [[note-jasmine]]
+- **Coração:** [[note-cedar]], [[note-sandalo]], [[note-tea]], [[note-lavender]]
 - **Fundo:** [[note-cocoa]], [[note-patchouli]], [[note-musk]], [[note-hibiscus-seed]]

@@ -34,7 +34,7 @@ relations:
   - predicate: has-heart-note
     target: antiquario:olfactory-note:ginger
   - predicate: has-base-note
-    target: antiquario:olfactory-note:sandalwood
+    target: antiquario:olfactory-note:sandalo
   - predicate: has-base-note
     target: antiquario:olfactory-note:baunilha
   - predicate: has-base-note
@@ -49,4 +49,4 @@ relations:
 
 - **Saída:** [[note-african-orange-blossom]], [[note-italian-bitter-orange]]
 - **Coração:** [[note-jasmine-sambac]], [[note-tunisian-orange-blossom-absolute]], [[note-ginger]]
-- **Fundo:** [[note-sandalwood]], [[Baunilha]], [[note-honey]]
+- **Fundo:** [[note-sandalo]], [[Baunilha]], [[note-honey]]

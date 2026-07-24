@@ -38,7 +38,7 @@ relations:
   - predicate: has-base-note
     target: antiquario:olfactory-note:cedar
   - predicate: has-base-note
-    target: antiquario:olfactory-note:amber
+    target: antiquario:olfactory-note:ambar
 ---
 
 # Voyage Nautica 2006 Eau de Toilette
@@ -49,4 +49,4 @@ relations:
 
 - **Saída:** [[note-apple]], [[note-leaves]]
 - **Coração:** [[note-lotus]], [[note-mimosa]]
-- **Fundo:** [[note-moss]], [[note-musk]], [[note-cedar]], [[note-amber]]
+- **Fundo:** [[note-moss]], [[note-musk]], [[note-cedar]], [[note-ambar]]

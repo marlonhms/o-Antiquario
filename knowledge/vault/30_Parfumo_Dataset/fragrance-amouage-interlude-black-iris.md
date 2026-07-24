@@ -36,7 +36,7 @@ relations:
   - predicate: has-heart-note
     target: antiquario:olfactory-note:orris-butter
   - predicate: has-heart-note
-    target: antiquario:olfactory-note:amber
+    target: antiquario:olfactory-note:ambar
   - predicate: has-heart-note
     target: antiquario:olfactory-note:cistus
   - predicate: has-heart-note
@@ -48,7 +48,7 @@ relations:
   - predicate: has-base-note
     target: antiquario:olfactory-note:patchouli
   - predicate: has-base-note
-    target: antiquario:olfactory-note:sandalwood
+    target: antiquario:olfactory-note:sandalo
   - predicate: has-base-note
     target: antiquario:olfactory-note:smoked-leather
   - predicate: has-base-note
@@ -62,5 +62,5 @@ relations:
 ## Pirâmide Olfativa
 
 - **Saída:** [[note-rosemary]], [[note-violet-leaf]], [[Bergamota]]
-- **Coração:** [[note-frankincense]], [[note-myrrh]], [[note-orris-butter]], [[note-amber]], [[note-cistus]], [[note-florentine-iris-absolute]], [[Baunilha]]
-- **Fundo:** [[note-cedarwood]], [[note-patchouli]], [[note-sandalwood]], [[note-smoked-leather]], [[note-oud]]
+- **Coração:** [[note-frankincense]], [[note-myrrh]], [[note-orris-butter]], [[note-ambar]], [[note-cistus]], [[note-florentine-iris-absolute]], [[Baunilha]]
+- **Fundo:** [[note-cedarwood]], [[note-patchouli]], [[note-sandalo]], [[note-smoked-leather]], [[note-oud]]

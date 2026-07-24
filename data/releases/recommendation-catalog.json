@@ -1,8 +1,420 @@
 {
   "schemaVersion": 1,
-  "releaseId": "recommendation-catalog-v1-2026-07-23",
-  "createdAt": "2026-07-23T19:58:09.212Z",
+  "releaseId": "recommendation-catalog-v1-2026-07-24",
+  "createdAt": "2026-07-24T19:06:56.717Z",
   "fragrances": [
+    {
+      "id": "acqua-fiorentina-q139992070",
+      "name": "Acqua Fiorentina",
+      "brand": "Desconhecida",
+      "family": "não-classificada",
+      "segments": [
+        "acessivel"
+      ],
+      "concentrations": [
+        "eau-de-parfum"
+      ],
+      "topNotes": [],
+      "heartNotes": [
+        "limao-siciliano"
+      ],
+      "baseNotes": [],
+      "accords": [],
+      "occasions": [],
+      "formality": 0.5,
+      "performance": {
+        "longevity": {
+          "minimumHours": 4,
+          "maximumHours": 6,
+          "confidence": "low"
+        },
+        "projection": {
+          "value": 0.5,
+          "confidence": "low"
+        },
+        "sillage": {
+          "value": 0.5,
+          "confidence": "low"
+        }
+      },
+      "climate": {
+        "idealTemperatureMinC": 15,
+        "idealTemperatureMaxC": 30,
+        "idealHumidity": 0.5,
+        "indoorFit": 0.8,
+        "outdoorFit": 0.8
+      },
+      "priceTier": 2,
+      "dataConfidence": "medium",
+      "evidence": [
+        {
+          "sourceId": "wikidata",
+          "kind": "open_source",
+          "confidence": "medium",
+          "license": "CC0-1.0",
+          "sourceUrl": "https://www.wikidata.org/wiki/Q139992070",
+          "retrievedAt": "2026-07-22"
+        }
+      ]
+    },
+    {
+      "id": "amber-invite-q140499603",
+      "name": "Amber Invite",
+      "brand": "Desconhecida",
+      "family": "não-classificada",
+      "segments": [
+        "acessivel"
+      ],
+      "concentrations": [
+        "eau-de-parfum"
+      ],
+      "topNotes": [],
+      "heartNotes": [
+        "canela",
+        "tamara"
+      ],
+      "baseNotes": [
+        "ambar",
+        "sandalo",
+        "incenso",
+        "labdano",
+        "vetiver"
+      ],
+      "accords": [],
+      "occasions": [],
+      "formality": 0.5,
+      "performance": {
+        "longevity": {
+          "minimumHours": 4,
+          "maximumHours": 6,
+          "confidence": "low"
+        },
+        "projection": {
+          "value": 0.5,
+          "confidence": "low"
+        },
+        "sillage": {
+          "value": 0.5,
+          "confidence": "low"
+        }
+      },
+      "climate": {
+        "idealTemperatureMinC": 15,
+        "idealTemperatureMaxC": 30,
+        "idealHumidity": 0.5,
+        "indoorFit": 0.8,
+        "outdoorFit": 0.8
+      },
+      "priceTier": 2,
+      "dataConfidence": "medium",
+      "evidence": [
+        {
+          "sourceId": "wikidata",
+          "kind": "open_source",
+          "confidence": "medium",
+          "license": "CC0-1.0",
+          "sourceUrl": "https://www.wikidata.org/wiki/Q140499603",
+          "retrievedAt": "2026-07-22"
+        }
+      ]
+    },
+    {
+      "id": "angel-muse-q139980728",
+      "name": "Angel Muse",
+      "brand": "Desconhecida",
+      "family": "não-classificada",
+      "segments": [
+        "acessivel"
+      ],
+      "concentrations": [
+        "eau-de-parfum"
+      ],
+      "topNotes": [
+        "toranja",
+        "pimenta-rosa"
+      ],
+      "heartNotes": [],
+      "baseNotes": [
+        "patchouli",
+        "vetiver"
+      ],
+      "accords": [],
+      "occasions": [],
+      "formality": 0.5,
+      "performance": {
+        "longevity": {
+          "minimumHours": 4,
+          "maximumHours": 6,
+          "confidence": "low"
+        },
+        "projection": {
+          "value": 0.5,
+          "confidence": "low"
+        },
+        "sillage": {
+          "value": 0.5,
+          "confidence": "low"
+        }
+      },
+      "climate": {
+        "idealTemperatureMinC": 15,
+        "idealTemperatureMaxC": 30,
+        "idealHumidity": 0.5,
+        "indoorFit": 0.8,
+        "outdoorFit": 0.8
+      },
+      "priceTier": 2,
+      "dataConfidence": "medium",
+      "evidence": [
+        {
+          "sourceId": "wikidata",
+          "kind": "open_source",
+          "confidence": "medium",
+          "license": "CC0-1.0",
+          "sourceUrl": "https://www.wikidata.org/wiki/Q139980728",
+          "retrievedAt": "2026-07-22"
+        }
+      ]
+    },
+    {
+      "id": "aventus-q24886336",
+      "name": "Aventus",
+      "brand": "Desconhecida",
+      "family": "não-classificada",
+      "segments": [
+        "acessivel"
+      ],
+      "concentrations": [
+        "eau-de-parfum"
+      ],
+      "topNotes": [
+        "bergamota-da-calabria",
+        "limao-siciliano",
+        "folha-de-groselha-negra",
+        "abacaxi",
+        "pimenta-rosa"
+      ],
+      "heartNotes": [
+        "betula",
+        "jasmim"
+      ],
+      "baseNotes": [
+        "patchouli",
+        "almiscar"
+      ],
+      "accords": [],
+      "occasions": [],
+      "formality": 0.5,
+      "performance": {
+        "longevity": {
+          "minimumHours": 4,
+          "maximumHours": 6,
+          "confidence": "low"
+        },
+        "projection": {
+          "value": 0.5,
+          "confidence": "low"
+        },
+        "sillage": {
+          "value": 0.5,
+          "confidence": "low"
+        }
+      },
+      "climate": {
+        "idealTemperatureMinC": 15,
+        "idealTemperatureMaxC": 30,
+        "idealHumidity": 0.5,
+        "indoorFit": 0.8,
+        "outdoorFit": 0.8
+      },
+      "priceTier": 2,
+      "dataConfidence": "medium",
+      "evidence": [
+        {
+          "sourceId": "wikidata",
+          "kind": "open_source",
+          "confidence": "medium",
+          "license": "CC0-1.0",
+          "sourceUrl": "https://www.wikidata.org/wiki/Q24886336",
+          "retrievedAt": "2026-07-22"
+        }
+      ]
+    },
+    {
+      "id": "bianco-latte-q137183849",
+      "name": "Bianco Latte",
+      "brand": "Desconhecida",
+      "family": "não-classificada",
+      "segments": [
+        "acessivel"
+      ],
+      "concentrations": [
+        "eau-de-parfum"
+      ],
+      "topNotes": [],
+      "heartNotes": [
+        "mel"
+      ],
+      "baseNotes": [
+        "baunilha",
+        "caramelo",
+        "cumarina",
+        "white-musk"
+      ],
+      "accords": [],
+      "occasions": [],
+      "formality": 0.5,
+      "performance": {
+        "longevity": {
+          "minimumHours": 4,
+          "maximumHours": 6,
+          "confidence": "low"
+        },
+        "projection": {
+          "value": 0.5,
+          "confidence": "low"
+        },
+        "sillage": {
+          "value": 0.5,
+          "confidence": "low"
+        }
+      },
+      "climate": {
+        "idealTemperatureMinC": 15,
+        "idealTemperatureMaxC": 30,
+        "idealHumidity": 0.5,
+        "indoorFit": 0.8,
+        "outdoorFit": 0.8
+      },
+      "priceTier": 2,
+      "dataConfidence": "medium",
+      "evidence": [
+        {
+          "sourceId": "wikidata",
+          "kind": "open_source",
+          "confidence": "medium",
+          "license": "CC0-1.0",
+          "sourceUrl": "https://www.wikidata.org/wiki/Q137183849",
+          "retrievedAt": "2026-07-22"
+        }
+      ]
+    },
+    {
+      "id": "blueberry-jam-q140077185",
+      "name": "Blueberry Jam",
+      "brand": "Desconhecida",
+      "family": "não-classificada",
+      "segments": [
+        "acessivel"
+      ],
+      "concentrations": [
+        "eau-de-parfum"
+      ],
+      "topNotes": [
+        "essencia-de-mirtilo"
+      ],
+      "heartNotes": [
+        "geleia-de-mirtilo"
+      ],
+      "baseNotes": [
+        "manteiga",
+        "acucar"
+      ],
+      "accords": [],
+      "occasions": [],
+      "formality": 0.5,
+      "performance": {
+        "longevity": {
+          "minimumHours": 4,
+          "maximumHours": 6,
+          "confidence": "low"
+        },
+        "projection": {
+          "value": 0.5,
+          "confidence": "low"
+        },
+        "sillage": {
+          "value": 0.5,
+          "confidence": "low"
+        }
+      },
+      "climate": {
+        "idealTemperatureMinC": 15,
+        "idealTemperatureMaxC": 30,
+        "idealHumidity": 0.5,
+        "indoorFit": 0.8,
+        "outdoorFit": 0.8
+      },
+      "priceTier": 2,
+      "dataConfidence": "medium",
+      "evidence": [
+        {
+          "sourceId": "wikidata",
+          "kind": "open_source",
+          "confidence": "medium",
+          "license": "CC0-1.0",
+          "sourceUrl": "https://www.wikidata.org/wiki/Q140077185",
+          "retrievedAt": "2026-07-22"
+        }
+      ]
+    },
+    {
+      "id": "boss-alive-q137337051",
+      "name": "BOSS ALIVE",
+      "brand": "Desconhecida",
+      "family": "não-classificada",
+      "segments": [
+        "acessivel"
+      ],
+      "concentrations": [
+        "eau-de-parfum"
+      ],
+      "topNotes": [
+        "ameixa",
+        "canela"
+      ],
+      "heartNotes": [],
+      "baseNotes": [
+        "sandalo"
+      ],
+      "accords": [],
+      "occasions": [],
+      "formality": 0.5,
+      "performance": {
+        "longevity": {
+          "minimumHours": 4,
+          "maximumHours": 6,
+          "confidence": "low"
+        },
+        "projection": {
+          "value": 0.5,
+          "confidence": "low"
+        },
+        "sillage": {
+          "value": 0.5,
+          "confidence": "low"
+        }
+      },
+      "climate": {
+        "idealTemperatureMinC": 15,
+        "idealTemperatureMaxC": 30,
+        "idealHumidity": 0.5,
+        "indoorFit": 0.8,
+        "outdoorFit": 0.8
+      },
+      "priceTier": 2,
+      "dataConfidence": "medium",
+      "evidence": [
+        {
+          "sourceId": "wikidata",
+          "kind": "open_source",
+          "confidence": "medium",
+          "license": "CC0-1.0",
+          "sourceUrl": "https://www.wikidata.org/wiki/Q137337051",
+          "retrievedAt": "2026-07-22"
+        }
+      ]
+    },
     {
       "id": "brisa-vetiver",
       "name": "Brisa Vetiver",
@@ -75,6 +487,958 @@
       ]
     },
     {
+      "id": "chemin-d-amande-q140511997",
+      "name": "Chemin d'Amande",
+      "brand": "Desconhecida",
+      "family": "não-classificada",
+      "segments": [
+        "acessivel"
+      ],
+      "concentrations": [
+        "eau-de-parfum"
+      ],
+      "topNotes": [
+        "amendoa"
+      ],
+      "heartNotes": [
+        "absoluto-de-trigo"
+      ],
+      "baseNotes": [
+        "baunilha-bourbon"
+      ],
+      "accords": [],
+      "occasions": [],
+      "formality": 0.5,
+      "performance": {
+        "longevity": {
+          "minimumHours": 4,
+          "maximumHours": 6,
+          "confidence": "low"
+        },
+        "projection": {
+          "value": 0.5,
+          "confidence": "low"
+        },
+        "sillage": {
+          "value": 0.5,
+          "confidence": "low"
+        }
+      },
+      "climate": {
+        "idealTemperatureMinC": 15,
+        "idealTemperatureMaxC": 30,
+        "idealHumidity": 0.5,
+        "indoorFit": 0.8,
+        "outdoorFit": 0.8
+      },
+      "priceTier": 2,
+      "dataConfidence": "medium",
+      "evidence": [
+        {
+          "sourceId": "wikidata",
+          "kind": "open_source",
+          "confidence": "medium",
+          "license": "CC0-1.0",
+          "sourceUrl": "https://www.wikidata.org/wiki/Q140511997",
+          "retrievedAt": "2026-07-22"
+        }
+      ]
+    },
+    {
+      "id": "crystal-noir-edt-q140266694",
+      "name": "Crystal Noir EDT",
+      "brand": "Desconhecida",
+      "family": "não-classificada",
+      "segments": [
+        "acessivel"
+      ],
+      "concentrations": [
+        "eau-de-parfum"
+      ],
+      "topNotes": [
+        "gengibre",
+        "cardamomo",
+        "pimenta"
+      ],
+      "heartNotes": [
+        "gardenia",
+        "peonia",
+        "flor-de-laranjeira",
+        "tuberosa"
+      ],
+      "baseNotes": [
+        "ambar",
+        "sandalo",
+        "almscar",
+        "baunilha",
+        "cashmeran"
+      ],
+      "accords": [],
+      "occasions": [],
+      "formality": 0.5,
+      "performance": {
+        "longevity": {
+          "minimumHours": 4,
+          "maximumHours": 6,
+          "confidence": "low"
+        },
+        "projection": {
+          "value": 0.5,
+          "confidence": "low"
+        },
+        "sillage": {
+          "value": 0.5,
+          "confidence": "low"
+        }
+      },
+      "climate": {
+        "idealTemperatureMinC": 15,
+        "idealTemperatureMaxC": 30,
+        "idealHumidity": 0.5,
+        "indoorFit": 0.8,
+        "outdoorFit": 0.8
+      },
+      "priceTier": 2,
+      "dataConfidence": "medium",
+      "evidence": [
+        {
+          "sourceId": "wikidata",
+          "kind": "open_source",
+          "confidence": "medium",
+          "license": "CC0-1.0",
+          "sourceUrl": "https://www.wikidata.org/wiki/Q140266694",
+          "retrievedAt": "2026-07-22"
+        }
+      ]
+    },
+    {
+      "id": "daisy-q110263664",
+      "name": "Daisy",
+      "brand": "Desconhecida",
+      "family": "não-classificada",
+      "segments": [
+        "acessivel"
+      ],
+      "concentrations": [
+        "eau-de-parfum"
+      ],
+      "topNotes": [
+        "toranja",
+        "morango",
+        "folha-de-violeta"
+      ],
+      "heartNotes": [
+        "gardenia",
+        "jasmim",
+        "violeta"
+      ],
+      "baseNotes": [
+        "baunilha",
+        "almscar",
+        "cedro"
+      ],
+      "accords": [],
+      "occasions": [],
+      "formality": 0.5,
+      "performance": {
+        "longevity": {
+          "minimumHours": 4,
+          "maximumHours": 6,
+          "confidence": "low"
+        },
+        "projection": {
+          "value": 0.5,
+          "confidence": "low"
+        },
+        "sillage": {
+          "value": 0.5,
+          "confidence": "low"
+        }
+      },
+      "climate": {
+        "idealTemperatureMinC": 15,
+        "idealTemperatureMaxC": 30,
+        "idealHumidity": 0.5,
+        "indoorFit": 0.8,
+        "outdoorFit": 0.8
+      },
+      "priceTier": 2,
+      "dataConfidence": "medium",
+      "evidence": [
+        {
+          "sourceId": "wikidata",
+          "kind": "open_source",
+          "confidence": "medium",
+          "license": "CC0-1.0",
+          "sourceUrl": "https://www.wikidata.org/wiki/Q110263664",
+          "retrievedAt": "2026-07-22"
+        }
+      ]
+    },
+    {
+      "id": "deep-viola-q138795798",
+      "name": "Deep Viola",
+      "brand": "Desconhecida",
+      "family": "não-classificada",
+      "segments": [
+        "acessivel"
+      ],
+      "concentrations": [
+        "eau-de-parfum"
+      ],
+      "topNotes": [
+        "bergamota",
+        "safran",
+        "angelica"
+      ],
+      "heartNotes": [
+        "violetas",
+        "iris",
+        "couro"
+      ],
+      "baseNotes": [
+        "baunilha",
+        "incenso",
+        "oud"
+      ],
+      "accords": [],
+      "occasions": [],
+      "formality": 0.5,
+      "performance": {
+        "longevity": {
+          "minimumHours": 4,
+          "maximumHours": 6,
+          "confidence": "low"
+        },
+        "projection": {
+          "value": 0.5,
+          "confidence": "low"
+        },
+        "sillage": {
+          "value": 0.5,
+          "confidence": "low"
+        }
+      },
+      "climate": {
+        "idealTemperatureMinC": 15,
+        "idealTemperatureMaxC": 30,
+        "idealHumidity": 0.5,
+        "indoorFit": 0.8,
+        "outdoorFit": 0.8
+      },
+      "priceTier": 2,
+      "dataConfidence": "medium",
+      "evidence": [
+        {
+          "sourceId": "wikidata",
+          "kind": "open_source",
+          "confidence": "medium",
+          "license": "CC0-1.0",
+          "sourceUrl": "https://www.wikidata.org/wiki/Q138795798",
+          "retrievedAt": "2026-07-22"
+        }
+      ]
+    },
+    {
+      "id": "dune-q17105080",
+      "name": "Dune",
+      "brand": "Desconhecida",
+      "family": "não-classificada",
+      "segments": [
+        "acessivel"
+      ],
+      "concentrations": [
+        "eau-de-parfum"
+      ],
+      "topNotes": [
+        "mandarina",
+        "bergamota",
+        "peonia"
+      ],
+      "heartNotes": [
+        "ylang-ylang",
+        "jasmim",
+        "lirio",
+        "rosa",
+        "gloriosa"
+      ],
+      "baseNotes": [
+        "almiscar",
+        "ambar",
+        "ambargris",
+        "liquen",
+        "sandalo",
+        "baunilha",
+        "benjoim"
+      ],
+      "accords": [],
+      "occasions": [],
+      "formality": 0.5,
+      "performance": {
+        "longevity": {
+          "minimumHours": 4,
+          "maximumHours": 6,
+          "confidence": "low"
+        },
+        "projection": {
+          "value": 0.5,
+          "confidence": "low"
+        },
+        "sillage": {
+          "value": 0.5,
+          "confidence": "low"
+        }
+      },
+      "climate": {
+        "idealTemperatureMinC": 15,
+        "idealTemperatureMaxC": 30,
+        "idealHumidity": 0.5,
+        "indoorFit": 0.8,
+        "outdoorFit": 0.8
+      },
+      "priceTier": 2,
+      "dataConfidence": "medium",
+      "evidence": [
+        {
+          "sourceId": "wikidata",
+          "kind": "open_source",
+          "confidence": "medium",
+          "license": "CC0-1.0",
+          "sourceUrl": "https://www.wikidata.org/wiki/Q17105080",
+          "retrievedAt": "2026-07-22"
+        }
+      ]
+    },
+    {
+      "id": "eternity-moment-q140003429",
+      "name": "Eternity Moment",
+      "brand": "Desconhecida",
+      "family": "não-classificada",
+      "segments": [
+        "acessivel"
+      ],
+      "concentrations": [
+        "eau-de-parfum"
+      ],
+      "topNotes": [
+        "goiaba",
+        "lichia",
+        "melao",
+        "framboesa"
+      ],
+      "heartNotes": [
+        "nenufar",
+        "peonia",
+        "jasmim"
+      ],
+      "baseNotes": [
+        "sandalo",
+        "cashmeran",
+        "almiscar"
+      ],
+      "accords": [],
+      "occasions": [],
+      "formality": 0.5,
+      "performance": {
+        "longevity": {
+          "minimumHours": 4,
+          "maximumHours": 6,
+          "confidence": "low"
+        },
+        "projection": {
+          "value": 0.5,
+          "confidence": "low"
+        },
+        "sillage": {
+          "value": 0.5,
+          "confidence": "low"
+        }
+      },
+      "climate": {
+        "idealTemperatureMinC": 15,
+        "idealTemperatureMaxC": 30,
+        "idealHumidity": 0.5,
+        "indoorFit": 0.8,
+        "outdoorFit": 0.8
+      },
+      "priceTier": 2,
+      "dataConfidence": "medium",
+      "evidence": [
+        {
+          "sourceId": "wikidata",
+          "kind": "open_source",
+          "confidence": "medium",
+          "license": "CC0-1.0",
+          "sourceUrl": "https://www.wikidata.org/wiki/Q140003429",
+          "retrievedAt": "2026-07-22"
+        }
+      ]
+    },
+    {
+      "id": "ganymede-q137825310",
+      "name": "Ganymede",
+      "brand": "Desconhecida",
+      "family": "não-classificada",
+      "segments": [
+        "acessivel"
+      ],
+      "concentrations": [
+        "eau-de-parfum"
+      ],
+      "topNotes": [],
+      "heartNotes": [
+        "baunilha",
+        "cacau",
+        "patchouli"
+      ],
+      "baseNotes": [
+        "ambar"
+      ],
+      "accords": [],
+      "occasions": [],
+      "formality": 0.5,
+      "performance": {
+        "longevity": {
+          "minimumHours": 4,
+          "maximumHours": 6,
+          "confidence": "low"
+        },
+        "projection": {
+          "value": 0.5,
+          "confidence": "low"
+        },
+        "sillage": {
+          "value": 0.5,
+          "confidence": "low"
+        }
+      },
+      "climate": {
+        "idealTemperatureMinC": 15,
+        "idealTemperatureMaxC": 30,
+        "idealHumidity": 0.5,
+        "indoorFit": 0.8,
+        "outdoorFit": 0.8
+      },
+      "priceTier": 2,
+      "dataConfidence": "medium",
+      "evidence": [
+        {
+          "sourceId": "wikidata",
+          "kind": "open_source",
+          "confidence": "medium",
+          "license": "CC0-1.0",
+          "sourceUrl": "https://www.wikidata.org/wiki/Q137825310",
+          "retrievedAt": "2026-07-22"
+        }
+      ]
+    },
+    {
+      "id": "god-bless-cola-q137386796",
+      "name": "God Bless Cola",
+      "brand": "Desconhecida",
+      "family": "não-classificada",
+      "segments": [
+        "acessivel"
+      ],
+      "concentrations": [
+        "eau-de-parfum"
+      ],
+      "topNotes": [
+        "refrigerante-de-cola",
+        "baunilha"
+      ],
+      "heartNotes": [
+        "caramelo",
+        "baunilha",
+        "amendoim",
+        "manteiga",
+        "pipoca"
+      ],
+      "baseNotes": [
+        "baunilha",
+        "cedro-smell"
+      ],
+      "accords": [],
+      "occasions": [],
+      "formality": 0.5,
+      "performance": {
+        "longevity": {
+          "minimumHours": 4,
+          "maximumHours": 6,
+          "confidence": "low"
+        },
+        "projection": {
+          "value": 0.5,
+          "confidence": "low"
+        },
+        "sillage": {
+          "value": 0.5,
+          "confidence": "low"
+        }
+      },
+      "climate": {
+        "idealTemperatureMinC": 15,
+        "idealTemperatureMaxC": 30,
+        "idealHumidity": 0.5,
+        "indoorFit": 0.8,
+        "outdoorFit": 0.8
+      },
+      "priceTier": 2,
+      "dataConfidence": "medium",
+      "evidence": [
+        {
+          "sourceId": "wikidata",
+          "kind": "open_source",
+          "confidence": "medium",
+          "license": "CC0-1.0",
+          "sourceUrl": "https://www.wikidata.org/wiki/Q137386796",
+          "retrievedAt": "2026-07-22"
+        }
+      ]
+    },
+    {
+      "id": "ha-long-bay-q140237028",
+      "name": "Ha Long Bay",
+      "brand": "Desconhecida",
+      "family": "não-classificada",
+      "segments": [
+        "acessivel"
+      ],
+      "concentrations": [
+        "eau-de-parfum"
+      ],
+      "topNotes": [
+        "manga",
+        "cardamomo",
+        "pimenta-preta"
+      ],
+      "heartNotes": [
+        "couro",
+        "cedro",
+        "nagarmotha"
+      ],
+      "baseNotes": [
+        "patchouli",
+        "amberwood",
+        "orcanox"
+      ],
+      "accords": [],
+      "occasions": [],
+      "formality": 0.5,
+      "performance": {
+        "longevity": {
+          "minimumHours": 4,
+          "maximumHours": 6,
+          "confidence": "low"
+        },
+        "projection": {
+          "value": 0.5,
+          "confidence": "low"
+        },
+        "sillage": {
+          "value": 0.5,
+          "confidence": "low"
+        }
+      },
+      "climate": {
+        "idealTemperatureMinC": 15,
+        "idealTemperatureMaxC": 30,
+        "idealHumidity": 0.5,
+        "indoorFit": 0.8,
+        "outdoorFit": 0.8
+      },
+      "priceTier": 2,
+      "dataConfidence": "medium",
+      "evidence": [
+        {
+          "sourceId": "wikidata",
+          "kind": "open_source",
+          "confidence": "medium",
+          "license": "CC0-1.0",
+          "sourceUrl": "https://www.wikidata.org/wiki/Q140237028",
+          "retrievedAt": "2026-07-22"
+        }
+      ]
+    },
+    {
+      "id": "horchata-de-vanille-q140075144",
+      "name": "Horchata de Vanille",
+      "brand": "Desconhecida",
+      "family": "não-classificada",
+      "segments": [
+        "acessivel"
+      ],
+      "concentrations": [
+        "eau-de-parfum"
+      ],
+      "topNotes": [
+        "horchata"
+      ],
+      "heartNotes": [
+        "canela",
+        "leite",
+        "arroz"
+      ],
+      "baseNotes": [
+        "baunilha"
+      ],
+      "accords": [],
+      "occasions": [],
+      "formality": 0.5,
+      "performance": {
+        "longevity": {
+          "minimumHours": 4,
+          "maximumHours": 6,
+          "confidence": "low"
+        },
+        "projection": {
+          "value": 0.5,
+          "confidence": "low"
+        },
+        "sillage": {
+          "value": 0.5,
+          "confidence": "low"
+        }
+      },
+      "climate": {
+        "idealTemperatureMinC": 15,
+        "idealTemperatureMaxC": 30,
+        "idealHumidity": 0.5,
+        "indoorFit": 0.8,
+        "outdoorFit": 0.8
+      },
+      "priceTier": 2,
+      "dataConfidence": "medium",
+      "evidence": [
+        {
+          "sourceId": "wikidata",
+          "kind": "open_source",
+          "confidence": "medium",
+          "license": "CC0-1.0",
+          "sourceUrl": "https://www.wikidata.org/wiki/Q140075144",
+          "retrievedAt": "2026-07-22"
+        }
+      ]
+    },
+    {
+      "id": "jardin-d-amalfi-q139989391",
+      "name": "Jardin d'Amalfi",
+      "brand": "Desconhecida",
+      "family": "não-classificada",
+      "segments": [
+        "acessivel"
+      ],
+      "concentrations": [
+        "eau-de-parfum"
+      ],
+      "topNotes": [
+        "limao",
+        "tangerina",
+        "maca",
+        "pimenta-rosa"
+      ],
+      "heartNotes": [
+        "jasmim",
+        "rosa"
+      ],
+      "baseNotes": [
+        "cedro",
+        "vetiver",
+        "almiscar-branco"
+      ],
+      "accords": [],
+      "occasions": [],
+      "formality": 0.5,
+      "performance": {
+        "longevity": {
+          "minimumHours": 4,
+          "maximumHours": 6,
+          "confidence": "low"
+        },
+        "projection": {
+          "value": 0.5,
+          "confidence": "low"
+        },
+        "sillage": {
+          "value": 0.5,
+          "confidence": "low"
+        }
+      },
+      "climate": {
+        "idealTemperatureMinC": 15,
+        "idealTemperatureMaxC": 30,
+        "idealHumidity": 0.5,
+        "indoorFit": 0.8,
+        "outdoorFit": 0.8
+      },
+      "priceTier": 2,
+      "dataConfidence": "medium",
+      "evidence": [
+        {
+          "sourceId": "wikidata",
+          "kind": "open_source",
+          "confidence": "medium",
+          "license": "CC0-1.0",
+          "sourceUrl": "https://www.wikidata.org/wiki/Q139989391",
+          "retrievedAt": "2026-07-22"
+        }
+      ]
+    },
+    {
+      "id": "khamrah-q140499690",
+      "name": "Khamrah",
+      "brand": "Desconhecida",
+      "family": "não-classificada",
+      "segments": [
+        "acessivel"
+      ],
+      "concentrations": [
+        "eau-de-parfum"
+      ],
+      "topNotes": [
+        "bergamota",
+        "canela",
+        "noz-moscada"
+      ],
+      "heartNotes": [
+        "tamaras",
+        "praline",
+        "tuberosa",
+        "mahonial"
+      ],
+      "baseNotes": [
+        "baunilha",
+        "fava-tonka",
+        "mirra",
+        "benjoim",
+        "amberwood",
+        "akigalawood"
+      ],
+      "accords": [],
+      "occasions": [],
+      "formality": 0.5,
+      "performance": {
+        "longevity": {
+          "minimumHours": 4,
+          "maximumHours": 6,
+          "confidence": "low"
+        },
+        "projection": {
+          "value": 0.5,
+          "confidence": "low"
+        },
+        "sillage": {
+          "value": 0.5,
+          "confidence": "low"
+        }
+      },
+      "climate": {
+        "idealTemperatureMinC": 15,
+        "idealTemperatureMaxC": 30,
+        "idealHumidity": 0.5,
+        "indoorFit": 0.8,
+        "outdoorFit": 0.8
+      },
+      "priceTier": 2,
+      "dataConfidence": "medium",
+      "evidence": [
+        {
+          "sourceId": "wikidata",
+          "kind": "open_source",
+          "confidence": "medium",
+          "license": "CC0-1.0",
+          "sourceUrl": "https://www.wikidata.org/wiki/Q140499690",
+          "retrievedAt": "2026-07-22"
+        }
+      ]
+    },
+    {
+      "id": "naughty-alice-q139990627",
+      "name": "Naughty Alice",
+      "brand": "Desconhecida",
+      "family": "não-classificada",
+      "segments": [
+        "acessivel"
+      ],
+      "concentrations": [
+        "eau-de-parfum"
+      ],
+      "topNotes": [],
+      "heartNotes": [
+        "ylang-ylang",
+        "rosa",
+        "violeta"
+      ],
+      "baseNotes": [
+        "almiscar"
+      ],
+      "accords": [],
+      "occasions": [],
+      "formality": 0.5,
+      "performance": {
+        "longevity": {
+          "minimumHours": 4,
+          "maximumHours": 6,
+          "confidence": "low"
+        },
+        "projection": {
+          "value": 0.5,
+          "confidence": "low"
+        },
+        "sillage": {
+          "value": 0.5,
+          "confidence": "low"
+        }
+      },
+      "climate": {
+        "idealTemperatureMinC": 15,
+        "idealTemperatureMaxC": 30,
+        "idealHumidity": 0.5,
+        "indoorFit": 0.8,
+        "outdoorFit": 0.8
+      },
+      "priceTier": 2,
+      "dataConfidence": "medium",
+      "evidence": [
+        {
+          "sourceId": "wikidata",
+          "kind": "open_source",
+          "confidence": "medium",
+          "license": "CC0-1.0",
+          "sourceUrl": "https://www.wikidata.org/wiki/Q139990627",
+          "retrievedAt": "2026-07-22"
+        }
+      ]
+    },
+    {
+      "id": "odeon-q140298435",
+      "name": "Odéon",
+      "brand": "Desconhecida",
+      "family": "não-classificada",
+      "segments": [
+        "acessivel"
+      ],
+      "concentrations": [
+        "eau-de-parfum"
+      ],
+      "topNotes": [],
+      "heartNotes": [
+        "rosa-canditada",
+        "absoluto-de-rosa"
+      ],
+      "baseNotes": [
+        "ambar",
+        "patchouli",
+        "sandalo",
+        "cashmeran",
+        "almiscar",
+        "absoluto-de-fava-tonka"
+      ],
+      "accords": [],
+      "occasions": [],
+      "formality": 0.5,
+      "performance": {
+        "longevity": {
+          "minimumHours": 4,
+          "maximumHours": 6,
+          "confidence": "low"
+        },
+        "projection": {
+          "value": 0.5,
+          "confidence": "low"
+        },
+        "sillage": {
+          "value": 0.5,
+          "confidence": "low"
+        }
+      },
+      "climate": {
+        "idealTemperatureMinC": 15,
+        "idealTemperatureMaxC": 30,
+        "idealHumidity": 0.5,
+        "indoorFit": 0.8,
+        "outdoorFit": 0.8
+      },
+      "priceTier": 2,
+      "dataConfidence": "medium",
+      "evidence": [
+        {
+          "sourceId": "wikidata",
+          "kind": "open_source",
+          "confidence": "medium",
+          "license": "CC0-1.0",
+          "sourceUrl": "https://www.wikidata.org/wiki/Q140298435",
+          "retrievedAt": "2026-07-22"
+        }
+      ]
+    },
+    {
+      "id": "opulent-dubai-q138766540",
+      "name": "Opulent Dubai",
+      "brand": "Desconhecida",
+      "family": "não-classificada",
+      "segments": [
+        "acessivel"
+      ],
+      "concentrations": [
+        "eau-de-parfum"
+      ],
+      "topNotes": [
+        "manga",
+        "gengibre",
+        "grapefruit",
+        "limao"
+      ],
+      "heartNotes": [
+        "jasmim",
+        "violetas"
+      ],
+      "baseNotes": [
+        "ambergris",
+        "benzoin",
+        "cedarwood",
+        "oakmoss",
+        "cedro"
+      ],
+      "accords": [],
+      "occasions": [],
+      "formality": 0.5,
+      "performance": {
+        "longevity": {
+          "minimumHours": 4,
+          "maximumHours": 6,
+          "confidence": "low"
+        },
+        "projection": {
+          "value": 0.5,
+          "confidence": "low"
+        },
+        "sillage": {
+          "value": 0.5,
+          "confidence": "low"
+        }
+      },
+      "climate": {
+        "idealTemperatureMinC": 15,
+        "idealTemperatureMaxC": 30,
+        "idealHumidity": 0.5,
+        "indoorFit": 0.8,
+        "outdoorFit": 0.8
+      },
+      "priceTier": 2,
+      "dataConfidence": "medium",
+      "evidence": [
+        {
+          "sourceId": "wikidata",
+          "kind": "open_source",
+          "confidence": "medium",
+          "license": "CC0-1.0",
+          "sourceUrl": "https://www.wikidata.org/wiki/Q138766540",
+          "retrievedAt": "2026-07-22"
+        }
+      ]
+    },
+    {
       "id": "parfumo-abercrombie-fitch-fierce-abercrombie-fitch-2002-cologne",
       "name": "Fierce Abercrombie & Fitch 2002 Cologne",
       "brand": "abercrombie-fitch",
@@ -87,9 +1451,9 @@
       ],
       "topNotes": [
         "fir-resin",
-        "lemon",
+        "limao-siciliano",
         "cardamom",
-        "orange",
+        "laranja",
         "petitgrain"
       ],
       "heartNotes": [
@@ -162,7 +1526,7 @@
         "damp"
       ],
       "baseNotes": [
-        "sandalwood"
+        "sandalo"
       ],
       "accords": [],
       "occasions": [],
@@ -272,7 +1636,7 @@
         "eau-de-parfum"
       ],
       "topNotes": [
-        "lemon",
+        "limao-siciliano",
         "calabrian-bergamot"
       ],
       "heartNotes": [
@@ -332,9 +1696,9 @@
         "eau-de-parfum"
       ],
       "topNotes": [
-        "lemon",
+        "limao-siciliano",
         "calabrian-bergamot",
-        "orange"
+        "laranja"
       ],
       "heartNotes": [
         "lavender",
@@ -344,7 +1708,7 @@
       ],
       "baseNotes": [
         "patchouli",
-        "sandalwood",
+        "sandalo",
         "vetiver"
       ],
       "accords": [],
@@ -395,13 +1759,13 @@
         "eau-de-parfum"
       ],
       "topNotes": [
-        "lemon",
+        "limao-siciliano",
         "neroli",
         "petitgrain",
         "bergamota",
         "grapefruit",
         "mandarin-orange",
-        "orange"
+        "laranja"
       ],
       "heartNotes": [
         "rosemary",
@@ -413,7 +1777,7 @@
       "baseNotes": [
         "white-musk",
         "vetiver",
-        "amber",
+        "ambar",
         "patchouli"
       ],
       "accords": [],
@@ -464,7 +1828,7 @@
         "eau-de-parfum"
       ],
       "topNotes": [
-        "orange",
+        "laranja",
         "star-anise",
         "calabrian-bergamot",
         "italian-citrus-fruits"
@@ -539,7 +1903,7 @@
         "atlas-cedar",
         "indonesian-patchouli",
         "musk",
-        "sandalwood"
+        "sandalo"
       ],
       "accords": [],
       "occasions": [],
@@ -701,17 +2065,17 @@
         "eau-de-parfum"
       ],
       "topNotes": [
-        "lemon",
+        "limao-siciliano",
         "bergamota",
         "elemi-resin"
       ],
       "heartNotes": [
         "lily-of-the-valley",
-        "woody-notes",
+        "cedro-notes",
         "jasmine"
       ],
       "baseNotes": [
-        "amber",
+        "ambar",
         "musk",
         "patchouli"
       ],
@@ -815,7 +2179,7 @@
       "topNotes": [
         "mint",
         "galbanum",
-        "orange-blossom"
+        "laranja-blossom"
       ],
       "heartNotes": [
         "ivy",
@@ -883,7 +2247,7 @@
         "frankincense",
         "myrrh",
         "orris-butter",
-        "amber",
+        "ambar",
         "cistus",
         "florentine-iris-absolute",
         "baunilha"
@@ -891,7 +2255,7 @@
       "baseNotes": [
         "cedarwood",
         "patchouli",
-        "sandalwood",
+        "sandalo",
         "smoked-leather",
         "oud"
       ],
@@ -950,7 +2314,7 @@
         "rose",
         "angelica",
         "galbanum",
-        "orange-blossom",
+        "laranja-blossom",
         "ginger",
         "nutmeg",
         "saffron"
@@ -958,7 +2322,7 @@
       "baseNotes": [
         "musk",
         "pine",
-        "sandalwood",
+        "sandalo",
         "frankincense",
         "baunilha"
       ],
@@ -1021,12 +2385,12 @@
         "rose"
       ],
       "baseNotes": [
-        "amber",
+        "ambar",
         "gaiac-wood",
         "leather",
         "musk",
         "oakmoss",
-        "sandalwood",
+        "sandalo",
         "tobacco",
         "baunilha",
         "vetiver"
@@ -1081,11 +2445,11 @@
       "topNotes": [
         "lavender",
         "everlasting-flower",
-        "orange-brandy"
+        "laranja-brandy"
       ],
       "heartNotes": [
         "clary-sage",
-        "juniper-berry",
+        "zimbro",
         "bergamota"
       ],
       "baseNotes": [
@@ -1141,10 +2505,10 @@
         "eau-de-parfum"
       ],
       "topNotes": [
-        "orange-blossom",
+        "laranja-blossom",
         "bergamota",
         "coriander",
-        "lemon",
+        "limao-siciliano",
         "mandarin-orange"
       ],
       "heartNotes": [
@@ -1156,7 +2520,7 @@
       "baseNotes": [
         "tonka-bean",
         "benzoin",
-        "amber",
+        "ambar",
         "cedar"
       ],
       "accords": [],
@@ -1207,7 +2571,7 @@
         "eau-de-parfum"
       ],
       "topNotes": [
-        "lemon",
+        "limao-siciliano",
         "bergamota",
         "pineapple",
         "apple",
@@ -1273,7 +2637,7 @@
       ],
       "topNotes": [
         "bergamota",
-        "lemon",
+        "limao-siciliano",
         "ginger",
         "blackcurrant",
         "lime",
@@ -1288,7 +2652,7 @@
         "musk",
         "ambroxan",
         "cedar",
-        "sandalwood"
+        "sandalo"
       ],
       "accords": [],
       "occasions": [],
@@ -1344,21 +2708,21 @@
         "clary-sage",
         "bergamota",
         "caraway",
-        "lemon",
+        "limao-siciliano",
         "iris"
       ],
       "heartNotes": [
         "cedarwood",
-        "sandalwood",
+        "sandalo",
         "vetiver",
         "cardamom",
-        "juniper-berry",
+        "zimbro",
         "patchouli"
       ],
       "baseNotes": [
         "oakmoss",
         "musk",
-        "amber",
+        "ambar",
         "leather",
         "tonka-bean"
       ],
@@ -1417,7 +2781,7 @@
       "heartNotes": [
         "suede",
         "solar-note",
-        "sandalwood",
+        "sandalo",
         "pink-pepper"
       ],
       "baseNotes": [
@@ -1487,7 +2851,7 @@
         "indonesian-patchouli",
         "american-cedar",
         "brazilian-tonka-bean-absolute",
-        "sandalwood"
+        "sandalo"
       ],
       "accords": [],
       "occasions": [],
@@ -1538,7 +2902,7 @@
       ],
       "topNotes": [
         "almond",
-        "orange-blossom"
+        "laranja-blossom"
       ],
       "heartNotes": [
         "balkans-tobacco-absolute",
@@ -1661,10 +3025,10 @@
         "eau-de-parfum"
       ],
       "topNotes": [
-        "orange-blossom",
+        "laranja-blossom",
         "bergamota",
         "coriander",
-        "lemon",
+        "limao-siciliano",
         "mandarin-orange"
       ],
       "heartNotes": [
@@ -1676,7 +3040,7 @@
       "baseNotes": [
         "tonka-bean",
         "benzoin",
-        "amber",
+        "ambar",
         "cedar"
       ],
       "accords": [],
@@ -1795,13 +3159,13 @@
       ],
       "heartNotes": [
         "nutmeg",
-        "orange-blossom",
+        "laranja-blossom",
         "lavender",
         "infestation"
       ],
       "baseNotes": [
         "tonka-bean",
-        "amber",
+        "ambar",
         "leather",
         "dankness"
       ],
@@ -1853,7 +3217,7 @@
         "eau-de-parfum"
       ],
       "topNotes": [
-        "cinnamon-leaf",
+        "canela-leaf",
         "black-pepper",
         "lavender",
         "bergamota"
@@ -1976,8 +3340,8 @@
         "eau-de-parfum"
       ],
       "topNotes": [
-        "juniper-berry",
-        "lemon",
+        "zimbro",
+        "limao-siciliano",
         "bergamota",
         "pepper"
       ],
@@ -1988,8 +3352,8 @@
       ],
       "baseNotes": [
         "baunilha",
-        "sandalwood",
-        "amber"
+        "sandalo",
+        "ambar"
       ],
       "accords": [],
       "occasions": [],
@@ -2040,7 +3404,7 @@
       ],
       "topNotes": [
         "bergamota",
-        "lemon",
+        "limao-siciliano",
         "mandarin-orange",
         "papaya"
       ],
@@ -2054,7 +3418,7 @@
       ],
       "baseNotes": [
         "musk",
-        "amber"
+        "ambar"
       ],
       "accords": [],
       "occasions": [],
@@ -2218,7 +3582,7 @@
         "eau-de-parfum"
       ],
       "topNotes": [
-        "orange",
+        "laranja",
         "bergamota",
         "birch-wood"
       ],
@@ -2284,7 +3648,7 @@
         "lavender",
         "peach",
         "ginger",
-        "lemon",
+        "limao-siciliano",
         "mandarin-orange"
       ],
       "heartNotes": [
@@ -2300,9 +3664,9 @@
         "rose"
       ],
       "baseNotes": [
-        "sandalwood",
+        "sandalo",
         "tonka-bean",
-        "amber",
+        "ambar",
         "musk",
         "oakmoss",
         "baunilha",
@@ -2362,14 +3726,14 @@
         "pink-pepper"
       ],
       "heartNotes": [
-        "lemon",
+        "limao-siciliano",
         "bergamota",
         "new-caledonian-sandalwood",
         "leather"
       ],
       "baseNotes": [
         "tonka-bean",
-        "amber",
+        "ambar",
         "bourbon-vanilla",
         "cedarwood",
         "ginger",
@@ -2436,9 +3800,9 @@
       ],
       "baseNotes": [
         "baunilha",
-        "amber",
+        "ambar",
         "musk",
-        "sandalwood",
+        "sandalo",
         "woods",
         "patchouli"
       ],
@@ -2504,9 +3868,9 @@
       "baseNotes": [
         "coffee",
         "baunilha",
-        "amber",
+        "ambar",
         "patchouli",
-        "sandalwood"
+        "sandalo"
       ],
       "accords": [],
       "occasions": [],
@@ -2569,7 +3933,7 @@
         "christalon"
       ],
       "baseNotes": [
-        "sandalwood",
+        "sandalo",
         "javanol",
         "vetiver",
         "oud"
@@ -2674,7 +4038,7 @@
       "topNotes": [
         "bergamota",
         "basil",
-        "lemon",
+        "limao-siciliano",
         "lime",
         "mandarin-orange"
       ],
@@ -2687,7 +4051,7 @@
       ],
       "baseNotes": [
         "cedarwood",
-        "sandalwood",
+        "sandalo",
         "patchouli",
         "vetiver",
         "leathery-notes"
@@ -2741,11 +4105,11 @@
       ],
       "topNotes": [
         "bergamota",
-        "lemon",
+        "limao-siciliano",
         "mandarin-orange"
       ],
       "heartNotes": [
-        "juniper-berry",
+        "zimbro",
         "pepper",
         "jasmine",
         "lavender",
@@ -2754,7 +4118,7 @@
       ],
       "baseNotes": [
         "cedarwood",
-        "sandalwood",
+        "sandalo",
         "tonka-bean",
         "vetiver"
       ],
@@ -2820,7 +4184,7 @@
         "vetiver",
         "musk",
         "ambergris",
-        "sandalwood"
+        "sandalo"
       ],
       "accords": [],
       "occasions": [],
@@ -2876,7 +4240,7 @@
         "coconut-water"
       ],
       "baseNotes": [
-        "amber"
+        "ambar"
       ],
       "accords": [],
       "occasions": [],
@@ -2936,7 +4300,7 @@
         "rosemary"
       ],
       "baseNotes": [
-        "amber",
+        "ambar",
         "cedarwood",
         "leather"
       ],
@@ -3059,7 +4423,7 @@
       "baseNotes": [
         "frankincense",
         "woods",
-        "amber"
+        "ambar"
       ],
       "accords": [],
       "occasions": [],
@@ -3110,7 +4474,7 @@
       ],
       "topNotes": [
         "calabrian-bergamot",
-        "orange"
+        "laranja"
       ],
       "heartNotes": [
         "lavender-absolute",
@@ -3121,7 +4485,7 @@
         "philippine-elemi",
         "vetiver",
         "labdanum",
-        "cinnamon",
+        "canela",
         "star-anise"
       ],
       "accords": [],
@@ -3294,9 +4658,9 @@
       ],
       "baseNotes": [
         "baunilha",
-        "amber",
+        "ambar",
         "musk",
-        "plum",
+        "ameixa",
         "vetiver"
       ],
       "accords": [],
@@ -3352,12 +4716,12 @@
         "coriander"
       ],
       "heartNotes": [
-        "orange-blossom",
+        "laranja-blossom",
         "cardamom",
         "ginger"
       ],
       "baseNotes": [
-        "amber",
+        "ambar",
         "tobacco",
         "cedar"
       ],
@@ -3416,7 +4780,7 @@
       ],
       "heartNotes": [
         "cardamom",
-        "juniper-berry",
+        "zimbro",
         "provencal-lavender",
         "sage"
       ],
@@ -3544,7 +4908,7 @@
         "saffron"
       ],
       "heartNotes": [
-        "cinnamon-leaf",
+        "canela-leaf",
         "habanero-chili",
         "provencal-lavender",
         "lavender"
@@ -3603,9 +4967,14 @@
       "concentrations": [
         "eau-de-parfum"
       ],
-      "topNotes": [],
+      "topNotes": [
+        "zimbro"
+      ],
       "heartNotes": [],
-      "baseNotes": [],
+      "baseNotes": [
+        "baunilha",
+        "zimbro"
+      ],
       "accords": [],
       "occasions": [],
       "formality": 0.5,
@@ -3665,7 +5034,7 @@
       ],
       "baseNotes": [
         "musk",
-        "woody-notes",
+        "cedro-notes",
         "patchouli"
       ],
       "accords": [],
@@ -3717,7 +5086,7 @@
       ],
       "topNotes": [
         "galbanum",
-        "lemon",
+        "limao-siciliano",
         "neroli",
         "petitgrain",
         "bergamota"
@@ -3849,7 +5218,7 @@
         "eau-de-parfum"
       ],
       "topNotes": [
-        "lemon",
+        "limao-siciliano",
         "aquatic-notes",
         "mint"
       ],
@@ -3912,7 +5281,7 @@
       ],
       "topNotes": [
         "bergamota",
-        "lemon"
+        "limao-siciliano"
       ],
       "heartNotes": [
         "star-anise",
@@ -3981,7 +5350,7 @@
         "ginger"
       ],
       "baseNotes": [
-        "sandalwood",
+        "sandalo",
         "baunilha",
         "honey"
       ],
@@ -4039,12 +5408,12 @@
       ],
       "heartNotes": [
         "nutmeg",
-        "orange-blossom",
+        "laranja-blossom",
         "lavender"
       ],
       "baseNotes": [
         "tonka-bean",
-        "amber",
+        "ambar",
         "leather"
       ],
       "accords": [],
@@ -4227,7 +5596,7 @@
         "vanilla-absolute",
         "blond-woods",
         "orcanox",
-        "amber",
+        "ambar",
         "patchouli"
       ],
       "accords": [],
@@ -4291,7 +5660,7 @@
         "peony"
       ],
       "baseNotes": [
-        "amber",
+        "ambar",
         "baunilha",
         "vetiver",
         "moss",
@@ -4401,12 +5770,12 @@
       ],
       "heartNotes": [
         "bulgarian-rose",
-        "orange-blossom"
+        "laranja-blossom"
       ],
       "baseNotes": [
         "oud",
         "patchouli",
-        "amber",
+        "ambar",
         "musk"
       ],
       "accords": [],
@@ -4462,7 +5831,7 @@
       ],
       "heartNotes": [
         "black-tea",
-        "cinnamon",
+        "canela",
         "pimento"
       ],
       "baseNotes": [
@@ -4742,7 +6111,7 @@
       "topNotes": [
         "grapefruit",
         "bergamota",
-        "orange"
+        "laranja"
       ],
       "heartNotes": [
         "almond",
@@ -4805,9 +6174,9 @@
         "pink-pepper"
       ],
       "heartNotes": [
-        "cinnamon",
+        "canela",
         "heliotrope",
-        "plum"
+        "ameixa"
       ],
       "baseNotes": [
         "tobacco",
@@ -4864,7 +6233,7 @@
       ],
       "topNotes": [
         "citrus-fruits",
-        "orange-blossom",
+        "laranja-blossom",
         "rosemary"
       ],
       "heartNotes": [
@@ -4924,7 +6293,7 @@
         "eau-de-parfum"
       ],
       "topNotes": [
-        "lemon",
+        "limao-siciliano",
         "star-anise",
         "bergamota",
         "grapefruit",
@@ -4932,7 +6301,7 @@
       ],
       "heartNotes": [
         "cedar",
-        "sandalwood",
+        "sandalo",
         "tea",
         "lavender"
       ],
@@ -4995,14 +6364,14 @@
       ],
       "heartNotes": [
         "rose",
-        "cinnamon",
+        "canela",
         "peach"
       ],
       "baseNotes": [
         "oud",
         "leather",
-        "sandalwood",
-        "amber",
+        "sandalo",
+        "ambar",
         "musk"
       ],
       "accords": [],
@@ -5054,8 +6423,8 @@
       ],
       "topNotes": [
         "bergamota",
-        "lemon",
-        "orange"
+        "limao-siciliano",
+        "laranja"
       ],
       "heartNotes": [
         "nutmeg",
@@ -5116,18 +6485,18 @@
       "topNotes": [
         "lavender",
         "bergamota",
-        "lemon",
-        "lemon-vervain",
+        "limao-siciliano",
+        "limao-siciliano-vervain",
         "artemisia",
         "basil",
         "rosemary"
       ],
       "heartNotes": [
         "coriander",
-        "juniper",
+        "zimbro",
         "carnation",
         "jasmine",
-        "cinnamon"
+        "canela"
       ],
       "baseNotes": [
         "oakmoss",
@@ -5135,9 +6504,9 @@
         "patchouli",
         "cedarwood",
         "leather",
-        "sandalwood",
+        "sandalo",
         "vetiver",
-        "amber"
+        "ambar"
       ],
       "accords": [],
       "occasions": [],
@@ -5188,19 +6557,19 @@
       ],
       "topNotes": [
         "cardamom",
-        "lemon",
+        "limao-siciliano",
         "provencal-lavender"
       ],
       "heartNotes": [
         "coffee",
         "mineral-notes",
-        "cinnamon",
+        "canela",
         "leather",
         "whisky"
       ],
       "baseNotes": [
         "tonka-bean",
-        "amber",
+        "ambar",
         "frankincense"
       ],
       "accords": [],
@@ -5250,9 +6619,25 @@
       "concentrations": [
         "eau-de-parfum"
       ],
-      "topNotes": [],
-      "heartNotes": [],
-      "baseNotes": [],
+      "topNotes": [
+        "canela",
+        "honey",
+        "labdanum",
+        "ambergris",
+        "tonka-bean",
+        "patchouli"
+      ],
+      "heartNotes": [
+        "benzoin",
+        "labdanum",
+        "ambergris",
+        "tonka-bean",
+        "patchouli"
+      ],
+      "baseNotes": [
+        "tonka-bean",
+        "patchouli"
+      ],
       "accords": [],
       "occasions": [],
       "formality": 0.5,
@@ -5472,7 +6857,7 @@
         "fir-balsam",
         "moss",
         "vetiver",
-        "sandalwood",
+        "sandalo",
         "suede"
       ],
       "accords": [],
@@ -5685,12 +7070,12 @@
         "bergamota"
       ],
       "heartNotes": [
-        "plum",
+        "ameixa",
         "palo-santo",
         "black-pepper"
       ],
       "baseNotes": [
-        "sandalwood",
+        "sandalo",
         "oud"
       ],
       "accords": [],
@@ -5747,12 +7132,12 @@
       "heartNotes": [
         "nutmeg",
         "water-lily",
-        "cinnamon"
+        "canela"
       ],
       "baseNotes": [
-        "sandalwood",
+        "sandalo",
         "vetiver",
-        "amber",
+        "ambar",
         "tobacco"
       ],
       "accords": [],
@@ -6009,10 +7394,10 @@
         "eau-de-parfum"
       ],
       "topNotes": [
-        "orange-blossom",
+        "laranja-blossom",
         "bergamota",
         "fruits",
-        "lemon"
+        "limao-siciliano"
       ],
       "heartNotes": [
         "heliotrope",
@@ -6028,8 +7413,8 @@
         "musk",
         "styrax",
         "tonka-bean",
-        "amber",
-        "sandalwood"
+        "ambar",
+        "sandalo"
       ],
       "accords": [],
       "occasions": [],
@@ -6136,7 +7521,9 @@
       "concentrations": [
         "eau-de-parfum"
       ],
-      "topNotes": [],
+      "topNotes": [
+        "clementine"
+      ],
       "heartNotes": [],
       "baseNotes": [],
       "accords": [],
@@ -6187,21 +7574,21 @@
         "eau-de-parfum"
       ],
       "topNotes": [
-        "orange-blossom",
+        "laranja-blossom",
         "bergamota",
         "mandarin-orange",
-        "lemon"
+        "limao-siciliano"
       ],
       "heartNotes": [
         "heliotrope",
-        "cinnamon",
+        "canela",
         "lily-of-the-valley",
         "jasmine"
       ],
       "baseNotes": [
         "baunilha",
         "tonka-bean",
-        "sandalwood",
+        "sandalo",
         "patchouli"
       ],
       "accords": [],
@@ -6251,9 +7638,32 @@
       "concentrations": [
         "eau-de-parfum"
       ],
-      "topNotes": [],
-      "heartNotes": [],
-      "baseNotes": [],
+      "topNotes": [
+        "raspberry",
+        "geranium",
+        "iris",
+        "jasmine-sambac",
+        "caramel",
+        "sandalo",
+        "heliotrope",
+        "white-musk"
+      ],
+      "heartNotes": [
+        "tuberose",
+        "iris",
+        "jasmine-sambac",
+        "caramel",
+        "sandalo",
+        "heliotrope",
+        "white-musk"
+      ],
+      "baseNotes": [
+        "baunilha",
+        "caramel",
+        "sandalo",
+        "heliotrope",
+        "white-musk"
+      ],
       "accords": [],
       "occasions": [],
       "formality": 0.5,
@@ -6314,7 +7724,7 @@
       ],
       "baseNotes": [
         "white-musk",
-        "amber",
+        "ambar",
         "frankincense",
         "baunilha",
         "patchouli"
@@ -6436,8 +7846,20 @@
         "eau-de-parfum"
       ],
       "topNotes": [],
-      "heartNotes": [],
-      "baseNotes": [],
+      "heartNotes": [
+        "dark-chocolate",
+        "coffee",
+        "almond",
+        "sandalo",
+        "baunilha",
+        "tonka-bean"
+      ],
+      "baseNotes": [
+        "caramel",
+        "sandalo",
+        "baunilha",
+        "tonka-bean"
+      ],
       "accords": [],
       "occasions": [],
       "formality": 0.5,
@@ -6485,9 +7907,23 @@
       "concentrations": [
         "eau-de-parfum"
       ],
-      "topNotes": [],
-      "heartNotes": [],
-      "baseNotes": [],
+      "topNotes": [
+        "limao-siciliano",
+        "rum",
+        "patchouli",
+        "nutmeg",
+        "musk"
+      ],
+      "heartNotes": [
+        "cedar",
+        "patchouli",
+        "nutmeg",
+        "musk"
+      ],
+      "baseNotes": [
+        "ambar",
+        "musk"
+      ],
       "accords": [],
       "occasions": [],
       "formality": 0.5,
@@ -6613,7 +8049,7 @@
       "baseNotes": [
         "benzoin",
         "patchouli",
-        "sandalwood"
+        "sandalo"
       ],
       "accords": [],
       "occasions": [],
@@ -6726,7 +8162,7 @@
         "eau-de-parfum"
       ],
       "topNotes": [
-        "lemon-leaf",
+        "limao-siciliano-leaf",
         "bergamota",
         "tamarind"
       ],
@@ -6739,7 +8175,7 @@
       "baseNotes": [
         "cedar",
         "musk",
-        "amber"
+        "ambar"
       ],
       "accords": [],
       "occasions": [],
@@ -6795,7 +8231,7 @@
       "heartNotes": [
         "iris",
         "jasmine",
-        "orange-blossom"
+        "laranja-blossom"
       ],
       "baseNotes": [
         "praline",
@@ -6963,9 +8399,19 @@
       "concentrations": [
         "eau-de-parfum"
       ],
-      "topNotes": [],
-      "heartNotes": [],
-      "baseNotes": [],
+      "topNotes": [
+        "fig",
+        "violet",
+        "cardamom"
+      ],
+      "heartNotes": [
+        "iris",
+        "papyrus"
+      ],
+      "baseNotes": [
+        "sandalo",
+        "cedar"
+      ],
       "accords": [],
       "occasions": [],
       "formality": 0.5,
@@ -7172,7 +8618,12 @@
       "concentrations": [
         "eau-de-parfum"
       ],
-      "topNotes": [],
+      "topNotes": [
+        "citron",
+        "laranja",
+        "limao-siciliano",
+        "mint"
+      ],
       "heartNotes": [],
       "baseNotes": [],
       "accords": [],
@@ -7225,13 +8676,13 @@
       "topNotes": [
         "cardamom",
         "bergamota",
-        "lemon"
+        "limao-siciliano"
       ],
       "heartNotes": [
         "blackcurrant",
         "hemp",
         "tonka-bean",
-        "cinnamon"
+        "canela"
       ],
       "baseNotes": [
         "musk",
@@ -7442,7 +8893,7 @@
         "ginger"
       ],
       "heartNotes": [
-        "amber",
+        "ambar",
         "egyptian-jasmine",
         "moroccan-rose"
       ],
@@ -7450,7 +8901,7 @@
         "white-musk",
         "baunilha",
         "oakmoss",
-        "sandalwood"
+        "sandalo"
       ],
       "accords": [],
       "occasions": [],
@@ -7500,9 +8951,9 @@
         "eau-de-parfum"
       ],
       "topNotes": [
-        "juniper",
+        "zimbro",
         "cardamom",
-        "sicilian-lemon"
+        "limao-siciliano"
       ],
       "heartNotes": [
         "leather",
@@ -7513,7 +8964,7 @@
       "baseNotes": [
         "labdanum",
         "woods",
-        "amber",
+        "ambar",
         "benzoin"
       ],
       "accords": [],
@@ -7721,9 +9172,9 @@
         "eau-de-parfum"
       ],
       "topNotes": [
-        "juniper-berry",
+        "zimbro",
         "bergamota",
-        "cinnamon",
+        "canela",
         "lavender",
         "mint",
         "coriander",
@@ -7731,18 +9182,18 @@
       ],
       "heartNotes": [
         "geranium",
-        "orange-blossom",
+        "laranja-blossom",
         "jasmine",
         "violet"
       ],
       "baseNotes": [
         "raspberry",
         "baunilha",
-        "amber",
+        "ambar",
         "musk",
         "oakmoss",
         "patchouli",
-        "sandalwood",
+        "sandalo",
         "tonka-bean",
         "dark-chocolate",
         "vetiver"
@@ -7809,7 +9260,7 @@
         "cashmere-wood",
         "cedar",
         "oakmoss",
-        "sandalwood"
+        "sandalo"
       ],
       "accords": [],
       "occasions": [],
@@ -7941,11 +9392,11 @@
       "baseNotes": [
         "coffee",
         "tonka-bean",
-        "amber",
+        "ambar",
         "benzoin",
         "musk",
         "baunilha",
-        "sandalwood",
+        "sandalo",
         "styrax"
       ],
       "accords": [],
@@ -7997,7 +9448,13 @@
       ],
       "topNotes": [],
       "heartNotes": [],
-      "baseNotes": [],
+      "baseNotes": [
+        "tonka-bean",
+        "coffee",
+        "cocoa",
+        "baunilha",
+        "licorice"
+      ],
       "accords": [],
       "occasions": [],
       "formality": 0.5,
@@ -8063,14 +9520,14 @@
         "apricot",
         "blackberry",
         "lily-of-the-valley",
-        "plum",
+        "ameixa",
         "rose"
       ],
       "baseNotes": [
         "patchouli",
         "chocolate",
         "caramel",
-        "amber",
+        "ambar",
         "musk",
         "tonka-bean",
         "baunilha"
@@ -8284,7 +9741,7 @@
         "moss",
         "musk",
         "cedar",
-        "amber"
+        "ambar"
       ],
       "accords": [],
       "occasions": [],
@@ -8334,10 +9791,10 @@
         "eau-de-parfum"
       ],
       "topNotes": [
-        "orange-blossom",
+        "laranja-blossom",
         "bergamota",
         "coriander",
-        "lemon",
+        "limao-siciliano",
         "mandarin-orange"
       ],
       "heartNotes": [
@@ -8349,7 +9806,7 @@
       "baseNotes": [
         "tonka-bean",
         "benzoin",
-        "amber",
+        "ambar",
         "cedar"
       ],
       "accords": [],
@@ -8574,7 +10031,7 @@
         "peppermint"
       ],
       "heartNotes": [
-        "cinnamon",
+        "canela",
         "rose-absolute"
       ],
       "baseNotes": [
@@ -8700,7 +10157,7 @@
       "baseNotes": [
         "vetiver",
         "white-cedarwood",
-        "amber",
+        "ambar",
         "musk",
         "baunilha"
       ],
@@ -8821,16 +10278,16 @@
         "black-pepper"
       ],
       "heartNotes": [
-        "orange-blossom-absolute",
+        "laranja-blossom-absolute",
         "lavender",
         "solar-note"
       ],
       "baseNotes": [
         "roasted-tonka-bean",
-        "amber",
+        "ambar",
         "precious-woods",
         "moss",
-        "sandalwood"
+        "sandalo"
       ],
       "accords": [],
       "occasions": [],
@@ -8949,7 +10406,7 @@
       ],
       "heartNotes": [
         "musk",
-        "orange-blossom",
+        "laranja-blossom",
         "geranium",
         "myrrh",
         "vetiver"
@@ -8959,7 +10416,7 @@
         "baunilha",
         "patchouli",
         "saffron",
-        "sandalwood",
+        "sandalo",
         "tonka-bean",
         "leather"
       ],
@@ -9066,9 +10523,23 @@
       "concentrations": [
         "eau-de-parfum"
       ],
-      "topNotes": [],
-      "heartNotes": [],
-      "baseNotes": [],
+      "topNotes": [
+        "ginger",
+        "bergamota",
+        "violet-leaf",
+        "white-pepper",
+        "cedar"
+      ],
+      "heartNotes": [
+        "spices",
+        "violet-leaf",
+        "white-pepper",
+        "cedar"
+      ],
+      "baseNotes": [
+        "tonka-bean",
+        "cedar"
+      ],
       "accords": [],
       "occasions": [],
       "formality": 0.5,
@@ -9466,9 +10937,9 @@
         "musk",
         "tonka-bean",
         "baunilha",
-        "amber",
+        "ambar",
         "patchouli",
-        "sandalwood"
+        "sandalo"
       ],
       "accords": [],
       "occasions": [],
@@ -9530,7 +11001,7 @@
       "baseNotes": [
         "indian-oud",
         "italian-leather",
-        "amber"
+        "ambar"
       ],
       "accords": [],
       "occasions": [],
@@ -9581,11 +11052,11 @@
       ],
       "topNotes": [
         "lime",
-        "lemon",
+        "limao-siciliano",
         "mandarin-orange"
       ],
       "heartNotes": [
-        "orange-blossom",
+        "laranja-blossom",
         "jasmine"
       ],
       "baseNotes": [
@@ -9656,9 +11127,9 @@
       "baseNotes": [
         "coffee",
         "baunilha",
-        "amber",
+        "ambar",
         "patchouli",
-        "sandalwood"
+        "sandalo"
       ],
       "accords": [],
       "occasions": [],
@@ -9777,7 +11248,7 @@
         "ginger",
         "patchouli",
         "pepper",
-        "sandalwood"
+        "sandalo"
       ],
       "accords": [],
       "occasions": [],
@@ -9827,7 +11298,7 @@
         "eau-de-parfum"
       ],
       "topNotes": [
-        "lemon",
+        "limao-siciliano",
         "litsea-cubeba",
         "bergamota",
         "grapefruit",
@@ -9846,14 +11317,14 @@
       ],
       "baseNotes": [
         "cedarwood",
-        "juniper-berry",
+        "zimbro",
         "moss",
         "musk",
         "vetiver",
         "benzoin",
         "iris",
         "labdanum",
-        "sandalwood",
+        "sandalo",
         "baunilha",
         "galbanum"
       ],
@@ -10014,9 +11485,24 @@
       "concentrations": [
         "eau-de-parfum"
       ],
-      "topNotes": [],
-      "heartNotes": [],
-      "baseNotes": [],
+      "topNotes": [
+        "tea",
+        "honey",
+        "ambar",
+        "cocoa"
+      ],
+      "heartNotes": [
+        "canela",
+        "honey",
+        "ambar",
+        "cocoa"
+      ],
+      "baseNotes": [
+        "pepper",
+        "honey",
+        "ambar",
+        "cocoa"
+      ],
       "accords": [],
       "occasions": [],
       "formality": 0.5,
@@ -10200,7 +11686,7 @@
       ],
       "topNotes": [
         "grapefruit",
-        "orange-blossom",
+        "laranja-blossom",
         "sage",
         "woods"
       ],
@@ -10261,7 +11747,14 @@
       "concentrations": [
         "eau-de-parfum"
       ],
-      "topNotes": [],
+      "topNotes": [
+        "bergamota",
+        "mandarin-orange",
+        "limao-siciliano",
+        "bitter-orange",
+        "lavender",
+        "rosemary"
+      ],
       "heartNotes": [],
       "baseNotes": [],
       "accords": [],
@@ -10331,7 +11824,7 @@
         "opoponax",
         "benzoin-siam",
         "styrax",
-        "amber",
+        "ambar",
         "leather",
         "baunilha",
         "vetiver",
@@ -10604,7 +12097,7 @@
       ],
       "topNotes": [
         "bergamota",
-        "lemon",
+        "limao-siciliano",
         "rosemary"
       ],
       "heartNotes": [
@@ -10614,7 +12107,7 @@
       ],
       "baseNotes": [
         "tonka-bean",
-        "amber",
+        "ambar",
         "frankincense"
       ],
       "accords": [],
@@ -10670,7 +12163,7 @@
         "bergamota",
         "rosewood",
         "basil",
-        "juniper"
+        "zimbro"
       ],
       "heartNotes": [
         "heliotrope",
@@ -10685,12 +12178,12 @@
       ],
       "baseNotes": [
         "tonka-bean",
-        "amber",
+        "ambar",
         "cedar",
         "iris",
         "musk",
         "patchouli",
-        "sandalwood",
+        "sandalo",
         "baunilha",
         "vetiver"
       ],
@@ -10754,7 +12247,7 @@
       ],
       "baseNotes": [
         "patchouli-orpur",
-        "sandalwood",
+        "sandalo",
         "baunilha",
         "vetiver-orpur",
         "virginia-cedar",
@@ -10818,7 +12311,7 @@
       ],
       "baseNotes": [
         "musk",
-        "amber",
+        "ambar",
         "sycamore-wood"
       ],
       "accords": [],
@@ -10938,7 +12431,7 @@
         "saffron"
       ],
       "heartNotes": [
-        "cinnamon-leaf",
+        "canela-leaf",
         "habanero-chili",
         "provencal-lavender",
         "lavender"
@@ -11123,261 +12616,9 @@
         "moroccan-neroli"
       ],
       "baseNotes": [
-        "amber",
+        "ambar",
         "mysore-sandalwood",
         "patchouli"
-      ],
-      "accords": [],
-      "occasions": [],
-      "formality": 0.5,
-      "performance": {
-        "longevity": {
-          "minimumHours": 4,
-          "maximumHours": 6,
-          "confidence": "low"
-        },
-        "projection": {
-          "value": 0.5,
-          "confidence": "low"
-        },
-        "sillage": {
-          "value": 0.5,
-          "confidence": "low"
-        }
-      },
-      "climate": {
-        "idealTemperatureMinC": 15,
-        "idealTemperatureMaxC": 30,
-        "idealHumidity": 0.5,
-        "indoorFit": 0.8,
-        "outdoorFit": 0.8
-      },
-      "priceTier": 2,
-      "dataConfidence": "medium",
-      "evidence": [
-        {
-          "sourceId": "parfumo_dataset",
-          "kind": "open_source",
-          "confidence": "medium",
-          "license": "CC0-1.0"
-        }
-      ]
-    },
-    {
-      "id": "parfumo-xerjoff-casamorati---bouquet-ideale-xerjoff-2009-eau-de-parfum",
-      "name": "Casamorati - Bouquet Ideale XerJoff 2009 Eau de Parfum",
-      "brand": "xerjoff",
-      "family": "não-classificada",
-      "segments": [
-        "acessivel"
-      ],
-      "concentrations": [
-        "eau-de-parfum"
-      ],
-      "topNotes": [
-        "cinnamon",
-        "nutmeg"
-      ],
-      "heartNotes": [
-        "gaiac-wood",
-        "amyris",
-        "cedarwood",
-        "papyrus"
-      ],
-      "baseNotes": [
-        "baunilha",
-        "coumarin",
-        "musk",
-        "tobacco-flower"
-      ],
-      "accords": [],
-      "occasions": [],
-      "formality": 0.5,
-      "performance": {
-        "longevity": {
-          "minimumHours": 4,
-          "maximumHours": 6,
-          "confidence": "low"
-        },
-        "projection": {
-          "value": 0.5,
-          "confidence": "low"
-        },
-        "sillage": {
-          "value": 0.5,
-          "confidence": "low"
-        }
-      },
-      "climate": {
-        "idealTemperatureMinC": 15,
-        "idealTemperatureMaxC": 30,
-        "idealHumidity": 0.5,
-        "indoorFit": 0.8,
-        "outdoorFit": 0.8
-      },
-      "priceTier": 2,
-      "dataConfidence": "medium",
-      "evidence": [
-        {
-          "sourceId": "parfumo_dataset",
-          "kind": "open_source",
-          "confidence": "medium",
-          "license": "CC0-1.0"
-        }
-      ]
-    },
-    {
-      "id": "parfumo-xerjoff-casamorati---dolce-amalfi-xerjoff-2017-eau-de-parfum",
-      "name": "Casamorati - Dolce Amalfi XerJoff 2017 Eau de Parfum",
-      "brand": "xerjoff",
-      "family": "não-classificada",
-      "segments": [
-        "acessivel"
-      ],
-      "concentrations": [
-        "eau-de-parfum"
-      ],
-      "topNotes": [
-        "quince",
-        "apple",
-        "cardamom",
-        "saffron"
-      ],
-      "heartNotes": [
-        "clove",
-        "tolu-balm",
-        "frankincense"
-      ],
-      "baseNotes": [
-        "baunilha",
-        "musk",
-        "tonka-bean",
-        "amber",
-        "cedarwood"
-      ],
-      "accords": [],
-      "occasions": [],
-      "formality": 0.5,
-      "performance": {
-        "longevity": {
-          "minimumHours": 4,
-          "maximumHours": 6,
-          "confidence": "low"
-        },
-        "projection": {
-          "value": 0.5,
-          "confidence": "low"
-        },
-        "sillage": {
-          "value": 0.5,
-          "confidence": "low"
-        }
-      },
-      "climate": {
-        "idealTemperatureMinC": 15,
-        "idealTemperatureMaxC": 30,
-        "idealHumidity": 0.5,
-        "indoorFit": 0.8,
-        "outdoorFit": 0.8
-      },
-      "priceTier": 2,
-      "dataConfidence": "medium",
-      "evidence": [
-        {
-          "sourceId": "parfumo_dataset",
-          "kind": "open_source",
-          "confidence": "medium",
-          "license": "CC0-1.0"
-        }
-      ]
-    },
-    {
-      "id": "parfumo-xerjoff-casamorati---italica",
-      "name": "Casamorati - Italica",
-      "brand": "xerjoff",
-      "family": "não-classificada",
-      "segments": [
-        "acessivel"
-      ],
-      "concentrations": [
-        "eau-de-parfum"
-      ],
-      "topNotes": [
-        "milk",
-        "sicilian-almond",
-        "saffron"
-      ],
-      "heartNotes": [
-        "toffee",
-        "bourbon-vanilla"
-      ],
-      "baseNotes": [
-        "white-musk",
-        "cedarwood",
-        "sandalwood"
-      ],
-      "accords": [],
-      "occasions": [],
-      "formality": 0.5,
-      "performance": {
-        "longevity": {
-          "minimumHours": 4,
-          "maximumHours": 6,
-          "confidence": "low"
-        },
-        "projection": {
-          "value": 0.5,
-          "confidence": "low"
-        },
-        "sillage": {
-          "value": 0.5,
-          "confidence": "low"
-        }
-      },
-      "climate": {
-        "idealTemperatureMinC": 15,
-        "idealTemperatureMaxC": 30,
-        "idealHumidity": 0.5,
-        "indoorFit": 0.8,
-        "outdoorFit": 0.8
-      },
-      "priceTier": 2,
-      "dataConfidence": "medium",
-      "evidence": [
-        {
-          "sourceId": "parfumo_dataset",
-          "kind": "open_source",
-          "confidence": "medium",
-          "license": "CC0-1.0"
-        }
-      ]
-    },
-    {
-      "id": "parfumo-xerjoff-casamorati---mefisto",
-      "name": "Casamorati - Mefisto",
-      "brand": "xerjoff",
-      "family": "não-classificada",
-      "segments": [
-        "acessivel"
-      ],
-      "concentrations": [
-        "eau-de-parfum"
-      ],
-      "topNotes": [
-        "bergamota",
-        "grapefruit",
-        "lavender",
-        "calabrian-lemon"
-      ],
-      "heartNotes": [
-        "rose-absolute",
-        "florentine-iris"
-      ],
-      "baseNotes": [
-        "musk",
-        "amber",
-        "cedarwood",
-        "mysore-sandalwood"
       ],
       "accords": [],
       "occasions": [],
@@ -11504,7 +12745,7 @@
       ],
       "baseNotes": [
         "white-musk",
-        "amber",
+        "ambar",
         "bourbon-vanilla",
         "woods"
       ],
@@ -11566,9 +12807,9 @@
         "jasmine-absolute"
       ],
       "baseNotes": [
-        "amber",
+        "ambar",
         "haitian-vetiver",
-        "sandalwood",
+        "sandalo",
         "white-oud",
         "patchouli"
       ],
@@ -11626,7 +12867,7 @@
         "peach"
       ],
       "heartNotes": [
-        "amber",
+        "ambar",
         "leather",
         "persian-saffron",
         "rose",
@@ -11759,13 +13000,13 @@
         "orris-root",
         "patchouli",
         "vetiver",
-        "cinnamon"
+        "canela"
       ],
       "baseNotes": [
         "civet",
         "musk",
         "oakmoss",
-        "amber",
+        "ambar",
         "frankincense",
         "honey",
         "leather",
@@ -11884,7 +13125,7 @@
       "topNotes": [
         "mandarin-orange",
         "mineral-notes",
-        "orange",
+        "laranja",
         "bergamota"
       ],
       "heartNotes": [
@@ -11895,7 +13136,7 @@
       "baseNotes": [
         "labdanum",
         "myrrh",
-        "amber",
+        "ambar",
         "musk",
         "vetiver"
       ],
@@ -12014,7 +13255,7 @@
         "baunilha"
       ],
       "baseNotes": [
-        "sandalwood"
+        "sandalo"
       ],
       "accords": [],
       "occasions": [],
@@ -12154,7 +13395,7 @@
     },
     {
       "id": "pdf-ameixa-506bcad4",
-      "name": "Ameixa",
+      "name": "Ameixa (Desodorante Colônia)",
       "brand": "Desconhecida",
       "family": "não-classificada",
       "segments": [
@@ -13399,10 +14640,666 @@
           "retrievedAt": "2026-07-23"
         }
       ]
+    },
+    {
+      "id": "poison-girl-q140101602",
+      "name": "Poison Girl",
+      "brand": "Desconhecida",
+      "family": "não-classificada",
+      "segments": [
+        "acessivel"
+      ],
+      "concentrations": [
+        "eau-de-parfum"
+      ],
+      "topNotes": [
+        "laranja-amarga",
+        "limao"
+      ],
+      "heartNotes": [
+        "flor-de-laranjeira",
+        "rosa",
+        "heliotropio",
+        "amendoa"
+      ],
+      "baseNotes": [
+        "baunilha",
+        "fava-tonka",
+        "sandalo",
+        "cashmeran",
+        "balsamo-de-tolu"
+      ],
+      "accords": [],
+      "occasions": [],
+      "formality": 0.5,
+      "performance": {
+        "longevity": {
+          "minimumHours": 4,
+          "maximumHours": 6,
+          "confidence": "low"
+        },
+        "projection": {
+          "value": 0.5,
+          "confidence": "low"
+        },
+        "sillage": {
+          "value": 0.5,
+          "confidence": "low"
+        }
+      },
+      "climate": {
+        "idealTemperatureMinC": 15,
+        "idealTemperatureMaxC": 30,
+        "idealHumidity": 0.5,
+        "indoorFit": 0.8,
+        "outdoorFit": 0.8
+      },
+      "priceTier": 2,
+      "dataConfidence": "medium",
+      "evidence": [
+        {
+          "sourceId": "wikidata",
+          "kind": "open_source",
+          "confidence": "medium",
+          "license": "CC0-1.0",
+          "sourceUrl": "https://www.wikidata.org/wiki/Q140101602",
+          "retrievedAt": "2026-07-22"
+        }
+      ]
+    },
+    {
+      "id": "printemps-q140453489",
+      "name": "Printemps",
+      "brand": "Desconhecida",
+      "family": "não-classificada",
+      "segments": [
+        "acessivel"
+      ],
+      "concentrations": [
+        "eau-de-parfum"
+      ],
+      "topNotes": [
+        "limao",
+        "maca",
+        "pessego"
+      ],
+      "heartNotes": [
+        "lirio-do-vale",
+        "jasmim",
+        "mel"
+      ],
+      "baseNotes": [
+        "sandalo",
+        "almiscar",
+        "madeiras-transparentes"
+      ],
+      "accords": [],
+      "occasions": [],
+      "formality": 0.5,
+      "performance": {
+        "longevity": {
+          "minimumHours": 4,
+          "maximumHours": 6,
+          "confidence": "low"
+        },
+        "projection": {
+          "value": 0.5,
+          "confidence": "low"
+        },
+        "sillage": {
+          "value": 0.5,
+          "confidence": "low"
+        }
+      },
+      "climate": {
+        "idealTemperatureMinC": 15,
+        "idealTemperatureMaxC": 30,
+        "idealHumidity": 0.5,
+        "indoorFit": 0.8,
+        "outdoorFit": 0.8
+      },
+      "priceTier": 2,
+      "dataConfidence": "medium",
+      "evidence": [
+        {
+          "sourceId": "wikidata",
+          "kind": "open_source",
+          "confidence": "medium",
+          "license": "CC0-1.0",
+          "sourceUrl": "https://www.wikidata.org/wiki/Q140453489",
+          "retrievedAt": "2026-07-22"
+        }
+      ]
+    },
+    {
+      "id": "september-q138611384",
+      "name": "September",
+      "brand": "Desconhecida",
+      "family": "não-classificada",
+      "segments": [
+        "acessivel"
+      ],
+      "concentrations": [
+        "eau-de-parfum"
+      ],
+      "topNotes": [
+        "eucalipto",
+        "kumquat",
+        "pomelo"
+      ],
+      "heartNotes": [
+        "flor-de-macieira",
+        "lavanda",
+        "pralina"
+      ],
+      "baseNotes": [
+        "madeira-de-guaiaco",
+        "papiros",
+        "fumaca-de-vetiver"
+      ],
+      "accords": [],
+      "occasions": [],
+      "formality": 0.5,
+      "performance": {
+        "longevity": {
+          "minimumHours": 4,
+          "maximumHours": 6,
+          "confidence": "low"
+        },
+        "projection": {
+          "value": 0.5,
+          "confidence": "low"
+        },
+        "sillage": {
+          "value": 0.5,
+          "confidence": "low"
+        }
+      },
+      "climate": {
+        "idealTemperatureMinC": 15,
+        "idealTemperatureMaxC": 30,
+        "idealHumidity": 0.5,
+        "indoorFit": 0.8,
+        "outdoorFit": 0.8
+      },
+      "priceTier": 2,
+      "dataConfidence": "medium",
+      "evidence": [
+        {
+          "sourceId": "wikidata",
+          "kind": "open_source",
+          "confidence": "medium",
+          "license": "CC0-1.0",
+          "sourceUrl": "https://www.wikidata.org/wiki/Q138611384",
+          "retrievedAt": "2026-07-22"
+        }
+      ]
+    },
+    {
+      "id": "this-is-not-a-pipe-q138028241",
+      "name": "This is Not a Pipe",
+      "brand": "Desconhecida",
+      "family": "não-classificada",
+      "segments": [
+        "acessivel"
+      ],
+      "concentrations": [
+        "eau-de-parfum"
+      ],
+      "topNotes": [
+        "cachimbo"
+      ],
+      "heartNotes": [
+        "pipe-tobacco"
+      ],
+      "baseNotes": [
+        "pipe-tobacco-smoke"
+      ],
+      "accords": [],
+      "occasions": [],
+      "formality": 0.5,
+      "performance": {
+        "longevity": {
+          "minimumHours": 4,
+          "maximumHours": 6,
+          "confidence": "low"
+        },
+        "projection": {
+          "value": 0.5,
+          "confidence": "low"
+        },
+        "sillage": {
+          "value": 0.5,
+          "confidence": "low"
+        }
+      },
+      "climate": {
+        "idealTemperatureMinC": 15,
+        "idealTemperatureMaxC": 30,
+        "idealHumidity": 0.5,
+        "indoorFit": 0.8,
+        "outdoorFit": 0.8
+      },
+      "priceTier": 2,
+      "dataConfidence": "medium",
+      "evidence": [
+        {
+          "sourceId": "wikidata",
+          "kind": "open_source",
+          "confidence": "medium",
+          "license": "CC0-1.0",
+          "sourceUrl": "https://www.wikidata.org/wiki/Q138028241",
+          "retrievedAt": "2026-07-22"
+        }
+      ]
+    },
+    {
+      "id": "tom-ford-for-men-q137182953",
+      "name": "Tom Ford for Men",
+      "brand": "Desconhecida",
+      "family": "não-classificada",
+      "segments": [
+        "acessivel"
+      ],
+      "concentrations": [
+        "eau-de-parfum"
+      ],
+      "topNotes": [
+        "bergamota",
+        "mandarina",
+        "folha-de-limao",
+        "flor-de-laranja",
+        "manjericao",
+        "geranio",
+        "violeta",
+        "gengibre"
+      ],
+      "heartNotes": [
+        "pimenta",
+        "flor-de-toranja",
+        "tabaco",
+        "nagarmota"
+      ],
+      "baseNotes": [
+        "ambar",
+        "couro",
+        "patchouli",
+        "cedro",
+        "musgo-de-carvalho",
+        "vetiver"
+      ],
+      "accords": [],
+      "occasions": [],
+      "formality": 0.5,
+      "performance": {
+        "longevity": {
+          "minimumHours": 4,
+          "maximumHours": 6,
+          "confidence": "low"
+        },
+        "projection": {
+          "value": 0.5,
+          "confidence": "low"
+        },
+        "sillage": {
+          "value": 0.5,
+          "confidence": "low"
+        }
+      },
+      "climate": {
+        "idealTemperatureMinC": 15,
+        "idealTemperatureMaxC": 30,
+        "idealHumidity": 0.5,
+        "indoorFit": 0.8,
+        "outdoorFit": 0.8
+      },
+      "priceTier": 2,
+      "dataConfidence": "medium",
+      "evidence": [
+        {
+          "sourceId": "wikidata",
+          "kind": "open_source",
+          "confidence": "medium",
+          "license": "CC0-1.0",
+          "sourceUrl": "https://www.wikidata.org/wiki/Q137182953",
+          "retrievedAt": "2026-07-22"
+        }
+      ]
+    },
+    {
+      "id": "virtus-q138773649",
+      "name": "Virtus",
+      "brand": "Desconhecida",
+      "family": "não-classificada",
+      "segments": [
+        "acessivel"
+      ],
+      "concentrations": [
+        "eau-de-parfum"
+      ],
+      "topNotes": [
+        "manga",
+        "bergamota",
+        "cardamomo",
+        "salvia-clara"
+      ],
+      "heartNotes": [
+        "noz-moscada",
+        "afranco",
+        "canela",
+        "davana",
+        "leite-de-figo",
+        "mel"
+      ],
+      "baseNotes": [
+        "cinzento-ambarino",
+        "patchouli",
+        "baunilha",
+        "absoluto-de-cera-de-abelha",
+        "benzoina",
+        "madeira-deriva",
+        "absoluto-de-labdano",
+        "almiscar",
+        "tabaco"
+      ],
+      "accords": [],
+      "occasions": [],
+      "formality": 0.5,
+      "performance": {
+        "longevity": {
+          "minimumHours": 4,
+          "maximumHours": 6,
+          "confidence": "low"
+        },
+        "projection": {
+          "value": 0.5,
+          "confidence": "low"
+        },
+        "sillage": {
+          "value": 0.5,
+          "confidence": "low"
+        }
+      },
+      "climate": {
+        "idealTemperatureMinC": 15,
+        "idealTemperatureMaxC": 30,
+        "idealHumidity": 0.5,
+        "indoorFit": 0.8,
+        "outdoorFit": 0.8
+      },
+      "priceTier": 2,
+      "dataConfidence": "medium",
+      "evidence": [
+        {
+          "sourceId": "wikidata",
+          "kind": "open_source",
+          "confidence": "medium",
+          "license": "CC0-1.0",
+          "sourceUrl": "https://www.wikidata.org/wiki/Q138773649",
+          "retrievedAt": "2026-07-22"
+        }
+      ]
+    },
+    {
+      "id": "winter-26-q137912111",
+      "name": "Winter 26",
+      "brand": "Desconhecida",
+      "family": "não-classificada",
+      "segments": [
+        "acessivel"
+      ],
+      "concentrations": [
+        "eau-de-parfum"
+      ],
+      "topNotes": [
+        "pimenta-sichuan",
+        "eugenio",
+        "bergamota",
+        "cardamomo",
+        "cravo",
+        "limao",
+        "hortela-pimenta",
+        "manjericao"
+      ],
+      "heartNotes": [
+        "acacia-dealbata",
+        "alga",
+        "laranjeira",
+        "manjerona",
+        "jasmim-sambac",
+        "lavanda",
+        "folha-de-violeta"
+      ],
+      "baseNotes": [
+        "abies-balsamea",
+        "zimbro-da-virginia",
+        "patchouli",
+        "sandalo",
+        "musgo-de-carvalho",
+        "vetiver"
+      ],
+      "accords": [],
+      "occasions": [],
+      "formality": 0.5,
+      "performance": {
+        "longevity": {
+          "minimumHours": 4,
+          "maximumHours": 6,
+          "confidence": "low"
+        },
+        "projection": {
+          "value": 0.5,
+          "confidence": "low"
+        },
+        "sillage": {
+          "value": 0.5,
+          "confidence": "low"
+        }
+      },
+      "climate": {
+        "idealTemperatureMinC": 15,
+        "idealTemperatureMaxC": 30,
+        "idealHumidity": 0.5,
+        "indoorFit": 0.8,
+        "outdoorFit": 0.8
+      },
+      "priceTier": 2,
+      "dataConfidence": "medium",
+      "evidence": [
+        {
+          "sourceId": "wikidata",
+          "kind": "open_source",
+          "confidence": "medium",
+          "license": "CC0-1.0",
+          "sourceUrl": "https://www.wikidata.org/wiki/Q137912111",
+          "retrievedAt": "2026-07-22"
+        }
+      ]
+    },
+    {
+      "id": "wulong-cha-x-q138576966",
+      "name": "Wūlóng Chá X",
+      "brand": "Desconhecida",
+      "family": "não-classificada",
+      "segments": [
+        "acessivel"
+      ],
+      "concentrations": [
+        "eau-de-parfum"
+      ],
+      "topNotes": [
+        "laranja"
+      ],
+      "heartNotes": [],
+      "baseNotes": [],
+      "accords": [],
+      "occasions": [],
+      "formality": 0.5,
+      "performance": {
+        "longevity": {
+          "minimumHours": 4,
+          "maximumHours": 6,
+          "confidence": "low"
+        },
+        "projection": {
+          "value": 0.5,
+          "confidence": "low"
+        },
+        "sillage": {
+          "value": 0.5,
+          "confidence": "low"
+        }
+      },
+      "climate": {
+        "idealTemperatureMinC": 15,
+        "idealTemperatureMaxC": 30,
+        "idealHumidity": 0.5,
+        "indoorFit": 0.8,
+        "outdoorFit": 0.8
+      },
+      "priceTier": 2,
+      "dataConfidence": "medium",
+      "evidence": [
+        {
+          "sourceId": "wikidata",
+          "kind": "open_source",
+          "confidence": "medium",
+          "license": "CC0-1.0",
+          "sourceUrl": "https://www.wikidata.org/wiki/Q138576966",
+          "retrievedAt": "2026-07-22"
+        }
+      ]
+    },
+    {
+      "id": "zelen-q137527355",
+      "name": "Zelen",
+      "brand": "Desconhecida",
+      "family": "não-classificada",
+      "segments": [
+        "acessivel"
+      ],
+      "concentrations": [
+        "eau-de-parfum"
+      ],
+      "topNotes": [
+        "pimenta-rosa",
+        "bergamota",
+        "cardamomo",
+        "lima",
+        "yuzu"
+      ],
+      "heartNotes": [
+        "cera-de-abelha"
+      ],
+      "baseNotes": [
+        "vetiver-do-haiti",
+        "sandalo-de-mysore",
+        "cedro-da-virginia"
+      ],
+      "accords": [],
+      "occasions": [],
+      "formality": 0.5,
+      "performance": {
+        "longevity": {
+          "minimumHours": 4,
+          "maximumHours": 6,
+          "confidence": "low"
+        },
+        "projection": {
+          "value": 0.5,
+          "confidence": "low"
+        },
+        "sillage": {
+          "value": 0.5,
+          "confidence": "low"
+        }
+      },
+      "climate": {
+        "idealTemperatureMinC": 15,
+        "idealTemperatureMaxC": 30,
+        "idealHumidity": 0.5,
+        "indoorFit": 0.8,
+        "outdoorFit": 0.8
+      },
+      "priceTier": 2,
+      "dataConfidence": "medium",
+      "evidence": [
+        {
+          "sourceId": "wikidata",
+          "kind": "open_source",
+          "confidence": "medium",
+          "license": "CC0-1.0",
+          "sourceUrl": "https://www.wikidata.org/wiki/Q137527355",
+          "retrievedAt": "2026-07-22"
+        }
+      ]
+    },
+    {
+      "id": "zephyr-q138034992",
+      "name": "Zephyr",
+      "brand": "Desconhecida",
+      "family": "não-classificada",
+      "segments": [
+        "acessivel"
+      ],
+      "concentrations": [
+        "eau-de-parfum"
+      ],
+      "topNotes": [
+        "tangerina",
+        "papaia",
+        "cha-branco"
+      ],
+      "heartNotes": [
+        "madressilva",
+        "lirio-de-casablanca"
+      ],
+      "baseNotes": [
+        "ambar",
+        "sandalo",
+        "almiscar"
+      ],
+      "accords": [],
+      "occasions": [],
+      "formality": 0.5,
+      "performance": {
+        "longevity": {
+          "minimumHours": 4,
+          "maximumHours": 6,
+          "confidence": "low"
+        },
+        "projection": {
+          "value": 0.5,
+          "confidence": "low"
+        },
+        "sillage": {
+          "value": 0.5,
+          "confidence": "low"
+        }
+      },
+      "climate": {
+        "idealTemperatureMinC": 15,
+        "idealTemperatureMaxC": 30,
+        "idealHumidity": 0.5,
+        "indoorFit": 0.8,
+        "outdoorFit": 0.8
+      },
+      "priceTier": 2,
+      "dataConfidence": "medium",
+      "evidence": [
+        {
+          "sourceId": "wikidata",
+          "kind": "open_source",
+          "confidence": "medium",
+          "license": "CC0-1.0",
+          "sourceUrl": "https://www.wikidata.org/wiki/Q138034992",
+          "retrievedAt": "2026-07-22"
+        }
+      ]
     }
   ],
   "gateReport": {
-    "eligibleCount": 221,
+    "eligibleCount": 249,
     "minimumRequired": 20,
     "passesGate": true,
     "invalidReasons": []

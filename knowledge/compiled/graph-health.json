@@ -1,11 +1,11 @@
 {
   "schemaVersion": 2,
   "graph": {
-    "documentNodes": 702,
-    "evidenceNodes": 702,
-    "typedRelations": 1895,
-    "wikiReferences": 1862,
-    "evidenceLinks": 702
+    "documentNodes": 855,
+    "evidenceNodes": 855,
+    "typedRelations": 2223,
+    "wikiReferences": 1883,
+    "evidenceLinks": 855
   },
   "connectivity": {
     "components": [
@@ -45,6 +45,7 @@
           "antiquario:brand:dunhill",
           "antiquario:brand:editions-de-parfums-frederic-malle",
           "antiquario:brand:etnia",
+          "antiquario:brand:forage",
           "antiquario:brand:fragrance-one",
           "antiquario:brand:geoffrey-beene",
           "antiquario:brand:giorgio-armani",
@@ -53,20 +54,25 @@
           "antiquario:brand:guerlain",
           "antiquario:brand:guy-laroche",
           "antiquario:brand:halloween",
+          "antiquario:brand:hermes",
           "antiquario:brand:hugo-boss",
           "antiquario:brand:initio",
           "antiquario:brand:issey-miyake",
           "antiquario:brand:jean-paul-gaultier",
           "antiquario:brand:jil-sander",
           "antiquario:brand:jo-malone",
+          "antiquario:brand:john-varvatos",
           "antiquario:brand:joop",
+          "antiquario:brand:juliette-has-a-gun",
           "antiquario:brand:kenzo",
           "antiquario:brand:kilian",
           "antiquario:brand:lacoste",
           "antiquario:brand:lalique",
           "antiquario:brand:lancome",
           "antiquario:brand:lartisan-parfumeur",
+          "antiquario:brand:le-labo",
           "antiquario:brand:loccitane-en-provence",
+          "antiquario:brand:louis-vuitton",
           "antiquario:brand:m-micallef",
           "antiquario:brand:mancera",
           "antiquario:brand:marc-gebauer",
@@ -85,6 +91,7 @@
           "antiquario:brand:rochas",
           "antiquario:brand:roja-parfums",
           "antiquario:brand:salvatore-ferragamo",
+          "antiquario:brand:serge-lutens",
           "antiquario:brand:tiziana-terenzi",
           "antiquario:brand:tom-ford",
           "antiquario:brand:valentino",
@@ -96,7 +103,29 @@
           "antiquario:brand:zadig-voltaire",
           "antiquario:context:calor-umido",
           "antiquario:context:escritorio",
+          "antiquario:fragrance:acqua-fiorentina-q139992070",
+          "antiquario:fragrance:amber-invite-q140499603",
+          "antiquario:fragrance:angel-muse-q139980728",
+          "antiquario:fragrance:aventus-q24886336",
+          "antiquario:fragrance:bianco-latte-q137183849",
+          "antiquario:fragrance:blueberry-jam-q140077185",
+          "antiquario:fragrance:boss-alive-q137337051",
           "antiquario:fragrance:brisa-vetiver",
+          "antiquario:fragrance:chemin-d-amande-q140511997",
+          "antiquario:fragrance:crystal-noir-edt-q140266694",
+          "antiquario:fragrance:daisy-q110263664",
+          "antiquario:fragrance:deep-viola-q138795798",
+          "antiquario:fragrance:dune-q17105080",
+          "antiquario:fragrance:eternity-moment-q140003429",
+          "antiquario:fragrance:ganymede-q137825310",
+          "antiquario:fragrance:god-bless-cola-q137386796",
+          "antiquario:fragrance:ha-long-bay-q140237028",
+          "antiquario:fragrance:horchata-de-vanille-q140075144",
+          "antiquario:fragrance:jardin-d-amalfi-q139989391",
+          "antiquario:fragrance:khamrah-q140499690",
+          "antiquario:fragrance:naughty-alice-q139990627",
+          "antiquario:fragrance:odeon-q140298435",
+          "antiquario:fragrance:opulent-dubai-q138766540",
           "antiquario:fragrance:parfumo-abercrombie-fitch-fierce-abercrombie-fitch-2002-cologne",
           "antiquario:fragrance:parfumo-acorelle-be-positive---the-blanc",
           "antiquario:fragrance:parfumo-acqua-di-parma-arancia-di-capri",
@@ -148,6 +177,7 @@
           "antiquario:fragrance:parfumo-dunhill-icon",
           "antiquario:fragrance:parfumo-editions-de-parfums-frederic-malle-french-lover-bois-dorage",
           "antiquario:fragrance:parfumo-etnia-factory-beijing",
+          "antiquario:fragrance:parfumo-forage-bohemian-forage-1994-eau-de-parfum",
           "antiquario:fragrance:parfumo-fragrance-one-office-for-men",
           "antiquario:fragrance:parfumo-geoffrey-beene-grey-flannel-geoffrey-beene-1975-eau-de-toilette",
           "antiquario:fragrance:parfumo-giorgio-armani-acqua-di-gio-profondo-giorgio-armani-2020-eau-de-parfum",
@@ -173,6 +203,10 @@
           "antiquario:fragrance:parfumo-guerlain-vetiver-guerlain-1959-eau-de-toilette",
           "antiquario:fragrance:parfumo-guy-laroche-drakkar-noir-guy-laroche-1982-eau-de-toilette",
           "antiquario:fragrance:parfumo-halloween-halloween-man-x",
+          "antiquario:fragrance:parfumo-hermes-ambre-narguile",
+          "antiquario:fragrance:parfumo-hermes-h24-hermes-2021-eau-de-toilette",
+          "antiquario:fragrance:parfumo-hermes-terre-dhermes-eau-givree",
+          "antiquario:fragrance:parfumo-hermes-un-jardin-sur-le-nil",
           "antiquario:fragrance:parfumo-hugo-boss-hugo-hugo-boss-1995-eau-de-toilette",
           "antiquario:fragrance:parfumo-hugo-boss-the-scent-for-him-hugo-boss-2015-eau-de-toilette",
           "antiquario:fragrance:parfumo-initio-absolute-aphrodisiac",
@@ -185,7 +219,9 @@
           "antiquario:fragrance:parfumo-jean-paul-gaultier-scandal-pour-homme",
           "antiquario:fragrance:parfumo-jil-sander-sun-jil-sander-1989-eau-de-toilette",
           "antiquario:fragrance:parfumo-jo-malone-myrrh-tonka",
+          "antiquario:fragrance:parfumo-john-varvatos-artisan-pure",
           "antiquario:fragrance:parfumo-joop-joop-homme-joop-1989-eau-de-toilette",
+          "antiquario:fragrance:parfumo-juliette-has-a-gun-not-a-perfume-juliette-has-a-gun-2010-eau-de-parfum",
           "antiquario:fragrance:parfumo-kenzo-flower-by-kenzo-kenzo-2000-eau-de-parfum",
           "antiquario:fragrance:parfumo-kilian-back-to-black-aphrodisiac-kilian-2009-perfume",
           "antiquario:fragrance:parfumo-kilian-black-phantom---memento-mori",
@@ -196,7 +232,11 @@
           "antiquario:fragrance:parfumo-lalique-lalique-white-lalique-2008-eau-de-toilette",
           "antiquario:fragrance:parfumo-lancome-la-vie-est-belle-leau-de-parfum",
           "antiquario:fragrance:parfumo-lartisan-parfumeur-timbuktu",
+          "antiquario:fragrance:parfumo-le-labo-santal-33-le-labo-2011-eau-de-parfum",
           "antiquario:fragrance:parfumo-loccitane-en-provence-eau-des-baux",
+          "antiquario:fragrance:parfumo-louis-vuitton-limmensite",
+          "antiquario:fragrance:parfumo-louis-vuitton-nouveau-monde",
+          "antiquario:fragrance:parfumo-louis-vuitton-pacific-chill",
           "antiquario:fragrance:parfumo-m-micallef-desirtoxic",
           "antiquario:fragrance:parfumo-mancera-instant-crush",
           "antiquario:fragrance:parfumo-marc-gebauer-air-tiger",
@@ -234,6 +274,8 @@
           "antiquario:fragrance:parfumo-roja-parfums-enigma-pour-homme-creation-e-pour-homme-roja-parfums-2013-eau-de-parfum",
           "antiquario:fragrance:parfumo-roja-parfums-oceania",
           "antiquario:fragrance:parfumo-salvatore-ferragamo-f-by-ferragamo-pour-homme-black-salvatore-ferragamo-2009-eau-de-toilette",
+          "antiquario:fragrance:parfumo-serge-lutens-ambre-sultan-serge-lutens-1993-eau-de-parfum",
+          "antiquario:fragrance:parfumo-serge-lutens-five-oclock-au-gingembre",
           "antiquario:fragrance:parfumo-tiziana-terenzi-rosso-pompei",
           "antiquario:fragrance:parfumo-tom-ford-bitter-peach-tom-ford-2020-eau-de-parfum",
           "antiquario:fragrance:parfumo-tom-ford-grey-vetiver-tom-ford-2009-eau-de-parfum",
@@ -252,10 +294,6 @@
           "antiquario:fragrance:parfumo-xerjoff-accento-overdose",
           "antiquario:fragrance:parfumo-xerjoff-apollonia",
           "antiquario:fragrance:parfumo-xerjoff-casamorati---1888",
-          "antiquario:fragrance:parfumo-xerjoff-casamorati---bouquet-ideale-xerjoff-2009-eau-de-parfum",
-          "antiquario:fragrance:parfumo-xerjoff-casamorati---dolce-amalfi-xerjoff-2017-eau-de-parfum",
-          "antiquario:fragrance:parfumo-xerjoff-casamorati---italica",
-          "antiquario:fragrance:parfumo-xerjoff-casamorati---mefisto",
           "antiquario:fragrance:parfumo-xerjoff-decas",
           "antiquario:fragrance:parfumo-xerjoff-erba-gold",
           "antiquario:fragrance:parfumo-xerjoff-fars",
@@ -286,14 +324,39 @@
           "antiquario:fragrance:pdf-malbec-pure-gold-506bcad4",
           "antiquario:fragrance:pdf-malbec-x-506bcad4",
           "antiquario:fragrance:pdf-nuvem-506bcad4",
+          "antiquario:fragrance:poison-girl-q140101602",
+          "antiquario:fragrance:printemps-q140453489",
+          "antiquario:fragrance:september-q138611384",
+          "antiquario:fragrance:tom-ford-for-men-q137182953",
+          "antiquario:fragrance:virtus-q138773649",
+          "antiquario:fragrance:winter-26-q137912111",
+          "antiquario:fragrance:wulong-cha-x-q138576966",
+          "antiquario:fragrance:zelen-q137527355",
+          "antiquario:fragrance:zephyr-q138034992",
           "antiquario:guide:fontes-de-conhecimento",
           "antiquario:index:principal",
+          "antiquario:olfactory-note:abacaxi",
+          "antiquario:olfactory-note:abies-balsamea",
           "antiquario:olfactory-note:absinth",
+          "antiquario:olfactory-note:absoluto-de-cera-de-abelha",
+          "antiquario:olfactory-note:absoluto-de-fava-tonka",
+          "antiquario:olfactory-note:absoluto-de-labdano",
+          "antiquario:olfactory-note:absoluto-de-rosa",
+          "antiquario:olfactory-note:absoluto-de-trigo",
+          "antiquario:olfactory-note:acacia-dealbata",
+          "antiquario:olfactory-note:acucar",
+          "antiquario:olfactory-note:afranco",
           "antiquario:olfactory-note:african-orange-blossom",
+          "antiquario:olfactory-note:akigalawood",
           "antiquario:olfactory-note:aldehydes",
+          "antiquario:olfactory-note:alga",
+          "antiquario:olfactory-note:almiscar",
+          "antiquario:olfactory-note:almiscar-branco",
           "antiquario:olfactory-note:almond",
+          "antiquario:olfactory-note:almscar",
           "antiquario:olfactory-note:amalfi-lemon",
-          "antiquario:olfactory-note:amber",
+          "antiquario:olfactory-note:ambar",
+          "antiquario:olfactory-note:ambargris",
           "antiquario:olfactory-note:ambergris",
           "antiquario:olfactory-note:amberketal",
           "antiquario:olfactory-note:ambermax",
@@ -303,6 +366,9 @@
           "antiquario:olfactory-note:ambrofix",
           "antiquario:olfactory-note:ambrox",
           "antiquario:olfactory-note:ambroxan",
+          "antiquario:olfactory-note:ameixa",
+          "antiquario:olfactory-note:amendoa",
+          "antiquario:olfactory-note:amendoim",
           "antiquario:olfactory-note:american-cedar",
           "antiquario:olfactory-note:amyris",
           "antiquario:olfactory-note:angelica",
@@ -311,17 +377,24 @@
           "antiquario:olfactory-note:apricot",
           "antiquario:olfactory-note:aquatic-notes",
           "antiquario:olfactory-note:aquozone",
+          "antiquario:olfactory-note:arroz",
           "antiquario:olfactory-note:artemisia",
           "antiquario:olfactory-note:atlas-cedar",
           "antiquario:olfactory-note:balkans-tobacco-absolute",
           "antiquario:olfactory-note:balsam",
+          "antiquario:olfactory-note:balsamo-de-tolu",
           "antiquario:olfactory-note:basil",
           "antiquario:olfactory-note:baunilha",
+          "antiquario:olfactory-note:baunilha-bourbon",
           "antiquario:olfactory-note:bay-leaf",
+          "antiquario:olfactory-note:benjoim",
           "antiquario:olfactory-note:benzoin",
           "antiquario:olfactory-note:benzoin-siam",
+          "antiquario:olfactory-note:benzoina",
           "antiquario:olfactory-note:bergamot-leaf",
           "antiquario:olfactory-note:bergamota",
+          "antiquario:olfactory-note:bergamota-da-calabria",
+          "antiquario:olfactory-note:betula",
           "antiquario:olfactory-note:birch",
           "antiquario:olfactory-note:birch-wood",
           "antiquario:olfactory-note:bitter-almond",
@@ -347,16 +420,20 @@
           "antiquario:olfactory-note:brazilian-tonka-bean-absolute",
           "antiquario:olfactory-note:brown-sugar",
           "antiquario:olfactory-note:bulgarian-rose",
+          "antiquario:olfactory-note:cacau",
           "antiquario:olfactory-note:cachalox",
           "antiquario:olfactory-note:cade-juniper",
           "antiquario:olfactory-note:calabrian-bergamot",
-          "antiquario:olfactory-note:calabrian-lemon",
           "antiquario:olfactory-note:calabrian-mandarin-orange",
           "antiquario:olfactory-note:camellia",
           "antiquario:olfactory-note:candied-apple",
+          "antiquario:olfactory-note:canela",
+          "antiquario:olfactory-note:canela-leaf",
           "antiquario:olfactory-note:caramel",
+          "antiquario:olfactory-note:caramelo",
           "antiquario:olfactory-note:caraway",
           "antiquario:olfactory-note:cardamom",
+          "antiquario:olfactory-note:cardamomo",
           "antiquario:olfactory-note:carnation",
           "antiquario:olfactory-note:cashmeran",
           "antiquario:olfactory-note:cashmere-wood",
@@ -364,13 +441,19 @@
           "antiquario:olfactory-note:cedar",
           "antiquario:olfactory-note:cedar-leaf",
           "antiquario:olfactory-note:cedarwood",
+          "antiquario:olfactory-note:cedro",
+          "antiquario:olfactory-note:cedro-da-virginia",
+          "antiquario:olfactory-note:cedro-notes",
+          "antiquario:olfactory-note:cedro-smell",
+          "antiquario:olfactory-note:cera-de-abelha",
+          "antiquario:olfactory-note:cha-branco",
           "antiquario:olfactory-note:chamomile",
           "antiquario:olfactory-note:chinese-toon",
           "antiquario:olfactory-note:chocolate",
           "antiquario:olfactory-note:christalon",
-          "antiquario:olfactory-note:cinnamon",
-          "antiquario:olfactory-note:cinnamon-leaf",
+          "antiquario:olfactory-note:cinzento-ambarino",
           "antiquario:olfactory-note:cistus",
+          "antiquario:olfactory-note:citron",
           "antiquario:olfactory-note:citrus-fruits",
           "antiquario:olfactory-note:civet",
           "antiquario:olfactory-note:clary-sage",
@@ -386,8 +469,10 @@
           "antiquario:olfactory-note:coriander",
           "antiquario:olfactory-note:coriander-seed",
           "antiquario:olfactory-note:cotton-candy",
-          "antiquario:olfactory-note:coumarin",
+          "antiquario:olfactory-note:couro",
+          "antiquario:olfactory-note:cravo",
           "antiquario:olfactory-note:cucumber",
+          "antiquario:olfactory-note:cumarina",
           "antiquario:olfactory-note:cumin",
           "antiquario:olfactory-note:cypress",
           "antiquario:olfactory-note:damp",
@@ -402,15 +487,27 @@
           "antiquario:olfactory-note:egyptian-jasmine-absolute",
           "antiquario:olfactory-note:egyptian-orange-blossom",
           "antiquario:olfactory-note:elemi-resin",
+          "antiquario:olfactory-note:essencia-de-mirtilo",
+          "antiquario:olfactory-note:eucalipto",
           "antiquario:olfactory-note:eucalyptus",
+          "antiquario:olfactory-note:eugenio",
           "antiquario:olfactory-note:everlasting-flower",
+          "antiquario:olfactory-note:fava-tonka",
           "antiquario:olfactory-note:fig",
           "antiquario:olfactory-note:fir",
           "antiquario:olfactory-note:fir-balsam",
           "antiquario:olfactory-note:fir-resin",
           "antiquario:olfactory-note:flax-blossom",
+          "antiquario:olfactory-note:flor-de-laranja",
+          "antiquario:olfactory-note:flor-de-laranjeira",
+          "antiquario:olfactory-note:flor-de-macieira",
+          "antiquario:olfactory-note:flor-de-toranja",
           "antiquario:olfactory-note:florentine-iris",
           "antiquario:olfactory-note:florentine-iris-absolute",
+          "antiquario:olfactory-note:folha-de-groselha-negra",
+          "antiquario:olfactory-note:folha-de-limao",
+          "antiquario:olfactory-note:folha-de-violeta",
+          "antiquario:olfactory-note:framboesa",
           "antiquario:olfactory-note:frankincense",
           "antiquario:olfactory-note:frankincense-resin",
           "antiquario:olfactory-note:freesia",
@@ -418,15 +515,21 @@
           "antiquario:olfactory-note:french-lavender",
           "antiquario:olfactory-note:fruits",
           "antiquario:olfactory-note:fruity-notes",
+          "antiquario:olfactory-note:fumaca-de-vetiver",
           "antiquario:olfactory-note:gaiac-wood",
           "antiquario:olfactory-note:galbanum",
           "antiquario:olfactory-note:gardenia",
+          "antiquario:olfactory-note:geleia-de-mirtilo",
+          "antiquario:olfactory-note:gengibre",
           "antiquario:olfactory-note:georgywood",
+          "antiquario:olfactory-note:geranio",
           "antiquario:olfactory-note:geranium",
           "antiquario:olfactory-note:geranium-leaf",
           "antiquario:olfactory-note:gianduja-cream",
           "antiquario:olfactory-note:ginger",
           "antiquario:olfactory-note:ginger-lily",
+          "antiquario:olfactory-note:gloriosa",
+          "antiquario:olfactory-note:goiaba",
           "antiquario:olfactory-note:grapefruit",
           "antiquario:olfactory-note:grapefruit-zest",
           "antiquario:olfactory-note:grasse-jasmine",
@@ -448,9 +551,13 @@
           "antiquario:olfactory-note:haitian-vetiver",
           "antiquario:olfactory-note:hedione",
           "antiquario:olfactory-note:heliotrope",
+          "antiquario:olfactory-note:heliotropio",
           "antiquario:olfactory-note:hemp",
           "antiquario:olfactory-note:hibiscus-seed",
           "antiquario:olfactory-note:honey",
+          "antiquario:olfactory-note:horchata",
+          "antiquario:olfactory-note:hortela-pimenta",
+          "antiquario:olfactory-note:incenso",
           "antiquario:olfactory-note:indian-oud",
           "antiquario:olfactory-note:indian-sandalwood",
           "antiquario:olfactory-note:indian-tuberose",
@@ -469,6 +576,8 @@
           "antiquario:olfactory-note:italian-mandarin-orange",
           "antiquario:olfactory-note:italian-orange",
           "antiquario:olfactory-note:ivy",
+          "antiquario:olfactory-note:jasmim",
+          "antiquario:olfactory-note:jasmim-sambac",
           "antiquario:olfactory-note:jasmine",
           "antiquario:olfactory-note:jasmine-absolute",
           "antiquario:olfactory-note:jasmine-sambac",
@@ -477,11 +586,18 @@
           "antiquario:olfactory-note:jasminum-grandiflorum",
           "antiquario:olfactory-note:java-vetiver",
           "antiquario:olfactory-note:javanol",
-          "antiquario:olfactory-note:juniper",
-          "antiquario:olfactory-note:juniper-berry",
           "antiquario:olfactory-note:karo-karounde",
+          "antiquario:olfactory-note:kumquat",
+          "antiquario:olfactory-note:labdano",
           "antiquario:olfactory-note:labdanum",
           "antiquario:olfactory-note:labdanum-absolute",
+          "antiquario:olfactory-note:laranja",
+          "antiquario:olfactory-note:laranja-amarga",
+          "antiquario:olfactory-note:laranja-blossom",
+          "antiquario:olfactory-note:laranja-blossom-absolute",
+          "antiquario:olfactory-note:laranja-brandy",
+          "antiquario:olfactory-note:laranjeira",
+          "antiquario:olfactory-note:lavanda",
           "antiquario:olfactory-note:lavender",
           "antiquario:olfactory-note:lavender-absolute",
           "antiquario:olfactory-note:leather",
@@ -489,21 +605,42 @@
           "antiquario:olfactory-note:leathery-notes",
           "antiquario:olfactory-note:leaves",
           "antiquario:olfactory-note:lebanon-cedar",
-          "antiquario:olfactory-note:lemon",
-          "antiquario:olfactory-note:lemon-leaf",
-          "antiquario:olfactory-note:lemon-vervain",
+          "antiquario:olfactory-note:leite",
+          "antiquario:olfactory-note:leite-de-figo",
+          "antiquario:olfactory-note:lichia",
+          "antiquario:olfactory-note:licorice",
           "antiquario:olfactory-note:lily-of-the-valley",
+          "antiquario:olfactory-note:lima",
+          "antiquario:olfactory-note:limao",
+          "antiquario:olfactory-note:limao-siciliano",
+          "antiquario:olfactory-note:limao-siciliano-leaf",
+          "antiquario:olfactory-note:limao-siciliano-vervain",
           "antiquario:olfactory-note:lime",
+          "antiquario:olfactory-note:liquen",
+          "antiquario:olfactory-note:lirio",
+          "antiquario:olfactory-note:lirio-de-casablanca",
+          "antiquario:olfactory-note:lirio-do-vale",
           "antiquario:olfactory-note:litsea-cubeba",
           "antiquario:olfactory-note:lotus",
           "antiquario:olfactory-note:lychee",
+          "antiquario:olfactory-note:maca",
           "antiquario:olfactory-note:madagascan-cinnamon",
           "antiquario:olfactory-note:madagascan-pepper",
+          "antiquario:olfactory-note:madeira-de-guaiaco",
+          "antiquario:olfactory-note:madeira-deriva",
+          "antiquario:olfactory-note:madeiras-transparentes",
           "antiquario:olfactory-note:madonna-lily",
+          "antiquario:olfactory-note:madressilva",
           "antiquario:olfactory-note:magnolia",
+          "antiquario:olfactory-note:mahonial",
           "antiquario:olfactory-note:mandarin-orange",
+          "antiquario:olfactory-note:mandarina",
+          "antiquario:olfactory-note:manga",
           "antiquario:olfactory-note:mango",
           "antiquario:olfactory-note:maninka-fruit",
+          "antiquario:olfactory-note:manjericao",
+          "antiquario:olfactory-note:manjerona",
+          "antiquario:olfactory-note:manteiga",
           "antiquario:olfactory-note:marine-notes",
           "antiquario:olfactory-note:marron-glace",
           "antiquario:olfactory-note:mastic-absolute",
@@ -511,40 +648,44 @@
           "antiquario:olfactory-note:mate-tea",
           "antiquario:olfactory-note:may-rose",
           "antiquario:olfactory-note:may-rose-absolute",
+          "antiquario:olfactory-note:mel",
+          "antiquario:olfactory-note:melao",
           "antiquario:olfactory-note:melon",
           "antiquario:olfactory-note:mexican-tuberose",
-          "antiquario:olfactory-note:milk",
           "antiquario:olfactory-note:mimosa",
           "antiquario:olfactory-note:mineral-amber",
           "antiquario:olfactory-note:mineral-notes",
           "antiquario:olfactory-note:mint",
+          "antiquario:olfactory-note:mirra",
+          "antiquario:olfactory-note:morango",
           "antiquario:olfactory-note:moroccan-neroli",
           "antiquario:olfactory-note:moroccan-rose",
           "antiquario:olfactory-note:moss",
           "antiquario:olfactory-note:mugwort",
+          "antiquario:olfactory-note:musgo-de-carvalho",
           "antiquario:olfactory-note:musk",
           "antiquario:olfactory-note:must",
           "antiquario:olfactory-note:myrrh",
           "antiquario:olfactory-note:myrtle",
           "antiquario:olfactory-note:mysore-sandalwood",
+          "antiquario:olfactory-note:nagarmota",
+          "antiquario:olfactory-note:nagarmotha",
           "antiquario:olfactory-note:namibian-myrrh",
           "antiquario:olfactory-note:nana-mint",
           "antiquario:olfactory-note:narcissus",
           "antiquario:olfactory-note:neapolitan-maple",
+          "antiquario:olfactory-note:nenufar",
           "antiquario:olfactory-note:neroli",
           "antiquario:olfactory-note:neroli-absolute",
           "antiquario:olfactory-note:new-caledonian-sandalwood",
           "antiquario:olfactory-note:noxiousness",
+          "antiquario:olfactory-note:noz-moscada",
           "antiquario:olfactory-note:nutmeg",
           "antiquario:olfactory-note:oak-bark",
           "antiquario:olfactory-note:oakmoss",
           "antiquario:olfactory-note:olive-blossom",
           "antiquario:olfactory-note:olive-wood",
           "antiquario:olfactory-note:opoponax",
-          "antiquario:olfactory-note:orange",
-          "antiquario:olfactory-note:orange-blossom",
-          "antiquario:olfactory-note:orange-blossom-absolute",
-          "antiquario:olfactory-note:orange-brandy",
           "antiquario:olfactory-note:orcanox",
           "antiquario:olfactory-note:orchid",
           "antiquario:olfactory-note:orris-butter",
@@ -552,40 +693,52 @@
           "antiquario:olfactory-note:oud",
           "antiquario:olfactory-note:ozonic-notes",
           "antiquario:olfactory-note:palo-santo",
+          "antiquario:olfactory-note:papaia",
           "antiquario:olfactory-note:papaya",
+          "antiquario:olfactory-note:papiros",
           "antiquario:olfactory-note:papyrus",
           "antiquario:olfactory-note:paradisone",
           "antiquario:olfactory-note:patchouli",
           "antiquario:olfactory-note:patchouli-orpur",
           "antiquario:olfactory-note:peach",
           "antiquario:olfactory-note:pear",
+          "antiquario:olfactory-note:peonia",
           "antiquario:olfactory-note:peony",
           "antiquario:olfactory-note:pepper",
           "antiquario:olfactory-note:peppermint",
           "antiquario:olfactory-note:persian-saffron",
+          "antiquario:olfactory-note:pessego",
           "antiquario:olfactory-note:petitgrain",
           "antiquario:olfactory-note:philippine-elemi",
+          "antiquario:olfactory-note:pimenta",
+          "antiquario:olfactory-note:pimenta-preta",
+          "antiquario:olfactory-note:pimenta-rosa",
+          "antiquario:olfactory-note:pimenta-sichuan",
           "antiquario:olfactory-note:pimento",
           "antiquario:olfactory-note:pine",
           "antiquario:olfactory-note:pine-needle",
           "antiquario:olfactory-note:pineapple",
           "antiquario:olfactory-note:pink-grapefruit",
           "antiquario:olfactory-note:pink-pepper",
-          "antiquario:olfactory-note:plum",
+          "antiquario:olfactory-note:pipoca",
           "antiquario:olfactory-note:pomarose",
+          "antiquario:olfactory-note:pomelo",
           "antiquario:olfactory-note:port-wine",
+          "antiquario:olfactory-note:pralina",
           "antiquario:olfactory-note:praline",
           "antiquario:olfactory-note:precious-woods",
           "antiquario:olfactory-note:primofiore-lemon",
           "antiquario:olfactory-note:provencal-lavender",
-          "antiquario:olfactory-note:quince",
           "antiquario:olfactory-note:raspberry",
           "antiquario:olfactory-note:red-apple",
           "antiquario:olfactory-note:red-berries",
           "antiquario:olfactory-note:red-ginger",
           "antiquario:olfactory-note:red-mandarin-orange",
           "antiquario:olfactory-note:red-pepper",
+          "antiquario:olfactory-note:refrigerante-de-cola",
           "antiquario:olfactory-note:roasted-tonka-bean",
+          "antiquario:olfactory-note:rosa",
+          "antiquario:olfactory-note:rosa-canditada",
           "antiquario:olfactory-note:rose",
           "antiquario:olfactory-note:rose-absolute",
           "antiquario:olfactory-note:rosemary",
@@ -594,15 +747,16 @@
           "antiquario:olfactory-note:rum-absolute",
           "antiquario:olfactory-note:russian-coriander",
           "antiquario:olfactory-note:saffron",
+          "antiquario:olfactory-note:safran",
           "antiquario:olfactory-note:sage",
           "antiquario:olfactory-note:salted-vanilla",
-          "antiquario:olfactory-note:sandalwood",
+          "antiquario:olfactory-note:salvia-clara",
+          "antiquario:olfactory-note:sandalo",
+          "antiquario:olfactory-note:sandalo-de-mysore",
           "antiquario:olfactory-note:serenolide",
-          "antiquario:olfactory-note:sicilian-almond",
           "antiquario:olfactory-note:sicilian-bergamot",
           "antiquario:olfactory-note:sicilian-blood-orange",
           "antiquario:olfactory-note:sicilian-grapefruit",
-          "antiquario:olfactory-note:sicilian-lemon",
           "antiquario:olfactory-note:sicilian-mandarin-orange",
           "antiquario:olfactory-note:smoked-leather",
           "antiquario:olfactory-note:solar-note",
@@ -618,28 +772,35 @@
           "antiquario:olfactory-note:suede",
           "antiquario:olfactory-note:sycamore-wood",
           "antiquario:olfactory-note:sylkolide",
+          "antiquario:olfactory-note:tabaco",
+          "antiquario:olfactory-note:tamara",
+          "antiquario:olfactory-note:tamaras",
           "antiquario:olfactory-note:tamarind",
+          "antiquario:olfactory-note:tangerina",
           "antiquario:olfactory-note:tangerine",
           "antiquario:olfactory-note:tarragon",
           "antiquario:olfactory-note:tea",
           "antiquario:olfactory-note:teak",
           "antiquario:olfactory-note:thyme",
           "antiquario:olfactory-note:tobacco",
-          "antiquario:olfactory-note:tobacco-flower",
-          "antiquario:olfactory-note:toffee",
           "antiquario:olfactory-note:tolu-balm",
           "antiquario:olfactory-note:tonka-bean",
           "antiquario:olfactory-note:tonka-bean-absolute",
+          "antiquario:olfactory-note:toranja",
+          "antiquario:olfactory-note:tuberosa",
           "antiquario:olfactory-note:tuberose",
           "antiquario:olfactory-note:tunisian-neroli",
           "antiquario:olfactory-note:tunisian-orange-blossom-absolute",
           "antiquario:olfactory-note:vanilla-absolute",
           "antiquario:olfactory-note:vervain",
           "antiquario:olfactory-note:vetiver",
+          "antiquario:olfactory-note:vetiver-do-haiti",
           "antiquario:olfactory-note:vetiver-leaf",
           "antiquario:olfactory-note:vetiver-orpur",
           "antiquario:olfactory-note:violet",
           "antiquario:olfactory-note:violet-leaf",
+          "antiquario:olfactory-note:violeta",
+          "antiquario:olfactory-note:violetas",
           "antiquario:olfactory-note:virginia-cedar",
           "antiquario:olfactory-note:vorplaxa",
           "antiquario:olfactory-note:water-jasmine",
@@ -655,10 +816,11 @@
           "antiquario:olfactory-note:wild-flowers",
           "antiquario:olfactory-note:wild-peach",
           "antiquario:olfactory-note:woods",
-          "antiquario:olfactory-note:woody-notes",
           "antiquario:olfactory-note:yemenite-frankincense",
           "antiquario:olfactory-note:ylang-ylang",
-          "antiquario:olfactory-note:yuzu"
+          "antiquario:olfactory-note:yuzu",
+          "antiquario:olfactory-note:zimbro",
+          "antiquario:olfactory-note:zimbro-da-virginia"
         ]
       },
       {
@@ -697,13 +859,6 @@
         ]
       },
       {
-        "anchor": "antiquario:brand:forage",
-        "documentIds": [
-          "antiquario:brand:forage",
-          "antiquario:fragrance:parfumo-forage-bohemian-forage-1994-eau-de-parfum"
-        ]
-      },
-      {
         "anchor": "antiquario:brand:givenchy",
         "documentIds": [
           "antiquario:brand:givenchy",
@@ -711,50 +866,10 @@
         ]
       },
       {
-        "anchor": "antiquario:brand:hermes",
-        "documentIds": [
-          "antiquario:brand:hermes",
-          "antiquario:fragrance:parfumo-hermes-ambre-narguile",
-          "antiquario:fragrance:parfumo-hermes-h24-hermes-2021-eau-de-toilette",
-          "antiquario:fragrance:parfumo-hermes-terre-dhermes-eau-givree",
-          "antiquario:fragrance:parfumo-hermes-un-jardin-sur-le-nil"
-        ]
-      },
-      {
-        "anchor": "antiquario:brand:john-varvatos",
-        "documentIds": [
-          "antiquario:brand:john-varvatos",
-          "antiquario:fragrance:parfumo-john-varvatos-artisan-pure"
-        ]
-      },
-      {
-        "anchor": "antiquario:brand:juliette-has-a-gun",
-        "documentIds": [
-          "antiquario:brand:juliette-has-a-gun",
-          "antiquario:fragrance:parfumo-juliette-has-a-gun-not-a-perfume-juliette-has-a-gun-2010-eau-de-parfum"
-        ]
-      },
-      {
         "anchor": "antiquario:brand:le-couvent",
         "documentIds": [
           "antiquario:brand:le-couvent",
           "antiquario:fragrance:parfumo-le-couvent-eau-des-missions"
-        ]
-      },
-      {
-        "anchor": "antiquario:brand:le-labo",
-        "documentIds": [
-          "antiquario:brand:le-labo",
-          "antiquario:fragrance:parfumo-le-labo-santal-33-le-labo-2011-eau-de-parfum"
-        ]
-      },
-      {
-        "anchor": "antiquario:brand:louis-vuitton",
-        "documentIds": [
-          "antiquario:brand:louis-vuitton",
-          "antiquario:fragrance:parfumo-louis-vuitton-limmensite",
-          "antiquario:fragrance:parfumo-louis-vuitton-nouveau-monde",
-          "antiquario:fragrance:parfumo-louis-vuitton-pacific-chill"
         ]
       },
       {
@@ -815,14 +930,6 @@
         ]
       },
       {
-        "anchor": "antiquario:brand:serge-lutens",
-        "documentIds": [
-          "antiquario:brand:serge-lutens",
-          "antiquario:fragrance:parfumo-serge-lutens-ambre-sultan-serge-lutens-1993-eau-de-parfum",
-          "antiquario:fragrance:parfumo-serge-lutens-five-oclock-au-gingembre"
-        ]
-      },
-      {
         "anchor": "antiquario:brand:zara",
         "documentIds": [
           "antiquario:brand:zara",
@@ -835,17 +942,75 @@
           "antiquario:brand:zarkoperfume",
           "antiquario:fragrance:parfumo-zarkoperfume-the-muse"
         ]
+      },
+      {
+        "anchor": "antiquario:fragrance:this-is-not-a-pipe-q138028241",
+        "documentIds": [
+          "antiquario:fragrance:this-is-not-a-pipe-q138028241",
+          "antiquario:olfactory-note:cachimbo",
+          "antiquario:olfactory-note:pipe-tobacco",
+          "antiquario:olfactory-note:pipe-tobacco-smoke"
+        ]
+      },
+      {
+        "anchor": "antiquario:olfactory-note:calabrian-lemon",
+        "documentIds": [
+          "antiquario:olfactory-note:calabrian-lemon"
+        ]
+      },
+      {
+        "anchor": "antiquario:olfactory-note:coumarin",
+        "documentIds": [
+          "antiquario:olfactory-note:coumarin"
+        ]
+      },
+      {
+        "anchor": "antiquario:olfactory-note:milk",
+        "documentIds": [
+          "antiquario:olfactory-note:milk"
+        ]
+      },
+      {
+        "anchor": "antiquario:olfactory-note:quince",
+        "documentIds": [
+          "antiquario:olfactory-note:quince"
+        ]
+      },
+      {
+        "anchor": "antiquario:olfactory-note:sicilian-almond",
+        "documentIds": [
+          "antiquario:olfactory-note:sicilian-almond"
+        ]
+      },
+      {
+        "anchor": "antiquario:olfactory-note:tobacco-flower",
+        "documentIds": [
+          "antiquario:olfactory-note:tobacco-flower"
+        ]
+      },
+      {
+        "anchor": "antiquario:olfactory-note:toffee",
+        "documentIds": [
+          "antiquario:olfactory-note:toffee"
+        ]
       }
     ],
     "isolatedDocumentIds": [
       "antiquario:brand:natura",
-      "antiquario:brand:o-boticario"
+      "antiquario:brand:o-boticario",
+      "antiquario:olfactory-note:calabrian-lemon",
+      "antiquario:olfactory-note:coumarin",
+      "antiquario:olfactory-note:milk",
+      "antiquario:olfactory-note:quince",
+      "antiquario:olfactory-note:sicilian-almond",
+      "antiquario:olfactory-note:tobacco-flower",
+      "antiquario:olfactory-note:toffee"
     ]
   },
   "editorialCoverage": {
-    "approvedFragrances": 221,
-    "approvedCommercialFragrances": 220,
-    "withExternalIdentity": 0,
+    "approvedFragrances": 249,
+    "approvedCommercialFragrances": 248,
+    "withExternalIdentity": 32,
     "withNotes": 1,
     "withAccords": 20,
     "withContexts": 20,
@@ -869,6 +1034,180 @@
       "severity": "error",
       "documentId": "antiquario:brand:o-boticario",
       "message": "Documento aprovado sem sinapses com o restante do grafo."
+    },
+    {
+      "code": "isolated-document",
+      "severity": "error",
+      "documentId": "antiquario:olfactory-note:calabrian-lemon",
+      "message": "Documento aprovado sem sinapses com o restante do grafo."
+    },
+    {
+      "code": "isolated-document",
+      "severity": "error",
+      "documentId": "antiquario:olfactory-note:coumarin",
+      "message": "Documento aprovado sem sinapses com o restante do grafo."
+    },
+    {
+      "code": "isolated-document",
+      "severity": "error",
+      "documentId": "antiquario:olfactory-note:milk",
+      "message": "Documento aprovado sem sinapses com o restante do grafo."
+    },
+    {
+      "code": "isolated-document",
+      "severity": "error",
+      "documentId": "antiquario:olfactory-note:quince",
+      "message": "Documento aprovado sem sinapses com o restante do grafo."
+    },
+    {
+      "code": "isolated-document",
+      "severity": "error",
+      "documentId": "antiquario:olfactory-note:sicilian-almond",
+      "message": "Documento aprovado sem sinapses com o restante do grafo."
+    },
+    {
+      "code": "isolated-document",
+      "severity": "error",
+      "documentId": "antiquario:olfactory-note:tobacco-flower",
+      "message": "Documento aprovado sem sinapses com o restante do grafo."
+    },
+    {
+      "code": "isolated-document",
+      "severity": "error",
+      "documentId": "antiquario:olfactory-note:toffee",
+      "message": "Documento aprovado sem sinapses com o restante do grafo."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:acqua-fiorentina-q139992070",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:amber-invite-q140499603",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:angel-muse-q139980728",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:aventus-q24886336",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:bianco-latte-q137183849",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:blueberry-jam-q140077185",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:boss-alive-q137337051",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:chemin-d-amande-q140511997",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:crystal-noir-edt-q140266694",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:daisy-q110263664",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:deep-viola-q138795798",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:dune-q17105080",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:eternity-moment-q140003429",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:ganymede-q137825310",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:god-bless-cola-q137386796",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:ha-long-bay-q140237028",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:horchata-de-vanille-q140075144",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:jardin-d-amalfi-q139989391",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:khamrah-q140499690",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:naughty-alice-q139990627",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:odeon-q140298435",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:opulent-dubai-q138766540",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
     },
     {
       "code": "incomplete-fragrance-structure",
@@ -1977,30 +2316,6 @@
     {
       "code": "incomplete-fragrance-structure",
       "severity": "warning",
-      "documentId": "antiquario:fragrance:parfumo-xerjoff-casamorati---bouquet-ideale-xerjoff-2009-eau-de-parfum",
-      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
-    },
-    {
-      "code": "incomplete-fragrance-structure",
-      "severity": "warning",
-      "documentId": "antiquario:fragrance:parfumo-xerjoff-casamorati---dolce-amalfi-xerjoff-2017-eau-de-parfum",
-      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
-    },
-    {
-      "code": "incomplete-fragrance-structure",
-      "severity": "warning",
-      "documentId": "antiquario:fragrance:parfumo-xerjoff-casamorati---italica",
-      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
-    },
-    {
-      "code": "incomplete-fragrance-structure",
-      "severity": "warning",
-      "documentId": "antiquario:fragrance:parfumo-xerjoff-casamorati---mefisto",
-      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
-    },
-    {
-      "code": "incomplete-fragrance-structure",
-      "severity": "warning",
       "documentId": "antiquario:fragrance:parfumo-xerjoff-decas",
       "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
     },
@@ -2183,6 +2498,66 @@
       "severity": "warning",
       "documentId": "antiquario:fragrance:pdf-nuvem-506bcad4",
       "message": "Fragrância aprovada sem relações obrigatórias: has-note."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:poison-girl-q140101602",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:printemps-q140453489",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:september-q138611384",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:this-is-not-a-pipe-q138028241",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:tom-ford-for-men-q137182953",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:virtus-q138773649",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:winter-26-q137912111",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:wulong-cha-x-q138576966",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:zelen-q137527355",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:zephyr-q138034992",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
     }
   ]
 }

@@ -1,0 +1,53 @@
+{
+  "catalogVersion": "catalog-v1-e4a6b577f980",
+  "contentHash": "bdf8d079db18d16680919d45710099d4dc941332bacbbec1aba7f125d60371ad",
+  "counts": {
+    "ambiguousClusters": 3,
+    "brands": 71,
+    "countries": 10,
+    "fragrances": 282,
+    "knowledgeLinks": 0,
+    "olfactoryDescriptors": 276,
+    "perfumers": 104,
+    "searchTerms": 1560,
+    "semanticClaims": 251,
+    "semanticPropertyKinds": 4
+  },
+  "files": {
+    "entities": {
+      "bytes": 33499,
+      "path": "entities.json",
+      "sha256": "563d3013fb79410e33fb9e49da53963fbc50c0b3a40b0d68f52d6f435908c93a"
+    },
+    "fragrances": {
+      "bytes": 143689,
+      "path": "fragrances.json",
+      "sha256": "b4bdef11f8698a6fcd81535c610fbd4fe927fff119eb58f8bde94fca81680ace"
+    },
+    "resolution_report": {
+      "bytes": 510,
+      "path": "resolution-report.json",
+      "sha256": "ab5f009a4910abea1935e67ef4fadd3c4dbaba9d90daca6a95264839b3d7d2d7"
+    },
+    "search_index": {
+      "bytes": 42913,
+      "path": "search-index.json",
+      "sha256": "bcc34c1414ecfb4aa9006f9c5be0ab643a6edde1656feae97867603911b5c318"
+    },
+    "semantic_claims": {
+      "bytes": 87563,
+      "path": "semantic-claims.json",
+      "sha256": "bcecdd8c452ce7a6d4409e7e089f8b85c7345d2ef2e92910afab2cd29ef45795"
+    }
+  },
+  "knowledgeReleaseId": "knowledge-v2-132e70efc492",
+  "releaseId": "catalog-web-v1-bdf8d079db18",
+  "schemaVersion": 1,
+  "sources": [
+    {
+      "id": "wikidata",
+      "license": "CC0-1.0",
+      "retrievedAt": "2026-07-22"
+    }
+  ]
+}

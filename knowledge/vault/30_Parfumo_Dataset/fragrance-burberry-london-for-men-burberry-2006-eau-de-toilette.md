@@ -24,7 +24,7 @@ relations:
   - predicate: belongs-to-brand
     target: antiquario:brand:burberry
   - predicate: has-top-note
-    target: antiquario:olfactory-note:cinnamon-leaf
+    target: antiquario:olfactory-note:canela-leaf
   - predicate: has-top-note
     target: antiquario:olfactory-note:black-pepper
   - predicate: has-top-note

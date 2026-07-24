@@ -34,7 +34,7 @@ relations:
   - predicate: has-heart-note
     target: antiquario:olfactory-note:cardamom
   - predicate: has-heart-note
-    target: antiquario:olfactory-note:juniper-berry
+    target: antiquario:olfactory-note:zimbro
   - predicate: has-heart-note
     target: antiquario:olfactory-note:provencal-lavender
   - predicate: has-heart-note
@@ -58,5 +58,5 @@ relations:
 ## Pirâmide Olfativa
 
 - **Saída:** [[note-neroli-absolute]], [[note-black-pepper]], [[note-italian-bergamot]], [[note-petitgrain]]
-- **Coração:** [[note-cardamom]], [[note-juniper-berry]], [[note-provencal-lavender]], [[note-sage]]
+- **Coração:** [[note-cardamom]], [[note-zimbro]], [[note-provencal-lavender]], [[note-sage]]
 - **Fundo:** [[note-oakmoss]], [[Vetiver]], [[note-iris]], [[note-leather]], [[note-oud]]

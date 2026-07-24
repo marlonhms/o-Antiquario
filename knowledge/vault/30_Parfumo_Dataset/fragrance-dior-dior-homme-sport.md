@@ -38,7 +38,7 @@ relations:
   - predicate: has-base-note
     target: antiquario:olfactory-note:woods
   - predicate: has-base-note
-    target: antiquario:olfactory-note:amber
+    target: antiquario:olfactory-note:ambar
 ---
 
 # Dior Homme Sport
@@ -49,4 +49,4 @@ relations:
 
 - **Saída:** [[note-italian-lemon]], [[note-aldehydes]], [[note-calabrian-bergamot]]
 - **Coração:** [[note-elemi-resin]], [[note-pink-pepper]]
-- **Fundo:** [[note-frankincense]], [[note-woods]], [[note-amber]]
+- **Fundo:** [[note-frankincense]], [[note-woods]], [[note-ambar]]

@@ -46,7 +46,7 @@ relations:
   - predicate: has-heart-note
     target: antiquario:olfactory-note:vetiver
   - predicate: has-heart-note
-    target: antiquario:olfactory-note:cinnamon
+    target: antiquario:olfactory-note:canela
   - predicate: has-base-note
     target: antiquario:olfactory-note:civet
   - predicate: has-base-note
@@ -54,7 +54,7 @@ relations:
   - predicate: has-base-note
     target: antiquario:olfactory-note:oakmoss
   - predicate: has-base-note
-    target: antiquario:olfactory-note:amber
+    target: antiquario:olfactory-note:ambar
   - predicate: has-base-note
     target: antiquario:olfactory-note:frankincense
   - predicate: has-base-note
@@ -74,5 +74,5 @@ relations:
 ## Pirâmide Olfativa
 
 - **Saída:** [[note-aldehydes]], [[Bergamota]], [[note-clary-sage]], [[note-coriander]], [[note-tarragon]]
-- **Coração:** [[note-carnation]], [[note-geranium]], [[note-jasmine]], [[note-orris-root]], [[note-patchouli]], [[Vetiver]], [[note-cinnamon]]
-- **Fundo:** [[note-civet]], [[note-musk]], [[note-oakmoss]], [[note-amber]], [[note-frankincense]], [[note-honey]], [[note-leather]], [[note-tonka-bean]], [[Baunilha]]
+- **Coração:** [[note-carnation]], [[note-geranium]], [[note-jasmine]], [[note-orris-root]], [[note-patchouli]], [[Vetiver]], [[note-canela]]
+- **Fundo:** [[note-civet]], [[note-musk]], [[note-oakmoss]], [[note-ambar]], [[note-frankincense]], [[note-honey]], [[note-leather]], [[note-tonka-bean]], [[Baunilha]]

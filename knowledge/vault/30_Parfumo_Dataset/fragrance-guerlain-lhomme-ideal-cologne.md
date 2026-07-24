@@ -28,7 +28,7 @@ relations:
   - predicate: has-top-note
     target: antiquario:olfactory-note:bergamota
   - predicate: has-top-note
-    target: antiquario:olfactory-note:orange
+    target: antiquario:olfactory-note:laranja
   - predicate: has-heart-note
     target: antiquario:olfactory-note:almond
   - predicate: has-heart-note
@@ -45,6 +45,6 @@ relations:
 
 ## Pirâmide Olfativa
 
-- **Saída:** [[note-grapefruit]], [[Bergamota]], [[note-orange]]
+- **Saída:** [[note-grapefruit]], [[Bergamota]], [[note-laranja]]
 - **Coração:** [[note-almond]], [[note-neroli]]
 - **Fundo:** [[note-white-musk]], [[note-indian-vetiver]]

@@ -28,7 +28,7 @@ relations:
   - predicate: has-top-note
     target: antiquario:olfactory-note:basil
   - predicate: has-top-note
-    target: antiquario:olfactory-note:lemon
+    target: antiquario:olfactory-note:limao-siciliano
   - predicate: has-top-note
     target: antiquario:olfactory-note:lime
   - predicate: has-top-note
@@ -46,7 +46,7 @@ relations:
   - predicate: has-base-note
     target: antiquario:olfactory-note:cedarwood
   - predicate: has-base-note
-    target: antiquario:olfactory-note:sandalwood
+    target: antiquario:olfactory-note:sandalo
   - predicate: has-base-note
     target: antiquario:olfactory-note:patchouli
   - predicate: has-base-note
@@ -61,6 +61,6 @@ relations:
 
 ## Pirâmide Olfativa
 
-- **Saída:** [[Bergamota]], [[note-basil]], [[note-lemon]], [[note-lime]], [[note-mandarin-orange]]
+- **Saída:** [[Bergamota]], [[note-basil]], [[note-limao-siciliano]], [[note-lime]], [[note-mandarin-orange]]
 - **Coração:** [[note-lavender]], [[note-coriander]], [[note-clove]], [[note-nutmeg]], [[note-pimento]]
-- **Fundo:** [[note-cedarwood]], [[note-sandalwood]], [[note-patchouli]], [[Vetiver]], [[note-leathery-notes]]
+- **Fundo:** [[note-cedarwood]], [[note-sandalo]], [[note-patchouli]], [[Vetiver]], [[note-leathery-notes]]

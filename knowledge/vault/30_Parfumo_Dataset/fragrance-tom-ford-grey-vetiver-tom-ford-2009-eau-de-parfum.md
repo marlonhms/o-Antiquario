@@ -26,7 +26,7 @@ relations:
   - predicate: has-top-note
     target: antiquario:olfactory-note:grapefruit
   - predicate: has-top-note
-    target: antiquario:olfactory-note:orange-blossom
+    target: antiquario:olfactory-note:laranja-blossom
   - predicate: has-top-note
     target: antiquario:olfactory-note:sage
   - predicate: has-top-note

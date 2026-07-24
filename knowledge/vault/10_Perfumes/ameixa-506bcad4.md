@@ -3,7 +3,7 @@ schema_version: 1
 id: antiquario:fragrance:pdf-ameixa-506bcad4
 project: o-antiquario
 type: fragrance
-title: "Ameixa"
+title: "Ameixa (Desodorante Colônia)"
 aliases: []
 external_ids: {}
 tags: [perfume, o-boticario, nacional]
@@ -57,7 +57,7 @@ recommendation_profile:
 
 ---
 
-# Ameixa
+# Ameixa (Desodorante Colônia)
 
 ## Base factual do catálogo
 

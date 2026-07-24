@@ -34,7 +34,7 @@ relations:
   - predicate: has-heart-note
     target: antiquario:olfactory-note:musk
   - predicate: has-heart-note
-    target: antiquario:olfactory-note:orange-blossom
+    target: antiquario:olfactory-note:laranja-blossom
   - predicate: has-heart-note
     target: antiquario:olfactory-note:geranium
   - predicate: has-heart-note
@@ -50,7 +50,7 @@ relations:
   - predicate: has-base-note
     target: antiquario:olfactory-note:saffron
   - predicate: has-base-note
-    target: antiquario:olfactory-note:sandalwood
+    target: antiquario:olfactory-note:sandalo
   - predicate: has-base-note
     target: antiquario:olfactory-note:tonka-bean
   - predicate: has-base-note
@@ -65,4 +65,4 @@ relations:
 
 - **Saída:** [[note-cardamom]], [[note-neroli]], [[Bergamota]], [[note-mandarin-orange]]
 - **Coração:** [[note-musk]], [[note-orange-blossom]], [[note-geranium]], [[note-myrrh]], [[Vetiver]]
-- **Fundo:** [[note-labdanum]], [[Baunilha]], [[note-patchouli]], [[note-saffron]], [[note-sandalwood]], [[note-tonka-bean]], [[note-leather]]
+- **Fundo:** [[note-labdanum]], [[Baunilha]], [[note-patchouli]], [[note-saffron]], [[note-sandalo]], [[note-tonka-bean]], [[note-leather]]

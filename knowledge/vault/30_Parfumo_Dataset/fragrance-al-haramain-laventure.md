@@ -24,7 +24,7 @@ relations:
   - predicate: belongs-to-brand
     target: antiquario:brand:al-haramain
   - predicate: has-top-note
-    target: antiquario:olfactory-note:lemon
+    target: antiquario:olfactory-note:limao-siciliano
   - predicate: has-top-note
     target: antiquario:olfactory-note:bergamota
   - predicate: has-top-note
@@ -32,11 +32,11 @@ relations:
   - predicate: has-heart-note
     target: antiquario:olfactory-note:lily-of-the-valley
   - predicate: has-heart-note
-    target: antiquario:olfactory-note:woody-notes
+    target: antiquario:olfactory-note:cedro-notes
   - predicate: has-heart-note
     target: antiquario:olfactory-note:jasmine
   - predicate: has-base-note
-    target: antiquario:olfactory-note:amber
+    target: antiquario:olfactory-note:ambar
   - predicate: has-base-note
     target: antiquario:olfactory-note:musk
   - predicate: has-base-note
@@ -49,6 +49,6 @@ relations:
 
 ## Pirâmide Olfativa
 
-- **Saída:** [[note-lemon]], [[Bergamota]], [[note-elemi-resin]]
+- **Saída:** [[note-limao-siciliano]], [[Bergamota]], [[note-elemi-resin]]
 - **Coração:** [[note-lily-of-the-valley]], [[note-woody-notes]], [[note-jasmine]]
-- **Fundo:** [[note-amber]], [[note-musk]], [[note-patchouli]]
+- **Fundo:** [[note-ambar]], [[note-musk]], [[note-patchouli]]

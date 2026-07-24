@@ -44,7 +44,7 @@ relations:
   - predicate: has-base-note
     target: antiquario:olfactory-note:ambergris
   - predicate: has-base-note
-    target: antiquario:olfactory-note:sandalwood
+    target: antiquario:olfactory-note:sandalo
 ---
 
 # Original Vetiver
@@ -55,4 +55,4 @@ relations:
 
 - **Saída:** [[Bergamota]], [[note-vetiver-leaf]], [[note-bitter-orange]], [[note-mandarin-orange]]
 - **Coração:** [[note-pink-pepper]], [[note-coriander]], [[note-white-pepper]]
-- **Fundo:** [[Vetiver]], [[note-musk]], [[note-ambergris]], [[note-sandalwood]]
+- **Fundo:** [[Vetiver]], [[note-musk]], [[note-ambergris]], [[note-sandalo]]

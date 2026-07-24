@@ -76,6 +76,8 @@ def create_parser() -> argparse.ArgumentParser:
         action="store_true",
         help="gera rascunhos apenas para exceções ambíguas; desativado por padrão",
     )
+    commands.add_parser("vtex-enrich", help="enriquece fragrâncias desconectadas via VTEX e DuckDuckGo")
+    commands.add_parser("auto-approve", help="avalia réguas de qualidade e aprova automaticamente fragrâncias completas da Inbox")
     return parser
 
 
@@ -149,6 +151,12 @@ def main(argv: Sequence[str] | None = None) -> int:
                 dry_run=args.dry_run,
                 generate_inbox=args.generate_review_inbox and not args.no_inbox,
             ))
+        elif args.command == "vtex-enrich":
+            from .vtex_enrichment import run_vtex_enrichment
+            run_vtex_enrichment()
+        elif args.command == "auto-approve":
+            from .auto_approve import run_auto_approval
+            run_auto_approval()
         return 0
 
     except (FileNotFoundError, RuntimeError, ValueError) as error:

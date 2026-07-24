@@ -24,11 +24,11 @@ relations:
   - predicate: belongs-to-brand
     target: antiquario:brand:montblanc
   - predicate: has-top-note
-    target: antiquario:olfactory-note:juniper-berry
+    target: antiquario:olfactory-note:zimbro
   - predicate: has-top-note
     target: antiquario:olfactory-note:bergamota
   - predicate: has-top-note
-    target: antiquario:olfactory-note:cinnamon
+    target: antiquario:olfactory-note:canela
   - predicate: has-top-note
     target: antiquario:olfactory-note:lavender
   - predicate: has-top-note
@@ -40,7 +40,7 @@ relations:
   - predicate: has-heart-note
     target: antiquario:olfactory-note:geranium
   - predicate: has-heart-note
-    target: antiquario:olfactory-note:orange-blossom
+    target: antiquario:olfactory-note:laranja-blossom
   - predicate: has-heart-note
     target: antiquario:olfactory-note:jasmine
   - predicate: has-heart-note
@@ -50,7 +50,7 @@ relations:
   - predicate: has-base-note
     target: antiquario:olfactory-note:baunilha
   - predicate: has-base-note
-    target: antiquario:olfactory-note:amber
+    target: antiquario:olfactory-note:ambar
   - predicate: has-base-note
     target: antiquario:olfactory-note:musk
   - predicate: has-base-note
@@ -58,7 +58,7 @@ relations:
   - predicate: has-base-note
     target: antiquario:olfactory-note:patchouli
   - predicate: has-base-note
-    target: antiquario:olfactory-note:sandalwood
+    target: antiquario:olfactory-note:sandalo
   - predicate: has-base-note
     target: antiquario:olfactory-note:tonka-bean
   - predicate: has-base-note
@@ -73,6 +73,6 @@ relations:
 
 ## Pirâmide Olfativa
 
-- **Saída:** [[note-juniper-berry]], [[Bergamota]], [[note-cinnamon]], [[note-lavender]], [[note-mint]], [[note-coriander]], [[note-rosemary]]
+- **Saída:** [[note-zimbro]], [[Bergamota]], [[note-canela]], [[note-lavender]], [[note-mint]], [[note-coriander]], [[note-rosemary]]
 - **Coração:** [[note-geranium]], [[note-orange-blossom]], [[note-jasmine]], [[note-violet]]
-- **Fundo:** [[note-raspberry]], [[Baunilha]], [[note-amber]], [[note-musk]], [[note-oakmoss]], [[note-patchouli]], [[note-sandalwood]], [[note-tonka-bean]], [[note-dark-chocolate]], [[Vetiver]]
+- **Fundo:** [[note-raspberry]], [[Baunilha]], [[note-ambar]], [[note-musk]], [[note-oakmoss]], [[note-patchouli]], [[note-sandalo]], [[note-tonka-bean]], [[note-dark-chocolate]], [[Vetiver]]

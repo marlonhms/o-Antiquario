@@ -58,7 +58,7 @@ relations:
   - predicate: has-base-note
     target: antiquario:olfactory-note:vetiver
   - predicate: has-base-note
-    target: antiquario:olfactory-note:sandalwood
+    target: antiquario:olfactory-note:sandalo
   - predicate: has-base-note
     target: antiquario:olfactory-note:suede
 ---
@@ -71,4 +71,4 @@ relations:
 
 - **Saída:** [[note-green-apple]], [[note-cedar-leaf]], [[note-mint]], [[note-pine-needle]], [[note-grapefruit]], [[note-thyme]], [[note-basil]], [[note-rum]]
 - **Coração:** [[note-cedarwood]], [[note-lavender]], [[note-sage]], [[note-carnation]], [[note-geranium-leaf]], [[note-jasmine]]
-- **Fundo:** [[note-fir-balsam]], [[note-moss]], [[Vetiver]], [[note-sandalwood]], [[note-suede]]
+- **Fundo:** [[note-fir-balsam]], [[note-moss]], [[Vetiver]], [[note-sandalo]], [[note-suede]]

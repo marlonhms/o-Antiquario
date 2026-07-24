@@ -1,6 +1,6 @@
 ---
 schema_version: 1
-id: antiquario:olfactory-note:cinnamon-leaf
+id: antiquario:olfactory-note:canela-leaf
 project: o-antiquario
 type: olfactory-note
 title: "Cinnamon leaf"

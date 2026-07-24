@@ -24,7 +24,7 @@ relations:
   - predicate: belongs-to-brand
     target: antiquario:brand:lalique
   - predicate: has-top-note
-    target: antiquario:olfactory-note:lemon-leaf
+    target: antiquario:olfactory-note:limao-siciliano-leaf
   - predicate: has-top-note
     target: antiquario:olfactory-note:bergamota
   - predicate: has-top-note
@@ -42,7 +42,7 @@ relations:
   - predicate: has-base-note
     target: antiquario:olfactory-note:musk
   - predicate: has-base-note
-    target: antiquario:olfactory-note:amber
+    target: antiquario:olfactory-note:ambar
 ---
 
 # Lalique White Lalique 2008 Eau de Toilette
@@ -53,4 +53,4 @@ relations:
 
 - **Saída:** [[note-lemon-leaf]], [[Bergamota]], [[note-tamarind]]
 - **Coração:** [[note-white-pepper]], [[note-cardamom]], [[note-nutmeg]], [[note-violet]]
-- **Fundo:** [[note-cedar]], [[note-musk]], [[note-amber]]
+- **Fundo:** [[note-cedar]], [[note-musk]], [[note-ambar]]

@@ -54,7 +54,7 @@ relations:
   - predicate: has-base-note
     target: antiquario:olfactory-note:pepper
   - predicate: has-base-note
-    target: antiquario:olfactory-note:sandalwood
+    target: antiquario:olfactory-note:sandalo
 ---
 
 # Enigma pour Homme Creation-E pour Homme Roja Parfums 2013 Eau de Parfum
@@ -65,4 +65,4 @@ relations:
 
 - **Saída:** [[Bergamota]]
 - **Coração:** [[note-grasse-jasmine]], [[note-heliotrope]], [[note-geranium]], [[note-may-rose]], [[note-neroli]]
-- **Fundo:** [[note-cognac]], [[note-tobacco]], [[note-benzoin]], [[Baunilha]], [[note-cardamom]], [[note-ambergris]], [[note-ginger]], [[note-patchouli]], [[note-pepper]], [[note-sandalwood]]
+- **Fundo:** [[note-cognac]], [[note-tobacco]], [[note-benzoin]], [[Baunilha]], [[note-cardamom]], [[note-ambergris]], [[note-ginger]], [[note-patchouli]], [[note-pepper]], [[note-sandalo]]

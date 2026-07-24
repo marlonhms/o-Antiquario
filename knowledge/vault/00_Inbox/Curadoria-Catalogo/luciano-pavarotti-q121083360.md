@@ -20,7 +20,7 @@ evidence:
     kind: open_source
     license: CC0-1.0
     confidence: medium
-    claim_scope: Identidade, marca, país, ano, perfumista e site oficial quando presentes no Wikidata.
+    claim_scope: Identidade, marca, país, ano, perfumista, site oficial e descritores olfativos quando presentes no Wikidata.
     locator: https://www.wikidata.org/wiki/Q121083360
     retrieved_at: 2026-07-22
 relations: []
@@ -36,11 +36,12 @@ relations: []
 - País: Itália
 - Ano: 1994
 - Site oficial: não informado no Wikidata
+- Descritores olfativos (`P5872`, sem camada de pirâmide): não informado no Wikidata
 
 ## Enriquecimento editorial obrigatório
 
 - [ ] Confirmar a identidade e a concentração da fragrância.
-- [ ] Classificar família, notas e acordes usando a taxonomia do Antiquário.
+- [ ] Validar os descritores Wikidata e classificar família, notas, camadas e acordes usando a taxonomia do Antiquário.
 - [ ] Registrar contexto de uso e desempenho com método, amostra e confiança.
 - [ ] Adicionar evidências permitidas para cada afirmação editorial.
 - [ ] Mover este arquivo para `10_Perfumes` somente após revisão humana.

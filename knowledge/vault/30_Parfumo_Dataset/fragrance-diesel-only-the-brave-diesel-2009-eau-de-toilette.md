@@ -36,7 +36,7 @@ relations:
   - predicate: has-heart-note
     target: antiquario:olfactory-note:rosemary
   - predicate: has-base-note
-    target: antiquario:olfactory-note:amber
+    target: antiquario:olfactory-note:ambar
   - predicate: has-base-note
     target: antiquario:olfactory-note:cedarwood
   - predicate: has-base-note
@@ -51,4 +51,4 @@ relations:
 
 - **Saída:** [[note-mandarin-orange]], [[note-primofiore-lemon]], [[note-coriander]]
 - **Coração:** [[note-labdanum]], [[note-violet-leaf]], [[note-rosemary]]
-- **Fundo:** [[note-amber]], [[note-cedarwood]], [[note-leather]]
+- **Fundo:** [[note-ambar]], [[note-cedarwood]], [[note-leather]]

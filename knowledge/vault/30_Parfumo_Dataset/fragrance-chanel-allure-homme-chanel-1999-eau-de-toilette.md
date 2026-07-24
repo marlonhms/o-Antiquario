@@ -32,7 +32,7 @@ relations:
   - predicate: has-top-note
     target: antiquario:olfactory-note:ginger
   - predicate: has-top-note
-    target: antiquario:olfactory-note:lemon
+    target: antiquario:olfactory-note:limao-siciliano
   - predicate: has-top-note
     target: antiquario:olfactory-note:mandarin-orange
   - predicate: has-heart-note
@@ -56,11 +56,11 @@ relations:
   - predicate: has-heart-note
     target: antiquario:olfactory-note:rose
   - predicate: has-base-note
-    target: antiquario:olfactory-note:sandalwood
+    target: antiquario:olfactory-note:sandalo
   - predicate: has-base-note
     target: antiquario:olfactory-note:tonka-bean
   - predicate: has-base-note
-    target: antiquario:olfactory-note:amber
+    target: antiquario:olfactory-note:ambar
   - predicate: has-base-note
     target: antiquario:olfactory-note:musk
   - predicate: has-base-note
@@ -81,6 +81,6 @@ relations:
 
 ## Pirâmide Olfativa
 
-- **Saída:** [[Bergamota]], [[note-lavender]], [[note-peach]], [[note-ginger]], [[note-lemon]], [[note-mandarin-orange]]
+- **Saída:** [[Bergamota]], [[note-lavender]], [[note-peach]], [[note-ginger]], [[note-limao-siciliano]], [[note-mandarin-orange]]
 - **Coração:** [[note-pepper]], [[note-cedar]], [[note-freesia]], [[note-jasmine]], [[note-patchouli]], [[note-rosewood]], [[Vetiver]], [[note-aniseed]], [[note-gardenia]], [[note-rose]]
-- **Fundo:** [[note-sandalwood]], [[note-tonka-bean]], [[note-amber]], [[note-musk]], [[note-oakmoss]], [[Baunilha]], [[note-benzoin]], [[note-coconut]], [[note-leather]]
+- **Fundo:** [[note-sandalo]], [[note-tonka-bean]], [[note-ambar]], [[note-musk]], [[note-oakmoss]], [[Baunilha]], [[note-benzoin]], [[note-coconut]], [[note-leather]]

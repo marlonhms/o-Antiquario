@@ -40,7 +40,7 @@ relations:
   - predicate: has-base-note
     target: antiquario:olfactory-note:patchouli-orpur
   - predicate: has-base-note
-    target: antiquario:olfactory-note:sandalwood
+    target: antiquario:olfactory-note:sandalo
   - predicate: has-base-note
     target: antiquario:olfactory-note:baunilha
   - predicate: has-base-note
@@ -59,4 +59,4 @@ relations:
 
 - **Saída:** [[note-italian-lemon]], [[note-spearmint]], [[note-candied-apple]], [[note-italian-mandarin-orange]]
 - **Coração:** [[note-ambermax]], [[note-clary-sage]], [[note-geranium]]
-- **Fundo:** [[note-patchouli-orpur]], [[note-sandalwood]], [[Baunilha]], [[note-vetiver-orpur]], [[note-virginia-cedar]], [[note-leather]]
+- **Fundo:** [[note-patchouli-orpur]], [[note-sandalo]], [[Baunilha]], [[note-vetiver-orpur]], [[note-virginia-cedar]], [[note-leather]]

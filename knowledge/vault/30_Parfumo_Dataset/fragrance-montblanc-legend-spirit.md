@@ -44,7 +44,7 @@ relations:
   - predicate: has-base-note
     target: antiquario:olfactory-note:oakmoss
   - predicate: has-base-note
-    target: antiquario:olfactory-note:sandalwood
+    target: antiquario:olfactory-note:sandalo
 ---
 
 # Legend Spirit
@@ -55,4 +55,4 @@ relations:
 
 - **Saída:** [[Bergamota]], [[note-grapefruit]], [[note-pink-pepper]]
 - **Coração:** [[note-aquatic-notes]], [[note-cardamom]], [[note-lavender]]
-- **Fundo:** [[note-white-musk]], [[note-cashmere-wood]], [[note-cedar]], [[note-oakmoss]], [[note-sandalwood]]
+- **Fundo:** [[note-white-musk]], [[note-cashmere-wood]], [[note-cedar]], [[note-oakmoss]], [[note-sandalo]]

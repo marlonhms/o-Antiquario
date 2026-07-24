@@ -24,7 +24,7 @@ relations:
   - predicate: belongs-to-brand
     target: antiquario:brand:roja-parfums
   - predicate: has-top-note
-    target: antiquario:olfactory-note:lemon
+    target: antiquario:olfactory-note:limao-siciliano
   - predicate: has-top-note
     target: antiquario:olfactory-note:litsea-cubeba
   - predicate: has-top-note
@@ -54,7 +54,7 @@ relations:
   - predicate: has-base-note
     target: antiquario:olfactory-note:cedarwood
   - predicate: has-base-note
-    target: antiquario:olfactory-note:juniper-berry
+    target: antiquario:olfactory-note:zimbro
   - predicate: has-base-note
     target: antiquario:olfactory-note:moss
   - predicate: has-base-note
@@ -68,7 +68,7 @@ relations:
   - predicate: has-base-note
     target: antiquario:olfactory-note:labdanum
   - predicate: has-base-note
-    target: antiquario:olfactory-note:sandalwood
+    target: antiquario:olfactory-note:sandalo
   - predicate: has-base-note
     target: antiquario:olfactory-note:baunilha
   - predicate: has-base-note
@@ -81,6 +81,6 @@ relations:
 
 ## Pirâmide Olfativa
 
-- **Saída:** [[note-lemon]], [[note-litsea-cubeba]], [[Bergamota]], [[note-grapefruit]], [[note-lime]], [[note-mandarin-orange]], [[note-provencal-lavender]], [[note-rosemary]], [[note-thyme]]
+- **Saída:** [[note-limao-siciliano]], [[note-litsea-cubeba]], [[Bergamota]], [[note-grapefruit]], [[note-lime]], [[note-mandarin-orange]], [[note-provencal-lavender]], [[note-rosemary]], [[note-thyme]]
 - **Coração:** [[note-jasmine-sambac]], [[note-geranium]], [[note-grasse-jasmine]], [[note-violet]], [[note-ylang-ylang]]
-- **Fundo:** [[note-cedarwood]], [[note-juniper-berry]], [[note-moss]], [[note-musk]], [[Vetiver]], [[note-benzoin]], [[note-iris]], [[note-labdanum]], [[note-sandalwood]], [[Baunilha]], [[note-galbanum]]
+- **Fundo:** [[note-cedarwood]], [[note-zimbro]], [[note-moss]], [[note-musk]], [[Vetiver]], [[note-benzoin]], [[note-iris]], [[note-labdanum]], [[note-sandalo]], [[Baunilha]], [[note-galbanum]]

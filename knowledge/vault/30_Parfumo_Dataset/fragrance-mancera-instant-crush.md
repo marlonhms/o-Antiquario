@@ -30,7 +30,7 @@ relations:
   - predicate: has-top-note
     target: antiquario:olfactory-note:ginger
   - predicate: has-heart-note
-    target: antiquario:olfactory-note:amber
+    target: antiquario:olfactory-note:ambar
   - predicate: has-heart-note
     target: antiquario:olfactory-note:egyptian-jasmine
   - predicate: has-heart-note
@@ -42,7 +42,7 @@ relations:
   - predicate: has-base-note
     target: antiquario:olfactory-note:oakmoss
   - predicate: has-base-note
-    target: antiquario:olfactory-note:sandalwood
+    target: antiquario:olfactory-note:sandalo
 ---
 
 # Instant Crush
@@ -52,5 +52,5 @@ relations:
 ## Pirâmide Olfativa
 
 - **Saída:** [[note-saffron]], [[note-citrus-fruits]], [[note-ginger]]
-- **Coração:** [[note-amber]], [[note-egyptian-jasmine]], [[note-moroccan-rose]]
-- **Fundo:** [[note-white-musk]], [[Baunilha]], [[note-oakmoss]], [[note-sandalwood]]
+- **Coração:** [[note-ambar]], [[note-egyptian-jasmine]], [[note-moroccan-rose]]
+- **Fundo:** [[note-white-musk]], [[Baunilha]], [[note-oakmoss]], [[note-sandalo]]

@@ -42,7 +42,7 @@ relations:
   - predicate: has-heart-note
     target: antiquario:olfactory-note:peony
   - predicate: has-base-note
-    target: antiquario:olfactory-note:amber
+    target: antiquario:olfactory-note:ambar
   - predicate: has-base-note
     target: antiquario:olfactory-note:baunilha
   - predicate: has-base-note
@@ -61,4 +61,4 @@ relations:
 
 - **Saída:** [[note-apple]], [[note-green-mandarin-orange]], [[note-cardamom]], [[note-violet]]
 - **Coração:** [[note-mango]], [[note-black-pepper]], [[note-lavender]], [[note-patchouli]], [[note-peony]]
-- **Fundo:** [[note-amber]], [[Baunilha]], [[Vetiver]], [[note-moss]], [[note-teak]]
+- **Fundo:** [[note-ambar]], [[Baunilha]], [[Vetiver]], [[note-moss]], [[note-teak]]

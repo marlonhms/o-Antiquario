@@ -28,7 +28,7 @@ relations:
   - predicate: has-top-note
     target: antiquario:olfactory-note:bergamota
   - predicate: has-top-note
-    target: antiquario:olfactory-note:lemon
+    target: antiquario:olfactory-note:limao-siciliano
   - predicate: has-heart-note
     target: antiquario:olfactory-note:blackcurrant
   - predicate: has-heart-note
@@ -36,7 +36,7 @@ relations:
   - predicate: has-heart-note
     target: antiquario:olfactory-note:tonka-bean
   - predicate: has-heart-note
-    target: antiquario:olfactory-note:cinnamon
+    target: antiquario:olfactory-note:canela
   - predicate: has-base-note
     target: antiquario:olfactory-note:musk
   - predicate: has-base-note
@@ -53,6 +53,6 @@ relations:
 
 ## Pirâmide Olfativa
 
-- **Saída:** [[note-cardamom]], [[Bergamota]], [[note-lemon]]
-- **Coração:** [[note-blackcurrant]], [[note-hemp]], [[note-tonka-bean]], [[note-cinnamon]]
+- **Saída:** [[note-cardamom]], [[Bergamota]], [[note-limao-siciliano]]
+- **Coração:** [[note-blackcurrant]], [[note-hemp]], [[note-tonka-bean]], [[note-canela]]
 - **Fundo:** [[note-musk]], [[note-benzoin]], [[note-moss]], [[note-patchouli]]

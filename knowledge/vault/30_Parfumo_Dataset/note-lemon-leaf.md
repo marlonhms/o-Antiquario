@@ -1,6 +1,6 @@
 ---
 schema_version: 1
-id: antiquario:olfactory-note:lemon-leaf
+id: antiquario:olfactory-note:limao-siciliano-leaf
 project: o-antiquario
 type: olfactory-note
 title: "Lemon leaf"

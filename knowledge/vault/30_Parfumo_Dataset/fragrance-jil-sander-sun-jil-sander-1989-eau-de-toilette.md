@@ -24,13 +24,13 @@ relations:
   - predicate: belongs-to-brand
     target: antiquario:brand:jil-sander
   - predicate: has-top-note
-    target: antiquario:olfactory-note:orange-blossom
+    target: antiquario:olfactory-note:laranja-blossom
   - predicate: has-top-note
     target: antiquario:olfactory-note:bergamota
   - predicate: has-top-note
     target: antiquario:olfactory-note:fruits
   - predicate: has-top-note
-    target: antiquario:olfactory-note:lemon
+    target: antiquario:olfactory-note:limao-siciliano
   - predicate: has-heart-note
     target: antiquario:olfactory-note:heliotrope
   - predicate: has-heart-note
@@ -54,9 +54,9 @@ relations:
   - predicate: has-base-note
     target: antiquario:olfactory-note:tonka-bean
   - predicate: has-base-note
-    target: antiquario:olfactory-note:amber
+    target: antiquario:olfactory-note:ambar
   - predicate: has-base-note
-    target: antiquario:olfactory-note:sandalwood
+    target: antiquario:olfactory-note:sandalo
 ---
 
 # Sun Jil Sander 1989 Eau de Toilette
@@ -65,6 +65,6 @@ relations:
 
 ## Pirâmide Olfativa
 
-- **Saída:** [[note-orange-blossom]], [[Bergamota]], [[note-fruits]], [[note-lemon]]
+- **Saída:** [[note-orange-blossom]], [[Bergamota]], [[note-fruits]], [[note-limao-siciliano]]
 - **Coração:** [[note-heliotrope]], [[note-ylang-ylang]], [[note-carnation]], [[note-lily-of-the-valley]], [[note-orris-root]], [[note-rose]]
-- **Fundo:** [[Baunilha]], [[note-benzoin]], [[note-musk]], [[note-styrax]], [[note-tonka-bean]], [[note-amber]], [[note-sandalwood]]
+- **Fundo:** [[Baunilha]], [[note-benzoin]], [[note-musk]], [[note-styrax]], [[note-tonka-bean]], [[note-ambar]], [[note-sandalo]]

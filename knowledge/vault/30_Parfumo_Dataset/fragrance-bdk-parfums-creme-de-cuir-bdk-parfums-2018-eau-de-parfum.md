@@ -34,7 +34,7 @@ relations:
   - predicate: has-heart-note
     target: antiquario:olfactory-note:solar-note
   - predicate: has-heart-note
-    target: antiquario:olfactory-note:sandalwood
+    target: antiquario:olfactory-note:sandalo
   - predicate: has-heart-note
     target: antiquario:olfactory-note:pink-pepper
   - predicate: has-base-note
@@ -52,5 +52,5 @@ relations:
 ## Pirâmide Olfativa
 
 - **Saída:** [[note-pineapple]], [[Bergamota]], [[note-mandarin-orange]]
-- **Coração:** [[note-suede]], [[note-solar-note]], [[note-sandalwood]], [[note-pink-pepper]]
+- **Coração:** [[note-suede]], [[note-solar-note]], [[note-sandalo]], [[note-pink-pepper]]
 - **Fundo:** [[note-musk]], [[note-vanilla-absolute]], [[note-birch]]

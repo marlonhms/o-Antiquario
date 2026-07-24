@@ -24,7 +24,7 @@ relations:
   - predicate: belongs-to-brand
     target: antiquario:brand:cartier
   - predicate: has-top-note
-    target: antiquario:olfactory-note:orange
+    target: antiquario:olfactory-note:laranja
   - predicate: has-top-note
     target: antiquario:olfactory-note:bergamota
   - predicate: has-top-note
@@ -49,6 +49,6 @@ relations:
 
 ## Pirâmide Olfativa
 
-- **Saída:** [[note-orange]], [[Bergamota]], [[note-birch-wood]]
+- **Saída:** [[note-laranja]], [[Bergamota]], [[note-birch-wood]]
 - **Coração:** [[note-cardamom]], [[note-cedar]], [[note-mugwort]]
 - **Fundo:** [[note-cedar]], [[Vetiver]], [[note-oakmoss]]

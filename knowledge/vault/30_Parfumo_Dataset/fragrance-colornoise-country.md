@@ -44,11 +44,11 @@ relations:
   - predicate: has-base-note
     target: antiquario:olfactory-note:baunilha
   - predicate: has-base-note
-    target: antiquario:olfactory-note:amber
+    target: antiquario:olfactory-note:ambar
   - predicate: has-base-note
     target: antiquario:olfactory-note:patchouli
   - predicate: has-base-note
-    target: antiquario:olfactory-note:sandalwood
+    target: antiquario:olfactory-note:sandalo
 ---
 
 # Country.
@@ -59,4 +59,4 @@ relations:
 
 - **Saída:** [[note-lavender]], [[note-green-leaves]], [[Bergamota]], [[note-gymwear]]
 - **Coração:** [[note-musk]], [[note-jasmine]], [[note-lily-of-the-valley]], [[note-raspberry]]
-- **Fundo:** [[note-coffee]], [[Baunilha]], [[note-amber]], [[note-patchouli]], [[note-sandalwood]]
+- **Fundo:** [[note-coffee]], [[Baunilha]], [[note-ambar]], [[note-patchouli]], [[note-sandalo]]

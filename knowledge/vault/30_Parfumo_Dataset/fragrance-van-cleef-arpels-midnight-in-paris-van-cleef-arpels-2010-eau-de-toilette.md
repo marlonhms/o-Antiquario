@@ -26,7 +26,7 @@ relations:
   - predicate: has-top-note
     target: antiquario:olfactory-note:bergamota
   - predicate: has-top-note
-    target: antiquario:olfactory-note:lemon
+    target: antiquario:olfactory-note:limao-siciliano
   - predicate: has-top-note
     target: antiquario:olfactory-note:rosemary
   - predicate: has-heart-note
@@ -38,7 +38,7 @@ relations:
   - predicate: has-base-note
     target: antiquario:olfactory-note:tonka-bean
   - predicate: has-base-note
-    target: antiquario:olfactory-note:amber
+    target: antiquario:olfactory-note:ambar
   - predicate: has-base-note
     target: antiquario:olfactory-note:frankincense
 ---
@@ -49,6 +49,6 @@ relations:
 
 ## Pirâmide Olfativa
 
-- **Saída:** [[Bergamota]], [[note-lemon]], [[note-rosemary]]
+- **Saída:** [[Bergamota]], [[note-limao-siciliano]], [[note-rosemary]]
 - **Coração:** [[note-leather]], [[note-mate-tea]], [[note-lily-of-the-valley]]
-- **Fundo:** [[note-tonka-bean]], [[note-amber]], [[note-frankincense]]
+- **Fundo:** [[note-tonka-bean]], [[note-ambar]], [[note-frankincense]]

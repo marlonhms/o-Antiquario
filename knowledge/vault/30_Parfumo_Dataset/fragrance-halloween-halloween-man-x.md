@@ -26,7 +26,7 @@ relations:
   - predicate: has-top-note
     target: antiquario:olfactory-note:cardamom
   - predicate: has-top-note
-    target: antiquario:olfactory-note:lemon
+    target: antiquario:olfactory-note:limao-siciliano
   - predicate: has-top-note
     target: antiquario:olfactory-note:provencal-lavender
   - predicate: has-heart-note
@@ -34,7 +34,7 @@ relations:
   - predicate: has-heart-note
     target: antiquario:olfactory-note:mineral-notes
   - predicate: has-heart-note
-    target: antiquario:olfactory-note:cinnamon
+    target: antiquario:olfactory-note:canela
   - predicate: has-heart-note
     target: antiquario:olfactory-note:leather
   - predicate: has-heart-note
@@ -42,7 +42,7 @@ relations:
   - predicate: has-base-note
     target: antiquario:olfactory-note:tonka-bean
   - predicate: has-base-note
-    target: antiquario:olfactory-note:amber
+    target: antiquario:olfactory-note:ambar
   - predicate: has-base-note
     target: antiquario:olfactory-note:frankincense
 ---
@@ -53,6 +53,6 @@ relations:
 
 ## Pirâmide Olfativa
 
-- **Saída:** [[note-cardamom]], [[note-lemon]], [[note-provencal-lavender]]
-- **Coração:** [[note-coffee]], [[note-mineral-notes]], [[note-cinnamon]], [[note-leather]], [[note-whisky]]
-- **Fundo:** [[note-tonka-bean]], [[note-amber]], [[note-frankincense]]
+- **Saída:** [[note-cardamom]], [[note-limao-siciliano]], [[note-provencal-lavender]]
+- **Coração:** [[note-coffee]], [[note-mineral-notes]], [[note-canela]], [[note-leather]], [[note-whisky]]
+- **Fundo:** [[note-tonka-bean]], [[note-ambar]], [[note-frankincense]]

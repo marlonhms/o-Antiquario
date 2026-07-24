@@ -36,7 +36,7 @@ relations:
   - predicate: has-base-note
     target: antiquario:olfactory-note:musk
   - predicate: has-base-note
-    target: antiquario:olfactory-note:amber
+    target: antiquario:olfactory-note:ambar
   - predicate: has-base-note
     target: antiquario:olfactory-note:sycamore-wood
 ---
@@ -49,4 +49,4 @@ relations:
 
 - **Saída:** [[note-starfruit]], [[note-rosewood]]
 - **Coração:** [[note-clary-sage]], [[note-tarragon]], [[note-cedar-leaf]]
-- **Fundo:** [[note-musk]], [[note-amber]], [[note-sycamore-wood]]
+- **Fundo:** [[note-musk]], [[note-ambar]], [[note-sycamore-wood]]

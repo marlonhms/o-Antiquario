@@ -32,13 +32,13 @@ relations:
   - predicate: has-heart-note
     target: antiquario:olfactory-note:bulgarian-rose
   - predicate: has-heart-note
-    target: antiquario:olfactory-note:orange-blossom
+    target: antiquario:olfactory-note:laranja-blossom
   - predicate: has-base-note
     target: antiquario:olfactory-note:oud
   - predicate: has-base-note
     target: antiquario:olfactory-note:patchouli
   - predicate: has-base-note
-    target: antiquario:olfactory-note:amber
+    target: antiquario:olfactory-note:ambar
   - predicate: has-base-note
     target: antiquario:olfactory-note:musk
 ---
@@ -51,4 +51,4 @@ relations:
 
 - **Saída:** [[note-raspberry]], [[note-pear]], [[note-saffron]]
 - **Coração:** [[note-bulgarian-rose]], [[note-orange-blossom]]
-- **Fundo:** [[note-oud]], [[note-patchouli]], [[note-amber]], [[note-musk]]
+- **Fundo:** [[note-oud]], [[note-patchouli]], [[note-ambar]], [[note-musk]]

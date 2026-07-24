@@ -42,7 +42,7 @@ relations:
   - predicate: has-heart-note
     target: antiquario:olfactory-note:christalon
   - predicate: has-base-note
-    target: antiquario:olfactory-note:sandalwood
+    target: antiquario:olfactory-note:sandalo
   - predicate: has-base-note
     target: antiquario:olfactory-note:javanol
   - predicate: has-base-note
@@ -59,4 +59,4 @@ relations:
 
 - **Saída:** [[note-madagascan-pepper]], [[note-somalian-frankincense]], [[note-nutmeg]], [[Bergamota]]
 - **Coração:** [[note-cashmeran]], [[note-cedarwood]], [[note-gaiac-wood]], [[note-caraway]], [[note-christalon]]
-- **Fundo:** [[note-sandalwood]], [[note-javanol]], [[Vetiver]], [[note-oud]]
+- **Fundo:** [[note-sandalo]], [[note-javanol]], [[Vetiver]], [[note-oud]]

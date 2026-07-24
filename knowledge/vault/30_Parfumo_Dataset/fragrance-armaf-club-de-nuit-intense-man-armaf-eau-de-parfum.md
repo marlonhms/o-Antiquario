@@ -24,7 +24,7 @@ relations:
   - predicate: belongs-to-brand
     target: antiquario:brand:armaf
   - predicate: has-top-note
-    target: antiquario:olfactory-note:lemon
+    target: antiquario:olfactory-note:limao-siciliano
   - predicate: has-top-note
     target: antiquario:olfactory-note:bergamota
   - predicate: has-top-note
@@ -55,6 +55,6 @@ relations:
 
 ## Pirâmide Olfativa
 
-- **Saída:** [[note-lemon]], [[Bergamota]], [[note-pineapple]], [[note-apple]], [[note-blackcurrant]]
+- **Saída:** [[note-limao-siciliano]], [[Bergamota]], [[note-pineapple]], [[note-apple]], [[note-blackcurrant]]
 - **Coração:** [[note-birch]], [[note-jasmine]], [[note-rose]]
 - **Fundo:** [[note-musk]], [[note-ambergris]], [[note-patchouli]], [[Baunilha]]

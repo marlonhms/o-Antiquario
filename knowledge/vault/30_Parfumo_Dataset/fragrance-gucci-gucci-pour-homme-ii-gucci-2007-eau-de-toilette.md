@@ -30,7 +30,7 @@ relations:
   - predicate: has-heart-note
     target: antiquario:olfactory-note:black-tea
   - predicate: has-heart-note
-    target: antiquario:olfactory-note:cinnamon
+    target: antiquario:olfactory-note:canela
   - predicate: has-heart-note
     target: antiquario:olfactory-note:pimento
   - predicate: has-base-note
@@ -50,5 +50,5 @@ relations:
 ## Pirâmide Olfativa
 
 - **Saída:** [[note-violet-leaf]], [[Bergamota]]
-- **Coração:** [[note-black-tea]], [[note-cinnamon]], [[note-pimento]]
+- **Coração:** [[note-black-tea]], [[note-canela]], [[note-pimento]]
 - **Fundo:** [[note-myrrh]], [[note-tobacco]], [[note-olive-wood]], [[note-white-musk]]

@@ -24,17 +24,17 @@ relations:
   - predicate: belongs-to-brand
     target: antiquario:brand:joop
   - predicate: has-top-note
-    target: antiquario:olfactory-note:orange-blossom
+    target: antiquario:olfactory-note:laranja-blossom
   - predicate: has-top-note
     target: antiquario:olfactory-note:bergamota
   - predicate: has-top-note
     target: antiquario:olfactory-note:mandarin-orange
   - predicate: has-top-note
-    target: antiquario:olfactory-note:lemon
+    target: antiquario:olfactory-note:limao-siciliano
   - predicate: has-heart-note
     target: antiquario:olfactory-note:heliotrope
   - predicate: has-heart-note
-    target: antiquario:olfactory-note:cinnamon
+    target: antiquario:olfactory-note:canela
   - predicate: has-heart-note
     target: antiquario:olfactory-note:lily-of-the-valley
   - predicate: has-heart-note
@@ -44,7 +44,7 @@ relations:
   - predicate: has-base-note
     target: antiquario:olfactory-note:tonka-bean
   - predicate: has-base-note
-    target: antiquario:olfactory-note:sandalwood
+    target: antiquario:olfactory-note:sandalo
   - predicate: has-base-note
     target: antiquario:olfactory-note:patchouli
 ---
@@ -55,6 +55,6 @@ relations:
 
 ## Pirâmide Olfativa
 
-- **Saída:** [[note-orange-blossom]], [[Bergamota]], [[note-mandarin-orange]], [[note-lemon]]
-- **Coração:** [[note-heliotrope]], [[note-cinnamon]], [[note-lily-of-the-valley]], [[note-jasmine]]
-- **Fundo:** [[Baunilha]], [[note-tonka-bean]], [[note-sandalwood]], [[note-patchouli]]
+- **Saída:** [[note-orange-blossom]], [[Bergamota]], [[note-mandarin-orange]], [[note-limao-siciliano]]
+- **Coração:** [[note-heliotrope]], [[note-canela]], [[note-lily-of-the-valley]], [[note-jasmine]]
+- **Fundo:** [[Baunilha]], [[note-tonka-bean]], [[note-sandalo]], [[note-patchouli]]

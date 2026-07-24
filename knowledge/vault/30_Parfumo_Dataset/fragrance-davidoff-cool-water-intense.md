@@ -28,7 +28,7 @@ relations:
   - predicate: has-heart-note
     target: antiquario:olfactory-note:coconut-water
   - predicate: has-base-note
-    target: antiquario:olfactory-note:amber
+    target: antiquario:olfactory-note:ambar
 ---
 
 # Cool Water Intense
@@ -39,4 +39,4 @@ relations:
 
 - **Saída:** [[note-green-mandarin-orange]]
 - **Coração:** [[note-coconut-water]]
-- **Fundo:** [[note-amber]]
+- **Fundo:** [[note-ambar]]

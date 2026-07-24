@@ -1,6 +1,6 @@
 ---
 schema_version: 1
-id: antiquario:olfactory-note:orange-brandy
+id: antiquario:olfactory-note:laranja-brandy
 project: o-antiquario
 type: olfactory-note
 title: "Orange brandy"

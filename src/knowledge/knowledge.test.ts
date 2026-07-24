@@ -59,8 +59,8 @@ test("compila o vault real de forma determinística", async () => {
   assert.equal(first.manifest.contentHash, second.manifest.contentHash);
   assert.equal(first.manifest.releaseId, second.manifest.releaseId);
   assert.equal(first.manifest.schemaVersion, 2);
-  assert.equal(first.manifest.counts.documents, 702);
-  assert.equal(first.manifest.counts.evidenceNodes, 702);
+  assert.equal(first.manifest.counts.documents, 703);
+  assert.equal(first.manifest.counts.evidenceNodes, 703);
   assert.ok(first.manifest.counts.typedRelations > 0);
   assert.ok(first.manifest.counts.chunks > 0);
   assert.ok(first.manifest.counts.edges > first.manifest.counts.documents);

@@ -26,11 +26,11 @@ relations:
   - predicate: has-top-note
     target: antiquario:olfactory-note:bergamota
   - predicate: has-top-note
-    target: antiquario:olfactory-note:lemon
+    target: antiquario:olfactory-note:limao-siciliano
   - predicate: has-top-note
     target: antiquario:olfactory-note:mandarin-orange
   - predicate: has-heart-note
-    target: antiquario:olfactory-note:juniper-berry
+    target: antiquario:olfactory-note:zimbro
   - predicate: has-heart-note
     target: antiquario:olfactory-note:pepper
   - predicate: has-heart-note
@@ -44,7 +44,7 @@ relations:
   - predicate: has-base-note
     target: antiquario:olfactory-note:cedarwood
   - predicate: has-base-note
-    target: antiquario:olfactory-note:sandalwood
+    target: antiquario:olfactory-note:sandalo
   - predicate: has-base-note
     target: antiquario:olfactory-note:tonka-bean
   - predicate: has-base-note
@@ -57,6 +57,6 @@ relations:
 
 ## Pirâmide Olfativa
 
-- **Saída:** [[Bergamota]], [[note-lemon]], [[note-mandarin-orange]]
-- **Coração:** [[note-juniper-berry]], [[note-pepper]], [[note-jasmine]], [[note-lavender]], [[note-nutmeg]], [[note-gun-powder]]
-- **Fundo:** [[note-cedarwood]], [[note-sandalwood]], [[note-tonka-bean]], [[Vetiver]]
+- **Saída:** [[Bergamota]], [[note-limao-siciliano]], [[note-mandarin-orange]]
+- **Coração:** [[note-zimbro]], [[note-pepper]], [[note-jasmine]], [[note-lavender]], [[note-nutmeg]], [[note-gun-powder]]
+- **Fundo:** [[note-cedarwood]], [[note-sandalo]], [[note-tonka-bean]], [[Vetiver]]

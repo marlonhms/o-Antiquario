@@ -1,6 +1,6 @@
 ---
 schema_version: 1
-id: antiquario:olfactory-note:woody-notes
+id: antiquario:olfactory-note:cedro-notes
 project: o-antiquario
 type: olfactory-note
 title: "Woody notes"

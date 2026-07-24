@@ -34,7 +34,7 @@ relations:
   - predicate: has-top-note
     target: antiquario:olfactory-note:basil
   - predicate: has-top-note
-    target: antiquario:olfactory-note:juniper
+    target: antiquario:olfactory-note:zimbro
   - predicate: has-heart-note
     target: antiquario:olfactory-note:heliotrope
   - predicate: has-heart-note
@@ -56,7 +56,7 @@ relations:
   - predicate: has-base-note
     target: antiquario:olfactory-note:tonka-bean
   - predicate: has-base-note
-    target: antiquario:olfactory-note:amber
+    target: antiquario:olfactory-note:ambar
   - predicate: has-base-note
     target: antiquario:olfactory-note:cedar
   - predicate: has-base-note
@@ -66,7 +66,7 @@ relations:
   - predicate: has-base-note
     target: antiquario:olfactory-note:patchouli
   - predicate: has-base-note
-    target: antiquario:olfactory-note:sandalwood
+    target: antiquario:olfactory-note:sandalo
   - predicate: has-base-note
     target: antiquario:olfactory-note:baunilha
   - predicate: has-base-note
@@ -79,6 +79,6 @@ relations:
 
 ## Pirâmide Olfativa
 
-- **Saída:** [[note-citrus-fruits]], [[note-aniseed]], [[Bergamota]], [[note-rosewood]], [[note-basil]], [[note-juniper]]
+- **Saída:** [[note-citrus-fruits]], [[note-aniseed]], [[Bergamota]], [[note-rosewood]], [[note-basil]], [[note-zimbro]]
 - **Coração:** [[note-heliotrope]], [[note-lavender]], [[note-carnation]], [[note-jasmine]], [[note-sage]], [[note-fir]], [[note-geranium]], [[note-lily-of-the-valley]], [[note-rose]]
-- **Fundo:** [[note-tonka-bean]], [[note-amber]], [[note-cedar]], [[note-iris]], [[note-musk]], [[note-patchouli]], [[note-sandalwood]], [[Baunilha]], [[Vetiver]]
+- **Fundo:** [[note-tonka-bean]], [[note-ambar]], [[note-cedar]], [[note-iris]], [[note-musk]], [[note-patchouli]], [[note-sandalo]], [[Baunilha]], [[Vetiver]]

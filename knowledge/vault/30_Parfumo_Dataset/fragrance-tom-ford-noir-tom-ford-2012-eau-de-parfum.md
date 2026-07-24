@@ -54,7 +54,7 @@ relations:
   - predicate: has-base-note
     target: antiquario:olfactory-note:styrax
   - predicate: has-base-note
-    target: antiquario:olfactory-note:amber
+    target: antiquario:olfactory-note:ambar
   - predicate: has-base-note
     target: antiquario:olfactory-note:leather
   - predicate: has-base-note
@@ -73,4 +73,4 @@ relations:
 
 - **Saída:** [[note-violet]], [[note-pink-pepper]], [[note-vervain]], [[note-caraway]], [[note-italian-bergamot]]
 - **Coração:** [[note-bulgarian-rose]], [[note-iris]], [[note-black-pepper-orpur]], [[note-clary-sage]], [[note-egyptian-geranium]], [[note-nutmeg]]
-- **Fundo:** [[note-indonesian-patchouli]], [[note-opoponax]], [[note-benzoin-siam]], [[note-styrax]], [[note-amber]], [[note-leather]], [[Baunilha]], [[Vetiver]], [[note-civet]]
+- **Fundo:** [[note-indonesian-patchouli]], [[note-opoponax]], [[note-benzoin-siam]], [[note-styrax]], [[note-ambar]], [[note-leather]], [[Baunilha]], [[Vetiver]], [[note-civet]]

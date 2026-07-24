@@ -1,6 +1,6 @@
 ---
 schema_version: 1
-id: antiquario:olfactory-note:orange-blossom
+id: antiquario:olfactory-note:laranja-blossom
 project: o-antiquario
 type: olfactory-note
 title: "Orange blossom"

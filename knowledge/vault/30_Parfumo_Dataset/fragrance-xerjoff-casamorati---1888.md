@@ -36,7 +36,7 @@ relations:
   - predicate: has-heart-note
     target: antiquario:olfactory-note:moroccan-neroli
   - predicate: has-base-note
-    target: antiquario:olfactory-note:amber
+    target: antiquario:olfactory-note:ambar
   - predicate: has-base-note
     target: antiquario:olfactory-note:mysore-sandalwood
   - predicate: has-base-note
@@ -51,4 +51,4 @@ relations:
 
 - **Saída:** [[note-carnation]], [[note-coriander]], [[note-green-pepper]], [[note-persian-saffron]]
 - **Coração:** [[note-indonesian-ylang-ylang]], [[note-moroccan-neroli]]
-- **Fundo:** [[note-amber]], [[note-mysore-sandalwood]], [[note-patchouli]]
+- **Fundo:** [[note-ambar]], [[note-mysore-sandalwood]], [[note-patchouli]]
