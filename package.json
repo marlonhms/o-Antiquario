@@ -10,8 +10,9 @@
     "dev": "vite --config apps/web/vite.config.ts",
     "build": "vite build --config apps/web/vite.config.ts",
     "preview": "vite preview --config apps/web/vite.config.ts",
-    "test": "node --test src/recommender/recommender.test.ts src/data/source-manifest.test.ts src/taxonomy/taxonomy.test.ts src/knowledge/knowledge.test.ts src/catalog/release.test.ts",
-    "test:watch": "node --test --watch src/recommender/recommender.test.ts src/data/source-manifest.test.ts src/taxonomy/taxonomy.test.ts src/knowledge/knowledge.test.ts src/catalog/release.test.ts",
+    "test": "node --test src/recommender/recommender.test.ts src/data/source-manifest.test.ts src/taxonomy/taxonomy.test.ts src/knowledge/knowledge.test.ts src/catalog/release.test.ts src/domain/recommendation-contract.test.ts src/catalog/recommendation-compiler.test.ts",
+    "test:watch": "node --test --watch src/recommender/recommender.test.ts src/data/source-manifest.test.ts src/taxonomy/taxonomy.test.ts src/knowledge/knowledge.test.ts src/catalog/release.test.ts src/domain/recommendation-contract.test.ts src/catalog/recommendation-compiler.test.ts",
+
     "typecheck": "tsc --noEmit",
     "sources:validate": "node src/data/validate-sources.ts",
     "taxonomy:validate": "node src/taxonomy/validate-taxonomy.ts",
@@ -24,8 +25,10 @@
     "data:status": "node scripts/run-python.mjs -m antiquario_data.cli status",
     "data:audit:wikidata": "node scripts/run-python.mjs -m antiquario_data.cli wikidata-audit",
     "data:audit:values": "node scripts/run-python.mjs -m antiquario_data.cli wikidata-values-audit",
+    "data:ingest:official-pdf": "node scripts/run-python.mjs -m antiquario_data.cli official-pdf",
     "curation:queue": "node scripts/run-python.mjs -m antiquario_data.cli curation-queue",
-    "catalog:compile": "npm run knowledge:build && node scripts/run-python.mjs -m antiquario_data.cli release",
+    "recommendation:build": "node src/catalog/build-recommendation.ts",
+    "catalog:compile": "npm run knowledge:build && npm run recommendation:build && node scripts/run-python.mjs -m antiquario_data.cli release",
     "demo": "node src/recommender/demo.ts"
   },
   "devDependencies": {

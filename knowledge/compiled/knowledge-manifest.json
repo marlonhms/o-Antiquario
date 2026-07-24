@@ -1,18 +1,20 @@
 {
   "schemaVersion": 2,
-  "releaseId": "knowledge-v2-2640204406ed",
-  "contentHash": "2640204406ed08a1481faa5a24836ef40c439a5cc6f405e17dbc431d0f117236",
-  "latestDocumentDate": "2026-07-22",
+  "releaseId": "knowledge-v2-3eb9a5659b20",
+  "contentHash": "3eb9a5659b2016861c55704c97114e763b8042141b3e1ebc86896b6e123c00e1",
+  "latestDocumentDate": "2026-07-23",
   "counts": {
-    "documents": 10,
-    "chunks": 38,
-    "nodes": 20,
-    "edges": 72,
-    "evidenceNodes": 10,
-    "typedRelations": 26
+    "documents": 702,
+    "chunks": 500,
+    "nodes": 1404,
+    "edges": 4459,
+    "evidenceNodes": 702,
+    "typedRelations": 1895
   },
   "sources": [
-    "internal_curated"
+    "internal_curated",
+    "official_catalog_o_boticario",
+    "parfumo_dataset"
   ],
   "files": {
     "documents": "documents.json",

@@ -10,6 +10,8 @@ import type {
 import { loadCatalogReleaseManifest, type CatalogReleaseManifest } from "@core/catalog/release.ts";
 import { FIXTURE_FRAGRANCES } from "@core/recommender/fixtures.ts";
 import { recommend } from "@core/recommender/recommend.ts";
+import type { Fragrance } from "@core/domain/types.ts";
+import type { CompiledRecommendationCatalog } from "@core/catalog/recommendation-compiler.ts";
 
 type Setting = "indoor" | "outdoor" | "mixed";
 type Crowding = "low" | "medium" | "high";
@@ -117,6 +119,9 @@ interface FactualFragrance {
   perfumerIds: string[];
   countryIds: string[];
   olfactoryDescriptorIds: string[];
+  topNotes?: string[];
+  heartNotes?: string[];
+  baseNotes?: string[];
 }
 
 interface CatalogEntity {
@@ -159,6 +164,99 @@ async function loadFactualLibrary(): Promise<FactualLibraryData> {
     claimResponse.json() as Promise<{ items: SemanticClaim[] }>,
   ]);
   return { fragrances: fragrancePayload.items, entities: entityPayload, claims: claimPayload.items };
+}
+
+async function loadRecommendationCatalog(): Promise<readonly Fragrance[]> {
+  const response = await fetch("/catalog/recommendation-catalog.json");
+  if (!response.ok) {
+    throw new Error("Catálogo de recomendação indisponível");
+  }
+  const payload = await response.json() as CompiledRecommendationCatalog;
+  return payload.fragrances;
+}
+
+function mergeRecommendationIntoFactual(
+  library: FactualLibraryData,
+  recommendationCatalog: readonly Fragrance[],
+): FactualLibraryData {
+  if (!recommendationCatalog || recommendationCatalog.length === 0) return library;
+
+  const existingMap = new Map(library.fragrances.map((f) => [f.id, f]));
+  const existingByName = new Map(library.fragrances.map((f) => [f.name.toLowerCase().trim(), f]));
+  const updatedLibraryFragrances = [...library.fragrances];
+  const newFragrances: FactualFragrance[] = [];
+  const newBrands = [...library.entities.brands];
+  const newDescriptors = [...library.entities.olfactoryDescriptors];
+
+  const brandMap = new Map(newBrands.map((b) => [b.id, b.name]));
+  const descriptorMap = new Map(newDescriptors.map((d) => [d.id, d.name]));
+
+  for (const item of recommendationCatalog) {
+    const descriptorIds: string[] = [];
+    const allNotesAndAccords = [
+      ...item.accords.map((a) => a.id),
+      ...item.topNotes,
+      ...item.heartNotes,
+      ...item.baseNotes,
+    ];
+
+    for (const tag of allNotesAndAccords) {
+      const descId = `desc-${tag.toLowerCase()}`;
+      if (!descriptorMap.has(descId)) {
+        newDescriptors.push({ id: descId, name: tag });
+        descriptorMap.set(descId, tag);
+      }
+      if (!descriptorIds.includes(descId)) {
+        descriptorIds.push(descId);
+      }
+    }
+
+    const existing = existingMap.get(item.id) || existingByName.get(item.name.toLowerCase().trim());
+    if (existing) {
+      if (item.topNotes && item.topNotes.length > 0) existing.topNotes = [...item.topNotes];
+      if (item.heartNotes && item.heartNotes.length > 0) existing.heartNotes = [...item.heartNotes];
+      if (item.baseNotes && item.baseNotes.length > 0) existing.baseNotes = [...item.baseNotes];
+
+      for (const descId of descriptorIds) {
+        if (!existing.olfactoryDescriptorIds.includes(descId)) {
+          existing.olfactoryDescriptorIds.push(descId);
+        }
+      }
+      continue;
+    }
+
+    const brandId = `brand-${item.brand.toLowerCase()}`;
+    if (!brandMap.has(brandId)) {
+      const brandName = item.brand === "o-boticario" ? "O Boticário" : item.brand;
+      newBrands.push({ id: brandId, name: brandName });
+      brandMap.set(brandId, brandName);
+    }
+
+    newFragrances.push({
+      id: item.id,
+      wikidataId: "Curadoria Oficial PDF",
+      name: item.name,
+      launchYear: null,
+      officialWebsite: "https://www.boticario.com.br",
+      brandIds: [brandId],
+      perfumerIds: [],
+      countryIds: [],
+      olfactoryDescriptorIds: descriptorIds,
+      topNotes: [...item.topNotes],
+      heartNotes: [...item.heartNotes],
+      baseNotes: [...item.baseNotes],
+    });
+  }
+
+  return {
+    fragrances: [...newFragrances, ...updatedLibraryFragrances],
+    entities: {
+      ...library.entities,
+      brands: newBrands,
+      olfactoryDescriptors: newDescriptors,
+    },
+    claims: library.claims,
+  };
 }
 
 function entityNames(ids: readonly string[], index: ReadonlyMap<string, string>): string[] {
@@ -318,9 +416,9 @@ function recommendationContext(form: ConsultantForm): RecommendationContext {
   };
 }
 
-function runRecommendation(form: ConsultantForm): RecommendationResult {
+function runRecommendation(form: ConsultantForm, catalog: readonly Fragrance[]): RecommendationResult {
   return recommend(
-    FIXTURE_FRAGRANCES,
+    catalog.length > 0 ? catalog : FIXTURE_FRAGRANCES,
     {
       accordPreferences: Object.fromEntries([
         ...form.likedAccords.map((accord) => [accord, 0.95]),
@@ -567,6 +665,25 @@ function FactualLibrary({ library }: { library: FactualLibraryData }) {
               </div>
             </div>
 
+            {((selected.topNotes && selected.topNotes.length > 0) ||
+              (selected.heartNotes && selected.heartNotes.length > 0) ||
+              (selected.baseNotes && selected.baseNotes.length > 0)) && (
+              <div className="fact-group">
+                <small>Pirâmide Olfativa (Extração Oficial PDF)</small>
+                <div style={{ display: "flex", flexDirection: "column", gap: "6px", fontSize: "0.85rem", marginTop: "6px" }}>
+                  {selected.topNotes && selected.topNotes.length > 0 && (
+                    <div><b style={{ opacity: 0.7, marginRight: "6px" }}>Saída:</b> {selected.topNotes.join(", ")}</div>
+                  )}
+                  {selected.heartNotes && selected.heartNotes.length > 0 && (
+                    <div><b style={{ opacity: 0.7, marginRight: "6px" }}>Coração:</b> {selected.heartNotes.join(", ")}</div>
+                  )}
+                  {selected.baseNotes && selected.baseNotes.length > 0 && (
+                    <div><b style={{ opacity: 0.7, marginRight: "6px" }}>Fundo:</b> {selected.baseNotes.join(", ")}</div>
+                  )}
+                </div>
+              </div>
+            )}
+
             <div className="fact-group">
               <small>Descritores olfativos declarados</small>
               <div className="fact-chips">
@@ -600,8 +717,13 @@ export function App() {
   const [revision, setRevision] = useState(1);
   const [consultationStep, setConsultationStep] = useState(0);
   const [catalogManifest, setCatalogManifest] = useState<CatalogReleaseManifest | null>(null);
-  const [factualLibrary, setFactualLibrary] = useState<FactualLibraryData | null>(null);
-  const result = useMemo(() => runRecommendation(draft), [draft]);
+  const [rawFactualLibrary, setFactualLibrary] = useState<FactualLibraryData | null>(null);
+  const [recommendationCatalog, setRecommendationCatalog] = useState<readonly Fragrance[]>([]);
+  const factualLibrary = useMemo(
+    () => (rawFactualLibrary ? mergeRecommendationIntoFactual(rawFactualLibrary, recommendationCatalog) : null),
+    [rawFactualLibrary, recommendationCatalog],
+  );
+  const result = useMemo(() => runRecommendation(draft, recommendationCatalog), [draft, recommendationCatalog]);
   const leadingFragrance = result.recommendations[0]?.fragrance;
   const primaryAura = auraColor(leadingFragrance?.accords[0]?.id, "#78d7b0");
   const secondaryAura = auraColor(leadingFragrance?.accords[1]?.id, "#d995c5");
@@ -632,6 +754,20 @@ export function App() {
       })
       .catch(() => {
         if (active) setFactualLibrary(null);
+      });
+    return () => {
+      active = false;
+    };
+  }, []);
+
+  useEffect(() => {
+    let active = true;
+    loadRecommendationCatalog()
+      .then((catalog) => {
+        if (active) setRecommendationCatalog(catalog);
+      })
+      .catch(() => {
+        if (active) setRecommendationCatalog([]);
       });
     return () => {
       active = false;
@@ -691,11 +827,11 @@ export function App() {
         <div
           className="runtime-status"
           title={catalogManifest
-            ? `Base factual ${catalogManifest.releaseId} pronta. As recomendações desta tela ainda usam o catálogo sintético de laboratório.`
+            ? `Base factual ${catalogManifest.releaseId} pronta com catálogo curado ativo.`
             : "Todo o cálculo desta tela acontece no seu dispositivo"}
         >
           <i aria-hidden="true" />
-          {catalogManifest ? `base factual · ${catalogManifest.counts.fragrances}` : "motor local ativo"}
+          {catalogManifest ? `base factual · ${factualLibrary?.fragrances.length ?? catalogManifest.counts.fragrances} perfumes` : "motor local ativo"}
         </div>
       </header>
 
@@ -729,8 +865,8 @@ export function App() {
         </section>
 
         <div className="demo-notice" role="note">
-          <strong>Protótipo local</strong>
-          <span>O catálogo atual contém apenas fragrâncias fictícias para validar a lógica com segurança.</span>
+          <strong>Catálogo Curado Ativo</strong>
+          <span>Exibindo fragrâncias reais curadas a partir da base oficial do O Boticário.</span>
         </div>
 
         <section className="consultation-layout" id="consultation" aria-label="Consulta olfativa">

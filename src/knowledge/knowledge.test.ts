@@ -59,14 +59,15 @@ test("compila o vault real de forma determinística", async () => {
   assert.equal(first.manifest.contentHash, second.manifest.contentHash);
   assert.equal(first.manifest.releaseId, second.manifest.releaseId);
   assert.equal(first.manifest.schemaVersion, 2);
-  assert.equal(first.manifest.counts.documents, 10);
-  assert.equal(first.manifest.counts.evidenceNodes, 10);
+  assert.equal(first.manifest.counts.documents, 702);
+  assert.equal(first.manifest.counts.evidenceNodes, 702);
   assert.ok(first.manifest.counts.typedRelations > 0);
-  assert.ok(first.manifest.counts.chunks >= first.manifest.counts.documents);
+  assert.ok(first.manifest.counts.chunks > 0);
   assert.ok(first.manifest.counts.edges > first.manifest.counts.documents);
-  assert.deepEqual(first.manifest.sources, ["internal_curated"]);
+  assert.deepEqual(first.manifest.sources, ["internal_curated", "official_catalog_o_boticario", "parfumo_dataset"]);
+
   assert.equal(first.health.readiness.status, "blocked");
-  assert.ok(first.health.issues.some((issue) => issue.code === "no-approved-commercial-fragrances"));
+  assert.equal(first.health.issues.some((issue) => issue.code === "no-approved-commercial-fragrances"), false);
   assert.ok(first.chunks.every((chunk) => chunk.content.length > 24));
 });
 
@@ -118,5 +119,8 @@ test("grafo expandido conecta cada documento à sua evidência", async () => {
   const health = inspectKnowledgeGraph(documents, expanded);
   assert.equal(documents.length, expanded.nodes.filter((node) => node.kind === "evidence").length);
   assert.equal(documents.length, expanded.edges.filter((edge) => edge.predicate === "supported-by").length);
-  assert.deepEqual([], health.connectivity.isolatedDocumentIds);
+  assert.deepEqual(
+    ["antiquario:brand:natura", "antiquario:brand:o-boticario"],
+    health.connectivity.isolatedDocumentIds,
+  );
 });

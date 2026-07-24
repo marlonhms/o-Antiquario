@@ -10,7 +10,9 @@ coverage/
 *.log
 knowledge/vault/.obsidian/
 data/raw/wikidata/**/*.json
+data/raw/official-catalogs/**/*.pdf
 data/staging/**/*.jsonl
+data/staging/official-pdf/
 data/catalog/*.duckdb
 data/catalog/parquet/
 data/demo/

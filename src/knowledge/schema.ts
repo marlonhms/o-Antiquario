@@ -12,6 +12,8 @@ export const KnowledgeDocumentTypeSchema = z.enum([
   "context",
   "science",
   "guide",
+  "brand",
+  "perfumer",
 ]);
 
 export const KnowledgeConfidenceSchema = z.enum(["high", "medium", "low", "unknown"]);
@@ -58,6 +60,7 @@ export const KnowledgeFrontmatterSchema = z.object({
   summary: z.string().min(24).max(500),
   evidence: z.array(KnowledgeEvidenceSchema).min(1),
   relations: z.array(KnowledgeRelationSchema).default([]),
+  recommendation_profile: z.any().optional(),
 }).strict().superRefine((document, context) => {
   const [, idType] = document.id.split(":");
   if (idType !== document.type) {

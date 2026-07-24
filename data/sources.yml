@@ -80,6 +80,39 @@ sources:
         - https://www.wikidata.org/wiki/Help:Data_access
       notes: Imagens do Wikimedia Commons exigem avaliação individual da licença do arquivo.
 
+  - id: parfumo_dataset
+    name: Parfumo Fragrance Dataset (TidyTuesday)
+    homepage: https://github.com/rfordatascience/tidytuesday
+    classification: allowed_core
+    purpose: Extração de pirâmides olfativas.
+    license:
+      identifier: CC0-1.0
+      name: Creative Commons CC0 1.0 Universal
+      url: https://creativecommons.org/publicdomain/zero/1.0/
+      scope: Dataset aberto.
+      compatibility: core
+      attribution_required: false
+      share_alike: false
+    access:
+      automated: allowed
+      methods: [github_raw]
+      authentication: none
+      conditions:
+        - "Respeitar a licença CC0 e os dados abertos"
+    storage:
+      layer: core
+      redistribution: allowed
+      attribution_label: Parfumo / TidyTuesday
+    fields:
+      allowed: [olfactory_descriptors, identity, brand, year]
+      forbidden: []
+    review:
+      reviewed_at: 2026-07-23
+      next_review_at: 2026-10-23
+      evidence_urls:
+        - "https://github.com/rfordatascience/tidytuesday/blob/main/data/2024/2024-12-10/readme.md"
+      notes: Ingestão em lote via script.
+
   - id: open_beauty_facts
     name: Open Beauty Facts
     homepage: https://world.openbeautyfacts.org/
@@ -292,3 +325,76 @@ sources:
       evidence_urls:
         - https://www.fragrantica.com/terms-of-service.phtml
       notes: Os termos atuais restringem meios automatizados, datasets, agregação e uso comercial sem acordo separado.
+
+  - id: official_catalog_natura
+    name: Natura — Catálogo Oficial PDF
+    homepage: https://www.natura.com.br/
+    classification: allowed_core
+    purpose: Fatos olfativos declarados em catálogos oficiais impressos ou em PDF da Natura.
+    license:
+      identifier: CC0-1.0
+      name: Creative Commons CC0 1.0 Universal
+      url: https://creativecommons.org/publicdomain/zero/1.0/
+      scope: Fatos olfativos e metadados extraídos de catálogos oficiais da Natura para curadoria.
+      compatibility: core
+      attribution_required: false
+      share_alike: false
+    access:
+      automated: allowed
+      methods: [manual_reference]
+
+
+      authentication: none
+      conditions:
+        - PDF colocado manualmente pelo proprietário localmente.
+        - Não redistribuir PDF original nem textos publicitários.
+    storage:
+      layer: core
+      redistribution: allowed
+      attribution_label: Natura — Catálogo Oficial
+
+    fields:
+      allowed: [product_name, line, concentration, volume, top_notes, heart_notes, base_notes, declared_notes_unlayered]
+      forbidden: [marketing_copy, images, logos]
+    review:
+      reviewed_at: 2026-07-22
+      next_review_at: 2026-10-22
+      evidence_urls:
+        - https://www.natura.com.br/
+      notes: Ingestão de fatos declarados para curadoria local.
+
+  - id: official_catalog_o_boticario
+    name: O Boticário — Catálogo Oficial PDF
+    homepage: https://www.boticario.com.br/
+    classification: allowed_core
+    purpose: Fatos olfativos declarados em catálogos oficiais impressos ou em PDF de O Boticário.
+    license:
+      identifier: CC0-1.0
+      name: Creative Commons CC0 1.0 Universal
+      url: https://creativecommons.org/publicdomain/zero/1.0/
+      scope: Fatos olfativos e metadados extraídos de catálogos oficiais de O Boticário para curadoria.
+      compatibility: core
+      attribution_required: false
+      share_alike: false
+    access:
+      automated: allowed
+      methods: [manual_reference]
+      authentication: none
+      conditions:
+        - PDF colocado manualmente pelo proprietário localmente.
+        - Não redistribuir PDF original nem textos publicitários.
+    storage:
+      layer: core
+      redistribution: allowed
+      attribution_label: O Boticário — Catálogo Oficial
+    fields:
+      allowed: [product_name, line, concentration, volume, top_notes, heart_notes, base_notes, declared_notes_unlayered]
+      forbidden: [marketing_copy, images, logos]
+    review:
+      reviewed_at: 2026-07-22
+      next_review_at: 2026-10-22
+      evidence_urls:
+        - https://www.boticario.com.br/
+      notes: Ingestão de fatos declarados para curadoria local.
+
+

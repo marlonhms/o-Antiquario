@@ -7,8 +7,8 @@ test("o manifesto oficial é válido e mantém fontes arriscadas fora do core", 
   const manifest = await loadSourceManifest();
   const summary = summarizeSourceManifest(manifest);
 
-  assert.equal(manifest.sources.length, 8);
-  assert.equal(summary.allowed_core, 2);
+  assert.equal(manifest.sources.length, 11);
+  assert.equal(summary.allowed_core, 5);
   assert.equal(summary.allowed_isolated, 1);
   assert.equal(summary.reference_only, 1);
   assert.equal(summary.pending_review, 3);
@@ -45,7 +45,10 @@ test("uma fonte isolada não pode escrever no catálogo core", async () => {
 test("uma fonte proibida não pode declarar acesso automatizado", async () => {
   const manifest = await loadSourceManifest();
   const invalid = structuredClone(manifest);
-  invalid.sources.at(-1)!.access.automated = "allowed";
+  const prohibited = invalid.sources.find((source) => source.classification === "prohibited");
+  assert.ok(prohibited);
+  prohibited.access.automated = "allowed";
 
   assert.throws(() => validateSourceManifest(invalid), /fontes proibidas devem bloquear automação/);
 });
+

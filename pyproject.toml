@@ -9,7 +9,11 @@ description = "Pipeline local e auditável de dados do Antiquário"
 requires-python = ">=3.12"
 dependencies = [
   "duckdb>=1.4,<2",
+  "pdfplumber>=0.11,<1",
+  "pypdf>=5.0.0",
+  "pyyaml>=6.0",
 ]
+
 
 [tool.setuptools]
 package-dir = {"" = "pipeline"}

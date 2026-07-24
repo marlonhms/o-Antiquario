@@ -1,0 +1,35 @@
+schema_version: 1
+reviewed_at: 2026-07-22
+
+# Mapeamento isolado de vocabulário específico por fonte/marca para IDs de notas e famílias da taxonomia canônica.
+sources:
+  natura:
+    notes:
+      "copaiba": copaiba
+      "copaiba da amazonia": copaiba
+      "castanha": castanha
+      "maracuja": maracuja
+      "priprioca": priprioca
+      "breu branco": breu-branco
+      "frescor de maracuja": maracuja
+      "pitanga": pitanga
+      "cacao": cacau
+      "cacau": cacau
+      "açaí": acai
+      "acai": acai
+      "cumaru": tonka
+  o_boticario:
+    notes:
+      "pimenta preta": pimenta-preta
+      "pimenta negra": pimenta-preta
+      "madeira de guaiaco": madeira-guaiaco
+      "extrato de malbec": vinhedo
+  wikidata:
+    notes:
+      "bergamot": bergamota
+      "sandalwood": sandalo
+      "cedar": cedro
+      "rose": rosa
+      "jasmine": jasmim
+      "vanilla": baunilha
+      "lavender": lavanda

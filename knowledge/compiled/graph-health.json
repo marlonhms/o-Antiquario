@@ -1,11 +1,11 @@
 {
   "schemaVersion": 2,
   "graph": {
-    "documentNodes": 10,
-    "evidenceNodes": 10,
-    "typedRelations": 26,
-    "wikiReferences": 36,
-    "evidenceLinks": 10
+    "documentNodes": 702,
+    "evidenceNodes": 702,
+    "typedRelations": 1895,
+    "wikiReferences": 1862,
+    "evidenceLinks": 702
   },
   "connectivity": {
     "components": [
@@ -14,27 +14,842 @@
         "documentIds": [
           "antiquario:accord:amadeirado",
           "antiquario:accord:citricos",
+          "antiquario:brand:abercrombie-fitch",
+          "antiquario:brand:acorelle",
+          "antiquario:brand:acqua-di-parma",
+          "antiquario:brand:afnan-perfumes",
+          "antiquario:brand:al-haramain",
+          "antiquario:brand:amouage",
+          "antiquario:brand:ann-fragrance",
+          "antiquario:brand:armaf",
+          "antiquario:brand:azzaro",
+          "antiquario:brand:bdk-parfums",
+          "antiquario:brand:black-ship-grooming-co",
+          "antiquario:brand:boadicea-the-victorious",
+          "antiquario:brand:bond-no-9",
+          "antiquario:brand:borsari-1870",
+          "antiquario:brand:burberry",
+          "antiquario:brand:bvlgari",
+          "antiquario:brand:byredo",
+          "antiquario:brand:calvin-klein",
+          "antiquario:brand:cartier",
+          "antiquario:brand:chanel",
+          "antiquario:brand:chopard",
+          "antiquario:brand:colornoise",
+          "antiquario:brand:comme-des-garcons",
+          "antiquario:brand:creed",
+          "antiquario:brand:davidoff",
+          "antiquario:brand:diesel",
+          "antiquario:brand:dior",
+          "antiquario:brand:dolce-gabbana",
+          "antiquario:brand:dunhill",
+          "antiquario:brand:editions-de-parfums-frederic-malle",
+          "antiquario:brand:etnia",
+          "antiquario:brand:fragrance-one",
+          "antiquario:brand:geoffrey-beene",
+          "antiquario:brand:giorgio-armani",
+          "antiquario:brand:gisada",
+          "antiquario:brand:gucci",
+          "antiquario:brand:guerlain",
+          "antiquario:brand:guy-laroche",
+          "antiquario:brand:halloween",
+          "antiquario:brand:hugo-boss",
+          "antiquario:brand:initio",
+          "antiquario:brand:issey-miyake",
+          "antiquario:brand:jean-paul-gaultier",
+          "antiquario:brand:jil-sander",
+          "antiquario:brand:jo-malone",
+          "antiquario:brand:joop",
+          "antiquario:brand:kenzo",
+          "antiquario:brand:kilian",
+          "antiquario:brand:lacoste",
+          "antiquario:brand:lalique",
+          "antiquario:brand:lancome",
+          "antiquario:brand:lartisan-parfumeur",
+          "antiquario:brand:loccitane-en-provence",
+          "antiquario:brand:m-micallef",
+          "antiquario:brand:mancera",
+          "antiquario:brand:marc-gebauer",
+          "antiquario:brand:montale",
+          "antiquario:brand:montblanc",
+          "antiquario:brand:moschino",
+          "antiquario:brand:mugler",
+          "antiquario:brand:nautica",
+          "antiquario:brand:nikos",
+          "antiquario:brand:nishane",
+          "antiquario:brand:paco-rabanne",
+          "antiquario:brand:parfums-de-marly",
+          "antiquario:brand:prada",
+          "antiquario:brand:rasasi",
+          "antiquario:brand:roberto-ugolini",
+          "antiquario:brand:rochas",
+          "antiquario:brand:roja-parfums",
+          "antiquario:brand:salvatore-ferragamo",
+          "antiquario:brand:tiziana-terenzi",
+          "antiquario:brand:tom-ford",
+          "antiquario:brand:valentino",
+          "antiquario:brand:van-cleef-arpels",
+          "antiquario:brand:versace",
+          "antiquario:brand:viktor-rolf",
+          "antiquario:brand:xerjoff",
+          "antiquario:brand:yves-saint-laurent",
+          "antiquario:brand:zadig-voltaire",
           "antiquario:context:calor-umido",
           "antiquario:context:escritorio",
           "antiquario:fragrance:brisa-vetiver",
+          "antiquario:fragrance:parfumo-abercrombie-fitch-fierce-abercrombie-fitch-2002-cologne",
+          "antiquario:fragrance:parfumo-acorelle-be-positive---the-blanc",
+          "antiquario:fragrance:parfumo-acqua-di-parma-arancia-di-capri",
+          "antiquario:fragrance:parfumo-acqua-di-parma-bergamotto-di-calabria",
+          "antiquario:fragrance:parfumo-acqua-di-parma-colonia-acqua-di-parma-1916-eau-de-cologne",
+          "antiquario:fragrance:parfumo-acqua-di-parma-colonia-essenza-acqua-di-parma-2010-eau-de-cologne",
+          "antiquario:fragrance:parfumo-acqua-di-parma-mandorlo-di-sicilia",
+          "antiquario:fragrance:parfumo-acqua-di-parma-oud-acqua-di-parma-2019-eau-de-parfum",
+          "antiquario:fragrance:parfumo-afnan-perfumes-supremacy-not-only-intense",
+          "antiquario:fragrance:parfumo-al-haramain-laventure",
+          "antiquario:fragrance:parfumo-amouage-beach-hut-man",
+          "antiquario:fragrance:parfumo-amouage-interlude-black-iris",
+          "antiquario:fragrance:parfumo-amouage-lyric-man",
+          "antiquario:fragrance:parfumo-amouage-memoir-man",
+          "antiquario:fragrance:parfumo-amouage-sunshine-man",
+          "antiquario:fragrance:parfumo-ann-fragrance-the-royal",
+          "antiquario:fragrance:parfumo-armaf-club-de-nuit-intense-man-armaf-eau-de-parfum",
+          "antiquario:fragrance:parfumo-armaf-club-de-nuit-sillage-armaf-2020-eau-de-parfum",
+          "antiquario:fragrance:parfumo-azzaro-azzaro-pour-homme-azzaro-1978-eau-de-toilette",
+          "antiquario:fragrance:parfumo-bdk-parfums-creme-de-cuir-bdk-parfums-2018-eau-de-parfum",
+          "antiquario:fragrance:parfumo-bdk-parfums-gris-charnel-bdk-parfums-2022-extrait",
+          "antiquario:fragrance:parfumo-bdk-parfums-velvet-tonka",
+          "antiquario:fragrance:parfumo-black-ship-grooming-co-davy-jones",
+          "antiquario:fragrance:parfumo-boadicea-the-victorious-passionate",
+          "antiquario:fragrance:parfumo-bond-no-9-chinatown-bond-no-9-2010-solid-perfume",
+          "antiquario:fragrance:parfumo-borsari-1870-giacinto",
+          "antiquario:fragrance:parfumo-burberry-london-for-men-burberry-2006-eau-de-toilette",
+          "antiquario:fragrance:parfumo-bvlgari-aqva-amara-bvlgari-2014-eau-de-toilette",
+          "antiquario:fragrance:parfumo-byredo-gypsy-water-byredo-2008-eau-de-parfum",
+          "antiquario:fragrance:parfumo-calvin-klein-ck-one-calvin-klein-1994-eau-de-toilette",
+          "antiquario:fragrance:parfumo-calvin-klein-ck-one-shock-for-him",
+          "antiquario:fragrance:parfumo-cartier-declaration-cartier-1998-eau-de-toilette",
+          "antiquario:fragrance:parfumo-chanel-allure-homme-chanel-1999-eau-de-toilette",
+          "antiquario:fragrance:parfumo-chanel-allure-homme-edition-blanche-chanel-2008-eau-de-toilette-concentree",
+          "antiquario:fragrance:parfumo-chopard-casmir-chopard-1991-eau-de-parfum",
+          "antiquario:fragrance:parfumo-colornoise-country",
+          "antiquario:fragrance:parfumo-comme-des-garcons-wonderwood",
+          "antiquario:fragrance:parfumo-creed-bois-du-portugal",
+          "antiquario:fragrance:parfumo-creed-himalaya",
+          "antiquario:fragrance:parfumo-creed-original-vetiver",
+          "antiquario:fragrance:parfumo-davidoff-cool-water-intense",
+          "antiquario:fragrance:parfumo-diesel-only-the-brave-diesel-2009-eau-de-toilette",
+          "antiquario:fragrance:parfumo-dior-dior-homme-dior-2020-eau-de-toilette",
+          "antiquario:fragrance:parfumo-dior-dior-homme-sport",
+          "antiquario:fragrance:parfumo-dior-eau-sauvage-parfum",
+          "antiquario:fragrance:parfumo-dolce-gabbana-light-blue-pour-homme-forever",
+          "antiquario:fragrance:parfumo-dolce-gabbana-the-one-dolce-gabbana-2006-eau-de-parfum",
+          "antiquario:fragrance:parfumo-dolce-gabbana-the-one-for-men-dolce-gabbana-2008-eau-de-toilette",
+          "antiquario:fragrance:parfumo-dunhill-icon",
+          "antiquario:fragrance:parfumo-editions-de-parfums-frederic-malle-french-lover-bois-dorage",
+          "antiquario:fragrance:parfumo-etnia-factory-beijing",
+          "antiquario:fragrance:parfumo-fragrance-one-office-for-men",
+          "antiquario:fragrance:parfumo-geoffrey-beene-grey-flannel-geoffrey-beene-1975-eau-de-toilette",
+          "antiquario:fragrance:parfumo-giorgio-armani-acqua-di-gio-profondo-giorgio-armani-2020-eau-de-parfum",
+          "antiquario:fragrance:parfumo-giorgio-armani-acqua-di-gioia-giorgio-armani-2010-eau-de-parfum",
+          "antiquario:fragrance:parfumo-giorgio-armani-armani-code-black-code-giorgio-armani-2004-eau-de-toilette",
+          "antiquario:fragrance:parfumo-giorgio-armani-armani-code-pour-femme-giorgio-armani-2006-eau-de-parfum",
+          "antiquario:fragrance:parfumo-giorgio-armani-armani-code-profumo",
+          "antiquario:fragrance:parfumo-giorgio-armani-emporio-armani---stronger-with-you",
+          "antiquario:fragrance:parfumo-giorgio-armani-my-way-giorgio-armani-2020-eau-de-parfum",
+          "antiquario:fragrance:parfumo-giorgio-armani-si-giorgio-armani-2013-eau-de-parfum",
+          "antiquario:fragrance:parfumo-gisada-ambassador-for-men",
+          "antiquario:fragrance:parfumo-gucci-gucci-intense-oud",
+          "antiquario:fragrance:parfumo-gucci-gucci-pour-homme-ii-gucci-2007-eau-de-toilette",
+          "antiquario:fragrance:parfumo-gucci-guilty-absolute-pour-homme",
+          "antiquario:fragrance:parfumo-guerlain-bois-darmenie",
+          "antiquario:fragrance:parfumo-guerlain-habit-rouge-guerlain-1965-eau-de-toilette",
+          "antiquario:fragrance:parfumo-guerlain-la-petite-robe-noire-guerlain-2012-eau-de-parfum",
+          "antiquario:fragrance:parfumo-guerlain-lhomme-ideal-cologne",
+          "antiquario:fragrance:parfumo-guerlain-lhomme-ideal-extreme",
+          "antiquario:fragrance:parfumo-guerlain-lhomme-ideal-guerlain-2014-eau-de-toilette",
+          "antiquario:fragrance:parfumo-guerlain-linstant-de-guerlain-pour-homme-guerlain-2004-eau-de-toilette",
+          "antiquario:fragrance:parfumo-guerlain-santal-royal-guerlain-2014-eau-de-parfum",
+          "antiquario:fragrance:parfumo-guerlain-vetiver-guerlain-1959-eau-de-toilette",
+          "antiquario:fragrance:parfumo-guy-laroche-drakkar-noir-guy-laroche-1982-eau-de-toilette",
+          "antiquario:fragrance:parfumo-halloween-halloween-man-x",
+          "antiquario:fragrance:parfumo-hugo-boss-hugo-hugo-boss-1995-eau-de-toilette",
+          "antiquario:fragrance:parfumo-hugo-boss-the-scent-for-him-hugo-boss-2015-eau-de-toilette",
+          "antiquario:fragrance:parfumo-initio-absolute-aphrodisiac",
+          "antiquario:fragrance:parfumo-initio-blessed-baraka",
+          "antiquario:fragrance:parfumo-initio-paragon",
+          "antiquario:fragrance:parfumo-issey-miyake-leau-dissey-pour-homme-issey-miyake-1994-eau-de-toilette",
+          "antiquario:fragrance:parfumo-jean-paul-gaultier-gaultier",
+          "antiquario:fragrance:parfumo-jean-paul-gaultier-le-beau",
+          "antiquario:fragrance:parfumo-jean-paul-gaultier-le-beau-le-parfum",
+          "antiquario:fragrance:parfumo-jean-paul-gaultier-scandal-pour-homme",
+          "antiquario:fragrance:parfumo-jil-sander-sun-jil-sander-1989-eau-de-toilette",
+          "antiquario:fragrance:parfumo-jo-malone-myrrh-tonka",
+          "antiquario:fragrance:parfumo-joop-joop-homme-joop-1989-eau-de-toilette",
+          "antiquario:fragrance:parfumo-kenzo-flower-by-kenzo-kenzo-2000-eau-de-parfum",
+          "antiquario:fragrance:parfumo-kilian-back-to-black-aphrodisiac-kilian-2009-perfume",
+          "antiquario:fragrance:parfumo-kilian-black-phantom---memento-mori",
+          "antiquario:fragrance:parfumo-kilian-straight-to-heaven-white-cristal-kilian-2007-perfume",
+          "antiquario:fragrance:parfumo-lacoste-l1212-blanc-eau-de-lacoste-l1212-blanc-lacoste-2010-eau-de-toilette",
+          "antiquario:fragrance:parfumo-lalique-encre-noire-a-lextreme",
+          "antiquario:fragrance:parfumo-lalique-encre-noire-sport",
+          "antiquario:fragrance:parfumo-lalique-lalique-white-lalique-2008-eau-de-toilette",
+          "antiquario:fragrance:parfumo-lancome-la-vie-est-belle-leau-de-parfum",
+          "antiquario:fragrance:parfumo-lartisan-parfumeur-timbuktu",
+          "antiquario:fragrance:parfumo-loccitane-en-provence-eau-des-baux",
+          "antiquario:fragrance:parfumo-m-micallef-desirtoxic",
+          "antiquario:fragrance:parfumo-mancera-instant-crush",
+          "antiquario:fragrance:parfumo-marc-gebauer-air-tiger",
+          "antiquario:fragrance:parfumo-montale-black-aoud",
+          "antiquario:fragrance:parfumo-montale-chocolate-greedy",
+          "antiquario:fragrance:parfumo-montblanc-individuel-montblanc-2003-eau-de-toilette",
+          "antiquario:fragrance:parfumo-montblanc-legend-spirit",
+          "antiquario:fragrance:parfumo-moschino-toy-boy",
+          "antiquario:fragrance:parfumo-mugler-amen-angel-men",
+          "antiquario:fragrance:parfumo-mugler-amen-pure-malt",
+          "antiquario:fragrance:parfumo-mugler-angel-mugler-1992-eau-de-parfum",
+          "antiquario:fragrance:parfumo-mugler-mugler-cologne",
+          "antiquario:fragrance:parfumo-nautica-voyage-nautica-2006-eau-de-toilette",
+          "antiquario:fragrance:parfumo-nikos-sculpture-homme-nikos-1995-eau-de-toilette",
+          "antiquario:fragrance:parfumo-nishane-fan-your-flames",
+          "antiquario:fragrance:parfumo-paco-rabanne-invictus-paco-rabanne-2013-eau-de-toilette",
+          "antiquario:fragrance:parfumo-paco-rabanne-million-paco-rabanne-2008-eau-de-toilette",
+          "antiquario:fragrance:parfumo-paco-rabanne-olympea-paco-rabanne-2015-eau-de-parfum",
+          "antiquario:fragrance:parfumo-parfums-de-marly-godolphin",
+          "antiquario:fragrance:parfumo-parfums-de-marly-greenley",
+          "antiquario:fragrance:parfumo-parfums-de-marly-kalan",
+          "antiquario:fragrance:parfumo-parfums-de-marly-perseus",
+          "antiquario:fragrance:parfumo-prada-amber-pour-homme-prada-2006-eau-de-toilette",
+          "antiquario:fragrance:parfumo-prada-candy-prada-2011-eau-de-parfum",
+          "antiquario:fragrance:parfumo-prada-lhomme-leau",
+          "antiquario:fragrance:parfumo-prada-luna-rossa-carbon",
+          "antiquario:fragrance:parfumo-prada-luna-rossa-ocean-prada-2021-eau-de-toilette",
+          "antiquario:fragrance:parfumo-prada-luna-rossa-prada-2012-eau-de-toilette",
+          "antiquario:fragrance:parfumo-prada-paradoxe",
+          "antiquario:fragrance:parfumo-rasasi-daarej-pour-homme",
+          "antiquario:fragrance:parfumo-rasasi-la-yuqawam-pour-homme",
+          "antiquario:fragrance:parfumo-roberto-ugolini-marzocco-roberto-ugolini-2019-eau-de-parfum",
+          "antiquario:fragrance:parfumo-rochas-rochas-man-rochas-1999-eau-de-toilette",
+          "antiquario:fragrance:parfumo-roja-parfums-burlington-1819",
+          "antiquario:fragrance:parfumo-roja-parfums-enigma-pour-homme-creation-e-pour-homme-roja-parfums-2013-eau-de-parfum",
+          "antiquario:fragrance:parfumo-roja-parfums-oceania",
+          "antiquario:fragrance:parfumo-salvatore-ferragamo-f-by-ferragamo-pour-homme-black-salvatore-ferragamo-2009-eau-de-toilette",
+          "antiquario:fragrance:parfumo-tiziana-terenzi-rosso-pompei",
+          "antiquario:fragrance:parfumo-tom-ford-bitter-peach-tom-ford-2020-eau-de-parfum",
+          "antiquario:fragrance:parfumo-tom-ford-grey-vetiver-tom-ford-2009-eau-de-parfum",
+          "antiquario:fragrance:parfumo-tom-ford-neroli-portofino-tom-ford-2007-eau-de-parfum",
+          "antiquario:fragrance:parfumo-tom-ford-noir-tom-ford-2012-eau-de-parfum",
+          "antiquario:fragrance:parfumo-tom-ford-oud-minerale",
+          "antiquario:fragrance:parfumo-tom-ford-tobacco-oud",
+          "antiquario:fragrance:parfumo-valentino-valentino-uomo-valentino-2014-eau-de-toilette",
+          "antiquario:fragrance:parfumo-van-cleef-arpels-bois-dore",
+          "antiquario:fragrance:parfumo-van-cleef-arpels-midnight-in-paris-van-cleef-arpels-2010-eau-de-toilette",
+          "antiquario:fragrance:parfumo-versace-blue-jeans",
+          "antiquario:fragrance:parfumo-versace-eros-versace-2020-eau-de-parfum",
+          "antiquario:fragrance:parfumo-versace-versace-man-eau-fraiche-versace-2005-eau-de-toilette",
+          "antiquario:fragrance:parfumo-versace-versace-pour-homme-oud-noir",
+          "antiquario:fragrance:parfumo-viktor-rolf-spicebomb-infrared-viktor-rolf-2021-eau-de-toilette",
+          "antiquario:fragrance:parfumo-xerjoff-accento-overdose",
+          "antiquario:fragrance:parfumo-xerjoff-apollonia",
+          "antiquario:fragrance:parfumo-xerjoff-casamorati---1888",
+          "antiquario:fragrance:parfumo-xerjoff-casamorati---bouquet-ideale-xerjoff-2009-eau-de-parfum",
+          "antiquario:fragrance:parfumo-xerjoff-casamorati---dolce-amalfi-xerjoff-2017-eau-de-parfum",
+          "antiquario:fragrance:parfumo-xerjoff-casamorati---italica",
+          "antiquario:fragrance:parfumo-xerjoff-casamorati---mefisto",
+          "antiquario:fragrance:parfumo-xerjoff-decas",
+          "antiquario:fragrance:parfumo-xerjoff-erba-gold",
+          "antiquario:fragrance:parfumo-xerjoff-fars",
+          "antiquario:fragrance:parfumo-xerjoff-la-capitale",
+          "antiquario:fragrance:parfumo-xerjoff-torino22",
+          "antiquario:fragrance:parfumo-yves-saint-laurent-kouros-yves-saint-laurent-1981-eau-de-toilette",
+          "antiquario:fragrance:parfumo-yves-saint-laurent-le-vestiaire---babycat",
+          "antiquario:fragrance:parfumo-yves-saint-laurent-m7-m7-oud-absolu",
+          "antiquario:fragrance:parfumo-yves-saint-laurent-myslf",
+          "antiquario:fragrance:parfumo-zadig-voltaire-this-is-him",
+          "antiquario:fragrance:pdf-ameixa-506bcad4",
+          "antiquario:fragrance:pdf-coffee-man-506bcad4",
+          "antiquario:fragrance:pdf-coffee-woman-506bcad4",
+          "antiquario:fragrance:pdf-egeo-diverte-sua-rotina-506bcad4",
+          "antiquario:fragrance:pdf-egeo-dolce-506bcad4",
+          "antiquario:fragrance:pdf-egeo-tudo-506bcad4",
+          "antiquario:fragrance:pdf-floratta-506bcad4",
+          "antiquario:fragrance:pdf-floratta-blue-506bcad4",
+          "antiquario:fragrance:pdf-floratta-gold-506bcad4",
+          "antiquario:fragrance:pdf-floratta-red-passion-506bcad4",
+          "antiquario:fragrance:pdf-floratta-rose-506bcad4",
+          "antiquario:fragrance:pdf-glamour-506bcad4",
+          "antiquario:fragrance:pdf-glamour-diva-506bcad4",
+          "antiquario:fragrance:pdf-glamour-secrets-506bcad4",
+          "antiquario:fragrance:pdf-malbec-506bcad4",
+          "antiquario:fragrance:pdf-malbec-black-506bcad4",
+          "antiquario:fragrance:pdf-malbec-gold-506bcad4",
+          "antiquario:fragrance:pdf-malbec-pure-gold-506bcad4",
+          "antiquario:fragrance:pdf-malbec-x-506bcad4",
+          "antiquario:fragrance:pdf-nuvem-506bcad4",
           "antiquario:guide:fontes-de-conhecimento",
           "antiquario:index:principal",
+          "antiquario:olfactory-note:absinth",
+          "antiquario:olfactory-note:african-orange-blossom",
+          "antiquario:olfactory-note:aldehydes",
+          "antiquario:olfactory-note:almond",
+          "antiquario:olfactory-note:amalfi-lemon",
+          "antiquario:olfactory-note:amber",
+          "antiquario:olfactory-note:ambergris",
+          "antiquario:olfactory-note:amberketal",
+          "antiquario:olfactory-note:ambermax",
+          "antiquario:olfactory-note:amberwood",
+          "antiquario:olfactory-note:ambreine",
+          "antiquario:olfactory-note:ambrette-seed-absolute",
+          "antiquario:olfactory-note:ambrofix",
+          "antiquario:olfactory-note:ambrox",
+          "antiquario:olfactory-note:ambroxan",
+          "antiquario:olfactory-note:american-cedar",
+          "antiquario:olfactory-note:amyris",
+          "antiquario:olfactory-note:angelica",
+          "antiquario:olfactory-note:aniseed",
+          "antiquario:olfactory-note:apple",
+          "antiquario:olfactory-note:apricot",
+          "antiquario:olfactory-note:aquatic-notes",
+          "antiquario:olfactory-note:aquozone",
+          "antiquario:olfactory-note:artemisia",
+          "antiquario:olfactory-note:atlas-cedar",
+          "antiquario:olfactory-note:balkans-tobacco-absolute",
+          "antiquario:olfactory-note:balsam",
+          "antiquario:olfactory-note:basil",
           "antiquario:olfactory-note:baunilha",
+          "antiquario:olfactory-note:bay-leaf",
+          "antiquario:olfactory-note:benzoin",
+          "antiquario:olfactory-note:benzoin-siam",
+          "antiquario:olfactory-note:bergamot-leaf",
           "antiquario:olfactory-note:bergamota",
-          "antiquario:olfactory-note:vetiver"
+          "antiquario:olfactory-note:birch",
+          "antiquario:olfactory-note:birch-wood",
+          "antiquario:olfactory-note:bitter-almond",
+          "antiquario:olfactory-note:bitter-orange",
+          "antiquario:olfactory-note:bitter-orange-blossom",
+          "antiquario:olfactory-note:black-basil",
+          "antiquario:olfactory-note:black-pepper",
+          "antiquario:olfactory-note:black-pepper-orpur",
+          "antiquario:olfactory-note:black-tea",
+          "antiquario:olfactory-note:blackberry",
+          "antiquario:olfactory-note:blackcurrant",
+          "antiquario:olfactory-note:blackcurrant-bud",
+          "antiquario:olfactory-note:blackcurrant-liqueur",
+          "antiquario:olfactory-note:blond-woods",
+          "antiquario:olfactory-note:blood-orange",
+          "antiquario:olfactory-note:blue-blossoms",
+          "antiquario:olfactory-note:bourbon-vanilla",
+          "antiquario:olfactory-note:bourbon-vanilla-absolute",
+          "antiquario:olfactory-note:bourbon-vetiver",
+          "antiquario:olfactory-note:brazilian-green-mandarin-orange",
+          "antiquario:olfactory-note:brazilian-orange",
+          "antiquario:olfactory-note:brazilian-rosewood",
+          "antiquario:olfactory-note:brazilian-tonka-bean-absolute",
+          "antiquario:olfactory-note:brown-sugar",
+          "antiquario:olfactory-note:bulgarian-rose",
+          "antiquario:olfactory-note:cachalox",
+          "antiquario:olfactory-note:cade-juniper",
+          "antiquario:olfactory-note:calabrian-bergamot",
+          "antiquario:olfactory-note:calabrian-lemon",
+          "antiquario:olfactory-note:calabrian-mandarin-orange",
+          "antiquario:olfactory-note:camellia",
+          "antiquario:olfactory-note:candied-apple",
+          "antiquario:olfactory-note:caramel",
+          "antiquario:olfactory-note:caraway",
+          "antiquario:olfactory-note:cardamom",
+          "antiquario:olfactory-note:carnation",
+          "antiquario:olfactory-note:cashmeran",
+          "antiquario:olfactory-note:cashmere-wood",
+          "antiquario:olfactory-note:cassia",
+          "antiquario:olfactory-note:cedar",
+          "antiquario:olfactory-note:cedar-leaf",
+          "antiquario:olfactory-note:cedarwood",
+          "antiquario:olfactory-note:chamomile",
+          "antiquario:olfactory-note:chinese-toon",
+          "antiquario:olfactory-note:chocolate",
+          "antiquario:olfactory-note:christalon",
+          "antiquario:olfactory-note:cinnamon",
+          "antiquario:olfactory-note:cinnamon-leaf",
+          "antiquario:olfactory-note:cistus",
+          "antiquario:olfactory-note:citrus-fruits",
+          "antiquario:olfactory-note:civet",
+          "antiquario:olfactory-note:clary-sage",
+          "antiquario:olfactory-note:clementine",
+          "antiquario:olfactory-note:clove",
+          "antiquario:olfactory-note:cocoa",
+          "antiquario:olfactory-note:coconut",
+          "antiquario:olfactory-note:coconut-palmwood",
+          "antiquario:olfactory-note:coconut-water",
+          "antiquario:olfactory-note:coffee",
+          "antiquario:olfactory-note:cognac",
+          "antiquario:olfactory-note:copaiba-balsam",
+          "antiquario:olfactory-note:coriander",
+          "antiquario:olfactory-note:coriander-seed",
+          "antiquario:olfactory-note:cotton-candy",
+          "antiquario:olfactory-note:coumarin",
+          "antiquario:olfactory-note:cucumber",
+          "antiquario:olfactory-note:cumin",
+          "antiquario:olfactory-note:cypress",
+          "antiquario:olfactory-note:damp",
+          "antiquario:olfactory-note:dankness",
+          "antiquario:olfactory-note:dark-chocolate",
+          "antiquario:olfactory-note:davana",
+          "antiquario:olfactory-note:drenzlor",
+          "antiquario:olfactory-note:dried-fruits",
+          "antiquario:olfactory-note:dry-woods",
+          "antiquario:olfactory-note:egyptian-geranium",
+          "antiquario:olfactory-note:egyptian-jasmine",
+          "antiquario:olfactory-note:egyptian-jasmine-absolute",
+          "antiquario:olfactory-note:egyptian-orange-blossom",
+          "antiquario:olfactory-note:elemi-resin",
+          "antiquario:olfactory-note:eucalyptus",
+          "antiquario:olfactory-note:everlasting-flower",
+          "antiquario:olfactory-note:fig",
+          "antiquario:olfactory-note:fir",
+          "antiquario:olfactory-note:fir-balsam",
+          "antiquario:olfactory-note:fir-resin",
+          "antiquario:olfactory-note:flax-blossom",
+          "antiquario:olfactory-note:florentine-iris",
+          "antiquario:olfactory-note:florentine-iris-absolute",
+          "antiquario:olfactory-note:frankincense",
+          "antiquario:olfactory-note:frankincense-resin",
+          "antiquario:olfactory-note:freesia",
+          "antiquario:olfactory-note:french-jasmine",
+          "antiquario:olfactory-note:french-lavender",
+          "antiquario:olfactory-note:fruits",
+          "antiquario:olfactory-note:fruity-notes",
+          "antiquario:olfactory-note:gaiac-wood",
+          "antiquario:olfactory-note:galbanum",
+          "antiquario:olfactory-note:gardenia",
+          "antiquario:olfactory-note:georgywood",
+          "antiquario:olfactory-note:geranium",
+          "antiquario:olfactory-note:geranium-leaf",
+          "antiquario:olfactory-note:gianduja-cream",
+          "antiquario:olfactory-note:ginger",
+          "antiquario:olfactory-note:ginger-lily",
+          "antiquario:olfactory-note:grapefruit",
+          "antiquario:olfactory-note:grapefruit-zest",
+          "antiquario:olfactory-note:grasse-jasmine",
+          "antiquario:olfactory-note:green-almond",
+          "antiquario:olfactory-note:green-apple",
+          "antiquario:olfactory-note:green-leaves",
+          "antiquario:olfactory-note:green-lemon",
+          "antiquario:olfactory-note:green-mandarin-orange",
+          "antiquario:olfactory-note:green-mango",
+          "antiquario:olfactory-note:green-notes",
+          "antiquario:olfactory-note:green-pepper",
+          "antiquario:olfactory-note:green-tea",
+          "antiquario:olfactory-note:guatemala-cardamom",
+          "antiquario:olfactory-note:guatemala-patchouly",
+          "antiquario:olfactory-note:gun-powder",
+          "antiquario:olfactory-note:gymwear",
+          "antiquario:olfactory-note:habanero-chili",
+          "antiquario:olfactory-note:haitian-amyris",
+          "antiquario:olfactory-note:haitian-vetiver",
+          "antiquario:olfactory-note:hedione",
+          "antiquario:olfactory-note:heliotrope",
+          "antiquario:olfactory-note:hemp",
+          "antiquario:olfactory-note:hibiscus-seed",
+          "antiquario:olfactory-note:honey",
+          "antiquario:olfactory-note:indian-oud",
+          "antiquario:olfactory-note:indian-sandalwood",
+          "antiquario:olfactory-note:indian-tuberose",
+          "antiquario:olfactory-note:indian-vetiver",
+          "antiquario:olfactory-note:indonesian-nutmeg",
+          "antiquario:olfactory-note:indonesian-patchouli",
+          "antiquario:olfactory-note:indonesian-ylang-ylang",
+          "antiquario:olfactory-note:infestation",
+          "antiquario:olfactory-note:iris",
+          "antiquario:olfactory-note:iris-tingitana-absolute",
+          "antiquario:olfactory-note:italian-bergamot",
+          "antiquario:olfactory-note:italian-bitter-orange",
+          "antiquario:olfactory-note:italian-citrus-fruits",
+          "antiquario:olfactory-note:italian-leather",
+          "antiquario:olfactory-note:italian-lemon",
+          "antiquario:olfactory-note:italian-mandarin-orange",
+          "antiquario:olfactory-note:italian-orange",
+          "antiquario:olfactory-note:ivy",
+          "antiquario:olfactory-note:jasmine",
+          "antiquario:olfactory-note:jasmine-absolute",
+          "antiquario:olfactory-note:jasmine-sambac",
+          "antiquario:olfactory-note:jasmine-sambac-absolute",
+          "antiquario:olfactory-note:jasminum-auriculatum",
+          "antiquario:olfactory-note:jasminum-grandiflorum",
+          "antiquario:olfactory-note:java-vetiver",
+          "antiquario:olfactory-note:javanol",
+          "antiquario:olfactory-note:juniper",
+          "antiquario:olfactory-note:juniper-berry",
+          "antiquario:olfactory-note:karo-karounde",
+          "antiquario:olfactory-note:labdanum",
+          "antiquario:olfactory-note:labdanum-absolute",
+          "antiquario:olfactory-note:lavender",
+          "antiquario:olfactory-note:lavender-absolute",
+          "antiquario:olfactory-note:leather",
+          "antiquario:olfactory-note:leatherwood",
+          "antiquario:olfactory-note:leathery-notes",
+          "antiquario:olfactory-note:leaves",
+          "antiquario:olfactory-note:lebanon-cedar",
+          "antiquario:olfactory-note:lemon",
+          "antiquario:olfactory-note:lemon-leaf",
+          "antiquario:olfactory-note:lemon-vervain",
+          "antiquario:olfactory-note:lily-of-the-valley",
+          "antiquario:olfactory-note:lime",
+          "antiquario:olfactory-note:litsea-cubeba",
+          "antiquario:olfactory-note:lotus",
+          "antiquario:olfactory-note:lychee",
+          "antiquario:olfactory-note:madagascan-cinnamon",
+          "antiquario:olfactory-note:madagascan-pepper",
+          "antiquario:olfactory-note:madonna-lily",
+          "antiquario:olfactory-note:magnolia",
+          "antiquario:olfactory-note:mandarin-orange",
+          "antiquario:olfactory-note:mango",
+          "antiquario:olfactory-note:maninka-fruit",
+          "antiquario:olfactory-note:marine-notes",
+          "antiquario:olfactory-note:marron-glace",
+          "antiquario:olfactory-note:mastic-absolute",
+          "antiquario:olfactory-note:mate",
+          "antiquario:olfactory-note:mate-tea",
+          "antiquario:olfactory-note:may-rose",
+          "antiquario:olfactory-note:may-rose-absolute",
+          "antiquario:olfactory-note:melon",
+          "antiquario:olfactory-note:mexican-tuberose",
+          "antiquario:olfactory-note:milk",
+          "antiquario:olfactory-note:mimosa",
+          "antiquario:olfactory-note:mineral-amber",
+          "antiquario:olfactory-note:mineral-notes",
+          "antiquario:olfactory-note:mint",
+          "antiquario:olfactory-note:moroccan-neroli",
+          "antiquario:olfactory-note:moroccan-rose",
+          "antiquario:olfactory-note:moss",
+          "antiquario:olfactory-note:mugwort",
+          "antiquario:olfactory-note:musk",
+          "antiquario:olfactory-note:must",
+          "antiquario:olfactory-note:myrrh",
+          "antiquario:olfactory-note:myrtle",
+          "antiquario:olfactory-note:mysore-sandalwood",
+          "antiquario:olfactory-note:namibian-myrrh",
+          "antiquario:olfactory-note:nana-mint",
+          "antiquario:olfactory-note:narcissus",
+          "antiquario:olfactory-note:neapolitan-maple",
+          "antiquario:olfactory-note:neroli",
+          "antiquario:olfactory-note:neroli-absolute",
+          "antiquario:olfactory-note:new-caledonian-sandalwood",
+          "antiquario:olfactory-note:noxiousness",
+          "antiquario:olfactory-note:nutmeg",
+          "antiquario:olfactory-note:oak-bark",
+          "antiquario:olfactory-note:oakmoss",
+          "antiquario:olfactory-note:olive-blossom",
+          "antiquario:olfactory-note:olive-wood",
+          "antiquario:olfactory-note:opoponax",
+          "antiquario:olfactory-note:orange",
+          "antiquario:olfactory-note:orange-blossom",
+          "antiquario:olfactory-note:orange-blossom-absolute",
+          "antiquario:olfactory-note:orange-brandy",
+          "antiquario:olfactory-note:orcanox",
+          "antiquario:olfactory-note:orchid",
+          "antiquario:olfactory-note:orris-butter",
+          "antiquario:olfactory-note:orris-root",
+          "antiquario:olfactory-note:oud",
+          "antiquario:olfactory-note:ozonic-notes",
+          "antiquario:olfactory-note:palo-santo",
+          "antiquario:olfactory-note:papaya",
+          "antiquario:olfactory-note:papyrus",
+          "antiquario:olfactory-note:paradisone",
+          "antiquario:olfactory-note:patchouli",
+          "antiquario:olfactory-note:patchouli-orpur",
+          "antiquario:olfactory-note:peach",
+          "antiquario:olfactory-note:pear",
+          "antiquario:olfactory-note:peony",
+          "antiquario:olfactory-note:pepper",
+          "antiquario:olfactory-note:peppermint",
+          "antiquario:olfactory-note:persian-saffron",
+          "antiquario:olfactory-note:petitgrain",
+          "antiquario:olfactory-note:philippine-elemi",
+          "antiquario:olfactory-note:pimento",
+          "antiquario:olfactory-note:pine",
+          "antiquario:olfactory-note:pine-needle",
+          "antiquario:olfactory-note:pineapple",
+          "antiquario:olfactory-note:pink-grapefruit",
+          "antiquario:olfactory-note:pink-pepper",
+          "antiquario:olfactory-note:plum",
+          "antiquario:olfactory-note:pomarose",
+          "antiquario:olfactory-note:port-wine",
+          "antiquario:olfactory-note:praline",
+          "antiquario:olfactory-note:precious-woods",
+          "antiquario:olfactory-note:primofiore-lemon",
+          "antiquario:olfactory-note:provencal-lavender",
+          "antiquario:olfactory-note:quince",
+          "antiquario:olfactory-note:raspberry",
+          "antiquario:olfactory-note:red-apple",
+          "antiquario:olfactory-note:red-berries",
+          "antiquario:olfactory-note:red-ginger",
+          "antiquario:olfactory-note:red-mandarin-orange",
+          "antiquario:olfactory-note:red-pepper",
+          "antiquario:olfactory-note:roasted-tonka-bean",
+          "antiquario:olfactory-note:rose",
+          "antiquario:olfactory-note:rose-absolute",
+          "antiquario:olfactory-note:rosemary",
+          "antiquario:olfactory-note:rosewood",
+          "antiquario:olfactory-note:rum",
+          "antiquario:olfactory-note:rum-absolute",
+          "antiquario:olfactory-note:russian-coriander",
+          "antiquario:olfactory-note:saffron",
+          "antiquario:olfactory-note:sage",
+          "antiquario:olfactory-note:salted-vanilla",
+          "antiquario:olfactory-note:sandalwood",
+          "antiquario:olfactory-note:serenolide",
+          "antiquario:olfactory-note:sicilian-almond",
+          "antiquario:olfactory-note:sicilian-bergamot",
+          "antiquario:olfactory-note:sicilian-blood-orange",
+          "antiquario:olfactory-note:sicilian-grapefruit",
+          "antiquario:olfactory-note:sicilian-lemon",
+          "antiquario:olfactory-note:sicilian-mandarin-orange",
+          "antiquario:olfactory-note:smoked-leather",
+          "antiquario:olfactory-note:solar-note",
+          "antiquario:olfactory-note:somalian-frankincense",
+          "antiquario:olfactory-note:spearmint",
+          "antiquario:olfactory-note:spices",
+          "antiquario:olfactory-note:spoiled-spice",
+          "antiquario:olfactory-note:star-anise",
+          "antiquario:olfactory-note:starfruit",
+          "antiquario:olfactory-note:stone-pine",
+          "antiquario:olfactory-note:strawberry",
+          "antiquario:olfactory-note:styrax",
+          "antiquario:olfactory-note:suede",
+          "antiquario:olfactory-note:sycamore-wood",
+          "antiquario:olfactory-note:sylkolide",
+          "antiquario:olfactory-note:tamarind",
+          "antiquario:olfactory-note:tangerine",
+          "antiquario:olfactory-note:tarragon",
+          "antiquario:olfactory-note:tea",
+          "antiquario:olfactory-note:teak",
+          "antiquario:olfactory-note:thyme",
+          "antiquario:olfactory-note:tobacco",
+          "antiquario:olfactory-note:tobacco-flower",
+          "antiquario:olfactory-note:toffee",
+          "antiquario:olfactory-note:tolu-balm",
+          "antiquario:olfactory-note:tonka-bean",
+          "antiquario:olfactory-note:tonka-bean-absolute",
+          "antiquario:olfactory-note:tuberose",
+          "antiquario:olfactory-note:tunisian-neroli",
+          "antiquario:olfactory-note:tunisian-orange-blossom-absolute",
+          "antiquario:olfactory-note:vanilla-absolute",
+          "antiquario:olfactory-note:vervain",
+          "antiquario:olfactory-note:vetiver",
+          "antiquario:olfactory-note:vetiver-leaf",
+          "antiquario:olfactory-note:vetiver-orpur",
+          "antiquario:olfactory-note:violet",
+          "antiquario:olfactory-note:violet-leaf",
+          "antiquario:olfactory-note:virginia-cedar",
+          "antiquario:olfactory-note:vorplaxa",
+          "antiquario:olfactory-note:water-jasmine",
+          "antiquario:olfactory-note:water-lily",
+          "antiquario:olfactory-note:whisky",
+          "antiquario:olfactory-note:white-blossoms",
+          "antiquario:olfactory-note:white-cedarwood",
+          "antiquario:olfactory-note:white-leather",
+          "antiquario:olfactory-note:white-musk",
+          "antiquario:olfactory-note:white-oud",
+          "antiquario:olfactory-note:white-pepper",
+          "antiquario:olfactory-note:white-sage",
+          "antiquario:olfactory-note:wild-flowers",
+          "antiquario:olfactory-note:wild-peach",
+          "antiquario:olfactory-note:woods",
+          "antiquario:olfactory-note:woody-notes",
+          "antiquario:olfactory-note:yemenite-frankincense",
+          "antiquario:olfactory-note:ylang-ylang",
+          "antiquario:olfactory-note:yuzu"
+        ]
+      },
+      {
+        "anchor": "antiquario:brand:al-battash",
+        "documentIds": [
+          "antiquario:brand:al-battash",
+          "antiquario:fragrance:parfumo-al-battash-adventure-story"
+        ]
+      },
+      {
+        "anchor": "antiquario:brand:aldi-hofer",
+        "documentIds": [
+          "antiquario:brand:aldi-hofer",
+          "antiquario:fragrance:parfumo-aldi-hofer-dynamic-style"
+        ]
+      },
+      {
+        "anchor": "antiquario:brand:caron",
+        "documentIds": [
+          "antiquario:brand:caron",
+          "antiquario:fragrance:parfumo-caron-pour-un-homme-de-caron-caron-1934-eau-de-toilette"
+        ]
+      },
+      {
+        "anchor": "antiquario:brand:craftoud",
+        "documentIds": [
+          "antiquario:brand:craftoud",
+          "antiquario:fragrance:parfumo-craftoud-koh-kong-2015"
+        ]
+      },
+      {
+        "anchor": "antiquario:brand:diptyque",
+        "documentIds": [
+          "antiquario:brand:diptyque",
+          "antiquario:fragrance:parfumo-diptyque-philosykos-diptyque-1996-eau-de-toilette"
+        ]
+      },
+      {
+        "anchor": "antiquario:brand:forage",
+        "documentIds": [
+          "antiquario:brand:forage",
+          "antiquario:fragrance:parfumo-forage-bohemian-forage-1994-eau-de-parfum"
+        ]
+      },
+      {
+        "anchor": "antiquario:brand:givenchy",
+        "documentIds": [
+          "antiquario:brand:givenchy",
+          "antiquario:fragrance:parfumo-givenchy-pi-givenchy-1999-eau-de-toilette"
+        ]
+      },
+      {
+        "anchor": "antiquario:brand:hermes",
+        "documentIds": [
+          "antiquario:brand:hermes",
+          "antiquario:fragrance:parfumo-hermes-ambre-narguile",
+          "antiquario:fragrance:parfumo-hermes-h24-hermes-2021-eau-de-toilette",
+          "antiquario:fragrance:parfumo-hermes-terre-dhermes-eau-givree",
+          "antiquario:fragrance:parfumo-hermes-un-jardin-sur-le-nil"
+        ]
+      },
+      {
+        "anchor": "antiquario:brand:john-varvatos",
+        "documentIds": [
+          "antiquario:brand:john-varvatos",
+          "antiquario:fragrance:parfumo-john-varvatos-artisan-pure"
+        ]
+      },
+      {
+        "anchor": "antiquario:brand:juliette-has-a-gun",
+        "documentIds": [
+          "antiquario:brand:juliette-has-a-gun",
+          "antiquario:fragrance:parfumo-juliette-has-a-gun-not-a-perfume-juliette-has-a-gun-2010-eau-de-parfum"
+        ]
+      },
+      {
+        "anchor": "antiquario:brand:le-couvent",
+        "documentIds": [
+          "antiquario:brand:le-couvent",
+          "antiquario:fragrance:parfumo-le-couvent-eau-des-missions"
+        ]
+      },
+      {
+        "anchor": "antiquario:brand:le-labo",
+        "documentIds": [
+          "antiquario:brand:le-labo",
+          "antiquario:fragrance:parfumo-le-labo-santal-33-le-labo-2011-eau-de-parfum"
+        ]
+      },
+      {
+        "anchor": "antiquario:brand:louis-vuitton",
+        "documentIds": [
+          "antiquario:brand:louis-vuitton",
+          "antiquario:fragrance:parfumo-louis-vuitton-limmensite",
+          "antiquario:fragrance:parfumo-louis-vuitton-nouveau-monde",
+          "antiquario:fragrance:parfumo-louis-vuitton-pacific-chill"
+        ]
+      },
+      {
+        "anchor": "antiquario:brand:maison-francis-kurkdjian",
+        "documentIds": [
+          "antiquario:brand:maison-francis-kurkdjian",
+          "antiquario:fragrance:parfumo-maison-francis-kurkdjian-amyris-homme-maison-francis-kurkdjian-2012-eau-de-toilette",
+          "antiquario:fragrance:parfumo-maison-francis-kurkdjian-apom-homme",
+          "antiquario:fragrance:parfumo-maison-francis-kurkdjian-gentle-fluidity-gold"
+        ]
+      },
+      {
+        "anchor": "antiquario:brand:matiere-premiere",
+        "documentIds": [
+          "antiquario:brand:matiere-premiere",
+          "antiquario:fragrance:parfumo-matiere-premiere-falcon-leather-matiere-premiere-2019-eau-de-parfum"
+        ]
+      },
+      {
+        "anchor": "antiquario:brand:narciso-rodriguez",
+        "documentIds": [
+          "antiquario:brand:narciso-rodriguez",
+          "antiquario:fragrance:parfumo-narciso-rodriguez-for-her-narciso-rodriguez-2005-eau-de-parfum"
+        ]
+      },
+      {
+        "anchor": "antiquario:brand:nasomatto",
+        "documentIds": [
+          "antiquario:brand:nasomatto",
+          "antiquario:fragrance:parfumo-nasomatto-duro-nasomatto-2007-extrait-de-parfum"
+        ]
+      },
+      {
+        "anchor": "antiquario:brand:natura",
+        "documentIds": [
+          "antiquario:brand:natura"
+        ]
+      },
+      {
+        "anchor": "antiquario:brand:o-boticario",
+        "documentIds": [
+          "antiquario:brand:o-boticario"
+        ]
+      },
+      {
+        "anchor": "antiquario:brand:orto-parisi",
+        "documentIds": [
+          "antiquario:brand:orto-parisi",
+          "antiquario:fragrance:parfumo-orto-parisi-megamare"
+        ]
+      },
+      {
+        "anchor": "antiquario:brand:profumum-roma",
+        "documentIds": [
+          "antiquario:brand:profumum-roma",
+          "antiquario:fragrance:parfumo-profumum-roma-acqua-e-zucchero",
+          "antiquario:fragrance:parfumo-profumum-roma-sorriso"
+        ]
+      },
+      {
+        "anchor": "antiquario:brand:serge-lutens",
+        "documentIds": [
+          "antiquario:brand:serge-lutens",
+          "antiquario:fragrance:parfumo-serge-lutens-ambre-sultan-serge-lutens-1993-eau-de-parfum",
+          "antiquario:fragrance:parfumo-serge-lutens-five-oclock-au-gingembre"
+        ]
+      },
+      {
+        "anchor": "antiquario:brand:zara",
+        "documentIds": [
+          "antiquario:brand:zara",
+          "antiquario:fragrance:parfumo-zara-richwarmaddictive-zara-2016-eau-de-toilette"
+        ]
+      },
+      {
+        "anchor": "antiquario:brand:zarkoperfume",
+        "documentIds": [
+          "antiquario:brand:zarkoperfume",
+          "antiquario:fragrance:parfumo-zarkoperfume-the-muse"
         ]
       }
     ],
-    "isolatedDocumentIds": []
+    "isolatedDocumentIds": [
+      "antiquario:brand:natura",
+      "antiquario:brand:o-boticario"
+    ]
   },
   "editorialCoverage": {
-    "approvedFragrances": 1,
-    "approvedCommercialFragrances": 0,
+    "approvedFragrances": 221,
+    "approvedCommercialFragrances": 220,
     "withExternalIdentity": 0,
-    "withNotes": 0,
-    "withAccords": 0,
-    "withContexts": 0,
-    "recommendationReady": 0
+    "withNotes": 1,
+    "withAccords": 20,
+    "withContexts": 20,
+    "recommendationReady": 1
   },
   "readiness": {
     "status": "blocked",
@@ -44,9 +859,1330 @@
   },
   "issues": [
     {
-      "code": "no-approved-commercial-fragrances",
+      "code": "isolated-document",
+      "severity": "error",
+      "documentId": "antiquario:brand:natura",
+      "message": "Documento aprovado sem sinapses com o restante do grafo."
+    },
+    {
+      "code": "isolated-document",
+      "severity": "error",
+      "documentId": "antiquario:brand:o-boticario",
+      "message": "Documento aprovado sem sinapses com o restante do grafo."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
       "severity": "warning",
-      "message": "Não há fragrâncias comerciais aprovadas; o RAG ainda não pode sustentar recomendações factuais."
+      "documentId": "antiquario:fragrance:parfumo-abercrombie-fitch-fierce-abercrombie-fitch-2002-cologne",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-acorelle-be-positive---the-blanc",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-acqua-di-parma-arancia-di-capri",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-acqua-di-parma-bergamotto-di-calabria",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-acqua-di-parma-colonia-acqua-di-parma-1916-eau-de-cologne",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-acqua-di-parma-colonia-essenza-acqua-di-parma-2010-eau-de-cologne",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-acqua-di-parma-mandorlo-di-sicilia",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-acqua-di-parma-oud-acqua-di-parma-2019-eau-de-parfum",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-afnan-perfumes-supremacy-not-only-intense",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-al-battash-adventure-story",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-al-haramain-laventure",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-aldi-hofer-dynamic-style",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-amouage-beach-hut-man",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-amouage-interlude-black-iris",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-amouage-lyric-man",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-amouage-memoir-man",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-amouage-sunshine-man",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-ann-fragrance-the-royal",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-armaf-club-de-nuit-intense-man-armaf-eau-de-parfum",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-armaf-club-de-nuit-sillage-armaf-2020-eau-de-parfum",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-azzaro-azzaro-pour-homme-azzaro-1978-eau-de-toilette",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-bdk-parfums-creme-de-cuir-bdk-parfums-2018-eau-de-parfum",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-bdk-parfums-gris-charnel-bdk-parfums-2022-extrait",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-bdk-parfums-velvet-tonka",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-black-ship-grooming-co-davy-jones",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-boadicea-the-victorious-passionate",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-bond-no-9-chinatown-bond-no-9-2010-solid-perfume",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-borsari-1870-giacinto",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-burberry-london-for-men-burberry-2006-eau-de-toilette",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-bvlgari-aqva-amara-bvlgari-2014-eau-de-toilette",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-byredo-gypsy-water-byredo-2008-eau-de-parfum",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-calvin-klein-ck-one-calvin-klein-1994-eau-de-toilette",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-calvin-klein-ck-one-shock-for-him",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-caron-pour-un-homme-de-caron-caron-1934-eau-de-toilette",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-cartier-declaration-cartier-1998-eau-de-toilette",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-chanel-allure-homme-chanel-1999-eau-de-toilette",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-chanel-allure-homme-edition-blanche-chanel-2008-eau-de-toilette-concentree",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-chopard-casmir-chopard-1991-eau-de-parfum",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-colornoise-country",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-comme-des-garcons-wonderwood",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-craftoud-koh-kong-2015",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-creed-bois-du-portugal",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-creed-himalaya",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-creed-original-vetiver",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-davidoff-cool-water-intense",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-diesel-only-the-brave-diesel-2009-eau-de-toilette",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-dior-dior-homme-dior-2020-eau-de-toilette",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-dior-dior-homme-sport",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-dior-eau-sauvage-parfum",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-diptyque-philosykos-diptyque-1996-eau-de-toilette",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-dolce-gabbana-light-blue-pour-homme-forever",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-dolce-gabbana-the-one-dolce-gabbana-2006-eau-de-parfum",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-dolce-gabbana-the-one-for-men-dolce-gabbana-2008-eau-de-toilette",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-dunhill-icon",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-editions-de-parfums-frederic-malle-french-lover-bois-dorage",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-etnia-factory-beijing",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-forage-bohemian-forage-1994-eau-de-parfum",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-fragrance-one-office-for-men",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-geoffrey-beene-grey-flannel-geoffrey-beene-1975-eau-de-toilette",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-giorgio-armani-acqua-di-gio-profondo-giorgio-armani-2020-eau-de-parfum",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-giorgio-armani-acqua-di-gioia-giorgio-armani-2010-eau-de-parfum",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-giorgio-armani-armani-code-black-code-giorgio-armani-2004-eau-de-toilette",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-giorgio-armani-armani-code-pour-femme-giorgio-armani-2006-eau-de-parfum",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-giorgio-armani-armani-code-profumo",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-giorgio-armani-emporio-armani---stronger-with-you",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-giorgio-armani-my-way-giorgio-armani-2020-eau-de-parfum",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-giorgio-armani-si-giorgio-armani-2013-eau-de-parfum",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-gisada-ambassador-for-men",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-givenchy-pi-givenchy-1999-eau-de-toilette",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-gucci-gucci-intense-oud",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-gucci-gucci-pour-homme-ii-gucci-2007-eau-de-toilette",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-gucci-guilty-absolute-pour-homme",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-guerlain-bois-darmenie",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-guerlain-habit-rouge-guerlain-1965-eau-de-toilette",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-guerlain-la-petite-robe-noire-guerlain-2012-eau-de-parfum",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-guerlain-lhomme-ideal-cologne",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-guerlain-lhomme-ideal-extreme",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-guerlain-lhomme-ideal-guerlain-2014-eau-de-toilette",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-guerlain-linstant-de-guerlain-pour-homme-guerlain-2004-eau-de-toilette",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-guerlain-santal-royal-guerlain-2014-eau-de-parfum",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-guerlain-vetiver-guerlain-1959-eau-de-toilette",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-guy-laroche-drakkar-noir-guy-laroche-1982-eau-de-toilette",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-halloween-halloween-man-x",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-hermes-ambre-narguile",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-hermes-h24-hermes-2021-eau-de-toilette",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-hermes-terre-dhermes-eau-givree",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-hermes-un-jardin-sur-le-nil",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-hugo-boss-hugo-hugo-boss-1995-eau-de-toilette",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-hugo-boss-the-scent-for-him-hugo-boss-2015-eau-de-toilette",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-initio-absolute-aphrodisiac",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-initio-blessed-baraka",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-initio-paragon",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-issey-miyake-leau-dissey-pour-homme-issey-miyake-1994-eau-de-toilette",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-jean-paul-gaultier-gaultier",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-jean-paul-gaultier-le-beau",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-jean-paul-gaultier-le-beau-le-parfum",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-jean-paul-gaultier-scandal-pour-homme",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-jil-sander-sun-jil-sander-1989-eau-de-toilette",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-jo-malone-myrrh-tonka",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-john-varvatos-artisan-pure",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-joop-joop-homme-joop-1989-eau-de-toilette",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-juliette-has-a-gun-not-a-perfume-juliette-has-a-gun-2010-eau-de-parfum",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-kenzo-flower-by-kenzo-kenzo-2000-eau-de-parfum",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-kilian-back-to-black-aphrodisiac-kilian-2009-perfume",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-kilian-black-phantom---memento-mori",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-kilian-straight-to-heaven-white-cristal-kilian-2007-perfume",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-lacoste-l1212-blanc-eau-de-lacoste-l1212-blanc-lacoste-2010-eau-de-toilette",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-lalique-encre-noire-a-lextreme",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-lalique-encre-noire-sport",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-lalique-lalique-white-lalique-2008-eau-de-toilette",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-lancome-la-vie-est-belle-leau-de-parfum",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-lartisan-parfumeur-timbuktu",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-le-couvent-eau-des-missions",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-le-labo-santal-33-le-labo-2011-eau-de-parfum",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-loccitane-en-provence-eau-des-baux",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-louis-vuitton-limmensite",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-louis-vuitton-nouveau-monde",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-louis-vuitton-pacific-chill",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-m-micallef-desirtoxic",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-maison-francis-kurkdjian-amyris-homme-maison-francis-kurkdjian-2012-eau-de-toilette",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-maison-francis-kurkdjian-apom-homme",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-maison-francis-kurkdjian-gentle-fluidity-gold",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-mancera-instant-crush",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-marc-gebauer-air-tiger",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-matiere-premiere-falcon-leather-matiere-premiere-2019-eau-de-parfum",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-montale-black-aoud",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-montale-chocolate-greedy",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-montblanc-individuel-montblanc-2003-eau-de-toilette",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-montblanc-legend-spirit",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-moschino-toy-boy",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-mugler-amen-angel-men",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-mugler-amen-pure-malt",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-mugler-angel-mugler-1992-eau-de-parfum",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-mugler-mugler-cologne",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-narciso-rodriguez-for-her-narciso-rodriguez-2005-eau-de-parfum",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-nasomatto-duro-nasomatto-2007-extrait-de-parfum",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-nautica-voyage-nautica-2006-eau-de-toilette",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-nikos-sculpture-homme-nikos-1995-eau-de-toilette",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-nishane-fan-your-flames",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-orto-parisi-megamare",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-paco-rabanne-invictus-paco-rabanne-2013-eau-de-toilette",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-paco-rabanne-million-paco-rabanne-2008-eau-de-toilette",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-paco-rabanne-olympea-paco-rabanne-2015-eau-de-parfum",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-parfums-de-marly-godolphin",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-parfums-de-marly-greenley",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-parfums-de-marly-kalan",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-parfums-de-marly-perseus",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-prada-amber-pour-homme-prada-2006-eau-de-toilette",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-prada-candy-prada-2011-eau-de-parfum",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-prada-lhomme-leau",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-prada-luna-rossa-carbon",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-prada-luna-rossa-ocean-prada-2021-eau-de-toilette",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-prada-luna-rossa-prada-2012-eau-de-toilette",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-prada-paradoxe",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-profumum-roma-acqua-e-zucchero",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-profumum-roma-sorriso",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-rasasi-daarej-pour-homme",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-rasasi-la-yuqawam-pour-homme",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-roberto-ugolini-marzocco-roberto-ugolini-2019-eau-de-parfum",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-rochas-rochas-man-rochas-1999-eau-de-toilette",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-roja-parfums-burlington-1819",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-roja-parfums-enigma-pour-homme-creation-e-pour-homme-roja-parfums-2013-eau-de-parfum",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-roja-parfums-oceania",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-salvatore-ferragamo-f-by-ferragamo-pour-homme-black-salvatore-ferragamo-2009-eau-de-toilette",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-serge-lutens-ambre-sultan-serge-lutens-1993-eau-de-parfum",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-serge-lutens-five-oclock-au-gingembre",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-tiziana-terenzi-rosso-pompei",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-tom-ford-bitter-peach-tom-ford-2020-eau-de-parfum",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-tom-ford-grey-vetiver-tom-ford-2009-eau-de-parfum",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-tom-ford-neroli-portofino-tom-ford-2007-eau-de-parfum",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-tom-ford-noir-tom-ford-2012-eau-de-parfum",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-tom-ford-oud-minerale",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-tom-ford-tobacco-oud",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-valentino-valentino-uomo-valentino-2014-eau-de-toilette",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-van-cleef-arpels-bois-dore",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-van-cleef-arpels-midnight-in-paris-van-cleef-arpels-2010-eau-de-toilette",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-versace-blue-jeans",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-versace-eros-versace-2020-eau-de-parfum",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-versace-versace-man-eau-fraiche-versace-2005-eau-de-toilette",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-versace-versace-pour-homme-oud-noir",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-viktor-rolf-spicebomb-infrared-viktor-rolf-2021-eau-de-toilette",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-xerjoff-accento-overdose",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-xerjoff-apollonia",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-xerjoff-casamorati---1888",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-xerjoff-casamorati---bouquet-ideale-xerjoff-2009-eau-de-parfum",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-xerjoff-casamorati---dolce-amalfi-xerjoff-2017-eau-de-parfum",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-xerjoff-casamorati---italica",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-xerjoff-casamorati---mefisto",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-xerjoff-decas",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-xerjoff-erba-gold",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-xerjoff-fars",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-xerjoff-la-capitale",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-xerjoff-torino22",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-yves-saint-laurent-kouros-yves-saint-laurent-1981-eau-de-toilette",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-yves-saint-laurent-le-vestiaire---babycat",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-yves-saint-laurent-m7-m7-oud-absolu",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-yves-saint-laurent-myslf",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-zadig-voltaire-this-is-him",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-zara-richwarmaddictive-zara-2016-eau-de-toilette",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:parfumo-zarkoperfume-the-muse",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note, has-accord, suited-to."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:pdf-ameixa-506bcad4",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:pdf-coffee-man-506bcad4",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:pdf-coffee-woman-506bcad4",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:pdf-egeo-diverte-sua-rotina-506bcad4",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:pdf-egeo-dolce-506bcad4",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:pdf-egeo-tudo-506bcad4",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:pdf-floratta-506bcad4",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:pdf-floratta-blue-506bcad4",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:pdf-floratta-gold-506bcad4",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:pdf-floratta-red-passion-506bcad4",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:pdf-floratta-rose-506bcad4",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:pdf-glamour-506bcad4",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:pdf-glamour-diva-506bcad4",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:pdf-glamour-secrets-506bcad4",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:pdf-malbec-506bcad4",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:pdf-malbec-black-506bcad4",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:pdf-malbec-gold-506bcad4",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:pdf-malbec-x-506bcad4",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note."
+    },
+    {
+      "code": "incomplete-fragrance-structure",
+      "severity": "warning",
+      "documentId": "antiquario:fragrance:pdf-nuvem-506bcad4",
+      "message": "Fragrância aprovada sem relações obrigatórias: has-note."
     }
   ]
 }

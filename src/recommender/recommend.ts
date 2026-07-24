@@ -6,6 +6,7 @@ import type {
   RecommendationResult,
   WearHistorySummary,
 } from "../domain/types.ts";
+import { FIXTURE_FRAGRANCES } from "./fixtures.ts";
 import { assertValidContext, assertValidFragrances, assertValidProfile } from "../domain/validation.ts";
 import { diversify } from "./diversity.ts";
 import { normalizeId } from "./math.ts";
@@ -17,6 +18,17 @@ export const ENGINE_VERSION = "0.1.0";
 function historyMap(history: readonly WearHistorySummary[]): Map<string, WearHistorySummary> {
   return new Map(history.map((item) => [normalizeId(item.fragranceId), item]));
 }
+
+export function recommendWithCatalog(
+  profile: PreferenceProfile,
+  context: RecommendationContext,
+  catalog: readonly Fragrance[] = FIXTURE_FRAGRANCES,
+  history: readonly WearHistorySummary[] = [],
+  options: RecommendationOptions = {},
+): RecommendationResult {
+  return recommend(catalog, profile, context, history, options);
+}
+
 
 export function recommend(
   fragrances: readonly Fragrance[],

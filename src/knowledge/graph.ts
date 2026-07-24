@@ -12,7 +12,7 @@ type RelationContract = Readonly<{
 }>;
 
 const ALL_DOCUMENT_TYPES: readonly KnowledgeDocumentType[] = [
-  "index", "fragrance", "olfactory-note", "accord", "raw-material", "context", "science", "guide",
+  "index", "fragrance", "olfactory-note", "accord", "raw-material", "context", "science", "guide", "brand", "perfumer"
 ];
 
 export const RELATION_CONTRACTS: Readonly<Record<string, RelationContract>> = {
@@ -28,6 +28,11 @@ export const RELATION_CONTRACTS: Readonly<Record<string, RelationContract>> = {
   favors: { sources: ["context"], targets: ["olfactory-note", "accord"] },
   "compatible-example": { sources: ["context"], targets: ["fragrance"] },
   "governed-by": { sources: ["guide"], targets: ["index", "guide"] },
+  "belongs-to-brand": { sources: ["fragrance"], targets: ["brand"] },
+  "created-by": { sources: ["fragrance"], targets: ["perfumer"] },
+  "has-top-note": { sources: ["fragrance"], targets: ["olfactory-note"] },
+  "has-heart-note": { sources: ["fragrance"], targets: ["olfactory-note"] },
+  "has-base-note": { sources: ["fragrance"], targets: ["olfactory-note"] },
 };
 
 export function assertRelationContract(source: KnowledgeDocument, target: KnowledgeDocument, predicate: string): void {
@@ -203,8 +208,7 @@ export function inspectKnowledgeGraph(
   const withAccords = commercial.filter((document) => has(document, "has-accord"));
   const withContexts = commercial.filter((document) => has(document, "suited-to"));
   const recommendationReady = commercial.filter((document) => (
-    Boolean(document.external_ids.wikidata)
-    && has(document, "has-note") && has(document, "has-accord") && has(document, "suited-to")
+    has(document, "has-note") && has(document, "has-accord") && has(document, "suited-to")
     && document.confidence !== "unknown"
   ));
   const connectivity = documentComponents(documents, graph.edges);

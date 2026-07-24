@@ -9,6 +9,7 @@ from typing import Sequence
 from .io_utils import load_json
 from .catalog_release import compile_catalog_release
 from .curation_queue import build_curation_queue
+from .official_pdf import process_official_pdf
 from .warehouse import build_catalog
 from .wikidata import audit_wikidata_properties, audit_wikidata_property_values, sync_wikidata
 
@@ -62,6 +63,19 @@ def create_parser() -> argparse.ArgumentParser:
     values_audit.add_argument("--property", action="append", default=[], metavar="PID")
     values_audit.add_argument("--batch-size", type=int, default=100)
     values_audit.add_argument("--retrieved-at", help="data ISO fixa, útil para auditorias reproduzíveis")
+
+    official_pdf = commands.add_parser("official-pdf", help="ingere catálogo oficial em PDF e gera staging")
+    official_pdf.add_argument("--input", type=Path, required=True, help="caminho do arquivo PDF local")
+    official_pdf.add_argument("--brand", required=True, help="marca do catálogo (ex: natura, o-boticario)")
+    official_pdf.add_argument("--edition", required=True, help="edição ou ano do catálogo (ex: 2026-ciclo-01)")
+    official_pdf.add_argument("--source-id", required=True, help="ID da fonte em data/sources.yml (ex: official_catalog_natura)")
+    official_pdf.add_argument("--dry-run", action="store_true", help="executa sem gravar no staging")
+    official_pdf.add_argument("--no-inbox", action="store_true", help="não gera rascunhos no vault 00_Inbox")
+    official_pdf.add_argument(
+        "--generate-review-inbox",
+        action="store_true",
+        help="gera rascunhos apenas para exceções ambíguas; desativado por padrão",
+    )
     return parser
 
 
@@ -125,7 +139,18 @@ def main(argv: Sequence[str] | None = None) -> int:
                 batch_size=args.batch_size,
                 retrieved_at=args.retrieved_at,
             ))
+        elif args.command == "official-pdf":
+            _print(process_official_pdf(
+                pdf_path=args.input.resolve(),
+                brand=args.brand,
+                edition=args.edition,
+                source_id=args.source_id,
+                data_directory=data_directory,
+                dry_run=args.dry_run,
+                generate_inbox=args.generate_review_inbox and not args.no_inbox,
+            ))
         return 0
+
     except (FileNotFoundError, RuntimeError, ValueError) as error:
         print(f"erro: {error}", file=sys.stderr)
         return 1

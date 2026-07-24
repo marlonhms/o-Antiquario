@@ -70,7 +70,9 @@ Wikidata / catálogo oficial em PDF / futura fonte aprovada
 | `knowledge/vault/10_Perfumes` aprovado | Conhecimento editorial com evidências | Sim, após contrato de ranking |
 | `src/recommender/fixtures.ts` | Laboratório de UX e lógica | Somente demonstração |
 
-## 4. Próxima prioridade: conector de catálogos oficiais em PDF
+## 4. Conector de catálogos oficiais em PDF — v2 textual implementado
+
+> **Progresso em 22/07/2026:** o conector textual v2 classifica blocos por tipo de fragrância, volume e qualidade do nome; ignora produtos corporais/acessórios; extrai pirâmide explícita, acordes e matérias-primas reconhecíveis; deduplica repetições; e publica candidatos de alta confiança em `auto-curated-candidates.jsonl`. No catálogo Natura de teste com 184 páginas, a ingestão encontrou 94 fragrâncias únicas, automatizou 82 e isolou 12 nomes genéricos para revisão. OCR permanece fora do escopo.
 
 ### Objetivo
 
@@ -136,16 +138,15 @@ Todo claim deve conter, no mínimo:
 
 `source_id` só pode ser registrado depois da direção explícita do proprietário sobre a fonte e o uso pretendido. O agente pode criar a estrutura técnica e um perfil de parser, mas não deve afirmar que o material é permitido para redistribuição ou para o core.
 
-### Implementação sugerida
+### Implementação atual e continuidade
 
-1. Adicionar dependência Python mínima para leitura de PDF com texto (preferência: `pypdf`) ao `pyproject.toml` e ao lockfile.
-2. Criar `pipeline/antiquario_data/official_pdf.py` com funções puras para hash, leitura por página, normalização e escrita de staging.
-3. Criar perfis de extração configuráveis por marca em YAML/JSON; o núcleo não deve depender de regexes fixas para uma única diagramação.
-4. Adicionar o subcomando `official-pdf` à CLI, inicialmente com `--input`, `--brand`, `--edition`, `--source-id` e `--dry-run`.
-5. Implementar matching conservador e quarentena; não reutilizar o resolvedor para “adivinhar” identidade.
-6. Criar testes com fixture sintética gerada localmente, incluindo: pirâmide explícita, lista sem camada, nota desconhecida, produto ambíguo e página sem texto.
-7. Adicionar `npm run data:ingest:official-pdf` e documentação de execução local.
-8. Só depois de validar 1–3 catálogos reais, adicionar OCR opcional e perfis por marca.
+1. **Entregue:** dependências textuais, hash, leitura por página, staging e CLI `official-pdf`.
+2. **Entregue:** classificador de produto por evidências positivas, rejeição de cuidados corporais/acessórios e quarentena de identidade ambígua.
+3. **Entregue:** múltiplos perfumes por página, deduplicação entre kits/promoções, acordes, materiais e pirâmide explicitamente rotulada.
+4. **Entregue:** curadoria automática de alta confiança; inbox manual desativado por padrão.
+5. **Próximo:** validar a generalização em um catálogo textual de outra marca e extrair regras configuráveis somente onde o comportamento realmente divergir.
+6. **Próximo:** ampliar o resolvedor taxonômico e fazer matching por código/SKU quando o catálogo o declarar.
+7. **Fora do escopo atual:** OCR.
 
 ### Critérios de aceite
 
@@ -169,8 +170,8 @@ O PDF será valioso quando suas notas puderem criar relações confiáveis, e n�
    - `declares-unlayered-note`;
    - `declares-concentration`;
    - `declares-family`.
-4. Criar rascunho em `00_Inbox` que cite a evidência do catálogo oficial.
-5. Após revisão humana, mover somente o registro aprovado a `knowledge/vault/10_Perfumes` e executar `npm run knowledge:build`.
+4. Publicar relações fortes no artefato automático; somente ambiguidades ficam em quarentena.
+5. Usar outros catálogos, códigos de produto e matching factual para resolver exceções sem criar uma fila manual obrigatória.
 6. Acompanhar no relatório do grafo: percentual de perfumes conectados a notas, notas por camada, entidades em quarentena e cobertura por marca/região.
 
 Meta inicial útil: aprovar 20 perfumes reais com ao menos uma evidência de identidade e uma relação olfativa declarada. A meta não é volume; é validar a cadeia completa de confiança.
@@ -228,7 +229,7 @@ Essas tarefas podem seguir em paralelo às fases de dados, desde que não altere
    npm run build
    ```
 
-4. Se houver PDF(s) de exemplo fornecido(s), iniciar a fase 4 exatamente pela estrutura de entrada, hash, saída de staging e fixture sintética. Se não houver, preparar apenas o conector genérico e seus testes — não baixar documentos por conta própria.
+4. Validar o conector v2 em outro PDF textual fornecido pelo proprietário e comparar precisão, recall, acordes, materiais e quarentena — não baixar documentos por conta própria.
 5. Após cada mudança no pipeline, testar a idempotência e atualizar a documentação operacional.
 6. Antes de conectar qualquer dado novo ao ranking, parar no gate da seção 6 e pedir confirmação/direção ao proprietário.
 
