@@ -16,6 +16,7 @@ Companion e consultor digital especializado em perfumaria mundial, da perfumaria
 
 - [Escopo do produto](docs/ESCOPO.md)
 - [Roadmap detalhado](docs/ROADMAP.md)
+- [Roadmap de produto B2C e B2B](docs/ROADMAP_B2C_B2B.md)
 - [Arquitetura e implementação](docs/IMPLEMENTACAO.md)
 - [Direção visual](docs/DIRECAO_VISUAL.md)
 - [Fontes e licenças](docs/FONTES_E_LICENCAS.md)

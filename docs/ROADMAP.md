@@ -2,6 +2,8 @@
 
 > **Estado consolidado em 22/07/2026.** Este é o documento de handoff para o próximo agente. Ele descreve a ordem de trabalho, os limites do projeto e os critérios de aceite; não autoriza decidir, em nome do proprietário do projeto, a permissão ou a licença de uma nova fonte.
 
+> A evolução comercial posterior ao amadurecimento da base e da memória está organizada em [`ROADMAP_B2C_B2B.md`](ROADMAP_B2C_B2B.md). As trilhas de produto não começam antes da aprovação do Gate de Confiança Olfativa.
+
 ## 1. Norte do produto
 
 O Antiquário é um companion local-first de perfumaria. Ele deve recomendar e explicar escolhas com dados rastreáveis, sem transformar uma resposta de IA em fonte factual.
