@@ -1,92 +1,273 @@
+<div align="center">
+
 # O Antiquário
 
-Companion e consultor digital especializado em perfumaria mundial, da perfumaria acessível à alta perfumaria, construído com dados abertos, curadoria própria e uma camada conversacional baseada no plano gratuito do Gemini.
+### O perfume certo para este momento.
 
-## Princípios do projeto
+Companion olfativo local-first que cruza gosto pessoal, contexto, clima, ambiente e evidências rastreáveis para recomendar fragrâncias e explicar cada escolha.
 
-- Custo operacional obrigatório igual a zero no MVP.
-- Nenhum scraping autenticado, uso de cookies de terceiros ou tentativa de contornar proteções anti-bot.
-- Recomendação calculada por um motor determinístico e explicada pela IA; a IA não é a fonte dos fatos.
-- Funcionamento degradado sem Gemini quando a cota gratuita estiver indisponível.
-- Dados acompanhados de origem, licença, data de consulta e nível de confiança.
-- Privacidade por padrão: o Gemini recebe apenas contexto anônimo e candidatos já selecionados.
-- Experiência principal em português do Brasil, com taxonomia preparada para múltiplos idiomas.
+[![Status](https://img.shields.io/badge/status-alpha-6f203d?style=flat-square)](#estado-atual)
+[![Local first](https://img.shields.io/badge/arquitetura-local--first-c6a768?style=flat-square)](#como-funciona)
+[![Node](https://img.shields.io/badge/Node.js-%E2%89%A524-3c873a?style=flat-square&logo=nodedotjs&logoColor=white)](#executar-localmente)
+[![TypeScript](https://img.shields.io/badge/TypeScript-strict-3178c6?style=flat-square&logo=typescript&logoColor=white)](#tecnologias)
+[![Python](https://img.shields.io/badge/Python-%E2%89%A53.12-3776ab?style=flat-square&logo=python&logoColor=white)](#pipeline-de-dados)
 
-## Documentação
+[Visão do produto](docs/ESCOPO.md) · [Roadmap técnico](docs/ROADMAP.md) · [Roadmap B2C/B2B](docs/ROADMAP_B2C_B2B.md) · [Direção visual](docs/DIRECAO_VISUAL.md)
 
-- [Escopo do produto](docs/ESCOPO.md)
-- [Roadmap detalhado](docs/ROADMAP.md)
-- [Roadmap de produto B2C e B2B](docs/ROADMAP_B2C_B2B.md)
-- [Arquitetura e implementação](docs/IMPLEMENTACAO.md)
-- [Direção visual](docs/DIRECAO_VISUAL.md)
-- [Fontes e licenças](docs/FONTES_E_LICENCAS.md)
-- [Taxonomia olfativa](docs/TAXONOMIA.md)
-- [Knowledge Core e memória RAG](docs/CONHECIMENTO_RAG.md)
-- [Plataforma de dados](docs/PLATAFORMA_DADOS.md)
-- [Catálogo Web e resolução de entidades](docs/CATALOGO_WEB.md)
-- [Curadoria Editorial](docs/CURADORIA_EDITORIAL.md)
+</div>
 
-## Estado
+---
 
-O núcleo determinístico e a primeira interface local estão funcionais. A versão atual contém regras de exclusão, pontuação explicável, confiança, histórico pessoal, diversidade do top 3, fallback sem IA e um formulário React responsivo ligado diretamente ao recomendador.
+## Visão
 
-## Interface local
+Escolher um perfume raramente é apenas escolher notas. A experiência muda com temperatura, umidade, ventilação, ocasião, intensidade desejada, memória e pele.
+
+O Antiquário está sendo construído para responder perguntas como:
+
+- “O que funciona em um escritório fechado num dia quente?”
+- “Quero algo elegante para a noite, mas sem dominar o ambiente.”
+- “Qual perfume da minha coleção combina com este momento?”
+- “Por que esta opção foi recomendada e o que pode não funcionar para mim?”
+- “Como meu gosto mudou depois dos últimos usos?”
+
+O objetivo não é produzir um ranking genérico. É criar uma consulta privada, explicável e progressivamente pessoal — da perfumaria acessível à alta perfumaria, incluindo casas brasileiras, árabes, designer e nicho.
+
+## O que torna o projeto diferente
+
+| Pilar | Como aparece no Antiquário |
+|---|---|
+| Recomendação contextual | Combina preferências, clima, ambiente, ocasião, desempenho desejado e orçamento. |
+| Motor explicável | Filtros e pontuação são determinísticos; cada recomendação preserva forças, ressalvas e confiança. |
+| Conhecimento rastreável | Fatos, curadoria, estimativas e memória pessoal vivem em camadas diferentes. |
+| Memória olfativa | A visão futura aprende com abertura, coração, dry-down, duração e adequação percebidos na pele. |
+| Privacidade | Perfil e diário são locais por padrão; a aplicação continua útil sem nuvem. |
+| IA sob controle | A IA poderá interpretar e narrar candidatos já escolhidos, mas não inventar perfumes ou alterar fatos. |
+| Experiência editorial | Interface vinho e champagne, transparências, névoa, aurora e movimento sutil inspirados na presença invisível de uma fragrância. |
+
+## Estado atual
+
+> [!IMPORTANT]
+> O Antiquário está em **alpha local**. A base e o recomendador já são executáveis, mas o produto ainda não representa uma consultoria comercial concluída. Afirmações sensoriais e campos de baixa confiança permanecem sujeitos aos gates editoriais e de segurança.
+
+Snapshot incluído no repositório:
+
+| Camada | Estado |
+|---|---|
+| PWA React/Vite | Interface local funcional, responsiva e conectada ao recomendador. |
+| Consulta | Jornada em três etapas com atualização reativa das recomendações. |
+| Catálogo factual | 282 fragrâncias, 276 descritores olfativos e 251 claims semânticos na release atual. |
+| Catálogo de recomendação | 249 registros passam pelo gate técnico mínimo atual. |
+| Knowledge Core | 855 documentos, 736 chunks e 2.223 relações tipadas compiladas. |
+| Pipeline | Wikidata, PDFs textuais oficiais, staging, quarentena, DuckDB, Parquet e releases versionadas. |
+| Companion Gemini | Camada conversacional para o usuário ainda não integrada; o produto funciona sem ela. |
+| Produto B2C/B2B | Estratégia documentada; execução condicionada ao Gate de Confiança Olfativa. |
+
+O gate técnico de quantidade do catálogo não equivale ao gate comercial. Antes de experiências B2C ou B2B, o projeto ainda precisa comprovar recuperação segura, coerência sensorial, isolamento de memória e validação com uso real.
+
+## Como funciona
+
+```mermaid
+flowchart LR
+    A["Fontes aprovadas"] --> B["Raw e staging"]
+    B --> C["Normalização e quarentena"]
+    C --> D["Catálogo factual versionado"]
+    C --> E["Knowledge Core e grafo"]
+    D --> F["Catálogo elegível"]
+    E --> F
+    G["Perfil, contexto e diário local"] --> H["Motor determinístico"]
+    F --> H
+    H --> I["Top 3 + justificativas + confiança"]
+    I --> J["Experiência PWA"]
+    K["Gemini opcional"] -. "interpreta e explica" .-> J
+```
+
+1. Fontes passam por manifesto, extração e validação de proveniência.
+2. Identidades ou termos ambíguos ficam em quarentena.
+3. Somente conhecimento aprovado entra no grafo e nos artefatos recuperáveis.
+4. O recomendador aplica exclusões antes de calcular a pontuação.
+5. O top 3 preserva os fatores que realmente justificaram cada escolha.
+6. Templates locais mantêm a experiência funcional sem Gemini ou internet.
+
+## Executar localmente
+
+### Pré-requisitos
+
+- Node.js 24 ou superior;
+- npm;
+- Python 3.12 ou superior apenas para trabalhar no pipeline de dados.
+
+### Interface
 
 ```bash
 npm install
 npm run dev
 ```
 
-Abra `http://127.0.0.1:5173/`. Os dados do formulário ficam somente no navegador e o catálogo exibido nesta etapa é sintético.
+Abra [http://127.0.0.1:5173/](http://127.0.0.1:5173/).
 
-## Desenvolvimento do núcleo
+A PWA usa os artefatos versionados presentes em `apps/web/public/catalog`. Nenhuma chave de IA é necessária para executar a interface atual.
 
-Requer Node.js 24 ou superior.
+### Verificação completa
 
 ```bash
-npm install
 npm run typecheck
 npm test
+npm run data:test
+npm run build
+```
+
+Outros comandos úteis:
+
+```bash
 npm run demo
 npm run knowledge:validate
 npm run knowledge:build
+npm run recommendation:build
 npm run catalog:compile
 ```
 
-O catálogo presente em `src/recommender/fixtures.ts` é inteiramente sintético e existe apenas para testes; não será publicado como dado real.
-
-O vault editorial compatível com Obsidian vive em `knowledge/vault`. O build valida proveniência, resolve sinapses e publica artefatos determinísticos em `knowledge/compiled`.
-
 ## Pipeline de dados
 
-O importador é uma ferramenta interna. Ele salva snapshots imutáveis do Wikidata, normaliza entidades em staging e publica DuckDB e Parquet; o usuário final nunca executa essa rotina.
+O pipeline é uma ferramenta interna de manutenção. O usuário final recebe releases prontas e nunca precisa importar, organizar ou revisar arquivos.
+
+### Preparar o ambiente Python no Windows
 
 ```powershell
-# em uma máquina nova
 python -m venv .venv
 .\.venv\Scripts\python.exe -m pip install -c requirements-data.lock -e .
+```
 
-npm run data:test
+### Fluxos principais
+
+```powershell
+npm run data:status
 npm run data:demo
 npm run data:sync:wikidata
 npm run data:build
 npm run catalog:compile
-npm run curation:queue
 ```
 
-O compilador publica uma release JSON determinística em `data/releases` e a cópia estável consumida pela PWA em `apps/web/public/catalog`. A interface identifica quando essa base factual está pronta, mas o ranking permanece ligado ao catálogo sintético até que os registros reais tenham notas, acordes e desempenho curados.
+Para um catálogo oficial com camada textual:
 
-Para ampliar a descoberta factual por país de origem no Wikidata, execute `npm run data:sync:wikidata -- --discovery-country Q155 --discovery-country Q878` antes do build do catálogo. A documentação explica o fluxo e as limitações em [Plataforma de dados](docs/PLATAFORMA_DADOS.md).
+```powershell
+npm run data:ingest:official-pdf -- `
+  --input "data/raw/official-catalogs/<marca>/<catalogo>.pdf" `
+  --brand <marca> `
+  --edition <edicao> `
+  --source-id <source_id> `
+  --no-inbox
+```
 
-## Restrições externas relevantes
+O extrator textual reconhece tipos reais de fragrância, separa produtos corporais e acessórios, deduplica repetições e preserva página, hash, método e confiança. OCR permanece fora do fluxo atual.
 
-As cotas gratuitas de serviços externos podem mudar. O projeto deverá consultar os limites ativos do Gemini no Google AI Studio e manter alternativas configuráveis. Em 22 de julho de 2026, a documentação oficial informa gratuidade de entrada e saída para modelos Flash selecionados, mas não garante capacidade fixa.
+## Conhecimento, RAG e memória
 
-- [Preços do Gemini API](https://ai.google.dev/gemini-api/docs/pricing)
-- [Limites do Gemini API](https://ai.google.dev/gemini-api/docs/rate-limits)
-- [Termos adicionais do Gemini API](https://ai.google.dev/gemini-api/terms)
-- [Licenciamento do Wikidata](https://www.wikidata.org/wiki/Wikidata:Licensing)
-- [Documentação do Open Beauty Facts](https://openfoodfacts.github.io/documentation/docs/Product-Opener/api/tutorials/scanning-cosmetics-pet-food-and-other-products/)
-- [Pyrfume](https://pyrfume.org/)
-- [PubChem PUG REST](https://pubchem.ncbi.nlm.nih.gov/docs/pug-rest)
-- [Biblioteca de padrões IFRA](https://ifrafragrance.org/standards-library)
+O vault editorial compatível com Obsidian vive em `knowledge/vault`.
+
+```text
+Markdown + frontmatter
+  → validação de fontes
+  → resolução de relações e wikilinks
+  → chunking semântico
+  → grafo e relatório de saúde
+  → índice recuperável versionado
+```
+
+Princípios do Knowledge Core:
+
+- `00_Inbox` não entra no RAG;
+- somente documentos aprovados são compilados;
+- IDs duplicados, relações inválidas e links quebrados bloqueiam o build;
+- cada evidência permanece ligada ao claim que sustenta;
+- conteúdo recuperado não pode redefinir as regras do sistema;
+- memória pessoal nunca se torna consenso coletivo automaticamente.
+
+Leia [Knowledge Core e memória RAG](docs/CONHECIMENTO_RAG.md) e [Curadoria Editorial](docs/CURADORIA_EDITORIAL.md).
+
+## Estrutura do repositório
+
+```text
+apps/web/                 PWA React/Vite
+src/recommender/          filtros, score, diversidade e explicações
+src/catalog/              compiladores dos catálogos web e de recomendação
+src/knowledge/            validação, grafo, chunks e health gates
+src/taxonomy/             vocabulário e normalização olfativa
+pipeline/                 ingestão e transformação em Python
+data/                     fontes, staging, auditorias e releases
+knowledge/vault/          Knowledge Core compatível com Obsidian
+knowledge/compiled/       artefatos determinísticos do RAG
+docs/                     decisões, escopo e roadmaps
+```
+
+## Tecnologias
+
+- React 19 e Vite 8;
+- TypeScript em modo estrito;
+- Zod para contratos de domínio;
+- Node Test Runner;
+- Python 3.12;
+- DuckDB e Parquet;
+- PyYAML, pypdf e pdfplumber;
+- Markdown, YAML e Obsidian para curadoria;
+- Gemini Flash planejado como camada conversacional opcional.
+
+## Princípios de confiança
+
+- O motor local escolhe; a IA apenas interpreta e explica.
+- Um dado factual nunca nasce de uma resposta conversacional.
+- Pirâmide olfativa só é registrada por camada quando a fonte declara a camada.
+- Experiência na pele é pessoal e não sobrescreve silenciosamente dados agregados.
+- Ranking e monetização terão separação técnica.
+- Nenhum cookie de terceiros, sessão autenticada ou bypass anti-bot faz parte do projeto.
+- PDFs brutos, credenciais, `.env` e memória privada não entram no Git.
+- Cada fonte mantém origem, licença, data, método e nível de confiança.
+
+## Caminho do produto
+
+### Fundação atual
+
+Consolidar catálogo, taxonomia, grafo, RAG, conjunto ouro, privacidade e o Gate de Confiança Olfativa.
+
+### B2C
+
+Beta sensorial fechado → Antiquário Essencial → Passaporte Olfativo → Privé → comércio assistido → comunidade moderada.
+
+### B2B
+
+Descoberta com consultores → catálogo multi-tenant → Antiquário Pro → piloto pago → Antiquário Maison → inteligência comercial agregada.
+
+Os critérios, métricas e limites de cada fase estão no [Roadmap de produto B2C e B2B](docs/ROADMAP_B2C_B2B.md).
+
+## Documentação
+
+| Documento | Conteúdo |
+|---|---|
+| [ESCOPO.md](docs/ESCOPO.md) | visão, público, funcionalidades e requisitos do produto |
+| [ROADMAP.md](docs/ROADMAP.md) | estado técnico e sequência de continuidade |
+| [ROADMAP_B2C_B2B.md](docs/ROADMAP_B2C_B2B.md) | gates e evolução comercial das duas trilhas |
+| [IMPLEMENTACAO.md](docs/IMPLEMENTACAO.md) | arquitetura, contratos, segurança e deploy |
+| [DIRECAO_VISUAL.md](docs/DIRECAO_VISUAL.md) | linguagem visual vinho, champagne e aurora |
+| [CONHECIMENTO_RAG.md](docs/CONHECIMENTO_RAG.md) | Knowledge Core, grafo e memória recuperável |
+| [PLATAFORMA_DADOS.md](docs/PLATAFORMA_DADOS.md) | pipeline, releases e auditorias |
+| [FONTES_E_LICENCAS.md](docs/FONTES_E_LICENCAS.md) | classificação e isolamento de fontes |
+| [TAXONOMIA.md](docs/TAXONOMIA.md) | notas, acordes, aliases e normalização |
+| [CATALOGO_WEB.md](docs/CATALOGO_WEB.md) | artefatos publicados para a PWA |
+| [CURADORIA_EDITORIAL.md](docs/CURADORIA_EDITORIAL.md) | promoção segura de conhecimento ao core |
+
+## Colaboração
+
+O projeto está em construção ativa. Antes de propor uma nova fonte ou alterar o modelo olfativo:
+
+1. leia os documentos de fontes, taxonomia e curadoria;
+2. preserve a separação entre fato, curadoria, estimativa e memória pessoal;
+3. não adicione PDFs, credenciais, cookies ou conteúdo privado ao repositório;
+4. inclua proveniência e testes para qualquer transformação de dados;
+5. execute os quatro comandos de verificação antes de abrir uma contribuição.
+
+---
+
+<div align="center">
+
+**O Antiquário** — tecnologia para compreender fragrâncias sem reduzir perfume a uma lista de notas.
+
+</div>
