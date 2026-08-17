@@ -21,7 +21,15 @@ evidence:
     confidence: medium
     claim_scope: "Descritor factual do Wikidata"
 ---
-
-# Madeira Deriva
-
+
+# Madeira Deriva
+
 Nota olfativa catalogada automaticamente.
+
+## Acordes e Facetas Relacionadas
+
+- [[Amadeirado|Amadeirado]]
+
+## Presente nas Fragrâncias
+
+- [[virtus-q138773649|Virtus]]

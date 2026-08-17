@@ -24,3 +24,12 @@ relations: []
 ---
 
 # Bourbon vanilla absolute
+
+## Acordes e Facetas Relacionadas
+
+- [[Fresco|Fresco]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-bdk-parfums-gris-charnel-bdk-parfums-2022-extrait|Gris Charnel bdk Parfums 2022 Extrait]]
+- [[fragrance-bdk-parfums-velvet-tonka|Velvet Tonka]]

@@ -24,3 +24,11 @@ relations: []
 ---
 
 # Russian coriander
+
+## Acordes e Facetas Relacionadas
+
+- [[Fresco|Fresco]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-acqua-di-parma-oud-acqua-di-parma-2019-eau-de-parfum|Oud Acqua di Parma 2019 Eau de Parfum]]

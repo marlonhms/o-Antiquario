@@ -24,3 +24,16 @@ relations: []
 ---
 
 # Green mandarin orange
+
+## Acordes e Facetas Relacionadas
+
+- [[Fresco|Fresco]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-gisada-ambassador-for-men|Ambassador for Men]]
+- [[fragrance-giorgio-armani-armani-code-profumo|Armani Code Profumo]]
+- [[fragrance-davidoff-cool-water-intense|Cool Water Intense]]
+- [[fragrance-borsari-1870-giacinto|Giacinto]]
+- [[fragrance-paco-rabanne-olympea-paco-rabanne-2015-eau-de-parfum|Olympēa Paco Rabanne 2015 Eau de Parfum]]
+- [[fragrance-parfums-de-marly-perseus|Perseus]]

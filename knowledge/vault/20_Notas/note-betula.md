@@ -21,7 +21,16 @@ evidence:
     confidence: medium
     claim_scope: "Descritor factual do Wikidata"
 ---
-
-# Betula
-
+
+# Betula
+
 Nota olfativa catalogada automaticamente.
+
+## Acordes e Facetas Relacionadas
+
+- [[Amadeirado|Amadeirado]]
+- [[antiquario:accord:couro|Couro]]
+
+## Presente nas Fragrâncias
+
+- [[aventus-q24886336|Aventus]]

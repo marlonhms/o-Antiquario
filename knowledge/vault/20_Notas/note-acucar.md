@@ -21,7 +21,15 @@ evidence:
     confidence: medium
     claim_scope: "Descritor factual do Wikidata"
 ---
-
-# Acucar
-
+
+# Acucar
+
 Nota olfativa catalogada automaticamente.
+
+## Acordes e Facetas Relacionadas
+
+- [[gourmand|Gourmand]]
+
+## Presente nas Fragrâncias
+
+- [[blueberry-jam-q140077185|Blueberry Jam]]

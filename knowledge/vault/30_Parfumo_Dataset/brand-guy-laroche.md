@@ -24,3 +24,7 @@ relations: []
 ---
 
 # Guy Laroche
+
+## Fragrâncias no Acervo
+
+- [[fragrance-guy-laroche-drakkar-noir-guy-laroche-1982-eau-de-toilette|Drakkar Noir Guy Laroche 1982 Eau de Toilette]]

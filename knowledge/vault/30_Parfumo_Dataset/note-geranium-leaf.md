@@ -24,3 +24,11 @@ relations: []
 ---
 
 # Geranium leaf
+
+## Acordes e Facetas Relacionadas
+
+- [[Fresco|Fresco]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-hugo-boss-hugo-hugo-boss-1995-eau-de-toilette|Hugo Hugo Boss 1995 Eau de Toilette]]

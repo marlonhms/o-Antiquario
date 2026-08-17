@@ -24,3 +24,11 @@ relations: []
 ---
 
 # Brown sugar
+
+## Acordes e Facetas Relacionadas
+
+- [[Fresco|Fresco]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-giorgio-armani-acqua-di-gioia-giorgio-armani-2010-eau-de-parfum|Acqua di Gioia Giorgio Armani 2010 Eau de Parfum]]

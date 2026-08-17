@@ -24,3 +24,11 @@ relations: []
 ---
 
 # Myrtle
+
+## Acordes e Facetas Relacionadas
+
+- [[Fresco|Fresco]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-valentino-valentino-uomo-valentino-2014-eau-de-toilette|Valentino Uomo Valentino 2014 Eau de Toilette]]

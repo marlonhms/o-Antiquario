@@ -21,7 +21,15 @@ evidence:
     confidence: medium
     claim_scope: "Descritor factual do Wikidata"
 ---
-
-# Absoluto De Labdano
-
+
+# Absoluto De Labdano
+
 Nota olfativa catalogada automaticamente.
+
+## Acordes e Facetas Relacionadas
+
+- [[Fresco|Fresco]]
+
+## Presente nas Fragrâncias
+
+- [[virtus-q138773649|Virtus]]

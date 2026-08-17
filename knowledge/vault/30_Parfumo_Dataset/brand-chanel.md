@@ -24,3 +24,8 @@ relations: []
 ---
 
 # Chanel
+
+## Fragrâncias no Acervo
+
+- [[fragrance-chanel-allure-homme-chanel-1999-eau-de-toilette|Allure Homme Chanel 1999 Eau de Toilette]]
+- [[fragrance-chanel-allure-homme-edition-blanche-chanel-2008-eau-de-toilette-concentree|Allure Homme Édition Blanche Chanel 2008 Eau de Toilette Concentrée]]

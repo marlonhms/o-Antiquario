@@ -24,3 +24,12 @@ relations: []
 ---
 
 # Lychee
+
+## Acordes e Facetas Relacionadas
+
+- [[frutado|Frutado]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-kenzo-flower-by-kenzo-kenzo-2000-eau-de-parfum|Flower by Kenzo Kenzo 2000 Eau de Parfum]]
+- [[fragrance-dolce-gabbana-the-one-dolce-gabbana-2006-eau-de-parfum|The One Dolce & Gabbana 2006 Eau de Parfum]]

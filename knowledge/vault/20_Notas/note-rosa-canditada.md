@@ -21,7 +21,15 @@ evidence:
     confidence: medium
     claim_scope: "Descritor factual do Wikidata"
 ---
-
-# Rosa Canditada
-
+
+# Rosa Canditada
+
 Nota olfativa catalogada automaticamente.
+
+## Acordes e Facetas Relacionadas
+
+- [[floral|Floral]]
+
+## Presente nas Fragrâncias
+
+- [[odeon-q140298435|Odéon]]

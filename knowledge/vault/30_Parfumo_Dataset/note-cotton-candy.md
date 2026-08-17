@@ -24,3 +24,12 @@ relations: []
 ---
 
 # Cotton candy
+
+## Acordes e Facetas Relacionadas
+
+- [[gourmand|Gourmand]]
+- [[doce|Doce]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-mugler-angel-mugler-1992-eau-de-parfum|Angel Mugler 1992 Eau de Parfum]]

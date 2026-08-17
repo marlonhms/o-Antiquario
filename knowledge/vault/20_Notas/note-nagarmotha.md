@@ -21,7 +21,15 @@ evidence:
     confidence: medium
     claim_scope: "Descritor factual do Wikidata"
 ---
-
-# Nagarmotha
-
+
+# Nagarmotha
+
 Nota olfativa catalogada automaticamente.
+
+## Acordes e Facetas Relacionadas
+
+- [[Fresco|Fresco]]
+
+## Presente nas Fragrâncias
+
+- [[ha-long-bay-q140237028|Ha Long Bay]]

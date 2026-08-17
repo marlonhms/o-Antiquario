@@ -24,3 +24,12 @@ relations: []
 ---
 
 # Grasse jasmine
+
+## Acordes e Facetas Relacionadas
+
+- [[Fresco|Fresco]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-roja-parfums-enigma-pour-homme-creation-e-pour-homme-roja-parfums-2013-eau-de-parfum|Enigma pour Homme Creation-E pour Homme Roja Parfums 2013 Eau de Parfum]]
+- [[fragrance-roja-parfums-oceania|Oceania]]

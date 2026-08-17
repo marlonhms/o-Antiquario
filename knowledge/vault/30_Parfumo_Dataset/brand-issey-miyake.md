@@ -24,3 +24,7 @@ relations: []
 ---
 
 # Issey Miyake
+
+## Fragrâncias no Acervo
+
+- [[fragrance-issey-miyake-leau-dissey-pour-homme-issey-miyake-1994-eau-de-toilette|L'Eau d'Issey pour Homme Issey Miyake 1994 Eau de Toilette]]

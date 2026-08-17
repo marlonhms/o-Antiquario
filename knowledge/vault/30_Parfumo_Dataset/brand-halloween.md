@@ -24,3 +24,7 @@ relations: []
 ---
 
 # Halloween
+
+## Fragrâncias no Acervo
+
+- [[fragrance-halloween-halloween-man-x|Halloween Man X]]

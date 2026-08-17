@@ -24,3 +24,11 @@ relations: []
 ---
 
 # Fruity notes
+
+## Acordes e Facetas Relacionadas
+
+- [[Fresco|Fresco]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-xerjoff-accento-overdose|Accento Overdose]]

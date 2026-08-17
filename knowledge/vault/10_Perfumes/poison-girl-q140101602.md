@@ -47,27 +47,33 @@ relations:
 - predicate: has-base-note
   target: antiquario:olfactory-note:balsamo-de-tolu
 ---
+
+# Poison Girl
+
+## Base factual
+
+- QID: `Q140101602`
+- Marca: Christian Dior S.A.
+- Perfumista: François Demachy
+- País: não informado no Wikidata
+- Ano: 2016
+- Site oficial: não informado no Wikidata
+- Descritores olfativos (`P5872`, sem camada de pirâmide): almond scent, orange blossom scent, sandalwood fragrance, scent of vanilla, smell of Cashmeran, smell of Tolu balsam, smell of bigarade, smell of heliotrope, smell of lemon, smell of rose, tonka bean aroma
+
+## Enriquecimento editorial obrigatório
+
+- [ ] Confirmar a identidade e a concentração da fragrância.
+- [ ] Validar os descritores Wikidata e classificar família, notas, camadas e acordes usando a taxonomia do Antiquário.
+- [ ] Registrar contexto de uso e desempenho com método, amostra e confiança.
+- [ ] Adicionar evidências permitidas para cada afirmação editorial.
+- [ ] Mover este arquivo para `10_Perfumes` somente após revisão humana.
+
+## Limite de uso
+
+Este rascunho não é uma recomendação e não deve ser usado pelo motor de ranking. Não inferir notas, desempenho, preço ou disponibilidade a partir de nome, marca ou país.
+
+## Conexões do Grafo
 
-# Poison Girl
-
-## Base factual
-
-- QID: `Q140101602`
-- Marca: Christian Dior S.A.
-- Perfumista: François Demachy
-- País: não informado no Wikidata
-- Ano: 2016
-- Site oficial: não informado no Wikidata
-- Descritores olfativos (`P5872`, sem camada de pirâmide): almond scent, orange blossom scent, sandalwood fragrance, scent of vanilla, smell of Cashmeran, smell of Tolu balsam, smell of bigarade, smell of heliotrope, smell of lemon, smell of rose, tonka bean aroma
-
-## Enriquecimento editorial obrigatório
-
-- [ ] Confirmar a identidade e a concentração da fragrância.
-- [ ] Validar os descritores Wikidata e classificar família, notas, camadas e acordes usando a taxonomia do Antiquário.
-- [ ] Registrar contexto de uso e desempenho com método, amostra e confiança.
-- [ ] Adicionar evidências permitidas para cada afirmação editorial.
-- [ ] Mover este arquivo para `10_Perfumes` somente após revisão humana.
-
-## Limite de uso
-
-Este rascunho não é uma recomendação e não deve ser usado pelo motor de ranking. Não inferir notas, desempenho, preço ou disponibilidade a partir de nome, marca ou país.
+- **Notas de Saída:** [[note-laranja-amarga|Laranja Amarga]], [[note-limao|Limao]]
+- **Notas de Coração:** [[note-flor-de-laranjeira|Flor De Laranjeira]], [[note-rosa|Rosa]], [[note-heliotropio|Heliotropio]], [[note-amendoa|Amendoa]]
+- **Notas de Fundo:** [[Baunilha|Baunilha]], [[note-fava-tonka|Fava Tonka]], [[note-sandalo|Sândalo (Sandalwood)]], [[note-cashmeran|Cashmeran]], [[note-balsamo-de-tolu|Balsamo De Tolu]]

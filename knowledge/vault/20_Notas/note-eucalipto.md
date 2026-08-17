@@ -21,7 +21,16 @@ evidence:
     confidence: medium
     claim_scope: "Descritor factual do Wikidata"
 ---
-
-# Eucalipto
-
+
+# Eucalipto
+
 Nota olfativa catalogada automaticamente.
+
+## Acordes e Facetas Relacionadas
+
+- [[Fresco|Fresco]]
+- [[verde|Verde]]
+
+## Presente nas Fragrâncias
+
+- [[september-q138611384|September]]

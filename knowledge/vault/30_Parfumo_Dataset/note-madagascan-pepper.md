@@ -24,3 +24,11 @@ relations: []
 ---
 
 # Madagascan pepper
+
+## Acordes e Facetas Relacionadas
+
+- [[Fresco|Fresco]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-comme-des-garcons-wonderwood|Wonderwood]]

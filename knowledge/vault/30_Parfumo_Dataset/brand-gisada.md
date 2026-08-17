@@ -24,3 +24,7 @@ relations: []
 ---
 
 # Gisada
+
+## Fragrâncias no Acervo
+
+- [[fragrance-gisada-ambassador-for-men|Ambassador for Men]]

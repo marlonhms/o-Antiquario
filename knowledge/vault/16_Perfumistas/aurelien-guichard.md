@@ -1,0 +1,39 @@
+---
+schema_version: 1
+id: antiquario:perfumer:aurelien-guichard
+project: o-antiquario
+type: perfumer
+title: Aurélien Guichard
+aliases: []
+external_ids: {}
+tags:
+- perfumista
+- parfumo
+source_ids:
+- parfumo_dataset
+license: CC0-1.0
+confidence: medium
+review_status: approved
+updated_at: '2026-08-17'
+language: pt-BR
+summary: Perfumista identificado em um registro estruturado do Parfumo Fragrance Dataset.
+evidence:
+- source_id: parfumo_dataset
+  kind: open_source
+  license: CC0-1.0
+  confidence: medium
+  claim_scope: Nome do perfumista e vínculo com uma fragrância no registro estruturado.
+  locator: https://www.parfumo.com/Perfumes/Acorelle/be-positive-the-blanc
+  retrieved_at: '2026-08-17'
+relations: []
+---
+
+# Aurélien Guichard
+
+Entidade factual importada do dataset; biografia não declarada.
+
+## Criações no Acervo
+
+- [[fragrance-acorelle-be-positive---the-blanc|Be Positive - Thé Blanc]]
+- [[fragrance-matiere-premiere-falcon-leather-matiere-premiere-2019-eau-de-parfum|Falcon Leather Matière Première 2019 Eau de Parfum]]
+- [[fragrance-zadig-voltaire-this-is-him|This Is Him!]]

@@ -24,3 +24,7 @@ relations: []
 ---
 
 # Kenzo
+
+## Fragrâncias no Acervo
+
+- [[fragrance-kenzo-flower-by-kenzo-kenzo-2000-eau-de-parfum|Flower by Kenzo Kenzo 2000 Eau de Parfum]]

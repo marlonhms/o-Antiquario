@@ -14,6 +14,7 @@ knowledge/vault/*.canvas
 data/raw/wikidata/**/*.json
 data/raw/odeuropa/
 data/raw/official-catalogs/**/*.pdf
+data/raw/parfumo/*.csv
 data/staging/**/*.jsonl
 data/staging/odeuropa/
 data/staging/official-pdf/
@@ -22,6 +23,8 @@ data/catalog/parquet/
 data/demo/
 data/private/
 /PDF Taxonomia Olfativa.pdf
+/*.pdf
+/*.xml
 pipeline/**/__pycache__/
 *.egg-info/
 *.pyc

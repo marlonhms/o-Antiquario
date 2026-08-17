@@ -149,6 +149,10 @@ npm run data:index:odeuropa
 npm run data:backlog:odeuropa
 npm run data:plan:odeuropa-enrichment
 npm run data:gate:odeuropa-demand
+npm run data:enrich:parfumo
+npm run data:audit:parfumo
+npm run presentation:audit
+npm run reference:build
 npm run data:build
 npm run catalog:compile
 ```
@@ -177,6 +181,14 @@ O backlog de roteamento cruza as lacunas com o conjunto ouro, o catálogo ativo 
 A automação de enriquecimento transforma documentos rasos `P3` em candidatos factuais. Ela reutiliza apenas relações de pirâmide já aprovadas, gera uma prévia, executa auditoria e exige que o hash do arquivo continue igual antes da promoção. Não cria relações, descrições sensoriais ou claims de desempenho.
 
 O gate `P4` ordena o que merece pesquisa usando três sinais independentes: consultas recorrentes anonimizadas, presença em novos catálogos já aprovados e prioridade editorial justificada. O texto da consulta é processado em memória e descartado; o log privado guarda apenas a data, o idioma e os IDs canônicos encontrados. A demanda autoriza pesquisa, mas nunca cria documentos, fatos, notas ou relações no Knowledge Core.
+
+O auditor `PresentationReady` separa registros computáveis de perfumes realmente prontos para uma resposta ao usuário. Ele distingue recomendação contextual completa, referência apenas olfativa e bloqueio, além de apontar identidade incompleta, pirâmide sem suporte, defaults de concentração e ausência de evidência específica para clima ou desempenho.
+
+O front-end respeita o gate: quando nenhuma fragrância possui evidência suficiente para ranking contextual, ele não substitui a base por perfumes sintéticos. Em vez disso, explica a calibração e mantém o acervo factual de perfumes reais disponível para pesquisa.
+
+O catálogo `OlfactoryReference` publica separadamente os perfumes que já possuem identidade, conteúdo olfativo e evidência suficientes para explicar o cheiro, mas ainda não sustentam ranking por clima, ocasião ou desempenho. O artefato não contém score, projeção, fixação, preço ou adequação contextual; a interface o identifica explicitamente como referência, não recomendação.
+
+O enriquecedor Parfumo/TidyTuesday trabalha sobre o CSV local não versionado em `data/raw/parfumo`. Para o subconjunto prioritário ele preserva a URL do registro, concentração estruturada, acordes principais e perfumistas. Acordes só são ligados por resolução exata; termos desconhecidos vão para quarentena. Famílias derivadas dos acordes permanecem exclusivamente em `data/staging/parfumo/family-candidates.jsonl` como `inferred/candidate` e uma auditoria impede sua promoção silenciosa ao Knowledge Core.
 
 ## Conhecimento, RAG e memória
 

@@ -89,6 +89,34 @@ test("rejeita wikilink sem destino", async () => {
   assert.throws(() => resolveKnowledgeGraph([invalid, ...documents.slice(1)]), /wikilink não resolvido/);
 });
 
+test("permite nomes homônimos quando relações usam IDs e rejeita wikilink ambíguo", async () => {
+  const documents = await loadKnowledgeVault(vaultDirectory);
+  const fixture = documents[0]!;
+  const brand: KnowledgeDocument = {
+    ...fixture,
+    id: "antiquario:brand:homonimo",
+    type: "brand",
+    title: "Nome compartilhado",
+    path: "Marca-Homonima.md",
+    wikiLinks: [],
+    relations: [],
+  };
+  const perfumer: KnowledgeDocument = {
+    ...fixture,
+    id: "antiquario:perfumer:homonimo",
+    type: "perfumer",
+    title: "Nome compartilhado",
+    path: "Perfumista-Homonimo.md",
+    wikiLinks: [],
+    relations: [],
+  };
+  assert.doesNotThrow(() => resolveKnowledgeGraph([brand, perfumer]));
+  assert.throws(
+    () => resolveKnowledgeGraph([{ ...brand, wikiLinks: [{ target: "Nome compartilhado" }] }, perfumer]),
+    /wikilink ambíguo/,
+  );
+});
+
 test("impede fonte pendente em documento aprovado", async () => {
   const manifest = await loadSourceManifest();
   const documents = await loadKnowledgeVault(vaultDirectory);
@@ -153,6 +181,36 @@ test("separa relações científicas de declarações comerciais de perfume", as
   );
 });
 
+test("incorpora estudos científicos sem criar relações comerciais de perfume", async () => {
+  const documents = await loadKnowledgeVault(vaultDirectory);
+  const taxonomyStudy = documents.find(
+    (document) => document.id === "antiquario:science:taxonomia-multilingue-termos-olfativos",
+  );
+  const aiStudy = documents.find(
+    (document) => document.id === "antiquario:science:ia-perfumaria-ciencia-informacao",
+  );
+
+  const mahdaviStudy = documents.find(
+    (document) => document.id === "antiquario:science:estudo-mahdavi-sons-do-aroma-sinestesia",
+  );
+
+  assert.ok(taxonomyStudy);
+  assert.ok(aiStudy);
+  assert.ok(mahdaviStudy);
+  assert.equal(taxonomyStudy.type, "science");
+  assert.equal(aiStudy.type, "science");
+  assert.equal(mahdaviStudy.type, "science");
+  assert.deepEqual(taxonomyStudy.source_ids, ["menini_2022_olfactory_taxonomy"]);
+  assert.deepEqual(aiStudy.source_ids, ["vechiato_vidotti_2024_ai_perfumery"]);
+  assert.deepEqual(mahdaviStudy.source_ids, ["mahdavi_2020_sons_do_aroma"]);
+  assert.deepEqual(taxonomyStudy.relations, []);
+  assert.deepEqual(aiStudy.relations, []);
+  assert.deepEqual(mahdaviStudy.relations, []);
+  assert.match(taxonomyStudy.body, /Derivações proibidas/);
+  assert.match(aiStudy.body, /Derivações proibidas/);
+  assert.match(mahdaviStudy.body, /Derivações proibidas/);
+});
+
 test("grafo expandido conecta cada documento à sua evidência", async () => {
   const documents = await loadKnowledgeVault(vaultDirectory);
   const graph = resolveKnowledgeGraph(documents);
@@ -167,6 +225,6 @@ test("grafo expandido conecta cada documento à sua evidência", async () => {
 
   assert.deepEqual(
     health.connectivity.isolatedDocumentIds,
-    ["antiquario:brand:natura", "antiquario:brand:o-boticario"],
+    ["antiquario:brand:natura"],
   );
 });

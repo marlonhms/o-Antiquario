@@ -24,3 +24,7 @@ relations: []
 ---
 
 # L'Occitane en Provence
+
+## Fragrâncias no Acervo
+
+- [[fragrance-loccitane-en-provence-eau-des-baux|Eau des Baux]]

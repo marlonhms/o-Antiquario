@@ -23,7 +23,10 @@ evidence:
   kind: open_source
   license: CC0-1.0
   confidence: medium
-  claim_scope: Estrutura da pirâmide olfativa
+  claim_scope: Identidade e campos olfativos estruturados disponíveis no registro
+    do dataset.
+  locator: https://www.parfumo.com/Perfumes/Prada/L_Homme_L_Eau
+  retrieved_at: '2026-08-17'
 relations:
 - predicate: belongs-to-brand
   target: antiquario:brand:prada
@@ -49,6 +52,16 @@ relations:
   target: antiquario:olfactory-note:tonka-bean
 - predicate: has-base-note
   target: antiquario:olfactory-note:cedar
+- predicate: has-accord
+  target: antiquario:accord:atalcado
+- predicate: has-accord
+  target: antiquario:accord:fresco
+- predicate: has-accord
+  target: antiquario:accord:floral
+- predicate: has-accord
+  target: antiquario:accord:doce
+- predicate: created-by
+  target: antiquario:perfumer:daniela-andrier
 ---
 
 # L'Homme L'Eau
@@ -60,3 +73,12 @@ relations:
 - **Saída:** [[note-ginger]], [[Bergamota]], [[note-violet-leaf]], [[note-white-pepper]], [[note-cedar]]
 - **Coração:** [[note-spices]], [[note-violet-leaf]], [[note-white-pepper]], [[note-cedar]]
 - **Fundo:** [[note-tonka-bean]], [[note-cedar]]
+
+## Conexões do Grafo
+
+- **Casa / Marca:** [[brand-prada|Prada]]
+- **Perfumista(s):** [[daniela-andrier|Daniela Andrier]]
+- **Acordes Principais:** [[Atalcado|Atalcado]], [[Fresco|Fresco]], [[floral|Floral]], [[doce|Doce]]
+- **Notas de Saída:** [[note-ginger|Ginger]], [[Bergamota|Bergamota]], [[note-violet-leaf|Violet leaf]], [[note-white-pepper|White pepper]], [[note-cedar|Cedar]]
+- **Notas de Coração:** [[note-spices|Spices]], [[note-violet-leaf|Violet leaf]], [[note-white-pepper|White pepper]], [[note-cedar|Cedar]]
+- **Notas de Fundo:** [[note-tonka-bean|Tonka bean]], [[note-cedar|Cedar]]

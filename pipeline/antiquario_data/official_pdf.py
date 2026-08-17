@@ -36,6 +36,17 @@ except Exception as e:
 
 EXTRACTOR_VERSION = "official-pdf-v2.0-text"
 
+KNOWN_BRAND_TARGETS = {
+    "natura": "antiquario:brand:natura",
+    "o boticario": "antiquario:brand:o-boticario",
+}
+
+KNOWN_CONCENTRATION_TARGETS = {
+    "body splash": "antiquario:concentration:body-splash",
+    "desodorante colonia": "antiquario:concentration:desodorante-colonia",
+    "eau de parfum": "antiquario:concentration:eau-de-parfum",
+}
+
 
 def normalize_text_key(text: str) -> str:
     """Normaliza texto para comparações conservadoras (sem acentos, minúsculo, sem pontuação extra)."""
@@ -1092,12 +1103,19 @@ def render_pdf_inbox_draft(
     date_iso = processed_at[:10]
 
     relations: list[dict[str, str]] = []
+    brand_target = KNOWN_BRAND_TARGETS.get(normalize_text_key(brand))
+    if brand_target:
+        relations.append({"predicate": "belongs-to-brand", "target": brand_target})
+    if candidate.concentration:
+        concentration_target = KNOWN_CONCENTRATION_TARGETS.get(normalize_text_key(candidate.concentration))
+        if concentration_target:
+            relations.append({"predicate": "declares-concentration", "target": concentration_target})
 
     top_links = []
     for note_str in candidate.declared_pyramid.get("top", []):
         res = resolver.resolve_note(note_str, brand=brand)
         if res:
-            relations.append({"predicate": "has-top-note", "target": _format_target(res.canonical_id)})
+            relations.append({"predicate": "declares-top-note", "target": _format_target(res.canonical_id)})
             top_links.append(f"[[note-{res.canonical_id.replace('note:', '')}]]")
         else:
             quarantine.append(
@@ -1115,7 +1133,7 @@ def render_pdf_inbox_draft(
     for note_str in candidate.declared_pyramid.get("heart", []):
         res = resolver.resolve_note(note_str, brand=brand)
         if res:
-            relations.append({"predicate": "has-heart-note", "target": _format_target(res.canonical_id)})
+            relations.append({"predicate": "declares-heart-note", "target": _format_target(res.canonical_id)})
             heart_links.append(f"[[note-{res.canonical_id.replace('note:', '')}]]")
         else:
             quarantine.append(
@@ -1133,7 +1151,7 @@ def render_pdf_inbox_draft(
     for note_str in candidate.declared_pyramid.get("base", []):
         res = resolver.resolve_note(note_str, brand=brand)
         if res:
-            relations.append({"predicate": "has-base-note", "target": _format_target(res.canonical_id)})
+            relations.append({"predicate": "declares-base-note", "target": _format_target(res.canonical_id)})
             base_links.append(f"[[note-{res.canonical_id.replace('note:', '')}]]")
         else:
             quarantine.append(
@@ -1152,7 +1170,7 @@ def render_pdf_inbox_draft(
     for note_str in all_unlayered_terms:
         res = resolver.resolve_note(note_str, brand=brand)
         if res:
-            relations.append({"predicate": "has-note", "target": _format_target(res.canonical_id)})
+            relations.append({"predicate": "declares-unlayered-note", "target": _format_target(res.canonical_id)})
             unlayered_links.append(f"[[note-{res.canonical_id.replace('note:', '')}]]")
         else:
             quarantine.append(

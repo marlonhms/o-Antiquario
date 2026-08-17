@@ -24,3 +24,9 @@ relations: []
 ---
 
 # Lalique
+
+## Fragrâncias no Acervo
+
+- [[fragrance-lalique-encre-noire-a-lextreme|Encre Noire à L'Extrême]]
+- [[fragrance-lalique-encre-noire-sport|Encre Noire Sport]]
+- [[fragrance-lalique-lalique-white-lalique-2008-eau-de-toilette|Lalique White Lalique 2008 Eau de Toilette]]

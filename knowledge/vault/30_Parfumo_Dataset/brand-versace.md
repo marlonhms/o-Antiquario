@@ -24,3 +24,11 @@ relations: []
 ---
 
 # Versace
+
+## Fragrâncias no Acervo
+
+- [[fragrance-versace-blue-jeans|Blue Jeans]]
+- [[crystal-noir-edt-q140266694|Crystal Noir EDT]]
+- [[fragrance-versace-eros-versace-2020-eau-de-parfum|Eros Versace 2020 Eau de Parfum]]
+- [[fragrance-versace-versace-man-eau-fraiche-versace-2005-eau-de-toilette|Versace Man Eau Fraîche Versace 2005 Eau de Toilette]]
+- [[fragrance-versace-versace-pour-homme-oud-noir|Versace pour Homme Oud Noir]]

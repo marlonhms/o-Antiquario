@@ -31,27 +31,33 @@ relations:
 - predicate: has-base-note
   target: antiquario:olfactory-note:baunilha-bourbon
 ---
+
+# Chemin d'Amande
+
+## Base factual
+
+- QID: `Q140511997`
+- Marca: Une Nuit Nomade
+- Perfumista: Jérôme di Marino
+- País: França
+- Ano: não informado no Wikidata
+- Site oficial: https://www.unenuitnomade.com/extrait/chemin-d-amande/
+- Descritores olfativos (`P5872`, sem camada de pirâmide): almond scent, bourbon vanilla smell, smell of wheat absolute
+
+## Enriquecimento editorial obrigatório
+
+- [ ] Confirmar a identidade e a concentração da fragrância.
+- [ ] Validar os descritores Wikidata e classificar família, notas, camadas e acordes usando a taxonomia do Antiquário.
+- [ ] Registrar contexto de uso e desempenho com método, amostra e confiança.
+- [ ] Adicionar evidências permitidas para cada afirmação editorial.
+- [ ] Mover este arquivo para `10_Perfumes` somente após revisão humana.
+
+## Limite de uso
+
+Este rascunho não é uma recomendação e não deve ser usado pelo motor de ranking. Não inferir notas, desempenho, preço ou disponibilidade a partir de nome, marca ou país.
+
+## Conexões do Grafo
 
-# Chemin d'Amande
-
-## Base factual
-
-- QID: `Q140511997`
-- Marca: Une Nuit Nomade
-- Perfumista: Jérôme di Marino
-- País: França
-- Ano: não informado no Wikidata
-- Site oficial: https://www.unenuitnomade.com/extrait/chemin-d-amande/
-- Descritores olfativos (`P5872`, sem camada de pirâmide): almond scent, bourbon vanilla smell, smell of wheat absolute
-
-## Enriquecimento editorial obrigatório
-
-- [ ] Confirmar a identidade e a concentração da fragrância.
-- [ ] Validar os descritores Wikidata e classificar família, notas, camadas e acordes usando a taxonomia do Antiquário.
-- [ ] Registrar contexto de uso e desempenho com método, amostra e confiança.
-- [ ] Adicionar evidências permitidas para cada afirmação editorial.
-- [ ] Mover este arquivo para `10_Perfumes` somente após revisão humana.
-
-## Limite de uso
-
-Este rascunho não é uma recomendação e não deve ser usado pelo motor de ranking. Não inferir notas, desempenho, preço ou disponibilidade a partir de nome, marca ou país.
+- **Notas de Saída:** [[note-amendoa|Amendoa]]
+- **Notas de Coração:** [[note-absoluto-de-trigo|Absoluto De Trigo]]
+- **Notas de Fundo:** [[note-baunilha-bourbon|Baunilha Bourbon]]

@@ -21,7 +21,16 @@ evidence:
     confidence: medium
     claim_scope: "Descritor factual do Wikidata"
 ---
-
-# Cha Branco
-
+
+# Cha Branco
+
 Nota olfativa catalogada automaticamente.
+
+## Acordes e Facetas Relacionadas
+
+- [[Fresco|Fresco]]
+- [[verde|Verde]]
+
+## Presente nas Fragrâncias
+
+- [[zephyr-q138034992|Zephyr]]

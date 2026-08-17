@@ -24,3 +24,12 @@ relations: []
 ---
 
 # Tangerine
+
+## Acordes e Facetas Relacionadas
+
+- [[Citricos|Cítricos]]
+- [[Fresco|Fresco]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-prada-paradoxe|Paradoxe]]

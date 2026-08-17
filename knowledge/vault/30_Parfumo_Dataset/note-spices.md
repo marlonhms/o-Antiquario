@@ -24,3 +24,12 @@ relations: []
 ---
 
 # Spices
+
+## Acordes e Facetas Relacionadas
+
+- [[Fresco|Fresco]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-parfums-de-marly-kalan|Kalan]]
+- [[fragrance-prada-lhomme-leau|L'Homme L'Eau]]

@@ -24,3 +24,13 @@ relations: []
 ---
 
 # Mugwort
+
+## Acordes e Facetas Relacionadas
+
+- [[Fresco|Fresco]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-rasasi-daarej-pour-homme|Daarej pour Homme]]
+- [[fragrance-cartier-declaration-cartier-1998-eau-de-toilette|Déclaration Cartier 1998 Eau de Toilette]]
+- [[fragrance-prada-luna-rossa-ocean-prada-2021-eau-de-toilette|Luna Rossa Ocean Prada 2021 Eau de Toilette]]

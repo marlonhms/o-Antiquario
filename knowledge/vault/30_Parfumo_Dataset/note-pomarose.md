@@ -24,3 +24,11 @@ relations: []
 ---
 
 # Pomarose®
+
+## Acordes e Facetas Relacionadas
+
+- [[Fresco|Fresco]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-parfums-de-marly-greenley|Greenley]]

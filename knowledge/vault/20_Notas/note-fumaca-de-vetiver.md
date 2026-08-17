@@ -21,7 +21,15 @@ evidence:
     confidence: medium
     claim_scope: "Descritor factual do Wikidata"
 ---
-
-# Fumaca De Vetiver
-
+
+# Fumaca De Vetiver
+
 Nota olfativa catalogada automaticamente.
+
+## Acordes e Facetas Relacionadas
+
+- [[Amadeirado|Amadeirado]]
+
+## Presente nas Fragrâncias
+
+- [[september-q138611384|September]]

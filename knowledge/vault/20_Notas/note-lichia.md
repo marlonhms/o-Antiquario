@@ -21,7 +21,15 @@ evidence:
     confidence: medium
     claim_scope: "Descritor factual do Wikidata"
 ---
-
-# Lichia
-
+
+# Lichia
+
 Nota olfativa catalogada automaticamente.
+
+## Acordes e Facetas Relacionadas
+
+- [[frutado|Frutado]]
+
+## Presente nas Fragrâncias
+
+- [[eternity-moment-q140003429|Eternity Moment]]

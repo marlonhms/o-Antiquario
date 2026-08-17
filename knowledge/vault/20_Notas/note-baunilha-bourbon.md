@@ -21,7 +21,15 @@ evidence:
     confidence: medium
     claim_scope: "Descritor factual do Wikidata"
 ---
-
-# Baunilha Bourbon
-
+
+# Baunilha Bourbon
+
 Nota olfativa catalogada automaticamente.
+
+## Acordes e Facetas Relacionadas
+
+- [[gourmand|Gourmand]]
+
+## Presente nas Fragrâncias
+
+- [[chemin-d-amande-q140511997|Chemin d'Amande]]

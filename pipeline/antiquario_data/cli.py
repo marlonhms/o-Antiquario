@@ -11,6 +11,8 @@ from .knowledge_enrichment import build_knowledge_enrichment_plan, promote_knowl
 from .catalog_release import compile_catalog_release
 from .curation_queue import build_curation_queue
 from .official_pdf import process_official_pdf
+from .presentation_migration import migrate_official_presentation_metadata
+from .parfumo_enrichment import audit_parfumo_candidates, enrich_parfumo_documents
 from .odeuropa_backlog import build_odeuropa_routing_backlog
 from .odeuropa import DEFAULT_REF as ODEUROPA_DEFAULT_REF, sync_odeuropa
 from .odeuropa_equivalence import resolve_odeuropa_equivalences
@@ -193,6 +195,28 @@ def create_parser() -> argparse.ArgumentParser:
     )
     commands.add_parser("vtex-enrich", help="enriquece fragrâncias desconectadas via VTEX e DuckDuckGo")
     commands.add_parser("auto-approve", help="avalia réguas de qualidade e aprova automaticamente fragrâncias completas da Inbox")
+    presentation_migration = commands.add_parser(
+        "presentation-migrate-official",
+        help="remove fallbacks antigos e estrutura identidade declarada do catálogo oficial",
+    )
+    presentation_migration.add_argument("--vault-dir", type=Path, default=Path("knowledge/vault"))
+    presentation_migration.add_argument("--dry-run", action="store_true")
+    parfumo_enrich = commands.add_parser(
+        "parfumo-enrich",
+        help="estrutura fatos do dataset e gera famílias somente como candidatos de staging",
+    )
+    parfumo_enrich.add_argument("--input", type=Path, required=True, help="CSV local do TidyTuesday/Parfumo")
+    parfumo_enrich.add_argument("--vault-dir", type=Path, default=Path("knowledge/vault"))
+    parfumo_enrich.add_argument("--staging-dir", type=Path, default=Path("data/staging/parfumo"))
+    parfumo_enrich.add_argument("--limit", type=int, default=200)
+    parfumo_enrich.add_argument("--updated-at", help="data ISO fixa para execução reproduzível")
+    parfumo_enrich.add_argument("--dry-run", action="store_true")
+    parfumo_audit = commands.add_parser(
+        "parfumo-audit-candidates",
+        help="garante que famílias projetadas continuam inferidas e fora do Knowledge Core",
+    )
+    parfumo_audit.add_argument("--vault-dir", type=Path, default=Path("knowledge/vault"))
+    parfumo_audit.add_argument("--staging-dir", type=Path, default=Path("data/staging/parfumo"))
     return parser
 
 
@@ -345,6 +369,26 @@ def main(argv: Sequence[str] | None = None) -> int:
         elif args.command == "auto-approve":
             from .auto_approve import run_auto_approval
             run_auto_approval()
+        elif args.command == "presentation-migrate-official":
+            _print(migrate_official_presentation_metadata(
+                args.vault_dir.resolve(),
+                dry_run=args.dry_run,
+            ).as_dict())
+        elif args.command == "parfumo-enrich":
+            _print(enrich_parfumo_documents(
+                args.input.resolve(),
+                data_directory,
+                args.vault_dir.resolve(),
+                staging_directory=args.staging_dir.resolve(),
+                limit=args.limit,
+                updated_at=args.updated_at,
+                dry_run=args.dry_run,
+            ).as_dict())
+        elif args.command == "parfumo-audit-candidates":
+            result = audit_parfumo_candidates(args.staging_dir.resolve(), args.vault_dir.resolve())
+            _print(result)
+            if not result["ok"]:
+                return 1
         return 0
 
     except (FileNotFoundError, RuntimeError, ValueError) as error:

@@ -21,7 +21,19 @@ evidence:
     confidence: medium
     claim_scope: "Descritor factual do Wikidata"
 ---
-
-# Caramelo
-
+
+# Caramelo
+
 Nota olfativa catalogada automaticamente.
+
+## Acordes e Facetas Relacionadas
+
+- [[gourmand|Gourmand]]
+- [[doce|Doce]]
+
+## Presente nas Fragrâncias
+
+- [[bianco-latte-q137183849|Bianco Latte]]
+- [[coffee-woman-506bcad4|Coffee Woman]]
+- [[egeo-dolce-506bcad4|Egeo Dolce]]
+- [[god-bless-cola-q137386796|God Bless Cola]]

@@ -21,7 +21,22 @@ evidence:
     confidence: medium
     claim_scope: "Descritor factual do Wikidata"
 ---
-
-# Jasmim
-
+
+# Jasmim
+
 Nota olfativa catalogada automaticamente.
+
+## Acordes e Facetas Relacionadas
+
+- [[floral|Floral]]
+
+## Presente nas Fragrâncias
+
+- [[aventus-q24886336|Aventus]]
+- [[coffee-woman-506bcad4|Coffee Woman]]
+- [[daisy-q110263664|Daisy]]
+- [[dune-q17105080|Dune]]
+- [[eternity-moment-q140003429|Eternity Moment]]
+- [[jardin-d-amalfi-q139989391|Jardin d'Amalfi]]
+- [[opulent-dubai-q138766540|Opulent Dubai]]
+- [[printemps-q140453489|Printemps]]

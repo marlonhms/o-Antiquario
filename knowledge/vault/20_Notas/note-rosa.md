@@ -21,7 +21,20 @@ evidence:
     confidence: medium
     claim_scope: "Descritor factual do Wikidata"
 ---
-
-# Rosa
-
+
+# Rosa
+
 Nota olfativa catalogada automaticamente.
+
+## Acordes e Facetas Relacionadas
+
+- [[floral|Floral]]
+
+## Presente nas Fragrâncias
+
+- [[dune-q17105080|Dune]]
+- [[egeo-dolce-506bcad4|Egeo Dolce]]
+- [[floratta-rose-506bcad4|Floratta Rose]]
+- [[jardin-d-amalfi-q139989391|Jardin d'Amalfi]]
+- [[naughty-alice-q139990627|Naughty Alice]]
+- [[poison-girl-q140101602|Poison Girl]]

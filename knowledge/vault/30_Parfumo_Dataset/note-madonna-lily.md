@@ -24,3 +24,11 @@ relations: []
 ---
 
 # Madonna lily
+
+## Acordes e Facetas Relacionadas
+
+- [[Fresco|Fresco]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-dolce-gabbana-the-one-dolce-gabbana-2006-eau-de-parfum|The One Dolce & Gabbana 2006 Eau de Parfum]]

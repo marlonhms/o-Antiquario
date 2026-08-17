@@ -8,11 +8,6 @@ async function main() {
   const knowledge = await buildKnowledge();
   const candidates = compileRecommendationCandidates(knowledge);
   
-  if (candidates.length === 0) {
-    console.log("Nenhum candidato a recomendação aprovado encontrado no Obsidian.");
-    return;
-  }
-
   const outputDirectory = resolve(process.cwd(), "data", "releases");
   const webPublicDirectory = resolve(process.cwd(), "apps", "web", "public", "catalog");
 

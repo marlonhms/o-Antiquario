@@ -24,3 +24,11 @@ relations: []
 ---
 
 # Wild flowers
+
+## Acordes e Facetas Relacionadas
+
+- [[Fresco|Fresco]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-dior-eau-sauvage-parfum|Eau Sauvage Parfum]]

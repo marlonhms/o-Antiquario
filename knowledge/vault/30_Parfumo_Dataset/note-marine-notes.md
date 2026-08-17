@@ -24,3 +24,12 @@ relations: []
 ---
 
 # Marine notes
+
+## Acordes e Facetas Relacionadas
+
+- [[aquatico|Aquático]]
+- [[Fresco|Fresco]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-paco-rabanne-invictus-paco-rabanne-2013-eau-de-toilette|Invictus Paco Rabanne 2013 Eau de Toilette]]

@@ -24,3 +24,11 @@ relations: []
 ---
 
 # Ambreine
+
+## Acordes e Facetas Relacionadas
+
+- [[Fresco|Fresco]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-calvin-klein-ck-one-shock-for-him|CK One Shock for Him]]

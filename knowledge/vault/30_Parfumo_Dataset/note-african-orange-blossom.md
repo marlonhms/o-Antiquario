@@ -24,3 +24,11 @@ relations: []
 ---
 
 # African orange blossom
+
+## Acordes e Facetas Relacionadas
+
+- [[Fresco|Fresco]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-giorgio-armani-armani-code-pour-femme-giorgio-armani-2006-eau-de-parfum|Armani Code pour Femme Giorgio Armani 2006 Eau de Parfum]]

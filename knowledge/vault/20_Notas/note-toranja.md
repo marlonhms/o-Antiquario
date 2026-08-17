@@ -21,7 +21,17 @@ evidence:
     confidence: medium
     claim_scope: "Descritor factual do Wikidata"
 ---
-
-# Toranja
-
+
+# Toranja
+
 Nota olfativa catalogada automaticamente.
+
+## Acordes e Facetas Relacionadas
+
+- [[Citricos|Cítricos]]
+- [[Fresco|Fresco]]
+
+## Presente nas Fragrâncias
+
+- [[angel-muse-q139980728|Angel Muse]]
+- [[daisy-q110263664|Daisy]]

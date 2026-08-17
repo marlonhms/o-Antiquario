@@ -24,3 +24,15 @@ relations: []
 ---
 
 # Mineral notes
+
+## Acordes e Facetas Relacionadas
+
+- [[Fresco|Fresco]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-bvlgari-aqva-amara-bvlgari-2014-eau-de-toilette|Aqva Amara Bvlgari 2014 Eau de Toilette]]
+- [[fragrance-van-cleef-arpels-bois-dore|Bois Doré]]
+- [[fragrance-bond-no-9-chinatown-bond-no-9-2010-solid-perfume|Chinatown Bond No. 9 2010 Solid Perfume]]
+- [[fragrance-halloween-halloween-man-x|Halloween Man X]]
+- [[fragrance-yves-saint-laurent-m7-m7-oud-absolu|M7 M7 Oud Absolu]]

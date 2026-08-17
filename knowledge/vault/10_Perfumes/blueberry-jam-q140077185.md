@@ -33,27 +33,33 @@ relations:
 - predicate: has-base-note
   target: antiquario:olfactory-note:acucar
 ---
+
+# Blueberry Jam
+
+## Base factual
+
+- QID: `Q140077185`
+- Marca: Enrico Buccella
+- Perfumista: Enrico Buccella
+- País: Itália
+- Ano: 2025
+- Site oficial: não informado no Wikidata
+- Descritores olfativos (`P5872`, sem camada de pirâmide): blueberry scent, smell of blueberry jam, smell of butter, sugar smell
+
+## Enriquecimento editorial obrigatório
+
+- [ ] Confirmar a identidade e a concentração da fragrância.
+- [ ] Validar os descritores Wikidata e classificar família, notas, camadas e acordes usando a taxonomia do Antiquário.
+- [ ] Registrar contexto de uso e desempenho com método, amostra e confiança.
+- [ ] Adicionar evidências permitidas para cada afirmação editorial.
+- [ ] Mover este arquivo para `10_Perfumes` somente após revisão humana.
+
+## Limite de uso
+
+Este rascunho não é uma recomendação e não deve ser usado pelo motor de ranking. Não inferir notas, desempenho, preço ou disponibilidade a partir de nome, marca ou país.
+
+## Conexões do Grafo
 
-# Blueberry Jam
-
-## Base factual
-
-- QID: `Q140077185`
-- Marca: Enrico Buccella
-- Perfumista: Enrico Buccella
-- País: Itália
-- Ano: 2025
-- Site oficial: não informado no Wikidata
-- Descritores olfativos (`P5872`, sem camada de pirâmide): blueberry scent, smell of blueberry jam, smell of butter, sugar smell
-
-## Enriquecimento editorial obrigatório
-
-- [ ] Confirmar a identidade e a concentração da fragrância.
-- [ ] Validar os descritores Wikidata e classificar família, notas, camadas e acordes usando a taxonomia do Antiquário.
-- [ ] Registrar contexto de uso e desempenho com método, amostra e confiança.
-- [ ] Adicionar evidências permitidas para cada afirmação editorial.
-- [ ] Mover este arquivo para `10_Perfumes` somente após revisão humana.
-
-## Limite de uso
-
-Este rascunho não é uma recomendação e não deve ser usado pelo motor de ranking. Não inferir notas, desempenho, preço ou disponibilidade a partir de nome, marca ou país.
+- **Notas de Saída:** [[note-essencia-de-mirtilo|Essencia De Mirtilo]]
+- **Notas de Coração:** [[note-geleia-de-mirtilo|Geleia De Mirtilo]]
+- **Notas de Fundo:** [[note-manteiga|Manteiga]], [[note-acucar|Acucar]]

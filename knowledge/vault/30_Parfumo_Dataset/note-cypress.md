@@ -44,3 +44,17 @@ No release `knowledge-v2-36bca79cd798`, **Cypress** aparece em 5 fragrância(s) 
 ### Limite da automação
 
 Esta seção resume relações que já existiam no grafo. Ela não cria notas, não comprova ingrediente físico e não estima cheiro, concentração, intensidade, fixação, projeção ou evolução temporal.
+
+## Acordes e Facetas Relacionadas
+
+- [[Amadeirado|Amadeirado]]
+- [[Fresco|Fresco]]
+- [[verde|Verde]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-giorgio-armani-acqua-di-gio-profondo-giorgio-armani-2020-eau-de-parfum|Acqua di Giò Profondo Giorgio Armani 2020 Eau de Parfum]]
+- [[fragrance-loccitane-en-provence-eau-des-baux|Eau des Baux]]
+- [[fragrance-lalique-encre-noire-a-lextreme|Encre Noire à L'Extrême]]
+- [[fragrance-lalique-encre-noire-sport|Encre Noire Sport]]
+- [[fragrance-parfums-de-marly-godolphin|Godolphin]]

@@ -24,3 +24,12 @@ relations: []
 ---
 
 # Noxiousness
+
+## Acordes e Facetas Relacionadas
+
+- [[Fresco|Fresco]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-acorelle-be-positive---the-blanc|Be Positive - Thé Blanc]]
+- [[fragrance-bond-no-9-chinatown-bond-no-9-2010-solid-perfume|Chinatown Bond No. 9 2010 Solid Perfume]]

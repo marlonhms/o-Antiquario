@@ -24,3 +24,13 @@ relations: []
 ---
 
 # Copaiba balsam
+
+## Acordes e Facetas Relacionadas
+
+- [[resinoso|Resinoso]]
+- [[ambarado|Ambarado]]
+- [[Amadeirado|Amadeirado]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-guerlain-bois-darmenie|Bois d'Arménie]]

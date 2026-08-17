@@ -31,27 +31,33 @@ relations:
 - predicate: has-base-note
   target: antiquario:olfactory-note:pipe-tobacco-smoke
 ---
+
+# This is Not a Pipe
+
+## Base factual
+
+- QID: `Q138028241`
+- Marca: Demeter Fragrance Library
+- Perfumista: não informado no Wikidata
+- País: Estados Unidos
+- Ano: 1998
+- Site oficial: não informado no Wikidata
+- Descritores olfativos (`P5872`, sem camada de pirâmide): cachimbo, pipe tobacco, pipe tobacco smoke
+
+## Enriquecimento editorial obrigatório
+
+- [ ] Confirmar a identidade e a concentração da fragrância.
+- [ ] Validar os descritores Wikidata e classificar família, notas, camadas e acordes usando a taxonomia do Antiquário.
+- [ ] Registrar contexto de uso e desempenho com método, amostra e confiança.
+- [ ] Adicionar evidências permitidas para cada afirmação editorial.
+- [ ] Mover este arquivo para `10_Perfumes` somente após revisão humana.
+
+## Limite de uso
+
+Este rascunho não é uma recomendação e não deve ser usado pelo motor de ranking. Não inferir notas, desempenho, preço ou disponibilidade a partir de nome, marca ou país.
+
+## Conexões do Grafo
 
-# This is Not a Pipe
-
-## Base factual
-
-- QID: `Q138028241`
-- Marca: Demeter Fragrance Library
-- Perfumista: não informado no Wikidata
-- País: Estados Unidos
-- Ano: 1998
-- Site oficial: não informado no Wikidata
-- Descritores olfativos (`P5872`, sem camada de pirâmide): cachimbo, pipe tobacco, pipe tobacco smoke
-
-## Enriquecimento editorial obrigatório
-
-- [ ] Confirmar a identidade e a concentração da fragrância.
-- [ ] Validar os descritores Wikidata e classificar família, notas, camadas e acordes usando a taxonomia do Antiquário.
-- [ ] Registrar contexto de uso e desempenho com método, amostra e confiança.
-- [ ] Adicionar evidências permitidas para cada afirmação editorial.
-- [ ] Mover este arquivo para `10_Perfumes` somente após revisão humana.
-
-## Limite de uso
-
-Este rascunho não é uma recomendação e não deve ser usado pelo motor de ranking. Não inferir notas, desempenho, preço ou disponibilidade a partir de nome, marca ou país.
+- **Notas de Saída:** [[note-cachimbo|Cachimbo]]
+- **Notas de Coração:** [[note-pipe-tobacco|Pipe Tobacco]]
+- **Notas de Fundo:** [[note-pipe-tobacco-smoke|Pipe Tobacco Smoke]]

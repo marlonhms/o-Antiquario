@@ -24,3 +24,14 @@ relations: []
 ---
 
 # Star anise
+
+## Acordes e Facetas Relacionadas
+
+- [[especiado|Especiado]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-giorgio-armani-armani-code-black-code-giorgio-armani-2004-eau-de-toilette|Armani Code Black Code Giorgio Armani 2004 Eau de Toilette]]
+- [[fragrance-dior-eau-sauvage-parfum|Eau Sauvage Parfum]]
+- [[fragrance-guerlain-linstant-de-guerlain-pour-homme-guerlain-2004-eau-de-toilette|L'Instant de Guerlain pour Homme Guerlain 2004 Eau de Toilette]]
+- [[fragrance-acqua-di-parma-mandorlo-di-sicilia|Mandorlo di Sicilia]]

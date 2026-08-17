@@ -24,3 +24,20 @@ relations: []
 ---
 
 # Calabrian bergamot
+
+## Acordes e Facetas Relacionadas
+
+- [[Fresco|Fresco]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-acqua-di-parma-bergamotto-di-calabria|Bergamotto di Calabria]]
+- [[fragrance-acqua-di-parma-colonia-acqua-di-parma-1916-eau-de-cologne|Colonia Acqua di Parma 1916 Eau de Cologne]]
+- [[fragrance-dior-dior-homme-sport|Dior Homme Sport]]
+- [[fragrance-dior-eau-sauvage-parfum|Eau Sauvage Parfum]]
+- [[fragrance-xerjoff-erba-gold|Erba Gold]]
+- [[fragrance-acqua-di-parma-mandorlo-di-sicilia|Mandorlo di Sicilia]]
+- [[fragrance-giorgio-armani-my-way-giorgio-armani-2020-eau-de-parfum|My Way Giorgio Armani 2020 Eau de Parfum]]
+- [[fragrance-yves-saint-laurent-myslf|Myslf]]
+- [[fragrance-acqua-di-parma-oud-acqua-di-parma-2019-eau-de-parfum|Oud Acqua di Parma 2019 Eau de Parfum]]
+- [[fragrance-prada-paradoxe|Paradoxe]]

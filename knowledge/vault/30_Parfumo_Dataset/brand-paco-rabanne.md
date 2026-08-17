@@ -24,3 +24,9 @@ relations: []
 ---
 
 # Paco Rabanne
+
+## Fragrâncias no Acervo
+
+- [[fragrance-paco-rabanne-invictus-paco-rabanne-2013-eau-de-toilette|Invictus Paco Rabanne 2013 Eau de Toilette]]
+- [[fragrance-paco-rabanne-million-paco-rabanne-2008-eau-de-toilette|Million Paco Rabanne 2008 Eau de Toilette]]
+- [[fragrance-paco-rabanne-olympea-paco-rabanne-2015-eau-de-parfum|Olympēa Paco Rabanne 2015 Eau de Parfum]]

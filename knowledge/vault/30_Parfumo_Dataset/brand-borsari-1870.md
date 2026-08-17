@@ -24,3 +24,7 @@ relations: []
 ---
 
 # Borsari 1870
+
+## Fragrâncias no Acervo
+
+- [[fragrance-borsari-1870-giacinto|Giacinto]]

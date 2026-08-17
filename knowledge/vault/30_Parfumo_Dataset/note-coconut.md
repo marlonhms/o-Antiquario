@@ -24,3 +24,16 @@ relations: []
 ---
 
 # Coconut
+
+## Acordes e Facetas Relacionadas
+
+- [[frutado|Frutado]]
+- [[gourmand|Gourmand]]
+- [[doce|Doce]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-chanel-allure-homme-chanel-1999-eau-de-toilette|Allure Homme Chanel 1999 Eau de Toilette]]
+- [[fragrance-mugler-angel-mugler-1992-eau-de-parfum|Angel Mugler 1992 Eau de Parfum]]
+- [[fragrance-chopard-casmir-chopard-1991-eau-de-parfum|Cašmir Chopard 1991 Eau de Parfum]]
+- [[fragrance-nishane-fan-your-flames|Fan Your Flames]]

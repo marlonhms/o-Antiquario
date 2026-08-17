@@ -25,3 +25,15 @@ evidence:
 # Ameixa (Plum)
 
 Nota olfativa frutada, profunda, suculenta e ligeiramente melíflua.
+
+## Acordes e Facetas Relacionadas
+
+- [[frutado|Frutado]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-mugler-angel-mugler-1992-eau-de-parfum|Angel Mugler 1992 Eau de Parfum]]
+- [[boss-alive|BOSS ALIVE]]
+- [[fragrance-guerlain-lhomme-ideal-extreme|L'Homme Idéal Extrême]]
+- [[fragrance-initio-paragon|Paragon]]
+- [[fragrance-dolce-gabbana-the-one-dolce-gabbana-2006-eau-de-parfum|The One Dolce & Gabbana 2006 Eau de Parfum]]

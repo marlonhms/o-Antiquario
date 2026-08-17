@@ -24,3 +24,11 @@ relations: []
 ---
 
 # Chamomile
+
+## Acordes e Facetas Relacionadas
+
+- [[Fresco|Fresco]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-kilian-back-to-black-aphrodisiac-kilian-2009-perfume|Back to Black, Aphrodisiac Kilian 2009 Perfume]]

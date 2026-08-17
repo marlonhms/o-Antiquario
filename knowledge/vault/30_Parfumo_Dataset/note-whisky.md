@@ -35,3 +35,13 @@ relations: []
 **Uísque** é a nota canônica usada para normalizar declarações rotuladas como *whisky* ou *whiskey*. Para navegação, a taxonomia do Antiquário a associa às famílias gourmand e amadeirada.
 
 O registro preserva a declaração da fonte e não comprova bebida, extrato ou ingrediente físico na fórmula. Também não permite inferir intensidade, projeção ou duração.
+
+## Acordes e Facetas Relacionadas
+
+- [[gourmand|Gourmand]]
+- [[doce|Doce]]
+- [[Amadeirado|Amadeirado]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-halloween-halloween-man-x|Halloween Man X]]

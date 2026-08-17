@@ -21,7 +21,16 @@ evidence:
     confidence: medium
     claim_scope: "Descritor factual do Wikidata"
 ---
-
-# Labdano
-
+
+# Labdano
+
 Nota olfativa catalogada automaticamente.
+
+## Acordes e Facetas Relacionadas
+
+- [[resinoso|Resinoso]]
+- [[ambarado|Ambarado]]
+
+## Presente nas Fragrâncias
+
+- [[amber-invite-q140499603|Amber Invite]]

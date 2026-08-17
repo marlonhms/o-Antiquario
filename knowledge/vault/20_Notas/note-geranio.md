@@ -21,7 +21,18 @@ evidence:
     confidence: medium
     claim_scope: "Descritor factual do Wikidata"
 ---
-
-# Geranio
-
+
+# Geranio
+
 Nota olfativa catalogada automaticamente.
+
+## Acordes e Facetas Relacionadas
+
+- [[floral|Floral]]
+- [[Fresco|Fresco]]
+- [[verde|Verde]]
+
+## Presente nas Fragrâncias
+
+- [[floratta-blue-506bcad4|Floratta Blue]]
+- [[tom-ford-for-men-q137182953|Tom Ford for Men]]

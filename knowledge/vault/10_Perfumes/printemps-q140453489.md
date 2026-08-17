@@ -43,27 +43,33 @@ relations:
 - predicate: has-base-note
   target: antiquario:olfactory-note:madeiras-transparentes
 ---
+
+# Printemps
+
+## Base factual
+
+- QID: `Q140453489`
+- Marca: Organ Tale
+- Perfumista: Quentin Bisch
+- País: Coreia do Sul
+- Ano: 2024
+- Site oficial: https://organtale.com/products/organ-tale-printemps-eau-de-parfum
+- Descritores olfativos (`P5872`, sem camada de pirâmide): lily-of-the-valley scent, sandalwood fragrance, smell of apples, smell of honey, smell of jasmine, smell of lemon, smell of musk, smell of peach fruit, smell of transparent woods
+
+## Enriquecimento editorial obrigatório
+
+- [ ] Confirmar a identidade e a concentração da fragrância.
+- [ ] Validar os descritores Wikidata e classificar família, notas, camadas e acordes usando a taxonomia do Antiquário.
+- [ ] Registrar contexto de uso e desempenho com método, amostra e confiança.
+- [ ] Adicionar evidências permitidas para cada afirmação editorial.
+- [ ] Mover este arquivo para `10_Perfumes` somente após revisão humana.
+
+## Limite de uso
+
+Este rascunho não é uma recomendação e não deve ser usado pelo motor de ranking. Não inferir notas, desempenho, preço ou disponibilidade a partir de nome, marca ou país.
+
+## Conexões do Grafo
 
-# Printemps
-
-## Base factual
-
-- QID: `Q140453489`
-- Marca: Organ Tale
-- Perfumista: Quentin Bisch
-- País: Coreia do Sul
-- Ano: 2024
-- Site oficial: https://organtale.com/products/organ-tale-printemps-eau-de-parfum
-- Descritores olfativos (`P5872`, sem camada de pirâmide): lily-of-the-valley scent, sandalwood fragrance, smell of apples, smell of honey, smell of jasmine, smell of lemon, smell of musk, smell of peach fruit, smell of transparent woods
-
-## Enriquecimento editorial obrigatório
-
-- [ ] Confirmar a identidade e a concentração da fragrância.
-- [ ] Validar os descritores Wikidata e classificar família, notas, camadas e acordes usando a taxonomia do Antiquário.
-- [ ] Registrar contexto de uso e desempenho com método, amostra e confiança.
-- [ ] Adicionar evidências permitidas para cada afirmação editorial.
-- [ ] Mover este arquivo para `10_Perfumes` somente após revisão humana.
-
-## Limite de uso
-
-Este rascunho não é uma recomendação e não deve ser usado pelo motor de ranking. Não inferir notas, desempenho, preço ou disponibilidade a partir de nome, marca ou país.
+- **Notas de Saída:** [[note-limao|Limao]], [[note-maca|Maca]], [[note-pessego|Pessego]]
+- **Notas de Coração:** [[note-lirio-do-vale|Lirio Do Vale]], [[note-jasmim|Jasmim]], [[note-mel|Mel]]
+- **Notas de Fundo:** [[note-sandalo|Sândalo (Sandalwood)]], [[note-almiscar|Almiscar]], [[note-madeiras-transparentes|Madeiras Transparentes]]

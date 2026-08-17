@@ -24,3 +24,12 @@ relations: []
 ---
 
 # Orris root
+
+## Acordes e Facetas Relacionadas
+
+- [[Fresco|Fresco]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-yves-saint-laurent-kouros-yves-saint-laurent-1981-eau-de-toilette|Kouros Yves Saint Laurent 1981 Eau de Toilette]]
+- [[fragrance-jil-sander-sun-jil-sander-1989-eau-de-toilette|Sun Jil Sander 1989 Eau de Toilette]]

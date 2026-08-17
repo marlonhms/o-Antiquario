@@ -24,3 +24,13 @@ relations: []
 ---
 
 # Litsea cubeba
+
+## Acordes e Facetas Relacionadas
+
+- [[Citricos|Cítricos]]
+- [[Fresco|Fresco]]
+- [[verde|Verde]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-roja-parfums-oceania|Oceania]]

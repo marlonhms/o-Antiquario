@@ -24,3 +24,11 @@ relations: []
 ---
 
 # Namibian myrrh
+
+## Acordes e Facetas Relacionadas
+
+- [[Fresco|Fresco]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-jo-malone-myrrh-tonka|Myrrh & Tonka]]

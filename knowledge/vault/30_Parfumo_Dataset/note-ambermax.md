@@ -24,3 +24,12 @@ relations: []
 ---
 
 # Ambermax®
+
+## Acordes e Facetas Relacionadas
+
+- [[Fresco|Fresco]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-versace-eros-versace-2020-eau-de-parfum|Eros Versace 2020 Eau de Parfum]]
+- [[fragrance-moschino-toy-boy|Toy Boy]]

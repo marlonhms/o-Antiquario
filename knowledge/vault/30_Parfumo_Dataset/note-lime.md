@@ -24,3 +24,16 @@ relations: []
 ---
 
 # Lime
+
+## Acordes e Facetas Relacionadas
+
+- [[Citricos|Cítricos]]
+- [[Fresco|Fresco]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-creed-bois-du-portugal|Bois du Portugal]]
+- [[fragrance-armaf-club-de-nuit-sillage-armaf-2020-eau-de-parfum|Club de Nuit Sillage Armaf 2020 Eau de Parfum]]
+- [[fragrance-amouage-lyric-man|Lyric Man]]
+- [[fragrance-roberto-ugolini-marzocco-roberto-ugolini-2019-eau-de-parfum|Marzocco Roberto Ugolini 2019 Eau de Parfum]]
+- [[fragrance-roja-parfums-oceania|Oceania]]

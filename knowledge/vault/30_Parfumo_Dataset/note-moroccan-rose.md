@@ -24,3 +24,11 @@ relations: []
 ---
 
 # Moroccan rose
+
+## Acordes e Facetas Relacionadas
+
+- [[Fresco|Fresco]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-mancera-instant-crush|Instant Crush]]

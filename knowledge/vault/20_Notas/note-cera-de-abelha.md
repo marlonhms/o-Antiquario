@@ -21,7 +21,17 @@ evidence:
     confidence: medium
     claim_scope: "Descritor factual do Wikidata"
 ---
-
-# Cera De Abelha
-
+
+# Cera De Abelha
+
 Nota olfativa catalogada automaticamente.
+
+## Acordes e Facetas Relacionadas
+
+- [[gourmand|Gourmand]]
+- [[doce|Doce]]
+- [[Atalcado|Atalcado]]
+
+## Presente nas Fragrâncias
+
+- [[zelen-q137527355|Zelen]]

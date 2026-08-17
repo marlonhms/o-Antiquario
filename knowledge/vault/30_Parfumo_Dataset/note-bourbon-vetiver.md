@@ -24,3 +24,12 @@ relations: []
 ---
 
 # Bourbon vetiver
+
+## Acordes e Facetas Relacionadas
+
+- [[Amadeirado|Amadeirado]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-lalique-encre-noire-sport|Encre Noire Sport]]
+- [[fragrance-bdk-parfums-gris-charnel-bdk-parfums-2022-extrait|Gris Charnel bdk Parfums 2022 Extrait]]

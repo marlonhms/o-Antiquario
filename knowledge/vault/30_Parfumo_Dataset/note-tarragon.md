@@ -24,3 +24,14 @@ relations: []
 ---
 
 # Tarragon
+
+## Acordes e Facetas Relacionadas
+
+- [[Fresco|Fresco]]
+- [[verde|Verde]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-yves-saint-laurent-kouros-yves-saint-laurent-1981-eau-de-toilette|Kouros Yves Saint Laurent 1981 Eau de Toilette]]
+- [[fragrance-amouage-memoir-man|Memoir Man]]
+- [[fragrance-versace-versace-man-eau-fraiche-versace-2005-eau-de-toilette|Versace Man Eau Fraîche Versace 2005 Eau de Toilette]]

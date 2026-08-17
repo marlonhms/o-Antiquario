@@ -21,7 +21,16 @@ evidence:
     confidence: medium
     claim_scope: "Descritor factual do Wikidata"
 ---
-
-# Laranja Amarga
-
+
+# Laranja Amarga
+
 Nota olfativa catalogada automaticamente.
+
+## Acordes e Facetas Relacionadas
+
+- [[Citricos|Cítricos]]
+- [[Fresco|Fresco]]
+
+## Presente nas Fragrâncias
+
+- [[poison-girl-q140101602|Poison Girl]]

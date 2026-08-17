@@ -2,6 +2,7 @@ import type { CompiledKnowledge } from "../knowledge/compiler.ts";
 import type { KnowledgeDocument } from "../knowledge/schema.ts";
 import type { EligibleForRecommendation } from "../domain/recommendation-contract.ts";
 import type { Confidence, Evidence, Fragrance, WeightedTag } from "../domain/types.ts";
+import type { PresentationCandidate } from "./presentation-readiness.ts";
 
 function extractTargetSlug(target: string): string {
   const parts = target.split(":");
@@ -28,14 +29,18 @@ export function compileRecommendationCandidates(
   knowledge: CompiledKnowledge
 ): readonly EligibleForRecommendation[] {
   const candidates: EligibleForRecommendation[] = [];
+  const documentsById = new Map(knowledge.documents.map((document) => [document.id, document]));
 
   for (const doc of knowledge.documents) {
     if (doc.type !== "fragrance" || doc.review_status !== "approved") {
       continue;
     }
 
-    const brand = doc.relations.find((r) => r.predicate === "belongs-to-brand")?.target || "Desconhecida";
-    const family = doc.relations.find((r) => r.predicate === "belongs-to-family")?.target || "não-classificada";
+    const brandTarget = doc.relations.find((relation) => relation.predicate === "belongs-to-brand")?.target;
+    const familyTarget = doc.relations.find((relation) => relation.predicate === "belongs-to-family")?.target;
+    if (!brandTarget || !familyTarget) continue;
+    const brand = documentsById.get(brandTarget)?.title ?? extractTargetSlug(brandTarget);
+    const family = extractTargetSlug(familyTarget);
 
     const topNotes: string[] = [];
     const heartNotes: string[] = [];
@@ -54,47 +59,41 @@ export function compileRecommendationCandidates(
       if (rel.predicate === "declares-unlayered-note" || rel.predicate === "has-note") {
         heartNotes.push(slug); // fallback
       }
-      if (rel.predicate === "declares-concentration") concentrations.push(slug);
+      if (rel.predicate === "declares-concentration") {
+        concentrations.push(documentsById.get(rel.target)?.title ?? slug);
+      }
       if (rel.predicate === "has-accord") {
-        accords.push({ id: slug, weight: profile.accords?.[slug] ?? 0.8 });
+        const weight = profile.accords?.[slug];
+        if (typeof weight === "number") accords.push({ id: slug, weight });
       }
       if (rel.predicate === "suited-to") {
-        occasions.push({ id: slug, weight: profile.occasions?.[slug] ?? 0.8 });
+        const weight = profile.occasions?.[slug];
+        if (typeof weight === "number") occasions.push({ id: slug, weight });
       }
     }
 
-    if (concentrations.length === 0) concentrations.push("eau-de-parfum");
-
-    const defaultPerformance = {
-      longevity: { minimumHours: 4, maximumHours: 6, confidence: "low" as Confidence },
-      projection: { value: 0.5, confidence: "low" as Confidence },
-      sillage: { value: 0.5, confidence: "low" as Confidence },
-    };
-
-    const defaultClimate = {
-      idealTemperatureMinC: 15,
-      idealTemperatureMaxC: 30,
-      idealHumidity: 0.5,
-      indoorFit: 0.8,
-      outdoorFit: 0.8,
-    };
+    const hasExplicitProfile = profile
+      && typeof profile.formality === "number"
+      && profile.performance
+      && typeof profile.performance === "object";
+    if (concentrations.length === 0 || !hasExplicitProfile) continue;
 
     const candidate: Fragrance = {
       id: extractTargetSlug(doc.id),
       name: doc.title,
-      brand: extractTargetSlug(brand),
-      family: extractTargetSlug(family),
-      segments: profile.segments || ["acessivel"],
+      brand,
+      family,
+      segments: Array.isArray(profile.segments) ? profile.segments : [],
       concentrations,
       topNotes,
       heartNotes,
       baseNotes,
       accords,
       occasions,
-      formality: profile.formality ?? 0.5,
-      performance: profile.performance || defaultPerformance,
-      climate: profile.climate || defaultClimate,
-      priceTier: profile.priceTier || 2,
+      formality: profile.formality,
+      performance: profile.performance,
+      climate: profile.climate && typeof profile.climate === "object" ? profile.climate : {},
+      ...(profile.priceTier !== undefined ? { priceTier: profile.priceTier } : {}),
       dataConfidence: parseConfidence(doc.confidence),
       evidence: getEvidence(doc),
     };
@@ -103,4 +102,38 @@ export function compileRecommendationCandidates(
   }
 
   return candidates;
+}
+
+const PRESENTATION_NOTE_PREDICATES = new Set([
+  "declares-top-note",
+  "declares-heart-note",
+  "declares-base-note",
+  "declares-unlayered-note",
+  "has-top-note",
+  "has-heart-note",
+  "has-base-note",
+  "has-note",
+]);
+
+export function compilePresentationCandidates(
+  knowledge: CompiledKnowledge,
+): readonly PresentationCandidate[] {
+  const documentsById = new Map(knowledge.documents.map((document) => [document.id, document]));
+  return knowledge.documents
+    .filter((document) => document.type === "fragrance" && document.review_status === "approved")
+    .map((document) => {
+      const brandTarget = document.relations.find((relation) => relation.predicate === "belongs-to-brand")?.target;
+      const familyTarget = document.relations.find((relation) => relation.predicate === "belongs-to-family")?.target;
+      return {
+        id: extractTargetSlug(document.id),
+        name: document.title,
+        brand: brandTarget
+          ? documentsById.get(brandTarget)?.title ?? extractTargetSlug(brandTarget)
+          : "Desconhecida",
+        family: familyTarget ? extractTargetSlug(familyTarget) : "não-classificada",
+        noteCount: document.relations.filter((relation) => PRESENTATION_NOTE_PREDICATES.has(relation.predicate)).length,
+        accordCount: document.relations.filter((relation) => relation.predicate === "has-accord").length,
+        evidence: getEvidence(document),
+      };
+    });
 }

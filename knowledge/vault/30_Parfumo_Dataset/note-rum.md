@@ -35,3 +35,15 @@ relations: []
 **Rum** é a nota canônica usada para normalizar declarações de pirâmide com esse rótulo. Para navegação, a taxonomia do Antiquário a associa às famílias gourmand e ambarada.
 
 O registro preserva a declaração da fonte e não comprova bebida, extrato ou ingrediente físico na fórmula. Também não permite inferir intensidade, projeção ou duração.
+
+## Acordes e Facetas Relacionadas
+
+- [[gourmand|Gourmand]]
+- [[doce|Doce]]
+- [[ambarado|Ambarado]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-nishane-fan-your-flames|Fan Your Flames]]
+- [[fragrance-hugo-boss-hugo-hugo-boss-1995-eau-de-toilette|Hugo Hugo Boss 1995 Eau de Toilette]]
+- [[fragrance-kilian-straight-to-heaven-white-cristal-kilian-2007-perfume|Straight to Heaven, White Cristal Kilian 2007 Perfume]]

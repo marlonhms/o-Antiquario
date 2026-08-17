@@ -35,27 +35,33 @@ relations:
 - predicate: has-base-note
   target: antiquario:olfactory-note:baunilha
 ---
+
+# Horchata de Vanille
+
+## Base factual
+
+- QID: `Q140075144`
+- Marca: Sphinx Fragrances
+- Perfumista: não informado no Wikidata
+- País: Estados Unidos
+- Ano: 2022
+- Site oficial: https://sphinxfragrances.com/products/horchata-de-vanille
+- Descritores olfativos (`P5872`, sem camada de pirâmide): scent of vanilla, smell of cinnamon, smell of horchata, smell of milk, smell of rice
+
+## Enriquecimento editorial obrigatório
+
+- [ ] Confirmar a identidade e a concentração da fragrância.
+- [ ] Validar os descritores Wikidata e classificar família, notas, camadas e acordes usando a taxonomia do Antiquário.
+- [ ] Registrar contexto de uso e desempenho com método, amostra e confiança.
+- [ ] Adicionar evidências permitidas para cada afirmação editorial.
+- [ ] Mover este arquivo para `10_Perfumes` somente após revisão humana.
+
+## Limite de uso
+
+Este rascunho não é uma recomendação e não deve ser usado pelo motor de ranking. Não inferir notas, desempenho, preço ou disponibilidade a partir de nome, marca ou país.
+
+## Conexões do Grafo
 
-# Horchata de Vanille
-
-## Base factual
-
-- QID: `Q140075144`
-- Marca: Sphinx Fragrances
-- Perfumista: não informado no Wikidata
-- País: Estados Unidos
-- Ano: 2022
-- Site oficial: https://sphinxfragrances.com/products/horchata-de-vanille
-- Descritores olfativos (`P5872`, sem camada de pirâmide): scent of vanilla, smell of cinnamon, smell of horchata, smell of milk, smell of rice
-
-## Enriquecimento editorial obrigatório
-
-- [ ] Confirmar a identidade e a concentração da fragrância.
-- [ ] Validar os descritores Wikidata e classificar família, notas, camadas e acordes usando a taxonomia do Antiquário.
-- [ ] Registrar contexto de uso e desempenho com método, amostra e confiança.
-- [ ] Adicionar evidências permitidas para cada afirmação editorial.
-- [ ] Mover este arquivo para `10_Perfumes` somente após revisão humana.
-
-## Limite de uso
-
-Este rascunho não é uma recomendação e não deve ser usado pelo motor de ranking. Não inferir notas, desempenho, preço ou disponibilidade a partir de nome, marca ou país.
+- **Notas de Saída:** [[note-horchata|Horchata]]
+- **Notas de Coração:** [[note-canela|Canela]], [[note-leite|Leite]], [[note-arroz|Arroz]]
+- **Notas de Fundo:** [[Baunilha|Baunilha]]

@@ -24,3 +24,7 @@ relations: []
 ---
 
 # Al Battash
+
+## Fragrâncias no Acervo
+
+- [[fragrance-al-battash-adventure-story|Adventure Story]]

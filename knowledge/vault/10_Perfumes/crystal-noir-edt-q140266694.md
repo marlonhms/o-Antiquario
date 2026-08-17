@@ -49,27 +49,34 @@ relations:
 - predicate: has-base-note
   target: antiquario:olfactory-note:cashmeran
 ---
+
+# Crystal Noir EDT
+
+## Base factual
+
+- QID: `Q140266694`
+- Marca: Versace
+- Perfumista: Antoine Lie
+- País: não informado no Wikidata
+- Ano: 2004
+- Site oficial: não informado no Wikidata
+- Descritores olfativos (`P5872`, sem camada de pirâmide): amber smell, blackcurrant smell, orange blossom scent, peony scent, pepper smell, sandalwood fragrance, scent of vanilla, smell of Cashmeran, smell of cardamom, smell of gardenia, smell of ginger, smell of heliotrope, smell of jasmine, smell of musk, smell of violets, tuberose scent
+
+## Enriquecimento editorial obrigatório
+
+- [ ] Confirmar a identidade e a concentração da fragrância.
+- [ ] Validar os descritores Wikidata e classificar família, notas, camadas e acordes usando a taxonomia do Antiquário.
+- [ ] Registrar contexto de uso e desempenho com método, amostra e confiança.
+- [ ] Adicionar evidências permitidas para cada afirmação editorial.
+- [ ] Mover este arquivo para `10_Perfumes` somente após revisão humana.
+
+## Limite de uso
+
+Este rascunho não é uma recomendação e não deve ser usado pelo motor de ranking. Não inferir notas, desempenho, preço ou disponibilidade a partir de nome, marca ou país.
+
+## Conexões do Grafo
 
-# Crystal Noir EDT
-
-## Base factual
-
-- QID: `Q140266694`
-- Marca: Versace
-- Perfumista: Antoine Lie
-- País: não informado no Wikidata
-- Ano: 2004
-- Site oficial: não informado no Wikidata
-- Descritores olfativos (`P5872`, sem camada de pirâmide): amber smell, blackcurrant smell, orange blossom scent, peony scent, pepper smell, sandalwood fragrance, scent of vanilla, smell of Cashmeran, smell of cardamom, smell of gardenia, smell of ginger, smell of heliotrope, smell of jasmine, smell of musk, smell of violets, tuberose scent
-
-## Enriquecimento editorial obrigatório
-
-- [ ] Confirmar a identidade e a concentração da fragrância.
-- [ ] Validar os descritores Wikidata e classificar família, notas, camadas e acordes usando a taxonomia do Antiquário.
-- [ ] Registrar contexto de uso e desempenho com método, amostra e confiança.
-- [ ] Adicionar evidências permitidas para cada afirmação editorial.
-- [ ] Mover este arquivo para `10_Perfumes` somente após revisão humana.
-
-## Limite de uso
-
-Este rascunho não é uma recomendação e não deve ser usado pelo motor de ranking. Não inferir notas, desempenho, preço ou disponibilidade a partir de nome, marca ou país.
+- **Casa / Marca:** [[brand-versace|Versace]]
+- **Notas de Saída:** [[note-gengibre|Gengibre]], [[note-cardamomo|Cardamomo]], [[note-pimenta|Pimenta]]
+- **Notas de Coração:** [[note-gardenia|Gardenia]], [[note-peonia|Peonia]], [[note-flor-de-laranjeira|Flor De Laranjeira]], [[note-tuberosa|Tuberosa]]
+- **Notas de Fundo:** [[note-ambar|Âmbar (Amber)]], [[note-sandalo|Sândalo (Sandalwood)]], [[note-almscar|Almscar]], [[Baunilha|Baunilha]], [[note-cashmeran|Cashmeran]]

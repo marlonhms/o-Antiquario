@@ -44,3 +44,15 @@ No release `knowledge-v2-36bca79cd798`, **Pear** aparece em 5 fragrância(s) com
 ### Limite da automação
 
 Esta seção resume relações que já existiam no grafo. Ela não cria notas, não comprova ingrediente físico e não estima cheiro, concentração, intensidade, fixação, projeção ou evolução temporal.
+
+## Acordes e Facetas Relacionadas
+
+- [[frutado|Frutado]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-xerjoff-erba-gold|Erba Gold]]
+- [[fragrance-gucci-gucci-intense-oud|Gucci Intense Oud]]
+- [[fragrance-lancome-la-vie-est-belle-leau-de-parfum|La Vie est Belle L'Eau de Parfum]]
+- [[fragrance-prada-paradoxe|Paradoxe]]
+- [[fragrance-moschino-toy-boy|Toy Boy]]

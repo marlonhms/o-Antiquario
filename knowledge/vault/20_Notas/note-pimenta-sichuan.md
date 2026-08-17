@@ -21,7 +21,17 @@ evidence:
     confidence: medium
     claim_scope: "Descritor factual do Wikidata"
 ---
-
-# Pimenta Sichuan
-
+
+# Pimenta Sichuan
+
 Nota olfativa catalogada automaticamente.
+
+## Acordes e Facetas Relacionadas
+
+- [[especiado|Especiado]]
+- [[Citricos|Cítricos]]
+- [[Fresco|Fresco]]
+
+## Presente nas Fragrâncias
+
+- [[winter-26-q137912111|Winter 26]]

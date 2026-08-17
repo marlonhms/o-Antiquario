@@ -22,5 +22,14 @@ evidence:
     claim_scope: "Extração de entidade"
 relations: []
 ---
-
+
 # Woody notes
+
+## Acordes e Facetas Relacionadas
+
+- [[Fresco|Fresco]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-al-haramain-laventure|L'Aventure]]
+- [[fragrance-fragrance-one-office-for-men|Office for Men]]

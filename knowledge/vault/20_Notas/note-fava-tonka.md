@@ -21,7 +21,18 @@ evidence:
     confidence: medium
     claim_scope: "Descritor factual do Wikidata"
 ---
-
-# Fava Tonka
-
+
+# Fava Tonka
+
 Nota olfativa catalogada automaticamente.
+
+## Acordes e Facetas Relacionadas
+
+- [[gourmand|Gourmand]]
+- [[doce|Doce]]
+- [[ambarado|Ambarado]]
+
+## Presente nas Fragrâncias
+
+- [[khamrah-q140499690|Khamrah]]
+- [[poison-girl-q140101602|Poison Girl]]

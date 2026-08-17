@@ -21,7 +21,15 @@ evidence:
     confidence: medium
     claim_scope: "Descritor factual do Wikidata"
 ---
-
-# Ambargris
-
+
+# Ambargris
+
 Nota olfativa catalogada automaticamente.
+
+## Acordes e Facetas Relacionadas
+
+- [[ambarado|Ambarado]]
+
+## Presente nas Fragrâncias
+
+- [[dune-q17105080|Dune]]

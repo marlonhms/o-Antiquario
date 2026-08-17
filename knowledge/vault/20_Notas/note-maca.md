@@ -21,7 +21,16 @@ evidence:
     confidence: medium
     claim_scope: "Descritor factual do Wikidata"
 ---
-
-# Maca
-
+
+# Maca
+
 Nota olfativa catalogada automaticamente.
+
+## Acordes e Facetas Relacionadas
+
+- [[frutado|Frutado]]
+
+## Presente nas Fragrâncias
+
+- [[jardin-d-amalfi-q139989391|Jardin d'Amalfi]]
+- [[printemps-q140453489|Printemps]]

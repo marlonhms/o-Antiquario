@@ -61,6 +61,17 @@ Artefatos:
 
 O hash é derivado do conteúdo, não do horário da execução. Duas compilações da mesma entrada produzem a mesma versão.
 
+## Core Científico
+
+Documentos `science` preservam metodologia, resultados relatados, limitações e aplicação editorial sem criar automaticamente relações comerciais de perfumes. Em 17/08/2026, o primeiro conjunto passou a incluir:
+
+- Menini et al. (2022), sobre a construção semiautomática de uma taxonomia multilíngue e histórica de termos olfativos;
+- Vechiato e Vidotti (2024), preprint exploratório sobre IA na Perfumaria e perspectivas para a Ciência da Informação.
+
+O artigo Menini explica o recurso ODEUROPA, mas não substitui seu staging: texto científico e dataset permanecem fontes com licenças, escopos e papéis separados. O preprint de IA é recuperável para perguntas sobre metadados, mediação, arquitetura, memória e agenda de pesquisa; exemplos comerciais não se tornam evidência de eficácia.
+
+Cada síntese informa derivações proibidas. Nenhum documento científico autoriza criar notas, pirâmides, desempenho ou adequação contextual de perfumes sem evidência específica ligada ao produto.
+
 ## Expansão lexical científica separada
 
 A ODEUROPA não é incorporada aos documentos aprovados do Knowledge Core. Seu índice permanece em staging e funciona como roteador de consulta:

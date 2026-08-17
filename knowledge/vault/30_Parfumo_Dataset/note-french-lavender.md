@@ -24,3 +24,11 @@ relations: []
 ---
 
 # French lavender
+
+## Acordes e Facetas Relacionadas
+
+- [[Fresco|Fresco]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-xerjoff-fars|Fars]]

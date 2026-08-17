@@ -24,3 +24,17 @@ relations: []
 ---
 
 # Bitter orange
+
+## Acordes e Facetas Relacionadas
+
+- [[Citricos|Cítricos]]
+- [[Fresco|Fresco]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-montale-chocolate-greedy|Chocolate Greedy]]
+- [[fragrance-guerlain-habit-rouge-guerlain-1965-eau-de-toilette|Habit Rouge Guerlain 1965 Eau de Toilette]]
+- [[fragrance-prada-luna-rossa-prada-2012-eau-de-toilette|Luna Rossa Prada 2012 Eau de Toilette]]
+- [[fragrance-tom-ford-neroli-portofino-tom-ford-2007-eau-de-parfum|Neroli Portofino Tom Ford 2007 Eau de Parfum]]
+- [[fragrance-creed-original-vetiver|Original Vetiver]]
+- [[fragrance-versace-versace-pour-homme-oud-noir|Versace pour Homme Oud Noir]]

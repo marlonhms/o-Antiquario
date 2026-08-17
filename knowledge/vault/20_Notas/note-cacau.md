@@ -25,3 +25,12 @@ evidence:
 # Cacau
 
 Nota gourmand, amarga, rica e empoada.
+
+## Acordes e Facetas Relacionadas
+
+- [[gourmand|Gourmand]]
+- [[doce|Doce]]
+
+## Presente nas Fragrâncias
+
+- [[ganymede|Ganymede]]

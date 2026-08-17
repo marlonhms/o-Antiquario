@@ -24,3 +24,12 @@ relations: []
 ---
 
 # Java vetiver
+
+## Acordes e Facetas Relacionadas
+
+- [[Amadeirado|Amadeirado]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-lalique-encre-noire-a-lextreme|Encre Noire à L'Extrême]]
+- [[fragrance-dolce-gabbana-light-blue-pour-homme-forever|Light Blue pour Homme Forever]]

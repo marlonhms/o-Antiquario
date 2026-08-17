@@ -63,6 +63,22 @@ O texto deve ser montado deterministicamente. Gemini poderá melhorar a fluidez 
 
 ### Fase 0 — baseline observável
 
+**Entregue em 17/08/2026:** auditor determinístico `presentation-readiness-v1`, comando `npm run presentation:audit` e relatório por perfume em `data/reports/presentation-readiness-report.json`.
+
+Baseline dos 249 candidatos atuais:
+
+- `ready`: 0;
+- `olfactory_reference_only`: 158;
+- `blocked`: 91;
+- concentração não declarada de forma estruturada: 229;
+- contexto sem evidência de escopo explícito: 249;
+- desempenho sem evidência de escopo explícito: 249;
+- marca ausente ou placeholder: 33;
+- conteúdo olfativo insuficiente: 60;
+- descritores Wikidata `P5872` indevidamente posicionados como camadas: 32.
+
+Os 158 itens intermediários possuem identidade estruturada e conteúdo suficiente para comparação olfativa, mas não podem sustentar frases contextuais como “ideal para calor”, “dura tantas horas” ou “projeta moderadamente”. O front-end já respeita esse limite: não aciona mais fixtures sintéticas quando o catálogo elegível está vazio e conduz o usuário ao acervo factual.
+
 - Criar cinco cenários ouro de uso: trabalho quente e cheio, encontro noturno, evento formal, lazer ao ar livre e preferência com nota proibida.
 - Capturar para cada cenário: candidatos, exclusões, campos vazios, placeholders, forças, ressalvas e evidências.
 - Medir quantos dos 249 registros atuais realmente possuem identidade e conteúdo suficientes para uma resposta humana.
@@ -71,6 +87,10 @@ O texto deve ser montado deterministicamente. Gemini poderá melhorar a fluidez 
 **Aceite:** toda regressão futura consegue comparar qualidade da resposta, não apenas estabilidade do score.
 
 ### Fase 1 — gate `PresentationReady`
+
+**Entregue em 17/08/2026:** marca e concentração declaradas passaram a relações estruturadas nos 20 documentos oficiais do O Boticário; os perfis genéricos de clima, desempenho, preço, formalidade e ocasião foram removidos; o adaptador deixou de fabricar defaults; o catálogo de recomendação publica zero elegíveis quando o gate não passa; e o front-end apresenta esse estado sem recorrer às fixtures de demonstração.
+
+O reparo reduziu de 53 para 33 os registros com marca ausente/placeholder e de 249 para 229 os registros sem concentração declarada. O nó da marca O Boticário também deixou de estar isolado no grafo.
 
 Criar uma camada posterior a `EligibleForRecommendation`, sem enfraquecer o contrato factual. Um perfume só pode aparecer na experiência principal quando:
 
@@ -84,6 +104,36 @@ Criar uma camada posterior a `EligibleForRecommendation`, sem enfraquecer o cont
 Itens computáveis, mas incompletos, continuam disponíveis para auditoria e enriquecimento; não entram silenciosamente na vitrine.
 
 **Aceite:** nenhuma resposta principal mostra “Desconhecida”, pirâmide vazia ou explicação baseada apenas em valores neutros.
+
+**Aceite atingido:** o ranking principal permanece vazio enquanto não houver candidatos seguros; perfumes reais continuam pesquisáveis como registros factuais, por exemplo `Aventus — Creed`, sem alegações contextuais não sustentadas.
+
+### Fase 1.5 — catálogo `OlfactoryReference`
+
+**Entregue em 17/08/2026:** as 158 referências aprovadas pelo auditor passaram a um artefato independente e determinístico, ligado ao release do Knowledge Core. Cada item contém apenas identidade, marca resolvida, pirâmide ou termos estruturados, concentração quando declarada, proveniência e limitações.
+
+O catálogo não possui campos de score, clima, ocasião, preço, fixação, projeção ou silagem. A interface:
+
+- incorpora as 158 referências ao acervo factual, elevando-o de 282 para 440 registros pesquisáveis;
+- exibe três exemplos concretos ordenados por cobertura estrutural, sem chamá-los de recomendação;
+- atualiza os exemplos quando uma nota é marcada como proibida;
+- diferencia termos declarados de pirâmides apenas estruturadas na fonte;
+- mostra em cada detalhe que a referência não sustenta adequação contextual ou desempenho.
+
+**Aceite atingido:** em desktop e celular, o usuário encontra perfumes reais como `Allure Homme — Chanel`, vê a pirâmide disponível e entende o limite do dado. Uma nota proibida remove imediatamente exemplos que a contenham, sem recorrer a inferência de acordes.
+
+### Fase 1.6 — enriquecimento factual e resposta reativa dos exemplos
+
+**Entregue em 17/08/2026:** os 196 registros prioritários do Parfumo/TidyTuesday receberam locators individuais. O pipeline estruturou 85 concentrações, 894 acordes principais e 223 vínculos com 90 perfumistas. Após resolver `Leathery` como alias inequívoco de couro, 86 ocorrências (`Synthetic`, `Creamy` e `Fougère`) permanecem em quarentena; as 1.081 rotas de família calculadas a partir de acordes continuam `inferred/candidate` no staging e não entram no Knowledge Core.
+
+Na interface, as referências agora:
+
+- exibem concentração e acordes principais quando presentes na fonte;
+- oferecem acesso direto ao registro de origem;
+- aparecem primeiro quando correspondem exatamente aos acordes escolhidos;
+- desaparecem quando contêm um acorde recusado ou uma nota proibida;
+- levam perfumistas ao acervo factual, inclusive à busca por nome.
+
+**Aceite atingido:** selecionar `Floral` altera imediatamente os três exemplos para perfumes com o acorde estruturado; recusar `Floral` remove todos eles. A busca por `Michel Almairac` retorna seis fragrâncias e mostra perfumista, concentração, pirâmide e origem sem atribuir clima, duração ou projeção.
 
 ### Fase 2 — simplificar a entrada
 
@@ -151,13 +201,12 @@ Somente depois de a jornada estar compreensível:
 
 ## 5. Ordem recomendada para a próxima sessão
 
-1. Construir o auditor `PresentationReady` e medir a base atual.
-2. Corrigir a propagação de marca e proveniência no compilador.
+1. Decidir o tratamento taxonômico de `Synthetic`, `Creamy` e `Fougère`, sem colapsar textura, material e família histórica.
+2. Revisar uma amostra estratificada das 1.081 projeções de família; nenhuma promoção automática está autorizada.
 3. Definir o objeto `RecommendationAnswer`, separado do score interno.
-4. Implementar o primeiro cenário ouro de resposta concreta.
-5. Redesenhar somente então a consulta e os cartões.
-6. Validar no navegador em desktop e celular.
-7. Conduzir o teste moderado com o proprietário antes de instrumentar demanda.
+4. Implementar o primeiro cenário ouro sobre 20 perfumes com evidência independente suficiente para contexto e desempenho.
+5. Simplificar a consulta e redesenhar os cartões depois que esse cenário estiver aprovado.
+6. Conduzir o teste moderado com o proprietário antes de instrumentar demanda.
 
 ## 6. Definição de pronto
 

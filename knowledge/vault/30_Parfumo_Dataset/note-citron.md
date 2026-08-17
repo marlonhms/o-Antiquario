@@ -39,3 +39,12 @@ No release `knowledge-v2-36bca79cd798`, **Citron** aparece em 1 fragrância(s) c
 ### Limite da automação
 
 Esta seção resume relações que já existiam no grafo. Ela não cria notas, não comprova ingrediente físico e não estima cheiro, concentração, intensidade, fixação, projeção ou evolução temporal.
+
+## Acordes e Facetas Relacionadas
+
+- [[Citricos|Cítricos]]
+- [[Fresco|Fresco]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-louis-vuitton-pacific-chill|Pacific Chill]]

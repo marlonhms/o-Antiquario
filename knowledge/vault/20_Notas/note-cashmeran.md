@@ -21,7 +21,24 @@ evidence:
     confidence: medium
     claim_scope: "Descritor factual do Wikidata"
 ---
-
-# Cashmeran
-
+
+# Cashmeran
+
 Nota olfativa catalogada automaticamente.
+
+## Acordes e Facetas Relacionadas
+
+- [[Amadeirado|Amadeirado]]
+- [[Atalcado|Atalcado]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-tom-ford-bitter-peach-tom-ford-2020-eau-de-parfum|Bitter Peach Tom Ford 2020 Eau de Parfum]]
+- [[fragrance-calvin-klein-ck-one-shock-for-him|CK One Shock for Him]]
+- [[crystal-noir-edt-q140266694|Crystal Noir EDT]]
+- [[eternity-moment-q140003429|Eternity Moment]]
+- [[floratta-rose-506bcad4|Floratta Rose]]
+- [[odeon-q140298435|Odéon]]
+- [[poison-girl-q140101602|Poison Girl]]
+- [[fragrance-moschino-toy-boy|Toy Boy]]
+- [[fragrance-comme-des-garcons-wonderwood|Wonderwood]]

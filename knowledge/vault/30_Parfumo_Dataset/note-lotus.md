@@ -24,3 +24,11 @@ relations: []
 ---
 
 # Lotus
+
+## Acordes e Facetas Relacionadas
+
+- [[Fresco|Fresco]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-nautica-voyage-nautica-2006-eau-de-toilette|Voyage Nautica 2006 Eau de Toilette]]

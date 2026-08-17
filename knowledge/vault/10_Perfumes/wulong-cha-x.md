@@ -33,27 +33,32 @@ relations:
 - predicate: has-top-note
   target: antiquario:olfactory-note:laranja
 ---
+
+# Wūlóng Chá X
+
+## Base factual
+
+- QID: `Q138576966`
+- Marca: Nishane
+- Perfumista: Julien Rasquinet
+- País: Turquia
+- Ano: 2023
+- Site oficial: https://nishane.com/product/wulong-cha-15ml-x/
+- Descritores olfativos (`P5872`, sem camada de pirâmide): aroma of green tea, fig smell, mandarin orange smell, scent of bergamot, smell of Litsea cubeba, smell of magnolia flowers, smell of musk, smell of thyme oil, smell of yuzu
+
+## Enriquecimento editorial obrigatório
+
+- [ ] Confirmar a identidade e a concentração da fragrância.
+- [ ] Validar os descritores Wikidata e classificar família, notas, camadas e acordes usando a taxonomia do Antiquário.
+- [ ] Registrar contexto de uso e desempenho com método, amostra e confiança.
+- [ ] Adicionar evidências permitidas para cada afirmação editorial.
+- [ ] Mover este arquivo para `10_Perfumes` somente após revisão humana.
+
+## Limite de uso
+
+Este rascunho não é uma recomendação e não deve ser usado pelo motor de ranking. Não inferir notas, desempenho, preço ou disponibilidade a partir de nome, marca ou país.
+
+## Conexões do Grafo
 
-# Wūlóng Chá X
-
-## Base factual
-
-- QID: `Q138576966`
-- Marca: Nishane
-- Perfumista: Julien Rasquinet
-- País: Turquia
-- Ano: 2023
-- Site oficial: https://nishane.com/product/wulong-cha-15ml-x/
-- Descritores olfativos (`P5872`, sem camada de pirâmide): aroma of green tea, fig smell, mandarin orange smell, scent of bergamot, smell of Litsea cubeba, smell of magnolia flowers, smell of musk, smell of thyme oil, smell of yuzu
-
-## Enriquecimento editorial obrigatório
-
-- [ ] Confirmar a identidade e a concentração da fragrância.
-- [ ] Validar os descritores Wikidata e classificar família, notas, camadas e acordes usando a taxonomia do Antiquário.
-- [ ] Registrar contexto de uso e desempenho com método, amostra e confiança.
-- [ ] Adicionar evidências permitidas para cada afirmação editorial.
-- [ ] Mover este arquivo para `10_Perfumes` somente após revisão humana.
-
-## Limite de uso
-
-Este rascunho não é uma recomendação e não deve ser usado pelo motor de ranking. Não inferir notas, desempenho, preço ou disponibilidade a partir de nome, marca ou país.
+- **Casa / Marca:** [[brand-nishane|Nishane]]
+- **Notas de Saída:** [[note-laranja|Laranja (Orange)]]

@@ -24,3 +24,11 @@ relations: []
 ---
 
 # Blackberry
+
+## Acordes e Facetas Relacionadas
+
+- [[frutado|Frutado]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-mugler-angel-mugler-1992-eau-de-parfum|Angel Mugler 1992 Eau de Parfum]]

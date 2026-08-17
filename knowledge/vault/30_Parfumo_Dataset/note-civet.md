@@ -40,3 +40,12 @@ No release `knowledge-v2-36bca79cd798`, **Civet** aparece em 2 fragrância(s) co
 ### Limite da automação
 
 Esta seção resume relações que já existiam no grafo. Ela não cria notas, não comprova ingrediente físico e não estima cheiro, concentração, intensidade, fixação, projeção ou evolução temporal.
+
+## Acordes e Facetas Relacionadas
+
+- [[Atalcado|Atalcado]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-yves-saint-laurent-kouros-yves-saint-laurent-1981-eau-de-toilette|Kouros Yves Saint Laurent 1981 Eau de Toilette]]
+- [[fragrance-tom-ford-noir-tom-ford-2012-eau-de-parfum|Noir Tom Ford 2012 Eau de Parfum]]

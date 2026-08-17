@@ -36,6 +36,12 @@ relations:
     target: antiquario:fragrance:brisa-vetiver
   - predicate: indexes
     target: antiquario:guide:fontes-de-conhecimento
+  - predicate: indexes
+    target: antiquario:science:taxonomia-multilingue-termos-olfativos
+  - predicate: indexes
+    target: antiquario:science:ia-perfumaria-ciencia-informacao
+  - predicate: indexes
+    target: antiquario:science:estudo-mahdavi-sons-do-aroma-sinestesia
 ---
 
 # O Antiquário — Índice de Conhecimento
@@ -68,3 +74,9 @@ Esta é a raiz editorial da memória olfativa do Antiquário.
 ## Governança
 
 - [[Fontes-De-Conhecimento|Fontes de conhecimento]]
+
+## Ciência
+
+- [[Taxonomia-Multilingue-De-Termos-Olfativos|Taxonomia multilíngue de termos olfativos]]
+- [[IA-Aplicada-A-Perfumaria-E-Ciencia-Da-Informacao|IA aplicada à Perfumaria e Ciência da Informação]]
+- [[Estudo-Mahdavi-Sons-Do-Aroma-Sinestesia|Sons do aroma e correspondências olfativo-auditivas]]

@@ -24,3 +24,7 @@ relations: []
 ---
 
 # Cartier
+
+## Fragrâncias no Acervo
+
+- [[fragrance-cartier-declaration-cartier-1998-eau-de-toilette|Déclaration Cartier 1998 Eau de Toilette]]

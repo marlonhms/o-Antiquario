@@ -7,8 +7,8 @@ test("o manifesto oficial é válido e mantém fontes arriscadas fora do core", 
   const manifest = await loadSourceManifest();
   const summary = summarizeSourceManifest(manifest);
 
-  assert.equal(manifest.sources.length, 12);
-  assert.equal(summary.allowed_core, 5);
+  assert.equal(manifest.sources.length, 15);
+  assert.equal(summary.allowed_core, 8);
   assert.equal(summary.allowed_staging, 1);
   assert.equal(summary.allowed_isolated, 1);
   assert.equal(summary.reference_only, 1);
@@ -16,6 +16,9 @@ test("o manifesto oficial é válido e mantém fontes arriscadas fora do core", 
   assert.equal(summary.prohibited, 1);
   assert.equal(manifest.sources.find((source) => source.id === "fragrantica")?.storage.layer, "rejected");
   assert.equal(manifest.sources.find((source) => source.id === "odeuropa_multilingual_taxonomy")?.storage.layer, "staging");
+  assert.equal(manifest.sources.find((source) => source.id === "menini_2022_olfactory_taxonomy")?.license.identifier, "CC-BY-NC-4.0");
+  assert.equal(manifest.sources.find((source) => source.id === "vechiato_vidotti_2024_ai_perfumery")?.license.identifier, "CC-BY-4.0");
+  assert.equal(manifest.sources.find((source) => source.id === "mahdavi_2020_sons_do_aroma")?.license.identifier, "CC-BY-4.0");
 });
 
 test("IDs duplicados são rejeitados", async () => {

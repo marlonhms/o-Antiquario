@@ -24,3 +24,17 @@ relations: []
 ---
 
 # Haitian vetiver
+
+## Acordes e Facetas Relacionadas
+
+- [[Amadeirado|Amadeirado]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-chanel-allure-homme-edition-blanche-chanel-2008-eau-de-toilette-concentree|Allure Homme Édition Blanche Chanel 2008 Eau de Toilette Concentrée]]
+- [[fragrance-dior-dior-homme-dior-2020-eau-de-toilette|Dior Homme Dior 2020 Eau de Toilette]]
+- [[fragrance-lalique-encre-noire-a-lextreme|Encre Noire à L'Extrême]]
+- [[fragrance-lalique-encre-noire-sport|Encre Noire Sport]]
+- [[fragrance-xerjoff-fars|Fars]]
+- [[fragrance-prada-luna-rossa-ocean-prada-2021-eau-de-toilette|Luna Rossa Ocean Prada 2021 Eau de Toilette]]
+- [[fragrance-moschino-toy-boy|Toy Boy]]

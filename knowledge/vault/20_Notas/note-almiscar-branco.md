@@ -21,7 +21,15 @@ evidence:
     confidence: medium
     claim_scope: "Descritor factual do Wikidata"
 ---
-
-# Almiscar Branco
-
+
+# Almiscar Branco
+
 Nota olfativa catalogada automaticamente.
+
+## Acordes e Facetas Relacionadas
+
+- [[Atalcado|Atalcado]]
+
+## Presente nas Fragrâncias
+
+- [[jardin-d-amalfi-q139989391|Jardin d'Amalfi]]

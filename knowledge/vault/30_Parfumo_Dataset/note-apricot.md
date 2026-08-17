@@ -39,3 +39,11 @@ No release `knowledge-v2-36bca79cd798`, **Apricot** aparece em 1 fragrância(s) 
 ### Limite da automação
 
 Esta seção resume relações que já existiam no grafo. Ela não cria notas, não comprova ingrediente físico e não estima cheiro, concentração, intensidade, fixação, projeção ou evolução temporal.
+
+## Acordes e Facetas Relacionadas
+
+- [[frutado|Frutado]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-mugler-angel-mugler-1992-eau-de-parfum|Angel Mugler 1992 Eau de Parfum]]

@@ -24,3 +24,18 @@ relations: []
 ---
 
 # Galbanum
+
+## Acordes e Facetas Relacionadas
+
+- [[verde|Verde]]
+- [[Fresco|Fresco]]
+- [[resinoso|Resinoso]]
+- [[ambarado|Ambarado]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-amouage-beach-hut-man|Beach Hut Man]]
+- [[fragrance-editions-de-parfums-frederic-malle-french-lover-bois-dorage|French Lover Bois d'Orage]]
+- [[fragrance-geoffrey-beene-grey-flannel-geoffrey-beene-1975-eau-de-toilette|Grey Flannel Geoffrey Beene 1975 Eau de Toilette]]
+- [[fragrance-amouage-lyric-man|Lyric Man]]
+- [[fragrance-roja-parfums-oceania|Oceania]]

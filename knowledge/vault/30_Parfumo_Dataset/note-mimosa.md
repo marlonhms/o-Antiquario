@@ -24,3 +24,14 @@ relations: []
 ---
 
 # Mimosa
+
+## Acordes e Facetas Relacionadas
+
+- [[floral|Floral]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-kenzo-flower-by-kenzo-kenzo-2000-eau-de-parfum|Flower by Kenzo Kenzo 2000 Eau de Parfum]]
+- [[fragrance-geoffrey-beene-grey-flannel-geoffrey-beene-1975-eau-de-toilette|Grey Flannel Geoffrey Beene 1975 Eau de Toilette]]
+- [[fragrance-burberry-london-for-men-burberry-2006-eau-de-toilette|London for Men Burberry 2006 Eau de Toilette]]
+- [[fragrance-nautica-voyage-nautica-2006-eau-de-toilette|Voyage Nautica 2006 Eau de Toilette]]

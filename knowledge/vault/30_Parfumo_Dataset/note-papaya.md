@@ -24,3 +24,11 @@ relations: []
 ---
 
 # Papaya
+
+## Acordes e Facetas Relacionadas
+
+- [[Fresco|Fresco]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-calvin-klein-ck-one-calvin-klein-1994-eau-de-toilette|CK One Calvin Klein 1994 Eau de Toilette]]

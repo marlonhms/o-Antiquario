@@ -24,3 +24,12 @@ relations: []
 ---
 
 # Dark chocolate
+
+## Acordes e Facetas Relacionadas
+
+- [[Fresco|Fresco]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-kilian-black-phantom---memento-mori|Black Phantom - Memento Mori]]
+- [[fragrance-montblanc-individuel-montblanc-2003-eau-de-toilette|Individuel Montblanc 2003 Eau de Toilette]]

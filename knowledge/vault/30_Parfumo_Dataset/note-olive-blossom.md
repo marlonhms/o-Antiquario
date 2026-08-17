@@ -24,3 +24,11 @@ relations: []
 ---
 
 # Olive blossom
+
+## Acordes e Facetas Relacionadas
+
+- [[Fresco|Fresco]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-giorgio-armani-armani-code-black-code-giorgio-armani-2004-eau-de-toilette|Armani Code Black Code Giorgio Armani 2004 Eau de Toilette]]

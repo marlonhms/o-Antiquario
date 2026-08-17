@@ -21,7 +21,16 @@ evidence:
     confidence: medium
     claim_scope: "Descritor factual do Wikidata"
 ---
-
-# Almscar
-
+
+# Almscar
+
 Nota olfativa catalogada automaticamente.
+
+## Acordes e Facetas Relacionadas
+
+- [[Fresco|Fresco]]
+
+## Presente nas Fragrâncias
+
+- [[crystal-noir-edt-q140266694|Crystal Noir EDT]]
+- [[daisy-q110263664|Daisy]]

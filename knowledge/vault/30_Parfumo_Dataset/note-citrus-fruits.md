@@ -24,3 +24,13 @@ relations: []
 ---
 
 # Citrus fruits
+
+## Acordes e Facetas Relacionadas
+
+- [[Fresco|Fresco]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-versace-blue-jeans|Blue Jeans]]
+- [[fragrance-mancera-instant-crush|Instant Crush]]
+- [[fragrance-guerlain-lhomme-ideal-guerlain-2014-eau-de-toilette|L'Homme Idéal Guerlain 2014 Eau de Toilette]]

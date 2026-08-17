@@ -21,7 +21,21 @@ evidence:
     confidence: medium
     claim_scope: "Descritor factual do Wikidata"
 ---
-
-# Cardamomo
-
+
+# Cardamomo
+
 Nota olfativa catalogada automaticamente.
+
+## Acordes e Facetas Relacionadas
+
+- [[especiado|Especiado]]
+
+## Presente nas Fragrâncias
+
+- [[crystal-noir-edt-q140266694|Crystal Noir EDT]]
+- [[ha-long-bay-q140237028|Ha Long Bay]]
+- [[malbec-506bcad4|Malbec]]
+- [[malbec-gold-506bcad4|Malbec Gold]]
+- [[virtus-q138773649|Virtus]]
+- [[winter-26-q137912111|Winter 26]]
+- [[zelen-q137527355|Zelen]]

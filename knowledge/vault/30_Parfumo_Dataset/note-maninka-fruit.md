@@ -24,3 +24,11 @@ relations: []
 ---
 
 # Maninka fruit
+
+## Acordes e Facetas Relacionadas
+
+- [[Fresco|Fresco]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-hugo-boss-the-scent-for-him-hugo-boss-2015-eau-de-toilette|The Scent for Him Hugo Boss 2015 Eau de Toilette]]

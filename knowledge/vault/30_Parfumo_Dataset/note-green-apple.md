@@ -24,3 +24,17 @@ relations: []
 ---
 
 # Green apple
+
+## Acordes e Facetas Relacionadas
+
+- [[frutado|Frutado]]
+- [[verde|Verde]]
+- [[Fresco|Fresco]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-giorgio-armani-armani-code-profumo|Armani Code Profumo]]
+- [[fragrance-xerjoff-erba-gold|Erba Gold]]
+- [[fragrance-borsari-1870-giacinto|Giacinto]]
+- [[fragrance-parfums-de-marly-greenley|Greenley]]
+- [[fragrance-hugo-boss-hugo-hugo-boss-1995-eau-de-toilette|Hugo Hugo Boss 1995 Eau de Toilette]]

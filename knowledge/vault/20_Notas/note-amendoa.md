@@ -21,7 +21,17 @@ evidence:
     confidence: medium
     claim_scope: "Descritor factual do Wikidata"
 ---
-
-# Amendoa
-
+
+# Amendoa
+
 Nota olfativa catalogada automaticamente.
+
+## Acordes e Facetas Relacionadas
+
+- [[gourmand|Gourmand]]
+- [[doce|Doce]]
+
+## Presente nas Fragrâncias
+
+- [[chemin-d-amande-q140511997|Chemin d'Amande]]
+- [[poison-girl-q140101602|Poison Girl]]

@@ -21,7 +21,17 @@ evidence:
     confidence: medium
     claim_scope: "Descritor factual do Wikidata"
 ---
-
-# Couro
-
+
+# Couro
+
 Nota olfativa catalogada automaticamente.
+
+## Acordes e Facetas Relacionadas
+
+- [[antiquario:accord:couro|Couro]]
+
+## Presente nas Fragrâncias
+
+- [[deep-viola-q138795798|Deep Viola]]
+- [[ha-long-bay-q140237028|Ha Long Bay]]
+- [[tom-ford-for-men-q137182953|Tom Ford for Men]]

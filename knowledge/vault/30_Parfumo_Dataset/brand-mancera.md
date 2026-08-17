@@ -24,3 +24,7 @@ relations: []
 ---
 
 # Mancera
+
+## Fragrâncias no Acervo
+
+- [[fragrance-mancera-instant-crush|Instant Crush]]

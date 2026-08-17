@@ -24,3 +24,11 @@ relations: []
 ---
 
 # Teak
+
+## Acordes e Facetas Relacionadas
+
+- [[Fresco|Fresco]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-gisada-ambassador-for-men|Ambassador for Men]]

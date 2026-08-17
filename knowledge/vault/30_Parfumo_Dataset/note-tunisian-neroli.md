@@ -24,3 +24,11 @@ relations: []
 ---
 
 # Tunisian neroli
+
+## Acordes e Facetas Relacionadas
+
+- [[Fresco|Fresco]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-bvlgari-aqva-amara-bvlgari-2014-eau-de-toilette|Aqva Amara Bvlgari 2014 Eau de Toilette]]

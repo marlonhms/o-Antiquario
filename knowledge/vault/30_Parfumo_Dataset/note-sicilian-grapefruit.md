@@ -24,3 +24,11 @@ relations: []
 ---
 
 # Sicilian grapefruit
+
+## Acordes e Facetas Relacionadas
+
+- [[Fresco|Fresco]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-tiziana-terenzi-rosso-pompei|Rosso Pompei]]

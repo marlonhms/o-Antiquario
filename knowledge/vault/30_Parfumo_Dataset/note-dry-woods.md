@@ -24,3 +24,13 @@ relations: []
 ---
 
 # Dry woods
+
+## Acordes e Facetas Relacionadas
+
+- [[Fresco|Fresco]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-amouage-beach-hut-man|Beach Hut Man]]
+- [[fragrance-parfums-de-marly-perseus|Perseus]]
+- [[fragrance-xerjoff-torino22|Torino22]]

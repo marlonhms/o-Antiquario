@@ -37,3 +37,7 @@ Estruturas [[Citricos|cítricas]] e amadeiradas transparentes podem oferecer sen
 ## Aplicação
 
 Quantidade aplicada, ventilação e proximidade entre pessoas alteram a experiência. [[Brisa-Vetiver|Brisa Vetiver]] é o exemplo sintético inicial deste contexto.
+
+## Fragrâncias Recomendadas
+
+- [[Brisa-Vetiver|Brisa Vetiver]]

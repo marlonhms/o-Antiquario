@@ -24,3 +24,7 @@ relations: []
 ---
 
 # Boadicea the Victorious
+
+## Fragrâncias no Acervo
+
+- [[fragrance-boadicea-the-victorious-passionate|Passionate]]

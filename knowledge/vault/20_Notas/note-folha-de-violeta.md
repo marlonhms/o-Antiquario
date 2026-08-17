@@ -21,7 +21,18 @@ evidence:
     confidence: medium
     claim_scope: "Descritor factual do Wikidata"
 ---
-
-# Folha De Violeta
-
+
+# Folha De Violeta
+
 Nota olfativa catalogada automaticamente.
+
+## Acordes e Facetas Relacionadas
+
+- [[verde|Verde]]
+- [[Fresco|Fresco]]
+- [[floral|Floral]]
+
+## Presente nas Fragrâncias
+
+- [[daisy-q110263664|Daisy]]
+- [[winter-26-q137912111|Winter 26]]

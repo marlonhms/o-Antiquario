@@ -24,3 +24,13 @@ relations: []
 ---
 
 # White pepper
+
+## Acordes e Facetas Relacionadas
+
+- [[Fresco|Fresco]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-prada-lhomme-leau|L'Homme L'Eau]]
+- [[fragrance-lalique-lalique-white-lalique-2008-eau-de-toilette|Lalique White Lalique 2008 Eau de Toilette]]
+- [[fragrance-creed-original-vetiver|Original Vetiver]]

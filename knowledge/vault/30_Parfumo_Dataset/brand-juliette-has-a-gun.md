@@ -24,3 +24,7 @@ relations: []
 ---
 
 # Juliette Has A Gun
+
+## Fragrâncias no Acervo
+
+- [[fragrance-juliette-has-a-gun-not-a-perfume-juliette-has-a-gun-2010-eau-de-parfum|Not a Perfume Juliette Has A Gun 2010 Eau de Parfum]]

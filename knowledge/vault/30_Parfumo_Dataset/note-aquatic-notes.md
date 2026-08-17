@@ -24,3 +24,14 @@ relations: []
 ---
 
 # Aquatic notes
+
+## Acordes e Facetas Relacionadas
+
+- [[Fresco|Fresco]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-giorgio-armani-acqua-di-gioia-giorgio-armani-2010-eau-de-parfum|Acqua di Gioia Giorgio Armani 2010 Eau de Parfum]]
+- [[fragrance-bvlgari-aqva-amara-bvlgari-2014-eau-de-toilette|Aqva Amara Bvlgari 2014 Eau de Toilette]]
+- [[fragrance-lalique-encre-noire-sport|Encre Noire Sport]]
+- [[fragrance-montblanc-legend-spirit|Legend Spirit]]

@@ -24,3 +24,14 @@ relations: []
 ---
 
 # Cognac
+
+## Acordes e Facetas Relacionadas
+
+- [[gourmand|Gourmand]]
+- [[doce|Doce]]
+- [[ambarado|Ambarado]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-tom-ford-bitter-peach-tom-ford-2020-eau-de-parfum|Bitter Peach Tom Ford 2020 Eau de Parfum]]
+- [[fragrance-roja-parfums-enigma-pour-homme-creation-e-pour-homme-roja-parfums-2013-eau-de-parfum|Enigma pour Homme Creation-E pour Homme Roja Parfums 2013 Eau de Parfum]]

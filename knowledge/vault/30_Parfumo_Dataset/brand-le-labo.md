@@ -24,3 +24,7 @@ relations: []
 ---
 
 # Le Labo
+
+## Fragrâncias no Acervo
+
+- [[fragrance-le-labo-santal-33-le-labo-2011-eau-de-parfum|Santal 33 Le Labo 2011 Eau de Parfum]]

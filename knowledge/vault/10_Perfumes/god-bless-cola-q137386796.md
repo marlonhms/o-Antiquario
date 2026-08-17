@@ -43,27 +43,33 @@ relations:
 - predicate: has-base-note
   target: antiquario:olfactory-note:cedro-smell
 ---
+
+# God Bless Cola
+
+## Base factual
+
+- QID: `Q137386796`
+- Marca: Versȧtile Paris
+- Perfumista: Camille Chemardin, Elia Chiche
+- País: França
+- Ano: 2023
+- Site oficial: não informado no Wikidata
+- Descritores olfativos (`P5872`, sem camada de pirâmide): caramel smell, cola smell, gourmand accord, peanut smell, scent of vanilla, smell of butter, smell of popcorn, sweet smell, woody smell
+
+## Enriquecimento editorial obrigatório
+
+- [ ] Confirmar a identidade e a concentração da fragrância.
+- [ ] Validar os descritores Wikidata e classificar família, notas, camadas e acordes usando a taxonomia do Antiquário.
+- [ ] Registrar contexto de uso e desempenho com método, amostra e confiança.
+- [ ] Adicionar evidências permitidas para cada afirmação editorial.
+- [ ] Mover este arquivo para `10_Perfumes` somente após revisão humana.
+
+## Limite de uso
+
+Este rascunho não é uma recomendação e não deve ser usado pelo motor de ranking. Não inferir notas, desempenho, preço ou disponibilidade a partir de nome, marca ou país.
+
+## Conexões do Grafo
 
-# God Bless Cola
-
-## Base factual
-
-- QID: `Q137386796`
-- Marca: Versȧtile Paris
-- Perfumista: Camille Chemardin, Elia Chiche
-- País: França
-- Ano: 2023
-- Site oficial: não informado no Wikidata
-- Descritores olfativos (`P5872`, sem camada de pirâmide): caramel smell, cola smell, gourmand accord, peanut smell, scent of vanilla, smell of butter, smell of popcorn, sweet smell, woody smell
-
-## Enriquecimento editorial obrigatório
-
-- [ ] Confirmar a identidade e a concentração da fragrância.
-- [ ] Validar os descritores Wikidata e classificar família, notas, camadas e acordes usando a taxonomia do Antiquário.
-- [ ] Registrar contexto de uso e desempenho com método, amostra e confiança.
-- [ ] Adicionar evidências permitidas para cada afirmação editorial.
-- [ ] Mover este arquivo para `10_Perfumes` somente após revisão humana.
-
-## Limite de uso
-
-Este rascunho não é uma recomendação e não deve ser usado pelo motor de ranking. Não inferir notas, desempenho, preço ou disponibilidade a partir de nome, marca ou país.
+- **Notas de Saída:** [[note-refrigerante-de-cola|Refrigerante De Cola]], [[Baunilha|Baunilha]]
+- **Notas de Coração:** [[note-caramelo|Caramelo]], [[Baunilha|Baunilha]], [[note-amendoim|Amendoim]], [[note-manteiga|Manteiga]], [[note-pipoca|Pipoca]]
+- **Notas de Fundo:** [[Baunilha|Baunilha]], [[note-cedro-smell|Cedro Smell]]

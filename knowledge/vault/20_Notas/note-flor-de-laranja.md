@@ -21,7 +21,15 @@ evidence:
     confidence: medium
     claim_scope: "Descritor factual do Wikidata"
 ---
-
-# Flor De Laranja
-
+
+# Flor De Laranja
+
 Nota olfativa catalogada automaticamente.
+
+## Acordes e Facetas Relacionadas
+
+- [[floral|Floral]]
+
+## Presente nas Fragrâncias
+
+- [[tom-ford-for-men-q137182953|Tom Ford for Men]]

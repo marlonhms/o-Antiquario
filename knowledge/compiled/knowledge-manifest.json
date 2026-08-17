@@ -1,20 +1,23 @@
 {
   "schemaVersion": 2,
-  "releaseId": "knowledge-v2-124a936df83e",
-  "contentHash": "124a936df83efd0fd0f9dcabd9f9c43f317ca9a9da4d19976c485a5ee1c41097",
+  "releaseId": "knowledge-v2-96912194a76e",
+  "contentHash": "96912194a76e75d5990a075a735796cc04b4fc66ea04b06a9dc16b28b461c295",
   "latestDocumentDate": "2026-08-17",
   "counts": {
-    "documents": 850,
-    "chunks": 780,
-    "nodes": 1707,
-    "edges": 5029,
-    "evidenceNodes": 857,
-    "typedRelations": 2226
+    "documents": 967,
+    "chunks": 2369,
+    "nodes": 1945,
+    "edges": 11988,
+    "evidenceNodes": 978,
+    "typedRelations": 3479
   },
   "sources": [
     "internal_curated",
+    "mahdavi_2020_sons_do_aroma",
+    "menini_2022_olfactory_taxonomy",
     "official_catalog_o_boticario",
     "parfumo_dataset",
+    "vechiato_vidotti_2024_ai_perfumery",
     "wikidata"
   ],
   "files": {

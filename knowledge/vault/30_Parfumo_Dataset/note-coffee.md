@@ -44,3 +44,18 @@ No release `knowledge-v2-36bca79cd798`, **Coffee** aparece em 7 fragrância(s) c
 ### Limite da automação
 
 Esta seção resume relações que já existiam no grafo. Ela não cria notas, não comprova ingrediente físico e não estima cheiro, concentração, intensidade, fixação, projeção ou evolução temporal.
+
+## Acordes e Facetas Relacionadas
+
+- [[gourmand|Gourmand]]
+- [[doce|Doce]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-mugler-amen-angel-men|A*Men Angel Men]]
+- [[fragrance-mugler-amen-pure-malt|A*Men Pure Malt]]
+- [[fragrance-kilian-black-phantom---memento-mori|Black Phantom - Memento Mori]]
+- [[fragrance-colornoise-country|Country.]]
+- [[fragrance-halloween-halloween-man-x|Halloween Man X]]
+- [[fragrance-rochas-rochas-man-rochas-1999-eau-de-toilette|Rochas Man Rochas 1999 Eau de Toilette]]
+- [[fragrance-valentino-valentino-uomo-valentino-2014-eau-de-toilette|Valentino Uomo Valentino 2014 Eau de Toilette]]

@@ -43,27 +43,33 @@ relations:
 - predicate: has-base-note
   target: antiquario:olfactory-note:fumaca-de-vetiver
 ---
+
+# September
+
+## Base factual
+
+- QID: `Q138611384`
+- Marca: Björk and Berries
+- Perfumista: não informado no Wikidata
+- País: Suécia
+- Ano: 2020
+- Site oficial: https://us.bjorkandberries.com/products/september-eau-de-parfum-50ml
+- Descritores olfativos (`P5872`, sem camada de pirâmide): eucalyptus scent, kumquat scent, pomelo scent, smell of apple blossom, smell of guaiac wood, smell of lavender, smell of papyrus, smell of praline, smell of vetiver smoke
+
+## Enriquecimento editorial obrigatório
+
+- [ ] Confirmar a identidade e a concentração da fragrância.
+- [ ] Validar os descritores Wikidata e classificar família, notas, camadas e acordes usando a taxonomia do Antiquário.
+- [ ] Registrar contexto de uso e desempenho com método, amostra e confiança.
+- [ ] Adicionar evidências permitidas para cada afirmação editorial.
+- [ ] Mover este arquivo para `10_Perfumes` somente após revisão humana.
+
+## Limite de uso
+
+Este rascunho não é uma recomendação e não deve ser usado pelo motor de ranking. Não inferir notas, desempenho, preço ou disponibilidade a partir de nome, marca ou país.
+
+## Conexões do Grafo
 
-# September
-
-## Base factual
-
-- QID: `Q138611384`
-- Marca: Björk and Berries
-- Perfumista: não informado no Wikidata
-- País: Suécia
-- Ano: 2020
-- Site oficial: https://us.bjorkandberries.com/products/september-eau-de-parfum-50ml
-- Descritores olfativos (`P5872`, sem camada de pirâmide): eucalyptus scent, kumquat scent, pomelo scent, smell of apple blossom, smell of guaiac wood, smell of lavender, smell of papyrus, smell of praline, smell of vetiver smoke
-
-## Enriquecimento editorial obrigatório
-
-- [ ] Confirmar a identidade e a concentração da fragrância.
-- [ ] Validar os descritores Wikidata e classificar família, notas, camadas e acordes usando a taxonomia do Antiquário.
-- [ ] Registrar contexto de uso e desempenho com método, amostra e confiança.
-- [ ] Adicionar evidências permitidas para cada afirmação editorial.
-- [ ] Mover este arquivo para `10_Perfumes` somente após revisão humana.
-
-## Limite de uso
-
-Este rascunho não é uma recomendação e não deve ser usado pelo motor de ranking. Não inferir notas, desempenho, preço ou disponibilidade a partir de nome, marca ou país.
+- **Notas de Saída:** [[note-eucalipto|Eucalipto]], [[note-kumquat|Kumquat]], [[note-pomelo|Pomelo]]
+- **Notas de Coração:** [[note-flor-de-macieira|Flor De Macieira]], [[note-lavanda|Lavanda]], [[note-pralina|Pralina]]
+- **Notas de Fundo:** [[note-madeira-de-guaiaco|Madeira De Guaiaco]], [[note-papiros|Papiros]], [[note-fumaca-de-vetiver|Fumaca De Vetiver]]

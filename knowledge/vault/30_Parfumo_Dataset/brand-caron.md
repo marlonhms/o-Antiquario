@@ -24,3 +24,7 @@ relations: []
 ---
 
 # Caron
+
+## Fragrâncias no Acervo
+
+- [[fragrance-caron-pour-un-homme-de-caron-caron-1934-eau-de-toilette|Pour Un Homme de Caron Caron 1934 Eau de Toilette]]

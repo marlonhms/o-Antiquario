@@ -22,5 +22,13 @@ evidence:
     claim_scope: "Extração de entidade"
 relations: []
 ---
-
+
 # Lemon vervain
+
+## Acordes e Facetas Relacionadas
+
+- [[Fresco|Fresco]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-guy-laroche-drakkar-noir-guy-laroche-1982-eau-de-toilette|Drakkar Noir Guy Laroche 1982 Eau de Toilette]]

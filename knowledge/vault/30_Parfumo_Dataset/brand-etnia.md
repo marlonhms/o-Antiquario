@@ -24,3 +24,7 @@ relations: []
 ---
 
 # Etnia
+
+## Fragrâncias no Acervo
+
+- [[fragrance-etnia-factory-beijing|Factory, Beijing]]

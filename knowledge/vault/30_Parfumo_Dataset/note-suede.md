@@ -44,3 +44,16 @@ No release `knowledge-v2-36bca79cd798`, **Suede** aparece em 5 fragrância(s) co
 ### Limite da automação
 
 Esta seção resume relações que já existiam no grafo. Ela não cria notas, não comprova ingrediente físico e não estima cheiro, concentração, intensidade, fixação, projeção ou evolução temporal.
+
+## Acordes e Facetas Relacionadas
+
+- [[antiquario:accord:couro|Couro]]
+- [[Atalcado|Atalcado]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-bdk-parfums-creme-de-cuir-bdk-parfums-2018-eau-de-parfum|Crème de Cuir bdk Parfums 2018 Eau de Parfum]]
+- [[fragrance-hugo-boss-hugo-hugo-boss-1995-eau-de-toilette|Hugo Hugo Boss 1995 Eau de Toilette]]
+- [[fragrance-lacoste-l1212-blanc-eau-de-lacoste-l1212-blanc-lacoste-2010-eau-de-toilette|L.12.12 Blanc Eau de Lacoste L.12.12 Blanc Lacoste 2010 Eau de Toilette]]
+- [[fragrance-yves-saint-laurent-le-vestiaire---babycat|Le Vestiaire - Babycat]]
+- [[fragrance-prada-luna-rossa-ocean-prada-2021-eau-de-toilette|Luna Rossa Ocean Prada 2021 Eau de Toilette]]

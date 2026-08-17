@@ -24,3 +24,7 @@ relations: []
 ---
 
 # Aldi / Hofer
+
+## Fragrâncias no Acervo
+
+- [[fragrance-aldi-hofer-dynamic-style|Dynamic Style]]

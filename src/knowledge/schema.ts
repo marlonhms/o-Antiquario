@@ -18,6 +18,7 @@ export const KnowledgeDocumentTypeSchema = z.enum([
   "guide",
   "brand",
   "perfumer",
+  "concentration",
 ]);
 
 export const KnowledgeConfidenceSchema = z.enum(["high", "medium", "low", "unknown"]);

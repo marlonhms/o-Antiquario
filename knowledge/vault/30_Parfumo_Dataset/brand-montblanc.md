@@ -24,3 +24,8 @@ relations: []
 ---
 
 # Montblanc
+
+## Fragrâncias no Acervo
+
+- [[fragrance-montblanc-individuel-montblanc-2003-eau-de-toilette|Individuel Montblanc 2003 Eau de Toilette]]
+- [[fragrance-montblanc-legend-spirit|Legend Spirit]]

@@ -21,7 +21,16 @@ evidence:
     confidence: medium
     claim_scope: "Descritor factual do Wikidata"
 ---
-
-# Noz Moscada
-
+
+# Noz Moscada
+
 Nota olfativa catalogada automaticamente.
+
+## Acordes e Facetas Relacionadas
+
+- [[especiado|Especiado]]
+
+## Presente nas Fragrâncias
+
+- [[khamrah-q140499690|Khamrah]]
+- [[virtus-q138773649|Virtus]]

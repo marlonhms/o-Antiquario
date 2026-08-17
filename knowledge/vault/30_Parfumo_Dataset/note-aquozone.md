@@ -24,3 +24,11 @@ relations: []
 ---
 
 # Aquozone
+
+## Acordes e Facetas Relacionadas
+
+- [[Fresco|Fresco]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-giorgio-armani-acqua-di-gio-profondo-giorgio-armani-2020-eau-de-parfum|Acqua di Giò Profondo Giorgio Armani 2020 Eau de Parfum]]

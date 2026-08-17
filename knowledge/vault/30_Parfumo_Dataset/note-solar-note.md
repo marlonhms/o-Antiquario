@@ -24,3 +24,12 @@ relations: []
 ---
 
 # Solar note
+
+## Acordes e Facetas Relacionadas
+
+- [[Fresco|Fresco]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-bdk-parfums-creme-de-cuir-bdk-parfums-2018-eau-de-parfum|Crème de Cuir bdk Parfums 2018 Eau de Parfum]]
+- [[fragrance-parfums-de-marly-kalan|Kalan]]

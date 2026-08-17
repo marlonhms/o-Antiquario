@@ -196,6 +196,25 @@ Antes de ampliar o ranking, executar a trilha científica descrita em [`TAXONOMI
 
 **Próximo:** integrar o registrador anônimo à consulta da interface local, sob consentimento, e acumular demanda real antes de abrir a primeira fila `research_ready`. Quando um item passar pelo gate, buscar evidência independente `allowed_core`, produzir candidato auditável e só então considerar promoção.
 
+### Pesquisa futura — biologia da escolha dos receptores olfativos
+
+> **Adiada por decisão do proprietário em 17/08/2026.** Registrar para aprofundamento posterior; não alterar agora o schema, o grafo, a taxonomia, o Knowledge Core, a skill ou o recomendador.
+
+Estudo reservado: Lucia M. Armelin-Correa, Luciana M. Gutiyama, Débora Y. C. Brandt e Bettina Malnic, “Nuclear compartmentalization of odorant receptor genes”, *PNAS* 111(7), 2014, DOI [`10.1073/pnas.1317036111`](https://doi.org/10.1073/pnas.1317036111). Cópia de trabalho local: `armelin-correa-et-al-2014-nuclear-compartmentalization-of-odorant-receptor-genes.pdf`.
+
+Valor esperado: introduzir no RAG científico o eixo biológico da regulação dos genes de receptores olfativos — neurônio sensorial olfativo, expressão monogênica e monoalélica, escolha de receptor, compartimentalização nuclear e heterocromatina constitutiva/facultativa.
+
+Quando esta trilha for retomada:
+
+1. O proprietário decide a classificação e o uso da fonte em `data/sources.yml`; acesso livre ao artigo não deve ser convertido automaticamente em licença de dataset.
+2. Começar com um documento `science` pequeno e claims localizados; não criar novos tipos de entidade para um único artigo.
+3. Preservar o escopo experimental: neurônios olfativos de camundongos, loci selecionados e associação espacial observada por immuno-DNA FISH.
+4. Separar resultado observado de hipótese mecanística; expressões como “provavelmente importante” não viram causalidade comprovada.
+5. Não derivar do estudo notas, acordes, famílias, moléculas presentes em perfumes, preferências pessoais, sensibilidade, desempenho ou score de recomendação.
+6. Só avaliar um módulo futuro `odorante → receptor → processo biológico` depois de reunir outras fontes primárias com mapeamento receptor-ligante e proveniência compatível.
+
+**Gate futuro:** a incorporação deve melhorar apenas explicações científicas e recuperação no RAG, com zero relações comerciais ou sensoriais geradas para fragrâncias.
+
 Isso só começa quando houver um subconjunto editorialmente completo. Não misturar registros factuais incompletos ao ranking apenas para aumentar a quantidade.
 
 ### Etapas
@@ -224,7 +243,13 @@ Quando o gate anterior passar:
 
 ## 8. Qualidade, operação e documentação
 
-> **Próxima rota de produto:** a revalidação da consulta e das respostas está detalhada em [`ROADMAP_VALIDACAO_FRONTEND.md`](ROADMAP_VALIDACAO_FRONTEND.md). Antes de instrumentar demanda real, o front-end deve separar “computável” de “pronto para apresentação”, resolver marcas e transformar o ranking em recomendações concretas com exemplos rastreáveis.
+> **Próxima rota de produto:** a arquitetura da nova consulta está detalhada em [`ROADMAP_UI_SIMPLIFICADA.md`](ROADMAP_UI_SIMPLIFICADA.md). O histórico dos gates e das validações já realizados permanece em [`ROADMAP_VALIDACAO_FRONTEND.md`](ROADMAP_VALIDACAO_FRONTEND.md). A nova UI deve pedir somente momento e atmosfera antes da primeira resposta, obter contexto de forma opcional e nunca exigir que o usuário estime fixação, duração ou projeção.
+
+**Gate estrutural entregue em 17/08/2026:** o `PresentationReady` auditou 249 candidatos: nenhum sustenta ainda recomendação contextual completa, 158 servem somente como referência olfativa e 91 permanecem bloqueados. Marca e concentração oficial foram propagadas, defaults sem evidência foram removidos e o front não recorre mais a fixtures sintéticas.
+
+**Enriquecimento factual Parfumo entregue em 17/08/2026:** os 196 documentos prioritários receberam locator individual; 85 concentrações foram preservadas como `has-concentration`, sem fingir declaração de fabricante; 894 vínculos de acordes e 223 vínculos com 90 perfumistas foram estruturados. A projeção taxonômica gerou 1.081 candidatos de família em staging e zero promoções ao core; 86 ocorrências fora do vocabulário exato ficaram em quarentena. O Knowledge Core passou a 964 documentos e 6.345 sinapses. A interface usa os acordes escolhidos e recusados para atualizar exemplos, mostra concentração, perfumista e link da fonte, mas continua sem alegações de contexto ou desempenho.
+
+**Próxima rota:** decidir o tratamento de `Synthetic` (49), `Creamy` (34) e `Fougère` (3), preservados em quarentena após `Leathery` ser resolvido como alias inequívoco de couro; criar os nós canônicos de família necessários; então validar uma amostra estratificada das 1.081 projeções antes de definir qualquer política de promoção. Em paralelo, escolher um subconjunto de 20 perfumes com fonte independente para contexto/desempenho e construir o primeiro cenário ouro de resposta concreta.
 
 Essas tarefas podem seguir em paralelo às fases de dados, desde que não alterem os limites acima:
 

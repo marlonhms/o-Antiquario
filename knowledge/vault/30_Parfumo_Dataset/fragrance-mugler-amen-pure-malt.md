@@ -23,7 +23,10 @@ evidence:
   kind: open_source
   license: CC0-1.0
   confidence: medium
-  claim_scope: Estrutura da pirâmide olfativa
+  claim_scope: Identidade e campos olfativos estruturados disponíveis no registro
+    do dataset.
+  locator: https://www.parfumo.com/Perfumes/mugler/AMen_Pure_Malt
+  retrieved_at: '2026-08-17'
 relations:
 - predicate: belongs-to-brand
   target: antiquario:brand:mugler
@@ -37,6 +40,18 @@ relations:
   target: antiquario:olfactory-note:baunilha
 - predicate: has-base-note
   target: antiquario:olfactory-note:licorice
+- predicate: has-accord
+  target: antiquario:accord:doce
+- predicate: has-accord
+  target: antiquario:accord:gourmand
+- predicate: has-accord
+  target: antiquario:accord:especiado
+- predicate: has-accord
+  target: antiquario:accord:amadeirado
+- predicate: has-accord
+  target: antiquario:accord:ambarado
+- predicate: created-by
+  target: antiquario:perfumer:jacques-huclier
 ---
 
 # A*Men Pure Malt
@@ -48,3 +63,10 @@ relations:
 - **Saída:** N/A
 - **Coração:** N/A
 - **Fundo:** [[note-tonka-bean]], [[note-coffee]], [[note-cocoa]], [[Baunilha]], [[note-licorice]]
+
+## Conexões do Grafo
+
+- **Casa / Marca:** [[brand-mugler|Mugler]]
+- **Perfumista(s):** [[jacques-huclier|Jacques Huclier]]
+- **Acordes Principais:** [[doce|Doce]], [[gourmand|Gourmand]], [[especiado|Especiado]], [[Amadeirado|Amadeirado]], [[ambarado|Ambarado]]
+- **Notas de Fundo:** [[note-tonka-bean|Tonka bean]], [[note-coffee|Coffee]], [[note-cocoa|Cocoa]], [[Baunilha|Baunilha]], [[note-licorice|Licorice]]

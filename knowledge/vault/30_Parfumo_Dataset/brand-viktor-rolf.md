@@ -24,3 +24,7 @@ relations: []
 ---
 
 # Viktor & Rolf
+
+## Fragrâncias no Acervo
+
+- [[fragrance-viktor-rolf-spicebomb-infrared-viktor-rolf-2021-eau-de-toilette|Spicebomb Infrared Viktor & Rolf 2021 Eau de Toilette]]

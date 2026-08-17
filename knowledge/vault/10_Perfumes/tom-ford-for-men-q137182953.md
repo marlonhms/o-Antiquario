@@ -61,27 +61,33 @@ relations:
 - predicate: has-base-note
   target: antiquario:olfactory-note:vetiver
 ---
+
+# Tom Ford for Men
+
+## Base factual
+
+- QID: `Q137182953`
+- Marca: Tom Ford (marca)
+- Perfumista: Yves Cassar
+- País: Estados Unidos
+- Ano: não informado no Wikidata
+- Site oficial: não informado no Wikidata
+- Descritores olfativos (`P5872`, sem camada de pirâmide): amber smell, grapefruit blossom scent, leather smell, mandarin orange smell, orange blossom scent, patchouli smell, pepper smell, scent of bergamot, smell of basil, smell of cedarwood, smell of ginger, smell of lemon leaf oil, smell of nagarmotha, smell of oakmoss, smell of vetiver, tobacco smell, violet leaf fragrance
+
+## Enriquecimento editorial obrigatório
+
+- [ ] Confirmar a identidade e a concentração da fragrância.
+- [ ] Validar os descritores Wikidata e classificar família, notas, camadas e acordes usando a taxonomia do Antiquário.
+- [ ] Registrar contexto de uso e desempenho com método, amostra e confiança.
+- [ ] Adicionar evidências permitidas para cada afirmação editorial.
+- [ ] Mover este arquivo para `10_Perfumes` somente após revisão humana.
+
+## Limite de uso
+
+Este rascunho não é uma recomendação e não deve ser usado pelo motor de ranking. Não inferir notas, desempenho, preço ou disponibilidade a partir de nome, marca ou país.
+
+## Conexões do Grafo
 
-# Tom Ford for Men
-
-## Base factual
-
-- QID: `Q137182953`
-- Marca: Tom Ford (marca)
-- Perfumista: Yves Cassar
-- País: Estados Unidos
-- Ano: não informado no Wikidata
-- Site oficial: não informado no Wikidata
-- Descritores olfativos (`P5872`, sem camada de pirâmide): amber smell, grapefruit blossom scent, leather smell, mandarin orange smell, orange blossom scent, patchouli smell, pepper smell, scent of bergamot, smell of basil, smell of cedarwood, smell of ginger, smell of lemon leaf oil, smell of nagarmotha, smell of oakmoss, smell of vetiver, tobacco smell, violet leaf fragrance
-
-## Enriquecimento editorial obrigatório
-
-- [ ] Confirmar a identidade e a concentração da fragrância.
-- [ ] Validar os descritores Wikidata e classificar família, notas, camadas e acordes usando a taxonomia do Antiquário.
-- [ ] Registrar contexto de uso e desempenho com método, amostra e confiança.
-- [ ] Adicionar evidências permitidas para cada afirmação editorial.
-- [ ] Mover este arquivo para `10_Perfumes` somente após revisão humana.
-
-## Limite de uso
-
-Este rascunho não é uma recomendação e não deve ser usado pelo motor de ranking. Não inferir notas, desempenho, preço ou disponibilidade a partir de nome, marca ou país.
+- **Notas de Saída:** [[Bergamota|Bergamota]], [[note-mandarina|Mandarina]], [[note-folha-de-limao|Folha De Limao]], [[note-flor-de-laranja|Flor De Laranja]], [[note-manjericao|Manjericao]], [[note-geranio|Geranio]], [[note-violeta|Violeta]], [[note-gengibre|Gengibre]]
+- **Notas de Coração:** [[note-pimenta|Pimenta]], [[note-flor-de-toranja|Flor De Toranja]], [[note-tabaco|Tabaco]], [[note-nagarmota|Nagarmota]]
+- **Notas de Fundo:** [[note-ambar|Âmbar (Amber)]], [[note-couro|Couro]], [[note-patchouli|Patchouli]], [[note-cedro|Cedro]], [[note-musgo-de-carvalho|Musgo De Carvalho]], [[note-vetiver|Vetiver]]

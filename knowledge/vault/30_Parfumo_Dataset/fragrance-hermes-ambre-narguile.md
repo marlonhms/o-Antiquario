@@ -23,7 +23,10 @@ evidence:
   kind: open_source
   license: CC0-1.0
   confidence: medium
-  claim_scope: Estrutura da pirâmide olfativa
+  claim_scope: Identidade e campos olfativos estruturados disponíveis no registro
+    do dataset.
+  locator: https://www.parfumo.com/Perfumes/Hermes/ambre-narguile
+  retrieved_at: '2026-08-17'
 relations:
 - predicate: belongs-to-brand
   target: antiquario:brand:hermes
@@ -53,6 +56,18 @@ relations:
   target: antiquario:olfactory-note:tonka-bean
 - predicate: has-base-note
   target: antiquario:olfactory-note:patchouli
+- predicate: has-accord
+  target: antiquario:accord:doce
+- predicate: has-accord
+  target: antiquario:accord:gourmand
+- predicate: has-accord
+  target: antiquario:accord:especiado
+- predicate: has-accord
+  target: antiquario:accord:ambarado
+- predicate: has-accord
+  target: antiquario:accord:frutado
+- predicate: created-by
+  target: antiquario:perfumer:jean-claude-ellena
 ---
 
 # Ambre Narguilé
@@ -64,3 +79,12 @@ relations:
 - **Saída:** [[note-canela]], [[note-honey]], [[note-labdanum]], [[note-ambergris]], [[note-tonka-bean]], [[note-patchouli]]
 - **Coração:** [[note-benzoin]], [[note-labdanum]], [[note-ambergris]], [[note-tonka-bean]], [[note-patchouli]]
 - **Fundo:** [[note-tonka-bean]], [[note-patchouli]]
+
+## Conexões do Grafo
+
+- **Casa / Marca:** [[brand-hermes|Hermès]]
+- **Perfumista(s):** [[jean-claude-ellena|Jean-Claude Ellena]]
+- **Acordes Principais:** [[doce|Doce]], [[gourmand|Gourmand]], [[especiado|Especiado]], [[ambarado|Ambarado]], [[frutado|Frutado]]
+- **Notas de Saída:** [[note-canela|Canela]], [[note-honey|Honey]], [[note-labdanum|Labdanum]], [[note-ambergris|Ambergris]], [[note-tonka-bean|Tonka bean]], [[note-patchouli|Patchouli]]
+- **Notas de Coração:** [[note-benzoin|Benzoin]], [[note-labdanum|Labdanum]], [[note-ambergris|Ambergris]], [[note-tonka-bean|Tonka bean]], [[note-patchouli|Patchouli]]
+- **Notas de Fundo:** [[note-tonka-bean|Tonka bean]], [[note-patchouli|Patchouli]]

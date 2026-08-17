@@ -24,3 +24,13 @@ relations: []
 ---
 
 # Jasmine sambac
+
+## Acordes e Facetas Relacionadas
+
+- [[floral|Floral]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-giorgio-armani-armani-code-pour-femme-giorgio-armani-2006-eau-de-parfum|Armani Code pour Femme Giorgio Armani 2006 Eau de Parfum]]
+- [[fragrance-juliette-has-a-gun-not-a-perfume-juliette-has-a-gun-2010-eau-de-parfum|Not a Perfume Juliette Has A Gun 2010 Eau de Parfum]]
+- [[fragrance-roja-parfums-oceania|Oceania]]

@@ -24,3 +24,11 @@ relations: []
 ---
 
 # Coconut palmwood
+
+## Acordes e Facetas Relacionadas
+
+- [[Fresco|Fresco]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-jean-paul-gaultier-le-beau|Le Beau]]

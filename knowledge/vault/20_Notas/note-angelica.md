@@ -21,7 +21,17 @@ evidence:
     confidence: medium
     claim_scope: "Descritor factual do Wikidata"
 ---
-
-# Angelica
-
+
+# Angelica
+
 Nota olfativa catalogada automaticamente.
+
+## Acordes e Facetas Relacionadas
+
+- [[Fresco|Fresco]]
+
+## Presente nas Fragrâncias
+
+- [[deep-viola-q138795798|Deep Viola]]
+- [[fragrance-editions-de-parfums-frederic-malle-french-lover-bois-dorage|French Lover Bois d'Orage]]
+- [[fragrance-amouage-lyric-man|Lyric Man]]

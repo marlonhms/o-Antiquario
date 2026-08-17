@@ -21,7 +21,18 @@ evidence:
     confidence: medium
     claim_scope: "Descritor factual do Wikidata"
 ---
-
-# Mandarina
-
+
+# Mandarina
+
 Nota olfativa catalogada automaticamente.
+
+## Acordes e Facetas Relacionadas
+
+- [[Citricos|Cítricos]]
+- [[Fresco|Fresco]]
+
+## Presente nas Fragrâncias
+
+- [[dune-q17105080|Dune]]
+- [[floratta-rose-506bcad4|Floratta Rose]]
+- [[tom-ford-for-men-q137182953|Tom Ford for Men]]

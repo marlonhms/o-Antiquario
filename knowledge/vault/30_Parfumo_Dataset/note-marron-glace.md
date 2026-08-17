@@ -24,3 +24,11 @@ relations: []
 ---
 
 # Marron glacé
+
+## Acordes e Facetas Relacionadas
+
+- [[Fresco|Fresco]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-giorgio-armani-emporio-armani---stronger-with-you|Emporio Armani - Stronger With You]]

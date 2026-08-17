@@ -24,3 +24,11 @@ relations: []
 ---
 
 # Red ginger
+
+## Acordes e Facetas Relacionadas
+
+- [[Fresco|Fresco]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-acqua-di-parma-bergamotto-di-calabria|Bergamotto di Calabria]]

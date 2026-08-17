@@ -24,3 +24,11 @@ relations: []
 ---
 
 # Freesia
+
+## Acordes e Facetas Relacionadas
+
+- [[floral|Floral]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-chanel-allure-homme-chanel-1999-eau-de-toilette|Allure Homme Chanel 1999 Eau de Toilette]]

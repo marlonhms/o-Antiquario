@@ -24,3 +24,11 @@ relations: []
 ---
 
 # Sycamore wood
+
+## Acordes e Facetas Relacionadas
+
+- [[Fresco|Fresco]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-versace-versace-man-eau-fraiche-versace-2005-eau-de-toilette|Versace Man Eau Fraîche Versace 2005 Eau de Toilette]]

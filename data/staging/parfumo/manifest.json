@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "source_id": "parfumo_dataset",
+  "input": "C:\\Users\\Marlon\\Documents\\o Antiquario\\data\\raw\\parfumo\\parfumo_data_clean.csv",
+  "input_sha256": "94956339772a02c0355ff3f9de4f15cd3f078a124b2829dde30bcee83446cc7d",
+  "updated_at": "2026-08-17",
+  "limit": 200,
+  "family_candidates": 1081,
+  "quarantined_terms": 86
+}

@@ -24,3 +24,16 @@ relations: []
 ---
 
 # Indonesian patchouli
+
+## Acordes e Facetas Relacionadas
+
+- [[Fresco|Fresco]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-bvlgari-aqva-amara-bvlgari-2014-eau-de-toilette|Aqva Amara Bvlgari 2014 Eau de Toilette]]
+- [[fragrance-tom-ford-bitter-peach-tom-ford-2020-eau-de-parfum|Bitter Peach Tom Ford 2020 Eau de Parfum]]
+- [[fragrance-bdk-parfums-gris-charnel-bdk-parfums-2022-extrait|Gris Charnel bdk Parfums 2022 Extrait]]
+- [[fragrance-yves-saint-laurent-myslf|Myslf]]
+- [[fragrance-tom-ford-noir-tom-ford-2012-eau-de-parfum|Noir Tom Ford 2012 Eau de Parfum]]
+- [[fragrance-acqua-di-parma-oud-acqua-di-parma-2019-eau-de-parfum|Oud Acqua di Parma 2019 Eau de Parfum]]

@@ -24,3 +24,12 @@ relations: []
 ---
 
 # Clementine
+
+## Acordes e Facetas Relacionadas
+
+- [[Fresco|Fresco]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-john-varvatos-artisan-pure|Artisan Pure]]
+- [[fragrance-calvin-klein-ck-one-shock-for-him|CK One Shock for Him]]

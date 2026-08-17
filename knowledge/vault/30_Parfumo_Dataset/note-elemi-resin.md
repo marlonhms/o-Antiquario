@@ -24,3 +24,16 @@ relations: []
 ---
 
 # Elemi resin
+
+## Acordes e Facetas Relacionadas
+
+- [[Fresco|Fresco]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-dior-dior-homme-dior-2020-eau-de-toilette|Dior Homme Dior 2020 Eau de Toilette]]
+- [[fragrance-dior-dior-homme-sport|Dior Homme Sport]]
+- [[fragrance-lalique-encre-noire-a-lextreme|Encre Noire à L'Extrême]]
+- [[fragrance-al-haramain-laventure|L'Aventure]]
+- [[fragrance-yves-saint-laurent-le-vestiaire---babycat|Le Vestiaire - Babycat]]
+- [[fragrance-moschino-toy-boy|Toy Boy]]

@@ -24,3 +24,8 @@ relations: []
 ---
 
 # Serge Lutens
+
+## Fragrâncias no Acervo
+
+- [[fragrance-serge-lutens-ambre-sultan-serge-lutens-1993-eau-de-parfum|Ambre sultan Serge Lutens 1993 Eau de Parfum]]
+- [[fragrance-serge-lutens-five-oclock-au-gingembre|Five o'clock au gingembre]]

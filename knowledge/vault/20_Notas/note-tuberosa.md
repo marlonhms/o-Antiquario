@@ -21,7 +21,16 @@ evidence:
     confidence: medium
     claim_scope: "Descritor factual do Wikidata"
 ---
-
-# Tuberosa
-
+
+# Tuberosa
+
 Nota olfativa catalogada automaticamente.
+
+## Acordes e Facetas Relacionadas
+
+- [[floral|Floral]]
+
+## Presente nas Fragrâncias
+
+- [[crystal-noir-edt-q140266694|Crystal Noir EDT]]
+- [[khamrah-q140499690|Khamrah]]

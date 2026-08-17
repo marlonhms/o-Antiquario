@@ -39,27 +39,32 @@ relations:
 - predicate: has-base-note
   target: antiquario:olfactory-note:ambar
 ---
+
+# Ganymede
+
+## Base factual
+
+- QID: `Q137825310`
+- Marca: Marc-Antoine Barrois
+- Perfumista: Quentin Bisch
+- País: França
+- Ano: 2019
+- Site oficial: não informado no Wikidata
+- Descritores olfativos (`P5872`, sem camada de pirâmide): aroma of osmanthus, mandarin orange smell, mineral smell, patchouli smell, saffron smell, smell of akigalawood, smell of cedarwood, smell of immortelle, smell of musk, smell of suede, violet leaf fragrance
+
+## Enriquecimento editorial obrigatório
+
+- [ ] Confirmar a identidade e a concentração da fragrância.
+- [ ] Validar os descritores Wikidata e classificar família, notas, camadas e acordes usando a taxonomia do Antiquário.
+- [ ] Registrar contexto de uso e desempenho com método, amostra e confiança.
+- [ ] Adicionar evidências permitidas para cada afirmação editorial.
+- [ ] Mover este arquivo para `10_Perfumes` somente após revisão humana.
+
+## Limite de uso
+
+Este rascunho não é uma recomendação e não deve ser usado pelo motor de ranking. Não inferir notas, desempenho, preço ou disponibilidade a partir de nome, marca ou país.
+
+## Conexões do Grafo
 
-# Ganymede
-
-## Base factual
-
-- QID: `Q137825310`
-- Marca: Marc-Antoine Barrois
-- Perfumista: Quentin Bisch
-- País: França
-- Ano: 2019
-- Site oficial: não informado no Wikidata
-- Descritores olfativos (`P5872`, sem camada de pirâmide): aroma of osmanthus, mandarin orange smell, mineral smell, patchouli smell, saffron smell, smell of akigalawood, smell of cedarwood, smell of immortelle, smell of musk, smell of suede, violet leaf fragrance
-
-## Enriquecimento editorial obrigatório
-
-- [ ] Confirmar a identidade e a concentração da fragrância.
-- [ ] Validar os descritores Wikidata e classificar família, notas, camadas e acordes usando a taxonomia do Antiquário.
-- [ ] Registrar contexto de uso e desempenho com método, amostra e confiança.
-- [ ] Adicionar evidências permitidas para cada afirmação editorial.
-- [ ] Mover este arquivo para `10_Perfumes` somente após revisão humana.
-
-## Limite de uso
-
-Este rascunho não é uma recomendação e não deve ser usado pelo motor de ranking. Não inferir notas, desempenho, preço ou disponibilidade a partir de nome, marca ou país.
+- **Notas de Coração:** [[Baunilha|Baunilha]], [[note-cacau|Cacau]], [[note-patchouli|Patchouli]]
+- **Notas de Fundo:** [[note-ambar|Âmbar (Amber)]]

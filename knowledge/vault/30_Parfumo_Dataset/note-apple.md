@@ -24,3 +24,15 @@ relations: []
 ---
 
 # Apple
+
+## Acordes e Facetas Relacionadas
+
+- [[frutado|Frutado]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-gisada-ambassador-for-men|Ambassador for Men]]
+- [[fragrance-armaf-club-de-nuit-intense-man-armaf-eau-de-parfum|Club de Nuit Intense Man Armaf Eau de Parfum]]
+- [[fragrance-salvatore-ferragamo-f-by-ferragamo-pour-homme-black-salvatore-ferragamo-2009-eau-de-toilette|F by Ferragamo pour Homme Black Salvatore Ferragamo 2009 Eau de Toilette]]
+- [[fragrance-afnan-perfumes-supremacy-not-only-intense|Supremacy Not Only Intense]]
+- [[fragrance-nautica-voyage-nautica-2006-eau-de-toilette|Voyage Nautica 2006 Eau de Toilette]]

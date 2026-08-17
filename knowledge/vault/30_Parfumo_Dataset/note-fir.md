@@ -41,3 +41,14 @@ No release `knowledge-v2-36bca79cd798`, **Fir** aparece em 2 fragrância(s) com 
 ### Limite da automação
 
 Esta seção resume relações que já existiam no grafo. Ela não cria notas, não comprova ingrediente físico e não estima cheiro, concentração, intensidade, fixação, projeção ou evolução temporal.
+
+## Acordes e Facetas Relacionadas
+
+- [[Amadeirado|Amadeirado]]
+- [[Fresco|Fresco]]
+- [[verde|Verde]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-versace-blue-jeans|Blue Jeans]]
+- [[fragrance-guy-laroche-drakkar-noir-guy-laroche-1982-eau-de-toilette|Drakkar Noir Guy Laroche 1982 Eau de Toilette]]

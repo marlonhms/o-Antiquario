@@ -24,3 +24,17 @@ relations: []
 ---
 
 # Gaiac wood
+
+## Acordes e Facetas Relacionadas
+
+- [[Fresco|Fresco]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-giorgio-armani-armani-code-black-code-giorgio-armani-2004-eau-de-toilette|Armani Code Black Code Giorgio Armani 2004 Eau de Toilette]]
+- [[fragrance-guerlain-bois-darmenie|Bois d'Arménie]]
+- [[fragrance-paco-rabanne-invictus-paco-rabanne-2013-eau-de-toilette|Invictus Paco Rabanne 2013 Eau de Toilette]]
+- [[fragrance-burberry-london-for-men-burberry-2006-eau-de-toilette|London for Men Burberry 2006 Eau de Toilette]]
+- [[fragrance-amouage-memoir-man|Memoir Man]]
+- [[fragrance-xerjoff-torino22|Torino22]]
+- [[fragrance-comme-des-garcons-wonderwood|Wonderwood]]

@@ -3,60 +3,48 @@ schema_version: 1
 id: antiquario:fragrance:pdf-floratta-rose-506bcad4
 project: o-antiquario
 type: fragrance
-title: "Floratta Rose"
+title: Floratta Rose
 aliases: []
 external_ids: {}
-tags: [perfume, o-boticario, nacional]
-source_ids: [official_catalog_o_boticario]
+tags:
+- perfume
+- o-boticario
+- nacional
+source_ids:
+- official_catalog_o_boticario
 license: CC0-1.0
 confidence: medium
 review_status: approved
 updated_at: 2026-07-23
 language: pt-BR
-summary: "Rascunho factual extraído do catálogo oficial em PDF O Boticário (Ciclo 07 2026). Fatos declarados de produto."
+summary: Rascunho factual extraído do catálogo oficial em PDF O Boticário (Ciclo 07
+  2026). Fatos declarados de produto.
 evidence:
-  - source_id: official_catalog_o_boticario
-    kind: manufacturer
-    license: CC0-1.0
-    confidence: medium
-    claim_scope: "Fatos olfativos e metadados declarados em catálogo oficial."
-    retrieved_at: 2026-07-23
+- source_id: official_catalog_o_boticario
+  kind: manufacturer
+  license: CC0-1.0
+  confidence: medium
+  claim_scope: Fatos olfativos e metadados declarados em catálogo oficial.
+  retrieved_at: 2026-07-23
 relations:
-  - predicate: has-accord
-    target: antiquario:accord:citricos
-  - predicate: suited-to
-    target: antiquario:context:escritorio
-  - predicate: has-base-note
-    target: antiquario:olfactory-note:cashmeran
-recommendation_profile:
-  segments: ["nacional", "acessivel"]
-  formality: 0.5
-  priceTier: 2
-  accords:
-    amadeirado: 0.8
-    floral: 0.7
-    citricos: 0.6
-  occasions:
-    casual: 0.9
-    encontro: 0.7
-  performance:
-    longevity:
-      minimumHours: 5
-      maximumHours: 8
-      confidence: "low"
-    projection:
-      value: 0.6
-      confidence: "low"
-    sillage:
-      value: 0.5
-      confidence: "low"
-  climate:
-    idealTemperatureMinC: 15
-    idealTemperatureMaxC: 30
-    idealHumidity: 0.6
-    indoorFit: 0.8
-    outdoorFit: 0.7
-
+- predicate: belongs-to-brand
+  target: antiquario:brand:o-boticario
+- predicate: declares-concentration
+  target: antiquario:concentration:eau-de-parfum
+- predicate: declares-top-note
+  target: antiquario:olfactory-note:mandarina
+- predicate: declares-top-note
+  target: antiquario:olfactory-note:pessego
+- predicate: declares-heart-note
+  target: antiquario:olfactory-note:rosa
+- predicate: declares-base-note
+  target: antiquario:olfactory-note:cashmeran
+- predicate: declares-base-note
+  target: antiquario:olfactory-note:almiscar
+- predicate: has-accord
+  target: antiquario:accord:floral
+- predicate: has-accord
+  target: antiquario:accord:frutado
 ---
 
 # Floratta Rose
@@ -79,4 +67,13 @@ recommendation_profile:
 
 ## Enriquecimento editorial pendente
 
-- [x] Revisão manual automatizada para cumprir o contrato de ranking com dados do PDF.
+- [ ] Enriquecimento contextual e de desempenho pendente; este registro não entra no ranking.
+
+## Conexões do Grafo
+
+- **Casa / Marca:** [[O-Boticario|O Boticário]]
+- **Concentração:** [[Eau-De-Parfum|Eau de Parfum]]
+- **Acordes Principais:** [[floral|Floral]], [[frutado|Frutado]]
+- **Notas de Saída:** [[note-mandarina|Mandarina]], [[note-pessego|Pessego]]
+- **Notas de Coração:** [[note-rosa|Rosa]]
+- **Notas de Fundo:** [[note-cashmeran|Cashmeran]], [[note-almiscar|Almiscar]]

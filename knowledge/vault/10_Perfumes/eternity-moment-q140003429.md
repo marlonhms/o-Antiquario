@@ -45,27 +45,34 @@ relations:
 - predicate: has-base-note
   target: antiquario:olfactory-note:almiscar
 ---
+
+# Eternity Moment
+
+## Base factual
+
+- QID: `Q140003429`
+- Marca: Calvin Klein
+- Perfumista: Jacques Cavallier
+- País: não informado no Wikidata
+- Ano: 2004
+- Site oficial: não informado no Wikidata
+- Descritores olfativos (`P5872`, sem camada de pirâmide): guava scent, nenúfar, peony scent, sandalwood fragrance, smell of Cashmeran, smell of jasmine, smell of lychee, smell of melon, smell of musk, smell of raspberry
+
+## Enriquecimento editorial obrigatório
+
+- [ ] Confirmar a identidade e a concentração da fragrância.
+- [ ] Validar os descritores Wikidata e classificar família, notas, camadas e acordes usando a taxonomia do Antiquário.
+- [ ] Registrar contexto de uso e desempenho com método, amostra e confiança.
+- [ ] Adicionar evidências permitidas para cada afirmação editorial.
+- [ ] Mover este arquivo para `10_Perfumes` somente após revisão humana.
+
+## Limite de uso
+
+Este rascunho não é uma recomendação e não deve ser usado pelo motor de ranking. Não inferir notas, desempenho, preço ou disponibilidade a partir de nome, marca ou país.
+
+## Conexões do Grafo
 
-# Eternity Moment
-
-## Base factual
-
-- QID: `Q140003429`
-- Marca: Calvin Klein
-- Perfumista: Jacques Cavallier
-- País: não informado no Wikidata
-- Ano: 2004
-- Site oficial: não informado no Wikidata
-- Descritores olfativos (`P5872`, sem camada de pirâmide): guava scent, nenúfar, peony scent, sandalwood fragrance, smell of Cashmeran, smell of jasmine, smell of lychee, smell of melon, smell of musk, smell of raspberry
-
-## Enriquecimento editorial obrigatório
-
-- [ ] Confirmar a identidade e a concentração da fragrância.
-- [ ] Validar os descritores Wikidata e classificar família, notas, camadas e acordes usando a taxonomia do Antiquário.
-- [ ] Registrar contexto de uso e desempenho com método, amostra e confiança.
-- [ ] Adicionar evidências permitidas para cada afirmação editorial.
-- [ ] Mover este arquivo para `10_Perfumes` somente após revisão humana.
-
-## Limite de uso
-
-Este rascunho não é uma recomendação e não deve ser usado pelo motor de ranking. Não inferir notas, desempenho, preço ou disponibilidade a partir de nome, marca ou país.
+- **Casa / Marca:** [[brand-calvin-klein|Calvin Klein]]
+- **Notas de Saída:** [[note-goiaba|Goiaba]], [[note-lichia|Lichia]], [[note-melao|Melao]], [[note-framboesa|Framboesa]]
+- **Notas de Coração:** [[note-nenufar|Nenufar]], [[note-peonia|Peonia]], [[note-jasmim|Jasmim]]
+- **Notas de Fundo:** [[note-sandalo|Sândalo (Sandalwood)]], [[note-cashmeran|Cashmeran]], [[note-almiscar|Almiscar]]

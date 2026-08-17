@@ -24,3 +24,11 @@ relations: []
 ---
 
 # Olive wood
+
+## Acordes e Facetas Relacionadas
+
+- [[Amadeirado|Amadeirado]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-gucci-gucci-pour-homme-ii-gucci-2007-eau-de-toilette|Gucci pour Homme II Gucci 2007 Eau de Toilette]]

@@ -24,3 +24,11 @@ relations: []
 ---
 
 # Palo Santo
+
+## Acordes e Facetas Relacionadas
+
+- [[Fresco|Fresco]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-initio-paragon|Paragon]]

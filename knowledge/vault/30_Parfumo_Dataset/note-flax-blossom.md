@@ -24,3 +24,11 @@ relations: []
 ---
 
 # Flax blossom
+
+## Acordes e Facetas Relacionadas
+
+- [[Fresco|Fresco]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-moschino-toy-boy|Toy Boy]]

@@ -22,5 +22,13 @@ evidence:
     claim_scope: "Extração de entidade"
 relations: []
 ---
-
+
 # Orange blossom absolute
+
+## Acordes e Facetas Relacionadas
+
+- [[Fresco|Fresco]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-parfums-de-marly-kalan|Kalan]]

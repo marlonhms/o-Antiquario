@@ -21,7 +21,16 @@ evidence:
     confidence: medium
     claim_scope: "Descritor factual do Wikidata"
 ---
-
-# Davana
-
+
+# Davana
+
 Nota olfativa catalogada automaticamente.
+
+## Acordes e Facetas Relacionadas
+
+- [[Fresco|Fresco]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-tom-ford-bitter-peach-tom-ford-2020-eau-de-parfum|Bitter Peach Tom Ford 2020 Eau de Parfum]]
+- [[virtus-q138773649|Virtus]]

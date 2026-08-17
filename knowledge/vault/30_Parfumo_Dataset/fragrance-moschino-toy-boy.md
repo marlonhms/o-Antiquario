@@ -3,52 +3,69 @@ schema_version: 1
 id: antiquario:fragrance:parfumo-moschino-toy-boy
 project: o-antiquario
 type: fragrance
-title: "Toy Boy"
+title: Toy Boy
 aliases: []
 external_ids: {}
-tags: [perfume, parfumo, draft]
-source_ids: [parfumo_dataset]
+tags:
+- perfume
+- parfumo
+- draft
+source_ids:
+- parfumo_dataset
 license: CC0-1.0
 confidence: medium
 review_status: approved
 updated_at: 2026-07-23
 language: pt-BR
-summary: "Fragrância extraída do Parfumo Fragrance Dataset (TidyTuesday)."
+summary: Fragrância extraída do Parfumo Fragrance Dataset (TidyTuesday).
 evidence:
-  - source_id: parfumo_dataset
-    kind: open_source
-    license: CC0-1.0
-    confidence: medium
-    claim_scope: "Estrutura da pirâmide olfativa"
+- source_id: parfumo_dataset
+  kind: open_source
+  license: CC0-1.0
+  confidence: medium
+  claim_scope: Identidade e campos olfativos estruturados disponíveis no registro
+    do dataset.
+  locator: https://www.parfumo.com/Perfumes/Moschino/Toy_Boy
+  retrieved_at: '2026-08-17'
 relations:
-  - predicate: belongs-to-brand
-    target: antiquario:brand:moschino
-  - predicate: has-top-note
-    target: antiquario:olfactory-note:pink-pepper
-  - predicate: has-top-note
-    target: antiquario:olfactory-note:pear
-  - predicate: has-top-note
-    target: antiquario:olfactory-note:cravo-especiaria
-  - predicate: has-top-note
-    target: antiquario:olfactory-note:elemi-resin
-  - predicate: has-top-note
-    target: antiquario:olfactory-note:indonesian-nutmeg
-  - predicate: has-top-note
-    target: antiquario:olfactory-note:italian-bergamot
-  - predicate: has-heart-note
-    target: antiquario:olfactory-note:rose
-  - predicate: has-heart-note
-    target: antiquario:olfactory-note:cashmeran
-  - predicate: has-heart-note
-    target: antiquario:olfactory-note:magnolia
-  - predicate: has-heart-note
-    target: antiquario:olfactory-note:flax-blossom
-  - predicate: has-base-note
-    target: antiquario:olfactory-note:ambermax
-  - predicate: has-base-note
-    target: antiquario:olfactory-note:sylkolide
-  - predicate: has-base-note
-    target: antiquario:olfactory-note:haitian-vetiver
+- predicate: belongs-to-brand
+  target: antiquario:brand:moschino
+- predicate: has-top-note
+  target: antiquario:olfactory-note:pink-pepper
+- predicate: has-top-note
+  target: antiquario:olfactory-note:pear
+- predicate: has-top-note
+  target: antiquario:olfactory-note:cravo-especiaria
+- predicate: has-top-note
+  target: antiquario:olfactory-note:elemi-resin
+- predicate: has-top-note
+  target: antiquario:olfactory-note:indonesian-nutmeg
+- predicate: has-top-note
+  target: antiquario:olfactory-note:italian-bergamot
+- predicate: has-heart-note
+  target: antiquario:olfactory-note:rose
+- predicate: has-heart-note
+  target: antiquario:olfactory-note:cashmeran
+- predicate: has-heart-note
+  target: antiquario:olfactory-note:magnolia
+- predicate: has-heart-note
+  target: antiquario:olfactory-note:flax-blossom
+- predicate: has-base-note
+  target: antiquario:olfactory-note:ambermax
+- predicate: has-base-note
+  target: antiquario:olfactory-note:sylkolide
+- predicate: has-base-note
+  target: antiquario:olfactory-note:haitian-vetiver
+- predicate: has-accord
+  target: antiquario:accord:floral
+- predicate: has-accord
+  target: antiquario:accord:especiado
+- predicate: has-accord
+  target: antiquario:accord:doce
+- predicate: has-accord
+  target: antiquario:accord:fresco
+- predicate: created-by
+  target: antiquario:perfumer:yann-vasnier
 ---
 
 # Toy Boy
@@ -60,3 +77,12 @@ relations:
 - **Saída:** [[note-pink-pepper]], [[note-pear]], [[note-cravo-especiaria]], [[note-elemi-resin]], [[note-indonesian-nutmeg]], [[note-italian-bergamot]]
 - **Coração:** [[note-rose]], [[note-cashmeran]], [[note-magnolia]], [[note-flax-blossom]]
 - **Fundo:** [[note-ambermax]], [[note-sylkolide]], [[note-haitian-vetiver]]
+
+## Conexões do Grafo
+
+- **Casa / Marca:** [[brand-moschino|Moschino]]
+- **Perfumista(s):** [[yann-vasnier|Yann Vasnier]]
+- **Acordes Principais:** [[floral|Floral]], [[especiado|Especiado]], [[doce|Doce]], [[Fresco|Fresco]]
+- **Notas de Saída:** [[note-pink-pepper|Pink pepper]], [[note-pear|Pear]], [[note-cravo-especiaria|Cravo-da-índia]], [[note-elemi-resin|Elemi resin]], [[note-indonesian-nutmeg|Indonesian nutmeg]], [[note-italian-bergamot|Italian bergamot]]
+- **Notas de Coração:** [[note-rose|Rose]], [[note-cashmeran|Cashmeran]], [[note-magnolia|Magnólia]], [[note-flax-blossom|Flax blossom]]
+- **Notas de Fundo:** [[note-ambermax|Ambermax®]], [[note-sylkolide|Sylkolide™]], [[note-haitian-vetiver|Haitian vetiver]]

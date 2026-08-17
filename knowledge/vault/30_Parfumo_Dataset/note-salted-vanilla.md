@@ -24,3 +24,11 @@ relations: []
 ---
 
 # Salted vanilla
+
+## Acordes e Facetas Relacionadas
+
+- [[Fresco|Fresco]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-paco-rabanne-olympea-paco-rabanne-2015-eau-de-parfum|Olympēa Paco Rabanne 2015 Eau de Parfum]]

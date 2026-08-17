@@ -24,3 +24,16 @@ relations: []
 ---
 
 # Provençal lavender
+
+## Acordes e Facetas Relacionadas
+
+- [[Fresco|Fresco]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-lalique-encre-noire-sport|Encre Noire Sport]]
+- [[fragrance-etnia-factory-beijing|Factory, Beijing]]
+- [[fragrance-halloween-halloween-man-x|Halloween Man X]]
+- [[fragrance-dunhill-icon|Icon]]
+- [[fragrance-roja-parfums-oceania|Oceania]]
+- [[fragrance-viktor-rolf-spicebomb-infrared-viktor-rolf-2021-eau-de-toilette|Spicebomb Infrared Viktor & Rolf 2021 Eau de Toilette]]

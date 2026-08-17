@@ -39,3 +39,13 @@ No release `knowledge-v2-36bca79cd798`, **Narcissus** aparece em 1 fragrância(s
 ### Limite da automação
 
 Esta seção resume relações que já existiam no grafo. Ela não cria notas, não comprova ingrediente físico e não estima cheiro, concentração, intensidade, fixação, projeção ou evolução temporal.
+
+## Acordes e Facetas Relacionadas
+
+- [[floral|Floral]]
+- [[verde|Verde]]
+- [[Fresco|Fresco]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-geoffrey-beene-grey-flannel-geoffrey-beene-1975-eau-de-toilette|Grey Flannel Geoffrey Beene 1975 Eau de Toilette]]

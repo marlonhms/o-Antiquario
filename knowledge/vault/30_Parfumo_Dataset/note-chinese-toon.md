@@ -24,3 +24,11 @@ relations: []
 ---
 
 # Chinese toon
+
+## Acordes e Facetas Relacionadas
+
+- [[Fresco|Fresco]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-nishane-fan-your-flames|Fan Your Flames]]

@@ -24,3 +24,14 @@ relations: []
 ---
 
 # Tuberose
+
+## Acordes e Facetas Relacionadas
+
+- [[floral|Floral]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-black-ship-grooming-co-davy-jones|Davy Jones]]
+- [[fragrance-xerjoff-decas|Decas]]
+- [[fragrance-lacoste-l1212-blanc-eau-de-lacoste-l1212-blanc-lacoste-2010-eau-de-toilette|L.12.12 Blanc Eau de Lacoste L.12.12 Blanc Lacoste 2010 Eau de Toilette]]
+- [[fragrance-juliette-has-a-gun-not-a-perfume-juliette-has-a-gun-2010-eau-de-parfum|Not a Perfume Juliette Has A Gun 2010 Eau de Parfum]]

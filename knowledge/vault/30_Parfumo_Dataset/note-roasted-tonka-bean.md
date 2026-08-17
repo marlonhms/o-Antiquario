@@ -24,3 +24,11 @@ relations: []
 ---
 
 # Roasted tonka bean
+
+## Acordes e Facetas Relacionadas
+
+- [[Fresco|Fresco]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-parfums-de-marly-kalan|Kalan]]

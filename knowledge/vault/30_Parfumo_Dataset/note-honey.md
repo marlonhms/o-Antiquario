@@ -24,3 +24,18 @@ relations: []
 ---
 
 # Honey
+
+## Acordes e Facetas Relacionadas
+
+- [[gourmand|Gourmand]]
+- [[doce|Doce]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-mugler-amen-angel-men|A*Men Angel Men]]
+- [[fragrance-hermes-ambre-narguile|Ambre Narguilé]]
+- [[fragrance-mugler-angel-mugler-1992-eau-de-parfum|Angel Mugler 1992 Eau de Parfum]]
+- [[fragrance-giorgio-armani-armani-code-pour-femme-giorgio-armani-2006-eau-de-parfum|Armani Code pour Femme Giorgio Armani 2006 Eau de Parfum]]
+- [[fragrance-kilian-back-to-black-aphrodisiac-kilian-2009-perfume|Back to Black, Aphrodisiac Kilian 2009 Perfume]]
+- [[fragrance-serge-lutens-five-oclock-au-gingembre|Five o'clock au gingembre]]
+- [[fragrance-yves-saint-laurent-kouros-yves-saint-laurent-1981-eau-de-toilette|Kouros Yves Saint Laurent 1981 Eau de Toilette]]

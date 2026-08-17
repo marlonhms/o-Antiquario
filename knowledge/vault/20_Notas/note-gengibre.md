@@ -21,7 +21,19 @@ evidence:
     confidence: medium
     claim_scope: "Descritor factual do Wikidata"
 ---
-
-# Gengibre
-
+
+# Gengibre
+
 Nota olfativa catalogada automaticamente.
+
+## Acordes e Facetas Relacionadas
+
+- [[especiado|Especiado]]
+- [[Citricos|Cítricos]]
+- [[Fresco|Fresco]]
+
+## Presente nas Fragrâncias
+
+- [[crystal-noir-edt-q140266694|Crystal Noir EDT]]
+- [[opulent-dubai-q138766540|Opulent Dubai]]
+- [[tom-ford-for-men-q137182953|Tom Ford for Men]]

@@ -24,3 +24,14 @@ relations: []
 ---
 
 # Italian lemon
+
+## Acordes e Facetas Relacionadas
+
+- [[Fresco|Fresco]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-acqua-di-parma-arancia-di-capri|Arancia di Capri]]
+- [[fragrance-dior-dior-homme-sport|Dior Homme Sport]]
+- [[fragrance-versace-eros-versace-2020-eau-de-parfum|Eros Versace 2020 Eau de Parfum]]
+- [[fragrance-tiziana-terenzi-rosso-pompei|Rosso Pompei]]

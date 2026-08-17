@@ -40,7 +40,7 @@ accords:
   - { id: gourmand, pt: gourmand, en: gourmand, aliases: [comestível, edible], family_ids: [gourmand], source_ids: [internal_curated] }
   - { id: doce, pt: doce, en: sweet, aliases: [adocicado], family_ids: [gourmand, ambarada], source_ids: [internal_curated] }
   - { id: baunilhado, pt: baunilhado, en: vanilla, aliases: [], family_ids: [gourmand, ambarada], source_ids: [internal_curated] }
-  - { id: couro, pt: couro, en: leather, aliases: [couro-animalico], family_ids: [couro], source_ids: [internal_curated] }
+  - { id: couro, pt: couro, en: leather, aliases: [couro-animalico, leathery], family_ids: [couro], source_ids: [internal_curated] }
   - { id: aquatico, pt: aquático, en: aquatic, aliases: [marinho, marine], family_ids: [aquatica], source_ids: [internal_curated] }
   - { id: ozonico, pt: ozônico, en: ozonic, aliases: [ar, airy], family_ids: [aquatica, aldeidica], source_ids: [internal_curated] }
   - { id: salgado, pt: salgado, en: salty, aliases: [salino, saline], family_ids: [aquatica], source_ids: [internal_curated] }

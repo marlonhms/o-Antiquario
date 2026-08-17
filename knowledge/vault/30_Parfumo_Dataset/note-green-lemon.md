@@ -24,3 +24,11 @@ relations: []
 ---
 
 # Green lemon
+
+## Acordes e Facetas Relacionadas
+
+- [[Fresco|Fresco]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-guerlain-habit-rouge-guerlain-1965-eau-de-toilette|Habit Rouge Guerlain 1965 Eau de Toilette]]

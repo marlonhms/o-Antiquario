@@ -24,3 +24,7 @@ relations: []
 ---
 
 # Jo Malone
+
+## Fragrâncias no Acervo
+
+- [[fragrance-jo-malone-myrrh-tonka|Myrrh & Tonka]]

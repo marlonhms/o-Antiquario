@@ -24,3 +24,13 @@ relations: []
 ---
 
 # Vanilla absolute
+
+## Acordes e Facetas Relacionadas
+
+- [[Fresco|Fresco]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-kilian-back-to-black-aphrodisiac-kilian-2009-perfume|Back to Black, Aphrodisiac Kilian 2009 Perfume]]
+- [[fragrance-bdk-parfums-creme-de-cuir-bdk-parfums-2018-eau-de-parfum|Crème de Cuir bdk Parfums 2018 Eau de Parfum]]
+- [[fragrance-giorgio-armani-si-giorgio-armani-2013-eau-de-parfum|Sì Giorgio Armani 2013 Eau de Parfum]]

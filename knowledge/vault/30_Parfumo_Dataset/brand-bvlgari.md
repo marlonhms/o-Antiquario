@@ -24,3 +24,7 @@ relations: []
 ---
 
 # Bvlgari
+
+## Fragrâncias no Acervo
+
+- [[fragrance-bvlgari-aqva-amara-bvlgari-2014-eau-de-toilette|Aqva Amara Bvlgari 2014 Eau de Toilette]]

@@ -21,7 +21,17 @@ evidence:
     confidence: medium
     claim_scope: "Descritor factual do Wikidata"
 ---
-
-# Arroz
-
+
+# Arroz
+
 Nota olfativa catalogada automaticamente.
+
+## Acordes e Facetas Relacionadas
+
+- [[gourmand|Gourmand]]
+- [[doce|Doce]]
+- [[Atalcado|Atalcado]]
+
+## Presente nas Fragrâncias
+
+- [[horchata-de-vanille-q140075144|Horchata de Vanille]]

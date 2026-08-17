@@ -24,3 +24,12 @@ relations: []
 ---
 
 # Orris butter
+
+## Acordes e Facetas Relacionadas
+
+- [[Fresco|Fresco]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-xerjoff-apollonia|Apollonia]]
+- [[fragrance-amouage-interlude-black-iris|Interlude Black Iris]]

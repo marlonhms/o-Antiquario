@@ -24,3 +24,7 @@ relations: []
 ---
 
 # John Varvatos
+
+## Fragrâncias no Acervo
+
+- [[fragrance-john-varvatos-artisan-pure|Artisan Pure]]

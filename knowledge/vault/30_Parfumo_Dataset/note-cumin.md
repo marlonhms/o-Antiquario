@@ -24,3 +24,11 @@ relations: []
 ---
 
 # Cumin
+
+## Acordes e Facetas Relacionadas
+
+- [[especiado|Especiado]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-rasasi-daarej-pour-homme|Daarej pour Homme]]

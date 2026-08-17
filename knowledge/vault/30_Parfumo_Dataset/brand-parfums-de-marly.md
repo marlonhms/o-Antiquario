@@ -24,3 +24,10 @@ relations: []
 ---
 
 # Parfums de Marly
+
+## Fragrâncias no Acervo
+
+- [[fragrance-parfums-de-marly-godolphin|Godolphin]]
+- [[fragrance-parfums-de-marly-greenley|Greenley]]
+- [[fragrance-parfums-de-marly-kalan|Kalan]]
+- [[fragrance-parfums-de-marly-perseus|Perseus]]

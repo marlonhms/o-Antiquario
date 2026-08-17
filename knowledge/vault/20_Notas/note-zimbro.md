@@ -29,3 +29,23 @@ Nota aromática, amadeirada, fresca e levemente picante, muito utilizada para co
 ## Detalhes
 - **Família:** Coníferas
 - **Percepção:** Fresco, pinho, amadeirado, levemente canforado.
+
+## Acordes e Facetas Relacionadas
+
+- [[Fresco|Fresco]]
+- [[verde|Verde]]
+- [[Amadeirado|Amadeirado]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-marc-gebauer-air-tiger|Air Tiger]]
+- [[fragrance-azzaro-azzaro-pour-homme-azzaro-1978-eau-de-toilette|Azzaro pour Homme Azzaro 1978 Eau de Toilette]]
+- [[fragrance-versace-blue-jeans|Blue Jeans]]
+- [[fragrance-forage-bohemian-forage-1994-eau-de-parfum|Bohemian Forage 1994 Eau de Parfum]]
+- [[fragrance-guy-laroche-drakkar-noir-guy-laroche-1982-eau-de-toilette|Drakkar Noir Guy Laroche 1982 Eau de Toilette]]
+- [[fragrance-byredo-gypsy-water-byredo-2008-eau-de-parfum|Gypsy Water Byredo 2008 Eau de Parfum]]
+- [[fragrance-creed-himalaya|Himalaya]]
+- [[fragrance-dunhill-icon|Icon]]
+- [[fragrance-montblanc-individuel-montblanc-2003-eau-de-toilette|Individuel Montblanc 2003 Eau de Toilette]]
+- [[fragrance-roja-parfums-oceania|Oceania]]
+- [[fragrance-amouage-sunshine-man|Sunshine Man]]

@@ -21,7 +21,17 @@ evidence:
     confidence: medium
     claim_scope: "Descritor factual do Wikidata"
 ---
-
-# Manga
-
+
+# Manga
+
 Nota olfativa catalogada automaticamente.
+
+## Acordes e Facetas Relacionadas
+
+- [[frutado|Frutado]]
+
+## Presente nas Fragrâncias
+
+- [[ha-long-bay-q140237028|Ha Long Bay]]
+- [[opulent-dubai-q138766540|Opulent Dubai]]
+- [[virtus-q138773649|Virtus]]

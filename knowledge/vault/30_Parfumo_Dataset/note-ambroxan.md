@@ -24,3 +24,13 @@ relations: []
 ---
 
 # Ambroxan
+
+## Acordes e Facetas Relacionadas
+
+- [[ambarado|Ambarado]]
+- [[Atalcado|Atalcado]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-armaf-club-de-nuit-sillage-armaf-2020-eau-de-parfum|Club de Nuit Sillage Armaf 2020 Eau de Parfum]]
+- [[fragrance-prada-luna-rossa-prada-2012-eau-de-toilette|Luna Rossa Prada 2012 Eau de Toilette]]

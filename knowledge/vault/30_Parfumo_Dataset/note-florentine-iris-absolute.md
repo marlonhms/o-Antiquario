@@ -24,3 +24,11 @@ relations: []
 ---
 
 # Florentine iris absolute
+
+## Acordes e Facetas Relacionadas
+
+- [[floral|Floral]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-amouage-interlude-black-iris|Interlude Black Iris]]

@@ -24,3 +24,15 @@ relations: []
 ---
 
 # Opoponax
+
+## Acordes e Facetas Relacionadas
+
+- [[resinoso|Resinoso]]
+- [[ambarado|Ambarado]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-black-ship-grooming-co-davy-jones|Davy Jones]]
+- [[fragrance-xerjoff-decas|Decas]]
+- [[fragrance-burberry-london-for-men-burberry-2006-eau-de-toilette|London for Men Burberry 2006 Eau de Toilette]]
+- [[fragrance-tom-ford-noir-tom-ford-2012-eau-de-parfum|Noir Tom Ford 2012 Eau de Parfum]]

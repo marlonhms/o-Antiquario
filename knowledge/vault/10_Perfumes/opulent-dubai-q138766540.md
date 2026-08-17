@@ -47,27 +47,33 @@ relations:
 - predicate: has-base-note
   target: antiquario:olfactory-note:cedro
 ---
+
+# Opulent Dubai
+
+## Base factual
+
+- QID: `Q138766540`
+- Marca: Lattafa
+- Perfumista: não informado no Wikidata
+- País: Emirados Árabes Unidos
+- Ano: 2025
+- Site oficial: https://www.lattafa-usa.com/products/opulent-dubai
+- Descritores olfativos (`P5872`, sem camada de pirâmide): ambergris scent, mango smell, smell of benzoin, smell of cedarwood, smell of ginger, smell of grapefruit, smell of jasmine, smell of lemon, smell of oakmoss, smell of violets, woody smell
+
+## Enriquecimento editorial obrigatório
+
+- [ ] Confirmar a identidade e a concentração da fragrância.
+- [ ] Validar os descritores Wikidata e classificar família, notas, camadas e acordes usando a taxonomia do Antiquário.
+- [ ] Registrar contexto de uso e desempenho com método, amostra e confiança.
+- [ ] Adicionar evidências permitidas para cada afirmação editorial.
+- [ ] Mover este arquivo para `10_Perfumes` somente após revisão humana.
+
+## Limite de uso
+
+Este rascunho não é uma recomendação e não deve ser usado pelo motor de ranking. Não inferir notas, desempenho, preço ou disponibilidade a partir de nome, marca ou país.
+
+## Conexões do Grafo
 
-# Opulent Dubai
-
-## Base factual
-
-- QID: `Q138766540`
-- Marca: Lattafa
-- Perfumista: não informado no Wikidata
-- País: Emirados Árabes Unidos
-- Ano: 2025
-- Site oficial: https://www.lattafa-usa.com/products/opulent-dubai
-- Descritores olfativos (`P5872`, sem camada de pirâmide): ambergris scent, mango smell, smell of benzoin, smell of cedarwood, smell of ginger, smell of grapefruit, smell of jasmine, smell of lemon, smell of oakmoss, smell of violets, woody smell
-
-## Enriquecimento editorial obrigatório
-
-- [ ] Confirmar a identidade e a concentração da fragrância.
-- [ ] Validar os descritores Wikidata e classificar família, notas, camadas e acordes usando a taxonomia do Antiquário.
-- [ ] Registrar contexto de uso e desempenho com método, amostra e confiança.
-- [ ] Adicionar evidências permitidas para cada afirmação editorial.
-- [ ] Mover este arquivo para `10_Perfumes` somente após revisão humana.
-
-## Limite de uso
-
-Este rascunho não é uma recomendação e não deve ser usado pelo motor de ranking. Não inferir notas, desempenho, preço ou disponibilidade a partir de nome, marca ou país.
+- **Notas de Saída:** [[note-manga|Manga]], [[note-gengibre|Gengibre]], [[note-grapefruit|Grapefruit]], [[note-limao|Limao]]
+- **Notas de Coração:** [[note-jasmim|Jasmim]], [[note-violetas|Violetas]]
+- **Notas de Fundo:** [[note-ambergris|Ambergris]], [[note-benzoin|Benzoin]], [[note-cedarwood|Cedarwood]], [[note-oakmoss|Oakmoss]], [[note-cedro|Cedro]]

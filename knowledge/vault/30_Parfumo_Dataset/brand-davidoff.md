@@ -24,3 +24,7 @@ relations: []
 ---
 
 # Davidoff
+
+## Fragrâncias no Acervo
+
+- [[fragrance-davidoff-cool-water-intense|Cool Water Intense]]

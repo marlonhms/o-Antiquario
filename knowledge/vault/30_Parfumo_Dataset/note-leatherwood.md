@@ -24,3 +24,11 @@ relations: []
 ---
 
 # Leatherwood
+
+## Acordes e Facetas Relacionadas
+
+- [[Fresco|Fresco]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-versace-versace-pour-homme-oud-noir|Versace pour Homme Oud Noir]]

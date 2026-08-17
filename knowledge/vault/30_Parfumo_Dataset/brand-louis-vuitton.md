@@ -24,3 +24,9 @@ relations: []
 ---
 
 # Louis Vuitton
+
+## Fragrâncias no Acervo
+
+- [[fragrance-louis-vuitton-limmensite|L'Immensité]]
+- [[fragrance-louis-vuitton-nouveau-monde|Nouveau Monde]]
+- [[fragrance-louis-vuitton-pacific-chill|Pacific Chill]]

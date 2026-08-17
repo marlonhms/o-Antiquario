@@ -24,3 +24,11 @@ relations: []
 ---
 
 # Dried fruits
+
+## Acordes e Facetas Relacionadas
+
+- [[Fresco|Fresco]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-montale-chocolate-greedy|Chocolate Greedy]]

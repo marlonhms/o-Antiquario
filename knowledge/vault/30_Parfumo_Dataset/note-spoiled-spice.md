@@ -24,3 +24,11 @@ relations: []
 ---
 
 # Spoiled Spice
+
+## Acordes e Facetas Relacionadas
+
+- [[Fresco|Fresco]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-etnia-factory-beijing|Factory, Beijing]]

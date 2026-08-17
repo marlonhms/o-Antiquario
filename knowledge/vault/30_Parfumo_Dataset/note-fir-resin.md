@@ -24,3 +24,11 @@ relations: []
 ---
 
 # Fir resin
+
+## Acordes e Facetas Relacionadas
+
+- [[Fresco|Fresco]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-abercrombie-fitch-fierce-abercrombie-fitch-2002-cologne|Fierce Abercrombie & Fitch 2002 Cologne]]

@@ -24,3 +24,12 @@ relations: []
 ---
 
 # Mango
+
+## Acordes e Facetas Relacionadas
+
+- [[frutado|Frutado]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-gisada-ambassador-for-men|Ambassador for Men]]
+- [[fragrance-chopard-casmir-chopard-1991-eau-de-parfum|Cašmir Chopard 1991 Eau de Parfum]]

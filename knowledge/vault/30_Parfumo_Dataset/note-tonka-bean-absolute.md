@@ -24,3 +24,14 @@ relations: []
 ---
 
 # Tonka bean absolute
+
+## Acordes e Facetas Relacionadas
+
+- [[Fresco|Fresco]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-tom-ford-bitter-peach-tom-ford-2020-eau-de-parfum|Bitter Peach Tom Ford 2020 Eau de Parfum]]
+- [[fragrance-van-cleef-arpels-bois-dore|Bois Doré]]
+- [[fragrance-bond-no-9-chinatown-bond-no-9-2010-solid-perfume|Chinatown Bond No. 9 2010 Solid Perfume]]
+- [[fragrance-bdk-parfums-velvet-tonka|Velvet Tonka]]

@@ -24,3 +24,13 @@ relations: []
 ---
 
 # Florentine iris
+
+## Acordes e Facetas Relacionadas
+
+- [[floral|Floral]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-black-ship-grooming-co-davy-jones|Davy Jones]]
+- [[fragrance-xerjoff-decas|Decas]]
+- [[fragrance-editions-de-parfums-frederic-malle-french-lover-bois-dorage|French Lover Bois d'Orage]]

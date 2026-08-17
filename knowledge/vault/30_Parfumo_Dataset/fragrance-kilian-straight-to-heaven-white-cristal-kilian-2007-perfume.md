@@ -23,7 +23,10 @@ evidence:
   kind: open_source
   license: CC0-1.0
   confidence: medium
-  claim_scope: Estrutura da pirâmide olfativa
+  claim_scope: Identidade e campos olfativos estruturados disponíveis no registro
+    do dataset.
+  locator: https://www.parfumo.com/Perfumes/Kilian/straight-to-heaven-white-cristal-perfume
+  retrieved_at: '2026-08-17'
 relations:
 - predicate: belongs-to-brand
   target: antiquario:brand:kilian
@@ -49,6 +52,20 @@ relations:
   target: antiquario:olfactory-note:ambar
 - predicate: has-base-note
   target: antiquario:olfactory-note:musk
+- predicate: has-concentration
+  target: antiquario:concentration:perfume
+- predicate: has-accord
+  target: antiquario:accord:amadeirado
+- predicate: has-accord
+  target: antiquario:accord:especiado
+- predicate: has-accord
+  target: antiquario:accord:terroso
+- predicate: has-accord
+  target: antiquario:accord:doce
+- predicate: has-accord
+  target: antiquario:accord:defumado
+- predicate: created-by
+  target: antiquario:perfumer:sidonie-lancesseur
 ---
 
 # Straight to Heaven, White Cristal Kilian 2007 Perfume
@@ -60,3 +77,13 @@ relations:
 - **Saída:** [[note-limao-siciliano]], [[note-rum]], [[note-patchouli]], [[note-nutmeg]], [[note-musk]]
 - **Coração:** [[note-cedar]], [[note-patchouli]], [[note-nutmeg]], [[note-musk]]
 - **Fundo:** [[note-ambar]], [[note-musk]]
+
+## Conexões do Grafo
+
+- **Casa / Marca:** [[brand-kilian|Kilian]]
+- **Perfumista(s):** [[sidonie-lancesseur|Sidonie Lancesseur]]
+- **Concentração:** [[perfume|Perfume]]
+- **Acordes Principais:** [[Amadeirado|Amadeirado]], [[especiado|Especiado]], [[terroso|Terroso]], [[doce|Doce]], [[defumado|Defumado]]
+- **Notas de Saída:** [[note-limao-siciliano|Limão Siciliano]], [[note-rum|Rum]], [[note-patchouli|Patchouli]], [[note-nutmeg|Nutmeg]], [[note-musk|Musk]]
+- **Notas de Coração:** [[note-cedar|Cedar]], [[note-patchouli|Patchouli]], [[note-nutmeg|Nutmeg]], [[note-musk|Musk]]
+- **Notas de Fundo:** [[note-ambar|Âmbar (Amber)]], [[note-musk|Musk]]

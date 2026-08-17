@@ -35,3 +35,7 @@ A família olfativa não basta para determinar adequação. Mesmo um perfume de 
 ## Exemplo
 
 [[Brisa-Vetiver|Brisa Vetiver]] possui perfil sintético de projeção moderada e será usado para testar essa regra.
+
+## Fragrâncias Recomendadas
+
+- [[Brisa-Vetiver|Brisa Vetiver]]

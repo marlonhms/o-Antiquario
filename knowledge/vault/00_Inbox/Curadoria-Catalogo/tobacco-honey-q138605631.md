@@ -48,3 +48,7 @@ relations: []
 ## Limite de uso
 
 Este rascunho não é uma recomendação e não deve ser usado pelo motor de ranking. Não inferir notas, desempenho, preço ou disponibilidade a partir de nome, marca ou país.
+
+## Conexões do Grafo
+
+- **Casa / Marca:** [[brand-guerlain|Guerlain]]

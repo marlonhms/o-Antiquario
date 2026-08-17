@@ -24,3 +24,11 @@ relations: []
 ---
 
 # Hemp
+
+## Acordes e Facetas Relacionadas
+
+- [[Fresco|Fresco]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-m-micallef-desirtoxic|DesirToxic]]

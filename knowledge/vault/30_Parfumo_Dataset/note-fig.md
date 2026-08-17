@@ -24,3 +24,12 @@ relations: []
 ---
 
 # Fig
+
+## Acordes e Facetas Relacionadas
+
+- [[frutado|Frutado]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-bdk-parfums-gris-charnel-bdk-parfums-2022-extrait|Gris Charnel bdk Parfums 2022 Extrait]]
+- [[fragrance-le-labo-santal-33-le-labo-2011-eau-de-parfum|Santal 33 Le Labo 2011 Eau de Parfum]]

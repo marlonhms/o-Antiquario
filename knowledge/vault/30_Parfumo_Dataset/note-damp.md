@@ -24,3 +24,11 @@ relations: []
 ---
 
 # Damp
+
+## Acordes e Facetas Relacionadas
+
+- [[Fresco|Fresco]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-acorelle-be-positive---the-blanc|Be Positive - Thé Blanc]]

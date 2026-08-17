@@ -24,3 +24,11 @@ relations: []
 ---
 
 # Infestation
+
+## Acordes e Facetas Relacionadas
+
+- [[Fresco|Fresco]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-borsari-1870-giacinto|Giacinto]]

@@ -24,3 +24,13 @@ relations: []
 ---
 
 # Caraway
+
+## Acordes e Facetas Relacionadas
+
+- [[Fresco|Fresco]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-azzaro-azzaro-pour-homme-azzaro-1978-eau-de-toilette|Azzaro pour Homme Azzaro 1978 Eau de Toilette]]
+- [[fragrance-tom-ford-noir-tom-ford-2012-eau-de-parfum|Noir Tom Ford 2012 Eau de Parfum]]
+- [[fragrance-comme-des-garcons-wonderwood|Wonderwood]]

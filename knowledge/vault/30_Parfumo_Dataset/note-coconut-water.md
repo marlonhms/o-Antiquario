@@ -24,3 +24,11 @@ relations: []
 ---
 
 # Coconut water
+
+## Acordes e Facetas Relacionadas
+
+- [[Fresco|Fresco]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-davidoff-cool-water-intense|Cool Water Intense]]

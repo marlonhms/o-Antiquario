@@ -21,7 +21,20 @@ evidence:
     confidence: medium
     claim_scope: "Descritor factual do Wikidata"
 ---
-
-# Ylang Ylang
-
+
+# Ylang Ylang
+
 Nota olfativa catalogada automaticamente.
+
+## Acordes e Facetas Relacionadas
+
+- [[floral|Floral]]
+
+## Presente nas Fragrâncias
+
+- [[dune-q17105080|Dune]]
+- [[fragrance-lacoste-l1212-blanc-eau-de-lacoste-l1212-blanc-lacoste-2010-eau-de-toilette|L.12.12 Blanc Eau de Lacoste L.12.12 Blanc Lacoste 2010 Eau de Toilette]]
+- [[fragrance-acqua-di-parma-mandorlo-di-sicilia|Mandorlo di Sicilia]]
+- [[naughty-alice-q139990627|Naughty Alice]]
+- [[fragrance-roja-parfums-oceania|Oceania]]
+- [[fragrance-jil-sander-sun-jil-sander-1989-eau-de-toilette|Sun Jil Sander 1989 Eau de Toilette]]

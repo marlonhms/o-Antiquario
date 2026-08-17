@@ -24,3 +24,11 @@ relations: []
 ---
 
 # Gun powder
+
+## Acordes e Facetas Relacionadas
+
+- [[Fresco|Fresco]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-creed-himalaya|Himalaya]]

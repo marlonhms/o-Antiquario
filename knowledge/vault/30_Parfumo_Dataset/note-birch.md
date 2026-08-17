@@ -24,3 +24,13 @@ relations: []
 ---
 
 # Birch
+
+## Acordes e Facetas Relacionadas
+
+- [[Amadeirado|Amadeirado]]
+- [[antiquario:accord:couro|Couro]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-armaf-club-de-nuit-intense-man-armaf-eau-de-parfum|Club de Nuit Intense Man Armaf Eau de Parfum]]
+- [[fragrance-bdk-parfums-creme-de-cuir-bdk-parfums-2018-eau-de-parfum|Crème de Cuir bdk Parfums 2018 Eau de Parfum]]

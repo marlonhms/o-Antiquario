@@ -21,7 +21,16 @@ evidence:
     confidence: medium
     claim_scope: "Descritor factual do Wikidata"
 ---
-
-# Framboesa
-
+
+# Framboesa
+
 Nota olfativa catalogada automaticamente.
+
+## Acordes e Facetas Relacionadas
+
+- [[frutado|Frutado]]
+
+## Presente nas Fragrâncias
+
+- [[egeo-dolce-506bcad4|Egeo Dolce]]
+- [[eternity-moment-q140003429|Eternity Moment]]

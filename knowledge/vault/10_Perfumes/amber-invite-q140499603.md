@@ -39,27 +39,32 @@ relations:
 - predicate: has-base-note
   target: antiquario:olfactory-note:vetiver
 ---
+
+# Amber Invite
+
+## Base factual
+
+- QID: `Q140499603`
+- Marca: Eternal Perfume Oils
+- Perfumista: não informado no Wikidata
+- País: Estados Unidos
+- Ano: não informado no Wikidata
+- Site oficial: https://eternalperfumeoils.com/products/amber-invite
+- Descritores olfativos (`P5872`, sem camada de pirâmide): amber smell, sandalwood fragrance, smell of cinnamon, smell of dates, smell of frankincense, smell of labdanum, smell of vetiver
+
+## Enriquecimento editorial obrigatório
+
+- [ ] Confirmar a identidade e a concentração da fragrância.
+- [ ] Validar os descritores Wikidata e classificar família, notas, camadas e acordes usando a taxonomia do Antiquário.
+- [ ] Registrar contexto de uso e desempenho com método, amostra e confiança.
+- [ ] Adicionar evidências permitidas para cada afirmação editorial.
+- [ ] Mover este arquivo para `10_Perfumes` somente após revisão humana.
+
+## Limite de uso
+
+Este rascunho não é uma recomendação e não deve ser usado pelo motor de ranking. Não inferir notas, desempenho, preço ou disponibilidade a partir de nome, marca ou país.
+
+## Conexões do Grafo
 
-# Amber Invite
-
-## Base factual
-
-- QID: `Q140499603`
-- Marca: Eternal Perfume Oils
-- Perfumista: não informado no Wikidata
-- País: Estados Unidos
-- Ano: não informado no Wikidata
-- Site oficial: https://eternalperfumeoils.com/products/amber-invite
-- Descritores olfativos (`P5872`, sem camada de pirâmide): amber smell, sandalwood fragrance, smell of cinnamon, smell of dates, smell of frankincense, smell of labdanum, smell of vetiver
-
-## Enriquecimento editorial obrigatório
-
-- [ ] Confirmar a identidade e a concentração da fragrância.
-- [ ] Validar os descritores Wikidata e classificar família, notas, camadas e acordes usando a taxonomia do Antiquário.
-- [ ] Registrar contexto de uso e desempenho com método, amostra e confiança.
-- [ ] Adicionar evidências permitidas para cada afirmação editorial.
-- [ ] Mover este arquivo para `10_Perfumes` somente após revisão humana.
-
-## Limite de uso
-
-Este rascunho não é uma recomendação e não deve ser usado pelo motor de ranking. Não inferir notas, desempenho, preço ou disponibilidade a partir de nome, marca ou país.
+- **Notas de Coração:** [[note-canela|Canela]], [[note-tamara|Tamara]]
+- **Notas de Fundo:** [[note-ambar|Âmbar (Amber)]], [[note-sandalo|Sândalo (Sandalwood)]], [[note-incenso|Incenso]], [[note-labdano|Labdano]], [[note-vetiver|Vetiver]]

@@ -24,3 +24,12 @@ relations: []
 ---
 
 # Pine needle
+
+## Acordes e Facetas Relacionadas
+
+- [[Fresco|Fresco]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-byredo-gypsy-water-byredo-2008-eau-de-parfum|Gypsy Water Byredo 2008 Eau de Parfum]]
+- [[fragrance-hugo-boss-hugo-hugo-boss-1995-eau-de-toilette|Hugo Hugo Boss 1995 Eau de Toilette]]

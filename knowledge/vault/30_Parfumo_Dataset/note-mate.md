@@ -24,3 +24,12 @@ relations: []
 ---
 
 # Maté
+
+## Acordes e Facetas Relacionadas
+
+- [[verde|Verde]]
+- [[Fresco|Fresco]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-xerjoff-torino22|Torino22]]

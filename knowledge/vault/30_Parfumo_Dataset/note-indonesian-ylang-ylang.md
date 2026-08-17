@@ -24,3 +24,11 @@ relations: []
 ---
 
 # Indonesian ylang-ylang
+
+## Acordes e Facetas Relacionadas
+
+- [[Fresco|Fresco]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-xerjoff-casamorati---1888|Casamorati - 1888]]

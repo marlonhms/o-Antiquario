@@ -24,3 +24,11 @@ relations: []
 ---
 
 # Ambrette seed absolute
+
+## Acordes e Facetas Relacionadas
+
+- [[Fresco|Fresco]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-prada-luna-rossa-prada-2012-eau-de-toilette|Luna Rossa Prada 2012 Eau de Toilette]]

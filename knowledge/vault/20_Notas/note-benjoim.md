@@ -21,7 +21,18 @@ evidence:
     confidence: medium
     claim_scope: "Descritor factual do Wikidata"
 ---
-
-# Benjoim
-
+
+# Benjoim
+
 Nota olfativa catalogada automaticamente.
+
+## Acordes e Facetas Relacionadas
+
+- [[resinoso|Resinoso]]
+- [[ambarado|Ambarado]]
+
+## Presente nas Fragrâncias
+
+- [[dune-q17105080|Dune]]
+- [[khamrah-q140499690|Khamrah]]
+- [[malbec-506bcad4|Malbec]]

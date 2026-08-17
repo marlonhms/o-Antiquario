@@ -3,46 +3,59 @@ schema_version: 1
 id: antiquario:fragrance:parfumo-mancera-instant-crush
 project: o-antiquario
 type: fragrance
-title: "Instant Crush"
+title: Instant Crush
 aliases: []
 external_ids: {}
-tags: [perfume, parfumo, draft]
-source_ids: [parfumo_dataset]
+tags:
+- perfume
+- parfumo
+- draft
+source_ids:
+- parfumo_dataset
 license: CC0-1.0
 confidence: medium
 review_status: approved
 updated_at: 2026-07-23
 language: pt-BR
-summary: "Fragrância extraída do Parfumo Fragrance Dataset (TidyTuesday)."
+summary: Fragrância extraída do Parfumo Fragrance Dataset (TidyTuesday).
 evidence:
-  - source_id: parfumo_dataset
-    kind: open_source
-    license: CC0-1.0
-    confidence: medium
-    claim_scope: "Estrutura da pirâmide olfativa"
+- source_id: parfumo_dataset
+  kind: open_source
+  license: CC0-1.0
+  confidence: medium
+  claim_scope: Identidade e campos olfativos estruturados disponíveis no registro
+    do dataset.
+  locator: https://www.parfumo.com/Perfumes/Mancera/Instant_Crush
+  retrieved_at: '2026-08-17'
 relations:
-  - predicate: belongs-to-brand
-    target: antiquario:brand:mancera
-  - predicate: has-top-note
-    target: antiquario:olfactory-note:saffron
-  - predicate: has-top-note
-    target: antiquario:olfactory-note:citrus-fruits
-  - predicate: has-top-note
-    target: antiquario:olfactory-note:ginger
-  - predicate: has-heart-note
-    target: antiquario:olfactory-note:ambar
-  - predicate: has-heart-note
-    target: antiquario:olfactory-note:egyptian-jasmine
-  - predicate: has-heart-note
-    target: antiquario:olfactory-note:moroccan-rose
-  - predicate: has-base-note
-    target: antiquario:olfactory-note:white-musk
-  - predicate: has-base-note
-    target: antiquario:olfactory-note:baunilha
-  - predicate: has-base-note
-    target: antiquario:olfactory-note:oakmoss
-  - predicate: has-base-note
-    target: antiquario:olfactory-note:sandalo
+- predicate: belongs-to-brand
+  target: antiquario:brand:mancera
+- predicate: has-top-note
+  target: antiquario:olfactory-note:saffron
+- predicate: has-top-note
+  target: antiquario:olfactory-note:citrus-fruits
+- predicate: has-top-note
+  target: antiquario:olfactory-note:ginger
+- predicate: has-heart-note
+  target: antiquario:olfactory-note:ambar
+- predicate: has-heart-note
+  target: antiquario:olfactory-note:egyptian-jasmine
+- predicate: has-heart-note
+  target: antiquario:olfactory-note:moroccan-rose
+- predicate: has-base-note
+  target: antiquario:olfactory-note:white-musk
+- predicate: has-base-note
+  target: antiquario:olfactory-note:baunilha
+- predicate: has-base-note
+  target: antiquario:olfactory-note:oakmoss
+- predicate: has-base-note
+  target: antiquario:olfactory-note:sandalo
+- predicate: has-accord
+  target: antiquario:accord:doce
+- predicate: has-accord
+  target: antiquario:accord:floral
+- predicate: has-accord
+  target: antiquario:accord:especiado
 ---
 
 # Instant Crush
@@ -54,3 +67,11 @@ relations:
 - **Saída:** [[note-saffron]], [[note-citrus-fruits]], [[note-ginger]]
 - **Coração:** [[note-ambar]], [[note-egyptian-jasmine]], [[note-moroccan-rose]]
 - **Fundo:** [[note-white-musk]], [[Baunilha]], [[note-oakmoss]], [[note-sandalo]]
+
+## Conexões do Grafo
+
+- **Casa / Marca:** [[brand-mancera|Mancera]]
+- **Acordes Principais:** [[doce|Doce]], [[floral|Floral]], [[especiado|Especiado]]
+- **Notas de Saída:** [[note-saffron|Saffron]], [[note-citrus-fruits|Citrus fruits]], [[note-ginger|Ginger]]
+- **Notas de Coração:** [[note-ambar|Âmbar (Amber)]], [[note-egyptian-jasmine|Egyptian jasmine]], [[note-moroccan-rose|Moroccan rose]]
+- **Notas de Fundo:** [[note-white-musk|White Musk]], [[Baunilha|Baunilha]], [[note-oakmoss|Oakmoss]], [[note-sandalo|Sândalo (Sandalwood)]]

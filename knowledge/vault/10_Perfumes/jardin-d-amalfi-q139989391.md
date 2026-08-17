@@ -43,27 +43,34 @@ relations:
 - predicate: has-base-note
   target: antiquario:olfactory-note:almiscar-branco
 ---
+
+# Jardin d'Amalfi
+
+## Base factual
+
+- QID: `Q139989391`
+- Marca: Creed
+- Perfumista: Olivier Creed
+- País: França
+- Ano: 2011
+- Site oficial: https://creedboutique.com/products/jardin-d-amalfi
+- Descritores olfativos (`P5872`, sem camada de pirâmide): pink pepper smell, smell of apples, smell of cedarwood, smell of jasmine, smell of lemon, smell of rose, smell of tangerine, smell of vetiver, smell of white musk
+
+## Enriquecimento editorial obrigatório
+
+- [ ] Confirmar a identidade e a concentração da fragrância.
+- [ ] Validar os descritores Wikidata e classificar família, notas, camadas e acordes usando a taxonomia do Antiquário.
+- [ ] Registrar contexto de uso e desempenho com método, amostra e confiança.
+- [ ] Adicionar evidências permitidas para cada afirmação editorial.
+- [ ] Mover este arquivo para `10_Perfumes` somente após revisão humana.
+
+## Limite de uso
+
+Este rascunho não é uma recomendação e não deve ser usado pelo motor de ranking. Não inferir notas, desempenho, preço ou disponibilidade a partir de nome, marca ou país.
+
+## Conexões do Grafo
 
-# Jardin d'Amalfi
-
-## Base factual
-
-- QID: `Q139989391`
-- Marca: Creed
-- Perfumista: Olivier Creed
-- País: França
-- Ano: 2011
-- Site oficial: https://creedboutique.com/products/jardin-d-amalfi
-- Descritores olfativos (`P5872`, sem camada de pirâmide): pink pepper smell, smell of apples, smell of cedarwood, smell of jasmine, smell of lemon, smell of rose, smell of tangerine, smell of vetiver, smell of white musk
-
-## Enriquecimento editorial obrigatório
-
-- [ ] Confirmar a identidade e a concentração da fragrância.
-- [ ] Validar os descritores Wikidata e classificar família, notas, camadas e acordes usando a taxonomia do Antiquário.
-- [ ] Registrar contexto de uso e desempenho com método, amostra e confiança.
-- [ ] Adicionar evidências permitidas para cada afirmação editorial.
-- [ ] Mover este arquivo para `10_Perfumes` somente após revisão humana.
-
-## Limite de uso
-
-Este rascunho não é uma recomendação e não deve ser usado pelo motor de ranking. Não inferir notas, desempenho, preço ou disponibilidade a partir de nome, marca ou país.
+- **Casa / Marca:** [[brand-creed|Creed]]
+- **Notas de Saída:** [[note-limao|Limao]], [[note-tangerina|Tangerina]], [[note-maca|Maca]], [[note-pimenta-rosa|Pimenta Rosa]]
+- **Notas de Coração:** [[note-jasmim|Jasmim]], [[note-rosa|Rosa]]
+- **Notas de Fundo:** [[note-cedro|Cedro]], [[note-vetiver|Vetiver]], [[note-almiscar-branco|Almiscar Branco]]

@@ -24,3 +24,13 @@ relations: []
 ---
 
 # Atlas cedar
+
+## Acordes e Facetas Relacionadas
+
+- [[Amadeirado|Amadeirado]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-dior-dior-homme-dior-2020-eau-de-toilette|Dior Homme Dior 2020 Eau de Toilette]]
+- [[fragrance-xerjoff-fars|Fars]]
+- [[fragrance-acqua-di-parma-oud-acqua-di-parma-2019-eau-de-parfum|Oud Acqua di Parma 2019 Eau de Parfum]]

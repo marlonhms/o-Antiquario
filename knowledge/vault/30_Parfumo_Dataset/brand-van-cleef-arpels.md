@@ -24,3 +24,8 @@ relations: []
 ---
 
 # Van Cleef & Arpels
+
+## Fragrâncias no Acervo
+
+- [[fragrance-van-cleef-arpels-bois-dore|Bois Doré]]
+- [[fragrance-van-cleef-arpels-midnight-in-paris-van-cleef-arpels-2010-eau-de-toilette|Midnight in Paris Van Cleef & Arpels 2010 Eau de Toilette]]

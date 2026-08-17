@@ -48,3 +48,8 @@ relations:
 
 - [ ] Confirmar identidade e acurácia dos fatos declarados.
 - [ ] Mover para `10_Perfumes` após revisão humana.
+
+## Conexões do Grafo
+
+- **Casa / Marca:** [[O-Boticario|O Boticário]]
+- **Concentração:** [[Eau-De-Parfum|Eau de Parfum]]

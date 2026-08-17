@@ -24,3 +24,11 @@ relations: []
 ---
 
 # Indian tuberose
+
+## Acordes e Facetas Relacionadas
+
+- [[Fresco|Fresco]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-giorgio-armani-my-way-giorgio-armani-2020-eau-de-parfum|My Way Giorgio Armani 2020 Eau de Parfum]]

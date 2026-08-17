@@ -24,3 +24,17 @@ relations: []
 ---
 
 # Moss
+
+## Acordes e Facetas Relacionadas
+
+- [[Fresco|Fresco]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-gisada-ambassador-for-men|Ambassador for Men]]
+- [[fragrance-amouage-beach-hut-man|Beach Hut Man]]
+- [[fragrance-m-micallef-desirtoxic|DesirToxic]]
+- [[fragrance-hugo-boss-hugo-hugo-boss-1995-eau-de-toilette|Hugo Hugo Boss 1995 Eau de Toilette]]
+- [[fragrance-parfums-de-marly-kalan|Kalan]]
+- [[fragrance-roja-parfums-oceania|Oceania]]
+- [[fragrance-nautica-voyage-nautica-2006-eau-de-toilette|Voyage Nautica 2006 Eau de Toilette]]

@@ -24,3 +24,11 @@ relations: []
 ---
 
 # Blood orange
+
+## Acordes e Facetas Relacionadas
+
+- [[Fresco|Fresco]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-parfums-de-marly-kalan|Kalan]]

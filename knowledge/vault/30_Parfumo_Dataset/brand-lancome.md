@@ -24,3 +24,7 @@ relations: []
 ---
 
 # Lancôme
+
+## Fragrâncias no Acervo
+
+- [[fragrance-lancome-la-vie-est-belle-leau-de-parfum|La Vie est Belle L'Eau de Parfum]]

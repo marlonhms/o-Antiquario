@@ -24,3 +24,8 @@ relations: []
 ---
 
 # Hugo Boss
+
+## Fragrâncias no Acervo
+
+- [[fragrance-hugo-boss-hugo-hugo-boss-1995-eau-de-toilette|Hugo Hugo Boss 1995 Eau de Toilette]]
+- [[fragrance-hugo-boss-the-scent-for-him-hugo-boss-2015-eau-de-toilette|The Scent for Him Hugo Boss 2015 Eau de Toilette]]

@@ -24,3 +24,12 @@ relations: []
 ---
 
 # Rose absolute
+
+## Acordes e Facetas Relacionadas
+
+- [[Fresco|Fresco]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-paco-rabanne-million-paco-rabanne-2008-eau-de-toilette|Million Paco Rabanne 2008 Eau de Toilette]]
+- [[fragrance-bdk-parfums-velvet-tonka|Velvet Tonka]]

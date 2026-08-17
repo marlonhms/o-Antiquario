@@ -24,3 +24,11 @@ relations: []
 ---
 
 # Must
+
+## Acordes e Facetas Relacionadas
+
+- [[Fresco|Fresco]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-black-ship-grooming-co-davy-jones|Davy Jones]]

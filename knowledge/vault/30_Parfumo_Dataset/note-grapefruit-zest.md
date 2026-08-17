@@ -24,3 +24,11 @@ relations: []
 ---
 
 # Grapefruit zest
+
+## Acordes e Facetas Relacionadas
+
+- [[Fresco|Fresco]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-dolce-gabbana-light-blue-pour-homme-forever|Light Blue pour Homme Forever]]

@@ -27,6 +27,14 @@ Os dados estruturados relevantes são publicados sob CC0. O importador deverá r
 
 A taxonomia multilíngue v2 foi aprovada pelo proprietário em 17/08/2026 exclusivamente para staging, sob CC BY 4.0. O pipeline fixa o commit, registra SHA-256 por arquivo e preserva idioma, termo original, método, synset e localizador. Seus termos podem gerar candidatos de `odor-descriptor` e `odor-quality`, mas não entram automaticamente na taxonomia canônica e não comprovam notas ou pirâmides de perfumes.
 
+### Menini et al. 2022 — Core Científico
+
+O artigo da taxonomia multilíngue foi aprovado para síntese no Core Científico em 17/08/2026. O PDF local informa CC BY-NC 4.0, enquanto a política atual da ACL Anthology informa CC BY 4.0 para materiais posteriores a 2016. O manifesto adota a licença mais restritiva do PDF até revisão específica. O artigo documenta método, avaliação e limites; os arquivos TSV continuam separados em staging.
+
+### Vechiato e Vidotti 2024 — Core Científico
+
+O preprint sobre IA aplicada à Perfumaria foi aprovado para síntese no Core Científico em 17/08/2026 sob CC BY 4.0. Ele é classificado como panorama exploratório com confiança média: pode orientar metadados, arquitetura da informação, vocabulários e experiência, mas não validar claims comerciais nem atributos de perfumes específicos.
+
 ### Open Beauty Facts — camada ODbL isolada
 
 O banco está sob ODbL e seus conteúdos individuais sob Database Contents License. Dados derivados dessa fonte não serão fundidos fisicamente ao catálogo core. Imagens ficam fora do MVP.
@@ -75,6 +83,7 @@ O comando verifica schema, URLs HTTPS, IDs únicos, datas de revisão e coerênc
 - [Licenciamento do Wikidata](https://www.wikidata.org/wiki/Wikidata:Licensing)
 - [Taxonomia multilíngue ODEUROPA](https://github.com/Odeuropa/multilingualTaxonomies)
 - [Artigo da taxonomia ODEUROPA](https://aclanthology.org/2022.lrec-1.429/)
+- [Preprint sobre IA aplicada à Perfumaria](https://preprints.scielo.org/index.php/scielo/preprint/view/9608/version/10151)
 - [Acesso e boas práticas do Wikidata](https://www.wikidata.org/wiki/Help:Data_access)
 - [Licenças do ecossistema Open Food Facts](https://openfoodfacts.github.io/documentation/docs/Product-Opener/api/tutorials/license-be-on-the-legal-side/)
 - [API do Open Beauty Facts](https://openfoodfacts.github.io/documentation/docs/Product-Opener/api/tutorials/scanning-cosmetics-pet-food-and-other-products/)

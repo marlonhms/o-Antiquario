@@ -24,3 +24,11 @@ relations: []
 ---
 
 # Ambrox
+
+## Acordes e Facetas Relacionadas
+
+- [[Fresco|Fresco]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-fragrance-one-office-for-men|Office for Men]]

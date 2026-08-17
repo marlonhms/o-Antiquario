@@ -24,3 +24,11 @@ relations: []
 ---
 
 # Italian leather
+
+## Acordes e Facetas Relacionadas
+
+- [[Fresco|Fresco]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-rasasi-la-yuqawam-pour-homme|La Yuqawam pour Homme]]

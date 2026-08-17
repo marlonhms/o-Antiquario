@@ -24,3 +24,7 @@ relations: []
 ---
 
 # Diptyque
+
+## Fragrâncias no Acervo
+
+- [[fragrance-diptyque-philosykos-diptyque-1996-eau-de-toilette|Philosykos Diptyque 1996 Eau de Toilette]]

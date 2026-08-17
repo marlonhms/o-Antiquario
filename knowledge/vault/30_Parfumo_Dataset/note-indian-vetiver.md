@@ -24,3 +24,12 @@ relations: []
 ---
 
 # Indian vetiver
+
+## Acordes e Facetas Relacionadas
+
+- [[Amadeirado|Amadeirado]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-guerlain-lhomme-ideal-cologne|L'Homme Idéal Cologne]]
+- [[fragrance-guerlain-lhomme-ideal-guerlain-2014-eau-de-toilette|L'Homme Idéal Guerlain 2014 Eau de Toilette]]

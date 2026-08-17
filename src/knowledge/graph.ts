@@ -13,7 +13,7 @@ type RelationContract = Readonly<{
 
 const ALL_DOCUMENT_TYPES: readonly KnowledgeDocumentType[] = [
   "index", "fragrance", "olfactory-note", "accord", "raw-material", "molecule", "odor-descriptor",
-  "odor-quality", "olfactory-family", "context", "science", "guide", "brand", "perfumer"
+  "odor-quality", "olfactory-family", "context", "science", "guide", "brand", "perfumer", "concentration"
 ];
 
 export const RELATION_CONTRACTS: Readonly<Record<string, RelationContract>> = {
@@ -30,10 +30,16 @@ export const RELATION_CONTRACTS: Readonly<Record<string, RelationContract>> = {
   "compatible-example": { sources: ["context"], targets: ["fragrance"] },
   "governed-by": { sources: ["guide"], targets: ["index", "guide"] },
   "belongs-to-brand": { sources: ["fragrance"], targets: ["brand"] },
+  "declares-concentration": { sources: ["fragrance"], targets: ["concentration"] },
+  "has-concentration": { sources: ["fragrance"], targets: ["concentration"] },
   "created-by": { sources: ["fragrance"], targets: ["perfumer"] },
   "has-top-note": { sources: ["fragrance"], targets: ["olfactory-note"] },
   "has-heart-note": { sources: ["fragrance"], targets: ["olfactory-note"] },
   "has-base-note": { sources: ["fragrance"], targets: ["olfactory-note"] },
+  "declares-top-note": { sources: ["fragrance"], targets: ["olfactory-note"] },
+  "declares-heart-note": { sources: ["fragrance"], targets: ["olfactory-note"] },
+  "declares-base-note": { sources: ["fragrance"], targets: ["olfactory-note"] },
+  "declares-unlayered-note": { sources: ["fragrance"], targets: ["olfactory-note"] },
   "described-as": {
     sources: ["olfactory-note", "raw-material", "molecule"],
     targets: ["odor-descriptor"],

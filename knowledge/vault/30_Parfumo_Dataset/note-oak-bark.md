@@ -24,3 +24,11 @@ relations: []
 ---
 
 # Oak bark
+
+## Acordes e Facetas Relacionadas
+
+- [[Fresco|Fresco]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-burberry-london-for-men-burberry-2006-eau-de-toilette|London for Men Burberry 2006 Eau de Toilette]]

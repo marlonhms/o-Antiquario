@@ -169,3 +169,10 @@ class TermResolver:
         """Resolve um termo de família olfativa para um ID canônico."""
         norm = normalize_term(term)
         return self.families_index.get(norm)
+
+    def resolve_accord(self, term: str) -> ResolvedTerm | None:
+        """Resolve um acorde somente por correspondência canônica ou alias exato."""
+        norm = normalize_term(term)
+        if not norm:
+            return None
+        return self.accords_index.get(norm)

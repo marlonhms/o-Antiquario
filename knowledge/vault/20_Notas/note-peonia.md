@@ -21,7 +21,17 @@ evidence:
     confidence: medium
     claim_scope: "Descritor factual do Wikidata"
 ---
-
-# Peonia
-
+
+# Peonia
+
 Nota olfativa catalogada automaticamente.
+
+## Acordes e Facetas Relacionadas
+
+- [[floral|Floral]]
+
+## Presente nas Fragrâncias
+
+- [[crystal-noir-edt-q140266694|Crystal Noir EDT]]
+- [[dune-q17105080|Dune]]
+- [[eternity-moment-q140003429|Eternity Moment]]

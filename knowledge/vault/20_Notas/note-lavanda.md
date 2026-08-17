@@ -21,7 +21,19 @@ evidence:
     confidence: medium
     claim_scope: "Descritor factual do Wikidata"
 ---
-
-# Lavanda
-
+
+# Lavanda
+
 Nota olfativa catalogada automaticamente.
+
+## Acordes e Facetas Relacionadas
+
+- [[floral|Floral]]
+- [[Fresco|Fresco]]
+- [[verde|Verde]]
+
+## Presente nas Fragrâncias
+
+- [[coffee-woman-506bcad4|Coffee Woman]]
+- [[september-q138611384|September]]
+- [[winter-26-q137912111|Winter 26]]

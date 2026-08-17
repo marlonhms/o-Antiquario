@@ -21,7 +21,19 @@ evidence:
     confidence: medium
     claim_scope: "Descritor factual do Wikidata"
 ---
-
-# Musgo De Carvalho
-
+
+# Musgo De Carvalho
+
 Nota olfativa catalogada automaticamente.
+
+## Acordes e Facetas Relacionadas
+
+- [[verde|Verde]]
+- [[Fresco|Fresco]]
+- [[terroso|Terroso]]
+
+## Presente nas Fragrâncias
+
+- [[malbec-506bcad4|Malbec]]
+- [[tom-ford-for-men-q137182953|Tom Ford for Men]]
+- [[winter-26-q137912111|Winter 26]]

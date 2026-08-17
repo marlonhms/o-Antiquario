@@ -21,7 +21,16 @@ evidence:
     confidence: medium
     claim_scope: "Descritor factual do Wikidata"
 ---
-
-# Violetas
-
+
+# Violetas
+
 Nota olfativa catalogada automaticamente.
+
+## Acordes e Facetas Relacionadas
+
+- [[Fresco|Fresco]]
+
+## Presente nas Fragrâncias
+
+- [[deep-viola-q138795798|Deep Viola]]
+- [[opulent-dubai-q138766540|Opulent Dubai]]

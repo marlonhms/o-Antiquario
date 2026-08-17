@@ -24,3 +24,12 @@ relations: []
 ---
 
 # Virginia cedar
+
+## Acordes e Facetas Relacionadas
+
+- [[Amadeirado|Amadeirado]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-versace-eros-versace-2020-eau-de-parfum|Eros Versace 2020 Eau de Parfum]]
+- [[fragrance-giorgio-armani-my-way-giorgio-armani-2020-eau-de-parfum|My Way Giorgio Armani 2020 Eau de Parfum]]

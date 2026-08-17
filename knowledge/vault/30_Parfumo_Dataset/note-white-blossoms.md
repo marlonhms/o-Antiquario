@@ -24,3 +24,11 @@ relations: []
 ---
 
 # White blossoms
+
+## Acordes e Facetas Relacionadas
+
+- [[Fresco|Fresco]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-xerjoff-apollonia|Apollonia]]

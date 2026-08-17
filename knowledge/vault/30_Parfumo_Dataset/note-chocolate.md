@@ -35,3 +35,12 @@ relations: []
 **Chocolate** é a nota canônica usada para normalizar declarações de pirâmide com esse rótulo. Para navegação, ela pertence à família gourmand do vocabulário operacional.
 
 O registro preserva a declaração da fonte e não comprova chocolate, cacau ou ingrediente físico na fórmula. Também não permite inferir doçura, intensidade, projeção ou duração.
+
+## Acordes e Facetas Relacionadas
+
+- [[gourmand|Gourmand]]
+- [[doce|Doce]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-mugler-angel-mugler-1992-eau-de-parfum|Angel Mugler 1992 Eau de Parfum]]

@@ -21,7 +21,16 @@ evidence:
     confidence: medium
     claim_scope: "Descritor factual do Wikidata"
 ---
-
-# Balsamo De Tolu
-
+
+# Balsamo De Tolu
+
 Nota olfativa catalogada automaticamente.
+
+## Acordes e Facetas Relacionadas
+
+- [[resinoso|Resinoso]]
+- [[ambarado|Ambarado]]
+
+## Presente nas Fragrâncias
+
+- [[poison-girl-q140101602|Poison Girl]]

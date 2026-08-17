@@ -35,3 +35,17 @@ relations: []
 No vocabulário do Antiquário, **cravo-flor** identifica a nota registrada como *carnation* nas fontes em inglês. Ela permanece separada de [[note-cravo-especiaria|cravo-da-índia]], registrado como *clove*.
 
 Essa equivalência é terminológica e serve à normalização das declarações de origem. Ela não comprova ingrediente físico, espécie botânica ou composição química em um perfume.
+
+## Acordes e Facetas Relacionadas
+
+- [[floral|Floral]]
+- [[especiado|Especiado]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-versace-blue-jeans|Blue Jeans]]
+- [[fragrance-xerjoff-casamorati---1888|Casamorati - 1888]]
+- [[fragrance-guy-laroche-drakkar-noir-guy-laroche-1982-eau-de-toilette|Drakkar Noir Guy Laroche 1982 Eau de Toilette]]
+- [[fragrance-hugo-boss-hugo-hugo-boss-1995-eau-de-toilette|Hugo Hugo Boss 1995 Eau de Toilette]]
+- [[fragrance-yves-saint-laurent-kouros-yves-saint-laurent-1981-eau-de-toilette|Kouros Yves Saint Laurent 1981 Eau de Toilette]]
+- [[fragrance-jil-sander-sun-jil-sander-1989-eau-de-toilette|Sun Jil Sander 1989 Eau de Toilette]]

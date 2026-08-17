@@ -22,5 +22,13 @@ evidence:
     claim_scope: "Extração de entidade"
 relations: []
 ---
-
+
 # Orange brandy
+
+## Acordes e Facetas Relacionadas
+
+- [[Fresco|Fresco]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-amouage-sunshine-man|Sunshine Man]]

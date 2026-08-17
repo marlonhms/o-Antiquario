@@ -24,3 +24,11 @@ relations: []
 ---
 
 # Vetiver leaf
+
+## Acordes e Facetas Relacionadas
+
+- [[Amadeirado|Amadeirado]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-creed-original-vetiver|Original Vetiver]]

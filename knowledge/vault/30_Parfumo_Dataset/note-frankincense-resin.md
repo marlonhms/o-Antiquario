@@ -24,3 +24,11 @@ relations: []
 ---
 
 # Frankincense resin
+
+## Acordes e Facetas Relacionadas
+
+- [[Fresco|Fresco]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-yves-saint-laurent-le-vestiaire---babycat|Le Vestiaire - Babycat]]

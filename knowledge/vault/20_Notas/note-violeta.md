@@ -21,7 +21,18 @@ evidence:
     confidence: medium
     claim_scope: "Descritor factual do Wikidata"
 ---
-
-# Violeta
-
+
+# Violeta
+
 Nota olfativa catalogada automaticamente.
+
+## Acordes e Facetas Relacionadas
+
+- [[floral|Floral]]
+
+## Presente nas Fragrâncias
+
+- [[daisy-q110263664|Daisy]]
+- [[egeo-dolce-506bcad4|Egeo Dolce]]
+- [[naughty-alice-q139990627|Naughty Alice]]
+- [[tom-ford-for-men-q137182953|Tom Ford for Men]]

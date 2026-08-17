@@ -24,3 +24,7 @@ relations: []
 ---
 
 # Zara
+
+## Fragrâncias no Acervo
+
+- [[fragrance-zara-richwarmaddictive-zara-2016-eau-de-toilette|Rich/Warm/Addictive Zara 2016 Eau de Toilette]]

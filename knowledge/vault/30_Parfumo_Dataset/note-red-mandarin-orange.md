@@ -24,3 +24,11 @@ relations: []
 ---
 
 # Red mandarin orange
+
+## Acordes e Facetas Relacionadas
+
+- [[Fresco|Fresco]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-paco-rabanne-million-paco-rabanne-2008-eau-de-toilette|Million Paco Rabanne 2008 Eau de Toilette]]

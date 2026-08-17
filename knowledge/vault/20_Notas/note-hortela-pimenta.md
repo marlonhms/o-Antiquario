@@ -21,7 +21,15 @@ evidence:
     confidence: medium
     claim_scope: "Descritor factual do Wikidata"
 ---
-
-# Hortela Pimenta
-
+
+# Hortela Pimenta
+
 Nota olfativa catalogada automaticamente.
+
+## Acordes e Facetas Relacionadas
+
+- [[especiado|Especiado]]
+
+## Presente nas Fragrâncias
+
+- [[winter-26-q137912111|Winter 26]]

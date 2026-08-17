@@ -24,3 +24,7 @@ relations: []
 ---
 
 # Lacoste
+
+## Fragrâncias no Acervo
+
+- [[fragrance-lacoste-l1212-blanc-eau-de-lacoste-l1212-blanc-lacoste-2010-eau-de-toilette|L.12.12 Blanc Eau de Lacoste L.12.12 Blanc Lacoste 2010 Eau de Toilette]]

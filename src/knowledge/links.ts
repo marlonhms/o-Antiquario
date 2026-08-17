@@ -26,16 +26,14 @@ export interface ResolvedKnowledgeGraph {
 
 export function resolveKnowledgeGraph(documents: readonly KnowledgeDocument[]): ResolvedKnowledgeGraph {
   const byId = new Map(documents.map((document) => [document.id, document]));
-  const references = new Map<string, string>();
+  const references = new Map<string, Set<string>>();
 
   for (const document of documents) {
     for (const reference of documentReferences(document)) {
       const normalized = normalizeKnowledgeReference(reference);
-      const owner = references.get(normalized);
-      if (owner && owner !== document.id) {
-        throw new Error(`Referência ambígua '${reference}' pertence a '${owner}' e '${document.id}'`);
-      }
-      references.set(normalized, document.id);
+      const owners = references.get(normalized) ?? new Set<string>();
+      owners.add(document.id);
+      references.set(normalized, owners);
     }
   }
 
@@ -59,8 +57,16 @@ export function resolveKnowledgeGraph(documents: readonly KnowledgeDocument[]): 
     }
 
     for (const link of document.wikiLinks) {
-      const target = references.get(normalizeKnowledgeReference(link.target));
-      if (!target) throw new Error(`${document.path}: wikilink não resolvido '[[${link.target}]]'`);
+      const targets = references.get(normalizeKnowledgeReference(link.target));
+      if (!targets || targets.size === 0) {
+        throw new Error(`${document.path}: wikilink não resolvido '[[${link.target}]]'`);
+      }
+      if (targets.size > 1) {
+        throw new Error(
+          `${document.path}: wikilink ambíguo '[[${link.target}]]'; use um ID global entre ${[...targets].sort().join(", ")}`,
+        );
+      }
+      const target = [...targets][0]!;
       addEdge({ source: document.id, target, predicate: "references", origin: "wikilink" });
     }
   }

@@ -24,3 +24,15 @@ relations: []
 ---
 
 # Blackcurrant
+
+## Acordes e Facetas Relacionadas
+
+- [[frutado|Frutado]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-armaf-club-de-nuit-intense-man-armaf-eau-de-parfum|Club de Nuit Intense Man Armaf Eau de Parfum]]
+- [[fragrance-armaf-club-de-nuit-sillage-armaf-2020-eau-de-parfum|Club de Nuit Sillage Armaf 2020 Eau de Parfum]]
+- [[fragrance-m-micallef-desirtoxic|DesirToxic]]
+- [[fragrance-lancome-la-vie-est-belle-leau-de-parfum|La Vie est Belle L'Eau de Parfum]]
+- [[fragrance-afnan-perfumes-supremacy-not-only-intense|Supremacy Not Only Intense]]

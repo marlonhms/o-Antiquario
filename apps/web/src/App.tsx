@@ -1,66 +1,46 @@
-import { useEffect, useMemo, useRef, useState } from "react";
-import type { CSSProperties, FormEvent } from "react";
+import { useEffect, useMemo, useReducer, useRef, useState } from "react";
+import type { CSSProperties } from "react";
 
 import type {
   Confidence,
-  RecommendationContext,
   RecommendationResult,
   ScoreFactorName,
 } from "@core/domain/types.ts";
 import { loadCatalogReleaseManifest, type CatalogReleaseManifest } from "@core/catalog/release.ts";
-import { FIXTURE_FRAGRANCES } from "@core/recommender/fixtures.ts";
 import { recommend } from "@core/recommender/recommend.ts";
 import type { Fragrance } from "@core/domain/types.ts";
 import type { CompiledRecommendationCatalog } from "@core/catalog/recommendation-compiler.ts";
+import type {
+  OlfactoryReference,
+  OlfactoryReferenceCatalog,
+} from "@core/catalog/olfactory-reference.ts";
+import { deriveSynesthesia } from "@core/domain/synesthesia.ts";
 
-type Setting = "indoor" | "outdoor" | "mixed";
-type Crowding = "low" | "medium" | "high";
-
-interface ConsultantForm {
-  occasion: string;
-  setting: Setting;
-  crowding: Crowding;
-  temperatureC: number;
-  humidity: number;
-  durationHours: number;
-  desiredProjection: number;
-  maximumPriceTier: 1 | 2 | 3 | 4 | 5;
-  strictBudget: boolean;
-  sensitiveEnvironment: boolean;
-  noveltyPreference: number;
-  likedAccords: string[];
-  avoidedAccords: string[];
-  hardAvoidNotes: string[];
-}
-
-const STORAGE_KEY = "o-antiquario:consultant-form:v1";
-
-const DEFAULT_FORM: ConsultantForm = {
-  occasion: "escritório",
-  setting: "indoor",
-  crowding: "high",
-  temperatureC: 30,
-  humidity: 0.72,
-  durationHours: 7,
-  desiredProjection: 0.4,
-  maximumPriceTier: 3,
-  strictBudget: false,
-  sensitiveEnvironment: true,
-  noveltyPreference: 0.55,
-  likedAccords: ["cítrico", "amadeirado"],
-  avoidedAccords: ["doce"],
-  hardAvoidNotes: [],
-};
-
-
-const FORMALITY_BY_OCCASION: Record<string, number> = {
-  casual: 0.25,
-  esporte: 0.2,
-  escritório: 0.62,
-  encontro: 0.68,
-  festa: 0.72,
-  formal: 0.92,
-};
+import type {
+  ConsultationIntentV2,
+  Setting,
+  TimePeriod,
+  WeatherBand,
+} from "./features/consultation/domain/consultation-schema.ts";
+import {
+  DEFAULT_INTENT_V2,
+  STORAGE_KEY_V1,
+  STORAGE_KEY_V2,
+  migrateV1ToV2,
+} from "./features/consultation/domain/migrate-v1-to-v2.ts";
+import {
+  deriveAccordWeights,
+  deriveContext,
+  deriveFormalityByOccasion,
+} from "./features/consultation/domain/derive-context.ts";
+import {
+  consultationReducer,
+  type ConsultationState,
+} from "./features/consultation/domain/consultation-reducer.ts";
+import { MomentPicker } from "./features/consultation/ui/MomentPicker.tsx";
+import { AtmospherePicker } from "./features/consultation/ui/AtmospherePicker.tsx";
+import { ContextSummary } from "./features/consultation/ui/ContextSummary.tsx";
+import { RefinementDrawer } from "./features/consultation/ui/RefinementDrawer.tsx";
 
 const FACTOR_LABELS: Record<ScoreFactorName, string> = {
   preference: "Preferências",
@@ -87,6 +67,9 @@ const ACCORD_AURAS: Record<string, string> = {
   especiado: "#c95d68",
 };
 
+const CORE_ACCORD_OPTIONS = Object.keys(ACCORD_AURAS);
+const CORE_NOTE_OPTIONS = ["bergamota", "baunilha", "cedro", "jasmim", "lavanda", "patchouli", "rosa", "sândalo", "vetiver"];
+
 const CONSULTATION_STEPS = [
   { number: "01", short: "Contexto", title: "O momento", description: "Onde o perfume encontrará você?" },
   { number: "02", short: "Presença", title: "Sua presença", description: "Defina o alcance e o tempo do rastro." },
@@ -106,6 +89,11 @@ interface FactualFragrance {
   topNotes?: string[];
   heartNotes?: string[];
   baseNotes?: string[];
+  concentrations?: string[];
+  referenceReadiness?: "olfactory_reference_only";
+  referenceLimitations?: string[];
+  referenceSources?: string[];
+  recordLabel?: string;
 }
 
 interface CatalogEntity {
@@ -157,6 +145,130 @@ async function loadRecommendationCatalog(): Promise<readonly Fragrance[]> {
   }
   const payload = await response.json() as CompiledRecommendationCatalog;
   return payload.fragrances;
+}
+
+async function loadOlfactoryReferenceCatalog(): Promise<OlfactoryReferenceCatalog> {
+  const response = await fetch("/catalog/olfactory-reference-catalog.json");
+  if (!response.ok) throw new Error("Catálogo de referências olfativas indisponível");
+  return response.json() as Promise<OlfactoryReferenceCatalog>;
+}
+
+function referenceTerms(reference: OlfactoryReference) {
+  return [
+    ...reference.pyramid.top,
+    ...reference.pyramid.heart,
+    ...reference.pyramid.base,
+    ...reference.pyramid.unlayered,
+    ...reference.accords,
+  ];
+}
+
+function referenceNotes(reference: OlfactoryReference) {
+  return [
+    ...reference.pyramid.top,
+    ...reference.pyramid.heart,
+    ...reference.pyramid.base,
+    ...reference.pyramid.unlayered,
+  ];
+}
+
+function normalizeOption(value: string): string {
+  return value
+    .normalize("NFKD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .toLocaleLowerCase("pt-BR")
+    .trim();
+}
+
+function mergeOlfactoryReferencesIntoFactual(
+  library: FactualLibraryData,
+  catalog: OlfactoryReferenceCatalog | null,
+): FactualLibraryData {
+  if (!catalog || catalog.references.length === 0) return library;
+
+  const fragrances = library.fragrances.map((fragrance) => ({
+    ...fragrance,
+    brandIds: [...fragrance.brandIds],
+    perfumerIds: [...fragrance.perfumerIds],
+    countryIds: [...fragrance.countryIds],
+    olfactoryDescriptorIds: [...fragrance.olfactoryDescriptorIds],
+  }));
+  const byId = new Map(fragrances.map((fragrance) => [fragrance.id, fragrance]));
+  const byName = new Map(fragrances.map((fragrance) => [fragrance.name.toLocaleLowerCase("pt-BR").trim(), fragrance]));
+  const brands = [...library.entities.brands];
+  const perfumers = [...library.entities.perfumers];
+  const descriptors = [...library.entities.olfactoryDescriptors];
+  const brandIds = new Set(brands.map((brand) => brand.id));
+  const perfumerIds = new Set(perfumers.map((perfumer) => perfumer.id));
+  const descriptorIds = new Set(descriptors.map((descriptor) => descriptor.id));
+
+  for (const reference of catalog.references) {
+    if (!brandIds.has(reference.brand.id)) {
+      brands.push({ id: reference.brand.id, name: reference.brand.name });
+      brandIds.add(reference.brand.id);
+    }
+    for (const perfumer of reference.perfumers) {
+      if (!perfumerIds.has(perfumer.id)) {
+        perfumers.push(perfumer);
+        perfumerIds.add(perfumer.id);
+      }
+    }
+    const terms = referenceTerms(reference);
+    for (const item of terms) {
+      if (!descriptorIds.has(item.id)) {
+        descriptors.push({ id: item.id, name: item.label });
+        descriptorIds.add(item.id);
+      }
+    }
+    const existing = byId.get(reference.id)
+      ?? byName.get(reference.name.toLocaleLowerCase("pt-BR").trim());
+    const metadata: Pick<
+      FactualFragrance,
+      "topNotes" | "heartNotes" | "baseNotes" | "concentrations" | "referenceReadiness" | "referenceLimitations" | "referenceSources"
+    > = {
+      topNotes: reference.pyramid.top.map((item) => item.label),
+      heartNotes: reference.pyramid.heart.map((item) => item.label),
+      baseNotes: reference.pyramid.base.map((item) => item.label),
+      concentrations: reference.concentrations.map((item) => item.label),
+      referenceReadiness: reference.readiness,
+      referenceLimitations: [...reference.limitations],
+      referenceSources: reference.evidence.map((item) => item.sourceId),
+    };
+    if (existing) {
+      existing.brandIds = [...new Set([...existing.brandIds, reference.brand.id])];
+      existing.perfumerIds = [...new Set([...existing.perfumerIds, ...reference.perfumers.map((item) => item.id)])];
+      existing.olfactoryDescriptorIds = [...new Set([
+        ...existing.olfactoryDescriptorIds,
+        ...terms.map((item) => item.id),
+      ])];
+      Object.assign(existing, metadata);
+      existing.recordLabel = "Referência olfativa";
+      existing.officialWebsite ??= reference.evidence.find((item) => item.locator)?.locator ?? null;
+      continue;
+    }
+    const created: FactualFragrance = {
+      id: reference.id,
+      wikidataId: "OlfactoryReference",
+      name: reference.name,
+      launchYear: null,
+      officialWebsite: reference.evidence.find((item) => item.locator)?.locator ?? null,
+      brandIds: [reference.brand.id],
+      perfumerIds: reference.perfumers.map((item) => item.id),
+      countryIds: [],
+      olfactoryDescriptorIds: [...new Set(terms.map((item) => item.id))],
+      recordLabel: "Referência olfativa",
+      ...metadata,
+    };
+    fragrances.push(created);
+    byId.set(created.id, created);
+    byName.set(created.name.toLocaleLowerCase("pt-BR").trim(), created);
+  }
+
+  return {
+    fragrances,
+    entities: { ...library.entities, brands, perfumers, olfactoryDescriptors: descriptors },
+    claims: library.claims,
+  };
 }
 
 function mergeRecommendationIntoFactual(
@@ -360,17 +472,13 @@ function MagneticField({ primary, secondary }: { primary: string; secondary: str
   return <canvas className="magnetic-field" ref={canvasRef} aria-hidden="true" />;
 }
 
-function readStoredForm(): ConsultantForm {
+function readStoredIntent(): ConsultationIntentV2 {
   try {
-    const stored = window.localStorage.getItem(STORAGE_KEY);
-    return stored ? { ...DEFAULT_FORM, ...JSON.parse(stored) } : DEFAULT_FORM;
+    const raw = window.localStorage.getItem(STORAGE_KEY_V2) || window.localStorage.getItem(STORAGE_KEY_V1);
+    return migrateV1ToV2(raw);
   } catch {
-    return DEFAULT_FORM;
+    return DEFAULT_INTENT_V2;
   }
-}
-
-function toggleValue(values: string[], value: string): string[] {
-  return values.includes(value) ? values.filter((item) => item !== value) : [...values, value];
 }
 
 function confidenceLabel(confidence: Confidence): string {
@@ -384,34 +492,36 @@ function projectionLabel(value: number): string {
   return "intensa";
 }
 
-function recommendationContext(form: ConsultantForm): RecommendationContext {
-  return {
-    occasion: form.occasion,
-    setting: form.setting,
-    crowding: form.crowding,
-    temperatureC: form.temperatureC,
-    humidity: form.humidity,
-    formality: FORMALITY_BY_OCCASION[form.occasion] ?? 0.5,
-    desiredProjection: form.desiredProjection,
-    durationHours: form.durationHours,
-    maximumPriceTier: form.maximumPriceTier,
-    strictBudget: form.strictBudget,
-    projectionCeiling: form.sensitiveEnvironment ? 0.72 : undefined,
-  };
-}
+function runRecommendationV2(
+  intent: ConsultationIntentV2,
+  catalog: readonly Fragrance[],
+): RecommendationResult {
+  const context = deriveContext(intent);
+  const accordWeights = deriveAccordWeights(intent.atmosphere);
+  const accordPreferences: Record<string, number> = { ...accordWeights };
+  for (const avoided of intent.avoidedCanonicalIds) {
+    accordPreferences[avoided] = -0.9;
+  }
 
-function runRecommendation(form: ConsultantForm, catalog: readonly Fragrance[]): RecommendationResult {
+  const noveltyPreference =
+    intent.discovery === "familiar" ? 0.25 : intent.discovery === "exploratory" ? 0.85 : 0.55;
+
   return recommend(
-    catalog.length > 0 ? catalog : FIXTURE_FRAGRANCES,
+    catalog,
     {
-      accordPreferences: Object.fromEntries([
-        ...form.likedAccords.map((accord) => [accord, 0.95]),
-        ...form.avoidedAccords.map((accord) => [accord, -0.9]),
-      ]),
-      hardAvoidNotes: form.hardAvoidNotes,
-      noveltyPreference: form.noveltyPreference,
+      accordPreferences,
+      hardAvoidNotes: intent.hardAvoidNotes,
+      noveltyPreference,
     },
-    recommendationContext(form),
+    {
+      occasion: intent.occasion,
+      setting: context.setting,
+      crowding: context.crowding,
+      temperatureC: context.temperatureC,
+      humidity: context.humidity,
+      formality: deriveFormalityByOccasion(intent.occasion),
+      projectionCeiling: intent.sensitiveEnvironment ? 0.72 : undefined,
+    },
   );
 }
 
@@ -434,6 +544,7 @@ function RecommendationCard({
 }) {
   const { fragrance } = candidate;
   const longevity = fragrance.performance.longevity;
+  const synesthesia = deriveSynesthesia(fragrance);
   const auraStyle = {
     "--aura-primary": auraColor(fragrance.accords[0]?.id, "#d5b477"),
     "--aura-secondary": auraColor(fragrance.accords[1]?.id, "#76294e"),
@@ -455,6 +566,7 @@ function RecommendationCard({
         <div className="eyebrow-row">
           <span>{fragrance.family}</span>
           <span>{fragrance.concentrations[0]}</span>
+          <span>{synesthesia.chromaticAura.colorFamily}</span>
           <span>confiança {confidenceLabel(fragrance.dataConfidence)}</span>
         </div>
         <h3>{fragrance.name}</h3>
@@ -494,6 +606,29 @@ function RecommendationCard({
           </span>
         </div>
 
+        <div className="synesthetic-atmosphere" aria-label="Atmosfera sinestésica e pistas transmodais">
+          <div className="synesthetic-header">
+            <span className="synesthetic-tag">Aura Sinestésica</span>
+            <span className="synesthetic-soundscape-tag">{synesthesia.naturalSoundscape}</span>
+          </div>
+          <div className="synesthetic-grid">
+            <div className="synesthetic-item">
+              <small>🎵 Trilha & Timbres</small>
+              <p>{synesthesia.musicalMood}</p>
+              <span className="instruments-badge">{synesthesia.primaryInstruments.slice(0, 2).join(" · ")}</span>
+            </div>
+            <div className="synesthetic-item">
+              <small>🎙️ Voz do Companion</small>
+              <p>{synesthesia.voiceProfile.description}</p>
+            </div>
+          </div>
+          <div className="emotional-descriptors" aria-label="Descritores poéticos KAORIUM">
+            {synesthesia.emotionalDescriptors.map((desc) => (
+              <span className="emotional-chip" key={desc}>{desc}</span>
+            ))}
+          </div>
+        </div>
+
         <details className="factor-details">
           <summary>Como chegamos aqui</summary>
           <div className="factor-list">
@@ -514,6 +649,116 @@ function RecommendationCard({
       </div>
 
       <ScoreRing score={candidate.score} />
+    </article>
+  );
+}
+
+function referenceToFragrance(reference: OlfactoryReference): Fragrance {
+  return {
+    id: reference.id,
+    name: reference.name,
+    brand: reference.brand.name,
+    family: reference.family?.name ?? reference.accords[0]?.label ?? "amadeirado",
+    segments: ["nacional", "referencia"],
+    concentrations: reference.concentrations.map((c) => c.label),
+    topNotes: reference.pyramid.top.map((n) => n.label),
+    heartNotes: reference.pyramid.heart.map((n) => n.label),
+    baseNotes: reference.pyramid.base.map((n) => n.label),
+    accords: reference.accords.map((a) => ({ id: a.label, weight: 0.85 })),
+    occasions: [],
+    formality: 0.5,
+    performance: {
+      longevity: { minimumHours: 5, maximumHours: 8, confidence: "medium" },
+      projection: { value: 0.5, confidence: "medium" },
+      sillage: { value: 0.5, confidence: "medium" },
+    },
+    climate: {},
+    dataConfidence: "medium",
+    evidence: [],
+  };
+}
+
+function ReferenceCard({ reference }: { reference: OlfactoryReference }) {
+  const synesthesia = useMemo(() => deriveSynesthesia(referenceToFragrance(reference)), [reference]);
+  const noteCount = reference.pyramid.top.length
+    + reference.pyramid.heart.length
+    + reference.pyramid.base.length
+    + reference.pyramid.unlayered.length;
+  const declared = referenceTerms(reference).some((item) => item.claimNature === "declared");
+  const layers = [
+    { label: "Saída", terms: reference.pyramid.top },
+    { label: "Coração", terms: reference.pyramid.heart },
+    { label: "Fundo", terms: reference.pyramid.base },
+    { label: "Sem camada", terms: reference.pyramid.unlayered },
+  ].filter((layer) => layer.terms.length > 0);
+
+  return (
+    <article className="reference-card" style={{ "--aura-primary": synesthesia.chromaticAura.dominantHsl } as CSSProperties}>
+      <div className="reference-card-head">
+        <span aria-hidden="true">{reference.name.charAt(0)}</span>
+        <div>
+          <small>{declared ? "declaração estruturada" : "pirâmide estruturada na fonte"}</small>
+          <h3>{reference.name}</h3>
+          <p>{reference.brand.name}</p>
+        </div>
+      </div>
+      {(reference.concentrations.length > 0 || reference.accords.length > 0) && (
+        <div className="reference-structure">
+          {reference.concentrations.length > 0 && (
+            <p><small>Concentração na fonte</small>{reference.concentrations.map((item) => item.label).join(" · ")}</p>
+          )}
+          {reference.accords.length > 0 && (
+            <p><small>Acordes principais</small>{reference.accords.slice(0, 5).map((item) => item.label).join(" · ")}</p>
+          )}
+        </div>
+      )}
+
+      {/* Atmosfera Sinestésica & Áudio-Olfato (Estudos Mahdavi et al., 2020 e KAORIUM) */}
+      <div className="synesthetic-atmosphere" aria-label="Atmosfera e sinestesia áudio-olfativa">
+        <div className="synesthetic-header">
+          <small>Atmosfera Sinestésica</small>
+          <span className="synesthetic-badge" style={{ color: synesthesia.chromaticAura.dominantHsl }}>
+            Aura {synesthesia.chromaticAura.colorFamily}
+          </span>
+        </div>
+        <div className="synesthetic-grid">
+          <div className="synesthetic-item">
+            <small>Som da Natureza</small>
+            <p>{synesthesia.naturalSoundscape}</p>
+          </div>
+          <div className="synesthetic-item">
+            <small>🎵 Trilha & Timbres</small>
+            <p>{synesthesia.musicalMood}</p>
+            <span className="instruments-badge">
+              {synesthesia.primaryInstruments.slice(0, 2).join(" · ")}
+            </span>
+          </div>
+          <div className="synesthetic-item">
+            <small>🎙️ Voz do Companion</small>
+            <p>{synesthesia.voiceProfile.description}</p>
+          </div>
+        </div>
+        <div className="emotional-descriptors" aria-label="Descritores poéticos KAORIUM">
+          {synesthesia.emotionalDescriptors.map((desc) => (
+            <span className="emotional-chip" key={desc}>{desc}</span>
+          ))}
+        </div>
+      </div>
+
+      <div className="reference-pyramid">
+        {layers.map((layer) => (
+          <div key={layer.label}>
+            <small>{layer.label}</small>
+            <p>{layer.terms.slice(0, 5).map((item) => item.label).join(" · ")}</p>
+          </div>
+        ))}
+      </div>
+      <footer>
+        <span>{noteCount} termos olfativos</span>
+        {reference.evidence.find((item) => item.locator)?.locator
+          ? <a href={reference.evidence.find((item) => item.locator)!.locator} target="_blank" rel="noreferrer">ver registro da fonte ↗</a>
+          : <span>{[...new Set(reference.evidence.map((item) => item.sourceId))].join(" · ")}</span>}
+      </footer>
     </article>
   );
 }
@@ -585,7 +830,7 @@ function FactualLibrary({ library }: { library: FactualLibraryData }) {
           <p className="section-kicker">Acervo factual</p>
           <h2>Perfumes, sem névoa nos dados.</h2>
         </div>
-        <p>{library.fragrances.length} perfumes · {library.entities.olfactoryDescriptors.length} descritores · dados Wikidata</p>
+        <p>{library.fragrances.length} perfumes · {library.entities.olfactoryDescriptors.length} termos · fontes abertas aprovadas</p>
       </div>
 
       <div className="library-toolbar">
@@ -628,7 +873,7 @@ function FactualLibrary({ library }: { library: FactualLibraryData }) {
             <div className="library-detail-title">
               <span className="detail-seal">{selected.name.charAt(0)}</span>
               <div>
-                <p className="section-kicker">Registro factual · {selected.wikidataId}</p>
+                <p className="section-kicker">Registro factual · {selected.recordLabel ?? selected.wikidataId}</p>
                 <h3>{selected.name}</h3>
                 <p>{entityNames(selected.brandIds, entityIndex).join(" · ") || "Marca não declarada"}</p>
               </div>
@@ -647,13 +892,19 @@ function FactualLibrary({ library }: { library: FactualLibraryData }) {
                 <small>Lançamento</small>
                 <p>{selected.launchYear ?? "não declarado"}</p>
               </div>
+              <div>
+                <small>Concentração na fonte</small>
+                <p>{selected.concentrations?.join(" · ") || "não declarada"}</p>
+              </div>
             </div>
 
             {((selected.topNotes && selected.topNotes.length > 0) ||
               (selected.heartNotes && selected.heartNotes.length > 0) ||
               (selected.baseNotes && selected.baseNotes.length > 0)) && (
               <div className="fact-group">
-                <small>Pirâmide Olfativa (Extração Oficial PDF)</small>
+                <small>{selected.referenceReadiness
+                  ? "Pirâmide olfativa estruturada na fonte"
+                  : "Pirâmide olfativa (extração oficial PDF)"}</small>
                 <div style={{ display: "flex", flexDirection: "column", gap: "6px", fontSize: "0.85rem", marginTop: "6px" }}>
                   {selected.topNotes && selected.topNotes.length > 0 && (
                     <div><b style={{ opacity: 0.7, marginRight: "6px" }}>Saída:</b> {selected.topNotes.join(", ")}</div>
@@ -668,8 +919,15 @@ function FactualLibrary({ library }: { library: FactualLibraryData }) {
               </div>
             )}
 
+            {selected.referenceReadiness && (
+              <div className="reference-boundary" role="note">
+                <strong>Referência olfativa</strong>
+                <p>Este registro ajuda a compreender o cheiro, mas não sustenta indicação de ocasião, clima, fixação ou projeção.</p>
+              </div>
+            )}
+
             <div className="fact-group">
-              <small>Descritores olfativos declarados</small>
+              <small>{selected.referenceReadiness ? "Termos olfativos estruturados" : "Descritores olfativos declarados"}</small>
               <div className="fact-chips">
                 {entityNames(selected.olfactoryDescriptorIds, entityIndex).slice(0, 18).map((name) => <span key={name}>{name}</span>)}
                 {selected.olfactoryDescriptorIds.length === 0 && <em>não declarados no Wikidata</em>}
@@ -687,7 +945,7 @@ function FactualLibrary({ library }: { library: FactualLibraryData }) {
 
             <div className="detail-foot">
               <span>Dados estruturados · CC0</span>
-              {selected.officialWebsite && <a href={selected.officialWebsite} target="_blank" rel="noreferrer">site declarado ↗</a>}
+              {selected.officialWebsite && <a href={selected.officialWebsite} target="_blank" rel="noreferrer">registro da fonte ↗</a>}
             </div>
           </article>
         )}
@@ -697,16 +955,32 @@ function FactualLibrary({ library }: { library: FactualLibraryData }) {
 }
 
 export function App() {
-  const [draft, setDraft] = useState<ConsultantForm>(readStoredForm);
-  const [revision, setRevision] = useState(1);
-  const [consultationStep, setConsultationStep] = useState(0);
+  const [consultationState, dispatch] = useReducer(consultationReducer, {
+    step: "moment",
+    intent: readStoredIntent(),
+    isRefinementOpen: false,
+    isContextCorrectionOpen: false,
+  });
+
+  const { intent, step, isRefinementOpen, isContextCorrectionOpen } = consultationState;
+  const derivedContext = useMemo(() => deriveContext(intent), [intent]);
+
   const [catalogManifest, setCatalogManifest] = useState<CatalogReleaseManifest | null>(null);
   const [rawFactualLibrary, setFactualLibrary] = useState<FactualLibraryData | null>(null);
   const [recommendationCatalog, setRecommendationCatalog] = useState<readonly Fragrance[]>([]);
+  const [recommendationStatus, setRecommendationStatus] = useState<"loading" | "ready" | "unavailable">("loading");
+  const [referenceCatalog, setReferenceCatalog] = useState<OlfactoryReferenceCatalog | null>(null);
+
   const factualLibrary = useMemo(
-    () => (rawFactualLibrary ? mergeRecommendationIntoFactual(rawFactualLibrary, recommendationCatalog) : null),
-    [rawFactualLibrary, recommendationCatalog],
+    () => rawFactualLibrary
+      ? mergeRecommendationIntoFactual(
+        mergeOlfactoryReferencesIntoFactual(rawFactualLibrary, referenceCatalog),
+        recommendationCatalog,
+      )
+      : null,
+    [rawFactualLibrary, recommendationCatalog, referenceCatalog],
   );
+
   const dynamicAccordOptions = useMemo(() => {
     const accords = new Set<string>();
     for (const f of recommendationCatalog) {
@@ -714,8 +988,11 @@ export function App() {
         accords.add(a.id);
       }
     }
-    return Array.from(accords).sort();
-  }, [recommendationCatalog]);
+    for (const reference of referenceCatalog?.references ?? []) {
+      for (const accord of reference.accords) accords.add(accord.label);
+    }
+    return accords.size > 0 ? Array.from(accords).sort() : CORE_ACCORD_OPTIONS;
+  }, [recommendationCatalog, referenceCatalog]);
 
   const dynamicNoteOptions = useMemo(() => {
     const notes = new Set<string>();
@@ -724,10 +1001,42 @@ export function App() {
       for (const n of f.heartNotes) notes.add(n);
       for (const n of f.baseNotes) notes.add(n);
     }
-    return Array.from(notes).sort();
-  }, [recommendationCatalog]);
+    const frequency = new Map<string, number>();
+    for (const reference of referenceCatalog?.references ?? []) {
+      for (const item of referenceNotes(reference)) {
+        frequency.set(item.label, (frequency.get(item.label) ?? 0) + 1);
+      }
+    }
+    if (frequency.size > 0) {
+      return [...frequency]
+        .sort((left, right) => right[1] - left[1] || left[0].localeCompare(right[0], "pt-BR"))
+        .slice(0, 18)
+        .map(([label]) => label);
+    }
+    return notes.size > 0 ? Array.from(notes).sort() : CORE_NOTE_OPTIONS;
+  }, [recommendationCatalog, referenceCatalog]);
 
-  const result = useMemo(() => runRecommendation(draft, recommendationCatalog), [draft, recommendationCatalog]);
+  const referenceExamples = useMemo(() => {
+    const avoidedNotes = new Set(intent.hardAvoidNotes.map(normalizeOption));
+    const avoidedAccords = new Set(intent.avoidedCanonicalIds.map(normalizeOption));
+    const targetWeights = deriveAccordWeights(intent.atmosphere);
+    const likedAccords = new Set(Object.keys(targetWeights).map(normalizeOption));
+
+    const matchCount = (reference: OlfactoryReference) => reference.accords
+      .filter((item) => likedAccords.has(normalizeOption(item.label))).length;
+
+    return [...(referenceCatalog?.references ?? [])]
+      .filter((reference) => !referenceNotes(reference).some((item) => avoidedNotes.has(normalizeOption(item.label))))
+      .filter((reference) => !reference.accords.some((item) => avoidedAccords.has(normalizeOption(item.label))))
+      .sort((left, right) => {
+        const matchDifference = matchCount(right) - matchCount(left);
+        const coverageDifference = referenceNotes(right).length - referenceNotes(left).length;
+        return matchDifference || coverageDifference || left.name.localeCompare(right.name, "pt-BR");
+      })
+      .slice(0, 3);
+  }, [intent.avoidedCanonicalIds, intent.hardAvoidNotes, intent.atmosphere, referenceCatalog]);
+
+  const result = useMemo(() => runRecommendationV2(intent, recommendationCatalog), [intent, recommendationCatalog]);
   const leadingFragrance = result.recommendations[0]?.fragrance;
   const primaryAura = auraColor(leadingFragrance?.accords[0]?.id, "#78d7b0");
   const secondaryAura = auraColor(leadingFragrance?.accords[1]?.id, "#d995c5");
@@ -752,6 +1061,20 @@ export function App() {
 
   useEffect(() => {
     let active = true;
+    loadOlfactoryReferenceCatalog()
+      .then((catalog) => {
+        if (active) setReferenceCatalog(catalog);
+      })
+      .catch(() => {
+        if (active) setReferenceCatalog(null);
+      });
+    return () => {
+      active = false;
+    };
+  }, []);
+
+  useEffect(() => {
+    let active = true;
     loadFactualLibrary()
       .then((library) => {
         if (active) setFactualLibrary(library);
@@ -768,45 +1091,24 @@ export function App() {
     let active = true;
     loadRecommendationCatalog()
       .then((catalog) => {
-        if (active) setRecommendationCatalog(catalog);
+        if (active) {
+          setRecommendationCatalog(catalog);
+          setRecommendationStatus("ready");
+        }
       })
       .catch(() => {
-        if (active) setRecommendationCatalog([]);
+        if (active) {
+          setRecommendationCatalog([]);
+          setRecommendationStatus("unavailable");
+        }
       });
     return () => {
       active = false;
     };
   }, []);
 
-  function update<K extends keyof ConsultantForm>(key: K, value: ConsultantForm[K]): void {
-    setDraft((current) => {
-      const next = { ...current, [key]: value };
-      window.localStorage.setItem(STORAGE_KEY, JSON.stringify(next));
-      return next;
-    });
-  }
-
-  function submit(event: FormEvent<HTMLFormElement>): void {
-    event.preventDefault();
-    setRevision((current) => current + 1);
-    document.getElementById("recommendations")?.scrollIntoView({ behavior: "smooth", block: "start" });
-  }
-
-  function reset(): void {
-    window.localStorage.removeItem(STORAGE_KEY);
-    setDraft(DEFAULT_FORM);
-    setRevision((current) => current + 1);
-    setConsultationStep(0);
-  }
-
-  function moveToStep(step: number): void {
-    setConsultationStep(Math.max(0, Math.min(CONSULTATION_STEPS.length - 1, step)));
-    if (window.matchMedia("(max-width: 1060px)").matches) {
-      window.requestAnimationFrame(() => {
-        document.querySelector(".consultation-panel")?.scrollIntoView({ behavior: "smooth", block: "start" });
-      });
-    }
-  }
+  const hasRankableFragrances = recommendationCatalog.length > 0;
+  const factualCount = factualLibrary?.fragrances.length ?? catalogManifest?.counts.fragrances ?? 0;
 
   return (
     <div className="app-shell" style={atmosphereStyle}>
@@ -831,7 +1133,7 @@ export function App() {
         <div
           className="runtime-status"
           title={catalogManifest
-            ? `Base factual ${catalogManifest.releaseId} pronta com catálogo curado ativo.`
+            ? `Base factual ${catalogManifest.releaseId} pronta. Recomendações só são liberadas após validação de evidência.`
             : "Todo o cálculo desta tela acontece no seu dispositivo"}
         >
           <i aria-hidden="true" />
@@ -857,289 +1159,243 @@ export function App() {
               <span className="orbit-core">ar</span>
             </div>
             <p className="intro-copy">
-              Conte-nos o clima, o lugar e aquilo que deseja transmitir. O motor cruza contexto,
-              desempenho e gosto pessoal — e mostra por que cada escolha faz sentido.
+              Declare o momento e a sensação desejada. O motor deriva o contexto e consulta fatos
+              aprovados para responder com clareza — sem exigir estimativas técnicas ou jargões complexos.
             </p>
             <div className="sensory-legend" aria-label="Pilares da curadoria">
-              <span>01 contexto</span>
-              <span>02 presença</span>
-              <span>03 memória</span>
+              <span>01 momento</span>
+              <span>02 atmosfera</span>
+              <span>03 curadoria</span>
             </div>
           </div>
         </section>
 
         <div className="demo-notice" role="note">
-          <strong>Catálogo Curado Ativo</strong>
-          <span>Exibindo fragrâncias reais curadas a partir da base oficial do O Boticário.</span>
+          <strong>{hasRankableFragrances ? "Curadoria validada" : "Acervo factual ativo"}</strong>
+          <span>{hasRankableFragrances
+            ? `${recommendationCatalog.length} fragrâncias atravessaram o gate de recomendação.`
+            : recommendationStatus === "loading"
+              ? "Validando as evidências disponíveis para recomendação contextual."
+              : `${referenceCatalog?.count ?? 0} referências olfativas e ${factualCount} registros reais podem ser explorados; o ranking contextual permanece em calibração.`}</span>
         </div>
 
-        <section className="consultation-layout" id="consultation" aria-label="Consulta olfativa">
-          <form className="consultation-panel" onSubmit={submit}>
+        <section className="consultation-layout" id="consultation" aria-label="Consulta olfativa simplificada">
+          <div className="consultation-panel">
             <nav className="consultation-steps" aria-label="Etapas da consulta">
-              {CONSULTATION_STEPS.map((step, index) => (
-                <button
-                  className={index === consultationStep ? "is-current" : index < consultationStep ? "is-complete" : ""}
-                  type="button"
-                  onClick={() => moveToStep(index)}
-                  aria-current={index === consultationStep ? "step" : undefined}
-                  key={step.number}
-                >
-                  <span>{step.number}</span>
-                  <small>{step.short}</small>
-                </button>
-              ))}
+              <button
+                className={step === "moment" ? "is-current" : "is-complete"}
+                type="button"
+                onClick={() => dispatch({ type: "SET_STEP", step: "moment" })}
+                aria-current={step === "moment" ? "step" : undefined}
+              >
+                <span>01</span>
+                <small>Momento</small>
+              </button>
+              <button
+                className={step === "atmosphere" ? "is-current" : step === "results" ? "is-complete" : ""}
+                type="button"
+                onClick={() => dispatch({ type: "SET_STEP", step: "atmosphere" })}
+                aria-current={step === "atmosphere" ? "step" : undefined}
+              >
+                <span>02</span>
+                <small>Atmosfera</small>
+              </button>
+              <button
+                className={step === "results" ? "is-current" : ""}
+                type="button"
+                onClick={() => dispatch({ type: "SET_STEP", step: "results" })}
+                aria-current={step === "results" ? "step" : undefined}
+              >
+                <span>03</span>
+                <small>Curadoria</small>
+              </button>
             </nav>
 
-            <div className="step-heading">
-              <div>
-                <span className="panel-number">{CONSULTATION_STEPS[consultationStep].number}</span>
-                <span>
-                  <h2>{CONSULTATION_STEPS[consultationStep].title}</h2>
-                  <p>{CONSULTATION_STEPS[consultationStep].description}</p>
-                </span>
-              </div>
-              <button className="text-button" onClick={reset} type="button">restaurar</button>
-            </div>
-
-            <div className="consultation-step" key={consultationStep}>
-              {consultationStep === 0 && (
-                <>
-                  <div className="field-grid two-columns">
-                    <label>
-                      <span>Ocasião</span>
-                      <select value={draft.occasion} onChange={(event) => update("occasion", event.target.value)}>
-                        <option value="escritório">Escritório</option>
-                        <option value="casual">Casual</option>
-                        <option value="encontro">Encontro</option>
-                        <option value="formal">Evento formal</option>
-                        <option value="festa">Festa</option>
-                        <option value="esporte">Esporte</option>
-                      </select>
-                    </label>
-
-                    <label>
-                      <span>Ambiente</span>
-                      <select value={draft.setting} onChange={(event) => update("setting", event.target.value as Setting)}>
-                        <option value="indoor">Interno</option>
-                        <option value="outdoor">Externo</option>
-                        <option value="mixed">Misto</option>
-                      </select>
-                    </label>
-
-                    <label>
-                      <span>Movimento de pessoas</span>
-                      <select value={draft.crowding} onChange={(event) => update("crowding", event.target.value as Crowding)}>
-                        <option value="low">Pouco</option>
-                        <option value="medium">Moderado</option>
-                        <option value="high">Intenso</option>
-                      </select>
-                    </label>
-
-                    <label>
-                      <span>Faixa de preço</span>
-                      <select
-                        value={draft.maximumPriceTier}
-                        onChange={(event) => update("maximumPriceTier", Number(event.target.value) as 1 | 2 | 3 | 4 | 5)}
-                      >
-                        <option value="1">1 — econômica</option>
-                        <option value="2">2 — acessível</option>
-                        <option value="3">3 — intermediária</option>
-                        <option value="4">4 — premium</option>
-                        <option value="5">5 — sem limite</option>
-                      </select>
-                    </label>
-                  </div>
-
-                  <div className="range-group context-ranges">
-                    <label>
-                      <span>Temperatura <strong>{draft.temperatureC} °C</strong></span>
-                      <input
-                        type="range"
-                        min="5"
-                        max="40"
-                        value={draft.temperatureC}
-                        onChange={(event) => update("temperatureC", Number(event.target.value))}
-                      />
-                    </label>
-                    <label>
-                      <span>Umidade <strong>{Math.round(draft.humidity * 100)}%</strong></span>
-                      <input
-                        type="range"
-                        min="0"
-                        max="100"
-                        value={draft.humidity * 100}
-                        onChange={(event) => update("humidity", Number(event.target.value) / 100)}
-                      />
-                    </label>
-                  </div>
-
-                  <div className="step-insight">
-                    <span aria-hidden="true">◌</span>
-                    <p>Calor, umidade e circulação alteram a difusão. Usaremos o cenário para equilibrar presença e conforto.</p>
-                  </div>
-                </>
-              )}
-
-              {consultationStep === 1 && (
-                <>
-                  <div className="presence-meter" aria-hidden="true">
-                    <span className="presence-core" />
-                    <span className="presence-wave wave-one" />
-                    <span className="presence-wave wave-two" />
-                    <small>{projectionLabel(draft.desiredProjection)}</small>
-                  </div>
-
-                  <div className="range-group presence-ranges">
-                    <label>
-                      <span>Duração desejada <strong>{draft.durationHours}h</strong></span>
-                      <input
-                        type="range"
-                        min="2"
-                        max="14"
-                        value={draft.durationHours}
-                        onChange={(event) => update("durationHours", Number(event.target.value))}
-                      />
-                    </label>
-                    <label>
-                      <span>Projeção <strong>{projectionLabel(draft.desiredProjection)}</strong></span>
-                      <input
-                        type="range"
-                        min="20"
-                        max="90"
-                        value={draft.desiredProjection * 100}
-                        onChange={(event) => update("desiredProjection", Number(event.target.value) / 100)}
-                      />
-                    </label>
-                  </div>
-
-                  <div className="toggle-grid">
-                    <label className="toggle-row">
-                      <input
-                        type="checkbox"
-                        checked={draft.sensitiveEnvironment}
-                        onChange={(event) => update("sensitiveEnvironment", event.target.checked)}
-                      />
-                      <span>
-                        <strong>Ambiente sensível</strong>
-                        bloquear projeção excessiva
-                      </span>
-                    </label>
-                    <label className="toggle-row">
-                      <input
-                        type="checkbox"
-                        checked={draft.strictBudget}
-                        onChange={(event) => update("strictBudget", event.target.checked)}
-                      />
-                      <span>
-                        <strong>Orçamento rígido</strong>
-                        excluir faixas superiores
-                      </span>
-                    </label>
-                  </div>
-                </>
-              )}
-
-              {consultationStep === 2 && (
-                <>
-                  <ChipGroup
-                    legend="Acordes que atraem você"
-                    options={dynamicAccordOptions}
-                    selected={draft.likedAccords}
-                    onToggle={(value) => update("likedAccords", toggleValue(draft.likedAccords, value))}
-                  />
-                  <ChipGroup
-                    legend="Acordes que você prefere evitar"
-                    options={dynamicAccordOptions}
-                    selected={draft.avoidedAccords}
-                    onToggle={(value) => update("avoidedAccords", toggleValue(draft.avoidedAccords, value))}
-                    tone="negative"
-                  />
-                  <ChipGroup
-                    legend="Notas proibidas nesta consulta"
-                    options={dynamicNoteOptions}
-                    selected={draft.hardAvoidNotes}
-                    onToggle={(value) => update("hardAvoidNotes", toggleValue(draft.hardAvoidNotes, value))}
-                    tone="negative"
-                  />
-
-                  <label className="novelty-control">
+            {step === "moment" && (
+              <div className="consultation-step">
+                <div className="step-heading">
+                  <div>
+                    <span className="panel-number">01</span>
                     <span>
-                      Apetite por descoberta
-                      <strong>{draft.noveltyPreference < 0.34 ? "familiar" : draft.noveltyPreference > 0.66 ? "explorador" : "equilibrado"}</strong>
+                      <h2>Para qual momento?</h2>
+                      <p>Onde e quando o perfume encontrará você?</p>
                     </span>
-                    <input
-                      type="range"
-                      min="0"
-                      max="100"
-                      value={draft.noveltyPreference * 100}
-                      onChange={(event) => update("noveltyPreference", Number(event.target.value) / 100)}
-                    />
-                  </label>
-                  <p className="saved-label">Preferências salvas apenas neste dispositivo</p>
-                </>
-              )}
-            </div>
+                  </div>
+                  <button className="text-button" onClick={() => dispatch({ type: "RESET_ALL" })} type="button">restaurar</button>
+                </div>
 
-            <div className="step-actions">
-              {consultationStep > 0 && (
-                <button className="secondary-action" type="button" onClick={() => moveToStep(consultationStep - 1)}>
-                  <b aria-hidden="true">←</b>
-                  <span>Voltar</span>
-                </button>
-              )}
+                <MomentPicker
+                  selected={intent.occasion}
+                  onSelect={(occ) => {
+                    dispatch({ type: "SELECT_OCCASION", occasion: occ });
+                  }}
+                />
+              </div>
+            )}
 
-              {consultationStep < CONSULTATION_STEPS.length - 1 ? (
-                <button className="primary-action" type="button" onClick={() => moveToStep(consultationStep + 1)}>
-                  <span>Continuar</span>
-                  <b aria-hidden="true">→</b>
-                </button>
-              ) : (
-                <button className="primary-action" type="submit">
-                  <span>Revelar minha curadoria</span>
-                  <b aria-hidden="true">→</b>
-                </button>
-              )}
-            </div>
-          </form>
+            {step === "atmosphere" && (
+              <div className="consultation-step">
+                <div className="step-heading">
+                  <div>
+                    <span className="panel-number">02</span>
+                    <span>
+                      <h2>Que atmosfera você quer criar?</h2>
+                      <p>Qual sensação sensorial e assinatura pessoal você deseja transmitir?</p>
+                    </span>
+                  </div>
+                  <button className="text-button" onClick={() => dispatch({ type: "RESET_ALL" })} type="button">restaurar</button>
+                </div>
 
-          <section className="results-panel" id="recommendations" aria-live="polite" key={revision}>
+                <AtmospherePicker
+                  selected={intent.atmosphere}
+                  onSelect={(atm) => {
+                    dispatch({ type: "SELECT_ATMOSPHERE", atmosphere: atm });
+                    window.requestAnimationFrame(() => {
+                      document.getElementById("recommendations")?.scrollIntoView({ behavior: "smooth", block: "start" });
+                    });
+                  }}
+                />
+
+                <div className="step-actions">
+                  <button
+                    className="secondary-action"
+                    type="button"
+                    onClick={() => dispatch({ type: "SET_STEP", step: "moment" })}
+                  >
+                    <b aria-hidden="true">←</b>
+                    <span>Voltar</span>
+                  </button>
+                </div>
+              </div>
+            )}
+
+            {step === "results" && (
+              <div className="consultation-step">
+                <div className="step-heading">
+                  <div>
+                    <span className="panel-number">03</span>
+                    <span>
+                      <h2>Sua Curadoria Pessoal</h2>
+                      <p>Caminhos olfativos calculados para o seu momento.</p>
+                    </span>
+                  </div>
+                  <div className="step-heading-actions">
+                    <button
+                      className="pill-action"
+                      onClick={() => dispatch({ type: "SET_REFINEMENT_OPEN", isOpen: true })}
+                      type="button"
+                    >
+                      ⚙️ Ajustar detalhes
+                    </button>
+                    <button className="text-button" onClick={() => dispatch({ type: "RESET_ALL" })} type="button">restaurar</button>
+                  </div>
+                </div>
+
+                <ContextSummary
+                  context={derivedContext}
+                  isOpen={isContextCorrectionOpen}
+                  onToggleOpen={() => dispatch({ type: "SET_CONTEXT_CORRECTION_OPEN", isOpen: !isContextCorrectionOpen })}
+                  onUpdateSetting={(s) => dispatch({ type: "SET_CONTEXT_OVERRIDE", overrides: { setting: s } })}
+                  onUpdateWeather={(w) => dispatch({ type: "SET_CONTEXT_OVERRIDE", overrides: { weatherBand: w } })}
+                  onUpdatePeriod={(p) => dispatch({ type: "SET_CONTEXT_OVERRIDE", overrides: { period: p } })}
+                />
+
+                <div className="step-actions">
+                  <button
+                    className="secondary-action"
+                    type="button"
+                    onClick={() => dispatch({ type: "SET_STEP", step: "atmosphere" })}
+                  >
+                    <b aria-hidden="true">←</b>
+                    <span>Mudar atmosfera</span>
+                  </button>
+                  <button
+                    className="primary-action"
+                    type="button"
+                    onClick={() => dispatch({ type: "SET_REFINEMENT_OPEN", isOpen: true })}
+                  >
+                    <span>Refinar preferências</span>
+                    <b aria-hidden="true">⚙️</b>
+                  </button>
+                </div>
+              </div>
+            )}
+          </div>
+
+          <section className="results-panel" id="recommendations" aria-live="polite">
             <div className="result-aurora" aria-hidden="true" />
             <div className="results-heading">
               <div>
-                <p className="section-kicker">Curadoria calculada</p>
-                <h2>Três caminhos possíveis</h2>
+                <p className="section-kicker">
+                  {hasRankableFragrances ? "Curadoria calculada" : "Curadoria sensorial de referências"}
+                </p>
+                <h2>
+                  {hasRankableFragrances
+                    ? "Três caminhos possíveis"
+                    : "Três referências para explorar"}
+                </h2>
               </div>
               <div className="result-meta">
                 <span className="live-aura"><i /> atmosfera responsiva</span>
-                <span>motor {result.engineVersion}</span>
-                <span>{result.excluded.length} exclusão(ões)</span>
+                <span>{hasRankableFragrances ? `motor ${result.engineVersion}` : "correspondência áudio-olfativa ativa"}</span>
+                {result.excluded.length > 0 && <span>{result.excluded.length} exclusão(ões)</span>}
               </div>
             </div>
 
-            {result.recommendations.length > 0 ? (
-              <div className="recommendation-list">
-                {result.recommendations.map((candidate, index) => (
-                  <RecommendationCard candidate={candidate} position={index + 1} key={candidate.fragrance.id} />
-                ))}
-              </div>
+            {hasRankableFragrances ? (
+              result.recommendations.length > 0 ? (
+                <div className="recommendation-list">
+                  {result.recommendations.map((candidate, index) => (
+                    <RecommendationCard candidate={candidate} position={index + 1} key={candidate.fragrance.id} />
+                  ))}
+                </div>
+              ) : (
+                <div className="empty-state">
+                  <span aria-hidden="true">∅</span>
+                  <h3>Nenhuma opção atravessou todos os filtros com os critérios atuais.</h3>
+                  <p>Flexibilize uma nota proibida ou o teto de projeção no menu de refinamento.</p>
+                </div>
+              )
             ) : (
-              <div className="empty-state">
-                <span aria-hidden="true">∅</span>
-                <h3>Nenhuma opção atravessou todos os filtros.</h3>
-                <p>Flexibilize uma nota proibida, a faixa de preço ou o teto de projeção.</p>
-              </div>
+              referenceExamples.length > 0 ? (
+                <div className="recommendation-list">
+                  {referenceExamples.map((reference) => (
+                    <ReferenceCard reference={reference} key={reference.id} />
+                  ))}
+                </div>
+              ) : (
+                <div className="empty-state">
+                  <span aria-hidden="true">∅</span>
+                  <h3>Nenhuma referência olfativa encontrada para a combinação atual.</h3>
+                  <p>Tente selecionar outra atmosfera ou flexibilizar os acordes a evitar no refinamento.</p>
+                </div>
+              )
             )}
 
             <footer className="results-footnote">
               <span>Nota de curadoria</span>
               <p>
-                Desempenho é uma estimativa coletiva. Pele, tecido, quantidade aplicada e ventilação podem transformar a experiência.
+                {hasRankableFragrances
+                  ? "Desempenho é uma estimativa coletiva. Pele, tecido, quantidade aplicada e ventilação podem transformar a experiência."
+                  : "Aproximações olfativas e correspondências transmodais baseadas nos estudos de Mahdavi et al. (2020) e Piesse (1867). O Antiquário separa rigorosamente fatos de composição de estimativas de desempenho."}
               </p>
             </footer>
           </section>
         </section>
 
         {factualLibrary && <FactualLibrary library={factualLibrary} />}
+
+        <RefinementDrawer
+          isOpen={isRefinementOpen}
+          intent={intent}
+          availableAccords={dynamicAccordOptions}
+          availableNotes={dynamicNoteOptions}
+          onClose={() => dispatch({ type: "SET_REFINEMENT_OPEN", isOpen: false })}
+          onToggleAvoidedAccord={(acc) => dispatch({ type: "TOGGLE_AVOIDED_ACCORD", accord: acc })}
+          onToggleHardAvoidNote={(not) => dispatch({ type: "TOGGLE_HARD_AVOID_NOTE", note: not })}
+          onToggleSensitiveEnvironment={(val) => dispatch({ type: "UPDATE_INTENT", updates: { sensitiveEnvironment: val } })}
+          onSelectDiscovery={(disc) => dispatch({ type: "UPDATE_INTENT", updates: { discovery: disc } })}
+        />
       </main>
     </div>
   );

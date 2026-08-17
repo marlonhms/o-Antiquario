@@ -24,3 +24,11 @@ relations: []
 ---
 
 # Blackcurrant liqueur
+
+## Acordes e Facetas Relacionadas
+
+- [[Fresco|Fresco]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-giorgio-armani-si-giorgio-armani-2013-eau-de-parfum|Sì Giorgio Armani 2013 Eau de Parfum]]

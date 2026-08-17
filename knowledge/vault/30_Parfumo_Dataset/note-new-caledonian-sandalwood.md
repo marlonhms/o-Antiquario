@@ -24,3 +24,12 @@ relations: []
 ---
 
 # New Caledonian sandalwood
+
+## Acordes e Facetas Relacionadas
+
+- [[Fresco|Fresco]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-chanel-allure-homme-edition-blanche-chanel-2008-eau-de-toilette-concentree|Allure Homme Édition Blanche Chanel 2008 Eau de Toilette Concentrée]]
+- [[fragrance-tom-ford-bitter-peach-tom-ford-2020-eau-de-parfum|Bitter Peach Tom Ford 2020 Eau de Parfum]]

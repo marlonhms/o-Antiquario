@@ -24,3 +24,13 @@ relations: []
 ---
 
 # Eucalyptus
+
+## Acordes e Facetas Relacionadas
+
+- [[Fresco|Fresco]]
+- [[verde|Verde]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-xerjoff-accento-overdose|Accento Overdose]]
+- [[fragrance-xerjoff-torino22|Torino22]]

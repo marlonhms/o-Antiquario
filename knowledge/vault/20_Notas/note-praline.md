@@ -21,7 +21,17 @@ evidence:
     confidence: medium
     claim_scope: "Descritor factual do Wikidata"
 ---
-
-# Praline
-
+
+# Praline
+
 Nota olfativa catalogada automaticamente.
+
+## Acordes e Facetas Relacionadas
+
+- [[gourmand|Gourmand]]
+- [[doce|Doce]]
+
+## Presente nas Fragrâncias
+
+- [[khamrah-q140499690|Khamrah]]
+- [[fragrance-lancome-la-vie-est-belle-leau-de-parfum|La Vie est Belle L'Eau de Parfum]]

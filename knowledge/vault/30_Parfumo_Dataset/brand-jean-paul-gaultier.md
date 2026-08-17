@@ -24,3 +24,10 @@ relations: []
 ---
 
 # Jean Paul Gaultier
+
+## Fragrâncias no Acervo
+
+- [[fragrance-jean-paul-gaultier-gaultier|Gaultier²]]
+- [[fragrance-jean-paul-gaultier-le-beau|Le Beau]]
+- [[fragrance-jean-paul-gaultier-le-beau-le-parfum|Le Beau Le Parfum]]
+- [[fragrance-jean-paul-gaultier-scandal-pour-homme|Scandal pour Homme]]

@@ -24,3 +24,17 @@ relations: []
 ---
 
 # Myrrh
+
+## Acordes e Facetas Relacionadas
+
+- [[resinoso|Resinoso]]
+- [[ambarado|Ambarado]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-prada-amber-pour-homme-prada-2006-eau-de-toilette|Amber pour Homme Prada 2006 Eau de Toilette]]
+- [[fragrance-amouage-beach-hut-man|Beach Hut Man]]
+- [[fragrance-gucci-gucci-pour-homme-ii-gucci-2007-eau-de-toilette|Gucci pour Homme II Gucci 2007 Eau de Toilette]]
+- [[fragrance-amouage-interlude-black-iris|Interlude Black Iris]]
+- [[fragrance-yves-saint-laurent-m7-m7-oud-absolu|M7 M7 Oud Absolu]]
+- [[fragrance-lartisan-parfumeur-timbuktu|Timbuktu]]

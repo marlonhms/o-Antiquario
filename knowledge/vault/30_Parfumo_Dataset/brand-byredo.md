@@ -24,3 +24,8 @@ relations: []
 ---
 
 # Byredo
+
+## Fragrâncias no Acervo
+
+- [[deep-viola-q138795798|Deep Viola]]
+- [[fragrance-byredo-gypsy-water-byredo-2008-eau-de-parfum|Gypsy Water Byredo 2008 Eau de Parfum]]

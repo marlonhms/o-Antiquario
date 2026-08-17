@@ -24,3 +24,11 @@ relations: []
 ---
 
 # Camellia
+
+## Acordes e Facetas Relacionadas
+
+- [[Fresco|Fresco]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-kenzo-flower-by-kenzo-kenzo-2000-eau-de-parfum|Flower by Kenzo Kenzo 2000 Eau de Parfum]]

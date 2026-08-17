@@ -24,3 +24,7 @@ relations: []
 ---
 
 # Givenchy
+
+## Fragrâncias no Acervo
+
+- [[fragrance-givenchy-pi-givenchy-1999-eau-de-toilette|Pi Givenchy 1999 Eau de Toilette]]

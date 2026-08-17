@@ -24,3 +24,9 @@ relations: []
 ---
 
 # bdk Parfums
+
+## Fragrâncias no Acervo
+
+- [[fragrance-bdk-parfums-creme-de-cuir-bdk-parfums-2018-eau-de-parfum|Crème de Cuir bdk Parfums 2018 Eau de Parfum]]
+- [[fragrance-bdk-parfums-gris-charnel-bdk-parfums-2022-extrait|Gris Charnel bdk Parfums 2022 Extrait]]
+- [[fragrance-bdk-parfums-velvet-tonka|Velvet Tonka]]

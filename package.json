@@ -10,8 +10,8 @@
     "dev": "vite --config apps/web/vite.config.ts",
     "build": "vite build --config apps/web/vite.config.ts",
     "preview": "vite preview --config apps/web/vite.config.ts",
-    "test": "node --test src/recommender/recommender.test.ts src/data/source-manifest.test.ts src/taxonomy/taxonomy.test.ts src/knowledge/knowledge.test.ts src/catalog/release.test.ts src/domain/recommendation-contract.test.ts src/catalog/recommendation-compiler.test.ts",
-    "test:watch": "node --test --watch src/recommender/recommender.test.ts src/data/source-manifest.test.ts src/taxonomy/taxonomy.test.ts src/knowledge/knowledge.test.ts src/catalog/release.test.ts src/domain/recommendation-contract.test.ts src/catalog/recommendation-compiler.test.ts",
+    "test": "node --test apps/web/src/features/consultation/domain/consultation.test.ts src/domain/synesthesia.test.ts src/recommender/recommender.test.ts src/data/source-manifest.test.ts src/taxonomy/taxonomy.test.ts src/knowledge/knowledge.test.ts src/catalog/release.test.ts src/domain/recommendation-contract.test.ts src/catalog/recommendation-compiler.test.ts src/catalog/knowledge-adapter.test.ts src/catalog/presentation-readiness.test.ts src/catalog/olfactory-reference.test.ts",
+    "test:watch": "node --test --watch apps/web/src/features/consultation/domain/consultation.test.ts src/domain/synesthesia.test.ts src/recommender/recommender.test.ts src/data/source-manifest.test.ts src/taxonomy/taxonomy.test.ts src/knowledge/knowledge.test.ts src/catalog/release.test.ts src/domain/recommendation-contract.test.ts src/catalog/recommendation-compiler.test.ts src/catalog/knowledge-adapter.test.ts src/catalog/presentation-readiness.test.ts src/catalog/olfactory-reference.test.ts",
 
     "typecheck": "tsc --noEmit",
     "sources:validate": "node src/data/validate-sources.ts",
@@ -38,7 +38,13 @@
     "data:ingest:official-pdf": "node scripts/run-python.mjs -m antiquario_data.cli official-pdf",
     "curation:queue": "node scripts/run-python.mjs -m antiquario_data.cli curation-queue",
     "recommendation:build": "node src/catalog/build-recommendation.ts",
-    "catalog:compile": "npm run knowledge:build && npm run recommendation:build && node scripts/run-python.mjs -m antiquario_data.cli release",
+    "presentation:audit": "node src/catalog/audit-presentation.ts",
+    "presentation:migrate-official": "node scripts/run-python.mjs -m antiquario_data.cli presentation-migrate-official",
+    "data:enrich:parfumo": "node scripts/run-python.mjs -m antiquario_data.cli parfumo-enrich --input data/raw/parfumo/parfumo_data_clean.csv --updated-at 2026-08-17",
+    "data:audit:parfumo": "node scripts/run-python.mjs -m antiquario_data.cli parfumo-audit-candidates",
+    "reference:build": "node src/catalog/build-olfactory-reference.ts",
+    "vault:sync-links": "node scripts/sync-obsidian-wikilinks.ts",
+    "catalog:compile": "npm run knowledge:build && npm run recommendation:build && npm run reference:build && node scripts/run-python.mjs -m antiquario_data.cli release",
     "demo": "node src/recommender/demo.ts"
   },
   "devDependencies": {

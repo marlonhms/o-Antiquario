@@ -23,12 +23,25 @@ evidence:
   kind: open_source
   license: CC0-1.0
   confidence: medium
-  claim_scope: Estrutura da pirâmide olfativa
+  claim_scope: Identidade e campos olfativos estruturados disponíveis no registro
+    do dataset.
+  locator: https://www.parfumo.com/Perfumes/John_Varvatos/Artisan_Pure
+  retrieved_at: '2026-08-17'
 relations:
 - predicate: belongs-to-brand
   target: antiquario:brand:john-varvatos
 - predicate: has-top-note
   target: antiquario:olfactory-note:clementine
+- predicate: has-accord
+  target: antiquario:accord:citricos
+- predicate: has-accord
+  target: antiquario:accord:fresco
+- predicate: has-accord
+  target: antiquario:accord:amadeirado
+- predicate: has-accord
+  target: antiquario:accord:floral
+- predicate: created-by
+  target: antiquario:perfumer:rodrigo-flores-roux
 ---
 
 # Artisan Pure
@@ -40,3 +53,10 @@ relations:
 - **Saída:** [[note-clementine]]
 - **Coração:** N/A
 - **Fundo:** N/A
+
+## Conexões do Grafo
+
+- **Casa / Marca:** [[brand-john-varvatos|John Varvatos]]
+- **Perfumista(s):** [[rodrigo-flores-roux|Rodrigo Flores-Roux]]
+- **Acordes Principais:** [[Citricos|Cítricos]], [[Fresco|Fresco]], [[Amadeirado|Amadeirado]], [[floral|Floral]]
+- **Notas de Saída:** [[note-clementine|Clementine]]

@@ -24,3 +24,7 @@ relations: []
 ---
 
 # Narciso Rodriguez
+
+## Fragrâncias no Acervo
+
+- [[fragrance-narciso-rodriguez-for-her-narciso-rodriguez-2005-eau-de-parfum|For Her Narciso Rodriguez 2005 Eau de Parfum]]

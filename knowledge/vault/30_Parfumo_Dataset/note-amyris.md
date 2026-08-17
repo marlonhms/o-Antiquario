@@ -24,3 +24,11 @@ relations: []
 ---
 
 # Amyris
+
+## Acordes e Facetas Relacionadas
+
+- [[Fresco|Fresco]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-bdk-parfums-velvet-tonka|Velvet Tonka]]

@@ -24,3 +24,11 @@ relations: []
 ---
 
 # Smoked leather
+
+## Acordes e Facetas Relacionadas
+
+- [[Fresco|Fresco]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-amouage-interlude-black-iris|Interlude Black Iris]]

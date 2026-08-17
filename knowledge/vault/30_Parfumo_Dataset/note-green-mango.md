@@ -24,3 +24,11 @@ relations: []
 ---
 
 # Green mango
+
+## Acordes e Facetas Relacionadas
+
+- [[Fresco|Fresco]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-lartisan-parfumeur-timbuktu|Timbuktu]]

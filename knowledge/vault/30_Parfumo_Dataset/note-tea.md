@@ -24,3 +24,12 @@ relations: []
 ---
 
 # Tea
+
+## Acordes e Facetas Relacionadas
+
+- [[Fresco|Fresco]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-serge-lutens-five-oclock-au-gingembre|Five o'clock au gingembre]]
+- [[fragrance-guerlain-linstant-de-guerlain-pour-homme-guerlain-2004-eau-de-toilette|L'Instant de Guerlain pour Homme Guerlain 2004 Eau de Toilette]]

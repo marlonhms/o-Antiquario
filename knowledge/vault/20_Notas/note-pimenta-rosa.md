@@ -21,7 +21,18 @@ evidence:
     confidence: medium
     claim_scope: "Descritor factual do Wikidata"
 ---
-
-# Pimenta Rosa
-
+
+# Pimenta Rosa
+
 Nota olfativa catalogada automaticamente.
+
+## Acordes e Facetas Relacionadas
+
+- [[especiado|Especiado]]
+
+## Presente nas Fragrâncias
+
+- [[angel-muse-q139980728|Angel Muse]]
+- [[aventus-q24886336|Aventus]]
+- [[jardin-d-amalfi-q139989391|Jardin d'Amalfi]]
+- [[zelen-q137527355|Zelen]]

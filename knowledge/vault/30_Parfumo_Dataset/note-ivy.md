@@ -39,3 +39,12 @@ No release `knowledge-v2-36bca79cd798`, **Ivy** aparece em 1 fragrância(s) com 
 ### Limite da automação
 
 Esta seção resume relações que já existiam no grafo. Ela não cria notas, não comprova ingrediente físico e não estima cheiro, concentração, intensidade, fixação, projeção ou evolução temporal.
+
+## Acordes e Facetas Relacionadas
+
+- [[verde|Verde]]
+- [[Fresco|Fresco]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-amouage-beach-hut-man|Beach Hut Man]]

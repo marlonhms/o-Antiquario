@@ -21,7 +21,24 @@ evidence:
     confidence: medium
     claim_scope: "Descritor factual do Wikidata"
 ---
-
-# Almiscar
-
+
+# Almiscar
+
 Nota olfativa catalogada automaticamente.
+
+## Acordes e Facetas Relacionadas
+
+- [[Atalcado|Atalcado]]
+
+## Presente nas Fragrâncias
+
+- [[aventus-q24886336|Aventus]]
+- [[dune-q17105080|Dune]]
+- [[eternity-moment-q140003429|Eternity Moment]]
+- [[floratta-blue-506bcad4|Floratta Blue]]
+- [[floratta-rose-506bcad4|Floratta Rose]]
+- [[naughty-alice-q139990627|Naughty Alice]]
+- [[odeon-q140298435|Odéon]]
+- [[printemps-q140453489|Printemps]]
+- [[virtus-q138773649|Virtus]]
+- [[zephyr-q138034992|Zephyr]]

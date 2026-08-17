@@ -21,7 +21,16 @@ evidence:
     confidence: medium
     claim_scope: "Descritor factual do Wikidata"
 ---
-
-# Pimenta Preta
-
+
+# Pimenta Preta
+
 Nota olfativa catalogada automaticamente.
+
+## Acordes e Facetas Relacionadas
+
+- [[especiado|Especiado]]
+
+## Presente nas Fragrâncias
+
+- [[ha-long-bay-q140237028|Ha Long Bay]]
+- [[malbec-gold-506bcad4|Malbec Gold]]

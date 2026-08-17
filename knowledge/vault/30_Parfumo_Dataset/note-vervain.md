@@ -24,3 +24,12 @@ relations: []
 ---
 
 # Vervain
+
+## Acordes e Facetas Relacionadas
+
+- [[Fresco|Fresco]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-acqua-di-parma-colonia-acqua-di-parma-1916-eau-de-cologne|Colonia Acqua di Parma 1916 Eau de Cologne]]
+- [[fragrance-tom-ford-noir-tom-ford-2012-eau-de-parfum|Noir Tom Ford 2012 Eau de Parfum]]

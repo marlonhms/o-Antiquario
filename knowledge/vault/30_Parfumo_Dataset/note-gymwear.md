@@ -24,3 +24,11 @@ relations: []
 ---
 
 # Gymwear
+
+## Acordes e Facetas Relacionadas
+
+- [[Fresco|Fresco]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-colornoise-country|Country.]]

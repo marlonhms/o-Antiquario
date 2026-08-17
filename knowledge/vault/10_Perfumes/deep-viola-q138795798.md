@@ -43,27 +43,34 @@ relations:
 - predicate: has-base-note
   target: antiquario:olfactory-note:oud
 ---
+
+# Deep Viola
+
+## Base factual
+
+- QID: `Q138795798`
+- Marca: Byredo
+- Perfumista: não informado no Wikidata
+- País: Suécia
+- Ano: 2020
+- Site oficial: não informado no Wikidata
+- Descritores olfativos (`P5872`, sem camada de pirâmide): leather smell, saffron smell, scent of bergamot, scent of vanilla, smell of angelica, smell of frankincense, smell of iris, smell of oud, smell of violets
+
+## Enriquecimento editorial obrigatório
+
+- [ ] Confirmar a identidade e a concentração da fragrância.
+- [ ] Validar os descritores Wikidata e classificar família, notas, camadas e acordes usando a taxonomia do Antiquário.
+- [ ] Registrar contexto de uso e desempenho com método, amostra e confiança.
+- [ ] Adicionar evidências permitidas para cada afirmação editorial.
+- [ ] Mover este arquivo para `10_Perfumes` somente após revisão humana.
+
+## Limite de uso
+
+Este rascunho não é uma recomendação e não deve ser usado pelo motor de ranking. Não inferir notas, desempenho, preço ou disponibilidade a partir de nome, marca ou país.
+
+## Conexões do Grafo
 
-# Deep Viola
-
-## Base factual
-
-- QID: `Q138795798`
-- Marca: Byredo
-- Perfumista: não informado no Wikidata
-- País: Suécia
-- Ano: 2020
-- Site oficial: não informado no Wikidata
-- Descritores olfativos (`P5872`, sem camada de pirâmide): leather smell, saffron smell, scent of bergamot, scent of vanilla, smell of angelica, smell of frankincense, smell of iris, smell of oud, smell of violets
-
-## Enriquecimento editorial obrigatório
-
-- [ ] Confirmar a identidade e a concentração da fragrância.
-- [ ] Validar os descritores Wikidata e classificar família, notas, camadas e acordes usando a taxonomia do Antiquário.
-- [ ] Registrar contexto de uso e desempenho com método, amostra e confiança.
-- [ ] Adicionar evidências permitidas para cada afirmação editorial.
-- [ ] Mover este arquivo para `10_Perfumes` somente após revisão humana.
-
-## Limite de uso
-
-Este rascunho não é uma recomendação e não deve ser usado pelo motor de ranking. Não inferir notas, desempenho, preço ou disponibilidade a partir de nome, marca ou país.
+- **Casa / Marca:** [[brand-byredo|Byredo]]
+- **Notas de Saída:** [[Bergamota|Bergamota]], [[note-safran|Safran]], [[note-angelica|Angelica]]
+- **Notas de Coração:** [[note-violetas|Violetas]], [[note-iris|Iris]], [[note-couro|Couro]]
+- **Notas de Fundo:** [[Baunilha|Baunilha]], [[note-incenso|Incenso]], [[note-oud|Oud]]

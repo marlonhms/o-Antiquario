@@ -24,3 +24,12 @@ relations: []
 ---
 
 # Precious woods
+
+## Acordes e Facetas Relacionadas
+
+- [[Fresco|Fresco]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-parfums-de-marly-kalan|Kalan]]
+- [[fragrance-roberto-ugolini-marzocco-roberto-ugolini-2019-eau-de-parfum|Marzocco Roberto Ugolini 2019 Eau de Parfum]]

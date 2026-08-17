@@ -24,3 +24,14 @@ relations: []
 ---
 
 # Lavender absolute
+
+## Acordes e Facetas Relacionadas
+
+- [[Fresco|Fresco]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-dior-eau-sauvage-parfum|Eau Sauvage Parfum]]
+- [[fragrance-salvatore-ferragamo-f-by-ferragamo-pour-homme-black-salvatore-ferragamo-2009-eau-de-toilette|F by Ferragamo pour Homme Black Salvatore Ferragamo 2009 Eau de Toilette]]
+- [[fragrance-prada-luna-rossa-prada-2012-eau-de-toilette|Luna Rossa Prada 2012 Eau de Toilette]]
+- [[fragrance-amouage-memoir-man|Memoir Man]]

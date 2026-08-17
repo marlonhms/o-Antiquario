@@ -24,3 +24,12 @@ relations: []
 ---
 
 # Red pepper
+
+## Acordes e Facetas Relacionadas
+
+- [[Fresco|Fresco]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-etnia-factory-beijing|Factory, Beijing]]
+- [[fragrance-viktor-rolf-spicebomb-infrared-viktor-rolf-2021-eau-de-toilette|Spicebomb Infrared Viktor & Rolf 2021 Eau de Toilette]]

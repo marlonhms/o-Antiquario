@@ -24,3 +24,8 @@ relations: []
 ---
 
 # Profumum Roma
+
+## Fragrâncias no Acervo
+
+- [[fragrance-profumum-roma-acqua-e-zucchero|Acqua e Zucchero]]
+- [[fragrance-profumum-roma-sorriso|Sorriso]]

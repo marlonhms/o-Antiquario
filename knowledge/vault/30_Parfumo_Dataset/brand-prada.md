@@ -24,3 +24,13 @@ relations: []
 ---
 
 # Prada
+
+## Fragrâncias no Acervo
+
+- [[fragrance-prada-amber-pour-homme-prada-2006-eau-de-toilette|Amber pour Homme Prada 2006 Eau de Toilette]]
+- [[fragrance-prada-candy-prada-2011-eau-de-parfum|Candy Prada 2011 Eau de Parfum]]
+- [[fragrance-prada-lhomme-leau|L'Homme L'Eau]]
+- [[fragrance-prada-luna-rossa-carbon|Luna Rossa Carbon]]
+- [[fragrance-prada-luna-rossa-ocean-prada-2021-eau-de-toilette|Luna Rossa Ocean Prada 2021 Eau de Toilette]]
+- [[fragrance-prada-luna-rossa-prada-2012-eau-de-toilette|Luna Rossa Prada 2012 Eau de Toilette]]
+- [[fragrance-prada-paradoxe|Paradoxe]]

@@ -24,3 +24,8 @@ relations: []
 ---
 
 # Montale
+
+## Fragrâncias no Acervo
+
+- [[fragrance-montale-black-aoud|Black Aoud]]
+- [[fragrance-montale-chocolate-greedy|Chocolate Greedy]]

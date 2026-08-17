@@ -24,3 +24,16 @@ relations: []
 ---
 
 # Peach
+
+## Acordes e Facetas Relacionadas
+
+- [[frutado|Frutado]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-chanel-allure-homme-chanel-1999-eau-de-toilette|Allure Homme Chanel 1999 Eau de Toilette]]
+- [[fragrance-mugler-angel-mugler-1992-eau-de-parfum|Angel Mugler 1992 Eau de Parfum]]
+- [[fragrance-chopard-casmir-chopard-1991-eau-de-parfum|Cašmir Chopard 1991 Eau de Parfum]]
+- [[fragrance-xerjoff-la-capitale|La Capitale]]
+- [[fragrance-guerlain-santal-royal-guerlain-2014-eau-de-parfum|Santal Royal Guerlain 2014 Eau de Parfum]]
+- [[fragrance-dolce-gabbana-the-one-dolce-gabbana-2006-eau-de-parfum|The One Dolce & Gabbana 2006 Eau de Parfum]]

@@ -24,3 +24,21 @@ relations: []
 ---
 
 # Black pepper
+
+## Acordes e Facetas Relacionadas
+
+- [[especiado|Especiado]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-chanel-allure-homme-edition-blanche-chanel-2008-eau-de-toilette-concentree|Allure Homme Édition Blanche Chanel 2008 Eau de Toilette Concentrée]]
+- [[fragrance-gisada-ambassador-for-men|Ambassador for Men]]
+- [[fragrance-acorelle-be-positive---the-blanc|Be Positive - Thé Blanc]]
+- [[fragrance-calvin-klein-ck-one-shock-for-him|CK One Shock for Him]]
+- [[fragrance-salvatore-ferragamo-f-by-ferragamo-pour-homme-black-salvatore-ferragamo-2009-eau-de-toilette|F by Ferragamo pour Homme Black Salvatore Ferragamo 2009 Eau de Toilette]]
+- [[fragrance-dunhill-icon|Icon]]
+- [[fragrance-parfums-de-marly-kalan|Kalan]]
+- [[fragrance-yves-saint-laurent-le-vestiaire---babycat|Le Vestiaire - Babycat]]
+- [[fragrance-burberry-london-for-men-burberry-2006-eau-de-toilette|London for Men Burberry 2006 Eau de Toilette]]
+- [[fragrance-initio-paragon|Paragon]]
+- [[fragrance-zadig-voltaire-this-is-him|This Is Him!]]

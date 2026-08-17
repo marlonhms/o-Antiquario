@@ -24,3 +24,11 @@ relations: []
 ---
 
 # Birch wood
+
+## Acordes e Facetas Relacionadas
+
+- [[Fresco|Fresco]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-cartier-declaration-cartier-1998-eau-de-toilette|Déclaration Cartier 1998 Eau de Toilette]]

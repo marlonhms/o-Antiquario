@@ -44,3 +44,18 @@ No release `knowledge-v2-36bca79cd798`, **Sage** aparece em 7 fragrância(s) com
 ### Limite da automação
 
 Esta seção resume relações que já existiam no grafo. Ela não cria notas, não comprova ingrediente físico e não estima cheiro, concentração, intensidade, fixação, projeção ou evolução temporal.
+
+## Acordes e Facetas Relacionadas
+
+- [[Fresco|Fresco]]
+- [[verde|Verde]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-versace-blue-jeans|Blue Jeans]]
+- [[fragrance-giorgio-armani-emporio-armani---stronger-with-you|Emporio Armani - Stronger With You]]
+- [[fragrance-geoffrey-beene-grey-flannel-geoffrey-beene-1975-eau-de-toilette|Grey Flannel Geoffrey Beene 1975 Eau de Toilette]]
+- [[fragrance-tom-ford-grey-vetiver-tom-ford-2009-eau-de-parfum|Grey Vetiver Tom Ford 2009 Eau de Parfum]]
+- [[fragrance-hugo-boss-hugo-hugo-boss-1995-eau-de-toilette|Hugo Hugo Boss 1995 Eau de Toilette]]
+- [[fragrance-dunhill-icon|Icon]]
+- [[fragrance-prada-luna-rossa-ocean-prada-2021-eau-de-toilette|Luna Rossa Ocean Prada 2021 Eau de Toilette]]

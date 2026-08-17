@@ -24,3 +24,12 @@ relations: []
 ---
 
 # Ambrofix
+
+## Acordes e Facetas Relacionadas
+
+- [[Fresco|Fresco]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-yves-saint-laurent-myslf|Myslf]]
+- [[fragrance-prada-paradoxe|Paradoxe]]

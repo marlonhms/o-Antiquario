@@ -24,3 +24,11 @@ relations: []
 ---
 
 # Bergamot leaf
+
+## Acordes e Facetas Relacionadas
+
+- [[Fresco|Fresco]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-yves-saint-laurent-myslf|Myslf]]

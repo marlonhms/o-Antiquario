@@ -24,3 +24,18 @@ relations: []
 ---
 
 # Almond
+
+## Acordes e Facetas Relacionadas
+
+- [[gourmand|Gourmand]]
+- [[doce|Doce]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-kilian-black-phantom---memento-mori|Black Phantom - Memento Mori]]
+- [[fragrance-geoffrey-beene-grey-flannel-geoffrey-beene-1975-eau-de-toilette|Grey Flannel Geoffrey Beene 1975 Eau de Toilette]]
+- [[fragrance-guerlain-lhomme-ideal-cologne|L'Homme Idéal Cologne]]
+- [[fragrance-guerlain-lhomme-ideal-extreme|L'Homme Idéal Extrême]]
+- [[fragrance-guerlain-lhomme-ideal-guerlain-2014-eau-de-toilette|L'Homme Idéal Guerlain 2014 Eau de Toilette]]
+- [[fragrance-jo-malone-myrrh-tonka|Myrrh & Tonka]]
+- [[fragrance-bdk-parfums-velvet-tonka|Velvet Tonka]]

@@ -3,38 +3,59 @@ schema_version: 1
 id: antiquario:fragrance:parfumo-valentino-valentino-uomo-valentino-2014-eau-de-toilette
 project: o-antiquario
 type: fragrance
-title: "Valentino Uomo Valentino 2014 Eau de Toilette"
+title: Valentino Uomo Valentino 2014 Eau de Toilette
 aliases: []
 external_ids: {}
-tags: [perfume, parfumo, draft]
-source_ids: [parfumo_dataset]
+tags:
+- perfume
+- parfumo
+- draft
+source_ids:
+- parfumo_dataset
 license: CC0-1.0
 confidence: medium
 review_status: approved
 updated_at: 2026-07-23
 language: pt-BR
-summary: "Fragrância extraída do Parfumo Fragrance Dataset (TidyTuesday)."
+summary: Fragrância extraída do Parfumo Fragrance Dataset (TidyTuesday).
 evidence:
-  - source_id: parfumo_dataset
-    kind: open_source
-    license: CC0-1.0
-    confidence: medium
-    claim_scope: "Estrutura da pirâmide olfativa"
+- source_id: parfumo_dataset
+  kind: open_source
+  license: CC0-1.0
+  confidence: medium
+  claim_scope: Identidade e campos olfativos estruturados disponíveis no registro
+    do dataset.
+  locator: https://www.parfumo.com/Perfumes/Valentino/valentino-uomo-2014-eau-de-toilette
+  retrieved_at: '2026-08-17'
 relations:
-  - predicate: belongs-to-brand
-    target: antiquario:brand:valentino
-  - predicate: has-top-note
-    target: antiquario:olfactory-note:bergamota
-  - predicate: has-top-note
-    target: antiquario:olfactory-note:myrtle
-  - predicate: has-heart-note
-    target: antiquario:olfactory-note:gianduja-cream
-  - predicate: has-heart-note
-    target: antiquario:olfactory-note:coffee
-  - predicate: has-base-note
-    target: antiquario:olfactory-note:cedar
-  - predicate: has-base-note
-    target: antiquario:olfactory-note:white-leather
+- predicate: belongs-to-brand
+  target: antiquario:brand:valentino
+- predicate: has-top-note
+  target: antiquario:olfactory-note:bergamota
+- predicate: has-top-note
+  target: antiquario:olfactory-note:myrtle
+- predicate: has-heart-note
+  target: antiquario:olfactory-note:gianduja-cream
+- predicate: has-heart-note
+  target: antiquario:olfactory-note:coffee
+- predicate: has-base-note
+  target: antiquario:olfactory-note:cedar
+- predicate: has-base-note
+  target: antiquario:olfactory-note:white-leather
+- predicate: has-concentration
+  target: antiquario:concentration:eau-de-toilette
+- predicate: has-accord
+  target: antiquario:accord:doce
+- predicate: has-accord
+  target: antiquario:accord:gourmand
+- predicate: has-accord
+  target: antiquario:accord:atalcado
+- predicate: has-accord
+  target: antiquario:accord:especiado
+- predicate: has-accord
+  target: antiquario:accord:amadeirado
+- predicate: created-by
+  target: antiquario:perfumer:olivier-polge
 ---
 
 # Valentino Uomo Valentino 2014 Eau de Toilette
@@ -46,3 +67,13 @@ relations:
 - **Saída:** [[Bergamota]], [[note-myrtle]]
 - **Coração:** [[note-gianduja-cream]], [[note-coffee]]
 - **Fundo:** [[note-cedar]], [[note-white-leather]]
+
+## Conexões do Grafo
+
+- **Casa / Marca:** [[brand-valentino|Valentino]]
+- **Perfumista(s):** [[olivier-polge|Olivier Polge]]
+- **Concentração:** [[eau-de-toilette|Eau de Toilette]]
+- **Acordes Principais:** [[doce|Doce]], [[gourmand|Gourmand]], [[Atalcado|Atalcado]], [[especiado|Especiado]], [[Amadeirado|Amadeirado]]
+- **Notas de Saída:** [[Bergamota|Bergamota]], [[note-myrtle|Myrtle]]
+- **Notas de Coração:** [[note-gianduja-cream|Gianduja cream]], [[note-coffee|Coffee]]
+- **Notas de Fundo:** [[note-cedar|Cedar]], [[note-white-leather|White leather]]

@@ -24,3 +24,11 @@ relations: []
 ---
 
 # Tamarind
+
+## Acordes e Facetas Relacionadas
+
+- [[Fresco|Fresco]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-lalique-lalique-white-lalique-2008-eau-de-toilette|Lalique White Lalique 2008 Eau de Toilette]]

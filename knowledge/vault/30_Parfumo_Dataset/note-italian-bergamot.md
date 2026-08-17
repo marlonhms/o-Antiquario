@@ -24,3 +24,15 @@ relations: []
 ---
 
 # Italian bergamot
+
+## Acordes e Facetas Relacionadas
+
+- [[Fresco|Fresco]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-xerjoff-fars|Fars]]
+- [[fragrance-dunhill-icon|Icon]]
+- [[fragrance-dolce-gabbana-light-blue-pour-homme-forever|Light Blue pour Homme Forever]]
+- [[fragrance-tom-ford-noir-tom-ford-2012-eau-de-parfum|Noir Tom Ford 2012 Eau de Parfum]]
+- [[fragrance-moschino-toy-boy|Toy Boy]]

@@ -43,3 +43,17 @@ No release `knowledge-v2-36bca79cd798`, **Mint** aparece em 6 fragrância(s) com
 ### Limite da automação
 
 Esta seção resume relações que já existiam no grafo. Ela não cria notas, não comprova ingrediente físico e não estima cheiro, concentração, intensidade, fixação, projeção ou evolução temporal.
+
+## Acordes e Facetas Relacionadas
+
+- [[Fresco|Fresco]]
+- [[verde|Verde]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-giorgio-armani-acqua-di-gioia-giorgio-armani-2010-eau-de-parfum|Acqua di Gioia Giorgio Armani 2010 Eau de Parfum]]
+- [[fragrance-amouage-beach-hut-man|Beach Hut Man]]
+- [[fragrance-hugo-boss-hugo-hugo-boss-1995-eau-de-toilette|Hugo Hugo Boss 1995 Eau de Toilette]]
+- [[fragrance-montblanc-individuel-montblanc-2003-eau-de-toilette|Individuel Montblanc 2003 Eau de Toilette]]
+- [[fragrance-amouage-memoir-man|Memoir Man]]
+- [[fragrance-louis-vuitton-pacific-chill|Pacific Chill]]

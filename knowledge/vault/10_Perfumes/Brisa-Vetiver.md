@@ -49,3 +49,9 @@ O perfil conecta [[Citricos|Cítricos]] e [[Amadeirado]], com uma faceta verde s
 ## Contextos de teste
 
 Sua ficha determinística favorece [[Calor-Umido|calor úmido]] e [[Escritorio|escritório]], sempre respeitando o teto de projeção informado pelo usuário.
+
+## Conexões do Grafo
+
+- **Acordes Principais:** [[Citricos|Cítricos]], [[Amadeirado|Amadeirado]]
+- **Notas (Sem Camada):** [[Bergamota|Bergamota]], [[note-vetiver|Vetiver]]
+- **Ocasiões e Contextos:** [[Calor-Umido|Calor úmido]], [[Escritorio|Escritório]]

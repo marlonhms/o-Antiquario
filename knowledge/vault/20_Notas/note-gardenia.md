@@ -21,7 +21,17 @@ evidence:
     confidence: medium
     claim_scope: "Descritor factual do Wikidata"
 ---
-
-# Gardenia
-
+
+# Gardenia
+
 Nota olfativa catalogada automaticamente.
+
+## Acordes e Facetas Relacionadas
+
+- [[floral|Floral]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-chanel-allure-homme-chanel-1999-eau-de-toilette|Allure Homme Chanel 1999 Eau de Toilette]]
+- [[crystal-noir-edt-q140266694|Crystal Noir EDT]]
+- [[daisy-q110263664|Daisy]]

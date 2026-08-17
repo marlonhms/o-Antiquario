@@ -43,27 +43,33 @@ relations:
 - predicate: has-base-note
   target: antiquario:olfactory-note:orcanox
 ---
+
+# Ha Long Bay
+
+## Base factual
+
+- QID: `Q140237028`
+- Marca: Jovoy
+- Perfumista: não informado no Wikidata
+- País: França
+- Ano: 2025
+- Site oficial: https://www.jovoyparis.com/en/fruity/8798-ha-long-bay.html
+- Descritores olfativos (`P5872`, sem camada de pirâmide): leather smell, mango smell, patchouli smell, smell of amberwood, smell of black pepper, smell of cardamom, smell of cedarwood, smell of nagarmotha, smell of orcanox
+
+## Enriquecimento editorial obrigatório
+
+- [ ] Confirmar a identidade e a concentração da fragrância.
+- [ ] Validar os descritores Wikidata e classificar família, notas, camadas e acordes usando a taxonomia do Antiquário.
+- [ ] Registrar contexto de uso e desempenho com método, amostra e confiança.
+- [ ] Adicionar evidências permitidas para cada afirmação editorial.
+- [ ] Mover este arquivo para `10_Perfumes` somente após revisão humana.
+
+## Limite de uso
+
+Este rascunho não é uma recomendação e não deve ser usado pelo motor de ranking. Não inferir notas, desempenho, preço ou disponibilidade a partir de nome, marca ou país.
+
+## Conexões do Grafo
 
-# Ha Long Bay
-
-## Base factual
-
-- QID: `Q140237028`
-- Marca: Jovoy
-- Perfumista: não informado no Wikidata
-- País: França
-- Ano: 2025
-- Site oficial: https://www.jovoyparis.com/en/fruity/8798-ha-long-bay.html
-- Descritores olfativos (`P5872`, sem camada de pirâmide): leather smell, mango smell, patchouli smell, smell of amberwood, smell of black pepper, smell of cardamom, smell of cedarwood, smell of nagarmotha, smell of orcanox
-
-## Enriquecimento editorial obrigatório
-
-- [ ] Confirmar a identidade e a concentração da fragrância.
-- [ ] Validar os descritores Wikidata e classificar família, notas, camadas e acordes usando a taxonomia do Antiquário.
-- [ ] Registrar contexto de uso e desempenho com método, amostra e confiança.
-- [ ] Adicionar evidências permitidas para cada afirmação editorial.
-- [ ] Mover este arquivo para `10_Perfumes` somente após revisão humana.
-
-## Limite de uso
-
-Este rascunho não é uma recomendação e não deve ser usado pelo motor de ranking. Não inferir notas, desempenho, preço ou disponibilidade a partir de nome, marca ou país.
+- **Notas de Saída:** [[note-manga|Manga]], [[note-cardamomo|Cardamomo]], [[note-pimenta-preta|Pimenta Preta]]
+- **Notas de Coração:** [[note-couro|Couro]], [[note-cedro|Cedro]], [[note-nagarmotha|Nagarmotha]]
+- **Notas de Fundo:** [[note-patchouli|Patchouli]], [[note-amberwood|Amberwood]], [[note-orcanox|Orcanox]]

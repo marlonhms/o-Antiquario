@@ -24,3 +24,11 @@ relations: []
 ---
 
 # Italian citrus fruits
+
+## Acordes e Facetas Relacionadas
+
+- [[Fresco|Fresco]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-acqua-di-parma-mandorlo-di-sicilia|Mandorlo di Sicilia]]

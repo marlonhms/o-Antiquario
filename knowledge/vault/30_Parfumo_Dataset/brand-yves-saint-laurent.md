@@ -24,3 +24,10 @@ relations: []
 ---
 
 # Yves Saint Laurent
+
+## Fragrâncias no Acervo
+
+- [[fragrance-yves-saint-laurent-kouros-yves-saint-laurent-1981-eau-de-toilette|Kouros Yves Saint Laurent 1981 Eau de Toilette]]
+- [[fragrance-yves-saint-laurent-le-vestiaire---babycat|Le Vestiaire - Babycat]]
+- [[fragrance-yves-saint-laurent-m7-m7-oud-absolu|M7 M7 Oud Absolu]]
+- [[fragrance-yves-saint-laurent-myslf|Myslf]]

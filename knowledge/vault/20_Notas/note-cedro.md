@@ -21,7 +21,20 @@ evidence:
     confidence: medium
     claim_scope: "Descritor factual do Wikidata"
 ---
-
-# Cedro
-
+
+# Cedro
+
 Nota olfativa catalogada automaticamente.
+
+## Acordes e Facetas Relacionadas
+
+- [[Amadeirado|Amadeirado]]
+
+## Presente nas Fragrâncias
+
+- [[daisy-q110263664|Daisy]]
+- [[ha-long-bay-q140237028|Ha Long Bay]]
+- [[jardin-d-amalfi-q139989391|Jardin d'Amalfi]]
+- [[malbec-506bcad4|Malbec]]
+- [[opulent-dubai-q138766540|Opulent Dubai]]
+- [[tom-ford-for-men-q137182953|Tom Ford for Men]]

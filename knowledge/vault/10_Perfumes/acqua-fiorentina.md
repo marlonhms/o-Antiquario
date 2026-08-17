@@ -33,27 +33,32 @@ relations:
 - predicate: has-heart-note
   target: antiquario:olfactory-note:limao-siciliano
 ---
+
+# Acqua Fiorentina
+
+## Base factual
+
+- QID: `Q139992070`
+- Marca: Creed
+- Perfumista: Olivier Creed
+- País: França
+- Ano: 2012
+- Site oficial: https://creedboutique.com/products/acqua-fiorentina
+- Descritores olfativos (`P5872`, sem camada de pirâmide): pineapple smell, plum smell, smell of apples, smell of cedarwood, smell of grapefruit, smell of lemon, smell of rose, smell of white musk
+
+## Enriquecimento editorial obrigatório
+
+- [ ] Confirmar a identidade e a concentração da fragrância.
+- [ ] Validar os descritores Wikidata e classificar família, notas, camadas e acordes usando a taxonomia do Antiquário.
+- [ ] Registrar contexto de uso e desempenho com método, amostra e confiança.
+- [ ] Adicionar evidências permitidas para cada afirmação editorial.
+- [ ] Mover este arquivo para `10_Perfumes` somente após revisão humana.
+
+## Limite de uso
+
+Este rascunho não é uma recomendação e não deve ser usado pelo motor de ranking. Não inferir notas, desempenho, preço ou disponibilidade a partir de nome, marca ou país.
+
+## Conexões do Grafo
 
-# Acqua Fiorentina
-
-## Base factual
-
-- QID: `Q139992070`
-- Marca: Creed
-- Perfumista: Olivier Creed
-- País: França
-- Ano: 2012
-- Site oficial: https://creedboutique.com/products/acqua-fiorentina
-- Descritores olfativos (`P5872`, sem camada de pirâmide): pineapple smell, plum smell, smell of apples, smell of cedarwood, smell of grapefruit, smell of lemon, smell of rose, smell of white musk
-
-## Enriquecimento editorial obrigatório
-
-- [ ] Confirmar a identidade e a concentração da fragrância.
-- [ ] Validar os descritores Wikidata e classificar família, notas, camadas e acordes usando a taxonomia do Antiquário.
-- [ ] Registrar contexto de uso e desempenho com método, amostra e confiança.
-- [ ] Adicionar evidências permitidas para cada afirmação editorial.
-- [ ] Mover este arquivo para `10_Perfumes` somente após revisão humana.
-
-## Limite de uso
-
-Este rascunho não é uma recomendação e não deve ser usado pelo motor de ranking. Não inferir notas, desempenho, preço ou disponibilidade a partir de nome, marca ou país.
+- **Casa / Marca:** [[brand-creed|Creed]]
+- **Notas de Coração:** [[note-limao-siciliano|Limão Siciliano]]

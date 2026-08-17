@@ -24,3 +24,11 @@ relations: []
 ---
 
 # Fruits
+
+## Acordes e Facetas Relacionadas
+
+- [[Fresco|Fresco]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-jil-sander-sun-jil-sander-1989-eau-de-toilette|Sun Jil Sander 1989 Eau de Toilette]]

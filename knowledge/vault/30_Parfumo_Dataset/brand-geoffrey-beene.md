@@ -24,3 +24,7 @@ relations: []
 ---
 
 # Geoffrey Beene
+
+## Fragrâncias no Acervo
+
+- [[fragrance-geoffrey-beene-grey-flannel-geoffrey-beene-1975-eau-de-toilette|Grey Flannel Geoffrey Beene 1975 Eau de Toilette]]

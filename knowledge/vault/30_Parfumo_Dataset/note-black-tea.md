@@ -24,3 +24,13 @@ relations: []
 ---
 
 # Black tea
+
+## Acordes e Facetas Relacionadas
+
+- [[Fresco|Fresco]]
+- [[verde|Verde]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-bdk-parfums-gris-charnel-bdk-parfums-2022-extrait|Gris Charnel bdk Parfums 2022 Extrait]]
+- [[fragrance-gucci-gucci-pour-homme-ii-gucci-2007-eau-de-toilette|Gucci pour Homme II Gucci 2007 Eau de Toilette]]

@@ -24,3 +24,9 @@ relations: []
 ---
 
 # Gucci
+
+## Fragrâncias no Acervo
+
+- [[fragrance-gucci-gucci-intense-oud|Gucci Intense Oud]]
+- [[fragrance-gucci-gucci-pour-homme-ii-gucci-2007-eau-de-toilette|Gucci pour Homme II Gucci 2007 Eau de Toilette]]
+- [[fragrance-gucci-guilty-absolute-pour-homme|Guilty Absolute pour Homme]]

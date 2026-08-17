@@ -30,3 +30,8 @@ relations: []
 **Pão** é a nota canônica usada para normalizar declarações olfativas rotuladas como *pão* ou *bread*. Para navegação, ela pertence à família gourmand do vocabulário operacional.
 
 O registro da nota em uma pirâmide descreve a declaração da fonte. Ele não comprova pão como ingrediente físico nem permite inferir fórmula, intensidade, projeção ou duração.
+
+## Acordes e Facetas Relacionadas
+
+- [[gourmand|Gourmand]]
+- [[doce|Doce]]

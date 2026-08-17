@@ -24,3 +24,9 @@ relations: []
 ---
 
 # Initio
+
+## Fragrâncias no Acervo
+
+- [[fragrance-initio-absolute-aphrodisiac|Absolute Aphrodisiac]]
+- [[fragrance-initio-blessed-baraka|Blessed Baraka]]
+- [[fragrance-initio-paragon|Paragon]]

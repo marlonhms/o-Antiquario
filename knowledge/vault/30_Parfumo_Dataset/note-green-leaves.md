@@ -24,3 +24,12 @@ relations: []
 ---
 
 # Green leaves
+
+## Acordes e Facetas Relacionadas
+
+- [[Fresco|Fresco]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-colornoise-country|Country.]]
+- [[fragrance-rochas-rochas-man-rochas-1999-eau-de-toilette|Rochas Man Rochas 1999 Eau de Toilette]]

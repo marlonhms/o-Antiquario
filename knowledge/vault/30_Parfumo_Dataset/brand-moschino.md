@@ -24,3 +24,7 @@ relations: []
 ---
 
 # Moschino
+
+## Fragrâncias no Acervo
+
+- [[fragrance-moschino-toy-boy|Toy Boy]]

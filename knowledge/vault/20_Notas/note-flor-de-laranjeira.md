@@ -21,7 +21,19 @@ evidence:
     confidence: medium
     claim_scope: "Descritor factual do Wikidata"
 ---
-
-# Flor De Laranjeira
-
+
+# Flor De Laranjeira
+
 Nota olfativa catalogada automaticamente.
+
+## Acordes e Facetas Relacionadas
+
+- [[floral|Floral]]
+- [[Citricos|Cítricos]]
+- [[Fresco|Fresco]]
+
+## Presente nas Fragrâncias
+
+- [[crystal-noir-edt-q140266694|Crystal Noir EDT]]
+- [[malbec-gold-506bcad4|Malbec Gold]]
+- [[poison-girl-q140101602|Poison Girl]]

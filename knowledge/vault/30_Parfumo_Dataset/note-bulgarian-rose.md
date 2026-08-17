@@ -24,3 +24,14 @@ relations: []
 ---
 
 # Bulgarian rose
+
+## Acordes e Facetas Relacionadas
+
+- [[Fresco|Fresco]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-xerjoff-accento-overdose|Accento Overdose]]
+- [[fragrance-acqua-di-parma-colonia-acqua-di-parma-1916-eau-de-cologne|Colonia Acqua di Parma 1916 Eau de Cologne]]
+- [[fragrance-gucci-gucci-intense-oud|Gucci Intense Oud]]
+- [[fragrance-tom-ford-noir-tom-ford-2012-eau-de-parfum|Noir Tom Ford 2012 Eau de Parfum]]

@@ -21,7 +21,18 @@ evidence:
     confidence: medium
     claim_scope: "Descritor factual do Wikidata"
 ---
-
-# Mel
-
+
+# Mel
+
 Nota olfativa catalogada automaticamente.
+
+## Acordes e Facetas Relacionadas
+
+- [[gourmand|Gourmand]]
+- [[doce|Doce]]
+
+## Presente nas Fragrâncias
+
+- [[bianco-latte-q137183849|Bianco Latte]]
+- [[printemps-q140453489|Printemps]]
+- [[virtus-q138773649|Virtus]]

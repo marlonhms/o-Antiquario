@@ -24,3 +24,12 @@ relations: []
 ---
 
 # Neroli absolute
+
+## Acordes e Facetas Relacionadas
+
+- [[Fresco|Fresco]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-dunhill-icon|Icon]]
+- [[fragrance-giorgio-armani-si-giorgio-armani-2013-eau-de-parfum|Sì Giorgio Armani 2013 Eau de Parfum]]

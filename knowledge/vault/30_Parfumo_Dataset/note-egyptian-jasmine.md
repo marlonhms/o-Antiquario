@@ -24,3 +24,12 @@ relations: []
 ---
 
 # Egyptian jasmine
+
+## Acordes e Facetas Relacionadas
+
+- [[Fresco|Fresco]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-xerjoff-accento-overdose|Accento Overdose]]
+- [[fragrance-mancera-instant-crush|Instant Crush]]

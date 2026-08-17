@@ -24,3 +24,11 @@ relations: []
 ---
 
 # Brazilian orange
+
+## Acordes e Facetas Relacionadas
+
+- [[Fresco|Fresco]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-xerjoff-erba-gold|Erba Gold]]

@@ -24,3 +24,13 @@ relations: []
 ---
 
 # Benzoin Siam
+
+## Acordes e Facetas Relacionadas
+
+- [[Fresco|Fresco]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-prada-candy-prada-2011-eau-de-parfum|Candy Prada 2011 Eau de Parfum]]
+- [[fragrance-tom-ford-noir-tom-ford-2012-eau-de-parfum|Noir Tom Ford 2012 Eau de Parfum]]
+- [[fragrance-prada-paradoxe|Paradoxe]]

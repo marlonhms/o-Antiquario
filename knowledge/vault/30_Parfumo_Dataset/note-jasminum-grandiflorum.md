@@ -24,3 +24,11 @@ relations: []
 ---
 
 # Jasminum grandiflorum
+
+## Acordes e Facetas Relacionadas
+
+- [[floral|Floral]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-tiziana-terenzi-rosso-pompei|Rosso Pompei]]

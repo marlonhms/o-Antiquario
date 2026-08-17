@@ -329,6 +329,115 @@ sources:
         - https://aclanthology.org/2022.lrec-1.429/
       notes: Aprovada pelo proprietário em 2026-08-17 exclusivamente para staging com atribuição CC BY 4.0.
 
+  - id: menini_2022_olfactory_taxonomy
+    name: Menini et al. 2022 — Taxonomia multilíngue de termos olfativos
+    homepage: https://aclanthology.org/2022.lrec-1.429/
+    classification: allowed_core
+    purpose: Metodologia científica, avaliação e limites de uma taxonomia multilíngue e histórica de termos olfativos.
+    license:
+      identifier: CC-BY-NC-4.0
+      name: Creative Commons Attribution-NonCommercial 4.0 International
+      url: https://creativecommons.org/licenses/by-nc/4.0/
+      scope: Artigo publicado nos anais da LREC 2022, páginas 4030–4039, conforme a licença impressa no PDF local.
+      compatibility: core
+      attribution_required: true
+      share_alike: false
+    access:
+      automated: allowed
+      methods: [local_pdf, acl_anthology]
+      endpoint: https://aclanthology.org/2022.lrec-1.429.pdf
+      authentication: none
+      conditions:
+        - Incorporar somente síntese científica estruturada, metadados, resultados e limitações com atribuição.
+        - Não duplicar no core os arquivos TSV da ODEUROPA já mantidos separadamente em staging.
+        - Não derivar notas, pirâmides, composição, intensidade ou desempenho de perfumes a partir da taxonomia.
+    storage:
+      layer: core
+      redistribution: allowed
+      attribution_label: Menini et al. (2022), LREC — CC BY-NC 4.0
+    fields:
+      allowed: [bibliographic_metadata, research_question, methodology, taxonomy_design, evaluation_results, limitations]
+      forbidden: [full_text_mirror, perfume_notes, perfume_pyramids, performance_claims, automatic_taxonomy_promotion]
+    review:
+      reviewed_at: 2026-08-17
+      next_review_at: 2026-11-17
+      evidence_urls:
+        - https://aclanthology.org/2022.lrec-1.429/
+        - https://aclanthology.org/2022.lrec-1.429.pdf
+      notes: O PDF local imprime CC BY-NC 4.0; a política geral atual da ACL Anthology informa CC BY 4.0 para materiais posteriores a 2016. Foi adotada a marcação mais restritiva até revisão específica.
+
+  - id: vechiato_vidotti_2024_ai_perfumery
+    name: Vechiato e Vidotti 2024 — IA aplicada à Perfumaria
+    homepage: https://preprints.scielo.org/index.php/scielo/preprint/view/9608/version/10151
+    classification: allowed_core
+    purpose: Panorama exploratório de aplicações de IA na Perfumaria e agenda de pesquisa em Ciência da Informação.
+    license:
+      identifier: CC-BY-4.0
+      name: Creative Commons Attribution 4.0 International
+      url: https://creativecommons.org/licenses/by/4.0/
+      scope: Versão 1 do preprint SciELO Preprints 9608, postada em 05/09/2024.
+      compatibility: core
+      attribution_required: true
+      share_alike: false
+    access:
+      automated: allowed
+      methods: [local_pdf, scielo_preprints]
+      endpoint: https://preprints.scielo.org/index.php/scielo/preprint/download/9608/17883/18504
+      authentication: none
+      conditions:
+        - Preservar o estado de preprint e a natureza exploratória da revisão bibliográfica.
+        - Separar resultados relatados, exemplos comerciais e aplicação editorial no Antiquário.
+        - Não transformar previsões de sistemas citados em evidência de desempenho ou adequação de perfumes.
+    storage:
+      layer: core
+      redistribution: allowed
+      attribution_label: Vechiato e Vidotti (2024), SciELO Preprints — CC BY 4.0
+    fields:
+      allowed: [bibliographic_metadata, research_question, methodology, reported_contributions, information_science_agenda, limitations]
+      forbidden: [full_text_mirror, commercial_claims_as_facts, perfume_notes, perfume_pyramids, performance_claims]
+    review:
+      reviewed_at: 2026-08-17
+      next_review_at: 2026-11-17
+      evidence_urls:
+        - https://preprints.scielo.org/index.php/scielo/preprint/view/9608/version/10151
+        - https://doi.org/10.1590/SciELOPreprints.9608
+      notes: A fonte é útil como mapa do campo e agenda de pesquisa; não é uma validação experimental de sistemas de recomendação ou geração de fragrâncias.
+
+  - id: mahdavi_2020_sons_do_aroma
+    name: Mahdavi et al. 2020 — Sons do Aroma (Correspondências Olfativo-Auditivas)
+    homepage: https://rbgn.fecap.br/
+    classification: allowed_core
+    purpose: Evidências científicas e mapeamento empírico de correspondências transmodais áudio-olfativas.
+    license:
+      identifier: CC-BY-4.0
+      name: Creative Commons Attribution 4.0 International
+      url: https://creativecommons.org/licenses/by/4.0/
+      scope: Artigo científico RBGN v.22, n.4, p.836-853, 2020.
+      compatibility: core
+      attribution_required: true
+      share_alike: false
+    access:
+      automated: allowed
+      methods: [local_pdf, rbgn_doi]
+      endpoint: https://doi.org/10.7819/rbgn.v22i4.4083
+      authentication: none
+      conditions:
+        - Preservar a atribuição aos autores e a natureza qualitativa/empírica do estudo.
+        - Usar como fundamento teórico para sinestesia e pistas cognitivas compensatórias.
+    storage:
+      layer: core
+      redistribution: allowed
+      attribution_label: Mahdavi et al. (2020), RBGN — CC BY 4.0
+    fields:
+      allowed: [crossmodal_correspondences, soundscape_mappings, musical_associations, voice_profiles, cognitive_findings]
+      forbidden: [commercial_product_claims, full_text_mirror]
+    review:
+      reviewed_at: 2026-08-17
+      next_review_at: 2026-11-17
+      evidence_urls:
+        - https://doi.org/10.7819/rbgn.v22i4.4083
+      notes: Artigo revisado por pares em acesso aberto sob licença CC BY.
+
   - id: fragrantica
     name: Fragrantica
     homepage: https://www.fragrantica.com/

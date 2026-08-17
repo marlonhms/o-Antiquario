@@ -24,3 +24,7 @@ relations: []
 ---
 
 # Editions de Parfums Frédéric Malle
+
+## Fragrâncias no Acervo
+
+- [[fragrance-editions-de-parfums-frederic-malle-french-lover-bois-dorage|French Lover Bois d'Orage]]

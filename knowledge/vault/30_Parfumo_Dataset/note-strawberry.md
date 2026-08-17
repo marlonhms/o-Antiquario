@@ -24,3 +24,11 @@ relations: []
 ---
 
 # Strawberry
+
+## Acordes e Facetas Relacionadas
+
+- [[frutado|Frutado]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-xerjoff-la-capitale|La Capitale]]

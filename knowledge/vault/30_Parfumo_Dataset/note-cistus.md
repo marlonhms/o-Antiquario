@@ -24,3 +24,12 @@ relations: []
 ---
 
 # Cistus
+
+## Acordes e Facetas Relacionadas
+
+- [[Fresco|Fresco]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-bdk-parfums-gris-charnel-bdk-parfums-2022-extrait|Gris Charnel bdk Parfums 2022 Extrait]]
+- [[fragrance-amouage-interlude-black-iris|Interlude Black Iris]]

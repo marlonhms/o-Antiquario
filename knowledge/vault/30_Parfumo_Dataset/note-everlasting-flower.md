@@ -24,3 +24,11 @@ relations: []
 ---
 
 # Everlasting flower
+
+## Acordes e Facetas Relacionadas
+
+- [[Fresco|Fresco]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-amouage-sunshine-man|Sunshine Man]]

@@ -24,3 +24,12 @@ relations: []
 ---
 
 # Pineapple
+
+## Acordes e Facetas Relacionadas
+
+- [[frutado|Frutado]]
+
+## Presente nas Fragrâncias
+
+- [[fragrance-armaf-club-de-nuit-intense-man-armaf-eau-de-parfum|Club de Nuit Intense Man Armaf Eau de Parfum]]
+- [[fragrance-bdk-parfums-creme-de-cuir-bdk-parfums-2018-eau-de-parfum|Crème de Cuir bdk Parfums 2018 Eau de Parfum]]

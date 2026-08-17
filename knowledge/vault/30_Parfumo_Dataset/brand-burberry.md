@@ -24,3 +24,7 @@ relations: []
 ---
 
 # Burberry
+
+## Fragrâncias no Acervo
+
+- [[fragrance-burberry-london-for-men-burberry-2006-eau-de-toilette|London for Men Burberry 2006 Eau de Toilette]]
