@@ -9,6 +9,7 @@ const httpsUrl = z.string().url().refine((value) => value.startsWith("https://")
 
 export const SourceClassificationSchema = z.enum([
   "allowed_core",
+  "allowed_staging",
   "allowed_isolated",
   "reference_only",
   "pending_review",
@@ -20,7 +21,7 @@ const LicenseSchema = z.object({
   name: z.string().min(3),
   url: httpsUrl,
   scope: z.string().min(12),
-  compatibility: z.enum(["core", "isolated", "reference", "unverified", "none"]),
+  compatibility: z.enum(["core", "staging", "isolated", "reference", "unverified", "none"]),
   attribution_required: z.boolean(),
   share_alike: z.boolean(),
 }).strict();
@@ -94,6 +95,23 @@ const SourceSchema = z.object({
     }
   }
 
+  if (source.classification === "allowed_staging") {
+    if (source.license.compatibility !== "staging" || source.storage.layer !== "staging") {
+      context.addIssue({
+        code: "custom",
+        path: ["storage", "layer"],
+        message: "fontes aprovadas para staging devem permanecer na camada staging",
+      });
+    }
+    if (source.access.automated !== "allowed") {
+      context.addIssue({
+        code: "custom",
+        path: ["access", "automated"],
+        message: "uma fonte aprovada para staging precisa autorizar acesso automatizado",
+      });
+    }
+  }
+
   if (["pending_review", "reference_only"].includes(source.classification) && source.storage.layer === "core") {
     context.addIssue({
       code: "custom",
@@ -163,6 +181,7 @@ export async function loadSourceManifest(
 export function summarizeSourceManifest(manifest: SourceManifest): Record<SourceClassification, number> {
   const summary: Record<SourceClassification, number> = {
     allowed_core: 0,
+    allowed_staging: 0,
     allowed_isolated: 0,
     reference_only: 0,
     pending_review: 0,

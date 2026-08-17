@@ -24,7 +24,7 @@ relations:
   - predicate: belongs-to-brand
     target: antiquario:brand:xerjoff
   - predicate: has-top-note
-    target: antiquario:olfactory-note:carnation
+    target: antiquario:olfactory-note:cravo-flor
   - predicate: has-top-note
     target: antiquario:olfactory-note:coriander
   - predicate: has-top-note
@@ -49,6 +49,6 @@ relations:
 
 ## Pirâmide Olfativa
 
-- **Saída:** [[note-carnation]], [[note-coriander]], [[note-green-pepper]], [[note-persian-saffron]]
+- **Saída:** [[note-cravo-flor]], [[note-coriander]], [[note-green-pepper]], [[note-persian-saffron]]
 - **Coração:** [[note-indonesian-ylang-ylang]], [[note-moroccan-neroli]]
 - **Fundo:** [[note-ambar]], [[note-mysore-sandalwood]], [[note-patchouli]]

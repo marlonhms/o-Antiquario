@@ -11,6 +11,7 @@ Esta documentação registra decisões técnicas de governança; não substitui 
 | Classificação | Significado |
 | --- | --- |
 | `allowed_core` | Pode alimentar o catálogo principal redistribuível. |
+| `allowed_staging` | Pode ser importada automaticamente, mas somente como candidatos fora do core. |
 | `allowed_isolated` | Pode ser usada apenas em artefato separado, preservando obrigações próprias. |
 | `reference_only` | Pode orientar revisão humana, mas não alimentar importação em massa. |
 | `pending_review` | Não entra em produção até revisão adicional da fonte ou do conjunto específico. |
@@ -21,6 +22,10 @@ Esta documentação registra decisões técnicas de governança; não substitui 
 ### Wikidata — core permitido
 
 Os dados estruturados relevantes são publicados sob CC0. O importador deverá respeitar as boas práticas de acesso e não presumir que imagens do Wikimedia Commons compartilhem a mesma licença do dado estruturado.
+
+### ODEUROPA — staging permitido com atribuição
+
+A taxonomia multilíngue v2 foi aprovada pelo proprietário em 17/08/2026 exclusivamente para staging, sob CC BY 4.0. O pipeline fixa o commit, registra SHA-256 por arquivo e preserva idioma, termo original, método, synset e localizador. Seus termos podem gerar candidatos de `odor-descriptor` e `odor-quality`, mas não entram automaticamente na taxonomia canônica e não comprovam notas ou pirâmides de perfumes.
 
 ### Open Beauty Facts — camada ODbL isolada
 
@@ -51,10 +56,11 @@ O projeto não fará scraping, agregação, espelhamento, criação de dataset, 
 1. Um importador recebe um `sourceId` existente no manifesto.
 2. A classificação da fonte determina a camada de saída.
 3. Fonte pendente, de referência ou proibida nunca grava no catálogo core.
-4. Cada valor importado preserva origem, licença e data de consulta.
-5. Conflitos e licenças ausentes geram rejeição, nunca correção silenciosa.
-6. Imagens passam por uma revisão independente do registro textual.
-7. O manifesto é revisto periodicamente e sempre que os termos de uma fonte mudarem.
+4. Fonte `allowed_staging` nunca grava no catálogo core nem é promovida automaticamente.
+5. Cada valor importado preserva origem, licença e data de consulta.
+6. Conflitos e licenças ausentes geram rejeição, nunca correção silenciosa.
+7. Imagens passam por uma revisão independente do registro textual.
+8. O manifesto é revisto periodicamente e sempre que os termos de uma fonte mudarem.
 
 ## Validação
 
@@ -67,6 +73,8 @@ O comando verifica schema, URLs HTTPS, IDs únicos, datas de revisão e coerênc
 ## Evidências oficiais consultadas
 
 - [Licenciamento do Wikidata](https://www.wikidata.org/wiki/Wikidata:Licensing)
+- [Taxonomia multilíngue ODEUROPA](https://github.com/Odeuropa/multilingualTaxonomies)
+- [Artigo da taxonomia ODEUROPA](https://aclanthology.org/2022.lrec-1.429/)
 - [Acesso e boas práticas do Wikidata](https://www.wikidata.org/wiki/Help:Data_access)
 - [Licenças do ecossistema Open Food Facts](https://openfoodfacts.github.io/documentation/docs/Product-Opener/api/tutorials/license-be-on-the-legal-side/)
 - [API do Open Beauty Facts](https://openfoodfacts.github.io/documentation/docs/Product-Opener/api/tutorials/scanning-cosmetics-pet-food-and-other-products/)

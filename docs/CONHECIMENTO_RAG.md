@@ -61,6 +61,84 @@ Artefatos:
 
 O hash é derivado do conteúdo, não do horário da execução. Duas compilações da mesma entrada produzem a mesma versão.
 
+## Expansão lexical científica separada
+
+A ODEUROPA não é incorporada aos documentos aprovados do Knowledge Core. Seu índice permanece em staging e funciona como roteador de consulta:
+
+```text
+consulta + idioma explícito
+  → correspondência por frase completa
+  → conceito canônico já resolvido para recuperação
+  → documento e chunks existentes no Knowledge Core
+```
+
+Somente pontes com `resolved_for_retrieval` entram no índice. Candidatos por alias/synset, colisões e termos sem resolução não são consumidos. A resposta do expansor separa:
+
+- `canonical_targets`: conceitos lexicais encontrados;
+- `retrieval_routes`: destinos que realmente possuem chunks compilados;
+- `unroutable_target_ids`: conceitos corretos ainda sem documento recuperável;
+- `facts_generated: false`: a expansão nunca cria um claim.
+
+Cada destino seguro recebe duas chaves de consulta provenientes da taxonomia canônica: português e inglês. A proveniência dessas chaves permanece distinta da evidência ODEUROPA. O roteador também tenta reconciliar IDs diferentes apenas por rótulo exato e mesmo tipo; correspondências múltiplas ficam bloqueadas. Documentos mínimos sem chunks não são tratados como recuperáveis.
+
+```powershell
+npm run data:index:odeuropa
+npm run data:query:odeuropa -- "fresh bread with bergamot" --language en
+npm run data:backlog:odeuropa
+```
+
+O conjunto ouro versionado em `data/evaluation/odeuropa-retrieval-gold.yml` inclui casos positivos, homógrafos entre idiomas, candidatos bloqueados e limites de palavra. A métrica é uma regressão determinística do contrato atual, não uma validação sensorial ou estimativa de desempenho em produção.
+
+### Backlog seguro de cobertura
+
+As lacunas do índice são convertidas em duas filas operacionais sem alterar o vault:
+
+- `identity_resolution`: conceitos com mais de um documento compatível ficam bloqueados até reconciliação explícita;
+- `content_coverage`: documentos ausentes ou rasos são ordenados pela demanda observada no conjunto ouro, no catálogo ativo e no grafo.
+
+Os níveis `P0` a `P4` representam prioridade operacional, não confiança semântica. A ODEUROPA pode motivar a descoberta e o roteamento, mas não fornece automaticamente o conteúdo dos novos documentos. Toda remediação exige evidência `allowed_core` ou curadoria independente e mantém `facts_generated: false`.
+
+### Automação dos documentos P3
+
+O enriquecedor factual opera em duas fases explícitas:
+
+```text
+backlog P3 + documentos compilados + relações frontmatter aprovadas
+  → candidatos em staging
+  → auditoria de fontes, tipos, proveniência e segurança
+  → promoção com precondição de hash
+  → nova compilação do Knowledge Core
+```
+
+Cada seção promovida informa somente a cobertura observada no release do grafo, as camadas já declaradas e até cinco exemplos rastreáveis. Nenhuma relação é adicionada. Se um arquivo mudar depois da prévia, sua promoção é bloqueada.
+
+```powershell
+npm run data:plan:odeuropa-enrichment
+npm run data:audit:odeuropa-enrichment -- "data/staging/odeuropa/<snapshot>/equivalence/retrieval/enrichment/candidates.jsonl"
+npm run data:promote:odeuropa-enrichment -- --updated-at AAAA-MM-DD
+```
+
+Na primeira execução, 18 de 18 candidatos passaram, reutilizando 96 relações declaradas. A promoção criou 36 chunks e zero relações novas; os destinos recuperáveis passaram de 49 para 67.
+
+### Gate de demanda P4
+
+Os conceitos restantes não recebem documentos vazios para melhorar uma métrica. O gate `P4` produz uma fila de pesquisa a partir de três sinais operacionais:
+
+- consulta canônica recorrente: pelo menos três eventos em dois dias distintos dentro da janela móvel de 90 dias;
+- ocorrência em pelo menos uma fragrância de um catálogo de recomendação aprovado;
+- prioridade editorial alta, sempre acompanhada de justificativa versionada.
+
+O registrador expande a consulta em memória e persiste somente `matched_target_ids`, idioma e data com precisão de dia em `data/private/demand/olfactory-query-events.jsonl`, ignorado pelo Git. Consultas brutas, IP, sessão, dispositivo, e-mail e identificadores de usuário são campos proibidos. Eventos inválidos interrompem o gate.
+
+```powershell
+npm run data:record:odeuropa-demand -- "perfume com banana" --language pt-BR
+npm run data:gate:odeuropa-demand
+```
+
+O primeiro comando será chamado pela interface local quando a telemetria consentida estiver integrada; o usuário final não precisará executá-lo. O segundo gera `demand-gate/items.jsonl`, `report.json` e `manifest.json` no snapshot de recuperação atual. `research_ready` significa somente “há motivo para pesquisar”: a criação de documentos e a promoção ao core continuam bloqueadas até existir evidência independente permitida.
+
+Baseline de 17/08/2026: 30 itens `P4`, zero eventos reais armazenados, zero itens liberados para pesquisa e zero documentos criados. Esse estado é intencional e impede que dados sintéticos sejam tratados como interesse real.
+
 ## Knowledge Graph v2
 
 O grafo v2 separa relações semânticas declaradas no frontmatter, referências de navegação via wikilinks e relações de suporte para cada evidência. Predicados de domínio possuem contrato de origem e destino: por exemplo, `has-note` exige `fragrance → olfactory-note`, e `includes-note` exige `accord → olfactory-note`.

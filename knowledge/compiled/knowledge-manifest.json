@@ -1,15 +1,15 @@
 {
   "schemaVersion": 2,
-  "releaseId": "knowledge-v2-5d7c604b2a2d",
-  "contentHash": "5d7c604b2a2dfc673c317e7e9f4ebcd56cbe671e3f2a7c5dcb188a73f4aca2a5",
-  "latestDocumentDate": "2026-07-24",
+  "releaseId": "knowledge-v2-124a936df83e",
+  "contentHash": "124a936df83efd0fd0f9dcabd9f9c43f317ca9a9da4d19976c485a5ee1c41097",
+  "latestDocumentDate": "2026-08-17",
   "counts": {
-    "documents": 855,
-    "chunks": 736,
-    "nodes": 1710,
-    "edges": 4961,
-    "evidenceNodes": 855,
-    "typedRelations": 2223
+    "documents": 850,
+    "chunks": 780,
+    "nodes": 1707,
+    "edges": 5029,
+    "evidenceNodes": 857,
+    "typedRelations": 2226
   },
   "sources": [
     "internal_curated",

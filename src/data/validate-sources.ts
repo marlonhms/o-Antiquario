@@ -8,6 +8,7 @@ try {
 
   console.log(`Manifesto de fontes v${manifest.schema_version} válido (${manifest.sources.length} fontes).`);
   console.log(`Core permitido: ${summary.allowed_core}`);
+  console.log(`Permitidas em staging: ${summary.allowed_staging}`);
   console.log(`Permitidas isoladamente: ${summary.allowed_isolated}`);
   console.log(`Somente referência: ${summary.reference_only}`);
   console.log(`Pendentes: ${summary.pending_review}`);

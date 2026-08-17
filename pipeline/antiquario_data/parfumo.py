@@ -3,6 +3,8 @@ from pathlib import Path
 import re
 import unicodedata
 
+from .term_resolver import TermResolver
+
 def slugify(text):
     text = str(text).strip()
     if not text or text.lower() == 'nan':
@@ -15,6 +17,7 @@ def slugify(text):
 def run_parfumo_etl():
     # Construir mapa de aliases do cofre existente para evitar colisões
     alias_map = {}
+    term_resolver = TermResolver(Path('data'))
     for vault_dir in ['knowledge/vault/20_Notas', 'knowledge/vault/15_Marcas']:
         path = Path(vault_dir)
         if not path.exists(): continue
@@ -84,7 +87,13 @@ def run_parfumo_etl():
             for n in parts:
                 n_lower = n.lower()
                 n_file = ''
-                if n_lower in alias_map:
+                resolved = term_resolver.resolve_note(n, brand='parfumo_dataset')
+                if resolved is not None:
+                    canonical_slug = resolved.canonical_id.removeprefix('note:')
+                    target = f'antiquario:olfactory-note:{canonical_slug}'
+                    n_file = f'note-{canonical_slug}'
+                    relations.append(f'  - predicate: {predicate}\n    target: {target}')
+                elif n_lower in alias_map:
                     target, n_file = alias_map[n_lower]
                     relations.append(f'  - predicate: {predicate}\n    target: {target}')
                 else:

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Taxonomia Olfativa do Antiquário"
+  short_description: "Modela e audita conhecimento olfativo"
+  default_prompt: "Use $antiquario-taxonomia-olfativa para modelar e auditar relações olfativas com proveniência."

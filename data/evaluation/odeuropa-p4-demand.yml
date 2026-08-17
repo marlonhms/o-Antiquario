@@ -1,0 +1,11 @@
+schema_version: 1
+
+policy:
+  window_days: 90
+  min_query_events: 3
+  min_active_days: 2
+  min_catalog_fragrances: 1
+
+# A prioridade editorial autoriza pesquisa, nunca criação automática de documento.
+# Cada entrada exige justificativa explícita e deve apontar para um item P4 atual.
+priorities: []

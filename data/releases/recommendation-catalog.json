@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "releaseId": "recommendation-catalog-v1-2026-07-24",
-  "createdAt": "2026-07-24T19:06:56.717Z",
+  "releaseId": "recommendation-catalog-v1-2026-08-17",
+  "createdAt": "2026-08-17T14:43:04.223Z",
   "fragrances": [
     {
       "id": "acqua-fiorentina-q139992070",
@@ -1769,7 +1769,7 @@
       ],
       "heartNotes": [
         "rosemary",
-        "clove",
+        "cravo-especiaria",
         "jasmine",
         "lily-of-the-valley",
         "rose"
@@ -4045,7 +4045,7 @@
       "heartNotes": [
         "lavender",
         "coriander",
-        "clove",
+        "cravo-especiaria",
         "nutmeg",
         "pimento"
       ],
@@ -6494,7 +6494,7 @@
       "heartNotes": [
         "coriander",
         "zimbro",
-        "carnation",
+        "cravo-flor",
         "jasmine",
         "canela"
       ],
@@ -6849,7 +6849,7 @@
         "cedarwood",
         "lavender",
         "sage",
-        "carnation",
+        "cravo-flor",
         "geranium-leaf",
         "jasmine"
       ],
@@ -7402,7 +7402,7 @@
       "heartNotes": [
         "heliotrope",
         "ylang-ylang",
-        "carnation",
+        "cravo-flor",
         "lily-of-the-valley",
         "orris-root",
         "rose"
@@ -9312,7 +9312,7 @@
       "topNotes": [
         "pink-pepper",
         "pear",
-        "clove",
+        "cravo-especiaria",
         "elemi-resin",
         "indonesian-nutmeg",
         "italian-bergamot"
@@ -12168,7 +12168,7 @@
       "heartNotes": [
         "heliotrope",
         "lavender",
-        "carnation",
+        "cravo-flor",
         "jasmine",
         "sage",
         "fir",
@@ -12606,7 +12606,7 @@
         "eau-de-parfum"
       ],
       "topNotes": [
-        "carnation",
+        "cravo-flor",
         "coriander",
         "green-pepper",
         "persian-saffron"
@@ -12739,7 +12739,7 @@
         "melon",
         "green-apple",
         "pear",
-        "clove",
+        "cravo-especiaria",
         "guatemala-cardamom",
         "madagascan-cinnamon"
       ],
@@ -12994,7 +12994,7 @@
         "tarragon"
       ],
       "heartNotes": [
-        "carnation",
+        "cravo-flor",
         "geranium",
         "jasmine",
         "orris-root",
@@ -15056,7 +15056,7 @@
         "eugenio",
         "bergamota",
         "cardamomo",
-        "cravo",
+        "cravo-especiaria",
         "limao",
         "hortela-pimenta",
         "manjericao"

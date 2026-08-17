@@ -33,6 +33,10 @@ test("notas podem ser resolvidas em português, inglês e por sinônimo", async 
   assert.equal(resolveNote(index, "LEMON")?.id, "limao-siciliano");
   assert.equal(resolveNote(index, "orris")?.id, "iris");
   assert.equal(resolveNote(index, "terra molhada")?.id, "petricor");
+  assert.equal(resolveNote(index, "carnation")?.id, "cravo-flor");
+  assert.equal(resolveNote(index, "clove")?.id, "cravo-especiaria");
+  assert.equal(resolveNote(index, "cravo")?.id, "cravo-flor");
+  assert.equal(resolveNote(index, "cravo-da-índia")?.id, "cravo-especiaria");
 });
 
 test("acordes podem ser resolvidos sem acentos", async () => {

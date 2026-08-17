@@ -57,7 +57,7 @@ Snapshot incluído no repositório:
 | Consulta | Jornada em três etapas com atualização reativa das recomendações. |
 | Catálogo factual | 282 fragrâncias, 276 descritores olfativos e 251 claims semânticos na release atual. |
 | Catálogo de recomendação | 249 registros passam pelo gate técnico mínimo atual. |
-| Knowledge Core | 855 documentos, 736 chunks e 2.223 relações tipadas compiladas. |
+| Knowledge Core | 850 documentos, 780 chunks e 2.226 relações tipadas compiladas. |
 | Pipeline | Wikidata, PDFs textuais oficiais, staging, quarentena, DuckDB, Parquet e releases versionadas. |
 | Companion Gemini | Camada conversacional para o usuário ainda não integrada; o produto funciona sem ela. |
 | Produto B2C/B2B | Estratégia documentada; execução condicionada ao Gate de Confiança Olfativa. |
@@ -143,6 +143,12 @@ python -m venv .venv
 npm run data:status
 npm run data:demo
 npm run data:sync:wikidata
+npm run data:sync:odeuropa
+npm run data:resolve:odeuropa
+npm run data:index:odeuropa
+npm run data:backlog:odeuropa
+npm run data:plan:odeuropa-enrichment
+npm run data:gate:odeuropa-demand
 npm run data:build
 npm run catalog:compile
 ```
@@ -159,6 +165,18 @@ npm run data:ingest:official-pdf -- `
 ```
 
 O extrator textual reconhece tipos reais de fragrância, separa produtos corporais e acessórios, deduplica repetições e preserva página, hash, método e confiança. OCR permanece fora do fluxo atual.
+
+O importador ODEUROPA baixa um commit fixado da taxonomia multilíngue, verifica hashes e gera somente candidatos em `data/staging/odeuropa`. Termos sem categoria e colisões normalizadas ficam em quarentena; essa trilha não cria notas nem pirâmides de perfumes. A fonte exige a atribuição “ODEUROPA multilingualTaxonomies — Menini et al. (2022), CC BY 4.0”.
+
+O resolvedor ODEUROPA cruza o staging com a taxonomia canônica sem confundir descritores com notas. Correspondências inglesas exatas e únicas viram pontes de busca; aliases e synsets geram candidatos; homógrafos e destinos múltiplos permanecem ambíguos. Todas as saídas têm escopo `retrieval_only`, identidade semântica não verificada e promoção bloqueada.
+
+O índice de recuperação compila somente as pontes resolvidas, projeta rótulos canônicos em português e inglês, exige o idioma da consulta e aponta para chunks reais quando o conceito já possui conteúdo no Knowledge Core. Um conjunto ouro testa precisão, revocação, limites de palavra, bloqueio de candidatos e ausência de rotas perigosas.
+
+O backlog de roteamento cruza as lacunas com o conjunto ouro, o catálogo ativo e as conexões estruturais do grafo. Ele separa resolução de identidade de cobertura editorial, prioriza o que já afeta consultas ou perfumes reais e nunca cria documentos, fatos ou relações automaticamente.
+
+A automação de enriquecimento transforma documentos rasos `P3` em candidatos factuais. Ela reutiliza apenas relações de pirâmide já aprovadas, gera uma prévia, executa auditoria e exige que o hash do arquivo continue igual antes da promoção. Não cria relações, descrições sensoriais ou claims de desempenho.
+
+O gate `P4` ordena o que merece pesquisa usando três sinais independentes: consultas recorrentes anonimizadas, presença em novos catálogos já aprovados e prioridade editorial justificada. O texto da consulta é processado em memória e descartado; o log privado guarda apenas a data, o idioma e os IDs canônicos encontrados. A demanda autoriza pesquisa, mas nunca cria documentos, fatos, notas ou relações no Knowledge Core.
 
 ## Conhecimento, RAG e memória
 
@@ -239,6 +257,8 @@ Descoberta com consultores → catálogo multi-tenant → Antiquário Pro → pi
 Os critérios, métricas e limites de cada fase estão no [Roadmap de produto B2C e B2B](docs/ROADMAP_B2C_B2B.md).
 
 ## Documentação
+
+- [`docs/ROADMAP_VALIDACAO_FRONTEND.md`](docs/ROADMAP_VALIDACAO_FRONTEND.md): próxima rota para simplificar a consulta e entregar respostas concretas com perfumes reais.
 
 | Documento | Conteúdo |
 |---|---|

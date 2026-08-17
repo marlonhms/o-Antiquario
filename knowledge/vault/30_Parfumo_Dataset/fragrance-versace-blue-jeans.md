@@ -40,7 +40,7 @@ relations:
   - predicate: has-heart-note
     target: antiquario:olfactory-note:lavender
   - predicate: has-heart-note
-    target: antiquario:olfactory-note:carnation
+    target: antiquario:olfactory-note:cravo-flor
   - predicate: has-heart-note
     target: antiquario:olfactory-note:jasmine
   - predicate: has-heart-note
@@ -80,5 +80,5 @@ relations:
 ## Pirâmide Olfativa
 
 - **Saída:** [[note-citrus-fruits]], [[note-aniseed]], [[Bergamota]], [[note-rosewood]], [[note-basil]], [[note-zimbro]]
-- **Coração:** [[note-heliotrope]], [[note-lavender]], [[note-carnation]], [[note-jasmine]], [[note-sage]], [[note-fir]], [[note-geranium]], [[note-lily-of-the-valley]], [[note-rose]]
+- **Coração:** [[note-heliotrope]], [[note-lavender]], [[note-cravo-flor]], [[note-jasmine]], [[note-sage]], [[note-fir]], [[note-geranium]], [[note-lily-of-the-valley]], [[note-rose]]
 - **Fundo:** [[note-tonka-bean]], [[note-ambar]], [[note-cedar]], [[note-iris]], [[note-musk]], [[note-patchouli]], [[note-sandalo]], [[Baunilha]], [[Vetiver]]

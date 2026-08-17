@@ -11,7 +11,7 @@ source_ids: [parfumo_dataset]
 license: CC0-1.0
 confidence: medium
 review_status: approved
-updated_at: 2026-07-23
+updated_at: 2026-08-17
 language: pt-BR
 summary: "Nota olfativa extraída do Parfumo Dataset."
 evidence:
@@ -24,3 +24,24 @@ relations: []
 ---
 
 # Saffron
+
+<!-- antiquario:auto-factual-coverage:v1 -->
+## Cobertura factual no grafo
+
+No release `knowledge-v2-36bca79cd798`, **Saffron** aparece em 13 fragrância(s) com declaração de pirâmide proveniente de fonte já aprovada pelo projeto.
+
+- saída: 7
+- coração: 4
+- fundo: 2
+
+### Exemplos rastreáveis
+
+- [[fragrance-prada-amber-pour-homme-prada-2006-eau-de-toilette|Amber pour Homme Prada 2006 Eau de Toilette]] — fundo
+- [[fragrance-etnia-factory-beijing|Factory, Beijing]] — saída
+- [[fragrance-parfums-de-marly-godolphin|Godolphin]] — saída
+- [[fragrance-gucci-gucci-intense-oud|Gucci Intense Oud]] — saída
+- [[fragrance-mancera-instant-crush|Instant Crush]] — saída
+
+### Limite da automação
+
+Esta seção resume relações que já existiam no grafo. Ela não cria notas, não comprova ingrediente físico e não estima cheiro, concentração, intensidade, fixação, projeção ou evolução temporal.

@@ -9,13 +9,19 @@ coverage/
 .npm-cache/
 *.log
 knowledge/vault/.obsidian/
+knowledge/vault/*.base
+knowledge/vault/*.canvas
 data/raw/wikidata/**/*.json
+data/raw/odeuropa/
 data/raw/official-catalogs/**/*.pdf
 data/staging/**/*.jsonl
+data/staging/odeuropa/
 data/staging/official-pdf/
 data/catalog/*.duckdb
 data/catalog/parquet/
 data/demo/
+data/private/
+/PDF Taxonomia Olfativa.pdf
 pipeline/**/__pycache__/
 *.egg-info/
 *.pyc

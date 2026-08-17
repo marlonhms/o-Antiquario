@@ -40,7 +40,7 @@ relations:
   - predicate: has-heart-note
     target: antiquario:olfactory-note:rosemary
   - predicate: has-heart-note
-    target: antiquario:olfactory-note:clove
+    target: antiquario:olfactory-note:cravo-especiaria
   - predicate: has-heart-note
     target: antiquario:olfactory-note:jasmine
   - predicate: has-heart-note
@@ -64,5 +64,5 @@ relations:
 ## Pirâmide Olfativa
 
 - **Saída:** [[note-limao-siciliano]], [[note-neroli]], [[note-petitgrain]], [[Bergamota]], [[note-grapefruit]], [[note-mandarin-orange]], [[note-laranja]]
-- **Coração:** [[note-rosemary]], [[note-clove]], [[note-jasmine]], [[note-lily-of-the-valley]], [[note-rose]]
+- **Coração:** [[note-rosemary]], [[note-cravo-especiaria]], [[note-jasmine]], [[note-lily-of-the-valley]], [[note-rose]]
 - **Fundo:** [[note-white-musk]], [[Vetiver]], [[note-ambar]], [[note-patchouli]]

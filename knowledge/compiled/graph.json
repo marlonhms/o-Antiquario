@@ -24,6 +24,28 @@
       "claimScope": "Classificação olfativa original para o vocabulário do projeto."
     },
     {
+      "id": "antiquario:accord:atalcado",
+      "kind": "document",
+      "documentType": "accord",
+      "title": "Atalcado",
+      "path": "30_Acordes/Atalcado.md",
+      "tags": [
+        "acorde",
+        "atalcado",
+        "navegacao"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "antiquario:accord:atalcado:evidence:001-418f2bfcae572d4b",
+      "kind": "evidence",
+      "documentId": "antiquario:accord:atalcado",
+      "sourceId": "internal_curated",
+      "license": "CC0-1.0",
+      "confidence": "medium",
+      "claimScope": "Classificação olfativa original para busca e navegação no Antiquário."
+    },
+    {
       "id": "antiquario:accord:citricos",
       "kind": "document",
       "documentType": "accord",
@@ -45,6 +67,28 @@
       "license": "CC0-1.0",
       "confidence": "medium",
       "claimScope": "Classificação olfativa original para o vocabulário do projeto."
+    },
+    {
+      "id": "antiquario:accord:fresco",
+      "kind": "document",
+      "documentType": "accord",
+      "title": "Fresco",
+      "path": "30_Acordes/Fresco.md",
+      "tags": [
+        "acorde",
+        "fresco",
+        "navegacao"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "antiquario:accord:fresco:evidence:001-6d0359c50bf6acc7",
+      "kind": "evidence",
+      "documentId": "antiquario:accord:fresco",
+      "sourceId": "internal_curated",
+      "license": "CC0-1.0",
+      "confidence": "medium",
+      "claimScope": "Classificação olfativa original para busca e navegação no Antiquário."
     },
     {
       "id": "antiquario:brand:abercrombie-fitch",
@@ -9751,27 +9795,6 @@
       "claimScope": "Extração de entidade"
     },
     {
-      "id": "antiquario:olfactory-note:calabrian-lemon",
-      "kind": "document",
-      "documentType": "olfactory-note",
-      "title": "Calabrian lemon",
-      "path": "30_Parfumo_Dataset/note-calabrian-lemon.md",
-      "tags": [
-        "olfactory-note",
-        "parfumo"
-      ],
-      "confidence": "medium"
-    },
-    {
-      "id": "antiquario:olfactory-note:calabrian-lemon:evidence:001-a3872b143f7dc715",
-      "kind": "evidence",
-      "documentId": "antiquario:olfactory-note:calabrian-lemon",
-      "sourceId": "parfumo_dataset",
-      "license": "CC0-1.0",
-      "confidence": "medium",
-      "claimScope": "Extração de entidade"
-    },
-    {
       "id": "antiquario:olfactory-note:calabrian-mandarin-orange",
       "kind": "document",
       "documentType": "olfactory-note",
@@ -9980,27 +10003,6 @@
       "license": "CC0-1.0",
       "confidence": "medium",
       "claimScope": "Descritor factual do Wikidata"
-    },
-    {
-      "id": "antiquario:olfactory-note:carnation",
-      "kind": "document",
-      "documentType": "olfactory-note",
-      "title": "Carnation",
-      "path": "30_Parfumo_Dataset/note-carnation.md",
-      "tags": [
-        "olfactory-note",
-        "parfumo"
-      ],
-      "confidence": "medium"
-    },
-    {
-      "id": "antiquario:olfactory-note:carnation:evidence:001-debf2fec15774333",
-      "kind": "evidence",
-      "documentId": "antiquario:olfactory-note:carnation",
-      "sourceId": "parfumo_dataset",
-      "license": "CC0-1.0",
-      "confidence": "medium",
-      "claimScope": "Extração de entidade"
     },
     {
       "id": "antiquario:olfactory-note:cashmeran",
@@ -10304,12 +10306,22 @@
       "path": "30_Parfumo_Dataset/note-chocolate.md",
       "tags": [
         "olfactory-note",
-        "parfumo"
+        "parfumo",
+        "gourmand"
       ],
       "confidence": "medium"
     },
     {
-      "id": "antiquario:olfactory-note:chocolate:evidence:001-ae6f3673055379df",
+      "id": "antiquario:olfactory-note:chocolate:evidence:001-0f2d944c9f72353b",
+      "kind": "evidence",
+      "documentId": "antiquario:olfactory-note:chocolate",
+      "sourceId": "internal_curated",
+      "license": "CC0-1.0",
+      "confidence": "medium",
+      "claimScope": "Identidade e classificação operacional da nota no Antiquário."
+    },
+    {
+      "id": "antiquario:olfactory-note:chocolate:evidence:002-72d9fa98df126134",
       "kind": "evidence",
       "documentId": "antiquario:olfactory-note:chocolate",
       "sourceId": "parfumo_dataset",
@@ -10480,27 +10492,6 @@
       "id": "antiquario:olfactory-note:clementine:evidence:001-73002df3ca32be20",
       "kind": "evidence",
       "documentId": "antiquario:olfactory-note:clementine",
-      "sourceId": "parfumo_dataset",
-      "license": "CC0-1.0",
-      "confidence": "medium",
-      "claimScope": "Extração de entidade"
-    },
-    {
-      "id": "antiquario:olfactory-note:clove",
-      "kind": "document",
-      "documentType": "olfactory-note",
-      "title": "Clove",
-      "path": "30_Parfumo_Dataset/note-clove.md",
-      "tags": [
-        "olfactory-note",
-        "parfumo"
-      ],
-      "confidence": "medium"
-    },
-    {
-      "id": "antiquario:olfactory-note:clove:evidence:001-f5e6b4c11fb33987",
-      "kind": "evidence",
-      "documentId": "antiquario:olfactory-note:clove",
       "sourceId": "parfumo_dataset",
       "license": "CC0-1.0",
       "confidence": "medium",
@@ -10717,27 +10708,6 @@
       "claimScope": "Extração de entidade"
     },
     {
-      "id": "antiquario:olfactory-note:coumarin",
-      "kind": "document",
-      "documentType": "olfactory-note",
-      "title": "Coumarin",
-      "path": "30_Parfumo_Dataset/note-coumarin.md",
-      "tags": [
-        "olfactory-note",
-        "parfumo"
-      ],
-      "confidence": "medium"
-    },
-    {
-      "id": "antiquario:olfactory-note:coumarin:evidence:001-86f4dc1acbf6ea81",
-      "kind": "evidence",
-      "documentId": "antiquario:olfactory-note:coumarin",
-      "sourceId": "parfumo_dataset",
-      "license": "CC0-1.0",
-      "confidence": "medium",
-      "claimScope": "Extração de entidade"
-    },
-    {
       "id": "antiquario:olfactory-note:couro",
       "kind": "document",
       "documentType": "olfactory-note",
@@ -10759,25 +10729,75 @@
       "claimScope": "Descritor factual do Wikidata"
     },
     {
-      "id": "antiquario:olfactory-note:cravo",
+      "id": "antiquario:olfactory-note:cravo-especiaria",
       "kind": "document",
       "documentType": "olfactory-note",
-      "title": "Cravo",
-      "path": "20_Notas/note-cravo.md",
+      "title": "Cravo-da-índia",
+      "path": "20_Notas/note-cravo-especiaria.md",
       "tags": [
         "nota-olfativa",
-        "auto-gerada"
+        "especiada",
+        "desambiguada"
       ],
       "confidence": "medium"
     },
     {
-      "id": "antiquario:olfactory-note:cravo:evidence:001-791444025c8b58d1",
+      "id": "antiquario:olfactory-note:cravo-especiaria:evidence:001-29bbc40757eb93b0",
       "kind": "evidence",
-      "documentId": "antiquario:olfactory-note:cravo",
+      "documentId": "antiquario:olfactory-note:cravo-especiaria",
+      "sourceId": "internal_curated",
+      "license": "CC0-1.0",
+      "confidence": "medium",
+      "claimScope": "Desambiguação terminológica entre cravo-da-índia e cravo-flor."
+    },
+    {
+      "id": "antiquario:olfactory-note:cravo-especiaria:evidence:002-fd5a115d8822e7b9",
+      "kind": "evidence",
+      "documentId": "antiquario:olfactory-note:cravo-especiaria",
+      "sourceId": "parfumo_dataset",
+      "license": "CC0-1.0",
+      "confidence": "medium",
+      "claimScope": "Uso de clove como entidade de nota nas pirâmides importadas."
+    },
+    {
+      "id": "antiquario:olfactory-note:cravo-especiaria:evidence:003-e77cacac40fd90ff",
+      "kind": "evidence",
+      "documentId": "antiquario:olfactory-note:cravo-especiaria",
       "sourceId": "wikidata",
       "license": "CC0-1.0",
       "confidence": "medium",
-      "claimScope": "Descritor factual do Wikidata"
+      "claimScope": "Normalização do descritor smell of cloves preservado no registro de origem."
+    },
+    {
+      "id": "antiquario:olfactory-note:cravo-flor",
+      "kind": "document",
+      "documentType": "olfactory-note",
+      "title": "Cravo-flor",
+      "path": "20_Notas/note-cravo-flor.md",
+      "tags": [
+        "nota-olfativa",
+        "floral",
+        "desambiguada"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "antiquario:olfactory-note:cravo-flor:evidence:001-28bb9c2ddd81e7f1",
+      "kind": "evidence",
+      "documentId": "antiquario:olfactory-note:cravo-flor",
+      "sourceId": "internal_curated",
+      "license": "CC0-1.0",
+      "confidence": "medium",
+      "claimScope": "Desambiguação terminológica entre cravo-flor e cravo-da-índia."
+    },
+    {
+      "id": "antiquario:olfactory-note:cravo-flor:evidence:002-d709c83761cafd7b",
+      "kind": "evidence",
+      "documentId": "antiquario:olfactory-note:cravo-flor",
+      "sourceId": "parfumo_dataset",
+      "license": "CC0-1.0",
+      "confidence": "medium",
+      "claimScope": "Uso de carnation como entidade de nota nas pirâmides importadas."
     },
     {
       "id": "antiquario:olfactory-note:cucumber",
@@ -14143,16 +14163,26 @@
       "id": "antiquario:olfactory-note:magnolia",
       "kind": "document",
       "documentType": "olfactory-note",
-      "title": "Magnolia",
+      "title": "Magnólia",
       "path": "30_Parfumo_Dataset/note-magnolia.md",
       "tags": [
         "olfactory-note",
-        "parfumo"
+        "parfumo",
+        "floral"
       ],
       "confidence": "medium"
     },
     {
-      "id": "antiquario:olfactory-note:magnolia:evidence:001-2243dd7b3723588f",
+      "id": "antiquario:olfactory-note:magnolia:evidence:001-0739052dac909b50",
+      "kind": "evidence",
+      "documentId": "antiquario:olfactory-note:magnolia",
+      "sourceId": "internal_curated",
+      "license": "CC0-1.0",
+      "confidence": "medium",
+      "claimScope": "Identidade, tradução e classificação operacional da nota no Antiquário."
+    },
+    {
+      "id": "antiquario:olfactory-note:magnolia:evidence:002-5ab3d771d05275df",
       "kind": "evidence",
       "documentId": "antiquario:olfactory-note:magnolia",
       "sourceId": "parfumo_dataset",
@@ -14575,27 +14605,6 @@
       "id": "antiquario:olfactory-note:mexican-tuberose:evidence:001-480f4d95973b9a8b",
       "kind": "evidence",
       "documentId": "antiquario:olfactory-note:mexican-tuberose",
-      "sourceId": "parfumo_dataset",
-      "license": "CC0-1.0",
-      "confidence": "medium",
-      "claimScope": "Extração de entidade"
-    },
-    {
-      "id": "antiquario:olfactory-note:milk",
-      "kind": "document",
-      "documentType": "olfactory-note",
-      "title": "Milk",
-      "path": "30_Parfumo_Dataset/note-milk.md",
-      "tags": [
-        "olfactory-note",
-        "parfumo"
-      ],
-      "confidence": "medium"
-    },
-    {
-      "id": "antiquario:olfactory-note:milk:evidence:001-7ca83350c4fdea3e",
-      "kind": "evidence",
-      "documentId": "antiquario:olfactory-note:milk",
       "sourceId": "parfumo_dataset",
       "license": "CC0-1.0",
       "confidence": "medium",
@@ -15463,6 +15472,28 @@
       "claimScope": "Extração de entidade"
     },
     {
+      "id": "antiquario:olfactory-note:pao",
+      "kind": "document",
+      "documentType": "olfactory-note",
+      "title": "Pão",
+      "path": "20_Notas/note-pao.md",
+      "tags": [
+        "nota-olfativa",
+        "gourmand",
+        "navegacao"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "antiquario:olfactory-note:pao:evidence:001-43aa0a552e96097d",
+      "kind": "evidence",
+      "documentId": "antiquario:olfactory-note:pao",
+      "sourceId": "internal_curated",
+      "license": "CC0-1.0",
+      "confidence": "medium",
+      "claimScope": "Identidade, tradução e classificação operacional da nota no Antiquário."
+    },
+    {
       "id": "antiquario:olfactory-note:papaia",
       "kind": "document",
       "documentType": "olfactory-note",
@@ -16261,27 +16292,6 @@
       "claimScope": "Extração de entidade"
     },
     {
-      "id": "antiquario:olfactory-note:quince",
-      "kind": "document",
-      "documentType": "olfactory-note",
-      "title": "Quince",
-      "path": "30_Parfumo_Dataset/note-quince.md",
-      "tags": [
-        "olfactory-note",
-        "parfumo"
-      ],
-      "confidence": "medium"
-    },
-    {
-      "id": "antiquario:olfactory-note:quince:evidence:001-21830062228e21c2",
-      "kind": "evidence",
-      "documentId": "antiquario:olfactory-note:quince",
-      "sourceId": "parfumo_dataset",
-      "license": "CC0-1.0",
-      "confidence": "medium",
-      "claimScope": "Extração de entidade"
-    },
-    {
       "id": "antiquario:olfactory-note:raspberry",
       "kind": "document",
       "documentType": "olfactory-note",
@@ -16583,7 +16593,9 @@
       "path": "30_Parfumo_Dataset/note-rum.md",
       "tags": [
         "olfactory-note",
-        "parfumo"
+        "parfumo",
+        "gourmand",
+        "ambarada"
       ],
       "confidence": "medium"
     },
@@ -16609,7 +16621,16 @@
       "claimScope": "Extração de entidade"
     },
     {
-      "id": "antiquario:olfactory-note:rum:evidence:001-22fe69a50e070c9b",
+      "id": "antiquario:olfactory-note:rum:evidence:001-99e456129073b7c7",
+      "kind": "evidence",
+      "documentId": "antiquario:olfactory-note:rum",
+      "sourceId": "internal_curated",
+      "license": "CC0-1.0",
+      "confidence": "medium",
+      "claimScope": "Identidade e classificação operacional da nota no Antiquário."
+    },
+    {
+      "id": "antiquario:olfactory-note:rum:evidence:002-45cc21518d54e927",
       "kind": "evidence",
       "documentId": "antiquario:olfactory-note:rum",
       "sourceId": "parfumo_dataset",
@@ -16801,27 +16822,6 @@
       "id": "antiquario:olfactory-note:serenolide:evidence:001-d41e947e688732d7",
       "kind": "evidence",
       "documentId": "antiquario:olfactory-note:serenolide",
-      "sourceId": "parfumo_dataset",
-      "license": "CC0-1.0",
-      "confidence": "medium",
-      "claimScope": "Extração de entidade"
-    },
-    {
-      "id": "antiquario:olfactory-note:sicilian-almond",
-      "kind": "document",
-      "documentType": "olfactory-note",
-      "title": "Sicilian almond",
-      "path": "30_Parfumo_Dataset/note-sicilian-almond.md",
-      "tags": [
-        "olfactory-note",
-        "parfumo"
-      ],
-      "confidence": "medium"
-    },
-    {
-      "id": "antiquario:olfactory-note:sicilian-almond:evidence:001-098ccf5d0283cc17",
-      "kind": "evidence",
-      "documentId": "antiquario:olfactory-note:sicilian-almond",
       "sourceId": "parfumo_dataset",
       "license": "CC0-1.0",
       "confidence": "medium",
@@ -17428,51 +17428,9 @@
       "confidence": "medium"
     },
     {
-      "id": "antiquario:olfactory-note:tobacco-flower",
-      "kind": "document",
-      "documentType": "olfactory-note",
-      "title": "Tobacco flower",
-      "path": "30_Parfumo_Dataset/note-tobacco-flower.md",
-      "tags": [
-        "olfactory-note",
-        "parfumo"
-      ],
-      "confidence": "medium"
-    },
-    {
-      "id": "antiquario:olfactory-note:tobacco-flower:evidence:001-aa5817d4fba6d21f",
-      "kind": "evidence",
-      "documentId": "antiquario:olfactory-note:tobacco-flower",
-      "sourceId": "parfumo_dataset",
-      "license": "CC0-1.0",
-      "confidence": "medium",
-      "claimScope": "Extração de entidade"
-    },
-    {
       "id": "antiquario:olfactory-note:tobacco:evidence:001-0ff14d3072bdcb6f",
       "kind": "evidence",
       "documentId": "antiquario:olfactory-note:tobacco",
-      "sourceId": "parfumo_dataset",
-      "license": "CC0-1.0",
-      "confidence": "medium",
-      "claimScope": "Extração de entidade"
-    },
-    {
-      "id": "antiquario:olfactory-note:toffee",
-      "kind": "document",
-      "documentType": "olfactory-note",
-      "title": "Toffee",
-      "path": "30_Parfumo_Dataset/note-toffee.md",
-      "tags": [
-        "olfactory-note",
-        "parfumo"
-      ],
-      "confidence": "medium"
-    },
-    {
-      "id": "antiquario:olfactory-note:toffee:evidence:001-3fc8b0617a008102",
-      "kind": "evidence",
-      "documentId": "antiquario:olfactory-note:toffee",
       "sourceId": "parfumo_dataset",
       "license": "CC0-1.0",
       "confidence": "medium",
@@ -17944,16 +17902,27 @@
       "id": "antiquario:olfactory-note:whisky",
       "kind": "document",
       "documentType": "olfactory-note",
-      "title": "Whisky",
+      "title": "Uísque",
       "path": "30_Parfumo_Dataset/note-whisky.md",
       "tags": [
         "olfactory-note",
-        "parfumo"
+        "parfumo",
+        "gourmand",
+        "amadeirada"
       ],
       "confidence": "medium"
     },
     {
-      "id": "antiquario:olfactory-note:whisky:evidence:001-4c41cfe75427e73a",
+      "id": "antiquario:olfactory-note:whisky:evidence:001-8fedca6ab6ae4432",
+      "kind": "evidence",
+      "documentId": "antiquario:olfactory-note:whisky",
+      "sourceId": "internal_curated",
+      "license": "CC0-1.0",
+      "confidence": "medium",
+      "claimScope": "Identidade, tradução e classificação operacional da nota no Antiquário."
+    },
+    {
+      "id": "antiquario:olfactory-note:whisky:evidence:002-9241ac734141e4ef",
       "kind": "evidence",
       "documentId": "antiquario:olfactory-note:whisky",
       "sourceId": "parfumo_dataset",
@@ -18309,6 +18278,12 @@
       "origin": "wikilink"
     },
     {
+      "source": "antiquario:accord:atalcado",
+      "target": "antiquario:accord:atalcado:evidence:001-418f2bfcae572d4b",
+      "predicate": "supported-by",
+      "origin": "evidence"
+    },
+    {
       "source": "antiquario:accord:citricos",
       "target": "antiquario:accord:citricos:evidence:001-c9ac58faddeb1b2c",
       "predicate": "supported-by",
@@ -18355,6 +18330,12 @@
       "target": "antiquario:olfactory-note:vetiver",
       "predicate": "references",
       "origin": "wikilink"
+    },
+    {
+      "source": "antiquario:accord:fresco",
+      "target": "antiquario:accord:fresco:evidence:001-6d0359c50bf6acc7",
+      "predicate": "supported-by",
+      "origin": "evidence"
     },
     {
       "source": "antiquario:brand:abercrombie-fitch",
@@ -20890,13 +20871,13 @@
     },
     {
       "source": "antiquario:fragrance:parfumo-acqua-di-parma-colonia-essenza-acqua-di-parma-2010-eau-de-cologne",
-      "target": "antiquario:olfactory-note:clove",
+      "target": "antiquario:olfactory-note:cravo-especiaria",
       "predicate": "has-heart-note",
       "origin": "frontmatter"
     },
     {
       "source": "antiquario:fragrance:parfumo-acqua-di-parma-colonia-essenza-acqua-di-parma-2010-eau-de-cologne",
-      "target": "antiquario:olfactory-note:clove",
+      "target": "antiquario:olfactory-note:cravo-especiaria",
       "predicate": "references",
       "origin": "wikilink"
     },
@@ -26116,25 +26097,25 @@
     },
     {
       "source": "antiquario:fragrance:parfumo-creed-bois-du-portugal",
-      "target": "antiquario:olfactory-note:clove",
+      "target": "antiquario:olfactory-note:coriander",
       "predicate": "has-heart-note",
       "origin": "frontmatter"
     },
     {
       "source": "antiquario:fragrance:parfumo-creed-bois-du-portugal",
-      "target": "antiquario:olfactory-note:clove",
+      "target": "antiquario:olfactory-note:coriander",
       "predicate": "references",
       "origin": "wikilink"
     },
     {
       "source": "antiquario:fragrance:parfumo-creed-bois-du-portugal",
-      "target": "antiquario:olfactory-note:coriander",
+      "target": "antiquario:olfactory-note:cravo-especiaria",
       "predicate": "has-heart-note",
       "origin": "frontmatter"
     },
     {
       "source": "antiquario:fragrance:parfumo-creed-bois-du-portugal",
-      "target": "antiquario:olfactory-note:coriander",
+      "target": "antiquario:olfactory-note:cravo-especiaria",
       "predicate": "references",
       "origin": "wikilink"
     },
@@ -30934,18 +30915,6 @@
     },
     {
       "source": "antiquario:fragrance:parfumo-guy-laroche-drakkar-noir-guy-laroche-1982-eau-de-toilette",
-      "target": "antiquario:olfactory-note:carnation",
-      "predicate": "has-heart-note",
-      "origin": "frontmatter"
-    },
-    {
-      "source": "antiquario:fragrance:parfumo-guy-laroche-drakkar-noir-guy-laroche-1982-eau-de-toilette",
-      "target": "antiquario:olfactory-note:carnation",
-      "predicate": "references",
-      "origin": "wikilink"
-    },
-    {
-      "source": "antiquario:fragrance:parfumo-guy-laroche-drakkar-noir-guy-laroche-1982-eau-de-toilette",
       "target": "antiquario:olfactory-note:cedarwood",
       "predicate": "has-base-note",
       "origin": "frontmatter"
@@ -30965,6 +30934,18 @@
     {
       "source": "antiquario:fragrance:parfumo-guy-laroche-drakkar-noir-guy-laroche-1982-eau-de-toilette",
       "target": "antiquario:olfactory-note:coriander",
+      "predicate": "references",
+      "origin": "wikilink"
+    },
+    {
+      "source": "antiquario:fragrance:parfumo-guy-laroche-drakkar-noir-guy-laroche-1982-eau-de-toilette",
+      "target": "antiquario:olfactory-note:cravo-flor",
+      "predicate": "has-heart-note",
+      "origin": "frontmatter"
+    },
+    {
+      "source": "antiquario:fragrance:parfumo-guy-laroche-drakkar-noir-guy-laroche-1982-eau-de-toilette",
+      "target": "antiquario:olfactory-note:cravo-flor",
       "predicate": "references",
       "origin": "wikilink"
     },
@@ -31486,18 +31467,6 @@
     },
     {
       "source": "antiquario:fragrance:parfumo-hugo-boss-hugo-hugo-boss-1995-eau-de-toilette",
-      "target": "antiquario:olfactory-note:carnation",
-      "predicate": "has-heart-note",
-      "origin": "frontmatter"
-    },
-    {
-      "source": "antiquario:fragrance:parfumo-hugo-boss-hugo-hugo-boss-1995-eau-de-toilette",
-      "target": "antiquario:olfactory-note:carnation",
-      "predicate": "references",
-      "origin": "wikilink"
-    },
-    {
-      "source": "antiquario:fragrance:parfumo-hugo-boss-hugo-hugo-boss-1995-eau-de-toilette",
       "target": "antiquario:olfactory-note:cedar-leaf",
       "predicate": "has-top-note",
       "origin": "frontmatter"
@@ -31517,6 +31486,18 @@
     {
       "source": "antiquario:fragrance:parfumo-hugo-boss-hugo-hugo-boss-1995-eau-de-toilette",
       "target": "antiquario:olfactory-note:cedarwood",
+      "predicate": "references",
+      "origin": "wikilink"
+    },
+    {
+      "source": "antiquario:fragrance:parfumo-hugo-boss-hugo-hugo-boss-1995-eau-de-toilette",
+      "target": "antiquario:olfactory-note:cravo-flor",
+      "predicate": "has-heart-note",
+      "origin": "frontmatter"
+    },
+    {
+      "source": "antiquario:fragrance:parfumo-hugo-boss-hugo-hugo-boss-1995-eau-de-toilette",
+      "target": "antiquario:olfactory-note:cravo-flor",
       "predicate": "references",
       "origin": "wikilink"
     },
@@ -32218,13 +32199,13 @@
     },
     {
       "source": "antiquario:fragrance:parfumo-jil-sander-sun-jil-sander-1989-eau-de-toilette",
-      "target": "antiquario:olfactory-note:carnation",
+      "target": "antiquario:olfactory-note:cravo-flor",
       "predicate": "has-heart-note",
       "origin": "frontmatter"
     },
     {
       "source": "antiquario:fragrance:parfumo-jil-sander-sun-jil-sander-1989-eau-de-toilette",
-      "target": "antiquario:olfactory-note:carnation",
+      "target": "antiquario:olfactory-note:cravo-flor",
       "predicate": "references",
       "origin": "wikilink"
     },
@@ -35656,13 +35637,13 @@
     },
     {
       "source": "antiquario:fragrance:parfumo-moschino-toy-boy",
-      "target": "antiquario:olfactory-note:clove",
+      "target": "antiquario:olfactory-note:cravo-especiaria",
       "predicate": "has-top-note",
       "origin": "frontmatter"
     },
     {
       "source": "antiquario:fragrance:parfumo-moschino-toy-boy",
-      "target": "antiquario:olfactory-note:clove",
+      "target": "antiquario:olfactory-note:cravo-especiaria",
       "predicate": "references",
       "origin": "wikilink"
     },
@@ -41200,18 +41181,6 @@
     },
     {
       "source": "antiquario:fragrance:parfumo-versace-blue-jeans",
-      "target": "antiquario:olfactory-note:carnation",
-      "predicate": "has-heart-note",
-      "origin": "frontmatter"
-    },
-    {
-      "source": "antiquario:fragrance:parfumo-versace-blue-jeans",
-      "target": "antiquario:olfactory-note:carnation",
-      "predicate": "references",
-      "origin": "wikilink"
-    },
-    {
-      "source": "antiquario:fragrance:parfumo-versace-blue-jeans",
       "target": "antiquario:olfactory-note:cedar",
       "predicate": "has-base-note",
       "origin": "frontmatter"
@@ -41231,6 +41200,18 @@
     {
       "source": "antiquario:fragrance:parfumo-versace-blue-jeans",
       "target": "antiquario:olfactory-note:citrus-fruits",
+      "predicate": "references",
+      "origin": "wikilink"
+    },
+    {
+      "source": "antiquario:fragrance:parfumo-versace-blue-jeans",
+      "target": "antiquario:olfactory-note:cravo-flor",
+      "predicate": "has-heart-note",
+      "origin": "frontmatter"
+    },
+    {
+      "source": "antiquario:fragrance:parfumo-versace-blue-jeans",
+      "target": "antiquario:olfactory-note:cravo-flor",
       "predicate": "references",
       "origin": "wikilink"
     },
@@ -42202,25 +42183,25 @@
     },
     {
       "source": "antiquario:fragrance:parfumo-xerjoff-casamorati---1888",
-      "target": "antiquario:olfactory-note:carnation",
+      "target": "antiquario:olfactory-note:coriander",
       "predicate": "has-top-note",
       "origin": "frontmatter"
     },
     {
       "source": "antiquario:fragrance:parfumo-xerjoff-casamorati---1888",
-      "target": "antiquario:olfactory-note:carnation",
+      "target": "antiquario:olfactory-note:coriander",
       "predicate": "references",
       "origin": "wikilink"
     },
     {
       "source": "antiquario:fragrance:parfumo-xerjoff-casamorati---1888",
-      "target": "antiquario:olfactory-note:coriander",
+      "target": "antiquario:olfactory-note:cravo-flor",
       "predicate": "has-top-note",
       "origin": "frontmatter"
     },
     {
       "source": "antiquario:fragrance:parfumo-xerjoff-casamorati---1888",
-      "target": "antiquario:olfactory-note:coriander",
+      "target": "antiquario:olfactory-note:cravo-flor",
       "predicate": "references",
       "origin": "wikilink"
     },
@@ -42502,13 +42483,13 @@
     },
     {
       "source": "antiquario:fragrance:parfumo-xerjoff-erba-gold",
-      "target": "antiquario:olfactory-note:clove",
+      "target": "antiquario:olfactory-note:cravo-especiaria",
       "predicate": "has-heart-note",
       "origin": "frontmatter"
     },
     {
       "source": "antiquario:fragrance:parfumo-xerjoff-erba-gold",
-      "target": "antiquario:olfactory-note:clove",
+      "target": "antiquario:olfactory-note:cravo-especiaria",
       "predicate": "references",
       "origin": "wikilink"
     },
@@ -43114,18 +43095,6 @@
     },
     {
       "source": "antiquario:fragrance:parfumo-yves-saint-laurent-kouros-yves-saint-laurent-1981-eau-de-toilette",
-      "target": "antiquario:olfactory-note:carnation",
-      "predicate": "has-heart-note",
-      "origin": "frontmatter"
-    },
-    {
-      "source": "antiquario:fragrance:parfumo-yves-saint-laurent-kouros-yves-saint-laurent-1981-eau-de-toilette",
-      "target": "antiquario:olfactory-note:carnation",
-      "predicate": "references",
-      "origin": "wikilink"
-    },
-    {
-      "source": "antiquario:fragrance:parfumo-yves-saint-laurent-kouros-yves-saint-laurent-1981-eau-de-toilette",
       "target": "antiquario:olfactory-note:civet",
       "predicate": "has-base-note",
       "origin": "frontmatter"
@@ -43157,6 +43126,18 @@
     {
       "source": "antiquario:fragrance:parfumo-yves-saint-laurent-kouros-yves-saint-laurent-1981-eau-de-toilette",
       "target": "antiquario:olfactory-note:coriander",
+      "predicate": "references",
+      "origin": "wikilink"
+    },
+    {
+      "source": "antiquario:fragrance:parfumo-yves-saint-laurent-kouros-yves-saint-laurent-1981-eau-de-toilette",
+      "target": "antiquario:olfactory-note:cravo-flor",
+      "predicate": "has-heart-note",
+      "origin": "frontmatter"
+    },
+    {
+      "source": "antiquario:fragrance:parfumo-yves-saint-laurent-kouros-yves-saint-laurent-1981-eau-de-toilette",
+      "target": "antiquario:olfactory-note:cravo-flor",
       "predicate": "references",
       "origin": "wikilink"
     },
@@ -44686,7 +44667,7 @@
     },
     {
       "source": "antiquario:fragrance:winter-26-q137912111",
-      "target": "antiquario:olfactory-note:cravo",
+      "target": "antiquario:olfactory-note:cravo-especiaria",
       "predicate": "has-top-note",
       "origin": "frontmatter"
     },
@@ -44932,7 +44913,31 @@
     },
     {
       "source": "antiquario:index:principal",
+      "target": "antiquario:accord:atalcado",
+      "predicate": "indexes",
+      "origin": "frontmatter"
+    },
+    {
+      "source": "antiquario:index:principal",
+      "target": "antiquario:accord:atalcado",
+      "predicate": "references",
+      "origin": "wikilink"
+    },
+    {
+      "source": "antiquario:index:principal",
       "target": "antiquario:accord:citricos",
+      "predicate": "references",
+      "origin": "wikilink"
+    },
+    {
+      "source": "antiquario:index:principal",
+      "target": "antiquario:accord:fresco",
+      "predicate": "indexes",
+      "origin": "frontmatter"
+    },
+    {
+      "source": "antiquario:index:principal",
+      "target": "antiquario:accord:fresco",
       "predicate": "references",
       "origin": "wikilink"
     },
@@ -44999,6 +45004,18 @@
     {
       "source": "antiquario:index:principal",
       "target": "antiquario:olfactory-note:bergamota",
+      "predicate": "references",
+      "origin": "wikilink"
+    },
+    {
+      "source": "antiquario:index:principal",
+      "target": "antiquario:olfactory-note:pao",
+      "predicate": "indexes",
+      "origin": "frontmatter"
+    },
+    {
+      "source": "antiquario:index:principal",
+      "target": "antiquario:olfactory-note:pao",
       "predicate": "references",
       "origin": "wikilink"
     },
@@ -45247,6 +45264,12 @@
       "target": "antiquario:olfactory-note:apple:evidence:001-9da370ce7a1de5e4",
       "predicate": "supported-by",
       "origin": "evidence"
+    },
+    {
+      "source": "antiquario:olfactory-note:apricot",
+      "target": "antiquario:fragrance:parfumo-mugler-angel-mugler-1992-eau-de-parfum",
+      "predicate": "references",
+      "origin": "wikilink"
     },
     {
       "source": "antiquario:olfactory-note:apricot",
@@ -45609,12 +45632,6 @@
       "origin": "evidence"
     },
     {
-      "source": "antiquario:olfactory-note:calabrian-lemon",
-      "target": "antiquario:olfactory-note:calabrian-lemon:evidence:001-a3872b143f7dc715",
-      "predicate": "supported-by",
-      "origin": "evidence"
-    },
-    {
       "source": "antiquario:olfactory-note:calabrian-mandarin-orange",
       "target": "antiquario:olfactory-note:calabrian-mandarin-orange:evidence:001-9333dcf9e8b854fc",
       "predicate": "supported-by",
@@ -45671,12 +45688,6 @@
     {
       "source": "antiquario:olfactory-note:cardamomo",
       "target": "antiquario:olfactory-note:cardamomo:evidence:001-32ab3d6cbff39ba2",
-      "predicate": "supported-by",
-      "origin": "evidence"
-    },
-    {
-      "source": "antiquario:olfactory-note:carnation",
-      "target": "antiquario:olfactory-note:carnation:evidence:001-debf2fec15774333",
       "predicate": "supported-by",
       "origin": "evidence"
     },
@@ -45766,7 +45777,13 @@
     },
     {
       "source": "antiquario:olfactory-note:chocolate",
-      "target": "antiquario:olfactory-note:chocolate:evidence:001-ae6f3673055379df",
+      "target": "antiquario:olfactory-note:chocolate:evidence:001-0f2d944c9f72353b",
+      "predicate": "supported-by",
+      "origin": "evidence"
+    },
+    {
+      "source": "antiquario:olfactory-note:chocolate",
+      "target": "antiquario:olfactory-note:chocolate:evidence:002-72d9fa98df126134",
       "predicate": "supported-by",
       "origin": "evidence"
     },
@@ -45790,6 +45807,12 @@
     },
     {
       "source": "antiquario:olfactory-note:citron",
+      "target": "antiquario:fragrance:parfumo-louis-vuitton-pacific-chill",
+      "predicate": "references",
+      "origin": "wikilink"
+    },
+    {
+      "source": "antiquario:olfactory-note:citron",
       "target": "antiquario:olfactory-note:citron:evidence:001-aa123dc0a2c53994",
       "predicate": "supported-by",
       "origin": "evidence"
@@ -45799,6 +45822,18 @@
       "target": "antiquario:olfactory-note:citrus-fruits:evidence:001-3d98843bafeb74fa",
       "predicate": "supported-by",
       "origin": "evidence"
+    },
+    {
+      "source": "antiquario:olfactory-note:civet",
+      "target": "antiquario:fragrance:parfumo-tom-ford-noir-tom-ford-2012-eau-de-parfum",
+      "predicate": "references",
+      "origin": "wikilink"
+    },
+    {
+      "source": "antiquario:olfactory-note:civet",
+      "target": "antiquario:fragrance:parfumo-yves-saint-laurent-kouros-yves-saint-laurent-1981-eau-de-toilette",
+      "predicate": "references",
+      "origin": "wikilink"
     },
     {
       "source": "antiquario:olfactory-note:civet",
@@ -45815,12 +45850,6 @@
     {
       "source": "antiquario:olfactory-note:clementine",
       "target": "antiquario:olfactory-note:clementine:evidence:001-73002df3ca32be20",
-      "predicate": "supported-by",
-      "origin": "evidence"
-    },
-    {
-      "source": "antiquario:olfactory-note:clove",
-      "target": "antiquario:olfactory-note:clove:evidence:001-f5e6b4c11fb33987",
       "predicate": "supported-by",
       "origin": "evidence"
     },
@@ -45847,6 +45876,36 @@
       "target": "antiquario:olfactory-note:coconut:evidence:001-50a008d059b4e9f2",
       "predicate": "supported-by",
       "origin": "evidence"
+    },
+    {
+      "source": "antiquario:olfactory-note:coffee",
+      "target": "antiquario:fragrance:parfumo-colornoise-country",
+      "predicate": "references",
+      "origin": "wikilink"
+    },
+    {
+      "source": "antiquario:olfactory-note:coffee",
+      "target": "antiquario:fragrance:parfumo-halloween-halloween-man-x",
+      "predicate": "references",
+      "origin": "wikilink"
+    },
+    {
+      "source": "antiquario:olfactory-note:coffee",
+      "target": "antiquario:fragrance:parfumo-kilian-black-phantom---memento-mori",
+      "predicate": "references",
+      "origin": "wikilink"
+    },
+    {
+      "source": "antiquario:olfactory-note:coffee",
+      "target": "antiquario:fragrance:parfumo-mugler-amen-angel-men",
+      "predicate": "references",
+      "origin": "wikilink"
+    },
+    {
+      "source": "antiquario:olfactory-note:coffee",
+      "target": "antiquario:fragrance:parfumo-mugler-amen-pure-malt",
+      "predicate": "references",
+      "origin": "wikilink"
     },
     {
       "source": "antiquario:olfactory-note:coffee",
@@ -45885,20 +45944,50 @@
       "origin": "evidence"
     },
     {
-      "source": "antiquario:olfactory-note:coumarin",
-      "target": "antiquario:olfactory-note:coumarin:evidence:001-86f4dc1acbf6ea81",
-      "predicate": "supported-by",
-      "origin": "evidence"
-    },
-    {
       "source": "antiquario:olfactory-note:couro",
       "target": "antiquario:olfactory-note:couro:evidence:001-fcbd7c14ce3f65ac",
       "predicate": "supported-by",
       "origin": "evidence"
     },
     {
-      "source": "antiquario:olfactory-note:cravo",
-      "target": "antiquario:olfactory-note:cravo:evidence:001-791444025c8b58d1",
+      "source": "antiquario:olfactory-note:cravo-especiaria",
+      "target": "antiquario:olfactory-note:cravo-especiaria:evidence:001-29bbc40757eb93b0",
+      "predicate": "supported-by",
+      "origin": "evidence"
+    },
+    {
+      "source": "antiquario:olfactory-note:cravo-especiaria",
+      "target": "antiquario:olfactory-note:cravo-especiaria:evidence:002-fd5a115d8822e7b9",
+      "predicate": "supported-by",
+      "origin": "evidence"
+    },
+    {
+      "source": "antiquario:olfactory-note:cravo-especiaria",
+      "target": "antiquario:olfactory-note:cravo-especiaria:evidence:003-e77cacac40fd90ff",
+      "predicate": "supported-by",
+      "origin": "evidence"
+    },
+    {
+      "source": "antiquario:olfactory-note:cravo-especiaria",
+      "target": "antiquario:olfactory-note:cravo-flor",
+      "predicate": "references",
+      "origin": "wikilink"
+    },
+    {
+      "source": "antiquario:olfactory-note:cravo-flor",
+      "target": "antiquario:olfactory-note:cravo-especiaria",
+      "predicate": "references",
+      "origin": "wikilink"
+    },
+    {
+      "source": "antiquario:olfactory-note:cravo-flor",
+      "target": "antiquario:olfactory-note:cravo-flor:evidence:001-28bb9c2ddd81e7f1",
+      "predicate": "supported-by",
+      "origin": "evidence"
+    },
+    {
+      "source": "antiquario:olfactory-note:cravo-flor",
+      "target": "antiquario:olfactory-note:cravo-flor:evidence:002-d709c83761cafd7b",
       "predicate": "supported-by",
       "origin": "evidence"
     },
@@ -45919,6 +46008,36 @@
       "target": "antiquario:olfactory-note:cumin:evidence:001-420c1e6334f2327e",
       "predicate": "supported-by",
       "origin": "evidence"
+    },
+    {
+      "source": "antiquario:olfactory-note:cypress",
+      "target": "antiquario:fragrance:parfumo-giorgio-armani-acqua-di-gio-profondo-giorgio-armani-2020-eau-de-parfum",
+      "predicate": "references",
+      "origin": "wikilink"
+    },
+    {
+      "source": "antiquario:olfactory-note:cypress",
+      "target": "antiquario:fragrance:parfumo-lalique-encre-noire-a-lextreme",
+      "predicate": "references",
+      "origin": "wikilink"
+    },
+    {
+      "source": "antiquario:olfactory-note:cypress",
+      "target": "antiquario:fragrance:parfumo-lalique-encre-noire-sport",
+      "predicate": "references",
+      "origin": "wikilink"
+    },
+    {
+      "source": "antiquario:olfactory-note:cypress",
+      "target": "antiquario:fragrance:parfumo-loccitane-en-provence-eau-des-baux",
+      "predicate": "references",
+      "origin": "wikilink"
+    },
+    {
+      "source": "antiquario:olfactory-note:cypress",
+      "target": "antiquario:fragrance:parfumo-parfums-de-marly-godolphin",
+      "predicate": "references",
+      "origin": "wikilink"
     },
     {
       "source": "antiquario:olfactory-note:cypress",
@@ -46054,6 +46173,18 @@
     },
     {
       "source": "antiquario:olfactory-note:fir",
+      "target": "antiquario:fragrance:parfumo-guy-laroche-drakkar-noir-guy-laroche-1982-eau-de-toilette",
+      "predicate": "references",
+      "origin": "wikilink"
+    },
+    {
+      "source": "antiquario:olfactory-note:fir",
+      "target": "antiquario:fragrance:parfumo-versace-blue-jeans",
+      "predicate": "references",
+      "origin": "wikilink"
+    },
+    {
+      "source": "antiquario:olfactory-note:fir",
       "target": "antiquario:olfactory-note:fir:evidence:001-98ebd876a43c7d0c",
       "predicate": "supported-by",
       "origin": "evidence"
@@ -46129,6 +46260,36 @@
       "target": "antiquario:olfactory-note:frankincense-resin:evidence:001-a917c02b7f8b0d6d",
       "predicate": "supported-by",
       "origin": "evidence"
+    },
+    {
+      "source": "antiquario:olfactory-note:frankincense",
+      "target": "antiquario:fragrance:parfumo-acorelle-be-positive---the-blanc",
+      "predicate": "references",
+      "origin": "wikilink"
+    },
+    {
+      "source": "antiquario:olfactory-note:frankincense",
+      "target": "antiquario:fragrance:parfumo-bvlgari-aqva-amara-bvlgari-2014-eau-de-toilette",
+      "predicate": "references",
+      "origin": "wikilink"
+    },
+    {
+      "source": "antiquario:olfactory-note:frankincense",
+      "target": "antiquario:fragrance:parfumo-dior-dior-homme-sport",
+      "predicate": "references",
+      "origin": "wikilink"
+    },
+    {
+      "source": "antiquario:olfactory-note:frankincense",
+      "target": "antiquario:fragrance:parfumo-guerlain-bois-darmenie",
+      "predicate": "references",
+      "origin": "wikilink"
+    },
+    {
+      "source": "antiquario:olfactory-note:frankincense",
+      "target": "antiquario:fragrance:parfumo-kilian-back-to-black-aphrodisiac-kilian-2009-perfume",
+      "predicate": "references",
+      "origin": "wikilink"
     },
     {
       "source": "antiquario:olfactory-note:frankincense",
@@ -46528,6 +46689,12 @@
     },
     {
       "source": "antiquario:olfactory-note:ivy",
+      "target": "antiquario:fragrance:parfumo-amouage-beach-hut-man",
+      "predicate": "references",
+      "origin": "wikilink"
+    },
+    {
+      "source": "antiquario:olfactory-note:ivy",
       "target": "antiquario:olfactory-note:ivy:evidence:001-5e1fb69504b52bee",
       "predicate": "supported-by",
       "origin": "evidence"
@@ -46726,6 +46893,12 @@
     },
     {
       "source": "antiquario:olfactory-note:licorice",
+      "target": "antiquario:fragrance:parfumo-mugler-amen-pure-malt",
+      "predicate": "references",
+      "origin": "wikilink"
+    },
+    {
+      "source": "antiquario:olfactory-note:licorice",
       "target": "antiquario:olfactory-note:licorice:evidence:001-24de599dd750096a",
       "predicate": "supported-by",
       "origin": "evidence"
@@ -46864,7 +47037,13 @@
     },
     {
       "source": "antiquario:olfactory-note:magnolia",
-      "target": "antiquario:olfactory-note:magnolia:evidence:001-2243dd7b3723588f",
+      "target": "antiquario:olfactory-note:magnolia:evidence:001-0739052dac909b50",
+      "predicate": "supported-by",
+      "origin": "evidence"
+    },
+    {
+      "source": "antiquario:olfactory-note:magnolia",
+      "target": "antiquario:olfactory-note:magnolia:evidence:002-5ab3d771d05275df",
       "predicate": "supported-by",
       "origin": "evidence"
     },
@@ -46989,12 +47168,6 @@
       "origin": "evidence"
     },
     {
-      "source": "antiquario:olfactory-note:milk",
-      "target": "antiquario:olfactory-note:milk:evidence:001-7ca83350c4fdea3e",
-      "predicate": "supported-by",
-      "origin": "evidence"
-    },
-    {
       "source": "antiquario:olfactory-note:mimosa",
       "target": "antiquario:olfactory-note:mimosa:evidence:001-1ecd2280729f0de1",
       "predicate": "supported-by",
@@ -47011,6 +47184,36 @@
       "target": "antiquario:olfactory-note:mineral-notes:evidence:001-4eac00f2b91d072c",
       "predicate": "supported-by",
       "origin": "evidence"
+    },
+    {
+      "source": "antiquario:olfactory-note:mint",
+      "target": "antiquario:fragrance:parfumo-amouage-beach-hut-man",
+      "predicate": "references",
+      "origin": "wikilink"
+    },
+    {
+      "source": "antiquario:olfactory-note:mint",
+      "target": "antiquario:fragrance:parfumo-amouage-memoir-man",
+      "predicate": "references",
+      "origin": "wikilink"
+    },
+    {
+      "source": "antiquario:olfactory-note:mint",
+      "target": "antiquario:fragrance:parfumo-giorgio-armani-acqua-di-gioia-giorgio-armani-2010-eau-de-parfum",
+      "predicate": "references",
+      "origin": "wikilink"
+    },
+    {
+      "source": "antiquario:olfactory-note:mint",
+      "target": "antiquario:fragrance:parfumo-hugo-boss-hugo-hugo-boss-1995-eau-de-toilette",
+      "predicate": "references",
+      "origin": "wikilink"
+    },
+    {
+      "source": "antiquario:olfactory-note:mint",
+      "target": "antiquario:fragrance:parfumo-montblanc-individuel-montblanc-2003-eau-de-toilette",
+      "predicate": "references",
+      "origin": "wikilink"
     },
     {
       "source": "antiquario:olfactory-note:mint",
@@ -47113,6 +47316,12 @@
       "target": "antiquario:olfactory-note:nana-mint:evidence:001-237595ef4ab89b97",
       "predicate": "supported-by",
       "origin": "evidence"
+    },
+    {
+      "source": "antiquario:olfactory-note:narcissus",
+      "target": "antiquario:fragrance:parfumo-geoffrey-beene-grey-flannel-geoffrey-beene-1975-eau-de-toilette",
+      "predicate": "references",
+      "origin": "wikilink"
     },
     {
       "source": "antiquario:olfactory-note:narcissus",
@@ -47241,6 +47450,12 @@
       "origin": "evidence"
     },
     {
+      "source": "antiquario:olfactory-note:pao",
+      "target": "antiquario:olfactory-note:pao:evidence:001-43aa0a552e96097d",
+      "predicate": "supported-by",
+      "origin": "evidence"
+    },
+    {
       "source": "antiquario:olfactory-note:papaia",
       "target": "antiquario:olfactory-note:papaia:evidence:001-b9dc5aaaaa5db2cc",
       "predicate": "supported-by",
@@ -47287,6 +47502,36 @@
       "target": "antiquario:olfactory-note:peach:evidence:001-104298a5024f147f",
       "predicate": "supported-by",
       "origin": "evidence"
+    },
+    {
+      "source": "antiquario:olfactory-note:pear",
+      "target": "antiquario:fragrance:parfumo-gucci-gucci-intense-oud",
+      "predicate": "references",
+      "origin": "wikilink"
+    },
+    {
+      "source": "antiquario:olfactory-note:pear",
+      "target": "antiquario:fragrance:parfumo-lancome-la-vie-est-belle-leau-de-parfum",
+      "predicate": "references",
+      "origin": "wikilink"
+    },
+    {
+      "source": "antiquario:olfactory-note:pear",
+      "target": "antiquario:fragrance:parfumo-moschino-toy-boy",
+      "predicate": "references",
+      "origin": "wikilink"
+    },
+    {
+      "source": "antiquario:olfactory-note:pear",
+      "target": "antiquario:fragrance:parfumo-prada-paradoxe",
+      "predicate": "references",
+      "origin": "wikilink"
+    },
+    {
+      "source": "antiquario:olfactory-note:pear",
+      "target": "antiquario:fragrance:parfumo-xerjoff-erba-gold",
+      "predicate": "references",
+      "origin": "wikilink"
     },
     {
       "source": "antiquario:olfactory-note:pear",
@@ -47380,6 +47625,12 @@
     },
     {
       "source": "antiquario:olfactory-note:pine",
+      "target": "antiquario:fragrance:parfumo-amouage-lyric-man",
+      "predicate": "references",
+      "origin": "wikilink"
+    },
+    {
+      "source": "antiquario:olfactory-note:pine",
       "target": "antiquario:olfactory-note:pine:evidence:001-c6e2bc1418b884ce",
       "predicate": "supported-by",
       "origin": "evidence"
@@ -47469,12 +47720,6 @@
       "origin": "evidence"
     },
     {
-      "source": "antiquario:olfactory-note:quince",
-      "target": "antiquario:olfactory-note:quince:evidence:001-21830062228e21c2",
-      "predicate": "supported-by",
-      "origin": "evidence"
-    },
-    {
       "source": "antiquario:olfactory-note:raspberry",
       "target": "antiquario:olfactory-note:raspberry:evidence:001-c8c075d4aa6d577c",
       "predicate": "supported-by",
@@ -47548,6 +47793,36 @@
     },
     {
       "source": "antiquario:olfactory-note:rosemary",
+      "target": "antiquario:fragrance:parfumo-abercrombie-fitch-fierce-abercrombie-fitch-2002-cologne",
+      "predicate": "references",
+      "origin": "wikilink"
+    },
+    {
+      "source": "antiquario:olfactory-note:rosemary",
+      "target": "antiquario:fragrance:parfumo-acqua-di-parma-colonia-acqua-di-parma-1916-eau-de-cologne",
+      "predicate": "references",
+      "origin": "wikilink"
+    },
+    {
+      "source": "antiquario:olfactory-note:rosemary",
+      "target": "antiquario:fragrance:parfumo-acqua-di-parma-colonia-essenza-acqua-di-parma-2010-eau-de-cologne",
+      "predicate": "references",
+      "origin": "wikilink"
+    },
+    {
+      "source": "antiquario:olfactory-note:rosemary",
+      "target": "antiquario:fragrance:parfumo-giorgio-armani-acqua-di-gio-profondo-giorgio-armani-2020-eau-de-parfum",
+      "predicate": "references",
+      "origin": "wikilink"
+    },
+    {
+      "source": "antiquario:olfactory-note:rosemary",
+      "target": "antiquario:fragrance:parfumo-guy-laroche-drakkar-noir-guy-laroche-1982-eau-de-toilette",
+      "predicate": "references",
+      "origin": "wikilink"
+    },
+    {
+      "source": "antiquario:olfactory-note:rosemary",
       "target": "antiquario:olfactory-note:rosemary:evidence:001-c0dcdfdf1b51aa15",
       "predicate": "supported-by",
       "origin": "evidence"
@@ -47566,7 +47841,13 @@
     },
     {
       "source": "antiquario:olfactory-note:rum",
-      "target": "antiquario:olfactory-note:rum:evidence:001-22fe69a50e070c9b",
+      "target": "antiquario:olfactory-note:rum:evidence:001-99e456129073b7c7",
+      "predicate": "supported-by",
+      "origin": "evidence"
+    },
+    {
+      "source": "antiquario:olfactory-note:rum",
+      "target": "antiquario:olfactory-note:rum:evidence:002-45cc21518d54e927",
       "predicate": "supported-by",
       "origin": "evidence"
     },
@@ -47575,6 +47856,36 @@
       "target": "antiquario:olfactory-note:russian-coriander:evidence:001-0624b162b110ea46",
       "predicate": "supported-by",
       "origin": "evidence"
+    },
+    {
+      "source": "antiquario:olfactory-note:saffron",
+      "target": "antiquario:fragrance:parfumo-etnia-factory-beijing",
+      "predicate": "references",
+      "origin": "wikilink"
+    },
+    {
+      "source": "antiquario:olfactory-note:saffron",
+      "target": "antiquario:fragrance:parfumo-gucci-gucci-intense-oud",
+      "predicate": "references",
+      "origin": "wikilink"
+    },
+    {
+      "source": "antiquario:olfactory-note:saffron",
+      "target": "antiquario:fragrance:parfumo-mancera-instant-crush",
+      "predicate": "references",
+      "origin": "wikilink"
+    },
+    {
+      "source": "antiquario:olfactory-note:saffron",
+      "target": "antiquario:fragrance:parfumo-parfums-de-marly-godolphin",
+      "predicate": "references",
+      "origin": "wikilink"
+    },
+    {
+      "source": "antiquario:olfactory-note:saffron",
+      "target": "antiquario:fragrance:parfumo-prada-amber-pour-homme-prada-2006-eau-de-toilette",
+      "predicate": "references",
+      "origin": "wikilink"
     },
     {
       "source": "antiquario:olfactory-note:saffron",
@@ -47587,6 +47898,36 @@
       "target": "antiquario:olfactory-note:safran:evidence:001-a845b4415a5036d2",
       "predicate": "supported-by",
       "origin": "evidence"
+    },
+    {
+      "source": "antiquario:olfactory-note:sage",
+      "target": "antiquario:fragrance:parfumo-geoffrey-beene-grey-flannel-geoffrey-beene-1975-eau-de-toilette",
+      "predicate": "references",
+      "origin": "wikilink"
+    },
+    {
+      "source": "antiquario:olfactory-note:sage",
+      "target": "antiquario:fragrance:parfumo-giorgio-armani-emporio-armani---stronger-with-you",
+      "predicate": "references",
+      "origin": "wikilink"
+    },
+    {
+      "source": "antiquario:olfactory-note:sage",
+      "target": "antiquario:fragrance:parfumo-hugo-boss-hugo-hugo-boss-1995-eau-de-toilette",
+      "predicate": "references",
+      "origin": "wikilink"
+    },
+    {
+      "source": "antiquario:olfactory-note:sage",
+      "target": "antiquario:fragrance:parfumo-tom-ford-grey-vetiver-tom-ford-2009-eau-de-parfum",
+      "predicate": "references",
+      "origin": "wikilink"
+    },
+    {
+      "source": "antiquario:olfactory-note:sage",
+      "target": "antiquario:fragrance:parfumo-versace-blue-jeans",
+      "predicate": "references",
+      "origin": "wikilink"
     },
     {
       "source": "antiquario:olfactory-note:sage",
@@ -47621,12 +47962,6 @@
     {
       "source": "antiquario:olfactory-note:serenolide",
       "target": "antiquario:olfactory-note:serenolide:evidence:001-d41e947e688732d7",
-      "predicate": "supported-by",
-      "origin": "evidence"
-    },
-    {
-      "source": "antiquario:olfactory-note:sicilian-almond",
-      "target": "antiquario:olfactory-note:sicilian-almond:evidence:001-098ccf5d0283cc17",
       "predicate": "supported-by",
       "origin": "evidence"
     },
@@ -47722,6 +48057,36 @@
     },
     {
       "source": "antiquario:olfactory-note:suede",
+      "target": "antiquario:fragrance:parfumo-bdk-parfums-creme-de-cuir-bdk-parfums-2018-eau-de-parfum",
+      "predicate": "references",
+      "origin": "wikilink"
+    },
+    {
+      "source": "antiquario:olfactory-note:suede",
+      "target": "antiquario:fragrance:parfumo-hugo-boss-hugo-hugo-boss-1995-eau-de-toilette",
+      "predicate": "references",
+      "origin": "wikilink"
+    },
+    {
+      "source": "antiquario:olfactory-note:suede",
+      "target": "antiquario:fragrance:parfumo-lacoste-l1212-blanc-eau-de-lacoste-l1212-blanc-lacoste-2010-eau-de-toilette",
+      "predicate": "references",
+      "origin": "wikilink"
+    },
+    {
+      "source": "antiquario:olfactory-note:suede",
+      "target": "antiquario:fragrance:parfumo-prada-luna-rossa-ocean-prada-2021-eau-de-toilette",
+      "predicate": "references",
+      "origin": "wikilink"
+    },
+    {
+      "source": "antiquario:olfactory-note:suede",
+      "target": "antiquario:fragrance:parfumo-yves-saint-laurent-le-vestiaire---babycat",
+      "predicate": "references",
+      "origin": "wikilink"
+    },
+    {
+      "source": "antiquario:olfactory-note:suede",
       "target": "antiquario:olfactory-note:suede:evidence:001-083e534066160953",
       "predicate": "supported-by",
       "origin": "evidence"
@@ -47794,25 +48159,31 @@
     },
     {
       "source": "antiquario:olfactory-note:thyme",
-      "target": "antiquario:olfactory-note:thyme:evidence:001-8696f6b3baae5f4e",
-      "predicate": "supported-by",
-      "origin": "evidence"
+      "target": "antiquario:fragrance:parfumo-hugo-boss-hugo-hugo-boss-1995-eau-de-toilette",
+      "predicate": "references",
+      "origin": "wikilink"
     },
     {
-      "source": "antiquario:olfactory-note:tobacco-flower",
-      "target": "antiquario:olfactory-note:tobacco-flower:evidence:001-aa5817d4fba6d21f",
+      "source": "antiquario:olfactory-note:thyme",
+      "target": "antiquario:fragrance:parfumo-parfums-de-marly-godolphin",
+      "predicate": "references",
+      "origin": "wikilink"
+    },
+    {
+      "source": "antiquario:olfactory-note:thyme",
+      "target": "antiquario:fragrance:parfumo-roja-parfums-oceania",
+      "predicate": "references",
+      "origin": "wikilink"
+    },
+    {
+      "source": "antiquario:olfactory-note:thyme",
+      "target": "antiquario:olfactory-note:thyme:evidence:001-8696f6b3baae5f4e",
       "predicate": "supported-by",
       "origin": "evidence"
     },
     {
       "source": "antiquario:olfactory-note:tobacco",
       "target": "antiquario:olfactory-note:tobacco:evidence:001-0ff14d3072bdcb6f",
-      "predicate": "supported-by",
-      "origin": "evidence"
-    },
-    {
-      "source": "antiquario:olfactory-note:toffee",
-      "target": "antiquario:olfactory-note:toffee:evidence:001-3fc8b0617a008102",
       "predicate": "supported-by",
       "origin": "evidence"
     },
@@ -47950,7 +48321,13 @@
     },
     {
       "source": "antiquario:olfactory-note:whisky",
-      "target": "antiquario:olfactory-note:whisky:evidence:001-4c41cfe75427e73a",
+      "target": "antiquario:olfactory-note:whisky:evidence:001-8fedca6ab6ae4432",
+      "predicate": "supported-by",
+      "origin": "evidence"
+    },
+    {
+      "source": "antiquario:olfactory-note:whisky",
+      "target": "antiquario:olfactory-note:whisky:evidence:002-9241ac734141e4ef",
       "predicate": "supported-by",
       "origin": "evidence"
     },

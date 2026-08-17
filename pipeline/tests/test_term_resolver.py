@@ -32,6 +32,8 @@ notes:
   - { id: bergamota, pt: bergamota, en: bergamot, aliases: [bergamot], family_ids: [citrica], source_ids: [internal_curated] }
   - { id: sandalo, pt: sândalo, en: sandalwood, aliases: [], family_ids: [citrica], source_ids: [internal_curated] }
   - { id: copaiba, pt: copaíba, en: copaiba, aliases: [], family_ids: [citrica], source_ids: [internal_curated] }
+  - { id: cravo-flor, pt: cravo, en: carnation, aliases: [cravo-flor], family_ids: [citrica], source_ids: [internal_curated] }
+  - { id: cravo-especiaria, pt: cravo-da-índia, en: clove, aliases: [cravinho], family_ids: [citrica], source_ids: [internal_curated] }
 """,
             encoding="utf-8",
         )
@@ -71,6 +73,9 @@ sources:
         res3 = self.resolver.resolve_note("bergamot")
         self.assertIsNotNone(res3)
         self.assertEqual(res3.canonical_id, "note:bergamota")
+
+        self.assertEqual(self.resolver.resolve_note("carnation").canonical_id, "note:cravo-flor")
+        self.assertEqual(self.resolver.resolve_note("clove").canonical_id, "note:cravo-especiaria")
 
     def test_resolve_source_alias(self) -> None:
         res = self.resolver.resolve_note("copaiba da amazonia", brand="natura")

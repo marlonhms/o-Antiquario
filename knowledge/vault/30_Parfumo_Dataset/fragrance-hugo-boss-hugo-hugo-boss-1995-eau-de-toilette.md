@@ -46,7 +46,7 @@ relations:
   - predicate: has-heart-note
     target: antiquario:olfactory-note:sage
   - predicate: has-heart-note
-    target: antiquario:olfactory-note:carnation
+    target: antiquario:olfactory-note:cravo-flor
   - predicate: has-heart-note
     target: antiquario:olfactory-note:geranium-leaf
   - predicate: has-heart-note
@@ -70,5 +70,5 @@ relations:
 ## Pirâmide Olfativa
 
 - **Saída:** [[note-green-apple]], [[note-cedar-leaf]], [[note-mint]], [[note-pine-needle]], [[note-grapefruit]], [[note-thyme]], [[note-basil]], [[note-rum]]
-- **Coração:** [[note-cedarwood]], [[note-lavender]], [[note-sage]], [[note-carnation]], [[note-geranium-leaf]], [[note-jasmine]]
+- **Coração:** [[note-cedarwood]], [[note-lavender]], [[note-sage]], [[note-cravo-flor]], [[note-geranium-leaf]], [[note-jasmine]]
 - **Fundo:** [[note-fir-balsam]], [[note-moss]], [[Vetiver]], [[note-sandalo]], [[note-suede]]

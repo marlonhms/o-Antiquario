@@ -180,6 +180,22 @@ Meta inicial útil: aprovar 20 perfumes reais com ao menos uma evidência de ide
 
 ## 6. Transição do ranking: fixtures → perfumes reais aprovados
 
+Antes de ampliar o ranking, executar a trilha científica descrita em [`TAXONOMIAS_CIENTIFICAS_OLFATIVAS.md`](TAXONOMIAS_CIENTIFICAS_OLFATIVAS.md) como enriquecimento do Knowledge Core. Essa trilha pode melhorar busca e explicação, mas não conta como cobertura de pirâmide, contexto ou desempenho para o gate de recomendação.
+
+**Entregue em 17/08/2026:** staging ODEUROPA multilíngue, proveniência CC BY 4.0, quarentena determinística e resolvedor lexical contra a taxonomia canônica. As 98 pontes exatas permanecem limitadas à recuperação; 17 expansões por alias/synset continuam candidatas.
+
+**Entregue em 17/08/2026:** índice de expansão separado, 194 chaves PT/EN, roteamento para chunks e conjunto ouro inicial. O gate obteve precisão/revocação lexical de 100%, zero violações e 71,43% de cobertura de rotas nos 19 casos controlados; 40 de 97 destinos do índice possuem chunks reais.
+
+**Entregue em 17/08/2026:** backlog automático das 57 lacunas, separado entre identidade e cobertura editorial. A fila combina sinais do conjunto ouro, catálogo ativo e grafo, sem gerar fatos ou modificar o Knowledge Core: 1 `P0`, 3 `P1`, 4 `P2`, 19 `P3` e 30 `P4`.
+
+**Entregue em 17/08/2026:** migração canônica separou `cravo-flor`/`carnation` de `cravo-da-índia`/`clove`, removeu o nó genérico `cravo` e preservou as declarações de cada perfume. Os três conceitos `P1` e os quatro `P2` receberam conteúdo de escopo e classificação com evidência permitida. O índice passou a 49 de 97 destinos com chunks, zero ambiguidades e 100% de cobertura das rotas esperadas no conjunto ouro.
+
+**Entregue em 17/08/2026:** automação `P3` em duas fases, com candidatos em staging, auditoria independente, precondição de hash e promoção explícita. Os 18 documentos foram enriquecidos a partir de 96 relações já aprovadas, sem criar relações ou texto sensorial; o Knowledge Core passou a 780 chunks e o índice a 67 de 97 destinos recuperáveis.
+
+**Entregue em 17/08/2026:** gate de demanda para os 30 itens `P4`, com janela móvel, limiares versionados, telemetria local sem texto bruto ou identificadores pessoais e sinais separados de consulta, catálogo aprovado e prioridade editorial justificada. O gate apenas autoriza pesquisa; criação de documentos, fatos e relações permanece bloqueada. A baseline honesta ficou em 30 itens dormentes porque ainda não existem eventos reais nem prioridades editoriais artificiais.
+
+**Próximo:** integrar o registrador anônimo à consulta da interface local, sob consentimento, e acumular demanda real antes de abrir a primeira fila `research_ready`. Quando um item passar pelo gate, buscar evidência independente `allowed_core`, produzir candidato auditável e só então considerar promoção.
+
 Isso só começa quando houver um subconjunto editorialmente completo. Não misturar registros factuais incompletos ao ranking apenas para aumentar a quantidade.
 
 ### Etapas
@@ -207,6 +223,8 @@ Quando o gate anterior passar:
 6. Verificar os limites e preços atuais diretamente na documentação oficial do Gemini antes de escolher o modelo.
 
 ## 8. Qualidade, operação e documentação
+
+> **Próxima rota de produto:** a revalidação da consulta e das respostas está detalhada em [`ROADMAP_VALIDACAO_FRONTEND.md`](ROADMAP_VALIDACAO_FRONTEND.md). Antes de instrumentar demanda real, o front-end deve separar “computável” de “pronto para apresentação”, resolver marcas e transformar o ranking em recomendações concretas com exemplos rastreáveis.
 
 Essas tarefas podem seguir em paralelo às fases de dados, desde que não alterem os limites acima:
 

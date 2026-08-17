@@ -1,0 +1,138 @@
+schema_version: 1
+description: Casos de regressão para expansão lexical ODEUROPA limitada à recuperação.
+
+thresholds:
+  precision_min: 1.0
+  recall_min: 1.0
+  exact_match_accuracy_min: 1.0
+  max_safety_violations: 0
+  route_coverage_min: 0.70
+
+cases:
+  - id: single-bergamot
+    query: bergamot
+    language: en
+    expected_target_ids: [antiquario:olfactory-note:bergamota]
+
+  - id: two-material-descriptors
+    query: sandalwood and patchouli
+    language: en
+    expected_target_ids:
+      - antiquario:olfactory-note:patchouli
+      - antiquario:olfactory-note:sandalo
+
+  - id: quality-and-source
+    query: fresh bread
+    language: en
+    expected_target_ids:
+      - antiquario:accord:fresco
+      - antiquario:olfactory-note:pao
+
+  - id: longest-token-boundary
+    query: pineapple
+    language: en
+    expected_target_ids: [antiquario:olfactory-note:abacaxi]
+    forbidden_target_ids:
+      - antiquario:olfactory-note:maca
+      - antiquario:olfactory-note:pinho
+
+  - id: two-valid-routes
+    query: powdery rose
+    language: en
+    expected_target_ids:
+      - antiquario:accord:atalcado
+      - antiquario:olfactory-note:rosa
+
+  - id: ambiguous-floral-blocked
+    query: floral perfume
+    language: en
+    expected_target_ids: []
+    forbidden_target_ids:
+      - antiquario:accord:floral
+      - antiquario:olfactory-family:floral
+
+  - id: cross-language-homograph-blocked
+    query: rosa
+    language: it
+    expected_target_ids: []
+    forbidden_target_ids: [antiquario:olfactory-note:rosa]
+
+  - id: candidate-alias-blocked
+    query: citrus zest
+    language: en
+    expected_target_ids: []
+    forbidden_target_ids: [antiquario:olfactory-note:bergamota]
+
+  - id: candidate-synset-blocked
+    query: pachouli
+    language: en
+    expected_target_ids: []
+    forbidden_target_ids: [antiquario:olfactory-note:patchouli]
+
+  - id: substring-blocked
+    query: rosewood cabinet
+    language: en
+    expected_target_ids: []
+    forbidden_target_ids: [antiquario:olfactory-note:rosa]
+
+  - id: two-animalic-sources
+    query: musk and ambergris
+    language: en
+    expected_target_ids:
+      - antiquario:olfactory-note:almiscar
+      - antiquario:olfactory-note:ambergris
+
+  - id: two-citrus-sources
+    query: lemon and lime
+    language: en
+    expected_target_ids:
+      - antiquario:olfactory-note:lima
+      - antiquario:olfactory-note:limao-siciliano
+
+  - id: language-required
+    query: bergamot
+    language: pt-BR
+    expected_target_ids: []
+    forbidden_target_ids: [antiquario:olfactory-note:bergamota]
+
+  - id: natural-portuguese-two-notes
+    query: quero algo com bergamota e sândalo
+    language: pt-BR
+    expected_target_ids:
+      - antiquario:olfactory-note:bergamota
+      - antiquario:olfactory-note:sandalo
+
+  - id: natural-portuguese-floral-woody
+    query: uma rosa elegante com vetiver
+    language: pt-BR
+    expected_target_ids:
+      - antiquario:olfactory-note:rosa
+      - antiquario:olfactory-note:vetiver
+
+  - id: natural-portuguese-quality-source
+    query: algo fresco com pão
+    language: pt-BR
+    expected_target_ids:
+      - antiquario:accord:fresco
+      - antiquario:olfactory-note:pao
+
+  - id: portuguese-clove-disambiguated
+    query: cravo
+    language: pt-BR
+    expected_target_ids: [antiquario:olfactory-note:cravo-flor]
+    forbidden_target_ids: [antiquario:olfactory-note:cravo-especiaria]
+
+  - id: portuguese-ambiguous-floral-blocked
+    query: floral
+    language: pt-BR
+    expected_target_ids: []
+    forbidden_target_ids:
+      - antiquario:accord:floral
+      - antiquario:olfactory-family:floral
+
+  - id: natural-portuguese-citrus-aromatic
+    query: limão-siciliano e lavanda para o calor
+    language: pt-BR
+    expected_target_ids:
+      - antiquario:olfactory-note:lavanda
+      - antiquario:olfactory-note:limao-siciliano

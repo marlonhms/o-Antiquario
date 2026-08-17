@@ -28,7 +28,7 @@ relations:
   - predicate: has-top-note
     target: antiquario:olfactory-note:pear
   - predicate: has-top-note
-    target: antiquario:olfactory-note:clove
+    target: antiquario:olfactory-note:cravo-especiaria
   - predicate: has-top-note
     target: antiquario:olfactory-note:elemi-resin
   - predicate: has-top-note
@@ -57,6 +57,6 @@ relations:
 
 ## Pirâmide Olfativa
 
-- **Saída:** [[note-pink-pepper]], [[note-pear]], [[note-clove]], [[note-elemi-resin]], [[note-indonesian-nutmeg]], [[note-italian-bergamot]]
+- **Saída:** [[note-pink-pepper]], [[note-pear]], [[note-cravo-especiaria]], [[note-elemi-resin]], [[note-indonesian-nutmeg]], [[note-italian-bergamot]]
 - **Coração:** [[note-rose]], [[note-cashmeran]], [[note-magnolia]], [[note-flax-blossom]]
 - **Fundo:** [[note-ambermax]], [[note-sylkolide]], [[note-haitian-vetiver]]

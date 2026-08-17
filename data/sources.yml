@@ -1,5 +1,5 @@
 schema_version: 1
-reviewed_at: 2026-07-22
+reviewed_at: 2026-08-17
 
 policy:
   default_classification: prohibited
@@ -290,6 +290,45 @@ sources:
         - https://www.granado.com.br/granado/termos-de-uso
       notes: A fonte é valiosa para cobertura brasileira, mas não concede licença de redistribuição em massa.
 
+  - id: odeuropa_multilingual_taxonomy
+    name: ODEUROPA — Multilingual Taxonomy of Olfactory Terms
+    homepage: https://github.com/Odeuropa/multilingualTaxonomies
+    classification: allowed_staging
+    purpose: Léxico multilíngue e histórico para candidatos de descritores, qualidades e aliases olfativos.
+    license:
+      identifier: CC-BY-4.0
+      name: Creative Commons Attribution 4.0 International
+      url: https://creativecommons.org/licenses/by/4.0/
+      scope: Arquivos TSV da taxonomia multilíngue v2 em inglês, alemão, francês e italiano.
+      compatibility: staging
+      attribution_required: true
+      share_alike: false
+    access:
+      automated: allowed
+      methods: [git, github_raw]
+      endpoint: https://raw.githubusercontent.com/Odeuropa/multilingualTaxonomies/
+      authentication: none
+      conditions:
+        - Fixar o commit e os hashes de cada arquivo no snapshot local.
+        - Preservar atribuição, licença, idioma, rótulo original e localizador por registro.
+        - Manter todos os termos e classificações como candidatos em staging.
+        - Não inferir notas, pirâmides ou declarações de perfumes a partir deste léxico.
+    storage:
+      layer: staging
+      redistribution: allowed
+      attribution_label: ODEUROPA multilingualTaxonomies — Menini et al. (2022), CC BY 4.0
+    fields:
+      allowed: [term, language, part_of_speech, source_method, wordnet_synsets, first_appearance, time_periods, smell_source_categories, quality_categories]
+      forbidden: [perfume_notes, perfume_pyramids, performance_claims, automatic_core_promotion]
+    review:
+      reviewed_at: 2026-08-17
+      next_review_at: 2026-11-17
+      evidence_urls:
+        - https://github.com/Odeuropa/multilingualTaxonomies
+        - https://github.com/Odeuropa/multilingualTaxonomies/blob/master/LICENSE
+        - https://aclanthology.org/2022.lrec-1.429/
+      notes: Aprovada pelo proprietário em 2026-08-17 exclusivamente para staging com atribuição CC BY 4.0.
+
   - id: fragrantica
     name: Fragrantica
     homepage: https://www.fragrantica.com/
@@ -396,5 +435,3 @@ sources:
       evidence_urls:
         - https://www.boticario.com.br/
       notes: Ingestão de fatos declarados para curadoria local.
-
-

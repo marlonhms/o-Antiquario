@@ -38,7 +38,7 @@ relations:
   - predicate: has-heart-note
     target: antiquario:olfactory-note:coriander
   - predicate: has-heart-note
-    target: antiquario:olfactory-note:clove
+    target: antiquario:olfactory-note:cravo-especiaria
   - predicate: has-heart-note
     target: antiquario:olfactory-note:nutmeg
   - predicate: has-heart-note
@@ -62,5 +62,5 @@ relations:
 ## Pirâmide Olfativa
 
 - **Saída:** [[Bergamota]], [[note-basil]], [[note-limao-siciliano]], [[note-lime]], [[note-mandarin-orange]]
-- **Coração:** [[note-lavender]], [[note-coriander]], [[note-clove]], [[note-nutmeg]], [[note-pimento]]
+- **Coração:** [[note-lavender]], [[note-coriander]], [[note-cravo-especiaria]], [[note-nutmeg]], [[note-pimento]]
 - **Fundo:** [[note-cedarwood]], [[note-sandalo]], [[note-patchouli]], [[Vetiver]], [[note-leathery-notes]]

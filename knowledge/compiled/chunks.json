@@ -78,6 +78,30 @@
     "contentHash": "bf64eb991ba036019ef76a3d19fe2a24843135139f842a55c06e1f5cc8f05eac"
   },
   {
+    "id": "antiquario:accord:atalcado:chunk:001",
+    "documentId": "antiquario:accord:atalcado",
+    "documentType": "accord",
+    "title": "Atalcado",
+    "heading": "Escopo canônico",
+    "order": 0,
+    "content": "Atalcado\nEscopo canônico\n\n**Atalcado** é um acorde operacional usado para organizar descrições de uma impressão olfativa em pó. Na taxonomia do Antiquário, ele pode aparecer em rotas florais ou almiscaradas sem transformar essas famílias em sinônimos.\n\nO termo descreve um efeito composto. Ele não declara presença de talco, uma matéria-prima específica, uma molécula, intensidade ou desempenho no perfume.",
+    "tags": [
+      "acorde",
+      "atalcado",
+      "navegacao"
+    ],
+    "sourceIds": [
+      "internal_curated"
+    ],
+    "license": "CC0-1.0",
+    "confidence": "medium",
+    "updatedAt": "2026-08-17",
+    "relatedDocumentIds": [
+      "antiquario:index:principal"
+    ],
+    "contentHash": "00db0c88a86b5be178890be5b629d878aa3b570e7775c485910af805ea5a7309"
+  },
+  {
     "id": "antiquario:accord:citricos:chunk:001",
     "documentId": "antiquario:accord:citricos",
     "documentType": "accord",
@@ -272,6 +296,30 @@
       "antiquario:olfactory-note:vetiver"
     ],
     "contentHash": "1c2c2abddc893124459898ca2e8df56fa3d7b9fc47d23110c571640eb7e05cc9"
+  },
+  {
+    "id": "antiquario:accord:fresco:chunk:001",
+    "documentId": "antiquario:accord:fresco",
+    "documentType": "accord",
+    "title": "Fresco",
+    "heading": "Escopo canônico",
+    "order": 0,
+    "content": "Fresco\nEscopo canônico\n\n**Fresco** é um acorde operacional usado para organizar descrições de uma impressão geral fresca ou refrescante. Na taxonomia do Antiquário, ele pode servir como rota de navegação para contextos cítricos, aromáticos ou aquáticos sem tornar essas famílias equivalentes.\n\nO acorde não representa uma matéria-prima isolada e não permite inferir temperatura, projeção, duração ou adequação climática de um perfume.",
+    "tags": [
+      "acorde",
+      "fresco",
+      "navegacao"
+    ],
+    "sourceIds": [
+      "internal_curated"
+    ],
+    "license": "CC0-1.0",
+    "confidence": "medium",
+    "updatedAt": "2026-08-17",
+    "relatedDocumentIds": [
+      "antiquario:index:principal"
+    ],
+    "contentHash": "d222638bb1de40af4d08ff990de077f96f95631457cf44ed74bd9d9252eed8bc"
   },
   {
     "id": "antiquario:brand:natura:chunk:001",
@@ -2959,7 +3007,7 @@
       "antiquario:brand:acqua-di-parma",
       "antiquario:olfactory-note:ambar",
       "antiquario:olfactory-note:bergamota",
-      "antiquario:olfactory-note:clove",
+      "antiquario:olfactory-note:cravo-especiaria",
       "antiquario:olfactory-note:grapefruit",
       "antiquario:olfactory-note:jasmine",
       "antiquario:olfactory-note:laranja",
@@ -2983,7 +3031,7 @@
     "title": "Colonia Essenza Acqua di Parma 2010 Eau de Cologne",
     "heading": "Pirâmide Olfativa",
     "order": 1,
-    "content": "Colonia Essenza Acqua di Parma 2010 Eau de Cologne\nPirâmide Olfativa\n\n- **Saída:** note-limao-siciliano, note-neroli, note-petitgrain, Bergamota, note-grapefruit, note-mandarin-orange, note-laranja\n- **Coração:** note-rosemary, note-clove, note-jasmine, note-lily-of-the-valley, note-rose\n- **Fundo:** note-white-musk, Vetiver, note-ambar, note-patchouli",
+    "content": "Colonia Essenza Acqua di Parma 2010 Eau de Cologne\nPirâmide Olfativa\n\n- **Saída:** note-limao-siciliano, note-neroli, note-petitgrain, Bergamota, note-grapefruit, note-mandarin-orange, note-laranja\n- **Coração:** note-rosemary, note-cravo-especiaria, note-jasmine, note-lily-of-the-valley, note-rose\n- **Fundo:** note-white-musk, Vetiver, note-ambar, note-patchouli",
     "tags": [
       "perfume",
       "parfumo",
@@ -2999,7 +3047,7 @@
       "antiquario:brand:acqua-di-parma",
       "antiquario:olfactory-note:ambar",
       "antiquario:olfactory-note:bergamota",
-      "antiquario:olfactory-note:clove",
+      "antiquario:olfactory-note:cravo-especiaria",
       "antiquario:olfactory-note:grapefruit",
       "antiquario:olfactory-note:jasmine",
       "antiquario:olfactory-note:laranja",
@@ -3014,7 +3062,7 @@
       "antiquario:olfactory-note:vetiver",
       "antiquario:olfactory-note:white-musk"
     ],
-    "contentHash": "0c18f603380bd9265121352e6eaf67365bbc83f6a3fe1ace39465757a7db3c09"
+    "contentHash": "26fada525bfc2f8e973073e786de3c8cbd2d433f152e461d7cee8de455a6c11d"
   },
   {
     "id": "antiquario:fragrance:parfumo-acqua-di-parma-mandorlo-di-sicilia:chunk:001",
@@ -5448,8 +5496,8 @@
       "antiquario:olfactory-note:basil",
       "antiquario:olfactory-note:bergamota",
       "antiquario:olfactory-note:cedarwood",
-      "antiquario:olfactory-note:clove",
       "antiquario:olfactory-note:coriander",
+      "antiquario:olfactory-note:cravo-especiaria",
       "antiquario:olfactory-note:lavender",
       "antiquario:olfactory-note:leathery-notes",
       "antiquario:olfactory-note:limao-siciliano",
@@ -5470,7 +5518,7 @@
     "title": "Bois du Portugal",
     "heading": "Pirâmide Olfativa",
     "order": 1,
-    "content": "Bois du Portugal\nPirâmide Olfativa\n\n- **Saída:** Bergamota, note-basil, note-limao-siciliano, note-lime, note-mandarin-orange\n- **Coração:** note-lavender, note-coriander, note-clove, note-nutmeg, note-pimento\n- **Fundo:** note-cedarwood, note-sandalo, note-patchouli, Vetiver, note-leathery-notes",
+    "content": "Bois du Portugal\nPirâmide Olfativa\n\n- **Saída:** Bergamota, note-basil, note-limao-siciliano, note-lime, note-mandarin-orange\n- **Coração:** note-lavender, note-coriander, note-cravo-especiaria, note-nutmeg, note-pimento\n- **Fundo:** note-cedarwood, note-sandalo, note-patchouli, Vetiver, note-leathery-notes",
     "tags": [
       "perfume",
       "parfumo",
@@ -5487,8 +5535,8 @@
       "antiquario:olfactory-note:basil",
       "antiquario:olfactory-note:bergamota",
       "antiquario:olfactory-note:cedarwood",
-      "antiquario:olfactory-note:clove",
       "antiquario:olfactory-note:coriander",
+      "antiquario:olfactory-note:cravo-especiaria",
       "antiquario:olfactory-note:lavender",
       "antiquario:olfactory-note:leathery-notes",
       "antiquario:olfactory-note:limao-siciliano",
@@ -5500,7 +5548,7 @@
       "antiquario:olfactory-note:sandalo",
       "antiquario:olfactory-note:vetiver"
     ],
-    "contentHash": "c6dc8791ec5d4d1505fa897959aea61c400c8463995be7a41ffd14d9b1b0c37d"
+    "contentHash": "f8cf1c27d9bb8c72d75a00cec129f98f9571f8f8e7750f7fd5bfa00620627410"
   },
   {
     "id": "antiquario:fragrance:parfumo-creed-himalaya:chunk:001",
@@ -8048,9 +8096,9 @@
       "antiquario:olfactory-note:basil",
       "antiquario:olfactory-note:bergamota",
       "antiquario:olfactory-note:canela",
-      "antiquario:olfactory-note:carnation",
       "antiquario:olfactory-note:cedarwood",
       "antiquario:olfactory-note:coriander",
+      "antiquario:olfactory-note:cravo-flor",
       "antiquario:olfactory-note:fir",
       "antiquario:olfactory-note:jasmine",
       "antiquario:olfactory-note:lavender",
@@ -8073,7 +8121,7 @@
     "title": "Drakkar Noir Guy Laroche 1982 Eau de Toilette",
     "heading": "Pirâmide Olfativa",
     "order": 1,
-    "content": "Drakkar Noir Guy Laroche 1982 Eau de Toilette\nPirâmide Olfativa\n\n- **Saída:** note-lavender, Bergamota, note-limao-siciliano, note-lemon-vervain, note-artemisia, note-basil, note-rosemary\n- **Coração:** note-coriander, note-zimbro, note-carnation, note-jasmine, note-canela\n- **Fundo:** note-oakmoss, note-fir, note-patchouli, note-cedarwood, note-leather, note-sandalo, Vetiver, note-ambar",
+    "content": "Drakkar Noir Guy Laroche 1982 Eau de Toilette\nPirâmide Olfativa\n\n- **Saída:** note-lavender, Bergamota, note-limao-siciliano, note-lemon-vervain, note-artemisia, note-basil, note-rosemary\n- **Coração:** note-coriander, note-zimbro, note-cravo-flor, note-jasmine, note-canela\n- **Fundo:** note-oakmoss, note-fir, note-patchouli, note-cedarwood, note-leather, note-sandalo, Vetiver, note-ambar",
     "tags": [
       "perfume",
       "parfumo",
@@ -8092,9 +8140,9 @@
       "antiquario:olfactory-note:basil",
       "antiquario:olfactory-note:bergamota",
       "antiquario:olfactory-note:canela",
-      "antiquario:olfactory-note:carnation",
       "antiquario:olfactory-note:cedarwood",
       "antiquario:olfactory-note:coriander",
+      "antiquario:olfactory-note:cravo-flor",
       "antiquario:olfactory-note:fir",
       "antiquario:olfactory-note:jasmine",
       "antiquario:olfactory-note:lavender",
@@ -8108,7 +8156,7 @@
       "antiquario:olfactory-note:vetiver",
       "antiquario:olfactory-note:zimbro"
     ],
-    "contentHash": "269513a6f871120863d4e9142d4e79964c1237ea16b0490604e64bf6f4d9a102"
+    "contentHash": "1185087bbc925b0be4d5bcfb675daf2c51d950caef5fb723d1688abbc441488e"
   },
   {
     "id": "antiquario:fragrance:parfumo-halloween-halloween-man-x:chunk:001",
@@ -8408,9 +8456,9 @@
     "relatedDocumentIds": [
       "antiquario:brand:hugo-boss",
       "antiquario:olfactory-note:basil",
-      "antiquario:olfactory-note:carnation",
       "antiquario:olfactory-note:cedar-leaf",
       "antiquario:olfactory-note:cedarwood",
+      "antiquario:olfactory-note:cravo-flor",
       "antiquario:olfactory-note:fir-balsam",
       "antiquario:olfactory-note:geranium-leaf",
       "antiquario:olfactory-note:grapefruit",
@@ -8436,7 +8484,7 @@
     "title": "Hugo Hugo Boss 1995 Eau de Toilette",
     "heading": "Pirâmide Olfativa",
     "order": 1,
-    "content": "Hugo Hugo Boss 1995 Eau de Toilette\nPirâmide Olfativa\n\n- **Saída:** note-green-apple, note-cedar-leaf, note-mint, note-pine-needle, note-grapefruit, note-thyme, note-basil, note-rum\n- **Coração:** note-cedarwood, note-lavender, note-sage, note-carnation, note-geranium-leaf, note-jasmine\n- **Fundo:** note-fir-balsam, note-moss, Vetiver, note-sandalo, note-suede",
+    "content": "Hugo Hugo Boss 1995 Eau de Toilette\nPirâmide Olfativa\n\n- **Saída:** note-green-apple, note-cedar-leaf, note-mint, note-pine-needle, note-grapefruit, note-thyme, note-basil, note-rum\n- **Coração:** note-cedarwood, note-lavender, note-sage, note-cravo-flor, note-geranium-leaf, note-jasmine\n- **Fundo:** note-fir-balsam, note-moss, Vetiver, note-sandalo, note-suede",
     "tags": [
       "perfume",
       "parfumo",
@@ -8451,9 +8499,9 @@
     "relatedDocumentIds": [
       "antiquario:brand:hugo-boss",
       "antiquario:olfactory-note:basil",
-      "antiquario:olfactory-note:carnation",
       "antiquario:olfactory-note:cedar-leaf",
       "antiquario:olfactory-note:cedarwood",
+      "antiquario:olfactory-note:cravo-flor",
       "antiquario:olfactory-note:fir-balsam",
       "antiquario:olfactory-note:geranium-leaf",
       "antiquario:olfactory-note:grapefruit",
@@ -8470,7 +8518,7 @@
       "antiquario:olfactory-note:thyme",
       "antiquario:olfactory-note:vetiver"
     ],
-    "contentHash": "c73b619b6df862296ecca5e0e53dbf24b491abc5877dc6f88c58950be86e216c"
+    "contentHash": "b0d80e758d1c91a8364af7a26a9f74344c5b3c39f1cf217bf17ac725a8b982c8"
   },
   {
     "id": "antiquario:fragrance:parfumo-hugo-boss-the-scent-for-him-hugo-boss-2015-eau-de-toilette:chunk:001",
@@ -8977,7 +9025,7 @@
       "antiquario:olfactory-note:baunilha",
       "antiquario:olfactory-note:benzoin",
       "antiquario:olfactory-note:bergamota",
-      "antiquario:olfactory-note:carnation",
+      "antiquario:olfactory-note:cravo-flor",
       "antiquario:olfactory-note:fruits",
       "antiquario:olfactory-note:heliotrope",
       "antiquario:olfactory-note:laranja-blossom",
@@ -9000,7 +9048,7 @@
     "title": "Sun Jil Sander 1989 Eau de Toilette",
     "heading": "Pirâmide Olfativa",
     "order": 1,
-    "content": "Sun Jil Sander 1989 Eau de Toilette\nPirâmide Olfativa\n\n- **Saída:** note-orange-blossom, Bergamota, note-fruits, note-limao-siciliano\n- **Coração:** note-heliotrope, note-ylang-ylang, note-carnation, note-lily-of-the-valley, note-orris-root, note-rose\n- **Fundo:** Baunilha, note-benzoin, note-musk, note-styrax, note-tonka-bean, note-ambar, note-sandalo",
+    "content": "Sun Jil Sander 1989 Eau de Toilette\nPirâmide Olfativa\n\n- **Saída:** note-orange-blossom, Bergamota, note-fruits, note-limao-siciliano\n- **Coração:** note-heliotrope, note-ylang-ylang, note-cravo-flor, note-lily-of-the-valley, note-orris-root, note-rose\n- **Fundo:** Baunilha, note-benzoin, note-musk, note-styrax, note-tonka-bean, note-ambar, note-sandalo",
     "tags": [
       "perfume",
       "parfumo",
@@ -9018,7 +9066,7 @@
       "antiquario:olfactory-note:baunilha",
       "antiquario:olfactory-note:benzoin",
       "antiquario:olfactory-note:bergamota",
-      "antiquario:olfactory-note:carnation",
+      "antiquario:olfactory-note:cravo-flor",
       "antiquario:olfactory-note:fruits",
       "antiquario:olfactory-note:heliotrope",
       "antiquario:olfactory-note:laranja-blossom",
@@ -9032,7 +9080,7 @@
       "antiquario:olfactory-note:tonka-bean",
       "antiquario:olfactory-note:ylang-ylang"
     ],
-    "contentHash": "b15504913957f73dff00cf33430a2d3bdbee21757cd1e21c6baa0a8028d937ef"
+    "contentHash": "e562605f5ed1ccb051f5e22814df77ee0f0bd93dc814bc5f744bb5661714c1d8"
   },
   {
     "id": "antiquario:fragrance:parfumo-jo-malone-myrrh-tonka:chunk:001",
@@ -10975,7 +11023,7 @@
       "antiquario:brand:moschino",
       "antiquario:olfactory-note:ambermax",
       "antiquario:olfactory-note:cashmeran",
-      "antiquario:olfactory-note:clove",
+      "antiquario:olfactory-note:cravo-especiaria",
       "antiquario:olfactory-note:elemi-resin",
       "antiquario:olfactory-note:flax-blossom",
       "antiquario:olfactory-note:haitian-vetiver",
@@ -10996,7 +11044,7 @@
     "title": "Toy Boy",
     "heading": "Pirâmide Olfativa",
     "order": 1,
-    "content": "Toy Boy\nPirâmide Olfativa\n\n- **Saída:** note-pink-pepper, note-pear, note-clove, note-elemi-resin, note-indonesian-nutmeg, note-italian-bergamot\n- **Coração:** note-rose, note-cashmeran, note-magnolia, note-flax-blossom\n- **Fundo:** note-ambermax, note-sylkolide, note-haitian-vetiver",
+    "content": "Toy Boy\nPirâmide Olfativa\n\n- **Saída:** note-pink-pepper, note-pear, note-cravo-especiaria, note-elemi-resin, note-indonesian-nutmeg, note-italian-bergamot\n- **Coração:** note-rose, note-cashmeran, note-magnolia, note-flax-blossom\n- **Fundo:** note-ambermax, note-sylkolide, note-haitian-vetiver",
     "tags": [
       "perfume",
       "parfumo",
@@ -11012,7 +11060,7 @@
       "antiquario:brand:moschino",
       "antiquario:olfactory-note:ambermax",
       "antiquario:olfactory-note:cashmeran",
-      "antiquario:olfactory-note:clove",
+      "antiquario:olfactory-note:cravo-especiaria",
       "antiquario:olfactory-note:elemi-resin",
       "antiquario:olfactory-note:flax-blossom",
       "antiquario:olfactory-note:haitian-vetiver",
@@ -11024,7 +11072,7 @@
       "antiquario:olfactory-note:rose",
       "antiquario:olfactory-note:sylkolide"
     ],
-    "contentHash": "e6f155a77c71d4753975f564640f1fd93d9cee5f475b33124a122267c8f41a89"
+    "contentHash": "bfcc362f9fcd34af6e85e37a961dcbe7c4de662474fe9262af7b67bcb1189455"
   },
   {
     "id": "antiquario:fragrance:parfumo-mugler-amen-angel-men:chunk:001",
@@ -14000,9 +14048,9 @@
       "antiquario:olfactory-note:basil",
       "antiquario:olfactory-note:baunilha",
       "antiquario:olfactory-note:bergamota",
-      "antiquario:olfactory-note:carnation",
       "antiquario:olfactory-note:cedar",
       "antiquario:olfactory-note:citrus-fruits",
+      "antiquario:olfactory-note:cravo-flor",
       "antiquario:olfactory-note:fir",
       "antiquario:olfactory-note:geranium",
       "antiquario:olfactory-note:heliotrope",
@@ -14029,7 +14077,7 @@
     "title": "Blue Jeans",
     "heading": "Pirâmide Olfativa",
     "order": 1,
-    "content": "Blue Jeans\nPirâmide Olfativa\n\n- **Saída:** note-citrus-fruits, note-aniseed, Bergamota, note-rosewood, note-basil, note-zimbro\n- **Coração:** note-heliotrope, note-lavender, note-carnation, note-jasmine, note-sage, note-fir, note-geranium, note-lily-of-the-valley, note-rose\n- **Fundo:** note-tonka-bean, note-ambar, note-cedar, note-iris, note-musk, note-patchouli, note-sandalo, Baunilha, Vetiver",
+    "content": "Blue Jeans\nPirâmide Olfativa\n\n- **Saída:** note-citrus-fruits, note-aniseed, Bergamota, note-rosewood, note-basil, note-zimbro\n- **Coração:** note-heliotrope, note-lavender, note-cravo-flor, note-jasmine, note-sage, note-fir, note-geranium, note-lily-of-the-valley, note-rose\n- **Fundo:** note-tonka-bean, note-ambar, note-cedar, note-iris, note-musk, note-patchouli, note-sandalo, Baunilha, Vetiver",
     "tags": [
       "perfume",
       "parfumo",
@@ -14048,9 +14096,9 @@
       "antiquario:olfactory-note:basil",
       "antiquario:olfactory-note:baunilha",
       "antiquario:olfactory-note:bergamota",
-      "antiquario:olfactory-note:carnation",
       "antiquario:olfactory-note:cedar",
       "antiquario:olfactory-note:citrus-fruits",
+      "antiquario:olfactory-note:cravo-flor",
       "antiquario:olfactory-note:fir",
       "antiquario:olfactory-note:geranium",
       "antiquario:olfactory-note:heliotrope",
@@ -14068,7 +14116,7 @@
       "antiquario:olfactory-note:vetiver",
       "antiquario:olfactory-note:zimbro"
     ],
-    "contentHash": "682986c237817688ef6ae131c3238dd4581b750461429239c03b3f1103c516c0"
+    "contentHash": "3192b1f36341ab2edec6798b767b65de9775e0c6b6bb2a5a744d195ba35ad62f"
   },
   {
     "id": "antiquario:fragrance:parfumo-versace-eros-versace-2020-eau-de-parfum:chunk:001",
@@ -14486,8 +14534,8 @@
     "relatedDocumentIds": [
       "antiquario:brand:xerjoff",
       "antiquario:olfactory-note:ambar",
-      "antiquario:olfactory-note:carnation",
       "antiquario:olfactory-note:coriander",
+      "antiquario:olfactory-note:cravo-flor",
       "antiquario:olfactory-note:green-pepper",
       "antiquario:olfactory-note:indonesian-ylang-ylang",
       "antiquario:olfactory-note:moroccan-neroli",
@@ -14504,7 +14552,7 @@
     "title": "Casamorati - 1888",
     "heading": "Pirâmide Olfativa",
     "order": 1,
-    "content": "Casamorati - 1888\nPirâmide Olfativa\n\n- **Saída:** note-carnation, note-coriander, note-green-pepper, note-persian-saffron\n- **Coração:** note-indonesian-ylang-ylang, note-moroccan-neroli\n- **Fundo:** note-ambar, note-mysore-sandalwood, note-patchouli",
+    "content": "Casamorati - 1888\nPirâmide Olfativa\n\n- **Saída:** note-cravo-flor, note-coriander, note-green-pepper, note-persian-saffron\n- **Coração:** note-indonesian-ylang-ylang, note-moroccan-neroli\n- **Fundo:** note-ambar, note-mysore-sandalwood, note-patchouli",
     "tags": [
       "perfume",
       "parfumo",
@@ -14519,8 +14567,8 @@
     "relatedDocumentIds": [
       "antiquario:brand:xerjoff",
       "antiquario:olfactory-note:ambar",
-      "antiquario:olfactory-note:carnation",
       "antiquario:olfactory-note:coriander",
+      "antiquario:olfactory-note:cravo-flor",
       "antiquario:olfactory-note:green-pepper",
       "antiquario:olfactory-note:indonesian-ylang-ylang",
       "antiquario:olfactory-note:moroccan-neroli",
@@ -14528,7 +14576,7 @@
       "antiquario:olfactory-note:patchouli",
       "antiquario:olfactory-note:persian-saffron"
     ],
-    "contentHash": "a1a9179c1c6af5084a463f3148874b7e1df5a208851e1d80d5eebe8da45fa354"
+    "contentHash": "3b3f2b7de6f29e3ae3e8aa12e38169fc07e7651e736013847031c95654fdb466"
   },
   {
     "id": "antiquario:fragrance:parfumo-xerjoff-decas:chunk:001",
@@ -14622,7 +14670,7 @@
       "antiquario:olfactory-note:bourbon-vanilla",
       "antiquario:olfactory-note:brazilian-orange",
       "antiquario:olfactory-note:calabrian-bergamot",
-      "antiquario:olfactory-note:clove",
+      "antiquario:olfactory-note:cravo-especiaria",
       "antiquario:olfactory-note:ginger",
       "antiquario:olfactory-note:green-apple",
       "antiquario:olfactory-note:guatemala-cardamom",
@@ -14641,7 +14689,7 @@
     "title": "Erba Gold",
     "heading": "Pirâmide Olfativa",
     "order": 1,
-    "content": "Erba Gold\nPirâmide Olfativa\n\n- **Saída:** note-calabrian-bergamot, note-ginger, note-amalfi-lemon, note-brazilian-orange\n- **Coração:** note-melon, note-green-apple, note-pear, note-clove, note-guatemala-cardamom, note-madagascan-cinnamon\n- **Fundo:** note-white-musk, note-ambar, note-bourbon-vanilla, note-woods",
+    "content": "Erba Gold\nPirâmide Olfativa\n\n- **Saída:** note-calabrian-bergamot, note-ginger, note-amalfi-lemon, note-brazilian-orange\n- **Coração:** note-melon, note-green-apple, note-pear, note-cravo-especiaria, note-guatemala-cardamom, note-madagascan-cinnamon\n- **Fundo:** note-white-musk, note-ambar, note-bourbon-vanilla, note-woods",
     "tags": [
       "perfume",
       "parfumo",
@@ -14660,7 +14708,7 @@
       "antiquario:olfactory-note:bourbon-vanilla",
       "antiquario:olfactory-note:brazilian-orange",
       "antiquario:olfactory-note:calabrian-bergamot",
-      "antiquario:olfactory-note:clove",
+      "antiquario:olfactory-note:cravo-especiaria",
       "antiquario:olfactory-note:ginger",
       "antiquario:olfactory-note:green-apple",
       "antiquario:olfactory-note:guatemala-cardamom",
@@ -14670,7 +14718,7 @@
       "antiquario:olfactory-note:white-musk",
       "antiquario:olfactory-note:woods"
     ],
-    "contentHash": "ec77fa69d13d9d1c1580f432b9b407e8019d9d72b4b360e21524b9d334a713fe"
+    "contentHash": "2635a3ad80f76359bb5fa1942830fdeb186050f262e01a69427befd60fa8ed15"
   },
   {
     "id": "antiquario:fragrance:parfumo-xerjoff-fars:chunk:001",
@@ -14904,10 +14952,10 @@
       "antiquario:olfactory-note:baunilha",
       "antiquario:olfactory-note:bergamota",
       "antiquario:olfactory-note:canela",
-      "antiquario:olfactory-note:carnation",
       "antiquario:olfactory-note:civet",
       "antiquario:olfactory-note:clary-sage",
       "antiquario:olfactory-note:coriander",
+      "antiquario:olfactory-note:cravo-flor",
       "antiquario:olfactory-note:frankincense",
       "antiquario:olfactory-note:geranium",
       "antiquario:olfactory-note:honey",
@@ -14930,7 +14978,7 @@
     "title": "Kouros Yves Saint Laurent 1981 Eau de Toilette",
     "heading": "Pirâmide Olfativa",
     "order": 1,
-    "content": "Kouros Yves Saint Laurent 1981 Eau de Toilette\nPirâmide Olfativa\n\n- **Saída:** note-aldehydes, Bergamota, note-clary-sage, note-coriander, note-tarragon\n- **Coração:** note-carnation, note-geranium, note-jasmine, note-orris-root, note-patchouli, Vetiver, note-canela\n- **Fundo:** note-civet, note-musk, note-oakmoss, note-ambar, note-frankincense, note-honey, note-leather, note-tonka-bean, Baunilha",
+    "content": "Kouros Yves Saint Laurent 1981 Eau de Toilette\nPirâmide Olfativa\n\n- **Saída:** note-aldehydes, Bergamota, note-clary-sage, note-coriander, note-tarragon\n- **Coração:** note-cravo-flor, note-geranium, note-jasmine, note-orris-root, note-patchouli, Vetiver, note-canela\n- **Fundo:** note-civet, note-musk, note-oakmoss, note-ambar, note-frankincense, note-honey, note-leather, note-tonka-bean, Baunilha",
     "tags": [
       "perfume",
       "parfumo",
@@ -14949,10 +14997,10 @@
       "antiquario:olfactory-note:baunilha",
       "antiquario:olfactory-note:bergamota",
       "antiquario:olfactory-note:canela",
-      "antiquario:olfactory-note:carnation",
       "antiquario:olfactory-note:civet",
       "antiquario:olfactory-note:clary-sage",
       "antiquario:olfactory-note:coriander",
+      "antiquario:olfactory-note:cravo-flor",
       "antiquario:olfactory-note:frankincense",
       "antiquario:olfactory-note:geranium",
       "antiquario:olfactory-note:honey",
@@ -14966,7 +15014,7 @@
       "antiquario:olfactory-note:tonka-bean",
       "antiquario:olfactory-note:vetiver"
     ],
-    "contentHash": "d8c775e8df7da78caa59a9ff29cc531d0ad93a19acf68f9c55204bca2611b616"
+    "contentHash": "19526d15559829352236ccb6780d39e93be42e7520c57be2d67bdc82c7b8f9c2"
   },
   {
     "id": "antiquario:fragrance:parfumo-yves-saint-laurent-le-vestiaire---babycat:chunk:001",
@@ -17459,7 +17507,7 @@
       "antiquario:olfactory-note:alga",
       "antiquario:olfactory-note:bergamota",
       "antiquario:olfactory-note:cardamomo",
-      "antiquario:olfactory-note:cravo",
+      "antiquario:olfactory-note:cravo-especiaria",
       "antiquario:olfactory-note:eugenio",
       "antiquario:olfactory-note:folha-de-violeta",
       "antiquario:olfactory-note:hortela-pimenta",
@@ -17502,7 +17550,7 @@
       "antiquario:olfactory-note:alga",
       "antiquario:olfactory-note:bergamota",
       "antiquario:olfactory-note:cardamomo",
-      "antiquario:olfactory-note:cravo",
+      "antiquario:olfactory-note:cravo-especiaria",
       "antiquario:olfactory-note:eugenio",
       "antiquario:olfactory-note:folha-de-violeta",
       "antiquario:olfactory-note:hortela-pimenta",
@@ -17545,7 +17593,7 @@
       "antiquario:olfactory-note:alga",
       "antiquario:olfactory-note:bergamota",
       "antiquario:olfactory-note:cardamomo",
-      "antiquario:olfactory-note:cravo",
+      "antiquario:olfactory-note:cravo-especiaria",
       "antiquario:olfactory-note:eugenio",
       "antiquario:olfactory-note:folha-de-violeta",
       "antiquario:olfactory-note:hortela-pimenta",
@@ -17937,16 +17985,19 @@
     ],
     "license": "CC0-1.0",
     "confidence": "high",
-    "updatedAt": "2026-07-22",
+    "updatedAt": "2026-08-17",
     "relatedDocumentIds": [
       "antiquario:accord:amadeirado",
+      "antiquario:accord:atalcado",
       "antiquario:accord:citricos",
+      "antiquario:accord:fresco",
       "antiquario:context:calor-umido",
       "antiquario:context:escritorio",
       "antiquario:fragrance:brisa-vetiver",
       "antiquario:guide:fontes-de-conhecimento",
       "antiquario:olfactory-note:baunilha",
       "antiquario:olfactory-note:bergamota",
+      "antiquario:olfactory-note:pao",
       "antiquario:olfactory-note:vetiver"
     ],
     "contentHash": "ed057c1f7a58315de003eda1ce23059d3385055f645f56ac0afca1bfc53742f7"
@@ -17958,7 +18009,7 @@
     "title": "O Antiquário — Índice de Conhecimento",
     "heading": "Notas olfativas",
     "order": 1,
-    "content": "O Antiquário — Índice de Conhecimento\nNotas olfativas\n\n- Vetiver\n- Bergamota\n- Baunilha",
+    "content": "O Antiquário — Índice de Conhecimento\nNotas olfativas\n\n- Vetiver\n- Bergamota\n- Baunilha\n- Pão",
     "tags": [
       "indice",
       "conhecimento",
@@ -17969,19 +18020,22 @@
     ],
     "license": "CC0-1.0",
     "confidence": "high",
-    "updatedAt": "2026-07-22",
+    "updatedAt": "2026-08-17",
     "relatedDocumentIds": [
       "antiquario:accord:amadeirado",
+      "antiquario:accord:atalcado",
       "antiquario:accord:citricos",
+      "antiquario:accord:fresco",
       "antiquario:context:calor-umido",
       "antiquario:context:escritorio",
       "antiquario:fragrance:brisa-vetiver",
       "antiquario:guide:fontes-de-conhecimento",
       "antiquario:olfactory-note:baunilha",
       "antiquario:olfactory-note:bergamota",
+      "antiquario:olfactory-note:pao",
       "antiquario:olfactory-note:vetiver"
     ],
-    "contentHash": "ed6c635c9ac705cb589241f8f3b23bd508928ec6a687e56791b9ed17d10fa945"
+    "contentHash": "32b454679bc5ab0e728a642babed897f6f83daa82663bf868d5e712e6e2f9c03"
   },
   {
     "id": "antiquario:index:principal:chunk:003",
@@ -17990,7 +18044,7 @@
     "title": "O Antiquário — Índice de Conhecimento",
     "heading": "Acordes",
     "order": 2,
-    "content": "O Antiquário — Índice de Conhecimento\nAcordes\n\n- Amadeirado\n- Cítricos",
+    "content": "O Antiquário — Índice de Conhecimento\nAcordes\n\n- Amadeirado\n- Cítricos\n- Fresco\n- Atalcado",
     "tags": [
       "indice",
       "conhecimento",
@@ -18001,19 +18055,22 @@
     ],
     "license": "CC0-1.0",
     "confidence": "high",
-    "updatedAt": "2026-07-22",
+    "updatedAt": "2026-08-17",
     "relatedDocumentIds": [
       "antiquario:accord:amadeirado",
+      "antiquario:accord:atalcado",
       "antiquario:accord:citricos",
+      "antiquario:accord:fresco",
       "antiquario:context:calor-umido",
       "antiquario:context:escritorio",
       "antiquario:fragrance:brisa-vetiver",
       "antiquario:guide:fontes-de-conhecimento",
       "antiquario:olfactory-note:baunilha",
       "antiquario:olfactory-note:bergamota",
+      "antiquario:olfactory-note:pao",
       "antiquario:olfactory-note:vetiver"
     ],
-    "contentHash": "73c132096fd265d7b7a4dd83e832f5bf439678ec3933847c98872107fa6315c1"
+    "contentHash": "4f4343b701ad964ea91e4a1cb2c1c8d5bda36c8a1e9605bdd8e4b63b9bec6bec"
   },
   {
     "id": "antiquario:index:principal:chunk:004",
@@ -18033,16 +18090,19 @@
     ],
     "license": "CC0-1.0",
     "confidence": "high",
-    "updatedAt": "2026-07-22",
+    "updatedAt": "2026-08-17",
     "relatedDocumentIds": [
       "antiquario:accord:amadeirado",
+      "antiquario:accord:atalcado",
       "antiquario:accord:citricos",
+      "antiquario:accord:fresco",
       "antiquario:context:calor-umido",
       "antiquario:context:escritorio",
       "antiquario:fragrance:brisa-vetiver",
       "antiquario:guide:fontes-de-conhecimento",
       "antiquario:olfactory-note:baunilha",
       "antiquario:olfactory-note:bergamota",
+      "antiquario:olfactory-note:pao",
       "antiquario:olfactory-note:vetiver"
     ],
     "contentHash": "7314cb8df9a098e0c35f47b8dd8815475769e006ccba3a0cd573907ad2d21db5"
@@ -18065,16 +18125,19 @@
     ],
     "license": "CC0-1.0",
     "confidence": "high",
-    "updatedAt": "2026-07-22",
+    "updatedAt": "2026-08-17",
     "relatedDocumentIds": [
       "antiquario:accord:amadeirado",
+      "antiquario:accord:atalcado",
       "antiquario:accord:citricos",
+      "antiquario:accord:fresco",
       "antiquario:context:calor-umido",
       "antiquario:context:escritorio",
       "antiquario:fragrance:brisa-vetiver",
       "antiquario:guide:fontes-de-conhecimento",
       "antiquario:olfactory-note:baunilha",
       "antiquario:olfactory-note:bergamota",
+      "antiquario:olfactory-note:pao",
       "antiquario:olfactory-note:vetiver"
     ],
     "contentHash": "a9aaf93c724d152dcc853134575a550e32a354b1157cb5913c56451441f4710f"
@@ -18097,16 +18160,19 @@
     ],
     "license": "CC0-1.0",
     "confidence": "high",
-    "updatedAt": "2026-07-22",
+    "updatedAt": "2026-08-17",
     "relatedDocumentIds": [
       "antiquario:accord:amadeirado",
+      "antiquario:accord:atalcado",
       "antiquario:accord:citricos",
+      "antiquario:accord:fresco",
       "antiquario:context:calor-umido",
       "antiquario:context:escritorio",
       "antiquario:fragrance:brisa-vetiver",
       "antiquario:guide:fontes-de-conhecimento",
       "antiquario:olfactory-note:baunilha",
       "antiquario:olfactory-note:bergamota",
+      "antiquario:olfactory-note:pao",
       "antiquario:olfactory-note:vetiver"
     ],
     "contentHash": "a4de7e48eae475c23c8dbda1d3347a3230e3a89709afafe64111c62ad1e86444"
@@ -18730,6 +18796,52 @@
       "antiquario:fragrance:parfumo-editions-de-parfums-frederic-malle-french-lover-bois-dorage"
     ],
     "contentHash": "8c7bbc5f53668e095f9af4bf9aab226c583ab46b0fdb808607c42167409b6e01"
+  },
+  {
+    "id": "antiquario:olfactory-note:apricot:chunk:001",
+    "documentId": "antiquario:olfactory-note:apricot",
+    "documentType": "olfactory-note",
+    "title": "Apricot",
+    "heading": "Resumo",
+    "order": 0,
+    "content": "Apricot\nResumo\n\n<!-- antiquario:auto-factual-coverage:v1 -->",
+    "tags": [
+      "olfactory-note",
+      "parfumo"
+    ],
+    "sourceIds": [
+      "parfumo_dataset"
+    ],
+    "license": "CC0-1.0",
+    "confidence": "medium",
+    "updatedAt": "2026-08-17",
+    "relatedDocumentIds": [
+      "antiquario:fragrance:parfumo-mugler-angel-mugler-1992-eau-de-parfum"
+    ],
+    "contentHash": "bc1121765e85c067178d6b272731bb4523de7036a29d657c6ccf74c00cffabf4"
+  },
+  {
+    "id": "antiquario:olfactory-note:apricot:chunk:002",
+    "documentId": "antiquario:olfactory-note:apricot",
+    "documentType": "olfactory-note",
+    "title": "Apricot",
+    "heading": "Cobertura factual no grafo",
+    "order": 1,
+    "content": "Apricot\nCobertura factual no grafo\n\nNo release `knowledge-v2-36bca79cd798`, **Apricot** aparece em 1 fragrância(s) com declaração de pirâmide proveniente de fonte já aprovada pelo projeto.\n\n- coração: 1\n\n### Exemplos rastreáveis\n\n- Angel Mugler 1992 Eau de Parfum — coração\n\n### Limite da automação\n\nEsta seção resume relações que já existiam no grafo. Ela não cria notas, não comprova ingrediente físico e não estima cheiro, concentração, intensidade, fixação, projeção ou evolução temporal.",
+    "tags": [
+      "olfactory-note",
+      "parfumo"
+    ],
+    "sourceIds": [
+      "parfumo_dataset"
+    ],
+    "license": "CC0-1.0",
+    "confidence": "medium",
+    "updatedAt": "2026-08-17",
+    "relatedDocumentIds": [
+      "antiquario:fragrance:parfumo-mugler-angel-mugler-1992-eau-de-parfum"
+    ],
+    "contentHash": "26ef81aab09c21bd1f8b2889457dba147a8a60726fc474c546369ec6c71c7431"
   },
   {
     "id": "antiquario:olfactory-note:arroz:chunk:001",
@@ -19926,6 +20038,31 @@
     "contentHash": "3578fef9cd5a0283a28d4d5338bf0e768be3174f2b33a6e249d73080bec1fc50"
   },
   {
+    "id": "antiquario:olfactory-note:chocolate:chunk:001",
+    "documentId": "antiquario:olfactory-note:chocolate",
+    "documentType": "olfactory-note",
+    "title": "Chocolate",
+    "heading": "Escopo canônico",
+    "order": 0,
+    "content": "Chocolate\nEscopo canônico\n\n**Chocolate** é a nota canônica usada para normalizar declarações de pirâmide com esse rótulo. Para navegação, ela pertence à família gourmand do vocabulário operacional.\n\nO registro preserva a declaração da fonte e não comprova chocolate, cacau ou ingrediente físico na fórmula. Também não permite inferir doçura, intensidade, projeção ou duração.",
+    "tags": [
+      "olfactory-note",
+      "parfumo",
+      "gourmand"
+    ],
+    "sourceIds": [
+      "internal_curated",
+      "parfumo_dataset"
+    ],
+    "license": "CC0-1.0",
+    "confidence": "medium",
+    "updatedAt": "2026-08-17",
+    "relatedDocumentIds": [
+      "antiquario:fragrance:parfumo-mugler-angel-mugler-1992-eau-de-parfum"
+    ],
+    "contentHash": "9d97ec7afa753fdaa5d875ba54ce6bc4fc9aa4e6a6a2d3b71d9968eabb4e8b56"
+  },
+  {
     "id": "antiquario:olfactory-note:cinzento-ambarino:chunk:001",
     "documentId": "antiquario:olfactory-note:cinzento-ambarino",
     "documentType": "olfactory-note",
@@ -19947,6 +20084,158 @@
       "antiquario:fragrance:virtus-q138773649"
     ],
     "contentHash": "c4649e2d7bdbffdf90b0eea13762ebb9f51397194d746d21e615e3411bf6c0c9"
+  },
+  {
+    "id": "antiquario:olfactory-note:citron:chunk:001",
+    "documentId": "antiquario:olfactory-note:citron",
+    "documentType": "olfactory-note",
+    "title": "Citron",
+    "heading": "Resumo",
+    "order": 0,
+    "content": "Citron\nResumo\n\n<!-- antiquario:auto-factual-coverage:v1 -->",
+    "tags": [
+      "olfactory-note",
+      "parfumo"
+    ],
+    "sourceIds": [
+      "parfumo_dataset"
+    ],
+    "license": "CC0-1.0",
+    "confidence": "medium",
+    "updatedAt": "2026-08-17",
+    "relatedDocumentIds": [
+      "antiquario:fragrance:parfumo-louis-vuitton-pacific-chill"
+    ],
+    "contentHash": "94a3fd1d788097d8730557a9d8d9a88b6f2571ac97c782fccb7b9f8eab0c9f60"
+  },
+  {
+    "id": "antiquario:olfactory-note:citron:chunk:002",
+    "documentId": "antiquario:olfactory-note:citron",
+    "documentType": "olfactory-note",
+    "title": "Citron",
+    "heading": "Cobertura factual no grafo",
+    "order": 1,
+    "content": "Citron\nCobertura factual no grafo\n\nNo release `knowledge-v2-36bca79cd798`, **Citron** aparece em 1 fragrância(s) com declaração de pirâmide proveniente de fonte já aprovada pelo projeto.\n\n- saída: 1\n\n### Exemplos rastreáveis\n\n- Pacific Chill — saída\n\n### Limite da automação\n\nEsta seção resume relações que já existiam no grafo. Ela não cria notas, não comprova ingrediente físico e não estima cheiro, concentração, intensidade, fixação, projeção ou evolução temporal.",
+    "tags": [
+      "olfactory-note",
+      "parfumo"
+    ],
+    "sourceIds": [
+      "parfumo_dataset"
+    ],
+    "license": "CC0-1.0",
+    "confidence": "medium",
+    "updatedAt": "2026-08-17",
+    "relatedDocumentIds": [
+      "antiquario:fragrance:parfumo-louis-vuitton-pacific-chill"
+    ],
+    "contentHash": "20323d2e7f5cf482bab36ced1d7ce423c7889a70da58232c102fde06baaac1b9"
+  },
+  {
+    "id": "antiquario:olfactory-note:civet:chunk:001",
+    "documentId": "antiquario:olfactory-note:civet",
+    "documentType": "olfactory-note",
+    "title": "Civet",
+    "heading": "Resumo",
+    "order": 0,
+    "content": "Civet\nResumo\n\n<!-- antiquario:auto-factual-coverage:v1 -->",
+    "tags": [
+      "olfactory-note",
+      "parfumo"
+    ],
+    "sourceIds": [
+      "parfumo_dataset"
+    ],
+    "license": "CC0-1.0",
+    "confidence": "medium",
+    "updatedAt": "2026-08-17",
+    "relatedDocumentIds": [
+      "antiquario:fragrance:parfumo-tom-ford-noir-tom-ford-2012-eau-de-parfum",
+      "antiquario:fragrance:parfumo-yves-saint-laurent-kouros-yves-saint-laurent-1981-eau-de-toilette"
+    ],
+    "contentHash": "9023a0420d4acc506ab10d71997975d85d0fb83e2392ed954951605350e4c6e6"
+  },
+  {
+    "id": "antiquario:olfactory-note:civet:chunk:002",
+    "documentId": "antiquario:olfactory-note:civet",
+    "documentType": "olfactory-note",
+    "title": "Civet",
+    "heading": "Cobertura factual no grafo",
+    "order": 1,
+    "content": "Civet\nCobertura factual no grafo\n\nNo release `knowledge-v2-36bca79cd798`, **Civet** aparece em 2 fragrância(s) com declaração de pirâmide proveniente de fonte já aprovada pelo projeto.\n\n- fundo: 2\n\n### Exemplos rastreáveis\n\n- Kouros Yves Saint Laurent 1981 Eau de Toilette — fundo\n- Noir Tom Ford 2012 Eau de Parfum — fundo\n\n### Limite da automação\n\nEsta seção resume relações que já existiam no grafo. Ela não cria notas, não comprova ingrediente físico e não estima cheiro, concentração, intensidade, fixação, projeção ou evolução temporal.",
+    "tags": [
+      "olfactory-note",
+      "parfumo"
+    ],
+    "sourceIds": [
+      "parfumo_dataset"
+    ],
+    "license": "CC0-1.0",
+    "confidence": "medium",
+    "updatedAt": "2026-08-17",
+    "relatedDocumentIds": [
+      "antiquario:fragrance:parfumo-tom-ford-noir-tom-ford-2012-eau-de-parfum",
+      "antiquario:fragrance:parfumo-yves-saint-laurent-kouros-yves-saint-laurent-1981-eau-de-toilette"
+    ],
+    "contentHash": "5e8a7ad8761150d8d96163e730e74fe6312ef6678659a057b4a2aa55f7d16484"
+  },
+  {
+    "id": "antiquario:olfactory-note:coffee:chunk:001",
+    "documentId": "antiquario:olfactory-note:coffee",
+    "documentType": "olfactory-note",
+    "title": "Coffee",
+    "heading": "Resumo",
+    "order": 0,
+    "content": "Coffee\nResumo\n\n<!-- antiquario:auto-factual-coverage:v1 -->",
+    "tags": [
+      "olfactory-note",
+      "parfumo"
+    ],
+    "sourceIds": [
+      "parfumo_dataset"
+    ],
+    "license": "CC0-1.0",
+    "confidence": "medium",
+    "updatedAt": "2026-08-17",
+    "relatedDocumentIds": [
+      "antiquario:fragrance:parfumo-colornoise-country",
+      "antiquario:fragrance:parfumo-halloween-halloween-man-x",
+      "antiquario:fragrance:parfumo-kilian-black-phantom---memento-mori",
+      "antiquario:fragrance:parfumo-mugler-amen-angel-men",
+      "antiquario:fragrance:parfumo-mugler-amen-pure-malt",
+      "antiquario:fragrance:parfumo-rochas-rochas-man-rochas-1999-eau-de-toilette",
+      "antiquario:fragrance:parfumo-valentino-valentino-uomo-valentino-2014-eau-de-toilette"
+    ],
+    "contentHash": "146389e0e497e7d3c2190cb64c44374f1074cb3919b0a63c54a5fcbf0836eec8"
+  },
+  {
+    "id": "antiquario:olfactory-note:coffee:chunk:002",
+    "documentId": "antiquario:olfactory-note:coffee",
+    "documentType": "olfactory-note",
+    "title": "Coffee",
+    "heading": "Cobertura factual no grafo",
+    "order": 1,
+    "content": "Coffee\nCobertura factual no grafo\n\nNo release `knowledge-v2-36bca79cd798`, **Coffee** aparece em 7 fragrância(s) com declaração de pirâmide proveniente de fonte já aprovada pelo projeto.\n\n- coração: 3\n- fundo: 4\n\n### Exemplos rastreáveis\n\n- A*Men Angel Men — fundo\n- A*Men Pure Malt — fundo\n- Black Phantom - Memento Mori — coração\n- Country. — fundo\n- Halloween Man X — coração\n\n### Limite da automação\n\nEsta seção resume relações que já existiam no grafo. Ela não cria notas, não comprova ingrediente físico e não estima cheiro, concentração, intensidade, fixação, projeção ou evolução temporal.",
+    "tags": [
+      "olfactory-note",
+      "parfumo"
+    ],
+    "sourceIds": [
+      "parfumo_dataset"
+    ],
+    "license": "CC0-1.0",
+    "confidence": "medium",
+    "updatedAt": "2026-08-17",
+    "relatedDocumentIds": [
+      "antiquario:fragrance:parfumo-colornoise-country",
+      "antiquario:fragrance:parfumo-halloween-halloween-man-x",
+      "antiquario:fragrance:parfumo-kilian-black-phantom---memento-mori",
+      "antiquario:fragrance:parfumo-mugler-amen-angel-men",
+      "antiquario:fragrance:parfumo-mugler-amen-pure-malt",
+      "antiquario:fragrance:parfumo-rochas-rochas-man-rochas-1999-eau-de-toilette",
+      "antiquario:fragrance:parfumo-valentino-valentino-uomo-valentino-2014-eau-de-toilette"
+    ],
+    "contentHash": "be94b4e74cb4df20eb0ce594cc35e47666b450ad2b1d665865071efbc557c716"
   },
   {
     "id": "antiquario:olfactory-note:couro:chunk:001",
@@ -19974,27 +20263,66 @@
     "contentHash": "d1906ac1b4175791d8b4ccfd560155d185ded4b3f36a7f42c2748bec4e896f5b"
   },
   {
-    "id": "antiquario:olfactory-note:cravo:chunk:001",
-    "documentId": "antiquario:olfactory-note:cravo",
+    "id": "antiquario:olfactory-note:cravo-especiaria:chunk:001",
+    "documentId": "antiquario:olfactory-note:cravo-especiaria",
     "documentType": "olfactory-note",
-    "title": "Cravo",
-    "heading": "Resumo",
+    "title": "Cravo-da-índia",
+    "heading": "Escopo canônico",
     "order": 0,
-    "content": "Cravo\nResumo\n\nNota olfativa catalogada automaticamente.",
+    "content": "Cravo-da-índia\nEscopo canônico\n\nNo vocabulário do Antiquário, **cravo-da-índia** identifica a nota registrada como *clove* ou *smell of cloves* nas fontes em inglês. Ela permanece separada de cravo-flor, registrado como *carnation*.\n\nEssa equivalência é terminológica e serve à normalização das declarações de origem. Ela não comprova ingrediente físico, concentração, desempenho ou composição química em um perfume.",
     "tags": [
       "nota-olfativa",
-      "auto-gerada"
+      "especiada",
+      "desambiguada"
     ],
     "sourceIds": [
+      "internal_curated",
+      "parfumo_dataset",
       "wikidata"
     ],
     "license": "CC0-1.0",
     "confidence": "medium",
-    "updatedAt": "2026-07-24",
+    "updatedAt": "2026-08-17",
     "relatedDocumentIds": [
-      "antiquario:fragrance:winter-26-q137912111"
+      "antiquario:fragrance:parfumo-acqua-di-parma-colonia-essenza-acqua-di-parma-2010-eau-de-cologne",
+      "antiquario:fragrance:parfumo-creed-bois-du-portugal",
+      "antiquario:fragrance:parfumo-moschino-toy-boy",
+      "antiquario:fragrance:parfumo-xerjoff-erba-gold",
+      "antiquario:fragrance:winter-26-q137912111",
+      "antiquario:olfactory-note:cravo-flor"
     ],
-    "contentHash": "fc1ec9410e5a1449b2dba107e45d0702509fab93dbee5ee6f31ed5660dcbe4da"
+    "contentHash": "1babc71c06434bcf3dec1c2364c64175fdb15d8493f7a6ba897cd05eda37788b"
+  },
+  {
+    "id": "antiquario:olfactory-note:cravo-flor:chunk:001",
+    "documentId": "antiquario:olfactory-note:cravo-flor",
+    "documentType": "olfactory-note",
+    "title": "Cravo-flor",
+    "heading": "Escopo canônico",
+    "order": 0,
+    "content": "Cravo-flor\nEscopo canônico\n\nNo vocabulário do Antiquário, **cravo-flor** identifica a nota registrada como *carnation* nas fontes em inglês. Ela permanece separada de cravo-da-índia, registrado como *clove*.\n\nEssa equivalência é terminológica e serve à normalização das declarações de origem. Ela não comprova ingrediente físico, espécie botânica ou composição química em um perfume.",
+    "tags": [
+      "nota-olfativa",
+      "floral",
+      "desambiguada"
+    ],
+    "sourceIds": [
+      "internal_curated",
+      "parfumo_dataset"
+    ],
+    "license": "CC0-1.0",
+    "confidence": "medium",
+    "updatedAt": "2026-08-17",
+    "relatedDocumentIds": [
+      "antiquario:fragrance:parfumo-guy-laroche-drakkar-noir-guy-laroche-1982-eau-de-toilette",
+      "antiquario:fragrance:parfumo-hugo-boss-hugo-hugo-boss-1995-eau-de-toilette",
+      "antiquario:fragrance:parfumo-jil-sander-sun-jil-sander-1989-eau-de-toilette",
+      "antiquario:fragrance:parfumo-versace-blue-jeans",
+      "antiquario:fragrance:parfumo-xerjoff-casamorati---1888",
+      "antiquario:fragrance:parfumo-yves-saint-laurent-kouros-yves-saint-laurent-1981-eau-de-toilette",
+      "antiquario:olfactory-note:cravo-especiaria"
+    ],
+    "contentHash": "4fc0d5df42b0b79685c5671cd2413596bdebea35aeb60ea29da4f61312b560b5"
   },
   {
     "id": "antiquario:olfactory-note:cumarina:chunk:001",
@@ -20018,6 +20346,60 @@
       "antiquario:fragrance:bianco-latte-q137183849"
     ],
     "contentHash": "f29292467ded4918054c7a8363172615b4b62e29e83282047aac50910cee5b1d"
+  },
+  {
+    "id": "antiquario:olfactory-note:cypress:chunk:001",
+    "documentId": "antiquario:olfactory-note:cypress",
+    "documentType": "olfactory-note",
+    "title": "Cypress",
+    "heading": "Resumo",
+    "order": 0,
+    "content": "Cypress\nResumo\n\n<!-- antiquario:auto-factual-coverage:v1 -->",
+    "tags": [
+      "olfactory-note",
+      "parfumo"
+    ],
+    "sourceIds": [
+      "parfumo_dataset"
+    ],
+    "license": "CC0-1.0",
+    "confidence": "medium",
+    "updatedAt": "2026-08-17",
+    "relatedDocumentIds": [
+      "antiquario:fragrance:parfumo-giorgio-armani-acqua-di-gio-profondo-giorgio-armani-2020-eau-de-parfum",
+      "antiquario:fragrance:parfumo-lalique-encre-noire-a-lextreme",
+      "antiquario:fragrance:parfumo-lalique-encre-noire-sport",
+      "antiquario:fragrance:parfumo-loccitane-en-provence-eau-des-baux",
+      "antiquario:fragrance:parfumo-parfums-de-marly-godolphin"
+    ],
+    "contentHash": "4941c7b3011bb88f7024c6e1488c4d55a5fb76cd051e0d2453f5a77d8b3869dc"
+  },
+  {
+    "id": "antiquario:olfactory-note:cypress:chunk:002",
+    "documentId": "antiquario:olfactory-note:cypress",
+    "documentType": "olfactory-note",
+    "title": "Cypress",
+    "heading": "Cobertura factual no grafo",
+    "order": 1,
+    "content": "Cypress\nCobertura factual no grafo\n\nNo release `knowledge-v2-36bca79cd798`, **Cypress** aparece em 5 fragrância(s) com declaração de pirâmide proveniente de fonte já aprovada pelo projeto.\n\n- saída: 3\n- coração: 2\n\n### Exemplos rastreáveis\n\n- Acqua di Giò Profondo Giorgio Armani 2020 Eau de Parfum — coração\n- Eau des Baux — coração\n- Encre Noire Sport — saída\n- Encre Noire à L'Extrême — saída\n- Godolphin — saída\n\n### Limite da automação\n\nEsta seção resume relações que já existiam no grafo. Ela não cria notas, não comprova ingrediente físico e não estima cheiro, concentração, intensidade, fixação, projeção ou evolução temporal.",
+    "tags": [
+      "olfactory-note",
+      "parfumo"
+    ],
+    "sourceIds": [
+      "parfumo_dataset"
+    ],
+    "license": "CC0-1.0",
+    "confidence": "medium",
+    "updatedAt": "2026-08-17",
+    "relatedDocumentIds": [
+      "antiquario:fragrance:parfumo-giorgio-armani-acqua-di-gio-profondo-giorgio-armani-2020-eau-de-parfum",
+      "antiquario:fragrance:parfumo-lalique-encre-noire-a-lextreme",
+      "antiquario:fragrance:parfumo-lalique-encre-noire-sport",
+      "antiquario:fragrance:parfumo-loccitane-en-provence-eau-des-baux",
+      "antiquario:fragrance:parfumo-parfums-de-marly-godolphin"
+    ],
+    "contentHash": "0fbb6670f63c300ba4a0340e23fca96c18a8c59a34aae2ac52adc36528cab59a"
   },
   {
     "id": "antiquario:olfactory-note:davana:chunk:001",
@@ -20135,6 +20517,54 @@
       "antiquario:fragrance:poison-girl-q140101602"
     ],
     "contentHash": "7b51a309f180bb9603b7dabdc8e5dc937257ebfa857faeaf5983e2c1aa28801e"
+  },
+  {
+    "id": "antiquario:olfactory-note:fir:chunk:001",
+    "documentId": "antiquario:olfactory-note:fir",
+    "documentType": "olfactory-note",
+    "title": "Fir",
+    "heading": "Resumo",
+    "order": 0,
+    "content": "Fir\nResumo\n\n<!-- antiquario:auto-factual-coverage:v1 -->",
+    "tags": [
+      "olfactory-note",
+      "parfumo"
+    ],
+    "sourceIds": [
+      "parfumo_dataset"
+    ],
+    "license": "CC0-1.0",
+    "confidence": "medium",
+    "updatedAt": "2026-08-17",
+    "relatedDocumentIds": [
+      "antiquario:fragrance:parfumo-guy-laroche-drakkar-noir-guy-laroche-1982-eau-de-toilette",
+      "antiquario:fragrance:parfumo-versace-blue-jeans"
+    ],
+    "contentHash": "8d78b0717d1eef89176ff07a4b681c47c804817d4f33cd8116228585f1da6718"
+  },
+  {
+    "id": "antiquario:olfactory-note:fir:chunk:002",
+    "documentId": "antiquario:olfactory-note:fir",
+    "documentType": "olfactory-note",
+    "title": "Fir",
+    "heading": "Cobertura factual no grafo",
+    "order": 1,
+    "content": "Fir\nCobertura factual no grafo\n\nNo release `knowledge-v2-36bca79cd798`, **Fir** aparece em 2 fragrância(s) com declaração de pirâmide proveniente de fonte já aprovada pelo projeto.\n\n- coração: 1\n- fundo: 1\n\n### Exemplos rastreáveis\n\n- Blue Jeans — coração\n- Drakkar Noir Guy Laroche 1982 Eau de Toilette — fundo\n\n### Limite da automação\n\nEsta seção resume relações que já existiam no grafo. Ela não cria notas, não comprova ingrediente físico e não estima cheiro, concentração, intensidade, fixação, projeção ou evolução temporal.",
+    "tags": [
+      "olfactory-note",
+      "parfumo"
+    ],
+    "sourceIds": [
+      "parfumo_dataset"
+    ],
+    "license": "CC0-1.0",
+    "confidence": "medium",
+    "updatedAt": "2026-08-17",
+    "relatedDocumentIds": [
+      "antiquario:fragrance:parfumo-guy-laroche-drakkar-noir-guy-laroche-1982-eau-de-toilette",
+      "antiquario:fragrance:parfumo-versace-blue-jeans"
+    ],
+    "contentHash": "fb4826c2967ad2e1dc58e27c9847ea17fd93ab50e57f55f2732f59574d09be06"
   },
   {
     "id": "antiquario:olfactory-note:flor-de-laranja:chunk:001",
@@ -20321,6 +20751,92 @@
       "antiquario:fragrance:eternity-moment-q140003429"
     ],
     "contentHash": "39aac3babbea81482464f1915eefe45e8a7f23dd7f1435f58c05cfb1c6805dff"
+  },
+  {
+    "id": "antiquario:olfactory-note:frankincense:chunk:001",
+    "documentId": "antiquario:olfactory-note:frankincense",
+    "documentType": "olfactory-note",
+    "title": "Frankincense",
+    "heading": "Resumo",
+    "order": 0,
+    "content": "Frankincense\nResumo\n\n<!-- antiquario:auto-factual-coverage:v1 -->",
+    "tags": [
+      "olfactory-note",
+      "parfumo"
+    ],
+    "sourceIds": [
+      "parfumo_dataset"
+    ],
+    "license": "CC0-1.0",
+    "confidence": "medium",
+    "updatedAt": "2026-08-17",
+    "relatedDocumentIds": [
+      "antiquario:fragrance:parfumo-acorelle-be-positive---the-blanc",
+      "antiquario:fragrance:parfumo-amouage-interlude-black-iris",
+      "antiquario:fragrance:parfumo-amouage-lyric-man",
+      "antiquario:fragrance:parfumo-amouage-memoir-man",
+      "antiquario:fragrance:parfumo-bvlgari-aqva-amara-bvlgari-2014-eau-de-toilette",
+      "antiquario:fragrance:parfumo-byredo-gypsy-water-byredo-2008-eau-de-parfum",
+      "antiquario:fragrance:parfumo-dior-dior-homme-sport",
+      "antiquario:fragrance:parfumo-editions-de-parfums-frederic-malle-french-lover-bois-dorage",
+      "antiquario:fragrance:parfumo-guerlain-bois-darmenie",
+      "antiquario:fragrance:parfumo-halloween-halloween-man-x",
+      "antiquario:fragrance:parfumo-kenzo-flower-by-kenzo-kenzo-2000-eau-de-parfum",
+      "antiquario:fragrance:parfumo-kilian-back-to-black-aphrodisiac-kilian-2009-perfume",
+      "antiquario:fragrance:parfumo-lacoste-l1212-blanc-eau-de-lacoste-l1212-blanc-lacoste-2010-eau-de-toilette",
+      "antiquario:fragrance:parfumo-lalique-encre-noire-a-lextreme",
+      "antiquario:fragrance:parfumo-lartisan-parfumeur-timbuktu",
+      "antiquario:fragrance:parfumo-loccitane-en-provence-eau-des-baux",
+      "antiquario:fragrance:parfumo-van-cleef-arpels-midnight-in-paris-van-cleef-arpels-2010-eau-de-toilette",
+      "antiquario:fragrance:parfumo-versace-versace-pour-homme-oud-noir",
+      "antiquario:fragrance:parfumo-yves-saint-laurent-kouros-yves-saint-laurent-1981-eau-de-toilette",
+      "antiquario:fragrance:parfumo-yves-saint-laurent-le-vestiaire---babycat",
+      "antiquario:fragrance:parfumo-zadig-voltaire-this-is-him"
+    ],
+    "contentHash": "eec8a26c820b6fd64b19782778869b0e5f0f20584ff6acc840761789d6b28dc1"
+  },
+  {
+    "id": "antiquario:olfactory-note:frankincense:chunk:002",
+    "documentId": "antiquario:olfactory-note:frankincense",
+    "documentType": "olfactory-note",
+    "title": "Frankincense",
+    "heading": "Cobertura factual no grafo",
+    "order": 1,
+    "content": "Frankincense\nCobertura factual no grafo\n\nNo release `knowledge-v2-36bca79cd798`, **Frankincense** aparece em 21 fragrância(s) com declaração de pirâmide proveniente de fonte já aprovada pelo projeto.\n\n- saída: 1\n- coração: 12\n- fundo: 8\n\n### Exemplos rastreáveis\n\n- Aqva Amara Bvlgari 2014 Eau de Toilette — fundo\n- Back to Black, Aphrodisiac Kilian 2009 Perfume — coração\n- Be Positive - Thé Blanc — coração\n- Bois d'Arménie — saída\n- Dior Homme Sport — fundo\n\n### Limite da automação\n\nEsta seção resume relações que já existiam no grafo. Ela não cria notas, não comprova ingrediente físico e não estima cheiro, concentração, intensidade, fixação, projeção ou evolução temporal.",
+    "tags": [
+      "olfactory-note",
+      "parfumo"
+    ],
+    "sourceIds": [
+      "parfumo_dataset"
+    ],
+    "license": "CC0-1.0",
+    "confidence": "medium",
+    "updatedAt": "2026-08-17",
+    "relatedDocumentIds": [
+      "antiquario:fragrance:parfumo-acorelle-be-positive---the-blanc",
+      "antiquario:fragrance:parfumo-amouage-interlude-black-iris",
+      "antiquario:fragrance:parfumo-amouage-lyric-man",
+      "antiquario:fragrance:parfumo-amouage-memoir-man",
+      "antiquario:fragrance:parfumo-bvlgari-aqva-amara-bvlgari-2014-eau-de-toilette",
+      "antiquario:fragrance:parfumo-byredo-gypsy-water-byredo-2008-eau-de-parfum",
+      "antiquario:fragrance:parfumo-dior-dior-homme-sport",
+      "antiquario:fragrance:parfumo-editions-de-parfums-frederic-malle-french-lover-bois-dorage",
+      "antiquario:fragrance:parfumo-guerlain-bois-darmenie",
+      "antiquario:fragrance:parfumo-halloween-halloween-man-x",
+      "antiquario:fragrance:parfumo-kenzo-flower-by-kenzo-kenzo-2000-eau-de-parfum",
+      "antiquario:fragrance:parfumo-kilian-back-to-black-aphrodisiac-kilian-2009-perfume",
+      "antiquario:fragrance:parfumo-lacoste-l1212-blanc-eau-de-lacoste-l1212-blanc-lacoste-2010-eau-de-toilette",
+      "antiquario:fragrance:parfumo-lalique-encre-noire-a-lextreme",
+      "antiquario:fragrance:parfumo-lartisan-parfumeur-timbuktu",
+      "antiquario:fragrance:parfumo-loccitane-en-provence-eau-des-baux",
+      "antiquario:fragrance:parfumo-van-cleef-arpels-midnight-in-paris-van-cleef-arpels-2010-eau-de-toilette",
+      "antiquario:fragrance:parfumo-versace-versace-pour-homme-oud-noir",
+      "antiquario:fragrance:parfumo-yves-saint-laurent-kouros-yves-saint-laurent-1981-eau-de-toilette",
+      "antiquario:fragrance:parfumo-yves-saint-laurent-le-vestiaire---babycat",
+      "antiquario:fragrance:parfumo-zadig-voltaire-this-is-him"
+    ],
+    "contentHash": "061603dc17780c4e561d913e38c33a9b837d6db2b912d716ef8ff897eee46497"
   },
   {
     "id": "antiquario:olfactory-note:fumaca-de-vetiver:chunk:001",
@@ -20662,6 +21178,52 @@
     "contentHash": "2d1abd80af7c2086e5d8e61b3ce6e952ee62ea15460f00092db6f53c41e93875"
   },
   {
+    "id": "antiquario:olfactory-note:ivy:chunk:001",
+    "documentId": "antiquario:olfactory-note:ivy",
+    "documentType": "olfactory-note",
+    "title": "Ivy",
+    "heading": "Resumo",
+    "order": 0,
+    "content": "Ivy\nResumo\n\n<!-- antiquario:auto-factual-coverage:v1 -->",
+    "tags": [
+      "olfactory-note",
+      "parfumo"
+    ],
+    "sourceIds": [
+      "parfumo_dataset"
+    ],
+    "license": "CC0-1.0",
+    "confidence": "medium",
+    "updatedAt": "2026-08-17",
+    "relatedDocumentIds": [
+      "antiquario:fragrance:parfumo-amouage-beach-hut-man"
+    ],
+    "contentHash": "41bc2e6d81eb4317c1e16f92ba8fe0d579c2a53a7e555fbacee3b1c6a1830c73"
+  },
+  {
+    "id": "antiquario:olfactory-note:ivy:chunk:002",
+    "documentId": "antiquario:olfactory-note:ivy",
+    "documentType": "olfactory-note",
+    "title": "Ivy",
+    "heading": "Cobertura factual no grafo",
+    "order": 1,
+    "content": "Ivy\nCobertura factual no grafo\n\nNo release `knowledge-v2-36bca79cd798`, **Ivy** aparece em 1 fragrância(s) com declaração de pirâmide proveniente de fonte já aprovada pelo projeto.\n\n- coração: 1\n\n### Exemplos rastreáveis\n\n- Beach Hut Man — coração\n\n### Limite da automação\n\nEsta seção resume relações que já existiam no grafo. Ela não cria notas, não comprova ingrediente físico e não estima cheiro, concentração, intensidade, fixação, projeção ou evolução temporal.",
+    "tags": [
+      "olfactory-note",
+      "parfumo"
+    ],
+    "sourceIds": [
+      "parfumo_dataset"
+    ],
+    "license": "CC0-1.0",
+    "confidence": "medium",
+    "updatedAt": "2026-08-17",
+    "relatedDocumentIds": [
+      "antiquario:fragrance:parfumo-amouage-beach-hut-man"
+    ],
+    "contentHash": "36ffa6e28ce4b6af37534a3c3988795d800f76e04882b317fc5db66504a2a831"
+  },
+  {
     "id": "antiquario:olfactory-note:jasmim:chunk:001",
     "documentId": "antiquario:olfactory-note:jasmim",
     "documentType": "olfactory-note",
@@ -20930,6 +21492,52 @@
       "antiquario:fragrance:eternity-moment-q140003429"
     ],
     "contentHash": "03deaccf854a425cfe3753a353165e33d1910607a59208868db2649ec7054f47"
+  },
+  {
+    "id": "antiquario:olfactory-note:licorice:chunk:001",
+    "documentId": "antiquario:olfactory-note:licorice",
+    "documentType": "olfactory-note",
+    "title": "Licorice",
+    "heading": "Resumo",
+    "order": 0,
+    "content": "Licorice\nResumo\n\n<!-- antiquario:auto-factual-coverage:v1 -->",
+    "tags": [
+      "olfactory-note",
+      "parfumo"
+    ],
+    "sourceIds": [
+      "parfumo_dataset"
+    ],
+    "license": "CC0-1.0",
+    "confidence": "medium",
+    "updatedAt": "2026-08-17",
+    "relatedDocumentIds": [
+      "antiquario:fragrance:parfumo-mugler-amen-pure-malt"
+    ],
+    "contentHash": "4fc6615210ace25f8afe3cfe2ad286b7687c75d972ada5302ae6f0ed72cecf7d"
+  },
+  {
+    "id": "antiquario:olfactory-note:licorice:chunk:002",
+    "documentId": "antiquario:olfactory-note:licorice",
+    "documentType": "olfactory-note",
+    "title": "Licorice",
+    "heading": "Cobertura factual no grafo",
+    "order": 1,
+    "content": "Licorice\nCobertura factual no grafo\n\nNo release `knowledge-v2-36bca79cd798`, **Licorice** aparece em 1 fragrância(s) com declaração de pirâmide proveniente de fonte já aprovada pelo projeto.\n\n- fundo: 1\n\n### Exemplos rastreáveis\n\n- A*Men Pure Malt — fundo\n\n### Limite da automação\n\nEsta seção resume relações que já existiam no grafo. Ela não cria notas, não comprova ingrediente físico e não estima cheiro, concentração, intensidade, fixação, projeção ou evolução temporal.",
+    "tags": [
+      "olfactory-note",
+      "parfumo"
+    ],
+    "sourceIds": [
+      "parfumo_dataset"
+    ],
+    "license": "CC0-1.0",
+    "confidence": "medium",
+    "updatedAt": "2026-08-17",
+    "relatedDocumentIds": [
+      "antiquario:fragrance:parfumo-mugler-amen-pure-malt"
+    ],
+    "contentHash": "6f2e6a30eda104e38dd7d29f0c4b2f1bc5fea2953f68362029ec516d86f6bfde"
   },
   {
     "id": "antiquario:olfactory-note:lima:chunk:001",
@@ -21248,6 +21856,32 @@
     "contentHash": "abeae16f9ad37695e90520f736f38366cc64ca20235f0cd065609def0b1cabfa"
   },
   {
+    "id": "antiquario:olfactory-note:magnolia:chunk:001",
+    "documentId": "antiquario:olfactory-note:magnolia",
+    "documentType": "olfactory-note",
+    "title": "Magnólia",
+    "heading": "Escopo canônico",
+    "order": 0,
+    "content": "Magnólia\nEscopo canônico\n\n**Magnólia** é a nota canônica usada para normalizar declarações rotuladas como *magnólia* ou *magnolia*. Para navegação, ela pertence à família floral do vocabulário operacional.\n\nO registro preserva a declaração da fonte e não comprova flor, extrato ou ingrediente físico na fórmula. Também não permite inferir intensidade, projeção ou duração.",
+    "tags": [
+      "olfactory-note",
+      "parfumo",
+      "floral"
+    ],
+    "sourceIds": [
+      "internal_curated",
+      "parfumo_dataset"
+    ],
+    "license": "CC0-1.0",
+    "confidence": "medium",
+    "updatedAt": "2026-08-17",
+    "relatedDocumentIds": [
+      "antiquario:fragrance:parfumo-moschino-toy-boy",
+      "antiquario:fragrance:parfumo-tiziana-terenzi-rosso-pompei"
+    ],
+    "contentHash": "d97f648fb2e5f3205d9103a667a9358f0777961f734febfd058feaf0af590dbe"
+  },
+  {
     "id": "antiquario:olfactory-note:mahonial:chunk:001",
     "documentId": "antiquario:olfactory-note:mahonial",
     "documentType": "olfactory-note",
@@ -21439,6 +22073,62 @@
     "contentHash": "f529317e9a2a8c14099fc46db955b15cabeb288c3271a8a7f767e200ce5b5e26"
   },
   {
+    "id": "antiquario:olfactory-note:mint:chunk:001",
+    "documentId": "antiquario:olfactory-note:mint",
+    "documentType": "olfactory-note",
+    "title": "Mint",
+    "heading": "Resumo",
+    "order": 0,
+    "content": "Mint\nResumo\n\n<!-- antiquario:auto-factual-coverage:v1 -->",
+    "tags": [
+      "olfactory-note",
+      "parfumo"
+    ],
+    "sourceIds": [
+      "parfumo_dataset"
+    ],
+    "license": "CC0-1.0",
+    "confidence": "medium",
+    "updatedAt": "2026-08-17",
+    "relatedDocumentIds": [
+      "antiquario:fragrance:parfumo-amouage-beach-hut-man",
+      "antiquario:fragrance:parfumo-amouage-memoir-man",
+      "antiquario:fragrance:parfumo-giorgio-armani-acqua-di-gioia-giorgio-armani-2010-eau-de-parfum",
+      "antiquario:fragrance:parfumo-hugo-boss-hugo-hugo-boss-1995-eau-de-toilette",
+      "antiquario:fragrance:parfumo-louis-vuitton-pacific-chill",
+      "antiquario:fragrance:parfumo-montblanc-individuel-montblanc-2003-eau-de-toilette"
+    ],
+    "contentHash": "1b7012f7b8b3c21b99db679ee2e9c66816ad78ddf4255c4584e4aa744b71f4a9"
+  },
+  {
+    "id": "antiquario:olfactory-note:mint:chunk:002",
+    "documentId": "antiquario:olfactory-note:mint",
+    "documentType": "olfactory-note",
+    "title": "Mint",
+    "heading": "Cobertura factual no grafo",
+    "order": 1,
+    "content": "Mint\nCobertura factual no grafo\n\nNo release `knowledge-v2-36bca79cd798`, **Mint** aparece em 6 fragrância(s) com declaração de pirâmide proveniente de fonte já aprovada pelo projeto.\n\n- saída: 6\n\n### Exemplos rastreáveis\n\n- Acqua di Gioia Giorgio Armani 2010 Eau de Parfum — saída\n- Beach Hut Man — saída\n- Hugo Hugo Boss 1995 Eau de Toilette — saída\n- Individuel Montblanc 2003 Eau de Toilette — saída\n- Memoir Man — saída\n\n### Limite da automação\n\nEsta seção resume relações que já existiam no grafo. Ela não cria notas, não comprova ingrediente físico e não estima cheiro, concentração, intensidade, fixação, projeção ou evolução temporal.",
+    "tags": [
+      "olfactory-note",
+      "parfumo"
+    ],
+    "sourceIds": [
+      "parfumo_dataset"
+    ],
+    "license": "CC0-1.0",
+    "confidence": "medium",
+    "updatedAt": "2026-08-17",
+    "relatedDocumentIds": [
+      "antiquario:fragrance:parfumo-amouage-beach-hut-man",
+      "antiquario:fragrance:parfumo-amouage-memoir-man",
+      "antiquario:fragrance:parfumo-giorgio-armani-acqua-di-gioia-giorgio-armani-2010-eau-de-parfum",
+      "antiquario:fragrance:parfumo-hugo-boss-hugo-hugo-boss-1995-eau-de-toilette",
+      "antiquario:fragrance:parfumo-louis-vuitton-pacific-chill",
+      "antiquario:fragrance:parfumo-montblanc-individuel-montblanc-2003-eau-de-toilette"
+    ],
+    "contentHash": "45ca8b169439e11694b23f0fd273e907872306f406597a5377a67e0ca06c4673"
+  },
+  {
     "id": "antiquario:olfactory-note:mirra:chunk:001",
     "documentId": "antiquario:olfactory-note:mirra",
     "documentType": "olfactory-note",
@@ -21553,6 +22243,52 @@
       "antiquario:fragrance:ha-long-bay-q140237028"
     ],
     "contentHash": "d460fd251c3d7fd9709bb49e465a6e35f0403f861d282ad073b6a9184048d190"
+  },
+  {
+    "id": "antiquario:olfactory-note:narcissus:chunk:001",
+    "documentId": "antiquario:olfactory-note:narcissus",
+    "documentType": "olfactory-note",
+    "title": "Narcissus",
+    "heading": "Resumo",
+    "order": 0,
+    "content": "Narcissus\nResumo\n\n<!-- antiquario:auto-factual-coverage:v1 -->",
+    "tags": [
+      "olfactory-note",
+      "parfumo"
+    ],
+    "sourceIds": [
+      "parfumo_dataset"
+    ],
+    "license": "CC0-1.0",
+    "confidence": "medium",
+    "updatedAt": "2026-08-17",
+    "relatedDocumentIds": [
+      "antiquario:fragrance:parfumo-geoffrey-beene-grey-flannel-geoffrey-beene-1975-eau-de-toilette"
+    ],
+    "contentHash": "d39276348b80ad284b233c1cda9fd796f89902577f3272c100235ce2a345cf35"
+  },
+  {
+    "id": "antiquario:olfactory-note:narcissus:chunk:002",
+    "documentId": "antiquario:olfactory-note:narcissus",
+    "documentType": "olfactory-note",
+    "title": "Narcissus",
+    "heading": "Cobertura factual no grafo",
+    "order": 1,
+    "content": "Narcissus\nCobertura factual no grafo\n\nNo release `knowledge-v2-36bca79cd798`, **Narcissus** aparece em 1 fragrância(s) com declaração de pirâmide proveniente de fonte já aprovada pelo projeto.\n\n- coração: 1\n\n### Exemplos rastreáveis\n\n- Grey Flannel Geoffrey Beene 1975 Eau de Toilette — coração\n\n### Limite da automação\n\nEsta seção resume relações que já existiam no grafo. Ela não cria notas, não comprova ingrediente físico e não estima cheiro, concentração, intensidade, fixação, projeção ou evolução temporal.",
+    "tags": [
+      "olfactory-note",
+      "parfumo"
+    ],
+    "sourceIds": [
+      "parfumo_dataset"
+    ],
+    "license": "CC0-1.0",
+    "confidence": "medium",
+    "updatedAt": "2026-08-17",
+    "relatedDocumentIds": [
+      "antiquario:fragrance:parfumo-geoffrey-beene-grey-flannel-geoffrey-beene-1975-eau-de-toilette"
+    ],
+    "contentHash": "7d4945337f01435792c052dc95277f0d2ed5a07ec92ca94b774d863d24629a6f"
   },
   {
     "id": "antiquario:olfactory-note:nenufar:chunk:001",
@@ -21700,6 +22436,30 @@
     "contentHash": "c90fdca712d68bb0c6f86e2254e6436a7c8c16d635e8b71456fb663371b4151c"
   },
   {
+    "id": "antiquario:olfactory-note:pao:chunk:001",
+    "documentId": "antiquario:olfactory-note:pao",
+    "documentType": "olfactory-note",
+    "title": "Pão",
+    "heading": "Escopo canônico",
+    "order": 0,
+    "content": "Pão\nEscopo canônico\n\n**Pão** é a nota canônica usada para normalizar declarações olfativas rotuladas como *pão* ou *bread*. Para navegação, ela pertence à família gourmand do vocabulário operacional.\n\nO registro da nota em uma pirâmide descreve a declaração da fonte. Ele não comprova pão como ingrediente físico nem permite inferir fórmula, intensidade, projeção ou duração.",
+    "tags": [
+      "nota-olfativa",
+      "gourmand",
+      "navegacao"
+    ],
+    "sourceIds": [
+      "internal_curated"
+    ],
+    "license": "CC0-1.0",
+    "confidence": "medium",
+    "updatedAt": "2026-08-17",
+    "relatedDocumentIds": [
+      "antiquario:index:principal"
+    ],
+    "contentHash": "9c6cac255c4f4e6e362402c616862a71a37e191b21f2ddda66d1ac01a0cf5f1c"
+  },
+  {
     "id": "antiquario:olfactory-note:papaia:chunk:001",
     "documentId": "antiquario:olfactory-note:papaia",
     "documentType": "olfactory-note",
@@ -21828,6 +22588,60 @@
       "antiquario:fragrance:winter-26-q137912111"
     ],
     "contentHash": "8d52ead7adce9e1cda780d35b7c877e943dfbdc844cc80ad16a3d736d0bd6ed9"
+  },
+  {
+    "id": "antiquario:olfactory-note:pear:chunk:001",
+    "documentId": "antiquario:olfactory-note:pear",
+    "documentType": "olfactory-note",
+    "title": "Pear",
+    "heading": "Resumo",
+    "order": 0,
+    "content": "Pear\nResumo\n\n<!-- antiquario:auto-factual-coverage:v1 -->",
+    "tags": [
+      "olfactory-note",
+      "parfumo"
+    ],
+    "sourceIds": [
+      "parfumo_dataset"
+    ],
+    "license": "CC0-1.0",
+    "confidence": "medium",
+    "updatedAt": "2026-08-17",
+    "relatedDocumentIds": [
+      "antiquario:fragrance:parfumo-gucci-gucci-intense-oud",
+      "antiquario:fragrance:parfumo-lancome-la-vie-est-belle-leau-de-parfum",
+      "antiquario:fragrance:parfumo-moschino-toy-boy",
+      "antiquario:fragrance:parfumo-prada-paradoxe",
+      "antiquario:fragrance:parfumo-xerjoff-erba-gold"
+    ],
+    "contentHash": "b1f9bb15747539a524558095aa827ca37f32c50664647d092fa94b17fb21b7ce"
+  },
+  {
+    "id": "antiquario:olfactory-note:pear:chunk:002",
+    "documentId": "antiquario:olfactory-note:pear",
+    "documentType": "olfactory-note",
+    "title": "Pear",
+    "heading": "Cobertura factual no grafo",
+    "order": 1,
+    "content": "Pear\nCobertura factual no grafo\n\nNo release `knowledge-v2-36bca79cd798`, **Pear** aparece em 5 fragrância(s) com declaração de pirâmide proveniente de fonte já aprovada pelo projeto.\n\n- saída: 4\n- coração: 1\n\n### Exemplos rastreáveis\n\n- Erba Gold — coração\n- Gucci Intense Oud — saída\n- La Vie est Belle L'Eau de Parfum — saída\n- Paradoxe — saída\n- Toy Boy — saída\n\n### Limite da automação\n\nEsta seção resume relações que já existiam no grafo. Ela não cria notas, não comprova ingrediente físico e não estima cheiro, concentração, intensidade, fixação, projeção ou evolução temporal.",
+    "tags": [
+      "olfactory-note",
+      "parfumo"
+    ],
+    "sourceIds": [
+      "parfumo_dataset"
+    ],
+    "license": "CC0-1.0",
+    "confidence": "medium",
+    "updatedAt": "2026-08-17",
+    "relatedDocumentIds": [
+      "antiquario:fragrance:parfumo-gucci-gucci-intense-oud",
+      "antiquario:fragrance:parfumo-lancome-la-vie-est-belle-leau-de-parfum",
+      "antiquario:fragrance:parfumo-moschino-toy-boy",
+      "antiquario:fragrance:parfumo-prada-paradoxe",
+      "antiquario:fragrance:parfumo-xerjoff-erba-gold"
+    ],
+    "contentHash": "b2b4dd6afad9095ced86c1c6a1fb017a14b44880376cac6061b63aba2359da99"
   },
   {
     "id": "antiquario:olfactory-note:peonia:chunk:001",
@@ -21972,6 +22786,52 @@
       "antiquario:fragrance:winter-26-q137912111"
     ],
     "contentHash": "afa9f5f738db32544cfc1f22a5237dd1f35fd3d0f9921d5f801533b15f71416c"
+  },
+  {
+    "id": "antiquario:olfactory-note:pine:chunk:001",
+    "documentId": "antiquario:olfactory-note:pine",
+    "documentType": "olfactory-note",
+    "title": "Pine",
+    "heading": "Resumo",
+    "order": 0,
+    "content": "Pine\nResumo\n\n<!-- antiquario:auto-factual-coverage:v1 -->",
+    "tags": [
+      "olfactory-note",
+      "parfumo"
+    ],
+    "sourceIds": [
+      "parfumo_dataset"
+    ],
+    "license": "CC0-1.0",
+    "confidence": "medium",
+    "updatedAt": "2026-08-17",
+    "relatedDocumentIds": [
+      "antiquario:fragrance:parfumo-amouage-lyric-man"
+    ],
+    "contentHash": "06947297fee37005567e36b58d3e66cd49c1bd4738b27800f0c2462db2fe9d0e"
+  },
+  {
+    "id": "antiquario:olfactory-note:pine:chunk:002",
+    "documentId": "antiquario:olfactory-note:pine",
+    "documentType": "olfactory-note",
+    "title": "Pine",
+    "heading": "Cobertura factual no grafo",
+    "order": 1,
+    "content": "Pine\nCobertura factual no grafo\n\nNo release `knowledge-v2-36bca79cd798`, **Pine** aparece em 1 fragrância(s) com declaração de pirâmide proveniente de fonte já aprovada pelo projeto.\n\n- fundo: 1\n\n### Exemplos rastreáveis\n\n- Lyric Man — fundo\n\n### Limite da automação\n\nEsta seção resume relações que já existiam no grafo. Ela não cria notas, não comprova ingrediente físico e não estima cheiro, concentração, intensidade, fixação, projeção ou evolução temporal.",
+    "tags": [
+      "olfactory-note",
+      "parfumo"
+    ],
+    "sourceIds": [
+      "parfumo_dataset"
+    ],
+    "license": "CC0-1.0",
+    "confidence": "medium",
+    "updatedAt": "2026-08-17",
+    "relatedDocumentIds": [
+      "antiquario:fragrance:parfumo-amouage-lyric-man"
+    ],
+    "contentHash": "c88cff4f8b7126e1f3f13a02ba84aca332c4a5723bf8a59cf5a7caee52c767c6"
   },
   {
     "id": "antiquario:olfactory-note:pipe-tobacco:chunk:001",
@@ -22185,6 +23045,176 @@
     "contentHash": "ae4c0533a80e37643576f61c2efae6d2ebd96831f6b955e5936bac91cdebcdeb"
   },
   {
+    "id": "antiquario:olfactory-note:rosemary:chunk:001",
+    "documentId": "antiquario:olfactory-note:rosemary",
+    "documentType": "olfactory-note",
+    "title": "Rosemary",
+    "heading": "Resumo",
+    "order": 0,
+    "content": "Rosemary\nResumo\n\n<!-- antiquario:auto-factual-coverage:v1 -->",
+    "tags": [
+      "olfactory-note",
+      "parfumo"
+    ],
+    "sourceIds": [
+      "parfumo_dataset"
+    ],
+    "license": "CC0-1.0",
+    "confidence": "medium",
+    "updatedAt": "2026-08-17",
+    "relatedDocumentIds": [
+      "antiquario:fragrance:parfumo-abercrombie-fitch-fierce-abercrombie-fitch-2002-cologne",
+      "antiquario:fragrance:parfumo-acqua-di-parma-colonia-acqua-di-parma-1916-eau-de-cologne",
+      "antiquario:fragrance:parfumo-acqua-di-parma-colonia-essenza-acqua-di-parma-2010-eau-de-cologne",
+      "antiquario:fragrance:parfumo-amouage-interlude-black-iris",
+      "antiquario:fragrance:parfumo-diesel-only-the-brave-diesel-2009-eau-de-toilette",
+      "antiquario:fragrance:parfumo-giorgio-armani-acqua-di-gio-profondo-giorgio-armani-2020-eau-de-parfum",
+      "antiquario:fragrance:parfumo-guerlain-lhomme-ideal-guerlain-2014-eau-de-toilette",
+      "antiquario:fragrance:parfumo-guy-laroche-drakkar-noir-guy-laroche-1982-eau-de-toilette",
+      "antiquario:fragrance:parfumo-lacoste-l1212-blanc-eau-de-lacoste-l1212-blanc-lacoste-2010-eau-de-toilette",
+      "antiquario:fragrance:parfumo-montblanc-individuel-montblanc-2003-eau-de-toilette",
+      "antiquario:fragrance:parfumo-roja-parfums-oceania",
+      "antiquario:fragrance:parfumo-tom-ford-neroli-portofino-tom-ford-2007-eau-de-parfum",
+      "antiquario:fragrance:parfumo-van-cleef-arpels-midnight-in-paris-van-cleef-arpels-2010-eau-de-toilette",
+      "antiquario:fragrance:parfumo-yves-saint-laurent-m7-m7-oud-absolu"
+    ],
+    "contentHash": "c20b86704c43e96c152533d9b50124b2bc4e1cada9ab3ae80b499785cfa7fa56"
+  },
+  {
+    "id": "antiquario:olfactory-note:rosemary:chunk:002",
+    "documentId": "antiquario:olfactory-note:rosemary",
+    "documentType": "olfactory-note",
+    "title": "Rosemary",
+    "heading": "Cobertura factual no grafo",
+    "order": 1,
+    "content": "Rosemary\nCobertura factual no grafo\n\nNo release `knowledge-v2-36bca79cd798`, **Rosemary** aparece em 14 fragrância(s) com declaração de pirâmide proveniente de fonte já aprovada pelo projeto.\n\n- saída: 8\n- coração: 6\n\n### Exemplos rastreáveis\n\n- Acqua di Giò Profondo Giorgio Armani 2020 Eau de Parfum — coração\n- Colonia Acqua di Parma 1916 Eau de Cologne — coração\n- Colonia Essenza Acqua di Parma 2010 Eau de Cologne — coração\n- Drakkar Noir Guy Laroche 1982 Eau de Toilette — saída\n- Fierce Abercrombie & Fitch 2002 Cologne — coração\n\n### Limite da automação\n\nEsta seção resume relações que já existiam no grafo. Ela não cria notas, não comprova ingrediente físico e não estima cheiro, concentração, intensidade, fixação, projeção ou evolução temporal.",
+    "tags": [
+      "olfactory-note",
+      "parfumo"
+    ],
+    "sourceIds": [
+      "parfumo_dataset"
+    ],
+    "license": "CC0-1.0",
+    "confidence": "medium",
+    "updatedAt": "2026-08-17",
+    "relatedDocumentIds": [
+      "antiquario:fragrance:parfumo-abercrombie-fitch-fierce-abercrombie-fitch-2002-cologne",
+      "antiquario:fragrance:parfumo-acqua-di-parma-colonia-acqua-di-parma-1916-eau-de-cologne",
+      "antiquario:fragrance:parfumo-acqua-di-parma-colonia-essenza-acqua-di-parma-2010-eau-de-cologne",
+      "antiquario:fragrance:parfumo-amouage-interlude-black-iris",
+      "antiquario:fragrance:parfumo-diesel-only-the-brave-diesel-2009-eau-de-toilette",
+      "antiquario:fragrance:parfumo-giorgio-armani-acqua-di-gio-profondo-giorgio-armani-2020-eau-de-parfum",
+      "antiquario:fragrance:parfumo-guerlain-lhomme-ideal-guerlain-2014-eau-de-toilette",
+      "antiquario:fragrance:parfumo-guy-laroche-drakkar-noir-guy-laroche-1982-eau-de-toilette",
+      "antiquario:fragrance:parfumo-lacoste-l1212-blanc-eau-de-lacoste-l1212-blanc-lacoste-2010-eau-de-toilette",
+      "antiquario:fragrance:parfumo-montblanc-individuel-montblanc-2003-eau-de-toilette",
+      "antiquario:fragrance:parfumo-roja-parfums-oceania",
+      "antiquario:fragrance:parfumo-tom-ford-neroli-portofino-tom-ford-2007-eau-de-parfum",
+      "antiquario:fragrance:parfumo-van-cleef-arpels-midnight-in-paris-van-cleef-arpels-2010-eau-de-toilette",
+      "antiquario:fragrance:parfumo-yves-saint-laurent-m7-m7-oud-absolu"
+    ],
+    "contentHash": "cef5e4ea2cb9102ae279bdafac5eecc9ae9c8bb5440b6662c70b82a4d96da423"
+  },
+  {
+    "id": "antiquario:olfactory-note:rum:chunk:001",
+    "documentId": "antiquario:olfactory-note:rum",
+    "documentType": "olfactory-note",
+    "title": "Rum",
+    "heading": "Escopo canônico",
+    "order": 0,
+    "content": "Rum\nEscopo canônico\n\n**Rum** é a nota canônica usada para normalizar declarações de pirâmide com esse rótulo. Para navegação, a taxonomia do Antiquário a associa às famílias gourmand e ambarada.\n\nO registro preserva a declaração da fonte e não comprova bebida, extrato ou ingrediente físico na fórmula. Também não permite inferir intensidade, projeção ou duração.",
+    "tags": [
+      "olfactory-note",
+      "parfumo",
+      "gourmand",
+      "ambarada"
+    ],
+    "sourceIds": [
+      "internal_curated",
+      "parfumo_dataset"
+    ],
+    "license": "CC0-1.0",
+    "confidence": "medium",
+    "updatedAt": "2026-08-17",
+    "relatedDocumentIds": [
+      "antiquario:fragrance:parfumo-hugo-boss-hugo-hugo-boss-1995-eau-de-toilette",
+      "antiquario:fragrance:parfumo-kilian-straight-to-heaven-white-cristal-kilian-2007-perfume",
+      "antiquario:fragrance:parfumo-nishane-fan-your-flames"
+    ],
+    "contentHash": "06b7569021f18e12494aaaf32a67f93057db3bb8561710ad6bd3ed2e86a40d16"
+  },
+  {
+    "id": "antiquario:olfactory-note:saffron:chunk:001",
+    "documentId": "antiquario:olfactory-note:saffron",
+    "documentType": "olfactory-note",
+    "title": "Saffron",
+    "heading": "Resumo",
+    "order": 0,
+    "content": "Saffron\nResumo\n\n<!-- antiquario:auto-factual-coverage:v1 -->",
+    "tags": [
+      "olfactory-note",
+      "parfumo"
+    ],
+    "sourceIds": [
+      "parfumo_dataset"
+    ],
+    "license": "CC0-1.0",
+    "confidence": "medium",
+    "updatedAt": "2026-08-17",
+    "relatedDocumentIds": [
+      "antiquario:fragrance:parfumo-afnan-perfumes-supremacy-not-only-intense",
+      "antiquario:fragrance:parfumo-amouage-lyric-man",
+      "antiquario:fragrance:parfumo-etnia-factory-beijing",
+      "antiquario:fragrance:parfumo-gucci-gucci-intense-oud",
+      "antiquario:fragrance:parfumo-mancera-instant-crush",
+      "antiquario:fragrance:parfumo-parfums-de-marly-godolphin",
+      "antiquario:fragrance:parfumo-prada-amber-pour-homme-prada-2006-eau-de-toilette",
+      "antiquario:fragrance:parfumo-prada-luna-rossa-ocean-prada-2021-eau-de-toilette",
+      "antiquario:fragrance:parfumo-rasasi-la-yuqawam-pour-homme",
+      "antiquario:fragrance:parfumo-versace-versace-pour-homme-oud-noir",
+      "antiquario:fragrance:parfumo-viktor-rolf-spicebomb-infrared-viktor-rolf-2021-eau-de-toilette",
+      "antiquario:fragrance:parfumo-xerjoff-torino22",
+      "antiquario:fragrance:parfumo-yves-saint-laurent-le-vestiaire---babycat"
+    ],
+    "contentHash": "7ca4472f99a41d2748098cd0e650115e29717f4dfbfd66cf3d4798c7e9203403"
+  },
+  {
+    "id": "antiquario:olfactory-note:saffron:chunk:002",
+    "documentId": "antiquario:olfactory-note:saffron",
+    "documentType": "olfactory-note",
+    "title": "Saffron",
+    "heading": "Cobertura factual no grafo",
+    "order": 1,
+    "content": "Saffron\nCobertura factual no grafo\n\nNo release `knowledge-v2-36bca79cd798`, **Saffron** aparece em 13 fragrância(s) com declaração de pirâmide proveniente de fonte já aprovada pelo projeto.\n\n- saída: 7\n- coração: 4\n- fundo: 2\n\n### Exemplos rastreáveis\n\n- Amber pour Homme Prada 2006 Eau de Toilette — fundo\n- Factory, Beijing — saída\n- Godolphin — saída\n- Gucci Intense Oud — saída\n- Instant Crush — saída\n\n### Limite da automação\n\nEsta seção resume relações que já existiam no grafo. Ela não cria notas, não comprova ingrediente físico e não estima cheiro, concentração, intensidade, fixação, projeção ou evolução temporal.",
+    "tags": [
+      "olfactory-note",
+      "parfumo"
+    ],
+    "sourceIds": [
+      "parfumo_dataset"
+    ],
+    "license": "CC0-1.0",
+    "confidence": "medium",
+    "updatedAt": "2026-08-17",
+    "relatedDocumentIds": [
+      "antiquario:fragrance:parfumo-afnan-perfumes-supremacy-not-only-intense",
+      "antiquario:fragrance:parfumo-amouage-lyric-man",
+      "antiquario:fragrance:parfumo-etnia-factory-beijing",
+      "antiquario:fragrance:parfumo-gucci-gucci-intense-oud",
+      "antiquario:fragrance:parfumo-mancera-instant-crush",
+      "antiquario:fragrance:parfumo-parfums-de-marly-godolphin",
+      "antiquario:fragrance:parfumo-prada-amber-pour-homme-prada-2006-eau-de-toilette",
+      "antiquario:fragrance:parfumo-prada-luna-rossa-ocean-prada-2021-eau-de-toilette",
+      "antiquario:fragrance:parfumo-rasasi-la-yuqawam-pour-homme",
+      "antiquario:fragrance:parfumo-versace-versace-pour-homme-oud-noir",
+      "antiquario:fragrance:parfumo-viktor-rolf-spicebomb-infrared-viktor-rolf-2021-eau-de-toilette",
+      "antiquario:fragrance:parfumo-xerjoff-torino22",
+      "antiquario:fragrance:parfumo-yves-saint-laurent-le-vestiaire---babycat"
+    ],
+    "contentHash": "45a3aa92d3c90b014e67dfea6b6b34e346eb795d0d67767567220aa2d5ea508e"
+  },
+  {
     "id": "antiquario:olfactory-note:safran:chunk:001",
     "documentId": "antiquario:olfactory-note:safran",
     "documentType": "olfactory-note",
@@ -22206,6 +23236,64 @@
       "antiquario:fragrance:deep-viola-q138795798"
     ],
     "contentHash": "7029060ef889c31b74c70d0e99156f232b0fcf6f5ae517fbacd1f08647bc90a4"
+  },
+  {
+    "id": "antiquario:olfactory-note:sage:chunk:001",
+    "documentId": "antiquario:olfactory-note:sage",
+    "documentType": "olfactory-note",
+    "title": "Sage",
+    "heading": "Resumo",
+    "order": 0,
+    "content": "Sage\nResumo\n\n<!-- antiquario:auto-factual-coverage:v1 -->",
+    "tags": [
+      "olfactory-note",
+      "parfumo"
+    ],
+    "sourceIds": [
+      "parfumo_dataset"
+    ],
+    "license": "CC0-1.0",
+    "confidence": "medium",
+    "updatedAt": "2026-08-17",
+    "relatedDocumentIds": [
+      "antiquario:fragrance:parfumo-dunhill-icon",
+      "antiquario:fragrance:parfumo-geoffrey-beene-grey-flannel-geoffrey-beene-1975-eau-de-toilette",
+      "antiquario:fragrance:parfumo-giorgio-armani-emporio-armani---stronger-with-you",
+      "antiquario:fragrance:parfumo-hugo-boss-hugo-hugo-boss-1995-eau-de-toilette",
+      "antiquario:fragrance:parfumo-prada-luna-rossa-ocean-prada-2021-eau-de-toilette",
+      "antiquario:fragrance:parfumo-tom-ford-grey-vetiver-tom-ford-2009-eau-de-parfum",
+      "antiquario:fragrance:parfumo-versace-blue-jeans"
+    ],
+    "contentHash": "d2a0c617b7c73f9eec21989ec17de6011739469d9e25980d6b01be44e9e232e1"
+  },
+  {
+    "id": "antiquario:olfactory-note:sage:chunk:002",
+    "documentId": "antiquario:olfactory-note:sage",
+    "documentType": "olfactory-note",
+    "title": "Sage",
+    "heading": "Cobertura factual no grafo",
+    "order": 1,
+    "content": "Sage\nCobertura factual no grafo\n\nNo release `knowledge-v2-36bca79cd798`, **Sage** aparece em 7 fragrância(s) com declaração de pirâmide proveniente de fonte já aprovada pelo projeto.\n\n- saída: 1\n- coração: 6\n\n### Exemplos rastreáveis\n\n- Blue Jeans — coração\n- Emporio Armani - Stronger With You — coração\n- Grey Flannel Geoffrey Beene 1975 Eau de Toilette — coração\n- Grey Vetiver Tom Ford 2009 Eau de Parfum — saída\n- Hugo Hugo Boss 1995 Eau de Toilette — coração\n\n### Limite da automação\n\nEsta seção resume relações que já existiam no grafo. Ela não cria notas, não comprova ingrediente físico e não estima cheiro, concentração, intensidade, fixação, projeção ou evolução temporal.",
+    "tags": [
+      "olfactory-note",
+      "parfumo"
+    ],
+    "sourceIds": [
+      "parfumo_dataset"
+    ],
+    "license": "CC0-1.0",
+    "confidence": "medium",
+    "updatedAt": "2026-08-17",
+    "relatedDocumentIds": [
+      "antiquario:fragrance:parfumo-dunhill-icon",
+      "antiquario:fragrance:parfumo-geoffrey-beene-grey-flannel-geoffrey-beene-1975-eau-de-toilette",
+      "antiquario:fragrance:parfumo-giorgio-armani-emporio-armani---stronger-with-you",
+      "antiquario:fragrance:parfumo-hugo-boss-hugo-hugo-boss-1995-eau-de-toilette",
+      "antiquario:fragrance:parfumo-prada-luna-rossa-ocean-prada-2021-eau-de-toilette",
+      "antiquario:fragrance:parfumo-tom-ford-grey-vetiver-tom-ford-2009-eau-de-parfum",
+      "antiquario:fragrance:parfumo-versace-blue-jeans"
+    ],
+    "contentHash": "c9cf968126236a479e0a7bf21fb55c2c8b759b5f72d11850ce697aa2a5368c8d"
   },
   {
     "id": "antiquario:olfactory-note:salvia-clara:chunk:001",
@@ -22331,6 +23419,60 @@
     "contentHash": "d5ed7779d99589b1f34c1616f0c8eba293c4ce8eeb13d959f4d5e1ee29e55eda"
   },
   {
+    "id": "antiquario:olfactory-note:suede:chunk:001",
+    "documentId": "antiquario:olfactory-note:suede",
+    "documentType": "olfactory-note",
+    "title": "Suede",
+    "heading": "Resumo",
+    "order": 0,
+    "content": "Suede\nResumo\n\n<!-- antiquario:auto-factual-coverage:v1 -->",
+    "tags": [
+      "olfactory-note",
+      "parfumo"
+    ],
+    "sourceIds": [
+      "parfumo_dataset"
+    ],
+    "license": "CC0-1.0",
+    "confidence": "medium",
+    "updatedAt": "2026-08-17",
+    "relatedDocumentIds": [
+      "antiquario:fragrance:parfumo-bdk-parfums-creme-de-cuir-bdk-parfums-2018-eau-de-parfum",
+      "antiquario:fragrance:parfumo-hugo-boss-hugo-hugo-boss-1995-eau-de-toilette",
+      "antiquario:fragrance:parfumo-lacoste-l1212-blanc-eau-de-lacoste-l1212-blanc-lacoste-2010-eau-de-toilette",
+      "antiquario:fragrance:parfumo-prada-luna-rossa-ocean-prada-2021-eau-de-toilette",
+      "antiquario:fragrance:parfumo-yves-saint-laurent-le-vestiaire---babycat"
+    ],
+    "contentHash": "8631ee329f3b83a99e5daa3aa5a3241a64962a49f2f96eecee506e1e4d4b3426"
+  },
+  {
+    "id": "antiquario:olfactory-note:suede:chunk:002",
+    "documentId": "antiquario:olfactory-note:suede",
+    "documentType": "olfactory-note",
+    "title": "Suede",
+    "heading": "Cobertura factual no grafo",
+    "order": 1,
+    "content": "Suede\nCobertura factual no grafo\n\nNo release `knowledge-v2-36bca79cd798`, **Suede** aparece em 5 fragrância(s) com declaração de pirâmide proveniente de fonte já aprovada pelo projeto.\n\n- coração: 2\n- fundo: 3\n\n### Exemplos rastreáveis\n\n- Crème de Cuir bdk Parfums 2018 Eau de Parfum — coração\n- Hugo Hugo Boss 1995 Eau de Toilette — fundo\n- L.12.12 Blanc Eau de Lacoste L.12.12 Blanc Lacoste 2010 Eau de Toilette — fundo\n- Le Vestiaire - Babycat — fundo\n- Luna Rossa Ocean Prada 2021 Eau de Toilette — coração\n\n### Limite da automação\n\nEsta seção resume relações que já existiam no grafo. Ela não cria notas, não comprova ingrediente físico e não estima cheiro, concentração, intensidade, fixação, projeção ou evolução temporal.",
+    "tags": [
+      "olfactory-note",
+      "parfumo"
+    ],
+    "sourceIds": [
+      "parfumo_dataset"
+    ],
+    "license": "CC0-1.0",
+    "confidence": "medium",
+    "updatedAt": "2026-08-17",
+    "relatedDocumentIds": [
+      "antiquario:fragrance:parfumo-bdk-parfums-creme-de-cuir-bdk-parfums-2018-eau-de-parfum",
+      "antiquario:fragrance:parfumo-hugo-boss-hugo-hugo-boss-1995-eau-de-toilette",
+      "antiquario:fragrance:parfumo-lacoste-l1212-blanc-eau-de-lacoste-l1212-blanc-lacoste-2010-eau-de-toilette",
+      "antiquario:fragrance:parfumo-prada-luna-rossa-ocean-prada-2021-eau-de-toilette",
+      "antiquario:fragrance:parfumo-yves-saint-laurent-le-vestiaire---babycat"
+    ],
+    "contentHash": "74a817d3e84a77b5cefdfd6df3f0e04dbd7e0f6dc6ba558e0e43359e34a24596"
+  },
+  {
     "id": "antiquario:olfactory-note:tabaco:chunk:001",
     "documentId": "antiquario:olfactory-note:tabaco",
     "documentType": "olfactory-note",
@@ -22423,6 +23565,56 @@
       "antiquario:fragrance:zephyr-q138034992"
     ],
     "contentHash": "739f23789e56fe620cae81ee7e15f5c7890d2f95df43dd57a9932a14796b4c47"
+  },
+  {
+    "id": "antiquario:olfactory-note:thyme:chunk:001",
+    "documentId": "antiquario:olfactory-note:thyme",
+    "documentType": "olfactory-note",
+    "title": "Thyme",
+    "heading": "Resumo",
+    "order": 0,
+    "content": "Thyme\nResumo\n\n<!-- antiquario:auto-factual-coverage:v1 -->",
+    "tags": [
+      "olfactory-note",
+      "parfumo"
+    ],
+    "sourceIds": [
+      "parfumo_dataset"
+    ],
+    "license": "CC0-1.0",
+    "confidence": "medium",
+    "updatedAt": "2026-08-17",
+    "relatedDocumentIds": [
+      "antiquario:fragrance:parfumo-hugo-boss-hugo-hugo-boss-1995-eau-de-toilette",
+      "antiquario:fragrance:parfumo-parfums-de-marly-godolphin",
+      "antiquario:fragrance:parfumo-roja-parfums-oceania"
+    ],
+    "contentHash": "4032d5579d889bd531408eaad614c76b202c67b26030f7912aebf286e3a2da1d"
+  },
+  {
+    "id": "antiquario:olfactory-note:thyme:chunk:002",
+    "documentId": "antiquario:olfactory-note:thyme",
+    "documentType": "olfactory-note",
+    "title": "Thyme",
+    "heading": "Cobertura factual no grafo",
+    "order": 1,
+    "content": "Thyme\nCobertura factual no grafo\n\nNo release `knowledge-v2-36bca79cd798`, **Thyme** aparece em 3 fragrância(s) com declaração de pirâmide proveniente de fonte já aprovada pelo projeto.\n\n- saída: 3\n\n### Exemplos rastreáveis\n\n- Godolphin — saída\n- Hugo Hugo Boss 1995 Eau de Toilette — saída\n- Oceania — saída\n\n### Limite da automação\n\nEsta seção resume relações que já existiam no grafo. Ela não cria notas, não comprova ingrediente físico e não estima cheiro, concentração, intensidade, fixação, projeção ou evolução temporal.",
+    "tags": [
+      "olfactory-note",
+      "parfumo"
+    ],
+    "sourceIds": [
+      "parfumo_dataset"
+    ],
+    "license": "CC0-1.0",
+    "confidence": "medium",
+    "updatedAt": "2026-08-17",
+    "relatedDocumentIds": [
+      "antiquario:fragrance:parfumo-hugo-boss-hugo-hugo-boss-1995-eau-de-toilette",
+      "antiquario:fragrance:parfumo-parfums-de-marly-godolphin",
+      "antiquario:fragrance:parfumo-roja-parfums-oceania"
+    ],
+    "contentHash": "4f59b2e168abd119981f0c73f3cd1f5873b0ca0f57bdd9d1814d1559df83e1fb"
   },
   {
     "id": "antiquario:olfactory-note:toranja:chunk:001",
@@ -22612,6 +23804,32 @@
       "antiquario:fragrance:opulent-dubai-q138766540"
     ],
     "contentHash": "ab2a402e8f8d457a0f49fdffced4812d6d2eaa8437f2c1723ca1f71fee62272a"
+  },
+  {
+    "id": "antiquario:olfactory-note:whisky:chunk:001",
+    "documentId": "antiquario:olfactory-note:whisky",
+    "documentType": "olfactory-note",
+    "title": "Uísque",
+    "heading": "Escopo canônico",
+    "order": 0,
+    "content": "Uísque\nEscopo canônico\n\n**Uísque** é a nota canônica usada para normalizar declarações rotuladas como *whisky* ou *whiskey*. Para navegação, a taxonomia do Antiquário a associa às famílias gourmand e amadeirada.\n\nO registro preserva a declaração da fonte e não comprova bebida, extrato ou ingrediente físico na fórmula. Também não permite inferir intensidade, projeção ou duração.",
+    "tags": [
+      "olfactory-note",
+      "parfumo",
+      "gourmand",
+      "amadeirada"
+    ],
+    "sourceIds": [
+      "internal_curated",
+      "parfumo_dataset"
+    ],
+    "license": "CC0-1.0",
+    "confidence": "medium",
+    "updatedAt": "2026-08-17",
+    "relatedDocumentIds": [
+      "antiquario:fragrance:parfumo-halloween-halloween-man-x"
+    ],
+    "contentHash": "541d646b0c89b1f8a40e8743390c20b6f05f9a30c14f6002b0136be5480917c9"
   },
   {
     "id": "antiquario:olfactory-note:white-musk:chunk:001",

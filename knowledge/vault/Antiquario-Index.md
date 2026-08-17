@@ -10,7 +10,7 @@ source_ids: [internal_curated]
 license: CC0-1.0
 confidence: high
 review_status: approved
-updated_at: 2026-07-22
+updated_at: 2026-08-17
 language: pt-BR
 summary: Mapa principal da memória olfativa e porta de entrada para os domínios do Antiquário.
 evidence:
@@ -27,6 +27,12 @@ relations:
   - predicate: indexes
     target: antiquario:olfactory-note:baunilha
   - predicate: indexes
+    target: antiquario:olfactory-note:pao
+  - predicate: indexes
+    target: antiquario:accord:fresco
+  - predicate: indexes
+    target: antiquario:accord:atalcado
+  - predicate: indexes
     target: antiquario:fragrance:brisa-vetiver
   - predicate: indexes
     target: antiquario:guide:fontes-de-conhecimento
@@ -41,11 +47,14 @@ Esta é a raiz editorial da memória olfativa do Antiquário.
 - [[Vetiver]]
 - [[Bergamota]]
 - [[Baunilha]]
+- [[note-pao|Pão]]
 
 ## Acordes
 
 - [[Amadeirado]]
 - [[Citricos|Cítricos]]
+- [[Fresco]]
+- [[Atalcado]]
 
 ## Contextos
 

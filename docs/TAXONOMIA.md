@@ -2,13 +2,15 @@
 
 ## Objetivo
 
-A taxonomia oferece um vocabulário estável para busca, catálogo e recomendação. Ela separa três conceitos:
+A taxonomia oferece um vocabulário estável para busca, catálogo e recomendação. A versão operacional separa inicialmente três conceitos:
 
 - **família:** agrupamento amplo usado para classificação;
 - **acorde:** impressão olfativa percebida na composição;
-- **nota:** matéria-prima, referência natural, molécula ou efeito descrito na pirâmide.
+- **nota:** termo declarado ou curado como parte da composição ou pirâmide de uma fragrância.
 
 Esses conceitos não são tratados como equivalentes. Uma fragrância pode pertencer a uma família amadeirada, ter acorde cítrico e apresentar bergamota como nota.
+
+O Knowledge Core passa a distinguir também `raw-material`, `molecule`, `odor-descriptor`, `odor-quality` e `olfactory-family`. Uma nota pode remeter a uma matéria-prima, que pode conter moléculas descritas por qualidades perceptivas; essas relações não comprovam que o ingrediente esteja presente em um perfume específico. A arquitetura e a adoção científica estão detalhadas em [`TAXONOMIAS_CIENTIFICAS_OLFATIVAS.md`](TAXONOMIAS_CIENTIFICAS_OLFATIVAS.md).
 
 ## Cobertura da versão 1
 
@@ -82,3 +84,5 @@ Além do schema, os testes confirmam que todas as notas e acordes presentes no c
 3. Relatório de termos sem tradução ou com conflito.
 4. Revisão editorial especializada da classificação.
 5. Inclusão de volatilidade e persistência somente com evidência compatível.
+6. Revisar e promover seletivamente os candidatos ODEUROPA já importados em staging, sem promoção automática.
+7. Piloto separado de moléculas, descritores e qualidades sem inferir pirâmides comerciais.

@@ -36,7 +36,7 @@ relations:
   - predicate: has-heart-note
     target: antiquario:olfactory-note:ylang-ylang
   - predicate: has-heart-note
-    target: antiquario:olfactory-note:carnation
+    target: antiquario:olfactory-note:cravo-flor
   - predicate: has-heart-note
     target: antiquario:olfactory-note:lily-of-the-valley
   - predicate: has-heart-note
@@ -66,5 +66,5 @@ relations:
 ## Pirâmide Olfativa
 
 - **Saída:** [[note-orange-blossom]], [[Bergamota]], [[note-fruits]], [[note-limao-siciliano]]
-- **Coração:** [[note-heliotrope]], [[note-ylang-ylang]], [[note-carnation]], [[note-lily-of-the-valley]], [[note-orris-root]], [[note-rose]]
+- **Coração:** [[note-heliotrope]], [[note-ylang-ylang]], [[note-cravo-flor]], [[note-lily-of-the-valley]], [[note-orris-root]], [[note-rose]]
 - **Fundo:** [[Baunilha]], [[note-benzoin]], [[note-musk]], [[note-styrax]], [[note-tonka-bean]], [[note-ambar]], [[note-sandalo]]

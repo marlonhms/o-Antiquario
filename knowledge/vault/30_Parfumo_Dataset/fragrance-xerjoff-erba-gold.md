@@ -38,7 +38,7 @@ relations:
   - predicate: has-heart-note
     target: antiquario:olfactory-note:pear
   - predicate: has-heart-note
-    target: antiquario:olfactory-note:clove
+    target: antiquario:olfactory-note:cravo-especiaria
   - predicate: has-heart-note
     target: antiquario:olfactory-note:guatemala-cardamom
   - predicate: has-heart-note
@@ -60,5 +60,5 @@ relations:
 ## Pirâmide Olfativa
 
 - **Saída:** [[note-calabrian-bergamot]], [[note-ginger]], [[note-amalfi-lemon]], [[note-brazilian-orange]]
-- **Coração:** [[note-melon]], [[note-green-apple]], [[note-pear]], [[note-clove]], [[note-guatemala-cardamom]], [[note-madagascan-cinnamon]]
+- **Coração:** [[note-melon]], [[note-green-apple]], [[note-pear]], [[note-cravo-especiaria]], [[note-guatemala-cardamom]], [[note-madagascan-cinnamon]]
 - **Fundo:** [[note-white-musk]], [[note-ambar]], [[note-bourbon-vanilla]], [[note-woods]]

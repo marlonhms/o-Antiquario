@@ -12,7 +12,8 @@ type RelationContract = Readonly<{
 }>;
 
 const ALL_DOCUMENT_TYPES: readonly KnowledgeDocumentType[] = [
-  "index", "fragrance", "olfactory-note", "accord", "raw-material", "context", "science", "guide", "brand", "perfumer"
+  "index", "fragrance", "olfactory-note", "accord", "raw-material", "molecule", "odor-descriptor",
+  "odor-quality", "olfactory-family", "context", "science", "guide", "brand", "perfumer"
 ];
 
 export const RELATION_CONTRACTS: Readonly<Record<string, RelationContract>> = {
@@ -33,6 +34,34 @@ export const RELATION_CONTRACTS: Readonly<Record<string, RelationContract>> = {
   "has-top-note": { sources: ["fragrance"], targets: ["olfactory-note"] },
   "has-heart-note": { sources: ["fragrance"], targets: ["olfactory-note"] },
   "has-base-note": { sources: ["fragrance"], targets: ["olfactory-note"] },
+  "described-as": {
+    sources: ["olfactory-note", "raw-material", "molecule"],
+    targets: ["odor-descriptor"],
+  },
+  "has-quality": {
+    sources: ["olfactory-note", "raw-material", "molecule", "odor-descriptor"],
+    targets: ["odor-quality"],
+  },
+  "belongs-to-olfactory-family": {
+    sources: ["odor-descriptor"],
+    targets: ["olfactory-family"],
+  },
+  "broader-descriptor-than": {
+    sources: ["odor-descriptor"],
+    targets: ["odor-descriptor"],
+  },
+  "broader-quality-than": {
+    sources: ["odor-quality"],
+    targets: ["odor-quality"],
+  },
+  "derived-from": {
+    sources: ["olfactory-note"],
+    targets: ["raw-material"],
+  },
+  "contains-odorant": {
+    sources: ["raw-material"],
+    targets: ["molecule"],
+  },
 };
 
 export function assertRelationContract(source: KnowledgeDocument, target: KnowledgeDocument, predicate: string): void {

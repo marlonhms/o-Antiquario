@@ -28,6 +28,20 @@ def atomic_write_text(path: Path, contents: str) -> None:
     os.replace(temporary, path)
 
 
+def atomic_write_bytes(path: Path, contents: bytes) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with tempfile.NamedTemporaryFile(
+        mode="wb",
+        dir=path.parent,
+        delete=False,
+        prefix=f".{path.name}.",
+        suffix=".tmp",
+    ) as handle:
+        handle.write(contents)
+        temporary = Path(handle.name)
+    os.replace(temporary, path)
+
+
 def load_json(path: Path) -> Any:
     with path.open("r", encoding="utf-8") as handle:
         return json.load(handle)

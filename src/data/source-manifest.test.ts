@@ -7,13 +7,15 @@ test("o manifesto oficial é válido e mantém fontes arriscadas fora do core", 
   const manifest = await loadSourceManifest();
   const summary = summarizeSourceManifest(manifest);
 
-  assert.equal(manifest.sources.length, 11);
+  assert.equal(manifest.sources.length, 12);
   assert.equal(summary.allowed_core, 5);
+  assert.equal(summary.allowed_staging, 1);
   assert.equal(summary.allowed_isolated, 1);
   assert.equal(summary.reference_only, 1);
   assert.equal(summary.pending_review, 3);
   assert.equal(summary.prohibited, 1);
   assert.equal(manifest.sources.find((source) => source.id === "fragrantica")?.storage.layer, "rejected");
+  assert.equal(manifest.sources.find((source) => source.id === "odeuropa_multilingual_taxonomy")?.storage.layer, "staging");
 });
 
 test("IDs duplicados são rejeitados", async () => {
@@ -42,6 +44,16 @@ test("uma fonte isolada não pode escrever no catálogo core", async () => {
   assert.throws(() => validateSourceManifest(invalid), /fontes isoladas não podem escrever/);
 });
 
+test("uma fonte aprovada apenas para staging não pode escrever no catálogo core", async () => {
+  const manifest = await loadSourceManifest();
+  const invalid = structuredClone(manifest);
+  const staging = invalid.sources.find((source) => source.classification === "allowed_staging");
+  assert.ok(staging);
+  staging.storage.layer = "core";
+
+  assert.throws(() => validateSourceManifest(invalid), /devem permanecer na camada staging/);
+});
+
 test("uma fonte proibida não pode declarar acesso automatizado", async () => {
   const manifest = await loadSourceManifest();
   const invalid = structuredClone(manifest);
@@ -51,4 +63,3 @@ test("uma fonte proibida não pode declarar acesso automatizado", async () => {
 
   assert.throws(() => validateSourceManifest(invalid), /fontes proibidas devem bloquear automação/);
 });
-

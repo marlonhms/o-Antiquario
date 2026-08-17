@@ -1,11 +1,11 @@
 {
   "schemaVersion": 2,
   "graph": {
-    "documentNodes": 855,
-    "evidenceNodes": 855,
-    "typedRelations": 2223,
-    "wikiReferences": 1883,
-    "evidenceLinks": 855
+    "documentNodes": 850,
+    "evidenceNodes": 857,
+    "typedRelations": 2226,
+    "wikiReferences": 1946,
+    "evidenceLinks": 857
   },
   "connectivity": {
     "components": [
@@ -13,7 +13,9 @@
         "anchor": "antiquario:accord:amadeirado",
         "documentIds": [
           "antiquario:accord:amadeirado",
+          "antiquario:accord:atalcado",
           "antiquario:accord:citricos",
+          "antiquario:accord:fresco",
           "antiquario:brand:abercrombie-fitch",
           "antiquario:brand:acorelle",
           "antiquario:brand:acqua-di-parma",
@@ -434,7 +436,6 @@
           "antiquario:olfactory-note:caraway",
           "antiquario:olfactory-note:cardamom",
           "antiquario:olfactory-note:cardamomo",
-          "antiquario:olfactory-note:carnation",
           "antiquario:olfactory-note:cashmeran",
           "antiquario:olfactory-note:cashmere-wood",
           "antiquario:olfactory-note:cassia",
@@ -458,7 +459,6 @@
           "antiquario:olfactory-note:civet",
           "antiquario:olfactory-note:clary-sage",
           "antiquario:olfactory-note:clementine",
-          "antiquario:olfactory-note:clove",
           "antiquario:olfactory-note:cocoa",
           "antiquario:olfactory-note:coconut",
           "antiquario:olfactory-note:coconut-palmwood",
@@ -470,7 +470,8 @@
           "antiquario:olfactory-note:coriander-seed",
           "antiquario:olfactory-note:cotton-candy",
           "antiquario:olfactory-note:couro",
-          "antiquario:olfactory-note:cravo",
+          "antiquario:olfactory-note:cravo-especiaria",
+          "antiquario:olfactory-note:cravo-flor",
           "antiquario:olfactory-note:cucumber",
           "antiquario:olfactory-note:cumarina",
           "antiquario:olfactory-note:cumin",
@@ -693,6 +694,7 @@
           "antiquario:olfactory-note:oud",
           "antiquario:olfactory-note:ozonic-notes",
           "antiquario:olfactory-note:palo-santo",
+          "antiquario:olfactory-note:pao",
           "antiquario:olfactory-note:papaia",
           "antiquario:olfactory-note:papaya",
           "antiquario:olfactory-note:papiros",
@@ -951,60 +953,11 @@
           "antiquario:olfactory-note:pipe-tobacco",
           "antiquario:olfactory-note:pipe-tobacco-smoke"
         ]
-      },
-      {
-        "anchor": "antiquario:olfactory-note:calabrian-lemon",
-        "documentIds": [
-          "antiquario:olfactory-note:calabrian-lemon"
-        ]
-      },
-      {
-        "anchor": "antiquario:olfactory-note:coumarin",
-        "documentIds": [
-          "antiquario:olfactory-note:coumarin"
-        ]
-      },
-      {
-        "anchor": "antiquario:olfactory-note:milk",
-        "documentIds": [
-          "antiquario:olfactory-note:milk"
-        ]
-      },
-      {
-        "anchor": "antiquario:olfactory-note:quince",
-        "documentIds": [
-          "antiquario:olfactory-note:quince"
-        ]
-      },
-      {
-        "anchor": "antiquario:olfactory-note:sicilian-almond",
-        "documentIds": [
-          "antiquario:olfactory-note:sicilian-almond"
-        ]
-      },
-      {
-        "anchor": "antiquario:olfactory-note:tobacco-flower",
-        "documentIds": [
-          "antiquario:olfactory-note:tobacco-flower"
-        ]
-      },
-      {
-        "anchor": "antiquario:olfactory-note:toffee",
-        "documentIds": [
-          "antiquario:olfactory-note:toffee"
-        ]
       }
     ],
     "isolatedDocumentIds": [
       "antiquario:brand:natura",
-      "antiquario:brand:o-boticario",
-      "antiquario:olfactory-note:calabrian-lemon",
-      "antiquario:olfactory-note:coumarin",
-      "antiquario:olfactory-note:milk",
-      "antiquario:olfactory-note:quince",
-      "antiquario:olfactory-note:sicilian-almond",
-      "antiquario:olfactory-note:tobacco-flower",
-      "antiquario:olfactory-note:toffee"
+      "antiquario:brand:o-boticario"
     ]
   },
   "editorialCoverage": {
@@ -1033,48 +986,6 @@
       "code": "isolated-document",
       "severity": "error",
       "documentId": "antiquario:brand:o-boticario",
-      "message": "Documento aprovado sem sinapses com o restante do grafo."
-    },
-    {
-      "code": "isolated-document",
-      "severity": "error",
-      "documentId": "antiquario:olfactory-note:calabrian-lemon",
-      "message": "Documento aprovado sem sinapses com o restante do grafo."
-    },
-    {
-      "code": "isolated-document",
-      "severity": "error",
-      "documentId": "antiquario:olfactory-note:coumarin",
-      "message": "Documento aprovado sem sinapses com o restante do grafo."
-    },
-    {
-      "code": "isolated-document",
-      "severity": "error",
-      "documentId": "antiquario:olfactory-note:milk",
-      "message": "Documento aprovado sem sinapses com o restante do grafo."
-    },
-    {
-      "code": "isolated-document",
-      "severity": "error",
-      "documentId": "antiquario:olfactory-note:quince",
-      "message": "Documento aprovado sem sinapses com o restante do grafo."
-    },
-    {
-      "code": "isolated-document",
-      "severity": "error",
-      "documentId": "antiquario:olfactory-note:sicilian-almond",
-      "message": "Documento aprovado sem sinapses com o restante do grafo."
-    },
-    {
-      "code": "isolated-document",
-      "severity": "error",
-      "documentId": "antiquario:olfactory-note:tobacco-flower",
-      "message": "Documento aprovado sem sinapses com o restante do grafo."
-    },
-    {
-      "code": "isolated-document",
-      "severity": "error",
-      "documentId": "antiquario:olfactory-note:toffee",
       "message": "Documento aprovado sem sinapses com o restante do grafo."
     },
     {
